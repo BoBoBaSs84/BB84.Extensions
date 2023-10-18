@@ -3,12 +3,39 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BB84.Extensions", "src\BB84.Extensions\BB84.Extensions.csproj", "{5570B07F-A9BA-4742-9CFB-242B10D07A06}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E21D5FD9-0A3C-4E0C-8A93-3BD176FB7AE6}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BB84.ExtensionsTests", "tests\BB84.ExtensionsTests\BB84.ExtensionsTests.csproj", "{5C7A536C-F618-42EE-80D2-0C27256E1BE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5570B07F-A9BA-4742-9CFB-242B10D07A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5570B07F-A9BA-4742-9CFB-242B10D07A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5570B07F-A9BA-4742-9CFB-242B10D07A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5570B07F-A9BA-4742-9CFB-242B10D07A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C7A536C-F618-42EE-80D2-0C27256E1BE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C7A536C-F618-42EE-80D2-0C27256E1BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C7A536C-F618-42EE-80D2-0C27256E1BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C7A536C-F618-42EE-80D2-0C27256E1BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E197513-0E02-4B7B-98D9-2334109C8A94}
 	EndGlobalSection
 EndGlobal
