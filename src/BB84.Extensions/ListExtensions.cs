@@ -38,13 +38,6 @@ public static class ListExtensions
 		if (items is null || items.Any().Equals(false))
 			return;
 
-		if (target is List<T> list)
-		{
-			list.AddRange(items);
-			return;
-		}
-
-		foreach (T? item in items)
-			target.Add(item);
+		items.ForEach(target.AddIfNotNull);
 	}
 }
