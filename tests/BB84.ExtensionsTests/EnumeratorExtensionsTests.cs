@@ -15,6 +15,16 @@ public class EnumeratorExtensionsTests
 		Assert.AreEqual(3, list.Count());
 	}
 
+	[TestMethod]
+	public void ToIntTest()
+	{
+		TestType type = TestType.Two;
+
+		int value = type.ToInt();
+
+		Assert.AreEqual(2, value);
+	}
+
 	private enum TestType
 	{
 		None,

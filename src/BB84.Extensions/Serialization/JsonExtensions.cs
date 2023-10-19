@@ -30,7 +30,6 @@ public static class JsonExtensions
 		options ??= SerializerOptions;
 
 		T obj = JsonSerializer.Deserialize<T>(jsonValue, options)!;
-
 		return (T)Convert.ChangeType(obj, typeof(T), CultureInfo.InvariantCulture);
 	}
 
@@ -45,6 +44,7 @@ public static class JsonExtensions
 	public static string ToJsonString<T>(this T value, JsonSerializerOptions? options = null) where T : class
 	{
 		options ??= SerializerOptions;
+
 		return JsonSerializer.Serialize(value, typeof(T), options);
 	}
 }

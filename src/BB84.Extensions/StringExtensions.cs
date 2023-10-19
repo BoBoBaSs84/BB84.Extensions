@@ -41,13 +41,13 @@ public static class StringExtensions
 
 		// Check for valid base64
 		stringValue = stringValue.Trim();
-		var isValidBase64 = (stringValue.Length % 4 == 0) &&
+		bool isValidBase64 = (stringValue.Length % 4 == 0) &&
 			Regex.IsMatch(stringValue, @"^[a-zA-Z0-9\+/]*={0,3}$", RegexOptions.None);
 
 		if (isValidBase64.Equals(false))
 			throw new ArgumentException($"{stringValue} is not valid base64");
 
-		var buffer = Convert.FromBase64String(stringValue);
+		byte[] buffer = Convert.FromBase64String(stringValue);
 		encoding ??= Encoding.Default;
 		return encoding.GetString(buffer);
 	}
@@ -122,7 +122,7 @@ public static class StringExtensions
 		=> GetMd5Bytes(stringValue, Encoding.Unicode).GetHexString();
 
 	[SuppressMessage("Security", "CA5351", Justification = "Not used for cryptography.")]
-	private static byte[] GetMd5Bytes(string stringValue, Encoding encoding)	
+	private static byte[] GetMd5Bytes(string stringValue, Encoding encoding)
 	{
 #if NET6_0_OR_GREATER
 		return MD5.HashData(encoding.GetBytes(stringValue));
