@@ -8,10 +8,10 @@ public class ByteExtensionsTests
 	[TestMethod]
 	public void GetHexStringTest()
 	{
-		byte[] inputBuffer = { 255, 255 };
+		byte[] bytes = { 255, 255 };
 
-		string outputString = inputBuffer.GetHexString();
+		string result = bytes.GetHexString();
 
-		Assert.AreEqual("FFFF", outputString);
+		Assert.AreEqual("FFFF", result);
 	}
 }

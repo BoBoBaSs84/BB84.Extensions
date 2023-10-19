@@ -1,26 +1,10 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BB84.Extensions;
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BB84.Extensions.Tests;
+﻿namespace BB84.ExtensionsTests;
 
 [TestClass]
-public class ListExtensionsTests
+public sealed partial class ListExtensionsTests
 {
-	[TestMethod]
-	public void AddIfNotNullTest()
+	private sealed class TestClass
 	{
-		Assert.Fail();
-	}
-
-	[TestMethod]
-	public void AddRangeIfNotNullTest()
-	{
-		Assert.Fail();
+		public Guid Id { get; } = Guid.NewGuid();
 	}
 }
