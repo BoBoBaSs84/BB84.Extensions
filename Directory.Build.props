@@ -41,14 +41,17 @@
 		<Company>https://github.com/$(Author)</Company>
 		<Copyright>Copyright © $(VersionMajor) $(Author)</Copyright>
 		<Description>A collection of the extensions I often need.</Description>
+		<!--<PackageIcon>$(AssemblyName).png</PackageIcon>-->
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<PackageProjectUrl>https://github.com/$(Author)/$(Product)</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/$(Author)/$(AssemblyName)</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-		<Product>BB84.Extensions</Product>
+		<Product>$(AssemblyName)</Product>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<RepositoryUrl>https://github.com/$(Author)/$(Product)</RepositoryUrl>
-		<Title>BB84.Extensions</Title>
+		<RepositoryUrl>https://github.com/$(Author)/$(AssemblyName)</RepositoryUrl>
+		<Title>$(AssemblyName)</Title>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
