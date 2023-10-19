@@ -5,27 +5,29 @@ name: CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ main ]
 
 jobs:
   build:
-
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      
+      with:
+        fetch-depth: 0
+    
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
 
-    - name: Restore dependencies
-      run: dotnet restore
+    - name: Build and Test
+      run: dotnet test BB84.Extensions.sln -c Release
       
-    - name: Build
-      run: dotnet build --no-restore
-      
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+    - name: Build, Tests, Cover, Pack and Publish (on push tag)
+      if: github.event_name == 'push'
+      shell: bash
+      run: |
+        dotnet tool install --global dotnet-releaser
+        dotnet-releaser run --skip-app-packages-for-build-only --github-token "${{secrets.GITHUB_TOKEN}}" --github-token-extra "${{secrets.TOKEN_GITHUB}}" dotnet-releaser.toml
