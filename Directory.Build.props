@@ -55,6 +55,7 @@
 		<IsPackable>false</IsPackable>
 		<IsTestProject>true</IsTestProject>
 		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+		<TargetFrameworks>net462;net6.0</TargetFrameworks>
 	</PropertyGroup>
 
 	<ItemGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))">
