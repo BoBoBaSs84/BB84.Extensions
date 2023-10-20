@@ -40,9 +40,10 @@
 		<Authors>$(Author)</Authors>
 		<Company>https://github.com/$(Author)</Company>
 		<Copyright>Copyright © $(VersionMajor) $(Author)</Copyright>
-		<Description>A collection of the extensions I often need.</Description>
+		<Description>A collection of some random C# extensions I needed in many projects.</Description>
 		<!--<PackageIcon>$(AssemblyName).png</PackageIcon>-->
-		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<!--<PackageLicenseFile>LICENSE</PackageLicenseFile>-->
 		<PackageProjectUrl>https://github.com/$(Author)/$(AssemblyName)</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>

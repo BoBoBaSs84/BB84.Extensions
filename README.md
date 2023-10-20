@@ -8,4 +8,4 @@
 [![License](https://img.shields.io/github/license/BoBoBaSs84/BB84.Extensions)](https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/LICENSE)
 
 # BB84.Extensions
-A collection of the extensions I often need.
+A collection of some random C# extensions I needed in many projects.
