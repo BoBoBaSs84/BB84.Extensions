@@ -1,11 +1,10 @@
 <Project>
 
 	<PropertyGroup>
-		<VersionMajor>$([System.DateTime]::UtcNow.Year)</VersionMajor>
-		<VersionMinor>$([System.DateTime]::UtcNow.Month)</VersionMinor>
-		<VersionPatch>$([System.DateTime]::UtcNow.Day)</VersionPatch>
-		<VersionRevision>$([System.DateTime]::UtcNow.TimeOfDay.TotalMinutes.ToString("0"))</VersionRevision>
-		<VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch).$(VersionRevision)</VersionPrefix>
+		<VersionMajor>1</VersionMajor>
+		<VersionMinor>0</VersionMinor>
+		<VersionPatch>0</VersionPatch>
+		<VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch)</VersionPrefix>
 		<VersionSuffix Condition="$(Configuration.Equals('Debug'))">Development</VersionSuffix>
 	</PropertyGroup>
 
@@ -39,7 +38,7 @@
 		<Author>BoBoBaSs84</Author>
 		<Authors>$(Author)</Authors>
 		<Company>https://github.com/$(Author)</Company>
-		<Copyright>Copyright © $(VersionMajor) $(Author)</Copyright>
+		<Copyright>Copyright © $([System.DateTime]::UtcNow.Year) $(Author)</Copyright>
 		<Description>A collection of some random C# extensions I needed in many projects.</Description>
 		<!--<PackageIcon>$(AssemblyName).png</PackageIcon>-->
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
