@@ -11,6 +11,8 @@ namespace BB84.Extensions;
 /// </summary>
 public static class StringExtensions
 {
+	private static readonly Regex Base64 = new(@"^[a-zA-Z0-9\+/]*={0,3}$", RegexOptions.None);
+
 	/// <summary>
 	/// Encodes the provided string to a base64 string.
 	/// </summary>
@@ -41,8 +43,7 @@ public static class StringExtensions
 
 		// Check for valid base64
 		stringValue = stringValue.Trim();
-		bool isValidBase64 = (stringValue.Length % 4 == 0) &&
-			Regex.IsMatch(stringValue, @"^[a-zA-Z0-9\+/]*={0,3}$", RegexOptions.None);
+		bool isValidBase64 = (stringValue.Length % 4 == 0) && Base64.IsMatch(stringValue);
 
 		if (isValidBase64.Equals(false))
 			throw new ArgumentException($"{stringValue} is not valid base64");
