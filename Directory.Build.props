@@ -41,6 +41,8 @@
 		<Copyright>Copyright © $([System.DateTime]::UtcNow.Year) $(Author)</Copyright>
 		<Description>A collection of some random C# extensions I needed in many projects.</Description>
 		<!--<PackageIcon>$(AssemblyName).png</PackageIcon>-->
+		<PackageId>$(AssemblyName)</PackageId>
+		<PackageTags>library;csharp;extensions;common</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/BoBoBaSs84/BB84.Extensions</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
