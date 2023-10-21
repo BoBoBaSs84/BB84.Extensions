@@ -3,9 +3,9 @@
 namespace BB84.Extensions;
 
 /// <summary>
-/// The integer extensions class.
+/// The object extensions class.
 /// </summary>
-public static class IntegerExtensions
+public static class ObjectExtensions
 {
 	/// <summary>
 	/// Converts the value of the specified object to a 32-bit signed integer, using invariant culture formatting information.
