@@ -9,3 +9,4 @@ repo = "BB84.Extensions"
 version_prefix = "v"
 [nuget]
 publish = true
+source = "https://api.nuget.org/v3/index.json"
