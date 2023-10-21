@@ -9,4 +9,3 @@ repo = "BB84.Extensions"
 version_prefix = "v"
 [nuget]
 publish = true
-publish_draft = true
