@@ -3,8 +3,8 @@
 namespace BB84.ExtensionsTests;
 public sealed partial class ObjectExtensionsTests
 {
-	[TestMethod]
-	public void ToInt32InvariantTest()
+	[TestMethod("Object to invariant int test")]
+	public void ToInt32Invariant()
 	{
 		object obj = 5;
 
