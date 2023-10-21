@@ -10,3 +10,4 @@ version_prefix = "v"
 [nuget]
 publish = true
 source = "https://api.nuget.org/v3/index.json"
+publish_draft = true
