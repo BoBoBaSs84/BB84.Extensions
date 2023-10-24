@@ -41,7 +41,7 @@ public static class JsonExtensions
 	/// <param name="value">The object we are operating on.</param>
 	/// <param name="options">The json serializer options to use.</param>
 	/// <returns>The JSON string representation of the object <typeparamref name="T"/>.</returns>
-	public static string ToJsonString<T>(this T value, JsonSerializerOptions? options = null) where T : class
+	public static string ToJson<T>(this T value, JsonSerializerOptions? options = null) where T : class
 	{
 		options ??= SerializerOptions;
 
