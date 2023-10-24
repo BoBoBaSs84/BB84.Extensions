@@ -9,7 +9,7 @@ public class JsonExtensionsTests
 {
 	private const string JsonTestString = @"{""Id"":""356e4b9a-09f9-4399-82c7-d78c02cefb48"",""Name"":""qkxTAlLXUs"",""Description"":""QGVaYoljjHDTHasFRlGhDfJSehDCUnLqLsqfFesN""}";
 
-	[TestMethod()]
+	[TestMethod]
 	public void FromJsonTest()
 	{
 		string jsonString = JsonTestString;
@@ -21,12 +21,12 @@ public class JsonExtensionsTests
 		Assert.AreEqual("QGVaYoljjHDTHasFRlGhDfJSehDCUnLqLsqfFesN", testClass.Description);
 	}
 
-	[TestMethod()]
-	public void ToJsonStringTest()
+	[TestMethod]
+	public void ToJsonTest()
 	{
 		TestClass testClass = new() { Id = Guid.NewGuid(), Name = "TestName", Description = "TestDescription" };
 
-		string jsonString = testClass.ToJsonString();
+		string jsonString = testClass.ToJson();
 
 		Assert.IsTrue(jsonString.Contains($@"{nameof(testClass.Id)}"":""{testClass.Id}"));
 		Assert.IsTrue(jsonString.Contains($@"{nameof(testClass.Name)}"":""{testClass.Name}"));
