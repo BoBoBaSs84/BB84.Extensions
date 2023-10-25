@@ -1,0 +1,197 @@
+{
+  "source_base_path": "/home/runner/work/BB84.Extensions/BB84.Extensions/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.ArrayExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.ArrayExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.BooleanExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.BooleanExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.ByteExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.ByteExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.DateTimeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.DateTimeExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.EnumerableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.EnumerableExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.EnumeratorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.EnumeratorExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.IntegerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.IntegerExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.ListExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.ListExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.ObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.ObjectExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.Serialization.JsonExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.Serialization.JsonExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.Serialization.XmlExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.Serialization.XmlExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.Serialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.Serialization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.StringExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

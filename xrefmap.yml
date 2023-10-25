@@ -1,0 +1,743 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: BB84.Extensions
+  name: BB84.Extensions
+  href: api/BB84.Extensions.html
+  commentId: N:BB84.Extensions
+  fullName: BB84.Extensions
+  nameWithType: BB84.Extensions
+- uid: BB84.Extensions.ArrayExtensions
+  name: ArrayExtensions
+  href: api/BB84.Extensions.ArrayExtensions.html
+  commentId: T:BB84.Extensions.ArrayExtensions
+  fullName: BB84.Extensions.ArrayExtensions
+  nameWithType: ArrayExtensions
+- uid: BB84.Extensions.ArrayExtensions.RandomChoice*
+  name: RandomChoice
+  href: api/BB84.Extensions.ArrayExtensions.html#BB84_Extensions_ArrayExtensions_RandomChoice_
+  commentId: Overload:BB84.Extensions.ArrayExtensions.RandomChoice
+  isSpec: "True"
+  fullName: BB84.Extensions.ArrayExtensions.RandomChoice
+  nameWithType: ArrayExtensions.RandomChoice
+- uid: BB84.Extensions.ArrayExtensions.RandomChoice``1(``0[])
+  name: RandomChoice<T>(T[])
+  href: api/BB84.Extensions.ArrayExtensions.html#BB84_Extensions_ArrayExtensions_RandomChoice__1___0___
+  commentId: M:BB84.Extensions.ArrayExtensions.RandomChoice``1(``0[])
+  name.vb: RandomChoice(Of T)(T())
+  fullName: BB84.Extensions.ArrayExtensions.RandomChoice<T>(T[])
+  fullName.vb: BB84.Extensions.ArrayExtensions.RandomChoice(Of T)(T())
+  nameWithType: ArrayExtensions.RandomChoice<T>(T[])
+  nameWithType.vb: ArrayExtensions.RandomChoice(Of T)(T())
+- uid: BB84.Extensions.BooleanExtensions
+  name: BooleanExtensions
+  href: api/BB84.Extensions.BooleanExtensions.html
+  commentId: T:BB84.Extensions.BooleanExtensions
+  fullName: BB84.Extensions.BooleanExtensions
+  nameWithType: BooleanExtensions
+- uid: BB84.Extensions.BooleanExtensions.IsFalse(System.Boolean)
+  name: IsFalse(bool)
+  href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsFalse_System_Boolean_
+  commentId: M:BB84.Extensions.BooleanExtensions.IsFalse(System.Boolean)
+  name.vb: IsFalse(Boolean)
+  fullName: BB84.Extensions.BooleanExtensions.IsFalse(bool)
+  fullName.vb: BB84.Extensions.BooleanExtensions.IsFalse(Boolean)
+  nameWithType: BooleanExtensions.IsFalse(bool)
+  nameWithType.vb: BooleanExtensions.IsFalse(Boolean)
+- uid: BB84.Extensions.BooleanExtensions.IsFalse*
+  name: IsFalse
+  href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsFalse_
+  commentId: Overload:BB84.Extensions.BooleanExtensions.IsFalse
+  isSpec: "True"
+  fullName: BB84.Extensions.BooleanExtensions.IsFalse
+  nameWithType: BooleanExtensions.IsFalse
+- uid: BB84.Extensions.BooleanExtensions.IsTrue(System.Boolean)
+  name: IsTrue(bool)
+  href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsTrue_System_Boolean_
+  commentId: M:BB84.Extensions.BooleanExtensions.IsTrue(System.Boolean)
+  name.vb: IsTrue(Boolean)
+  fullName: BB84.Extensions.BooleanExtensions.IsTrue(bool)
+  fullName.vb: BB84.Extensions.BooleanExtensions.IsTrue(Boolean)
+  nameWithType: BooleanExtensions.IsTrue(bool)
+  nameWithType.vb: BooleanExtensions.IsTrue(Boolean)
+- uid: BB84.Extensions.BooleanExtensions.IsTrue*
+  name: IsTrue
+  href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsTrue_
+  commentId: Overload:BB84.Extensions.BooleanExtensions.IsTrue
+  isSpec: "True"
+  fullName: BB84.Extensions.BooleanExtensions.IsTrue
+  nameWithType: BooleanExtensions.IsTrue
+- uid: BB84.Extensions.ByteExtensions
+  name: ByteExtensions
+  href: api/BB84.Extensions.ByteExtensions.html
+  commentId: T:BB84.Extensions.ByteExtensions
+  fullName: BB84.Extensions.ByteExtensions
+  nameWithType: ByteExtensions
+- uid: BB84.Extensions.ByteExtensions.GetHexString(System.Byte[])
+  name: GetHexString(byte[])
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetHexString_System_Byte___
+  commentId: M:BB84.Extensions.ByteExtensions.GetHexString(System.Byte[])
+  name.vb: GetHexString(Byte())
+  fullName: BB84.Extensions.ByteExtensions.GetHexString(byte[])
+  fullName.vb: BB84.Extensions.ByteExtensions.GetHexString(Byte())
+  nameWithType: ByteExtensions.GetHexString(byte[])
+  nameWithType.vb: ByteExtensions.GetHexString(Byte())
+- uid: BB84.Extensions.ByteExtensions.GetHexString*
+  name: GetHexString
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetHexString_
+  commentId: Overload:BB84.Extensions.ByteExtensions.GetHexString
+  isSpec: "True"
+  fullName: BB84.Extensions.ByteExtensions.GetHexString
+  nameWithType: ByteExtensions.GetHexString
+- uid: BB84.Extensions.DateTimeExtensions
+  name: DateTimeExtensions
+  href: api/BB84.Extensions.DateTimeExtensions.html
+  commentId: T:BB84.Extensions.DateTimeExtensions
+  fullName: BB84.Extensions.DateTimeExtensions
+  nameWithType: DateTimeExtensions
+- uid: BB84.Extensions.DateTimeExtensions.EndOfMonth(System.DateTime)
+  name: EndOfMonth(DateTime)
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_EndOfMonth_System_DateTime_
+  commentId: M:BB84.Extensions.DateTimeExtensions.EndOfMonth(System.DateTime)
+  name.vb: EndOfMonth(Date)
+  fullName: BB84.Extensions.DateTimeExtensions.EndOfMonth(System.DateTime)
+  fullName.vb: BB84.Extensions.DateTimeExtensions.EndOfMonth(Date)
+  nameWithType: DateTimeExtensions.EndOfMonth(DateTime)
+  nameWithType.vb: DateTimeExtensions.EndOfMonth(Date)
+- uid: BB84.Extensions.DateTimeExtensions.EndOfMonth*
+  name: EndOfMonth
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_EndOfMonth_
+  commentId: Overload:BB84.Extensions.DateTimeExtensions.EndOfMonth
+  isSpec: "True"
+  fullName: BB84.Extensions.DateTimeExtensions.EndOfMonth
+  nameWithType: DateTimeExtensions.EndOfMonth
+- uid: BB84.Extensions.DateTimeExtensions.EndOfWeek(System.DateTime,System.DayOfWeek)
+  name: EndOfWeek(DateTime, DayOfWeek)
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_EndOfWeek_System_DateTime_System_DayOfWeek_
+  commentId: M:BB84.Extensions.DateTimeExtensions.EndOfWeek(System.DateTime,System.DayOfWeek)
+  name.vb: EndOfWeek(Date, DayOfWeek)
+  fullName: BB84.Extensions.DateTimeExtensions.EndOfWeek(System.DateTime, System.DayOfWeek)
+  fullName.vb: BB84.Extensions.DateTimeExtensions.EndOfWeek(Date, System.DayOfWeek)
+  nameWithType: DateTimeExtensions.EndOfWeek(DateTime, DayOfWeek)
+  nameWithType.vb: DateTimeExtensions.EndOfWeek(Date, DayOfWeek)
+- uid: BB84.Extensions.DateTimeExtensions.EndOfWeek*
+  name: EndOfWeek
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_EndOfWeek_
+  commentId: Overload:BB84.Extensions.DateTimeExtensions.EndOfWeek
+  isSpec: "True"
+  fullName: BB84.Extensions.DateTimeExtensions.EndOfWeek
+  nameWithType: DateTimeExtensions.EndOfWeek
+- uid: BB84.Extensions.DateTimeExtensions.StartOfMonth(System.DateTime)
+  name: StartOfMonth(DateTime)
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_StartOfMonth_System_DateTime_
+  commentId: M:BB84.Extensions.DateTimeExtensions.StartOfMonth(System.DateTime)
+  name.vb: StartOfMonth(Date)
+  fullName: BB84.Extensions.DateTimeExtensions.StartOfMonth(System.DateTime)
+  fullName.vb: BB84.Extensions.DateTimeExtensions.StartOfMonth(Date)
+  nameWithType: DateTimeExtensions.StartOfMonth(DateTime)
+  nameWithType.vb: DateTimeExtensions.StartOfMonth(Date)
+- uid: BB84.Extensions.DateTimeExtensions.StartOfMonth*
+  name: StartOfMonth
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_StartOfMonth_
+  commentId: Overload:BB84.Extensions.DateTimeExtensions.StartOfMonth
+  isSpec: "True"
+  fullName: BB84.Extensions.DateTimeExtensions.StartOfMonth
+  nameWithType: DateTimeExtensions.StartOfMonth
+- uid: BB84.Extensions.DateTimeExtensions.StartOfWeek(System.DateTime,System.DayOfWeek)
+  name: StartOfWeek(DateTime, DayOfWeek)
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_StartOfWeek_System_DateTime_System_DayOfWeek_
+  commentId: M:BB84.Extensions.DateTimeExtensions.StartOfWeek(System.DateTime,System.DayOfWeek)
+  name.vb: StartOfWeek(Date, DayOfWeek)
+  fullName: BB84.Extensions.DateTimeExtensions.StartOfWeek(System.DateTime, System.DayOfWeek)
+  fullName.vb: BB84.Extensions.DateTimeExtensions.StartOfWeek(Date, System.DayOfWeek)
+  nameWithType: DateTimeExtensions.StartOfWeek(DateTime, DayOfWeek)
+  nameWithType.vb: DateTimeExtensions.StartOfWeek(Date, DayOfWeek)
+- uid: BB84.Extensions.DateTimeExtensions.StartOfWeek*
+  name: StartOfWeek
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_StartOfWeek_
+  commentId: Overload:BB84.Extensions.DateTimeExtensions.StartOfWeek
+  isSpec: "True"
+  fullName: BB84.Extensions.DateTimeExtensions.StartOfWeek
+  nameWithType: DateTimeExtensions.StartOfWeek
+- uid: BB84.Extensions.EnumerableExtensions
+  name: EnumerableExtensions
+  href: api/BB84.Extensions.EnumerableExtensions.html
+  commentId: T:BB84.Extensions.EnumerableExtensions
+  fullName: BB84.Extensions.EnumerableExtensions
+  nameWithType: EnumerableExtensions
+- uid: BB84.Extensions.EnumerableExtensions.ForEach*
+  name: ForEach
+  href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_ForEach_
+  commentId: Overload:BB84.Extensions.EnumerableExtensions.ForEach
+  isSpec: "True"
+  fullName: BB84.Extensions.EnumerableExtensions.ForEach
+  nameWithType: EnumerableExtensions.ForEach
+- uid: BB84.Extensions.EnumerableExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  name: ForEach<T>(IEnumerable<T>, Action<T>)
+  href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  commentId: M:BB84.Extensions.EnumerableExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  name.vb: ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName: BB84.Extensions.EnumerableExtensions.ForEach<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T>)
+  fullName.vb: BB84.Extensions.EnumerableExtensions.ForEach(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
+  nameWithType: EnumerableExtensions.ForEach<T>(IEnumerable<T>, Action<T>)
+  nameWithType.vb: EnumerableExtensions.ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+- uid: BB84.Extensions.EnumeratorExtensions
+  name: EnumeratorExtensions
+  href: api/BB84.Extensions.EnumeratorExtensions.html
+  commentId: T:BB84.Extensions.EnumeratorExtensions
+  fullName: BB84.Extensions.EnumeratorExtensions
+  nameWithType: EnumeratorExtensions
+- uid: BB84.Extensions.EnumeratorExtensions.Count*
+  name: Count
+  href: api/BB84.Extensions.EnumeratorExtensions.html#BB84_Extensions_EnumeratorExtensions_Count_
+  commentId: Overload:BB84.Extensions.EnumeratorExtensions.Count
+  isSpec: "True"
+  fullName: BB84.Extensions.EnumeratorExtensions.Count
+  nameWithType: EnumeratorExtensions.Count
+- uid: BB84.Extensions.EnumeratorExtensions.Count``1(``0)
+  name: Count<T>(T)
+  href: api/BB84.Extensions.EnumeratorExtensions.html#BB84_Extensions_EnumeratorExtensions_Count__1___0_
+  commentId: M:BB84.Extensions.EnumeratorExtensions.Count``1(``0)
+  name.vb: Count(Of T)(T)
+  fullName: BB84.Extensions.EnumeratorExtensions.Count<T>(T)
+  fullName.vb: BB84.Extensions.EnumeratorExtensions.Count(Of T)(T)
+  nameWithType: EnumeratorExtensions.Count<T>(T)
+  nameWithType.vb: EnumeratorExtensions.Count(Of T)(T)
+- uid: BB84.Extensions.EnumeratorExtensions.ToInt*
+  name: ToInt
+  href: api/BB84.Extensions.EnumeratorExtensions.html#BB84_Extensions_EnumeratorExtensions_ToInt_
+  commentId: Overload:BB84.Extensions.EnumeratorExtensions.ToInt
+  isSpec: "True"
+  fullName: BB84.Extensions.EnumeratorExtensions.ToInt
+  nameWithType: EnumeratorExtensions.ToInt
+- uid: BB84.Extensions.EnumeratorExtensions.ToInt``1(``0)
+  name: ToInt<T>(T)
+  href: api/BB84.Extensions.EnumeratorExtensions.html#BB84_Extensions_EnumeratorExtensions_ToInt__1___0_
+  commentId: M:BB84.Extensions.EnumeratorExtensions.ToInt``1(``0)
+  name.vb: ToInt(Of T)(T)
+  fullName: BB84.Extensions.EnumeratorExtensions.ToInt<T>(T)
+  fullName.vb: BB84.Extensions.EnumeratorExtensions.ToInt(Of T)(T)
+  nameWithType: EnumeratorExtensions.ToInt<T>(T)
+  nameWithType.vb: EnumeratorExtensions.ToInt(Of T)(T)
+- uid: BB84.Extensions.EnumeratorExtensions.ToList*
+  name: ToList
+  href: api/BB84.Extensions.EnumeratorExtensions.html#BB84_Extensions_EnumeratorExtensions_ToList_
+  commentId: Overload:BB84.Extensions.EnumeratorExtensions.ToList
+  isSpec: "True"
+  fullName: BB84.Extensions.EnumeratorExtensions.ToList
+  nameWithType: EnumeratorExtensions.ToList
+- uid: BB84.Extensions.EnumeratorExtensions.ToList``1(``0)
+  name: ToList<T>(T)
+  href: api/BB84.Extensions.EnumeratorExtensions.html#BB84_Extensions_EnumeratorExtensions_ToList__1___0_
+  commentId: M:BB84.Extensions.EnumeratorExtensions.ToList``1(``0)
+  name.vb: ToList(Of T)(T)
+  fullName: BB84.Extensions.EnumeratorExtensions.ToList<T>(T)
+  fullName.vb: BB84.Extensions.EnumeratorExtensions.ToList(Of T)(T)
+  nameWithType: EnumeratorExtensions.ToList<T>(T)
+  nameWithType.vb: EnumeratorExtensions.ToList(Of T)(T)
+- uid: BB84.Extensions.IntegerExtensions
+  name: IntegerExtensions
+  href: api/BB84.Extensions.IntegerExtensions.html
+  commentId: T:BB84.Extensions.IntegerExtensions
+  fullName: BB84.Extensions.IntegerExtensions
+  nameWithType: IntegerExtensions
+- uid: BB84.Extensions.IntegerExtensions.ArrayDown(System.Int32,System.Int32)
+  name: ArrayDown(int, int)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_ArrayDown_System_Int32_System_Int32_
+  commentId: M:BB84.Extensions.IntegerExtensions.ArrayDown(System.Int32,System.Int32)
+  name.vb: ArrayDown(Integer, Integer)
+  fullName: BB84.Extensions.IntegerExtensions.ArrayDown(int, int)
+  fullName.vb: BB84.Extensions.IntegerExtensions.ArrayDown(Integer, Integer)
+  nameWithType: IntegerExtensions.ArrayDown(int, int)
+  nameWithType.vb: IntegerExtensions.ArrayDown(Integer, Integer)
+- uid: BB84.Extensions.IntegerExtensions.ArrayDown*
+  name: ArrayDown
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_ArrayDown_
+  commentId: Overload:BB84.Extensions.IntegerExtensions.ArrayDown
+  isSpec: "True"
+  fullName: BB84.Extensions.IntegerExtensions.ArrayDown
+  nameWithType: IntegerExtensions.ArrayDown
+- uid: BB84.Extensions.IntegerExtensions.ArrayUp(System.Int32,System.Int32)
+  name: ArrayUp(int, int)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_ArrayUp_System_Int32_System_Int32_
+  commentId: M:BB84.Extensions.IntegerExtensions.ArrayUp(System.Int32,System.Int32)
+  name.vb: ArrayUp(Integer, Integer)
+  fullName: BB84.Extensions.IntegerExtensions.ArrayUp(int, int)
+  fullName.vb: BB84.Extensions.IntegerExtensions.ArrayUp(Integer, Integer)
+  nameWithType: IntegerExtensions.ArrayUp(int, int)
+  nameWithType.vb: IntegerExtensions.ArrayUp(Integer, Integer)
+- uid: BB84.Extensions.IntegerExtensions.ArrayUp*
+  name: ArrayUp
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_ArrayUp_
+  commentId: Overload:BB84.Extensions.IntegerExtensions.ArrayUp
+  isSpec: "True"
+  fullName: BB84.Extensions.IntegerExtensions.ArrayUp
+  nameWithType: IntegerExtensions.ArrayUp
+- uid: BB84.Extensions.IntegerExtensions.For(System.Int32,System.Int32,System.Action{System.Int32})
+  name: For(int, int, Action<int>)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_For_System_Int32_System_Int32_System_Action_System_Int32__
+  commentId: M:BB84.Extensions.IntegerExtensions.For(System.Int32,System.Int32,System.Action{System.Int32})
+  name.vb: For(Integer, Integer, Action(Of Integer))
+  fullName: BB84.Extensions.IntegerExtensions.For(int, int, System.Action<int>)
+  fullName.vb: BB84.Extensions.IntegerExtensions.For(Integer, Integer, System.Action(Of Integer))
+  nameWithType: IntegerExtensions.For(int, int, Action<int>)
+  nameWithType.vb: IntegerExtensions.For(Integer, Integer, Action(Of Integer))
+- uid: BB84.Extensions.IntegerExtensions.For*
+  name: For
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_For_
+  commentId: Overload:BB84.Extensions.IntegerExtensions.For
+  isSpec: "True"
+  fullName: BB84.Extensions.IntegerExtensions.For
+  nameWithType: IntegerExtensions.For
+- uid: BB84.Extensions.ListExtensions
+  name: ListExtensions
+  href: api/BB84.Extensions.ListExtensions.html
+  commentId: T:BB84.Extensions.ListExtensions
+  fullName: BB84.Extensions.ListExtensions
+  nameWithType: ListExtensions
+- uid: BB84.Extensions.ListExtensions.AddIfNotNull*
+  name: AddIfNotNull
+  href: api/BB84.Extensions.ListExtensions.html#BB84_Extensions_ListExtensions_AddIfNotNull_
+  commentId: Overload:BB84.Extensions.ListExtensions.AddIfNotNull
+  isSpec: "True"
+  fullName: BB84.Extensions.ListExtensions.AddIfNotNull
+  nameWithType: ListExtensions.AddIfNotNull
+- uid: BB84.Extensions.ListExtensions.AddIfNotNull``1(System.Collections.Generic.IList{``0},``0)
+  name: AddIfNotNull<T>(IList<T>, T)
+  href: api/BB84.Extensions.ListExtensions.html#BB84_Extensions_ListExtensions_AddIfNotNull__1_System_Collections_Generic_IList___0____0_
+  commentId: M:BB84.Extensions.ListExtensions.AddIfNotNull``1(System.Collections.Generic.IList{``0},``0)
+  name.vb: AddIfNotNull(Of T)(IList(Of T), T)
+  fullName: BB84.Extensions.ListExtensions.AddIfNotNull<T>(System.Collections.Generic.IList<T>, T)
+  fullName.vb: BB84.Extensions.ListExtensions.AddIfNotNull(Of T)(System.Collections.Generic.IList(Of T), T)
+  nameWithType: ListExtensions.AddIfNotNull<T>(IList<T>, T)
+  nameWithType.vb: ListExtensions.AddIfNotNull(Of T)(IList(Of T), T)
+- uid: BB84.Extensions.ListExtensions.AddRangeIfNotNull*
+  name: AddRangeIfNotNull
+  href: api/BB84.Extensions.ListExtensions.html#BB84_Extensions_ListExtensions_AddRangeIfNotNull_
+  commentId: Overload:BB84.Extensions.ListExtensions.AddRangeIfNotNull
+  isSpec: "True"
+  fullName: BB84.Extensions.ListExtensions.AddRangeIfNotNull
+  nameWithType: ListExtensions.AddRangeIfNotNull
+- uid: BB84.Extensions.ListExtensions.AddRangeIfNotNull``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0})
+  name: AddRangeIfNotNull<T>(IList<T>, IEnumerable<T>)
+  href: api/BB84.Extensions.ListExtensions.html#BB84_Extensions_ListExtensions_AddRangeIfNotNull__1_System_Collections_Generic_IList___0__System_Collections_Generic_IEnumerable___0__
+  commentId: M:BB84.Extensions.ListExtensions.AddRangeIfNotNull``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0})
+  name.vb: AddRangeIfNotNull(Of T)(IList(Of T), IEnumerable(Of T))
+  fullName: BB84.Extensions.ListExtensions.AddRangeIfNotNull<T>(System.Collections.Generic.IList<T>, System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: BB84.Extensions.ListExtensions.AddRangeIfNotNull(Of T)(System.Collections.Generic.IList(Of T), System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: ListExtensions.AddRangeIfNotNull<T>(IList<T>, IEnumerable<T>)
+  nameWithType.vb: ListExtensions.AddRangeIfNotNull(Of T)(IList(Of T), IEnumerable(Of T))
+- uid: BB84.Extensions.ObjectExtensions
+  name: ObjectExtensions
+  href: api/BB84.Extensions.ObjectExtensions.html
+  commentId: T:BB84.Extensions.ObjectExtensions
+  fullName: BB84.Extensions.ObjectExtensions
+  nameWithType: ObjectExtensions
+- uid: BB84.Extensions.ObjectExtensions.ToBooleanInvariant(System.Object)
+  name: ToBooleanInvariant(object?)
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToBooleanInvariant_System_Object_
+  commentId: M:BB84.Extensions.ObjectExtensions.ToBooleanInvariant(System.Object)
+  name.vb: ToBooleanInvariant(Object)
+  fullName: BB84.Extensions.ObjectExtensions.ToBooleanInvariant(object?)
+  fullName.vb: BB84.Extensions.ObjectExtensions.ToBooleanInvariant(Object)
+  nameWithType: ObjectExtensions.ToBooleanInvariant(object?)
+  nameWithType.vb: ObjectExtensions.ToBooleanInvariant(Object)
+- uid: BB84.Extensions.ObjectExtensions.ToBooleanInvariant*
+  name: ToBooleanInvariant
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToBooleanInvariant_
+  commentId: Overload:BB84.Extensions.ObjectExtensions.ToBooleanInvariant
+  isSpec: "True"
+  fullName: BB84.Extensions.ObjectExtensions.ToBooleanInvariant
+  nameWithType: ObjectExtensions.ToBooleanInvariant
+- uid: BB84.Extensions.ObjectExtensions.ToDateTimeInvariant(System.Object)
+  name: ToDateTimeInvariant(object?)
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToDateTimeInvariant_System_Object_
+  commentId: M:BB84.Extensions.ObjectExtensions.ToDateTimeInvariant(System.Object)
+  name.vb: ToDateTimeInvariant(Object)
+  fullName: BB84.Extensions.ObjectExtensions.ToDateTimeInvariant(object?)
+  fullName.vb: BB84.Extensions.ObjectExtensions.ToDateTimeInvariant(Object)
+  nameWithType: ObjectExtensions.ToDateTimeInvariant(object?)
+  nameWithType.vb: ObjectExtensions.ToDateTimeInvariant(Object)
+- uid: BB84.Extensions.ObjectExtensions.ToDateTimeInvariant*
+  name: ToDateTimeInvariant
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToDateTimeInvariant_
+  commentId: Overload:BB84.Extensions.ObjectExtensions.ToDateTimeInvariant
+  isSpec: "True"
+  fullName: BB84.Extensions.ObjectExtensions.ToDateTimeInvariant
+  nameWithType: ObjectExtensions.ToDateTimeInvariant
+- uid: BB84.Extensions.ObjectExtensions.ToDecimalInvariant(System.Object)
+  name: ToDecimalInvariant(object?)
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToDecimalInvariant_System_Object_
+  commentId: M:BB84.Extensions.ObjectExtensions.ToDecimalInvariant(System.Object)
+  name.vb: ToDecimalInvariant(Object)
+  fullName: BB84.Extensions.ObjectExtensions.ToDecimalInvariant(object?)
+  fullName.vb: BB84.Extensions.ObjectExtensions.ToDecimalInvariant(Object)
+  nameWithType: ObjectExtensions.ToDecimalInvariant(object?)
+  nameWithType.vb: ObjectExtensions.ToDecimalInvariant(Object)
+- uid: BB84.Extensions.ObjectExtensions.ToDecimalInvariant*
+  name: ToDecimalInvariant
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToDecimalInvariant_
+  commentId: Overload:BB84.Extensions.ObjectExtensions.ToDecimalInvariant
+  isSpec: "True"
+  fullName: BB84.Extensions.ObjectExtensions.ToDecimalInvariant
+  nameWithType: ObjectExtensions.ToDecimalInvariant
+- uid: BB84.Extensions.ObjectExtensions.ToDoubleInvariant(System.Object)
+  name: ToDoubleInvariant(object?)
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToDoubleInvariant_System_Object_
+  commentId: M:BB84.Extensions.ObjectExtensions.ToDoubleInvariant(System.Object)
+  name.vb: ToDoubleInvariant(Object)
+  fullName: BB84.Extensions.ObjectExtensions.ToDoubleInvariant(object?)
+  fullName.vb: BB84.Extensions.ObjectExtensions.ToDoubleInvariant(Object)
+  nameWithType: ObjectExtensions.ToDoubleInvariant(object?)
+  nameWithType.vb: ObjectExtensions.ToDoubleInvariant(Object)
+- uid: BB84.Extensions.ObjectExtensions.ToDoubleInvariant*
+  name: ToDoubleInvariant
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToDoubleInvariant_
+  commentId: Overload:BB84.Extensions.ObjectExtensions.ToDoubleInvariant
+  isSpec: "True"
+  fullName: BB84.Extensions.ObjectExtensions.ToDoubleInvariant
+  nameWithType: ObjectExtensions.ToDoubleInvariant
+- uid: BB84.Extensions.ObjectExtensions.ToInt16Invariant(System.Object)
+  name: ToInt16Invariant(object?)
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToInt16Invariant_System_Object_
+  commentId: M:BB84.Extensions.ObjectExtensions.ToInt16Invariant(System.Object)
+  name.vb: ToInt16Invariant(Object)
+  fullName: BB84.Extensions.ObjectExtensions.ToInt16Invariant(object?)
+  fullName.vb: BB84.Extensions.ObjectExtensions.ToInt16Invariant(Object)
+  nameWithType: ObjectExtensions.ToInt16Invariant(object?)
+  nameWithType.vb: ObjectExtensions.ToInt16Invariant(Object)
+- uid: BB84.Extensions.ObjectExtensions.ToInt16Invariant*
+  name: ToInt16Invariant
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToInt16Invariant_
+  commentId: Overload:BB84.Extensions.ObjectExtensions.ToInt16Invariant
+  isSpec: "True"
+  fullName: BB84.Extensions.ObjectExtensions.ToInt16Invariant
+  nameWithType: ObjectExtensions.ToInt16Invariant
+- uid: BB84.Extensions.ObjectExtensions.ToInt32Invariant(System.Object)
+  name: ToInt32Invariant(object?)
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToInt32Invariant_System_Object_
+  commentId: M:BB84.Extensions.ObjectExtensions.ToInt32Invariant(System.Object)
+  name.vb: ToInt32Invariant(Object)
+  fullName: BB84.Extensions.ObjectExtensions.ToInt32Invariant(object?)
+  fullName.vb: BB84.Extensions.ObjectExtensions.ToInt32Invariant(Object)
+  nameWithType: ObjectExtensions.ToInt32Invariant(object?)
+  nameWithType.vb: ObjectExtensions.ToInt32Invariant(Object)
+- uid: BB84.Extensions.ObjectExtensions.ToInt32Invariant*
+  name: ToInt32Invariant
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToInt32Invariant_
+  commentId: Overload:BB84.Extensions.ObjectExtensions.ToInt32Invariant
+  isSpec: "True"
+  fullName: BB84.Extensions.ObjectExtensions.ToInt32Invariant
+  nameWithType: ObjectExtensions.ToInt32Invariant
+- uid: BB84.Extensions.ObjectExtensions.ToInt64Invariant(System.Object)
+  name: ToInt64Invariant(object?)
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToInt64Invariant_System_Object_
+  commentId: M:BB84.Extensions.ObjectExtensions.ToInt64Invariant(System.Object)
+  name.vb: ToInt64Invariant(Object)
+  fullName: BB84.Extensions.ObjectExtensions.ToInt64Invariant(object?)
+  fullName.vb: BB84.Extensions.ObjectExtensions.ToInt64Invariant(Object)
+  nameWithType: ObjectExtensions.ToInt64Invariant(object?)
+  nameWithType.vb: ObjectExtensions.ToInt64Invariant(Object)
+- uid: BB84.Extensions.ObjectExtensions.ToInt64Invariant*
+  name: ToInt64Invariant
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToInt64Invariant_
+  commentId: Overload:BB84.Extensions.ObjectExtensions.ToInt64Invariant
+  isSpec: "True"
+  fullName: BB84.Extensions.ObjectExtensions.ToInt64Invariant
+  nameWithType: ObjectExtensions.ToInt64Invariant
+- uid: BB84.Extensions.ObjectExtensions.ToStringInvariant(System.Object)
+  name: ToStringInvariant(object?)
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToStringInvariant_System_Object_
+  commentId: M:BB84.Extensions.ObjectExtensions.ToStringInvariant(System.Object)
+  name.vb: ToStringInvariant(Object)
+  fullName: BB84.Extensions.ObjectExtensions.ToStringInvariant(object?)
+  fullName.vb: BB84.Extensions.ObjectExtensions.ToStringInvariant(Object)
+  nameWithType: ObjectExtensions.ToStringInvariant(object?)
+  nameWithType.vb: ObjectExtensions.ToStringInvariant(Object)
+- uid: BB84.Extensions.ObjectExtensions.ToStringInvariant*
+  name: ToStringInvariant
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToStringInvariant_
+  commentId: Overload:BB84.Extensions.ObjectExtensions.ToStringInvariant
+  isSpec: "True"
+  fullName: BB84.Extensions.ObjectExtensions.ToStringInvariant
+  nameWithType: ObjectExtensions.ToStringInvariant
+- uid: BB84.Extensions.Serialization
+  name: BB84.Extensions.Serialization
+  href: api/BB84.Extensions.Serialization.html
+  commentId: N:BB84.Extensions.Serialization
+  fullName: BB84.Extensions.Serialization
+  nameWithType: BB84.Extensions.Serialization
+- uid: BB84.Extensions.Serialization.JsonExtensions
+  name: JsonExtensions
+  href: api/BB84.Extensions.Serialization.JsonExtensions.html
+  commentId: T:BB84.Extensions.Serialization.JsonExtensions
+  fullName: BB84.Extensions.Serialization.JsonExtensions
+  nameWithType: JsonExtensions
+- uid: BB84.Extensions.Serialization.JsonExtensions.FromJson*
+  name: FromJson
+  href: api/BB84.Extensions.Serialization.JsonExtensions.html#BB84_Extensions_Serialization_JsonExtensions_FromJson_
+  commentId: Overload:BB84.Extensions.Serialization.JsonExtensions.FromJson
+  isSpec: "True"
+  fullName: BB84.Extensions.Serialization.JsonExtensions.FromJson
+  nameWithType: JsonExtensions.FromJson
+- uid: BB84.Extensions.Serialization.JsonExtensions.FromJson``1(System.String,System.Text.Json.JsonSerializerOptions)
+  name: FromJson<T>(string, JsonSerializerOptions?)
+  href: api/BB84.Extensions.Serialization.JsonExtensions.html#BB84_Extensions_Serialization_JsonExtensions_FromJson__1_System_String_System_Text_Json_JsonSerializerOptions_
+  commentId: M:BB84.Extensions.Serialization.JsonExtensions.FromJson``1(System.String,System.Text.Json.JsonSerializerOptions)
+  name.vb: FromJson(Of T)(String, JsonSerializerOptions)
+  fullName: BB84.Extensions.Serialization.JsonExtensions.FromJson<T>(string, System.Text.Json.JsonSerializerOptions?)
+  fullName.vb: BB84.Extensions.Serialization.JsonExtensions.FromJson(Of T)(String, System.Text.Json.JsonSerializerOptions)
+  nameWithType: JsonExtensions.FromJson<T>(string, JsonSerializerOptions?)
+  nameWithType.vb: JsonExtensions.FromJson(Of T)(String, JsonSerializerOptions)
+- uid: BB84.Extensions.Serialization.JsonExtensions.ToJson*
+  name: ToJson
+  href: api/BB84.Extensions.Serialization.JsonExtensions.html#BB84_Extensions_Serialization_JsonExtensions_ToJson_
+  commentId: Overload:BB84.Extensions.Serialization.JsonExtensions.ToJson
+  isSpec: "True"
+  fullName: BB84.Extensions.Serialization.JsonExtensions.ToJson
+  nameWithType: JsonExtensions.ToJson
+- uid: BB84.Extensions.Serialization.JsonExtensions.ToJson``1(``0,System.Text.Json.JsonSerializerOptions)
+  name: ToJson<T>(T, JsonSerializerOptions?)
+  href: api/BB84.Extensions.Serialization.JsonExtensions.html#BB84_Extensions_Serialization_JsonExtensions_ToJson__1___0_System_Text_Json_JsonSerializerOptions_
+  commentId: M:BB84.Extensions.Serialization.JsonExtensions.ToJson``1(``0,System.Text.Json.JsonSerializerOptions)
+  name.vb: ToJson(Of T)(T, JsonSerializerOptions)
+  fullName: BB84.Extensions.Serialization.JsonExtensions.ToJson<T>(T, System.Text.Json.JsonSerializerOptions?)
+  fullName.vb: BB84.Extensions.Serialization.JsonExtensions.ToJson(Of T)(T, System.Text.Json.JsonSerializerOptions)
+  nameWithType: JsonExtensions.ToJson<T>(T, JsonSerializerOptions?)
+  nameWithType.vb: JsonExtensions.ToJson(Of T)(T, JsonSerializerOptions)
+- uid: BB84.Extensions.Serialization.XmlExtension
+  name: XmlExtension
+  href: api/BB84.Extensions.Serialization.XmlExtension.html
+  commentId: T:BB84.Extensions.Serialization.XmlExtension
+  fullName: BB84.Extensions.Serialization.XmlExtension
+  nameWithType: XmlExtension
+- uid: BB84.Extensions.Serialization.XmlExtension.FromXml*
+  name: FromXml
+  href: api/BB84.Extensions.Serialization.XmlExtension.html#BB84_Extensions_Serialization_XmlExtension_FromXml_
+  commentId: Overload:BB84.Extensions.Serialization.XmlExtension.FromXml
+  isSpec: "True"
+  fullName: BB84.Extensions.Serialization.XmlExtension.FromXml
+  nameWithType: XmlExtension.FromXml
+- uid: BB84.Extensions.Serialization.XmlExtension.FromXml``1(System.String,System.Xml.XmlReaderSettings)
+  name: FromXml<T>(string, XmlReaderSettings?)
+  href: api/BB84.Extensions.Serialization.XmlExtension.html#BB84_Extensions_Serialization_XmlExtension_FromXml__1_System_String_System_Xml_XmlReaderSettings_
+  commentId: M:BB84.Extensions.Serialization.XmlExtension.FromXml``1(System.String,System.Xml.XmlReaderSettings)
+  name.vb: FromXml(Of T)(String, XmlReaderSettings)
+  fullName: BB84.Extensions.Serialization.XmlExtension.FromXml<T>(string, System.Xml.XmlReaderSettings?)
+  fullName.vb: BB84.Extensions.Serialization.XmlExtension.FromXml(Of T)(String, System.Xml.XmlReaderSettings)
+  nameWithType: XmlExtension.FromXml<T>(string, XmlReaderSettings?)
+  nameWithType.vb: XmlExtension.FromXml(Of T)(String, XmlReaderSettings)
+- uid: BB84.Extensions.Serialization.XmlExtension.ToXml*
+  name: ToXml
+  href: api/BB84.Extensions.Serialization.XmlExtension.html#BB84_Extensions_Serialization_XmlExtension_ToXml_
+  commentId: Overload:BB84.Extensions.Serialization.XmlExtension.ToXml
+  isSpec: "True"
+  fullName: BB84.Extensions.Serialization.XmlExtension.ToXml
+  nameWithType: XmlExtension.ToXml
+- uid: BB84.Extensions.Serialization.XmlExtension.ToXml``1(``0,System.Xml.Serialization.XmlSerializerNamespaces,System.Xml.XmlWriterSettings)
+  name: ToXml<T>(T, XmlSerializerNamespaces?, XmlWriterSettings?)
+  href: api/BB84.Extensions.Serialization.XmlExtension.html#BB84_Extensions_Serialization_XmlExtension_ToXml__1___0_System_Xml_Serialization_XmlSerializerNamespaces_System_Xml_XmlWriterSettings_
+  commentId: M:BB84.Extensions.Serialization.XmlExtension.ToXml``1(``0,System.Xml.Serialization.XmlSerializerNamespaces,System.Xml.XmlWriterSettings)
+  name.vb: ToXml(Of T)(T, XmlSerializerNamespaces, XmlWriterSettings)
+  fullName: BB84.Extensions.Serialization.XmlExtension.ToXml<T>(T, System.Xml.Serialization.XmlSerializerNamespaces?, System.Xml.XmlWriterSettings?)
+  fullName.vb: BB84.Extensions.Serialization.XmlExtension.ToXml(Of T)(T, System.Xml.Serialization.XmlSerializerNamespaces, System.Xml.XmlWriterSettings)
+  nameWithType: XmlExtension.ToXml<T>(T, XmlSerializerNamespaces?, XmlWriterSettings?)
+  nameWithType.vb: XmlExtension.ToXml(Of T)(T, XmlSerializerNamespaces, XmlWriterSettings)
+- uid: BB84.Extensions.StringExtensions
+  name: StringExtensions
+  href: api/BB84.Extensions.StringExtensions.html
+  commentId: T:BB84.Extensions.StringExtensions
+  fullName: BB84.Extensions.StringExtensions
+  nameWithType: StringExtensions
+- uid: BB84.Extensions.StringExtensions.EqualsCaseSensitive(System.String,System.String)
+  name: EqualsCaseSensitive(string, string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_EqualsCaseSensitive_System_String_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.EqualsCaseSensitive(System.String,System.String)
+  name.vb: EqualsCaseSensitive(String, String)
+  fullName: BB84.Extensions.StringExtensions.EqualsCaseSensitive(string, string)
+  fullName.vb: BB84.Extensions.StringExtensions.EqualsCaseSensitive(String, String)
+  nameWithType: StringExtensions.EqualsCaseSensitive(string, string)
+  nameWithType.vb: StringExtensions.EqualsCaseSensitive(String, String)
+- uid: BB84.Extensions.StringExtensions.EqualsCaseSensitive*
+  name: EqualsCaseSensitive
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_EqualsCaseSensitive_
+  commentId: Overload:BB84.Extensions.StringExtensions.EqualsCaseSensitive
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.EqualsCaseSensitive
+  nameWithType: StringExtensions.EqualsCaseSensitive
+- uid: BB84.Extensions.StringExtensions.EqualsIgnoreCase(System.String,System.String)
+  name: EqualsIgnoreCase(string, string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_EqualsIgnoreCase_System_String_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.EqualsIgnoreCase(System.String,System.String)
+  name.vb: EqualsIgnoreCase(String, String)
+  fullName: BB84.Extensions.StringExtensions.EqualsIgnoreCase(string, string)
+  fullName.vb: BB84.Extensions.StringExtensions.EqualsIgnoreCase(String, String)
+  nameWithType: StringExtensions.EqualsIgnoreCase(string, string)
+  nameWithType.vb: StringExtensions.EqualsIgnoreCase(String, String)
+- uid: BB84.Extensions.StringExtensions.EqualsIgnoreCase*
+  name: EqualsIgnoreCase
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_EqualsIgnoreCase_
+  commentId: Overload:BB84.Extensions.StringExtensions.EqualsIgnoreCase
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.EqualsIgnoreCase
+  nameWithType: StringExtensions.EqualsIgnoreCase
+- uid: BB84.Extensions.StringExtensions.Format(System.String,System.IFormatProvider,System.Object[])
+  name: Format(string, IFormatProvider, params object[])
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_Format_System_String_System_IFormatProvider_System_Object___
+  commentId: M:BB84.Extensions.StringExtensions.Format(System.String,System.IFormatProvider,System.Object[])
+  name.vb: Format(String, IFormatProvider, ParamArray Object())
+  fullName: BB84.Extensions.StringExtensions.Format(string, System.IFormatProvider, params object[])
+  fullName.vb: BB84.Extensions.StringExtensions.Format(String, System.IFormatProvider, ParamArray Object())
+  nameWithType: StringExtensions.Format(string, IFormatProvider, params object[])
+  nameWithType.vb: StringExtensions.Format(String, IFormatProvider, ParamArray Object())
+- uid: BB84.Extensions.StringExtensions.Format*
+  name: Format
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_Format_
+  commentId: Overload:BB84.Extensions.StringExtensions.Format
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.Format
+  nameWithType: StringExtensions.Format
+- uid: BB84.Extensions.StringExtensions.FormatInvariant(System.String,System.Object[])
+  name: FormatInvariant(string, params object[])
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_FormatInvariant_System_String_System_Object___
+  commentId: M:BB84.Extensions.StringExtensions.FormatInvariant(System.String,System.Object[])
+  name.vb: FormatInvariant(String, ParamArray Object())
+  fullName: BB84.Extensions.StringExtensions.FormatInvariant(string, params object[])
+  fullName.vb: BB84.Extensions.StringExtensions.FormatInvariant(String, ParamArray Object())
+  nameWithType: StringExtensions.FormatInvariant(string, params object[])
+  nameWithType.vb: StringExtensions.FormatInvariant(String, ParamArray Object())
+- uid: BB84.Extensions.StringExtensions.FormatInvariant*
+  name: FormatInvariant
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_FormatInvariant_
+  commentId: Overload:BB84.Extensions.StringExtensions.FormatInvariant
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.FormatInvariant
+  nameWithType: StringExtensions.FormatInvariant
+- uid: BB84.Extensions.StringExtensions.FromBase64(System.String,System.Text.Encoding)
+  name: FromBase64(string, Encoding?)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_FromBase64_System_String_System_Text_Encoding_
+  commentId: M:BB84.Extensions.StringExtensions.FromBase64(System.String,System.Text.Encoding)
+  name.vb: FromBase64(String, Encoding)
+  fullName: BB84.Extensions.StringExtensions.FromBase64(string, System.Text.Encoding?)
+  fullName.vb: BB84.Extensions.StringExtensions.FromBase64(String, System.Text.Encoding)
+  nameWithType: StringExtensions.FromBase64(string, Encoding?)
+  nameWithType.vb: StringExtensions.FromBase64(String, Encoding)
+- uid: BB84.Extensions.StringExtensions.FromBase64*
+  name: FromBase64
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_FromBase64_
+  commentId: Overload:BB84.Extensions.StringExtensions.FromBase64
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.FromBase64
+  nameWithType: StringExtensions.FromBase64
+- uid: BB84.Extensions.StringExtensions.GetMd5Ascii(System.String)
+  name: GetMd5Ascii(string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetMd5Ascii_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.GetMd5Ascii(System.String)
+  name.vb: GetMd5Ascii(String)
+  fullName: BB84.Extensions.StringExtensions.GetMd5Ascii(string)
+  fullName.vb: BB84.Extensions.StringExtensions.GetMd5Ascii(String)
+  nameWithType: StringExtensions.GetMd5Ascii(string)
+  nameWithType.vb: StringExtensions.GetMd5Ascii(String)
+- uid: BB84.Extensions.StringExtensions.GetMd5Ascii*
+  name: GetMd5Ascii
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetMd5Ascii_
+  commentId: Overload:BB84.Extensions.StringExtensions.GetMd5Ascii
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.GetMd5Ascii
+  nameWithType: StringExtensions.GetMd5Ascii
+- uid: BB84.Extensions.StringExtensions.GetMd5Unicode(System.String)
+  name: GetMd5Unicode(string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetMd5Unicode_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.GetMd5Unicode(System.String)
+  name.vb: GetMd5Unicode(String)
+  fullName: BB84.Extensions.StringExtensions.GetMd5Unicode(string)
+  fullName.vb: BB84.Extensions.StringExtensions.GetMd5Unicode(String)
+  nameWithType: StringExtensions.GetMd5Unicode(string)
+  nameWithType.vb: StringExtensions.GetMd5Unicode(String)
+- uid: BB84.Extensions.StringExtensions.GetMd5Unicode*
+  name: GetMd5Unicode
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetMd5Unicode_
+  commentId: Overload:BB84.Extensions.StringExtensions.GetMd5Unicode
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.GetMd5Unicode
+  nameWithType: StringExtensions.GetMd5Unicode
+- uid: BB84.Extensions.StringExtensions.GetMd5Utf8(System.String)
+  name: GetMd5Utf8(string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetMd5Utf8_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.GetMd5Utf8(System.String)
+  name.vb: GetMd5Utf8(String)
+  fullName: BB84.Extensions.StringExtensions.GetMd5Utf8(string)
+  fullName.vb: BB84.Extensions.StringExtensions.GetMd5Utf8(String)
+  nameWithType: StringExtensions.GetMd5Utf8(string)
+  nameWithType.vb: StringExtensions.GetMd5Utf8(String)
+- uid: BB84.Extensions.StringExtensions.GetMd5Utf8*
+  name: GetMd5Utf8
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetMd5Utf8_
+  commentId: Overload:BB84.Extensions.StringExtensions.GetMd5Utf8
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.GetMd5Utf8
+  nameWithType: StringExtensions.GetMd5Utf8
+- uid: BB84.Extensions.StringExtensions.IsNull(System.String)
+  name: IsNull(string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNull_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.IsNull(System.String)
+  name.vb: IsNull(String)
+  fullName: BB84.Extensions.StringExtensions.IsNull(string)
+  fullName.vb: BB84.Extensions.StringExtensions.IsNull(String)
+  nameWithType: StringExtensions.IsNull(string)
+  nameWithType.vb: StringExtensions.IsNull(String)
+- uid: BB84.Extensions.StringExtensions.IsNull*
+  name: IsNull
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNull_
+  commentId: Overload:BB84.Extensions.StringExtensions.IsNull
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.IsNull
+  nameWithType: StringExtensions.IsNull
+- uid: BB84.Extensions.StringExtensions.IsNullOrEmpty(System.String)
+  name: IsNullOrEmpty(string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNullOrEmpty_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.IsNullOrEmpty(System.String)
+  name.vb: IsNullOrEmpty(String)
+  fullName: BB84.Extensions.StringExtensions.IsNullOrEmpty(string)
+  fullName.vb: BB84.Extensions.StringExtensions.IsNullOrEmpty(String)
+  nameWithType: StringExtensions.IsNullOrEmpty(string)
+  nameWithType.vb: StringExtensions.IsNullOrEmpty(String)
+- uid: BB84.Extensions.StringExtensions.IsNullOrEmpty*
+  name: IsNullOrEmpty
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNullOrEmpty_
+  commentId: Overload:BB84.Extensions.StringExtensions.IsNullOrEmpty
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.IsNullOrEmpty
+  nameWithType: StringExtensions.IsNullOrEmpty
+- uid: BB84.Extensions.StringExtensions.IsNullOrWhiteSpace(System.String)
+  name: IsNullOrWhiteSpace(string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNullOrWhiteSpace_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.IsNullOrWhiteSpace(System.String)
+  name.vb: IsNullOrWhiteSpace(String)
+  fullName: BB84.Extensions.StringExtensions.IsNullOrWhiteSpace(string)
+  fullName.vb: BB84.Extensions.StringExtensions.IsNullOrWhiteSpace(String)
+  nameWithType: StringExtensions.IsNullOrWhiteSpace(string)
+  nameWithType.vb: StringExtensions.IsNullOrWhiteSpace(String)
+- uid: BB84.Extensions.StringExtensions.IsNullOrWhiteSpace*
+  name: IsNullOrWhiteSpace
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNullOrWhiteSpace_
+  commentId: Overload:BB84.Extensions.StringExtensions.IsNullOrWhiteSpace
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.IsNullOrWhiteSpace
+  nameWithType: StringExtensions.IsNullOrWhiteSpace
+- uid: BB84.Extensions.StringExtensions.ToBase64(System.String,System.Text.Encoding)
+  name: ToBase64(string, Encoding?)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_ToBase64_System_String_System_Text_Encoding_
+  commentId: M:BB84.Extensions.StringExtensions.ToBase64(System.String,System.Text.Encoding)
+  name.vb: ToBase64(String, Encoding)
+  fullName: BB84.Extensions.StringExtensions.ToBase64(string, System.Text.Encoding?)
+  fullName.vb: BB84.Extensions.StringExtensions.ToBase64(String, System.Text.Encoding)
+  nameWithType: StringExtensions.ToBase64(string, Encoding?)
+  nameWithType.vb: StringExtensions.ToBase64(String, Encoding)
+- uid: BB84.Extensions.StringExtensions.ToBase64*
+  name: ToBase64
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_ToBase64_
+  commentId: Overload:BB84.Extensions.StringExtensions.ToBase64
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.ToBase64
+  nameWithType: StringExtensions.ToBase64
