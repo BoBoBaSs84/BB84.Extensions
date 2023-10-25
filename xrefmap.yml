@@ -549,6 +549,38 @@ references:
   commentId: T:BB84.Extensions.StringExtensions
   fullName: BB84.Extensions.StringExtensions
   nameWithType: StringExtensions
+- uid: BB84.Extensions.StringExtensions.Compress(System.String,System.IO.Compression.CompressionLevel)
+  name: Compress(string, CompressionLevel)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_Compress_System_String_System_IO_Compression_CompressionLevel_
+  commentId: M:BB84.Extensions.StringExtensions.Compress(System.String,System.IO.Compression.CompressionLevel)
+  name.vb: Compress(String, CompressionLevel)
+  fullName: BB84.Extensions.StringExtensions.Compress(string, System.IO.Compression.CompressionLevel)
+  fullName.vb: BB84.Extensions.StringExtensions.Compress(String, System.IO.Compression.CompressionLevel)
+  nameWithType: StringExtensions.Compress(string, CompressionLevel)
+  nameWithType.vb: StringExtensions.Compress(String, CompressionLevel)
+- uid: BB84.Extensions.StringExtensions.Compress*
+  name: Compress
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_Compress_
+  commentId: Overload:BB84.Extensions.StringExtensions.Compress
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.Compress
+  nameWithType: StringExtensions.Compress
+- uid: BB84.Extensions.StringExtensions.Decompress(System.String)
+  name: Decompress(string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_Decompress_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.Decompress(System.String)
+  name.vb: Decompress(String)
+  fullName: BB84.Extensions.StringExtensions.Decompress(string)
+  fullName.vb: BB84.Extensions.StringExtensions.Decompress(String)
+  nameWithType: StringExtensions.Decompress(string)
+  nameWithType.vb: StringExtensions.Decompress(String)
+- uid: BB84.Extensions.StringExtensions.Decompress*
+  name: Decompress
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_Decompress_
+  commentId: Overload:BB84.Extensions.StringExtensions.Decompress
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.Decompress
+  nameWithType: StringExtensions.Decompress
 - uid: BB84.Extensions.StringExtensions.EqualsCaseSensitive(System.String,System.String)
   name: EqualsCaseSensitive(string, string)
   href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_EqualsCaseSensitive_System_String_System_String_
