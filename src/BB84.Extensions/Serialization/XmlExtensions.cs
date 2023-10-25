@@ -1,7 +1,7 @@
 ﻿using System.Xml;
 using System.Xml.Serialization;
 
-using BB84.Extensions.Helper;
+using BB84.Extensions.Writers;
 
 namespace BB84.Extensions.Serialization;
 
