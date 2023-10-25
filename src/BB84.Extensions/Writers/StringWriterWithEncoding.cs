@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using System.Text;
 
-namespace BB84.Extensions.Helper;
+namespace BB84.Extensions.Writers;
 
 /// <summary>
 /// The string writer with encoding class.

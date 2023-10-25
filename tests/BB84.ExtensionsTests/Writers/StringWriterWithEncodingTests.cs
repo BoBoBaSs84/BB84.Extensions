@@ -1,6 +1,6 @@
-﻿using BB84.Extensions.Helper;
+﻿using BB84.Extensions.Writers;
 
-namespace BB84.ExtensionsTests.Helper;
+namespace BB84.ExtensionsTests.Writers;
 
 [TestClass]
 public sealed class StringWriterWithEncodingTests
