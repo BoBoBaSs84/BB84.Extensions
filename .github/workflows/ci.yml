@@ -22,7 +22,7 @@ jobs:
         dotnet-version: '6.0.x'
 
     - name: Build and Test
-      if: github.event_name == 'pull'
+      if: github.event_name != 'push'
       run: dotnet test BB84.Extensions.sln -c Release
       
     - name: Self Build - Publish (main only)
