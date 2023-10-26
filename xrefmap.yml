@@ -89,6 +89,76 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ByteExtensions.GetHexString
   nameWithType: ByteExtensions.GetHexString
+- uid: BB84.Extensions.ComparableExtensions
+  name: ComparableExtensions
+  href: api/BB84.Extensions.ComparableExtensions.html
+  commentId: T:BB84.Extensions.ComparableExtensions
+  fullName: BB84.Extensions.ComparableExtensions
+  nameWithType: ComparableExtensions
+- uid: BB84.Extensions.ComparableExtensions.IsGreaterOrEqualThan*
+  name: IsGreaterOrEqualThan
+  href: api/BB84.Extensions.ComparableExtensions.html#BB84_Extensions_ComparableExtensions_IsGreaterOrEqualThan_
+  commentId: Overload:BB84.Extensions.ComparableExtensions.IsGreaterOrEqualThan
+  isSpec: "True"
+  fullName: BB84.Extensions.ComparableExtensions.IsGreaterOrEqualThan
+  nameWithType: ComparableExtensions.IsGreaterOrEqualThan
+- uid: BB84.Extensions.ComparableExtensions.IsGreaterOrEqualThan``1(``0,``0)
+  name: IsGreaterOrEqualThan<T>(T, T)
+  href: api/BB84.Extensions.ComparableExtensions.html#BB84_Extensions_ComparableExtensions_IsGreaterOrEqualThan__1___0___0_
+  commentId: M:BB84.Extensions.ComparableExtensions.IsGreaterOrEqualThan``1(``0,``0)
+  name.vb: IsGreaterOrEqualThan(Of T)(T, T)
+  fullName: BB84.Extensions.ComparableExtensions.IsGreaterOrEqualThan<T>(T, T)
+  fullName.vb: BB84.Extensions.ComparableExtensions.IsGreaterOrEqualThan(Of T)(T, T)
+  nameWithType: ComparableExtensions.IsGreaterOrEqualThan<T>(T, T)
+  nameWithType.vb: ComparableExtensions.IsGreaterOrEqualThan(Of T)(T, T)
+- uid: BB84.Extensions.ComparableExtensions.IsGreaterThan*
+  name: IsGreaterThan
+  href: api/BB84.Extensions.ComparableExtensions.html#BB84_Extensions_ComparableExtensions_IsGreaterThan_
+  commentId: Overload:BB84.Extensions.ComparableExtensions.IsGreaterThan
+  isSpec: "True"
+  fullName: BB84.Extensions.ComparableExtensions.IsGreaterThan
+  nameWithType: ComparableExtensions.IsGreaterThan
+- uid: BB84.Extensions.ComparableExtensions.IsGreaterThan``1(``0,``0)
+  name: IsGreaterThan<T>(T, T)
+  href: api/BB84.Extensions.ComparableExtensions.html#BB84_Extensions_ComparableExtensions_IsGreaterThan__1___0___0_
+  commentId: M:BB84.Extensions.ComparableExtensions.IsGreaterThan``1(``0,``0)
+  name.vb: IsGreaterThan(Of T)(T, T)
+  fullName: BB84.Extensions.ComparableExtensions.IsGreaterThan<T>(T, T)
+  fullName.vb: BB84.Extensions.ComparableExtensions.IsGreaterThan(Of T)(T, T)
+  nameWithType: ComparableExtensions.IsGreaterThan<T>(T, T)
+  nameWithType.vb: ComparableExtensions.IsGreaterThan(Of T)(T, T)
+- uid: BB84.Extensions.ComparableExtensions.IsLessOrEqualThan*
+  name: IsLessOrEqualThan
+  href: api/BB84.Extensions.ComparableExtensions.html#BB84_Extensions_ComparableExtensions_IsLessOrEqualThan_
+  commentId: Overload:BB84.Extensions.ComparableExtensions.IsLessOrEqualThan
+  isSpec: "True"
+  fullName: BB84.Extensions.ComparableExtensions.IsLessOrEqualThan
+  nameWithType: ComparableExtensions.IsLessOrEqualThan
+- uid: BB84.Extensions.ComparableExtensions.IsLessOrEqualThan``1(``0,``0)
+  name: IsLessOrEqualThan<T>(T, T)
+  href: api/BB84.Extensions.ComparableExtensions.html#BB84_Extensions_ComparableExtensions_IsLessOrEqualThan__1___0___0_
+  commentId: M:BB84.Extensions.ComparableExtensions.IsLessOrEqualThan``1(``0,``0)
+  name.vb: IsLessOrEqualThan(Of T)(T, T)
+  fullName: BB84.Extensions.ComparableExtensions.IsLessOrEqualThan<T>(T, T)
+  fullName.vb: BB84.Extensions.ComparableExtensions.IsLessOrEqualThan(Of T)(T, T)
+  nameWithType: ComparableExtensions.IsLessOrEqualThan<T>(T, T)
+  nameWithType.vb: ComparableExtensions.IsLessOrEqualThan(Of T)(T, T)
+- uid: BB84.Extensions.ComparableExtensions.IsLessThan*
+  name: IsLessThan
+  href: api/BB84.Extensions.ComparableExtensions.html#BB84_Extensions_ComparableExtensions_IsLessThan_
+  commentId: Overload:BB84.Extensions.ComparableExtensions.IsLessThan
+  isSpec: "True"
+  fullName: BB84.Extensions.ComparableExtensions.IsLessThan
+  nameWithType: ComparableExtensions.IsLessThan
+- uid: BB84.Extensions.ComparableExtensions.IsLessThan``1(``0,``0)
+  name: IsLessThan<T>(T, T)
+  href: api/BB84.Extensions.ComparableExtensions.html#BB84_Extensions_ComparableExtensions_IsLessThan__1___0___0_
+  commentId: M:BB84.Extensions.ComparableExtensions.IsLessThan``1(``0,``0)
+  name.vb: IsLessThan(Of T)(T, T)
+  fullName: BB84.Extensions.ComparableExtensions.IsLessThan<T>(T, T)
+  fullName.vb: BB84.Extensions.ComparableExtensions.IsLessThan(Of T)(T, T)
+  nameWithType: ComparableExtensions.IsLessThan<T>(T, T)
+  nameWithType.vb: ComparableExtensions.IsLessThan(Of T)(T, T)
 - uid: BB84.Extensions.DateTimeExtensions
   name: DateTimeExtensions
   href: api/BB84.Extensions.DateTimeExtensions.html
