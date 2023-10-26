@@ -1,4 +1,6 @@
-﻿namespace BB84.Extensions.Tests;
+﻿using BB84.Extensions;
+
+namespace BB84.ExtensionsTests;
 
 public sealed partial class ArrayExtensionsTests
 {

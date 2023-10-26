@@ -1,5 +1,5 @@
 ﻿namespace BB84.ExtensionsTests;
 
 [TestClass]
-public sealed partial class ArrayExtensionsTests
+public partial class ComparableExtensionsTests
 { }
