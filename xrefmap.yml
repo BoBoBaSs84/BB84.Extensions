@@ -73,6 +73,38 @@ references:
   commentId: T:BB84.Extensions.ByteExtensions
   fullName: BB84.Extensions.ByteExtensions
   nameWithType: ByteExtensions
+- uid: BB84.Extensions.ByteExtensions.Compress(System.Byte[],System.IO.Compression.CompressionLevel)
+  name: Compress(byte[], CompressionLevel)
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_Compress_System_Byte___System_IO_Compression_CompressionLevel_
+  commentId: M:BB84.Extensions.ByteExtensions.Compress(System.Byte[],System.IO.Compression.CompressionLevel)
+  name.vb: Compress(Byte(), CompressionLevel)
+  fullName: BB84.Extensions.ByteExtensions.Compress(byte[], System.IO.Compression.CompressionLevel)
+  fullName.vb: BB84.Extensions.ByteExtensions.Compress(Byte(), System.IO.Compression.CompressionLevel)
+  nameWithType: ByteExtensions.Compress(byte[], CompressionLevel)
+  nameWithType.vb: ByteExtensions.Compress(Byte(), CompressionLevel)
+- uid: BB84.Extensions.ByteExtensions.Compress*
+  name: Compress
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_Compress_
+  commentId: Overload:BB84.Extensions.ByteExtensions.Compress
+  isSpec: "True"
+  fullName: BB84.Extensions.ByteExtensions.Compress
+  nameWithType: ByteExtensions.Compress
+- uid: BB84.Extensions.ByteExtensions.Decompress(System.Byte[])
+  name: Decompress(byte[])
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_Decompress_System_Byte___
+  commentId: M:BB84.Extensions.ByteExtensions.Decompress(System.Byte[])
+  name.vb: Decompress(Byte())
+  fullName: BB84.Extensions.ByteExtensions.Decompress(byte[])
+  fullName.vb: BB84.Extensions.ByteExtensions.Decompress(Byte())
+  nameWithType: ByteExtensions.Decompress(byte[])
+  nameWithType.vb: ByteExtensions.Decompress(Byte())
+- uid: BB84.Extensions.ByteExtensions.Decompress*
+  name: Decompress
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_Decompress_
+  commentId: Overload:BB84.Extensions.ByteExtensions.Decompress
+  isSpec: "True"
+  fullName: BB84.Extensions.ByteExtensions.Decompress
+  nameWithType: ByteExtensions.Decompress
 - uid: BB84.Extensions.ByteExtensions.GetHexString(System.Byte[])
   name: GetHexString(byte[])
   href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetHexString_System_Byte___
@@ -273,38 +305,38 @@ references:
   fullName.vb: BB84.Extensions.EnumeratorExtensions.Count(Of T)(T)
   nameWithType: EnumeratorExtensions.Count<T>(T)
   nameWithType.vb: EnumeratorExtensions.Count(Of T)(T)
-- uid: BB84.Extensions.EnumeratorExtensions.ToInt*
-  name: ToInt
-  href: api/BB84.Extensions.EnumeratorExtensions.html#BB84_Extensions_EnumeratorExtensions_ToInt_
-  commentId: Overload:BB84.Extensions.EnumeratorExtensions.ToInt
+- uid: BB84.Extensions.EnumeratorExtensions.GetInt*
+  name: GetInt
+  href: api/BB84.Extensions.EnumeratorExtensions.html#BB84_Extensions_EnumeratorExtensions_GetInt_
+  commentId: Overload:BB84.Extensions.EnumeratorExtensions.GetInt
   isSpec: "True"
-  fullName: BB84.Extensions.EnumeratorExtensions.ToInt
-  nameWithType: EnumeratorExtensions.ToInt
-- uid: BB84.Extensions.EnumeratorExtensions.ToInt``1(``0)
-  name: ToInt<T>(T)
-  href: api/BB84.Extensions.EnumeratorExtensions.html#BB84_Extensions_EnumeratorExtensions_ToInt__1___0_
-  commentId: M:BB84.Extensions.EnumeratorExtensions.ToInt``1(``0)
-  name.vb: ToInt(Of T)(T)
-  fullName: BB84.Extensions.EnumeratorExtensions.ToInt<T>(T)
-  fullName.vb: BB84.Extensions.EnumeratorExtensions.ToInt(Of T)(T)
-  nameWithType: EnumeratorExtensions.ToInt<T>(T)
-  nameWithType.vb: EnumeratorExtensions.ToInt(Of T)(T)
-- uid: BB84.Extensions.EnumeratorExtensions.ToList*
-  name: ToList
-  href: api/BB84.Extensions.EnumeratorExtensions.html#BB84_Extensions_EnumeratorExtensions_ToList_
-  commentId: Overload:BB84.Extensions.EnumeratorExtensions.ToList
+  fullName: BB84.Extensions.EnumeratorExtensions.GetInt
+  nameWithType: EnumeratorExtensions.GetInt
+- uid: BB84.Extensions.EnumeratorExtensions.GetInt``1(``0)
+  name: GetInt<T>(T)
+  href: api/BB84.Extensions.EnumeratorExtensions.html#BB84_Extensions_EnumeratorExtensions_GetInt__1___0_
+  commentId: M:BB84.Extensions.EnumeratorExtensions.GetInt``1(``0)
+  name.vb: GetInt(Of T)(T)
+  fullName: BB84.Extensions.EnumeratorExtensions.GetInt<T>(T)
+  fullName.vb: BB84.Extensions.EnumeratorExtensions.GetInt(Of T)(T)
+  nameWithType: EnumeratorExtensions.GetInt<T>(T)
+  nameWithType.vb: EnumeratorExtensions.GetInt(Of T)(T)
+- uid: BB84.Extensions.EnumeratorExtensions.GetValues*
+  name: GetValues
+  href: api/BB84.Extensions.EnumeratorExtensions.html#BB84_Extensions_EnumeratorExtensions_GetValues_
+  commentId: Overload:BB84.Extensions.EnumeratorExtensions.GetValues
   isSpec: "True"
-  fullName: BB84.Extensions.EnumeratorExtensions.ToList
-  nameWithType: EnumeratorExtensions.ToList
-- uid: BB84.Extensions.EnumeratorExtensions.ToList``1(``0)
-  name: ToList<T>(T)
-  href: api/BB84.Extensions.EnumeratorExtensions.html#BB84_Extensions_EnumeratorExtensions_ToList__1___0_
-  commentId: M:BB84.Extensions.EnumeratorExtensions.ToList``1(``0)
-  name.vb: ToList(Of T)(T)
-  fullName: BB84.Extensions.EnumeratorExtensions.ToList<T>(T)
-  fullName.vb: BB84.Extensions.EnumeratorExtensions.ToList(Of T)(T)
-  nameWithType: EnumeratorExtensions.ToList<T>(T)
-  nameWithType.vb: EnumeratorExtensions.ToList(Of T)(T)
+  fullName: BB84.Extensions.EnumeratorExtensions.GetValues
+  nameWithType: EnumeratorExtensions.GetValues
+- uid: BB84.Extensions.EnumeratorExtensions.GetValues``1(``0)
+  name: GetValues<T>(T)
+  href: api/BB84.Extensions.EnumeratorExtensions.html#BB84_Extensions_EnumeratorExtensions_GetValues__1___0_
+  commentId: M:BB84.Extensions.EnumeratorExtensions.GetValues``1(``0)
+  name.vb: GetValues(Of T)(T)
+  fullName: BB84.Extensions.EnumeratorExtensions.GetValues<T>(T)
+  fullName.vb: BB84.Extensions.EnumeratorExtensions.GetValues(Of T)(T)
+  nameWithType: EnumeratorExtensions.GetValues<T>(T)
+  nameWithType.vb: EnumeratorExtensions.GetValues(Of T)(T)
 - uid: BB84.Extensions.IntegerExtensions
   name: IntegerExtensions
   href: api/BB84.Extensions.IntegerExtensions.html
