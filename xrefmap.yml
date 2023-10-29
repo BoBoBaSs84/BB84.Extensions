@@ -121,6 +121,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ByteExtensions.GetHexString
   nameWithType: ByteExtensions.GetHexString
+- uid: BB84.Extensions.ByteExtensions.GetString(System.Byte[],System.Text.Encoding)
+  name: GetString(byte[], Encoding?)
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetString_System_Byte___System_Text_Encoding_
+  commentId: M:BB84.Extensions.ByteExtensions.GetString(System.Byte[],System.Text.Encoding)
+  name.vb: GetString(Byte(), Encoding)
+  fullName: BB84.Extensions.ByteExtensions.GetString(byte[], System.Text.Encoding?)
+  fullName.vb: BB84.Extensions.ByteExtensions.GetString(Byte(), System.Text.Encoding)
+  nameWithType: ByteExtensions.GetString(byte[], Encoding?)
+  nameWithType.vb: ByteExtensions.GetString(Byte(), Encoding)
+- uid: BB84.Extensions.ByteExtensions.GetString*
+  name: GetString
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetString_
+  commentId: Overload:BB84.Extensions.ByteExtensions.GetString
+  isSpec: "True"
+  fullName: BB84.Extensions.ByteExtensions.GetString
+  nameWithType: ByteExtensions.GetString
 - uid: BB84.Extensions.ComparableExtensions
   name: ComparableExtensions
   href: api/BB84.Extensions.ComparableExtensions.html
@@ -763,6 +779,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.StringExtensions.FromBase64
   nameWithType: StringExtensions.FromBase64
+- uid: BB84.Extensions.StringExtensions.GetBytes(System.String,System.Text.Encoding)
+  name: GetBytes(string, Encoding?)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetBytes_System_String_System_Text_Encoding_
+  commentId: M:BB84.Extensions.StringExtensions.GetBytes(System.String,System.Text.Encoding)
+  name.vb: GetBytes(String, Encoding)
+  fullName: BB84.Extensions.StringExtensions.GetBytes(string, System.Text.Encoding?)
+  fullName.vb: BB84.Extensions.StringExtensions.GetBytes(String, System.Text.Encoding)
+  nameWithType: StringExtensions.GetBytes(string, Encoding?)
+  nameWithType.vb: StringExtensions.GetBytes(String, Encoding)
+- uid: BB84.Extensions.StringExtensions.GetBytes*
+  name: GetBytes
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetBytes_
+  commentId: Overload:BB84.Extensions.StringExtensions.GetBytes
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.GetBytes
+  nameWithType: StringExtensions.GetBytes
 - uid: BB84.Extensions.StringExtensions.GetMd5Ascii(System.String)
   name: GetMd5Ascii(string)
   href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetMd5Ascii_System_String_
