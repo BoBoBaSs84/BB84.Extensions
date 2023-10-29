@@ -5,7 +5,7 @@ namespace BB84.Extensions;
 public static partial class ArrayExtensions
 {
 	/// <summary>
-	/// returns a randomly choosen item from a given array.
+	/// Returns a randomly choosen item from a given array.
 	/// </summary>
 	/// <typeparam name="T">Type of objects in the array.</typeparam>
 	/// <param name="values">The array of objects to choose from.</param>

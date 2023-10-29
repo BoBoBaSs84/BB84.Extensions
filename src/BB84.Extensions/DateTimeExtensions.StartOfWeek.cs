@@ -3,7 +3,7 @@
 public static partial class DateTimeExtensions
 {
 	/// <summary>
-	/// Calculates the first day of the week using the specified date and
+	/// Returns the first day of the week using the specified date and
 	/// the definition of the first day of the week.
 	/// </summary>
 	/// <param name="dateTime">The date time value to work with.</param>
