@@ -3,7 +3,7 @@
 namespace BB84.ExtensionsTests;
 
 [TestClass]
-public class ByteExtensionsTests
+public partial class ByteExtensionsTests
 {
 	[TestMethod]
 	public void GetHexStringTest()
