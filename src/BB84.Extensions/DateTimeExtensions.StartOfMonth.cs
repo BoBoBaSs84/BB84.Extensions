@@ -3,7 +3,7 @@
 public static partial class DateTimeExtensions
 {
 	/// <summary>
-	/// Calculates the first day of the month using the specified date.
+	/// Returns the first day of the month using the specified date.
 	/// </summary>
 	/// <param name="dateTime">The date time value to work with.</param>
 	/// <returns>The date of the first day of the month.</returns>

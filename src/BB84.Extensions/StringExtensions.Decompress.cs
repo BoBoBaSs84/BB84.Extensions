@@ -1,5 +1,4 @@
-﻿using System.IO.Compression;
-using System.Text;
+﻿using System.Text;
 
 namespace BB84.Extensions;
 
@@ -8,19 +7,14 @@ public static partial class StringExtensions
 	/// <summary>
 	/// Decompresses a deflate compressed, Base64 encoded string and returns an uncompressed string.
 	/// </summary>
-	/// <param name="value">Input string to decompress.</param>
-	public static string Decompress(this string value)
+	/// <param name="stringValue">The input string value to decompress.</param>
+	/// <returns></returns>
+	public static string Decompress(this string stringValue)
 	{
-		byte[] decompressedBytes;
+		byte[] inputBuffer = Convert.FromBase64String(stringValue);
 
-		MemoryStream compressedStream = new(Convert.FromBase64String(value));
-		using (DeflateStream decompressorStream = new(compressedStream, CompressionMode.Decompress))
-		{
-			using MemoryStream decompressedStream = new();
-			decompressorStream.CopyTo(decompressedStream);
-			decompressedBytes = decompressedStream.ToArray();
-		}
+		byte[] outputBuffer = inputBuffer.Decompress();
 
-		return Encoding.UTF8.GetString(decompressedBytes);
+		return Encoding.UTF8.GetString(outputBuffer);
 	}
 }
