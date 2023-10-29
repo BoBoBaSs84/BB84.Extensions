@@ -1,6 +1,4 @@
-﻿using System.Text;
-
-namespace BB84.Extensions;
+﻿namespace BB84.Extensions;
 
 public static partial class StringExtensions
 {
@@ -15,6 +13,6 @@ public static partial class StringExtensions
 
 		byte[] outputBuffer = inputBuffer.Decompress();
 
-		return Encoding.UTF8.GetString(outputBuffer);
+		return outputBuffer.GetString();
 	}
 }

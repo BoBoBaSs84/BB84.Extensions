@@ -1,5 +1,4 @@
 ﻿using System.IO.Compression;
-using System.Text;
 
 namespace BB84.Extensions;
 
@@ -13,7 +12,7 @@ public static partial class StringExtensions
 	/// <returns>The compressed base64 encoded string.</returns>
 	public static string Compress(this string stringValue, CompressionLevel compressionLevel = CompressionLevel.Optimal)
 	{
-		byte[] inputBuffer = Encoding.UTF8.GetBytes(stringValue);
+		byte[] inputBuffer = stringValue.GetBytes();
 
 		byte[] outputBuffer = inputBuffer.Compress(compressionLevel);
 

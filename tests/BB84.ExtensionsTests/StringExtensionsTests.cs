@@ -1,6 +1,4 @@
-﻿using BB84.Extensions;
-
-namespace BB84.ExtensionsTests;
+﻿namespace BB84.ExtensionsTests;
 
 [TestClass]
 public sealed partial class StringExtensionsTests
