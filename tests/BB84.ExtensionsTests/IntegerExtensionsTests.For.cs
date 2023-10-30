@@ -9,11 +9,10 @@ public sealed partial class IntegerExtensionsTests
 	public void For()
 	{
 		int iterationCount = default;
-		int start = 1;
-		int end = 3;
+		int value = 15;
 
-		start.For(end, x => iterationCount++);
+		value.For(x => iterationCount++);
 
-		Assert.AreEqual(end, iterationCount);
+		Assert.AreEqual(value, iterationCount);
 	}
 }
