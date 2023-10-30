@@ -391,15 +391,15 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.IntegerExtensions.ArrayUp
   nameWithType: IntegerExtensions.ArrayUp
-- uid: BB84.Extensions.IntegerExtensions.For(System.Int32,System.Int32,System.Action{System.Int32})
-  name: For(int, int, Action<int>)
-  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_For_System_Int32_System_Int32_System_Action_System_Int32__
-  commentId: M:BB84.Extensions.IntegerExtensions.For(System.Int32,System.Int32,System.Action{System.Int32})
-  name.vb: For(Integer, Integer, Action(Of Integer))
-  fullName: BB84.Extensions.IntegerExtensions.For(int, int, System.Action<int>)
-  fullName.vb: BB84.Extensions.IntegerExtensions.For(Integer, Integer, System.Action(Of Integer))
-  nameWithType: IntegerExtensions.For(int, int, Action<int>)
-  nameWithType.vb: IntegerExtensions.For(Integer, Integer, Action(Of Integer))
+- uid: BB84.Extensions.IntegerExtensions.For(System.Int32,System.Action{System.Int32})
+  name: For(int, Action<int>)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_For_System_Int32_System_Action_System_Int32__
+  commentId: M:BB84.Extensions.IntegerExtensions.For(System.Int32,System.Action{System.Int32})
+  name.vb: For(Integer, Action(Of Integer))
+  fullName: BB84.Extensions.IntegerExtensions.For(int, System.Action<int>)
+  fullName.vb: BB84.Extensions.IntegerExtensions.For(Integer, System.Action(Of Integer))
+  nameWithType: IntegerExtensions.For(int, Action<int>)
+  nameWithType.vb: IntegerExtensions.For(Integer, Action(Of Integer))
 - uid: BB84.Extensions.IntegerExtensions.For*
   name: For
   href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_For_
