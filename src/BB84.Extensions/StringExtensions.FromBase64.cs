@@ -18,7 +18,7 @@ public static partial class StringExtensions
 
 		// Check for valid base64
 		stringValue = stringValue.Trim();
-		bool isValidBase64 = (stringValue.Length % 4 == 0) && Base64.IsMatch(stringValue);
+		bool isValidBase64 = (stringValue.Length % 4 == 0) && Base64Regex.IsMatch(stringValue);
 
 		if (isValidBase64.Equals(false))
 			throw new ArgumentException($"{stringValue} is not valid base64");
