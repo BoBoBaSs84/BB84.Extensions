@@ -891,6 +891,38 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.StringExtensions.IsNullOrWhiteSpace
   nameWithType: StringExtensions.IsNullOrWhiteSpace
+- uid: BB84.Extensions.StringExtensions.RemoveLinebreak(System.String)
+  name: RemoveLinebreak(string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_RemoveLinebreak_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.RemoveLinebreak(System.String)
+  name.vb: RemoveLinebreak(String)
+  fullName: BB84.Extensions.StringExtensions.RemoveLinebreak(string)
+  fullName.vb: BB84.Extensions.StringExtensions.RemoveLinebreak(String)
+  nameWithType: StringExtensions.RemoveLinebreak(string)
+  nameWithType.vb: StringExtensions.RemoveLinebreak(String)
+- uid: BB84.Extensions.StringExtensions.RemoveLinebreak*
+  name: RemoveLinebreak
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_RemoveLinebreak_
+  commentId: Overload:BB84.Extensions.StringExtensions.RemoveLinebreak
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.RemoveLinebreak
+  nameWithType: StringExtensions.RemoveLinebreak
+- uid: BB84.Extensions.StringExtensions.RemoveWhitespace(System.String)
+  name: RemoveWhitespace(string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_RemoveWhitespace_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.RemoveWhitespace(System.String)
+  name.vb: RemoveWhitespace(String)
+  fullName: BB84.Extensions.StringExtensions.RemoveWhitespace(string)
+  fullName.vb: BB84.Extensions.StringExtensions.RemoveWhitespace(String)
+  nameWithType: StringExtensions.RemoveWhitespace(string)
+  nameWithType.vb: StringExtensions.RemoveWhitespace(String)
+- uid: BB84.Extensions.StringExtensions.RemoveWhitespace*
+  name: RemoveWhitespace
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_RemoveWhitespace_
+  commentId: Overload:BB84.Extensions.StringExtensions.RemoveWhitespace
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.RemoveWhitespace
+  nameWithType: StringExtensions.RemoveWhitespace
 - uid: BB84.Extensions.StringExtensions.ToBase64(System.String,System.Text.Encoding)
   name: ToBase64(string, Encoding?)
   href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_ToBase64_System_String_System_Text_Encoding_
