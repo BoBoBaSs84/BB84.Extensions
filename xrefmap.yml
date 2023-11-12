@@ -299,6 +299,15 @@ references:
   fullName.vb: BB84.Extensions.EnumerableExtensions.ForEach(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
   nameWithType: EnumerableExtensions.ForEach<T>(IEnumerable<T>, Action<T>)
   nameWithType.vb: EnumerableExtensions.ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+- uid: BB84.Extensions.EnumerableExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.Action{``0})
+  name: ForEach<T>(IEnumerable<T>, Func<T, bool>, Action<T>)
+  href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__System_Action___0__
+  commentId: M:BB84.Extensions.EnumerableExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.Action{``0})
+  name.vb: ForEach(Of T)(IEnumerable(Of T), Func(Of T, Boolean), Action(Of T))
+  fullName: BB84.Extensions.EnumerableExtensions.ForEach<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, bool>, System.Action<T>)
+  fullName.vb: BB84.Extensions.EnumerableExtensions.ForEach(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Boolean), System.Action(Of T))
+  nameWithType: EnumerableExtensions.ForEach<T>(IEnumerable<T>, Func<T, bool>, Action<T>)
+  nameWithType.vb: EnumerableExtensions.ForEach(Of T)(IEnumerable(Of T), Func(Of T, Boolean), Action(Of T))
 - uid: BB84.Extensions.EnumeratorExtensions
   name: EnumeratorExtensions
   href: api/BB84.Extensions.EnumeratorExtensions.html
