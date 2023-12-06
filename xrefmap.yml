@@ -121,6 +121,38 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ByteExtensions.GetHexString
   nameWithType: ByteExtensions.GetHexString
+- uid: BB84.Extensions.ByteExtensions.GetMD5(System.Byte[])
+  name: GetMD5(byte[])
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetMD5_System_Byte___
+  commentId: M:BB84.Extensions.ByteExtensions.GetMD5(System.Byte[])
+  name.vb: GetMD5(Byte())
+  fullName: BB84.Extensions.ByteExtensions.GetMD5(byte[])
+  fullName.vb: BB84.Extensions.ByteExtensions.GetMD5(Byte())
+  nameWithType: ByteExtensions.GetMD5(byte[])
+  nameWithType.vb: ByteExtensions.GetMD5(Byte())
+- uid: BB84.Extensions.ByteExtensions.GetMD5*
+  name: GetMD5
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetMD5_
+  commentId: Overload:BB84.Extensions.ByteExtensions.GetMD5
+  isSpec: "True"
+  fullName: BB84.Extensions.ByteExtensions.GetMD5
+  nameWithType: ByteExtensions.GetMD5
+- uid: BB84.Extensions.ByteExtensions.GetMD5String(System.Byte[])
+  name: GetMD5String(byte[])
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetMD5String_System_Byte___
+  commentId: M:BB84.Extensions.ByteExtensions.GetMD5String(System.Byte[])
+  name.vb: GetMD5String(Byte())
+  fullName: BB84.Extensions.ByteExtensions.GetMD5String(byte[])
+  fullName.vb: BB84.Extensions.ByteExtensions.GetMD5String(Byte())
+  nameWithType: ByteExtensions.GetMD5String(byte[])
+  nameWithType.vb: ByteExtensions.GetMD5String(Byte())
+- uid: BB84.Extensions.ByteExtensions.GetMD5String*
+  name: GetMD5String
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetMD5String_
+  commentId: Overload:BB84.Extensions.ByteExtensions.GetMD5String
+  isSpec: "True"
+  fullName: BB84.Extensions.ByteExtensions.GetMD5String
+  nameWithType: ByteExtensions.GetMD5String
 - uid: BB84.Extensions.ByteExtensions.GetString(System.Byte[],System.Text.Encoding)
   name: GetString(byte[], Encoding?)
   href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetString_System_Byte___System_Text_Encoding_
