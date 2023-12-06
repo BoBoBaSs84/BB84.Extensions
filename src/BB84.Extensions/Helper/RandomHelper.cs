@@ -10,5 +10,5 @@ internal static class RandomHelper
 	/// <summary>
 	/// The pseudo-random number generator instance.
 	/// </summary>
-	public static Random Random => LazyRandom.Value;
+	internal static Random Random => LazyRandom.Value;
 }

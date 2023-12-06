@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.Security.Cryptography;
-using System.Text;
+﻿using System.Text;
 
 namespace BB84.Extensions;
 
@@ -30,13 +28,6 @@ public static partial class StringExtensions
 	public static string GetMd5Unicode(this string stringValue)
 		=> GetMd5Bytes(stringValue, Encoding.Unicode).GetHexString();
 
-	[SuppressMessage("Security", "CA5351", Justification = "Not used for cryptography.")]
 	private static byte[] GetMd5Bytes(string stringValue, Encoding encoding)
-	{
-#if NET6_0_OR_GREATER
-		return MD5.HashData(encoding.GetBytes(stringValue));
-#else
-		return MD5.Create().ComputeHash(encoding.GetBytes(stringValue));
-#endif
-	}
+		=> encoding.GetBytes(stringValue).GetMD5();
 }
