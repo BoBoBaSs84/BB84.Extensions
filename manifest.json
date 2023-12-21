@@ -74,6 +74,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.FloatExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.FloatExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Extensions.IntegerExtensions.yml",
       "output": {
         ".html": {
