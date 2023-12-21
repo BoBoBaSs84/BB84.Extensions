@@ -1,5 +1,5 @@
 ﻿namespace BB84.ExtensionsTests;
 
 [TestClass]
-public partial class BooleanExtensionsTests
+public partial class FloatExtensionsTests
 { }
