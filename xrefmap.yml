@@ -341,6 +341,28 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.DateTimeExtensions.StartOfWeek
   nameWithType: DateTimeExtensions.StartOfWeek
+- uid: BB84.Extensions.DoubleExtensions
+  name: DoubleExtensions
+  href: api/BB84.Extensions.DoubleExtensions.html
+  commentId: T:BB84.Extensions.DoubleExtensions
+  fullName: BB84.Extensions.DoubleExtensions
+  nameWithType: DoubleExtensions
+- uid: BB84.Extensions.DoubleExtensions.IsNull(System.Nullable{System.Double})
+  name: IsNull(double?)
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNull_System_Nullable_System_Double__
+  commentId: M:BB84.Extensions.DoubleExtensions.IsNull(System.Nullable{System.Double})
+  name.vb: IsNull(Double?)
+  fullName: BB84.Extensions.DoubleExtensions.IsNull(double?)
+  fullName.vb: BB84.Extensions.DoubleExtensions.IsNull(Double?)
+  nameWithType: DoubleExtensions.IsNull(double?)
+  nameWithType.vb: DoubleExtensions.IsNull(Double?)
+- uid: BB84.Extensions.DoubleExtensions.IsNull*
+  name: IsNull
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNull_
+  commentId: Overload:BB84.Extensions.DoubleExtensions.IsNull
+  isSpec: "True"
+  fullName: BB84.Extensions.DoubleExtensions.IsNull
+  nameWithType: DoubleExtensions.IsNull
 - uid: BB84.Extensions.EnumerableExtensions
   name: EnumerableExtensions
   href: api/BB84.Extensions.EnumerableExtensions.html
