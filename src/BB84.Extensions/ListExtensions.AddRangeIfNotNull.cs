@@ -11,8 +11,12 @@ public static partial class ListExtensions
 	/// <exception cref="ArgumentNullException">If the target is null.</exception>
 	public static void AddRangeIfNotNull<T>(this IList<T> target, IEnumerable<T> items)
 	{
+#if NET6_0_OR_GREATER
+		ArgumentNullException.ThrowIfNull(target);
+#else
 		if (target is null)
 			throw new ArgumentNullException(nameof(target));
+#endif
 
 		if (items is null || items.Any().Equals(false))
 			return;

@@ -11,9 +11,12 @@ public static partial class ListExtensions
 	/// <exception cref="ArgumentNullException">If the target is null.</exception>
 	public static void AddIfNotNull<T>(this IList<T> target, T item)
 	{
+#if NET6_0_OR_GREATER
+		ArgumentNullException.ThrowIfNull(target);
+#else
 		if (target is null)
 			throw new ArgumentNullException(nameof(target));
-
+#endif
 		if (item is null)
 			return;
 

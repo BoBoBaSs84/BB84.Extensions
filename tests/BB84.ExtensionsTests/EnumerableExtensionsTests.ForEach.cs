@@ -25,7 +25,7 @@ public sealed partial class EnumerableExtensionsTests
 		int hits = default;
 		IEnumerable<string> strings = new List<string>() { "a", "ab", "b", "bb" };
 
-		strings.ForEach(x => x.Contains("a"), x => hits++);
+		strings.ForEach(x => x.Contains('a'), x => hits++);
 
 		Assert.AreEqual(2, hits);
 	}

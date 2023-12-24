@@ -80,7 +80,7 @@ public static class ObjectExtensions
 	/// </summary>
 	/// <param name="value">An object that supplies the value to convert, or null.</param>
 	/// <returns>The string representation of value, or <see cref="string.Empty"/> if value is an object
-	/// whose value is null. If value is null, the method returns null.</returns>
+	/// whose value is null. If value is null, the method returns <see cref="string.Empty"/>.</returns>
 	public static string ToStringInvariant(this object? value)
-		=> Convert.ToString(value, CultureInfo.InvariantCulture);
+		=> Convert.ToString(value, CultureInfo.InvariantCulture) ?? string.Empty;
 }
