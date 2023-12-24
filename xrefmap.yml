@@ -341,6 +341,28 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.DateTimeExtensions.StartOfWeek
   nameWithType: DateTimeExtensions.StartOfWeek
+- uid: BB84.Extensions.DecimalExtensions
+  name: DecimalExtensions
+  href: api/BB84.Extensions.DecimalExtensions.html
+  commentId: T:BB84.Extensions.DecimalExtensions
+  fullName: BB84.Extensions.DecimalExtensions
+  nameWithType: DecimalExtensions
+- uid: BB84.Extensions.DecimalExtensions.IsNull(System.Nullable{System.Decimal})
+  name: IsNull(decimal?)
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNull_System_Nullable_System_Decimal__
+  commentId: M:BB84.Extensions.DecimalExtensions.IsNull(System.Nullable{System.Decimal})
+  name.vb: IsNull(Decimal?)
+  fullName: BB84.Extensions.DecimalExtensions.IsNull(decimal?)
+  fullName.vb: BB84.Extensions.DecimalExtensions.IsNull(Decimal?)
+  nameWithType: DecimalExtensions.IsNull(decimal?)
+  nameWithType.vb: DecimalExtensions.IsNull(Decimal?)
+- uid: BB84.Extensions.DecimalExtensions.IsNull*
+  name: IsNull
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNull_
+  commentId: Overload:BB84.Extensions.DecimalExtensions.IsNull
+  isSpec: "True"
+  fullName: BB84.Extensions.DecimalExtensions.IsNull
+  nameWithType: DecimalExtensions.IsNull
 - uid: BB84.Extensions.DoubleExtensions
   name: DoubleExtensions
   href: api/BB84.Extensions.DoubleExtensions.html
