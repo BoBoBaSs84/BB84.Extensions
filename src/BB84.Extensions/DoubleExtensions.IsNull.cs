@@ -9,5 +9,5 @@ public static partial class DoubleExtensions
 	/// <returns><see langword="true"/> if the <paramref name="value"/>
 	/// is <see langword="null"/>, otherwise <see langword="false"/>.</returns>
 	public static bool IsNull(this double? value)
-		=> value is null;
+		=> value.HasValue.Equals(false);
 }
