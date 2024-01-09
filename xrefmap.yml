@@ -201,6 +201,38 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ByteExtensions.IsNull
   nameWithType: ByteExtensions.IsNull
+- uid: BB84.Extensions.ColorExtensions
+  name: ColorExtensions
+  href: api/BB84.Extensions.ColorExtensions.html
+  commentId: T:BB84.Extensions.ColorExtensions
+  fullName: BB84.Extensions.ColorExtensions
+  nameWithType: ColorExtensions
+- uid: BB84.Extensions.ColorExtensions.ToARGBHexString(System.Drawing.Color)
+  name: ToARGBHexString(Color)
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_ToARGBHexString_System_Drawing_Color_
+  commentId: M:BB84.Extensions.ColorExtensions.ToARGBHexString(System.Drawing.Color)
+  fullName: BB84.Extensions.ColorExtensions.ToARGBHexString(System.Drawing.Color)
+  nameWithType: ColorExtensions.ToARGBHexString(Color)
+- uid: BB84.Extensions.ColorExtensions.ToARGBHexString*
+  name: ToARGBHexString
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_ToARGBHexString_
+  commentId: Overload:BB84.Extensions.ColorExtensions.ToARGBHexString
+  isSpec: "True"
+  fullName: BB84.Extensions.ColorExtensions.ToARGBHexString
+  nameWithType: ColorExtensions.ToARGBHexString
+- uid: BB84.Extensions.ColorExtensions.ToRGBHexString(System.Drawing.Color)
+  name: ToRGBHexString(Color)
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_ToRGBHexString_System_Drawing_Color_
+  commentId: M:BB84.Extensions.ColorExtensions.ToRGBHexString(System.Drawing.Color)
+  fullName: BB84.Extensions.ColorExtensions.ToRGBHexString(System.Drawing.Color)
+  nameWithType: ColorExtensions.ToRGBHexString(Color)
+- uid: BB84.Extensions.ColorExtensions.ToRGBHexString*
+  name: ToRGBHexString
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_ToRGBHexString_
+  commentId: Overload:BB84.Extensions.ColorExtensions.ToRGBHexString
+  isSpec: "True"
+  fullName: BB84.Extensions.ColorExtensions.ToRGBHexString
+  nameWithType: ColorExtensions.ToRGBHexString
 - uid: BB84.Extensions.ComparableExtensions
   name: ComparableExtensions
   href: api/BB84.Extensions.ComparableExtensions.html

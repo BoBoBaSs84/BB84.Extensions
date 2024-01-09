@@ -34,6 +34,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.ColorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.ColorExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Extensions.ComparableExtensions.yml",
       "output": {
         ".html": {
