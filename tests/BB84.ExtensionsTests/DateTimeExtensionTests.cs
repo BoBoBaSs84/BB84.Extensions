@@ -1,47 +1,41 @@
-﻿using BB84.Extensions;
-
-namespace BB84.ExtensionsTests;
+﻿namespace BB84.ExtensionsTests;
 
 [TestClass]
-public class DateTimeExtensionTests
+public sealed partial class DateTimeExtensionTests
 {
-	[TestMethod]
-	public void StartOfWeekTest()
+	public static IEnumerable<object[]> GetStartOfWeekTestData()
 	{
-		DateTime today = new(2023, 9, 5);
-
-		DateTime startOfWeek = today.StartOfWeek();
-
-		Assert.AreEqual(new(2023, 9, 4), startOfWeek);
+		yield return new object[] { new DateTime(2023, 9, 5), new DateTime(2023, 9, 4) };
+		yield return new object[] { new DateTime(2023, 9, 6), new DateTime(2023, 9, 4) };
+		yield return new object[] { new DateTime(2023, 9, 7), new DateTime(2023, 9, 4) };
+		yield return new object[] { new DateTime(2023, 9, 8), new DateTime(2023, 9, 4) };
+		yield return new object[] { new DateTime(2023, 9, 9), new DateTime(2023, 9, 4) };
 	}
 
-	[TestMethod]
-	public void EndOfWeekTest()
+	public static IEnumerable<object[]> GetEndOfWeekTestData()
 	{
-		DateTime today = new(2023, 9, 5);
-
-		DateTime endOfWeek = today.EndOfWeek();
-
-		Assert.AreEqual(new(2023, 9, 10), endOfWeek);
+		yield return new object[] { new DateTime(2023, 9, 5), new DateTime(2023, 9, 10) };
+		yield return new object[] { new DateTime(2023, 9, 6), new DateTime(2023, 9, 10) };
+		yield return new object[] { new DateTime(2023, 9, 7), new DateTime(2023, 9, 10) };
+		yield return new object[] { new DateTime(2023, 9, 8), new DateTime(2023, 9, 10) };
+		yield return new object[] { new DateTime(2023, 9, 9), new DateTime(2023, 9, 10) };
 	}
 
-	[TestMethod]
-	public void StartOfMonthTest()
+	public static IEnumerable<object[]> GetStartOfMonthTestData()
 	{
-		DateTime today = new(2023, 9, 5);
-
-		DateTime startOfMonth = today.StartOfMonth();
-
-		Assert.AreEqual(new(2023, 9, 1), startOfMonth);
+		yield return new object[] { new DateTime(2023, 9, 5), new DateTime(2023, 9, 1) };
+		yield return new object[] { new DateTime(2023, 9, 6), new DateTime(2023, 9, 1) };
+		yield return new object[] { new DateTime(2023, 9, 7), new DateTime(2023, 9, 1) };
+		yield return new object[] { new DateTime(2023, 9, 8), new DateTime(2023, 9, 1) };
+		yield return new object[] { new DateTime(2023, 9, 9), new DateTime(2023, 9, 1) };
 	}
 
-	[TestMethod]
-	public void EndOfMonthTest()
+	public static IEnumerable<object[]> GetEndOfMonthTestData()
 	{
-		DateTime today = new(2023, 9, 5);
-
-		DateTime endOfMonth = today.EndOfMonth();
-
-		Assert.AreEqual(new(2023, 9, 30), endOfMonth);
+		yield return new object[] { new DateTime(2023, 9, 5), new DateTime(2023, 9, 30) };
+		yield return new object[] { new DateTime(2023, 9, 6), new DateTime(2023, 9, 30) };
+		yield return new object[] { new DateTime(2023, 9, 7), new DateTime(2023, 9, 30) };
+		yield return new object[] { new DateTime(2023, 9, 8), new DateTime(2023, 9, 30) };
+		yield return new object[] { new DateTime(2023, 9, 9), new DateTime(2023, 9, 30) };
 	}
 }
