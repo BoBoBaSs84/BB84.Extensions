@@ -153,20 +153,21 @@ Class EnumerableExtensions  <a class="header-action link-secondary" title="View 
 
   <h3 id="BB84_Extensions_EnumerableExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__" data-uid="BB84.Extensions.EnumerableExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
   ForEach&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/EnumerableExtensions.ForEach.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/EnumerableExtensions.ForEach.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Iterates over an enumerable and executes an action on each element.</p>
+  <div class="markdown level1 summary"><p>Iterates over the <code class="paramref">values</code> and executes an <code class="paramref">action</code>
+on each element.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ForEach&lt;T&gt;(this IEnumerable&lt;T&gt; items, Action&lt;T&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ForEach&lt;T&gt;(this IEnumerable&lt;T&gt; values, Action&lt;T&gt; action)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
     <dd><p>A sequence of values to invoke an action on.</p>
 </dd>
     <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
@@ -195,24 +196,75 @@ Class EnumerableExtensions  <a class="header-action link-secondary" title="View 
 
   <h3 id="BB84_Extensions_EnumerableExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__System_Action___0__" data-uid="BB84.Extensions.EnumerableExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.Action{``0})">
   ForEach&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, bool&gt;, Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/EnumerableExtensions.ForEach.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/EnumerableExtensions.ForEach.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Iterates over an enumerable and executes an action on each element.</p>
+  <div class="markdown level1 summary"><p>Iterates over the <code class="paramref">values</code> that fit the <code class="paramref">predicate</code>
+and executes an <code class="paramref">action</code> on each element.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ForEach&lt;T&gt;(this IEnumerable&lt;T&gt; items, Func&lt;T, bool&gt; predicate, Action&lt;T&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ForEach&lt;T&gt;(this IEnumerable&lt;T&gt; values, Func&lt;T, bool&gt; predicate, Action&lt;T&gt; action)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
     <dd><p>A sequence of values to invoke an action on.</p>
 </dd>
     <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd><p>The function to test each element for a condition.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd><p>The action to invoke on each source element.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the elements of source.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Extensions_EnumerableExtensions_ForEach_" data-uid="BB84.Extensions.EnumerableExtensions.ForEach*"></a>
+
+  <h3 id="BB84_Extensions_EnumerableExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__System_Func___0_System_Boolean__System_Action___0__" data-uid="BB84.Extensions.EnumerableExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.Func{``0,System.Boolean},System.Action{``0})">
+  ForEach&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, bool&gt;, Func&lt;T, bool&gt;, Action&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/EnumerableExtensions.ForEach.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Iterates over the <code class="paramref">values</code> that fit the <code class="paramref">predicate</code>
+and executes an <code class="paramref">action</code> on each element if the
+<code class="paramref">breakCondition</code> is not met.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForEach&lt;T&gt;(this IEnumerable&lt;T&gt; values, Func&lt;T, bool&gt; predicate, Func&lt;T, bool&gt; breakCondition, Action&lt;T&gt; action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>A sequence of values to invoke an action on.</p>
+</dd>
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>The function to test each element for a condition.</p>
+</dd>
+    <dt><code>breakCondition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>The condition that breaks the iteration.</p>
 </dd>
     <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
     <dd><p>The action to invoke on each source element.</p>
