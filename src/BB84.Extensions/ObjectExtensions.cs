@@ -82,5 +82,9 @@ public static class ObjectExtensions
 	/// <returns>The string representation of value, or <see cref="string.Empty"/> if value is an object
 	/// whose value is null. If value is null, the method returns <see cref="string.Empty"/>.</returns>
 	public static string ToStringInvariant(this object? value)
+#if NET5_0_OR_GREATER
 		=> Convert.ToString(value, CultureInfo.InvariantCulture) ?? string.Empty;
+#else
+		=> Convert.ToString(value, CultureInfo.InvariantCulture);
+#endif
 }

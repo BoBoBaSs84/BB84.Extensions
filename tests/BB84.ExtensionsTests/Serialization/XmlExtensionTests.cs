@@ -12,7 +12,6 @@ public class XmlExtensionTests
 	private const string XmlTextString = @"<Fancy Id=""348798ee-12f2-4a20-b030-756bb6a4134d""><Name>UnitTestName</Name><Description>UnitTestDescription</Description></Fancy>";
 
 	private readonly XmlWriterSettings _writerSettings = new();
-	private readonly XmlReaderSettings _readerSettings = new();
 
 	[TestMethod]
 	public void FromXmlTest()

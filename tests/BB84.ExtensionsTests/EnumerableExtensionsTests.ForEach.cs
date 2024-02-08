@@ -29,4 +29,15 @@ public sealed partial class EnumerableExtensionsTests
 
 		Assert.AreEqual(2, hits);
 	}
+
+	[TestMethod]
+	public void ForEachWithPredicateAndBreakTest()
+	{
+		int hits = default;
+		IEnumerable<string> strings = new List<string>() { "a", "ab", "b", "bb" };
+
+		strings.ForEach(x => x.Contains('b'), x=> x.StartsWith("b", StringComparison.OrdinalIgnoreCase), x => hits++);
+
+		Assert.AreEqual(1, hits);
+	}
 }
