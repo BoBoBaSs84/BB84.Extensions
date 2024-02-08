@@ -54,7 +54,7 @@ public static class XmlExtension
 	/// <returns>The XML string representation of the object <typeparamref name="T"/>.</returns>
 	public static string ToXml<T>(this T value, XmlSerializerNamespaces? namespaces = null, XmlWriterSettings? settings = null) where T : class
 	{
-		namespaces ??= new XmlSerializerNamespaces(new[] { XmlQualifiedName.Empty });
+		namespaces ??= new XmlSerializerNamespaces([XmlQualifiedName.Empty]);
 		settings ??= WriterSettings;
 
 		using StringWriterWithEncoding stream = new(settings.Encoding);
