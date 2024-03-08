@@ -857,6 +857,25 @@ references:
   fullName.vb: BB84.Extensions.Serialization.XmlExtension.ToXml(Of T)(T, System.Xml.Serialization.XmlSerializerNamespaces, System.Xml.XmlWriterSettings)
   nameWithType: XmlExtension.ToXml<T>(T, XmlSerializerNamespaces?, XmlWriterSettings?)
   nameWithType.vb: XmlExtension.ToXml(Of T)(T, XmlSerializerNamespaces, XmlWriterSettings)
+- uid: BB84.Extensions.StreamExtensions
+  name: StreamExtensions
+  href: api/BB84.Extensions.StreamExtensions.html
+  commentId: T:BB84.Extensions.StreamExtensions
+  fullName: BB84.Extensions.StreamExtensions
+  nameWithType: StreamExtensions
+- uid: BB84.Extensions.StreamExtensions.ToByteArray(System.IO.Stream)
+  name: ToByteArray(Stream)
+  href: api/BB84.Extensions.StreamExtensions.html#BB84_Extensions_StreamExtensions_ToByteArray_System_IO_Stream_
+  commentId: M:BB84.Extensions.StreamExtensions.ToByteArray(System.IO.Stream)
+  fullName: BB84.Extensions.StreamExtensions.ToByteArray(System.IO.Stream)
+  nameWithType: StreamExtensions.ToByteArray(Stream)
+- uid: BB84.Extensions.StreamExtensions.ToByteArray*
+  name: ToByteArray
+  href: api/BB84.Extensions.StreamExtensions.html#BB84_Extensions_StreamExtensions_ToByteArray_
+  commentId: Overload:BB84.Extensions.StreamExtensions.ToByteArray
+  isSpec: "True"
+  fullName: BB84.Extensions.StreamExtensions.ToByteArray
+  nameWithType: StreamExtensions.ToByteArray
 - uid: BB84.Extensions.StringExtensions
   name: StringExtensions
   href: api/BB84.Extensions.StringExtensions.html
