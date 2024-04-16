@@ -5,11 +5,11 @@ namespace BB84.ExtensionsTests;
 public sealed partial class ArrayExtensionsTests
 {
 	[TestMethod]
-	public void RandomChoice()
+	public void TakeRandom()
 	{
 		int[] ints = [1, 2, 3];
 
-		int i = ints.RandomChoice();
+		int i = ints.TakeRandom();
 
 		Assert.IsTrue(ints.Contains(i));
 	}

@@ -1,6 +1,7 @@
 [![CI](https://github.com/BoBoBaSs84/BB84.Extensions/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/BoBoBaSs84/BB84.Extensions/actions/workflows/ci.yml)
 [![Docs](https://github.com/BoBoBaSs84/BB84.Extensions/actions/workflows/docs.yml/badge.svg?branch=main)](https://github.com/BoBoBaSs84/BB84.Extensions/actions/workflows/docs.yml)
 [![CodeQL](https://github.com/BoBoBaSs84/BB84.Extensions/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/BoBoBaSs84/BB84.Extensions/actions/workflows/codeql.yml)
+[![C#](https://img.shields.io/badge/12.0-239120?logo=csharp&logoColor=white&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
 [![Issues](https://img.shields.io/github/issues/BoBoBaSs84/BB84.Extensions)](https://github.com/BoBoBaSs84/BB84.Extensions/issues)
 [![Commit](https://img.shields.io/github/last-commit/BoBoBaSs84/BB84.Extensions)](https://github.com/BoBoBaSs84/BB84.Extensions/commit/main)
 [![License](https://img.shields.io/github/license/BoBoBaSs84/BB84.Extensions)](https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/LICENSE)
@@ -27,11 +28,11 @@ DateTime startOfWeek = today.StartOfWeek();
 
 #### Random choice
 
-The `RandomChoice` method returns a randomly chosen item from a given array.
+The `TakeRandom` method returns a randomly chosen item from a given array.
 
 ```csharp
-int[] ints = { 1, 2, 3 };
-int i = ints.RandomChoice();
+int[] ints = [1, 2, 3];
+int i = ints.TakeRandom();
 ```
 
 #### For each
@@ -40,7 +41,7 @@ The `ForEach` method iterates over an enumerable and executes an action on each 
 
 ```csharp
 int hits = default;
-IEnumerable<string> strings = new List<string>() { "a", "ab", "b", "bb" };
+IEnumerable<string> strings = ["a", "ab", "b", "bb"];
 strings.ForEach(x => x.Contains("a"), x => hits++);
 ```
 
