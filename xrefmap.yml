@@ -13,22 +13,22 @@ references:
   commentId: T:BB84.Extensions.ArrayExtensions
   fullName: BB84.Extensions.ArrayExtensions
   nameWithType: ArrayExtensions
-- uid: BB84.Extensions.ArrayExtensions.RandomChoice*
-  name: RandomChoice
-  href: api/BB84.Extensions.ArrayExtensions.html#BB84_Extensions_ArrayExtensions_RandomChoice_
-  commentId: Overload:BB84.Extensions.ArrayExtensions.RandomChoice
+- uid: BB84.Extensions.ArrayExtensions.TakeRandom*
+  name: TakeRandom
+  href: api/BB84.Extensions.ArrayExtensions.html#BB84_Extensions_ArrayExtensions_TakeRandom_
+  commentId: Overload:BB84.Extensions.ArrayExtensions.TakeRandom
   isSpec: "True"
-  fullName: BB84.Extensions.ArrayExtensions.RandomChoice
-  nameWithType: ArrayExtensions.RandomChoice
-- uid: BB84.Extensions.ArrayExtensions.RandomChoice``1(``0[])
-  name: RandomChoice<T>(T[])
-  href: api/BB84.Extensions.ArrayExtensions.html#BB84_Extensions_ArrayExtensions_RandomChoice__1___0___
-  commentId: M:BB84.Extensions.ArrayExtensions.RandomChoice``1(``0[])
-  name.vb: RandomChoice(Of T)(T())
-  fullName: BB84.Extensions.ArrayExtensions.RandomChoice<T>(T[])
-  fullName.vb: BB84.Extensions.ArrayExtensions.RandomChoice(Of T)(T())
-  nameWithType: ArrayExtensions.RandomChoice<T>(T[])
-  nameWithType.vb: ArrayExtensions.RandomChoice(Of T)(T())
+  fullName: BB84.Extensions.ArrayExtensions.TakeRandom
+  nameWithType: ArrayExtensions.TakeRandom
+- uid: BB84.Extensions.ArrayExtensions.TakeRandom``1(``0[])
+  name: TakeRandom<T>(T[])
+  href: api/BB84.Extensions.ArrayExtensions.html#BB84_Extensions_ArrayExtensions_TakeRandom__1___0___
+  commentId: M:BB84.Extensions.ArrayExtensions.TakeRandom``1(``0[])
+  name.vb: TakeRandom(Of T)(T())
+  fullName: BB84.Extensions.ArrayExtensions.TakeRandom<T>(T[])
+  fullName.vb: BB84.Extensions.ArrayExtensions.TakeRandom(Of T)(T())
+  nameWithType: ArrayExtensions.TakeRandom<T>(T[])
+  nameWithType.vb: ArrayExtensions.TakeRandom(Of T)(T())
 - uid: BB84.Extensions.BooleanExtensions
   name: BooleanExtensions
   href: api/BB84.Extensions.BooleanExtensions.html
@@ -457,6 +457,22 @@ references:
   fullName.vb: BB84.Extensions.EnumerableExtensions.ForEach(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Boolean), System.Func(Of T, Boolean), System.Action(Of T))
   nameWithType: EnumerableExtensions.ForEach<T>(IEnumerable<T>, Func<T, bool>, Func<T, bool>, Action<T>)
   nameWithType.vb: EnumerableExtensions.ForEach(Of T)(IEnumerable(Of T), Func(Of T, Boolean), Func(Of T, Boolean), Action(Of T))
+- uid: BB84.Extensions.EnumerableExtensions.TakeRandom*
+  name: TakeRandom
+  href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_TakeRandom_
+  commentId: Overload:BB84.Extensions.EnumerableExtensions.TakeRandom
+  isSpec: "True"
+  fullName: BB84.Extensions.EnumerableExtensions.TakeRandom
+  nameWithType: EnumerableExtensions.TakeRandom
+- uid: BB84.Extensions.EnumerableExtensions.TakeRandom``1(System.Collections.Generic.IEnumerable{``0})
+  name: TakeRandom<T>(IEnumerable<T>)
+  href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_TakeRandom__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:BB84.Extensions.EnumerableExtensions.TakeRandom``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: TakeRandom(Of T)(IEnumerable(Of T))
+  fullName: BB84.Extensions.EnumerableExtensions.TakeRandom<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: BB84.Extensions.EnumerableExtensions.TakeRandom(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: EnumerableExtensions.TakeRandom<T>(IEnumerable<T>)
+  nameWithType.vb: EnumerableExtensions.TakeRandom(Of T)(IEnumerable(Of T))
 - uid: BB84.Extensions.EnumeratorExtensions
   name: EnumeratorExtensions
   href: api/BB84.Extensions.EnumeratorExtensions.html
