@@ -5,11 +5,11 @@ namespace BB84.Extensions;
 public static partial class ArrayExtensions
 {
 	/// <summary>
-	/// Returns a randomly choosen item from a given array.
+	/// Returns a randomly choosen item from a given array of <paramref name="values"/>.
 	/// </summary>
-	/// <typeparam name="T">Type of objects in the array.</typeparam>
+	/// <typeparam name="T">The type of object in the array.</typeparam>
 	/// <param name="values">The array of objects to choose from.</param>
 	/// <returns>A random item from the array.</returns>
-	public static T RandomChoice<T>(this T[] values)
+	public static T TakeRandom<T>(this T[] values)
 		=> values[RandomHelper.Random.Next(0, values.Length)];
 }
