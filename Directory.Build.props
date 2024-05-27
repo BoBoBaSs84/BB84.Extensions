@@ -4,7 +4,7 @@
 		<VersionMajor>2</VersionMajor>
 		<VersionMinor>3</VersionMinor>
 		<VersionPatch>$([System.DateTime]::UtcNow.ToString("MMdd"))</VersionPatch>
-		<VersionRevision>$([System.DateTime]::UtcNow.ToString("HHmm"))</VersionRevision>
+		<VersionRevision>$([System.DateTime]::UtcNow.TimeOfDay.TotalMinutes.ToString("0"))</VersionRevision>
 		<VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch).$(VersionRevision)</VersionPrefix>
 		<VersionSuffix Condition="$(Configuration.Equals('Debug'))">Development</VersionSuffix>
 		<FileVersion>$(VersionMajor).$(VersionMinor).$(VersionPatch)</FileVersion>
@@ -41,11 +41,10 @@
 		<Company>https://github.com/BoBoBaSs84</Company>
 		<Copyright>Copyright © $([System.DateTime]::UtcNow.Year) BoBoBaSs84</Copyright>
 		<Description>A collection of some random C# extensions I needed in many projects.</Description>
-		<Product>BB84.Extensions</Product>
-		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<Product>BB84.Extensions</Product>		
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/BoBoBaSs84/BB84.Extensions</RepositoryUrl>
-		<Title>BB84.Extensions</Title>
+		<Title>$(AssemblyName)</Title>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))" Label="Package">
@@ -62,7 +61,7 @@
 
 	<PropertyGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
 		<IsPackable>false</IsPackable>
-		<IsTestProject>true</IsTestProject>
+		<IsTestProject>True</IsTestProject>
 		<GenerateDocumentationFile>false</GenerateDocumentationFile>
 		<TargetFrameworks>net462;net6.0;net8.0</TargetFrameworks>
 	</PropertyGroup>
@@ -70,7 +69,7 @@
 	<ItemGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))">
 		<InternalsVisibleTo Include="$(AssemblyName)Tests" Key="0024000004800000940000000602000000240000525341310004000001000100516456cd4ae4971c5f05a29182bdaec411efa3fab154013c2883be91fde6cd67ae35bb7f89003ab2905620dbb318c9710bc34c5cb771695e0a9202555c4ca542a5d25703e7002ab6588d8dc90107f141145dbd06dfdc918a7eb39eb275f0fb2ed8c1f0e6bf1b79f936a23476d327ceba42f02c231ca7c50a99bcff3120724bc0" />
 		<None Include="..\..\LICENSE" Pack="True" PackagePath="\" />
-		<None Include="..\..\icon.png" Pack="True" PackagePath="" />
+		<None Include="..\..\icon.png" Pack="True" PackagePath="\" />
 		<None Include="..\..\README.md" Pack="True" PackagePath="\" />
 	</ItemGroup>
 
