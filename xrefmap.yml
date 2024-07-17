@@ -207,6 +207,38 @@ references:
   commentId: T:BB84.Extensions.ColorExtensions
   fullName: BB84.Extensions.ColorExtensions
   nameWithType: ColorExtensions
+- uid: BB84.Extensions.ColorExtensions.FromARGBHexString(System.String)
+  name: FromARGBHexString(string)
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_FromARGBHexString_System_String_
+  commentId: M:BB84.Extensions.ColorExtensions.FromARGBHexString(System.String)
+  name.vb: FromARGBHexString(String)
+  fullName: BB84.Extensions.ColorExtensions.FromARGBHexString(string)
+  fullName.vb: BB84.Extensions.ColorExtensions.FromARGBHexString(String)
+  nameWithType: ColorExtensions.FromARGBHexString(string)
+  nameWithType.vb: ColorExtensions.FromARGBHexString(String)
+- uid: BB84.Extensions.ColorExtensions.FromARGBHexString*
+  name: FromARGBHexString
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_FromARGBHexString_
+  commentId: Overload:BB84.Extensions.ColorExtensions.FromARGBHexString
+  isSpec: "True"
+  fullName: BB84.Extensions.ColorExtensions.FromARGBHexString
+  nameWithType: ColorExtensions.FromARGBHexString
+- uid: BB84.Extensions.ColorExtensions.FromRGBHexString(System.String)
+  name: FromRGBHexString(string)
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_FromRGBHexString_System_String_
+  commentId: M:BB84.Extensions.ColorExtensions.FromRGBHexString(System.String)
+  name.vb: FromRGBHexString(String)
+  fullName: BB84.Extensions.ColorExtensions.FromRGBHexString(string)
+  fullName.vb: BB84.Extensions.ColorExtensions.FromRGBHexString(String)
+  nameWithType: ColorExtensions.FromRGBHexString(string)
+  nameWithType.vb: ColorExtensions.FromRGBHexString(String)
+- uid: BB84.Extensions.ColorExtensions.FromRGBHexString*
+  name: FromRGBHexString
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_FromRGBHexString_
+  commentId: Overload:BB84.Extensions.ColorExtensions.FromRGBHexString
+  isSpec: "True"
+  fullName: BB84.Extensions.ColorExtensions.FromRGBHexString
+  nameWithType: ColorExtensions.FromRGBHexString
 - uid: BB84.Extensions.ColorExtensions.ToARGBHexString(System.Drawing.Color)
   name: ToARGBHexString(Color)
   href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_ToARGBHexString_System_Drawing_Color_
