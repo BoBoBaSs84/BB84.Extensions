@@ -223,6 +223,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ColorExtensions.FromARGBHexString
   nameWithType: ColorExtensions.FromARGBHexString
+- uid: BB84.Extensions.ColorExtensions.FromArgbByteArray(System.Byte[])
+  name: FromArgbByteArray(byte[])
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_FromArgbByteArray_System_Byte___
+  commentId: M:BB84.Extensions.ColorExtensions.FromArgbByteArray(System.Byte[])
+  name.vb: FromArgbByteArray(Byte())
+  fullName: BB84.Extensions.ColorExtensions.FromArgbByteArray(byte[])
+  fullName.vb: BB84.Extensions.ColorExtensions.FromArgbByteArray(Byte())
+  nameWithType: ColorExtensions.FromArgbByteArray(byte[])
+  nameWithType.vb: ColorExtensions.FromArgbByteArray(Byte())
+- uid: BB84.Extensions.ColorExtensions.FromArgbByteArray*
+  name: FromArgbByteArray
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_FromArgbByteArray_
+  commentId: Overload:BB84.Extensions.ColorExtensions.FromArgbByteArray
+  isSpec: "True"
+  fullName: BB84.Extensions.ColorExtensions.FromArgbByteArray
+  nameWithType: ColorExtensions.FromArgbByteArray
 - uid: BB84.Extensions.ColorExtensions.FromRGBHexString(System.String)
   name: FromRGBHexString(string)
   href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_FromRGBHexString_System_String_
@@ -239,6 +255,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ColorExtensions.FromRGBHexString
   nameWithType: ColorExtensions.FromRGBHexString
+- uid: BB84.Extensions.ColorExtensions.FromRgbByteArray(System.Byte[])
+  name: FromRgbByteArray(byte[])
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_FromRgbByteArray_System_Byte___
+  commentId: M:BB84.Extensions.ColorExtensions.FromRgbByteArray(System.Byte[])
+  name.vb: FromRgbByteArray(Byte())
+  fullName: BB84.Extensions.ColorExtensions.FromRgbByteArray(byte[])
+  fullName.vb: BB84.Extensions.ColorExtensions.FromRgbByteArray(Byte())
+  nameWithType: ColorExtensions.FromRgbByteArray(byte[])
+  nameWithType.vb: ColorExtensions.FromRgbByteArray(Byte())
+- uid: BB84.Extensions.ColorExtensions.FromRgbByteArray*
+  name: FromRgbByteArray
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_FromRgbByteArray_
+  commentId: Overload:BB84.Extensions.ColorExtensions.FromRgbByteArray
+  isSpec: "True"
+  fullName: BB84.Extensions.ColorExtensions.FromRgbByteArray
+  nameWithType: ColorExtensions.FromRgbByteArray
 - uid: BB84.Extensions.ColorExtensions.ToARGBHexString(System.Drawing.Color)
   name: ToARGBHexString(Color)
   href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_ToARGBHexString_System_Drawing_Color_
@@ -252,6 +284,19 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ColorExtensions.ToARGBHexString
   nameWithType: ColorExtensions.ToARGBHexString
+- uid: BB84.Extensions.ColorExtensions.ToArgbByteArray(System.Drawing.Color)
+  name: ToArgbByteArray(Color)
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_ToArgbByteArray_System_Drawing_Color_
+  commentId: M:BB84.Extensions.ColorExtensions.ToArgbByteArray(System.Drawing.Color)
+  fullName: BB84.Extensions.ColorExtensions.ToArgbByteArray(System.Drawing.Color)
+  nameWithType: ColorExtensions.ToArgbByteArray(Color)
+- uid: BB84.Extensions.ColorExtensions.ToArgbByteArray*
+  name: ToArgbByteArray
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_ToArgbByteArray_
+  commentId: Overload:BB84.Extensions.ColorExtensions.ToArgbByteArray
+  isSpec: "True"
+  fullName: BB84.Extensions.ColorExtensions.ToArgbByteArray
+  nameWithType: ColorExtensions.ToArgbByteArray
 - uid: BB84.Extensions.ColorExtensions.ToRGBHexString(System.Drawing.Color)
   name: ToRGBHexString(Color)
   href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_ToRGBHexString_System_Drawing_Color_
@@ -265,6 +310,19 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ColorExtensions.ToRGBHexString
   nameWithType: ColorExtensions.ToRGBHexString
+- uid: BB84.Extensions.ColorExtensions.ToRgbByteArray(System.Drawing.Color)
+  name: ToRgbByteArray(Color)
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_ToRgbByteArray_System_Drawing_Color_
+  commentId: M:BB84.Extensions.ColorExtensions.ToRgbByteArray(System.Drawing.Color)
+  fullName: BB84.Extensions.ColorExtensions.ToRgbByteArray(System.Drawing.Color)
+  nameWithType: ColorExtensions.ToRgbByteArray(Color)
+- uid: BB84.Extensions.ColorExtensions.ToRgbByteArray*
+  name: ToRgbByteArray
+  href: api/BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_ToRgbByteArray_
+  commentId: Overload:BB84.Extensions.ColorExtensions.ToRgbByteArray
+  isSpec: "True"
+  fullName: BB84.Extensions.ColorExtensions.ToRgbByteArray
+  nameWithType: ColorExtensions.ToRgbByteArray
 - uid: BB84.Extensions.ComparableExtensions
   name: ComparableExtensions
   href: api/BB84.Extensions.ComparableExtensions.html
@@ -341,6 +399,22 @@ references:
   commentId: T:BB84.Extensions.DateTimeExtensions
   fullName: BB84.Extensions.DateTimeExtensions
   nameWithType: DateTimeExtensions
+- uid: BB84.Extensions.DateTimeExtensions.EndOfFiscalYear(System.DateTime,System.Int32)
+  name: EndOfFiscalYear(DateTime, int)
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_EndOfFiscalYear_System_DateTime_System_Int32_
+  commentId: M:BB84.Extensions.DateTimeExtensions.EndOfFiscalYear(System.DateTime,System.Int32)
+  name.vb: EndOfFiscalYear(Date, Integer)
+  fullName: BB84.Extensions.DateTimeExtensions.EndOfFiscalYear(System.DateTime, int)
+  fullName.vb: BB84.Extensions.DateTimeExtensions.EndOfFiscalYear(Date, Integer)
+  nameWithType: DateTimeExtensions.EndOfFiscalYear(DateTime, int)
+  nameWithType.vb: DateTimeExtensions.EndOfFiscalYear(Date, Integer)
+- uid: BB84.Extensions.DateTimeExtensions.EndOfFiscalYear*
+  name: EndOfFiscalYear
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_EndOfFiscalYear_
+  commentId: Overload:BB84.Extensions.DateTimeExtensions.EndOfFiscalYear
+  isSpec: "True"
+  fullName: BB84.Extensions.DateTimeExtensions.EndOfFiscalYear
+  nameWithType: DateTimeExtensions.EndOfFiscalYear
 - uid: BB84.Extensions.DateTimeExtensions.EndOfMonth(System.DateTime)
   name: EndOfMonth(DateTime)
   href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_EndOfMonth_System_DateTime_
@@ -373,6 +447,38 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.DateTimeExtensions.EndOfWeek
   nameWithType: DateTimeExtensions.EndOfWeek
+- uid: BB84.Extensions.DateTimeExtensions.EndOfYear(System.DateTime)
+  name: EndOfYear(DateTime)
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_EndOfYear_System_DateTime_
+  commentId: M:BB84.Extensions.DateTimeExtensions.EndOfYear(System.DateTime)
+  name.vb: EndOfYear(Date)
+  fullName: BB84.Extensions.DateTimeExtensions.EndOfYear(System.DateTime)
+  fullName.vb: BB84.Extensions.DateTimeExtensions.EndOfYear(Date)
+  nameWithType: DateTimeExtensions.EndOfYear(DateTime)
+  nameWithType.vb: DateTimeExtensions.EndOfYear(Date)
+- uid: BB84.Extensions.DateTimeExtensions.EndOfYear*
+  name: EndOfYear
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_EndOfYear_
+  commentId: Overload:BB84.Extensions.DateTimeExtensions.EndOfYear
+  isSpec: "True"
+  fullName: BB84.Extensions.DateTimeExtensions.EndOfYear
+  nameWithType: DateTimeExtensions.EndOfYear
+- uid: BB84.Extensions.DateTimeExtensions.StartOfFiscalYear(System.DateTime,System.Int32)
+  name: StartOfFiscalYear(DateTime, int)
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_StartOfFiscalYear_System_DateTime_System_Int32_
+  commentId: M:BB84.Extensions.DateTimeExtensions.StartOfFiscalYear(System.DateTime,System.Int32)
+  name.vb: StartOfFiscalYear(Date, Integer)
+  fullName: BB84.Extensions.DateTimeExtensions.StartOfFiscalYear(System.DateTime, int)
+  fullName.vb: BB84.Extensions.DateTimeExtensions.StartOfFiscalYear(Date, Integer)
+  nameWithType: DateTimeExtensions.StartOfFiscalYear(DateTime, int)
+  nameWithType.vb: DateTimeExtensions.StartOfFiscalYear(Date, Integer)
+- uid: BB84.Extensions.DateTimeExtensions.StartOfFiscalYear*
+  name: StartOfFiscalYear
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_StartOfFiscalYear_
+  commentId: Overload:BB84.Extensions.DateTimeExtensions.StartOfFiscalYear
+  isSpec: "True"
+  fullName: BB84.Extensions.DateTimeExtensions.StartOfFiscalYear
+  nameWithType: DateTimeExtensions.StartOfFiscalYear
 - uid: BB84.Extensions.DateTimeExtensions.StartOfMonth(System.DateTime)
   name: StartOfMonth(DateTime)
   href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_StartOfMonth_System_DateTime_
@@ -405,6 +511,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.DateTimeExtensions.StartOfWeek
   nameWithType: DateTimeExtensions.StartOfWeek
+- uid: BB84.Extensions.DateTimeExtensions.StartOfYear(System.DateTime)
+  name: StartOfYear(DateTime)
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_StartOfYear_System_DateTime_
+  commentId: M:BB84.Extensions.DateTimeExtensions.StartOfYear(System.DateTime)
+  name.vb: StartOfYear(Date)
+  fullName: BB84.Extensions.DateTimeExtensions.StartOfYear(System.DateTime)
+  fullName.vb: BB84.Extensions.DateTimeExtensions.StartOfYear(Date)
+  nameWithType: DateTimeExtensions.StartOfYear(DateTime)
+  nameWithType.vb: DateTimeExtensions.StartOfYear(Date)
+- uid: BB84.Extensions.DateTimeExtensions.StartOfYear*
+  name: StartOfYear
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_StartOfYear_
+  commentId: Overload:BB84.Extensions.DateTimeExtensions.StartOfYear
+  isSpec: "True"
+  fullName: BB84.Extensions.DateTimeExtensions.StartOfYear
+  nameWithType: DateTimeExtensions.StartOfYear
 - uid: BB84.Extensions.DecimalExtensions
   name: DecimalExtensions
   href: api/BB84.Extensions.DecimalExtensions.html

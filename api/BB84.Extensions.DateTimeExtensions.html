@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_DateTimeExtensions" data-uid="BB84.Extensions.DateTimeExtensions" class="text-break">
-Class DateTimeExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.StartOfWeek.cs/#L3"><i class="bi bi-code-slash"></i></a>
+Class DateTimeExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.StartOfYear.cs/#L3"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -147,6 +147,54 @@ Class DateTimeExtensions  <a class="header-action link-secondary" title="View so
 
   <h2 class="section" id="methods">Methods
 </h2>
+
+
+  <a id="BB84_Extensions_DateTimeExtensions_EndOfFiscalYear_" data-uid="BB84.Extensions.DateTimeExtensions.EndOfFiscalYear*"></a>
+
+  <h3 id="BB84_Extensions_DateTimeExtensions_EndOfFiscalYear_System_DateTime_System_Int32_" data-uid="BB84.Extensions.DateTimeExtensions.EndOfFiscalYear(System.DateTime,System.Int32)">
+  EndOfFiscalYear(DateTime, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.EndOfFiscalYear.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the end date of the fiscal year using the specified <code class="paramref">value</code>
+and the definition of the <code class="paramref">startMonth</code> of the fiscal year.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime EndOfFiscalYear(this DateTime value, int startMonth = 10)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The date time value to work with.</p>
+</dd>
+    <dt><code>startMonth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The first month of the fiscal year.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The end date of the fiscal year.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd></dd>
+  </dl>
+
 
 
   <a id="BB84_Extensions_DateTimeExtensions_EndOfMonth_" data-uid="BB84.Extensions.DateTimeExtensions.EndOfMonth*"></a>
@@ -228,6 +276,93 @@ the definition of the first day of the week.</p>
 
 
 
+
+
+
+  <a id="BB84_Extensions_DateTimeExtensions_EndOfYear_" data-uid="BB84.Extensions.DateTimeExtensions.EndOfYear*"></a>
+
+  <h3 id="BB84_Extensions_DateTimeExtensions_EndOfYear_System_DateTime_" data-uid="BB84.Extensions.DateTimeExtensions.EndOfYear(System.DateTime)">
+  EndOfYear(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.EndOfYear.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the last day of the year using the specified date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime EndOfYear(this DateTime dateTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The date time value to work with.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The date of the last day of the year.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Extensions_DateTimeExtensions_StartOfFiscalYear_" data-uid="BB84.Extensions.DateTimeExtensions.StartOfFiscalYear*"></a>
+
+  <h3 id="BB84_Extensions_DateTimeExtensions_StartOfFiscalYear_System_DateTime_System_Int32_" data-uid="BB84.Extensions.DateTimeExtensions.StartOfFiscalYear(System.DateTime,System.Int32)">
+  StartOfFiscalYear(DateTime, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.StartOfFiscalYear.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the start date of the fiscal year using the specified date <code class="paramref">value</code>
+and the definition of the <code class="paramref">startMonth</code> of the fiscal year.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime StartOfFiscalYear(this DateTime value, int startMonth = 10)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The date time value to work with.</p>
+</dd>
+    <dt><code>startMonth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The first month of the fiscal year.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The start date of the fiscal year.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -313,11 +448,50 @@ the definition of the first day of the week.</p>
 
 
 
+  <a id="BB84_Extensions_DateTimeExtensions_StartOfYear_" data-uid="BB84.Extensions.DateTimeExtensions.StartOfYear*"></a>
+
+  <h3 id="BB84_Extensions_DateTimeExtensions_StartOfYear_System_DateTime_" data-uid="BB84.Extensions.DateTimeExtensions.StartOfYear(System.DateTime)">
+  StartOfYear(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.StartOfYear.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the first day of the year using the specified date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime StartOfYear(this DateTime dateTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The date time value to work with.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The date of the first day of the year.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.StartOfWeek.cs/#L3" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.StartOfYear.cs/#L3" class="edit-link">Edit this page</a>
         </div>
 
 
