@@ -5,7 +5,16 @@ namespace BB84.ExtensionsTests;
 [TestClass]
 public sealed partial class ColorExtensionsTests
 {
-	public static IEnumerable<object[]> GetArgbTestData()
+	public static IEnumerable<object[]> GetArgbByteData()
+	{
+		yield return new object[] { Color.White, new byte[] { 255, 255, 255, 255 } };
+		yield return new object[] { Color.Black, new byte[] { 0, 0, 0, 255 } };
+		yield return new object[] { Color.Red, new byte[] { 0, 0, 255, 255 } };
+		yield return new object[] { Color.Lime, new byte[] { 0, 255, 0, 255 } };
+		yield return new object[] { Color.Blue, new byte[] { 255, 0, 0, 255 } };
+	}
+
+	public static IEnumerable<object[]> GetArgbHexData()
 	{
 		yield return new object[] { Color.White, "#FFFFFFFF" };
 		yield return new object[] { Color.Black, "#FF000000" };
@@ -14,7 +23,16 @@ public sealed partial class ColorExtensionsTests
 		yield return new object[] { Color.Blue, "#FF0000FF" };
 	}
 
-	public static IEnumerable<object[]> GetRgbTestData()
+	public static IEnumerable<object[]> GetRgbByteData()
+	{
+		yield return new object[] { Color.White, new byte[] { 255, 255, 255 } };
+		yield return new object[] { Color.Black, new byte[] { 0, 0, 0 } };
+		yield return new object[] { Color.Red, new byte[] { 0, 0, 255 } };
+		yield return new object[] { Color.Lime, new byte[] { 0, 255, 0 } };
+		yield return new object[] { Color.Blue, new byte[] { 255, 0, 0 } };
+	}
+
+	public static IEnumerable<object[]> GetRgbHexData()
 	{
 		yield return new object[] { Color.White, "#FFFFFF" };
 		yield return new object[] { Color.Black, "#000000" };
