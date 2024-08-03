@@ -1,4 +1,6 @@
-﻿namespace BB84.ExtensionsTests;
+﻿using System.Globalization;
+
+namespace BB84.ExtensionsTests;
 
 [TestClass]
 public sealed partial class DateTimeExtensionTests
@@ -73,5 +75,14 @@ public sealed partial class DateTimeExtensionTests
 		yield return new object[] { new DateTime(2022, 9, 7), 1, new DateTime(2022, 12, 31) };
 		yield return new object[] { new DateTime(2013, 9, 8), 2, new DateTime(2014, 1, 31) };
 		yield return new object[] { new DateTime(2024, 12, 31), 4, new DateTime(2025, 3, 31) };
+	}
+
+	public static IEnumerable<object[]> GetWeekOfYearTestData()
+	{
+		yield return new object[] { 31, CultureInfo.GetCultureInfo("de-DE") };
+		yield return new object[] { 31, CultureInfo.GetCultureInfo("en-US") };
+		yield return new object[] { 31, CultureInfo.GetCultureInfo("el-GR") };
+		yield return new object[] { 31, CultureInfo.GetCultureInfo("fr-FR") };
+		yield return new object[] { 31, CultureInfo.GetCultureInfo("ja-JP") };
 	}
 }
