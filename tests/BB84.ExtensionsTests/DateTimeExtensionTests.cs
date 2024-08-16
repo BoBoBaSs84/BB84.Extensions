@@ -79,10 +79,10 @@ public sealed partial class DateTimeExtensionTests
 
 	public static IEnumerable<object[]> GetWeekOfYearTestData()
 	{
-		yield return new object[] { 31, CultureInfo.GetCultureInfo("de-DE") };
-		yield return new object[] { 31, CultureInfo.GetCultureInfo("en-US") };
-		yield return new object[] { 31, CultureInfo.GetCultureInfo("el-GR") };
-		yield return new object[] { 31, CultureInfo.GetCultureInfo("fr-FR") };
-		yield return new object[] { 31, CultureInfo.GetCultureInfo("ja-JP") };
+		yield return new object[] { new DateTime(2000, 12, 31), 52, CultureInfo.GetCultureInfo("de-DE") };
+		yield return new object[] { new DateTime(2000, 12, 31), 54, CultureInfo.GetCultureInfo("en-US") };
+		yield return new object[] { new DateTime(2000, 12, 31), 52, CultureInfo.GetCultureInfo("el-GR") };
+		yield return new object[] { new DateTime(2000, 12, 31), 52, CultureInfo.GetCultureInfo("fr-FR") };
+		yield return new object[] { new DateTime(2000, 12, 31), 54, CultureInfo.GetCultureInfo("ja-JP") };
 	}
 }

@@ -8,12 +8,11 @@ public sealed partial class DateTimeExtensionTests
 {
 	[DataTestMethod]
 	[DynamicData(nameof(GetWeekOfYearTestData), DynamicDataSourceType.Method)]
-	public void WeekOfYearTest(int expected, CultureInfo culture)
+	public void WeekOfYearTest(DateTime dateTime, int expected, CultureInfo culture)
 	{
-		DateTime today = DateTime.Today;
 		CultureInfo.CurrentCulture = culture;
 
-		int result = today.WeekOfYear();
+		int result = dateTime.WeekOfYear();
 
 		Assert.AreEqual(expected, result);
 	}
