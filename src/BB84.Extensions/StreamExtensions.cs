@@ -1,7 +1,7 @@
 ﻿namespace BB84.Extensions;
 
 /// <summary>
-/// The stream extensions class.
+/// The <see cref="Stream"/> extensions class.
 /// </summary>
 public static partial class StreamExtensions
 {
@@ -14,8 +14,8 @@ public static partial class StreamExtensions
 	public static byte[] ToByteArray(this Stream inputStream)
 	{
 		byte[] buffer = new byte[16 * 1024];
-		using MemoryStream memoryStream = new();
 		int read;
+		using MemoryStream memoryStream = new();
 		while ((read = inputStream.Read(buffer, 0, buffer.Length)) > 0)
 			memoryStream.Write(buffer, 0, read);
 		return memoryStream.ToArray();
