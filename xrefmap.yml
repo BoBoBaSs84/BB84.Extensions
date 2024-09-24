@@ -44,6 +44,15 @@ references:
   fullName.vb: BB84.Extensions.BooleanExtensions.IsFalse(Boolean)
   nameWithType: BooleanExtensions.IsFalse(bool)
   nameWithType.vb: BooleanExtensions.IsFalse(Boolean)
+- uid: BB84.Extensions.BooleanExtensions.IsFalse(System.Nullable{System.Boolean})
+  name: IsFalse(bool?)
+  href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsFalse_System_Nullable_System_Boolean__
+  commentId: M:BB84.Extensions.BooleanExtensions.IsFalse(System.Nullable{System.Boolean})
+  name.vb: IsFalse(Boolean?)
+  fullName: BB84.Extensions.BooleanExtensions.IsFalse(bool?)
+  fullName.vb: BB84.Extensions.BooleanExtensions.IsFalse(Boolean?)
+  nameWithType: BooleanExtensions.IsFalse(bool?)
+  nameWithType.vb: BooleanExtensions.IsFalse(Boolean?)
 - uid: BB84.Extensions.BooleanExtensions.IsFalse*
   name: IsFalse
   href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsFalse_
@@ -76,6 +85,15 @@ references:
   fullName.vb: BB84.Extensions.BooleanExtensions.IsTrue(Boolean)
   nameWithType: BooleanExtensions.IsTrue(bool)
   nameWithType.vb: BooleanExtensions.IsTrue(Boolean)
+- uid: BB84.Extensions.BooleanExtensions.IsTrue(System.Nullable{System.Boolean})
+  name: IsTrue(bool?)
+  href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsTrue_System_Nullable_System_Boolean__
+  commentId: M:BB84.Extensions.BooleanExtensions.IsTrue(System.Nullable{System.Boolean})
+  name.vb: IsTrue(Boolean?)
+  fullName: BB84.Extensions.BooleanExtensions.IsTrue(bool?)
+  fullName.vb: BB84.Extensions.BooleanExtensions.IsTrue(Boolean?)
+  nameWithType: BooleanExtensions.IsTrue(bool?)
+  nameWithType.vb: BooleanExtensions.IsTrue(Boolean?)
 - uid: BB84.Extensions.BooleanExtensions.IsTrue*
   name: IsTrue
   href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsTrue_
@@ -527,6 +545,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.DateTimeExtensions.StartOfYear
   nameWithType: DateTimeExtensions.StartOfYear
+- uid: BB84.Extensions.DateTimeExtensions.WeekOfYear(System.DateTime)
+  name: WeekOfYear(DateTime)
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_WeekOfYear_System_DateTime_
+  commentId: M:BB84.Extensions.DateTimeExtensions.WeekOfYear(System.DateTime)
+  name.vb: WeekOfYear(Date)
+  fullName: BB84.Extensions.DateTimeExtensions.WeekOfYear(System.DateTime)
+  fullName.vb: BB84.Extensions.DateTimeExtensions.WeekOfYear(Date)
+  nameWithType: DateTimeExtensions.WeekOfYear(DateTime)
+  nameWithType.vb: DateTimeExtensions.WeekOfYear(Date)
+- uid: BB84.Extensions.DateTimeExtensions.WeekOfYear*
+  name: WeekOfYear
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_WeekOfYear_
+  commentId: Overload:BB84.Extensions.DateTimeExtensions.WeekOfYear
+  isSpec: "True"
+  fullName: BB84.Extensions.DateTimeExtensions.WeekOfYear
+  nameWithType: DateTimeExtensions.WeekOfYear
 - uid: BB84.Extensions.DecimalExtensions
   name: DecimalExtensions
   href: api/BB84.Extensions.DecimalExtensions.html
@@ -1324,3 +1358,57 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.StringExtensions.ToBase64
   nameWithType: StringExtensions.ToBase64
+- uid: BB84.Extensions.TaskExtensions
+  name: TaskExtensions
+  href: api/BB84.Extensions.TaskExtensions.html
+  commentId: T:BB84.Extensions.TaskExtensions
+  fullName: BB84.Extensions.TaskExtensions
+  nameWithType: TaskExtensions
+- uid: BB84.Extensions.TaskExtensions.ToAsyncVoid(System.Threading.Tasks.Task,System.Action,System.Action{System.Exception})
+  name: ToAsyncVoid(Task, Action?, Action<Exception>?)
+  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_ToAsyncVoid_System_Threading_Tasks_Task_System_Action_System_Action_System_Exception__
+  commentId: M:BB84.Extensions.TaskExtensions.ToAsyncVoid(System.Threading.Tasks.Task,System.Action,System.Action{System.Exception})
+  name.vb: ToAsyncVoid(Task, Action, Action(Of Exception))
+  fullName: BB84.Extensions.TaskExtensions.ToAsyncVoid(System.Threading.Tasks.Task, System.Action?, System.Action<System.Exception>?)
+  fullName.vb: BB84.Extensions.TaskExtensions.ToAsyncVoid(System.Threading.Tasks.Task, System.Action, System.Action(Of System.Exception))
+  nameWithType: TaskExtensions.ToAsyncVoid(Task, Action?, Action<Exception>?)
+  nameWithType.vb: TaskExtensions.ToAsyncVoid(Task, Action, Action(Of Exception))
+- uid: BB84.Extensions.TaskExtensions.ToAsyncVoid*
+  name: ToAsyncVoid
+  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_ToAsyncVoid_
+  commentId: Overload:BB84.Extensions.TaskExtensions.ToAsyncVoid
+  isSpec: "True"
+  fullName: BB84.Extensions.TaskExtensions.ToAsyncVoid
+  nameWithType: TaskExtensions.ToAsyncVoid
+- uid: BB84.Extensions.TaskExtensions.ToSafeSync*
+  name: ToSafeSync
+  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_ToSafeSync_
+  commentId: Overload:BB84.Extensions.TaskExtensions.ToSafeSync
+  isSpec: "True"
+  fullName: BB84.Extensions.TaskExtensions.ToSafeSync
+  nameWithType: TaskExtensions.ToSafeSync
+- uid: BB84.Extensions.TaskExtensions.ToSafeSync``1(System.Threading.Tasks.Task{``0},System.Action,System.Action{System.Exception})
+  name: ToSafeSync<T>(Task<T>, Action?, Action<Exception>?)
+  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_ToSafeSync__1_System_Threading_Tasks_Task___0__System_Action_System_Action_System_Exception__
+  commentId: M:BB84.Extensions.TaskExtensions.ToSafeSync``1(System.Threading.Tasks.Task{``0},System.Action,System.Action{System.Exception})
+  name.vb: ToSafeSync(Of T)(Task(Of T), Action, Action(Of Exception))
+  fullName: BB84.Extensions.TaskExtensions.ToSafeSync<T>(System.Threading.Tasks.Task<T>, System.Action?, System.Action<System.Exception>?)
+  fullName.vb: BB84.Extensions.TaskExtensions.ToSafeSync(Of T)(System.Threading.Tasks.Task(Of T), System.Action, System.Action(Of System.Exception))
+  nameWithType: TaskExtensions.ToSafeSync<T>(Task<T>, Action?, Action<Exception>?)
+  nameWithType.vb: TaskExtensions.ToSafeSync(Of T)(Task(Of T), Action, Action(Of Exception))
+- uid: BB84.Extensions.TaskExtensions.ToSyncVoid(System.Threading.Tasks.Task,System.Action,System.Action{System.Exception})
+  name: ToSyncVoid(Task, Action?, Action<Exception>?)
+  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_ToSyncVoid_System_Threading_Tasks_Task_System_Action_System_Action_System_Exception__
+  commentId: M:BB84.Extensions.TaskExtensions.ToSyncVoid(System.Threading.Tasks.Task,System.Action,System.Action{System.Exception})
+  name.vb: ToSyncVoid(Task, Action, Action(Of Exception))
+  fullName: BB84.Extensions.TaskExtensions.ToSyncVoid(System.Threading.Tasks.Task, System.Action?, System.Action<System.Exception>?)
+  fullName.vb: BB84.Extensions.TaskExtensions.ToSyncVoid(System.Threading.Tasks.Task, System.Action, System.Action(Of System.Exception))
+  nameWithType: TaskExtensions.ToSyncVoid(Task, Action?, Action<Exception>?)
+  nameWithType.vb: TaskExtensions.ToSyncVoid(Task, Action, Action(Of Exception))
+- uid: BB84.Extensions.TaskExtensions.ToSyncVoid*
+  name: ToSyncVoid
+  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_ToSyncVoid_
+  commentId: Overload:BB84.Extensions.TaskExtensions.ToSyncVoid
+  isSpec: "True"
+  fullName: BB84.Extensions.TaskExtensions.ToSyncVoid
+  nameWithType: TaskExtensions.ToSyncVoid

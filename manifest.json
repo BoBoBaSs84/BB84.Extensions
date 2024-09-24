@@ -194,6 +194,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.TaskExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.TaskExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Extensions.yml",
       "output": {
         ".html": {
