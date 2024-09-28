@@ -1263,13 +1263,13 @@ references:
   fullName: BB84.Extensions.StringExtensions.GetMd5Utf8
   nameWithType: StringExtensions.GetMd5Utf8
 - uid: BB84.Extensions.StringExtensions.IsNull(System.String)
-  name: IsNull(string)
+  name: IsNull(string?)
   href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNull_System_String_
   commentId: M:BB84.Extensions.StringExtensions.IsNull(System.String)
   name.vb: IsNull(String)
-  fullName: BB84.Extensions.StringExtensions.IsNull(string)
+  fullName: BB84.Extensions.StringExtensions.IsNull(string?)
   fullName.vb: BB84.Extensions.StringExtensions.IsNull(String)
-  nameWithType: StringExtensions.IsNull(string)
+  nameWithType: StringExtensions.IsNull(string?)
   nameWithType.vb: StringExtensions.IsNull(String)
 - uid: BB84.Extensions.StringExtensions.IsNull*
   name: IsNull
@@ -1279,13 +1279,13 @@ references:
   fullName: BB84.Extensions.StringExtensions.IsNull
   nameWithType: StringExtensions.IsNull
 - uid: BB84.Extensions.StringExtensions.IsNullOrEmpty(System.String)
-  name: IsNullOrEmpty(string)
+  name: IsNullOrEmpty(string?)
   href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNullOrEmpty_System_String_
   commentId: M:BB84.Extensions.StringExtensions.IsNullOrEmpty(System.String)
   name.vb: IsNullOrEmpty(String)
-  fullName: BB84.Extensions.StringExtensions.IsNullOrEmpty(string)
+  fullName: BB84.Extensions.StringExtensions.IsNullOrEmpty(string?)
   fullName.vb: BB84.Extensions.StringExtensions.IsNullOrEmpty(String)
-  nameWithType: StringExtensions.IsNullOrEmpty(string)
+  nameWithType: StringExtensions.IsNullOrEmpty(string?)
   nameWithType.vb: StringExtensions.IsNullOrEmpty(String)
 - uid: BB84.Extensions.StringExtensions.IsNullOrEmpty*
   name: IsNullOrEmpty
@@ -1295,13 +1295,13 @@ references:
   fullName: BB84.Extensions.StringExtensions.IsNullOrEmpty
   nameWithType: StringExtensions.IsNullOrEmpty
 - uid: BB84.Extensions.StringExtensions.IsNullOrWhiteSpace(System.String)
-  name: IsNullOrWhiteSpace(string)
+  name: IsNullOrWhiteSpace(string?)
   href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNullOrWhiteSpace_System_String_
   commentId: M:BB84.Extensions.StringExtensions.IsNullOrWhiteSpace(System.String)
   name.vb: IsNullOrWhiteSpace(String)
-  fullName: BB84.Extensions.StringExtensions.IsNullOrWhiteSpace(string)
+  fullName: BB84.Extensions.StringExtensions.IsNullOrWhiteSpace(string?)
   fullName.vb: BB84.Extensions.StringExtensions.IsNullOrWhiteSpace(String)
-  nameWithType: StringExtensions.IsNullOrWhiteSpace(string)
+  nameWithType: StringExtensions.IsNullOrWhiteSpace(string?)
   nameWithType.vb: StringExtensions.IsNullOrWhiteSpace(String)
 - uid: BB84.Extensions.StringExtensions.IsNullOrWhiteSpace*
   name: IsNullOrWhiteSpace
