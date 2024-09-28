@@ -4,31 +4,27 @@ namespace BB84.ExtensionsTests;
 
 public partial class StringExtensionsTests
 {
-	[TestMethod]
-	public void IsNullTest()
-	{
-		string nullString = null!;
+	[DataTestMethod]
+	[DataRow("Test", false)]
+	[DataRow(null, true)]
+	[DataRow("", false)]
+	[DataRow(" ", false)]
+	public void IsNullTest(string? value, bool expected)
+		=> Assert.AreEqual(expected, value.IsNull());
 
-		Assert.AreEqual(true, nullString.IsNull());
-	}
+	[DataTestMethod]
+	[DataRow("Test", false)]
+	[DataRow(null, true)]
+	[DataRow("", true)]
+	[DataRow(" ", false)]
+	public void IsNullOrEmptyTest(string? value, bool expected)
+		=> Assert.AreEqual(expected, value.IsNullOrEmpty());
 
-	[TestMethod]
-	public void IsNullOrEmptyTest()
-	{
-		string nullString = null!;
-		string emptyString = string.Empty;
-
-		Assert.AreEqual(true, nullString.IsNullOrEmpty());
-		Assert.AreEqual(true, emptyString.IsNullOrEmpty());
-	}
-
-	[TestMethod]
-	public void IsNullOrWhiteSpaceTest()
-	{
-		string nullString = null!;
-		string whiteString = " ";
-
-		Assert.AreEqual(true, nullString.IsNullOrWhiteSpace());
-		Assert.AreEqual(true, whiteString.IsNullOrWhiteSpace());
-	}
+	[DataTestMethod]
+	[DataRow("Test", false)]
+	[DataRow(null, true)]
+	[DataRow("", true)]
+	[DataRow(" ", true)]
+	public void IsNullOrWhiteSpaceTest(string? value, bool expected)
+		=> Assert.AreEqual(expected, value.IsNullOrWhiteSpace());
 }
