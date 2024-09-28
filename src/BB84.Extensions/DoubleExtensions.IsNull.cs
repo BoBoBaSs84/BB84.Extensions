@@ -3,7 +3,7 @@
 public static partial class DoubleExtensions
 {
 	/// <summary>
-	/// Indicates whether the specified double is null.
+	/// Indicates whether the specified double value is <see langword="null"/> or not.
 	/// </summary>
 	/// <param name="value">The double value to test.</param>
 	/// <returns><see langword="true"/> if the <paramref name="value"/>

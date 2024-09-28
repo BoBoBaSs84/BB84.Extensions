@@ -3,7 +3,7 @@
 public static partial class BooleanExtensions
 {
 	/// <summary>
-	/// Indicates whether the specified boolean is null.
+	/// Indicates whether the specified boolean value is <see langword="null"/> or not.
 	/// </summary>
 	/// <param name="value">The boolean value to test.</param>
 	/// <returns><see langword="true"/> if the <paramref name="value"/>
