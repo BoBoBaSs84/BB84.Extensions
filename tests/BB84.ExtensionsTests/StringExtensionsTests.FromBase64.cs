@@ -1,36 +1,22 @@
-﻿using BB84.Extensions;
+﻿using System.Text;
+
+using BB84.Extensions;
 
 namespace BB84.ExtensionsTests;
 
 public sealed partial class StringExtensionsTests
 {
-	[TestMethod]
-	public void FromBase64Test()
-	{
-		string value = "VW5pdFRlc3Q=";
+	[DataTestMethod]
+	[DataRow("UnitTest", "VW5pdFRlc3Q=")]
+	[DataRow("", "")]
+	public void FromBase64Test(string expected, string value)
+		=> Assert.AreEqual(expected, value.FromBase64(Encoding.UTF8));
 
-		string result = value.FromBase64();
-
-		Assert.AreNotEqual(value, result);
-		Assert.AreEqual("UnitTest", result);
-	}
-
-	[TestMethod]
-	public void FromBase64EmptyTest()
-	{
-		string value = string.Empty;
-
-		string result = value.FromBase64();
-
-		Assert.AreEqual(value, result);
-	}
-
-	[TestMethod]
+	[DataTestMethod]
+	[DataRow("%")]
+	[DataRow("$")]
+	[DataRow("#")]
 	[ExpectedException(typeof(ArgumentException))]
-	public void FromBase64ExceptionTest()
-	{
-		string value = "%$#";
-
-		_ = value.FromBase64();
-	}
+	public void FromBase64ExceptionTest(string value)
+		=> value.FromBase64();
 }
