@@ -139,6 +139,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ByteExtensions.Decompress
   nameWithType: ByteExtensions.Decompress
+- uid: BB84.Extensions.ByteExtensions.FromBase64(System.String)
+  name: FromBase64(string)
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_FromBase64_System_String_
+  commentId: M:BB84.Extensions.ByteExtensions.FromBase64(System.String)
+  name.vb: FromBase64(String)
+  fullName: BB84.Extensions.ByteExtensions.FromBase64(string)
+  fullName.vb: BB84.Extensions.ByteExtensions.FromBase64(String)
+  nameWithType: ByteExtensions.FromBase64(string)
+  nameWithType.vb: ByteExtensions.FromBase64(String)
+- uid: BB84.Extensions.ByteExtensions.FromBase64*
+  name: FromBase64
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_FromBase64_
+  commentId: Overload:BB84.Extensions.ByteExtensions.FromBase64
+  isSpec: "True"
+  fullName: BB84.Extensions.ByteExtensions.FromBase64
+  nameWithType: ByteExtensions.FromBase64
 - uid: BB84.Extensions.ByteExtensions.GetHexString(System.Byte[])
   name: GetHexString(byte[])
   href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetHexString_System_Byte___
@@ -219,6 +235,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ByteExtensions.IsNull
   nameWithType: ByteExtensions.IsNull
+- uid: BB84.Extensions.ByteExtensions.ToBase64(System.Byte[])
+  name: ToBase64(byte[])
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_ToBase64_System_Byte___
+  commentId: M:BB84.Extensions.ByteExtensions.ToBase64(System.Byte[])
+  name.vb: ToBase64(Byte())
+  fullName: BB84.Extensions.ByteExtensions.ToBase64(byte[])
+  fullName.vb: BB84.Extensions.ByteExtensions.ToBase64(Byte())
+  nameWithType: ByteExtensions.ToBase64(byte[])
+  nameWithType.vb: ByteExtensions.ToBase64(Byte())
+- uid: BB84.Extensions.ByteExtensions.ToBase64*
+  name: ToBase64
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_ToBase64_
+  commentId: Overload:BB84.Extensions.ByteExtensions.ToBase64
+  isSpec: "True"
+  fullName: BB84.Extensions.ByteExtensions.ToBase64
+  nameWithType: ByteExtensions.ToBase64
 - uid: BB84.Extensions.ColorExtensions
   name: ColorExtensions
   href: api/BB84.Extensions.ColorExtensions.html
@@ -737,6 +769,44 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.FloatExtensions.IsNull
   nameWithType: FloatExtensions.IsNull
+- uid: BB84.Extensions.HttpClientExtensions
+  name: HttpClientExtensions
+  href: api/BB84.Extensions.HttpClientExtensions.html
+  commentId: T:BB84.Extensions.HttpClientExtensions
+  fullName: BB84.Extensions.HttpClientExtensions
+  nameWithType: HttpClientExtensions
+- uid: BB84.Extensions.HttpClientExtensions.AddBearerToken(System.Net.Http.HttpClient,System.String)
+  name: AddBearerToken(HttpClient, string)
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_AddBearerToken_System_Net_Http_HttpClient_System_String_
+  commentId: M:BB84.Extensions.HttpClientExtensions.AddBearerToken(System.Net.Http.HttpClient,System.String)
+  name.vb: AddBearerToken(HttpClient, String)
+  fullName: BB84.Extensions.HttpClientExtensions.AddBearerToken(System.Net.Http.HttpClient, string)
+  fullName.vb: BB84.Extensions.HttpClientExtensions.AddBearerToken(System.Net.Http.HttpClient, String)
+  nameWithType: HttpClientExtensions.AddBearerToken(HttpClient, string)
+  nameWithType.vb: HttpClientExtensions.AddBearerToken(HttpClient, String)
+- uid: BB84.Extensions.HttpClientExtensions.AddBearerToken*
+  name: AddBearerToken
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_AddBearerToken_
+  commentId: Overload:BB84.Extensions.HttpClientExtensions.AddBearerToken
+  isSpec: "True"
+  fullName: BB84.Extensions.HttpClientExtensions.AddBearerToken
+  nameWithType: HttpClientExtensions.AddBearerToken
+- uid: BB84.Extensions.HttpClientExtensions.AddMediaType(System.Net.Http.HttpClient,System.String)
+  name: AddMediaType(HttpClient, string)
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_AddMediaType_System_Net_Http_HttpClient_System_String_
+  commentId: M:BB84.Extensions.HttpClientExtensions.AddMediaType(System.Net.Http.HttpClient,System.String)
+  name.vb: AddMediaType(HttpClient, String)
+  fullName: BB84.Extensions.HttpClientExtensions.AddMediaType(System.Net.Http.HttpClient, string)
+  fullName.vb: BB84.Extensions.HttpClientExtensions.AddMediaType(System.Net.Http.HttpClient, String)
+  nameWithType: HttpClientExtensions.AddMediaType(HttpClient, string)
+  nameWithType.vb: HttpClientExtensions.AddMediaType(HttpClient, String)
+- uid: BB84.Extensions.HttpClientExtensions.AddMediaType*
+  name: AddMediaType
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_AddMediaType_
+  commentId: Overload:BB84.Extensions.HttpClientExtensions.AddMediaType
+  isSpec: "True"
+  fullName: BB84.Extensions.HttpClientExtensions.AddMediaType
+  nameWithType: HttpClientExtensions.AddMediaType
 - uid: BB84.Extensions.IntegerExtensions
   name: IntegerExtensions
   href: api/BB84.Extensions.IntegerExtensions.html
@@ -1183,13 +1253,13 @@ references:
   fullName: BB84.Extensions.StringExtensions.FormatInvariant
   nameWithType: StringExtensions.FormatInvariant
 - uid: BB84.Extensions.StringExtensions.FromBase64(System.String,System.Text.Encoding)
-  name: FromBase64(string, Encoding?)
+  name: FromBase64(string, Encoding)
   href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_FromBase64_System_String_System_Text_Encoding_
   commentId: M:BB84.Extensions.StringExtensions.FromBase64(System.String,System.Text.Encoding)
   name.vb: FromBase64(String, Encoding)
-  fullName: BB84.Extensions.StringExtensions.FromBase64(string, System.Text.Encoding?)
+  fullName: BB84.Extensions.StringExtensions.FromBase64(string, System.Text.Encoding)
   fullName.vb: BB84.Extensions.StringExtensions.FromBase64(String, System.Text.Encoding)
-  nameWithType: StringExtensions.FromBase64(string, Encoding?)
+  nameWithType: StringExtensions.FromBase64(string, Encoding)
   nameWithType.vb: StringExtensions.FromBase64(String, Encoding)
 - uid: BB84.Extensions.StringExtensions.FromBase64*
   name: FromBase64
@@ -1343,13 +1413,13 @@ references:
   fullName: BB84.Extensions.StringExtensions.RemoveWhitespace
   nameWithType: StringExtensions.RemoveWhitespace
 - uid: BB84.Extensions.StringExtensions.ToBase64(System.String,System.Text.Encoding)
-  name: ToBase64(string, Encoding?)
+  name: ToBase64(string, Encoding)
   href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_ToBase64_System_String_System_Text_Encoding_
   commentId: M:BB84.Extensions.StringExtensions.ToBase64(System.String,System.Text.Encoding)
   name.vb: ToBase64(String, Encoding)
-  fullName: BB84.Extensions.StringExtensions.ToBase64(string, System.Text.Encoding?)
+  fullName: BB84.Extensions.StringExtensions.ToBase64(string, System.Text.Encoding)
   fullName.vb: BB84.Extensions.StringExtensions.ToBase64(String, System.Text.Encoding)
-  nameWithType: StringExtensions.ToBase64(string, Encoding?)
+  nameWithType: StringExtensions.ToBase64(string, Encoding)
   nameWithType.vb: StringExtensions.ToBase64(String, Encoding)
 - uid: BB84.Extensions.StringExtensions.ToBase64*
   name: ToBase64

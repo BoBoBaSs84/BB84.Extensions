@@ -114,6 +114,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.HttpClientExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.HttpClientExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Extensions.IntegerExtensions.yml",
       "output": {
         ".html": {
