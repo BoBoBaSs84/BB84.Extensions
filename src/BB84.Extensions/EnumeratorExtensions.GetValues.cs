@@ -9,5 +9,5 @@ public static partial class EnumeratorExtensions
 	/// <param name="value">The value of the enumerator.</param>
 	/// <returns>An <see cref="IEnumerable{T}"/> of all enumerators of the provided type.</returns>
 	public static IEnumerable<T> GetValues<T>(this T value) where T : struct, IComparable, IFormattable, IConvertible
-		=> Enum.GetValues(value.GetType()).Cast<T>().ToArray();
+		=> Enum.GetValues(value.GetType()).OfType<T>().ToArray();
 }
