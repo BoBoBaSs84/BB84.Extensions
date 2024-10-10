@@ -49,6 +49,15 @@ IEnumerable<string> strings = ["a", "ab", "b", "bb"];
 strings.ForEach(x => x.Contains("a"), x => hits++);
 ```
 
+#### Color to RGB hexadecimal representation
+
+The `ToRGBHexString` method turns any `System.Drawing.Color` into its RGB hexadecimal string representation, with the prefix '#'.
+
+```csharp
+Color color = Color.Green;
+string hexString = color.ToRGBHexString();
+```
+
 ## Documentation
 
-The complete API documentation can be found [here](https://bobobass84.github.io/BB84.Extensions/).
+The complete API documentation can be found [here](https://bobobass84.github.io/BB84.Extensions/api/index.html).
