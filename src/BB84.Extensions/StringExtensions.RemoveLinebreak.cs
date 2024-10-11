@@ -5,8 +5,8 @@ public static partial class StringExtensions
 	/// <summary>
 	/// Removes unwanted linebreaks within the provided string value.
 	/// </summary>
-	/// <param name="stringValue">The input string value to modify.</param>
-	/// <returns>The replaced string.</returns>
-	public static string RemoveLinebreak(this string stringValue)
-		=> LinebreakRegex.Replace(stringValue, string.Empty);
+	/// <param name="value">The input string value to modify.</param>
+	/// <returns>The same <see cref="string"/> instance so that multiple calls can be chained.</returns>
+	public static string RemoveLinebreak(this string value)
+		=> LinebreakRegex.Replace(value, string.Empty);
 }
