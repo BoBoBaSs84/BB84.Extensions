@@ -23,7 +23,7 @@ public static class HttpClientExtensions
 	}
 
 	/// <summary>
-	/// Adds the specified <paramref name="mediaType"/> the Accept header for an HTTP request.
+	/// Adds the specified <paramref name="mediaType"/> the accept header for an HTTP request.
 	/// </summary>
 	/// <param name="client">The http client which should use the media type.</param>
 	/// <param name="mediaType">The media type to be used.</param>
@@ -31,6 +31,19 @@ public static class HttpClientExtensions
 	public static HttpClient WithMediaType(this HttpClient client, string mediaType)
 	{
 		client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(mediaType));
+
+		return client;
+	}
+
+	/// <summary>
+	/// Adds the specified <paramref name="timeout"/> to the http client configuration.
+	/// </summary>
+	/// <param name="client">The http client which should use the time out.</param>
+	/// <param name="timeout">The timespan to wait before the request times out.</param>
+	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
+	public static HttpClient WithTimeout(this HttpClient client, TimeSpan timeout)
+	{
+		client.Timeout = timeout;
 
 		return client;
 	}

@@ -26,4 +26,15 @@ public sealed class HttpClientExtensionsTests
 
 		Assert.AreEqual(mediaType, client.DefaultRequestHeaders.Accept.First().MediaType);
 	}
+
+	[TestMethod]
+	public void WithTimeout()
+	{
+		TimeSpan timeout = new(0, 0, 15);
+
+		using HttpClient client = new HttpClient()
+			.WithTimeout(timeout);
+
+		Assert.AreEqual(timeout, client.Timeout);
+	}
 }
