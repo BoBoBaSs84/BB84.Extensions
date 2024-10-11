@@ -8,10 +8,10 @@ public sealed class HttpClientExtensionsTests
 	[DataTestMethod]
 	[DataRow("FancyToken")]
 	[DataRow("")]
-	public void AddBearerTokenTest(string token)
+	public void WithBearerTokenTest(string token)
 	{
 		using HttpClient client = new HttpClient()
-			.AddBearerToken(token);
+			.WithBearerToken(token);
 
 		Assert.AreEqual(token, client.DefaultRequestHeaders.Authorization!.Parameter);
 	}
@@ -19,11 +19,22 @@ public sealed class HttpClientExtensionsTests
 	[DataTestMethod]
 	[DataRow("application/json")]
 	[DataRow("text/plain")]
-	public void AddMediaTypeTest(string mediaType)
+	public void WithMediaTypeTest(string mediaType)
 	{
 		using HttpClient client = new HttpClient()
-			.AddMediaType(mediaType);
+			.WithMediaType(mediaType);
 
 		Assert.AreEqual(mediaType, client.DefaultRequestHeaders.Accept.First().MediaType);
+	}
+
+	[TestMethod]
+	public void WithTimeout()
+	{
+		TimeSpan timeout = new(0, 0, 15);
+
+		using HttpClient client = new HttpClient()
+			.WithTimeout(timeout);
+
+		Assert.AreEqual(timeout, client.Timeout);
 	}
 }
