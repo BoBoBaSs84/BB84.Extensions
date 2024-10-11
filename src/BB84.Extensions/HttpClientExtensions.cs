@@ -15,7 +15,7 @@ public static class HttpClientExtensions
 	/// <param name="client">The http client which should use the token.</param>
 	/// <param name="token">The bearer token to be used.</param>
 	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
-	public static HttpClient AddBearerToken(this HttpClient client, string token)
+	public static HttpClient WithBearerToken(this HttpClient client, string token)
 	{
 		client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(BearerScheme, token);
 
@@ -28,7 +28,7 @@ public static class HttpClientExtensions
 	/// <param name="client">The http client which should use the media type.</param>
 	/// <param name="mediaType">The media type to be used.</param>
 	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
-	public static HttpClient AddMediaType(this HttpClient client, string mediaType)
+	public static HttpClient WithMediaType(this HttpClient client, string mediaType)
 	{
 		client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(mediaType));
 
