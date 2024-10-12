@@ -775,38 +775,51 @@ references:
   commentId: T:BB84.Extensions.HttpClientExtensions
   fullName: BB84.Extensions.HttpClientExtensions
   nameWithType: HttpClientExtensions
-- uid: BB84.Extensions.HttpClientExtensions.AddBearerToken(System.Net.Http.HttpClient,System.String)
-  name: AddBearerToken(HttpClient, string)
-  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_AddBearerToken_System_Net_Http_HttpClient_System_String_
-  commentId: M:BB84.Extensions.HttpClientExtensions.AddBearerToken(System.Net.Http.HttpClient,System.String)
-  name.vb: AddBearerToken(HttpClient, String)
-  fullName: BB84.Extensions.HttpClientExtensions.AddBearerToken(System.Net.Http.HttpClient, string)
-  fullName.vb: BB84.Extensions.HttpClientExtensions.AddBearerToken(System.Net.Http.HttpClient, String)
-  nameWithType: HttpClientExtensions.AddBearerToken(HttpClient, string)
-  nameWithType.vb: HttpClientExtensions.AddBearerToken(HttpClient, String)
-- uid: BB84.Extensions.HttpClientExtensions.AddBearerToken*
-  name: AddBearerToken
-  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_AddBearerToken_
-  commentId: Overload:BB84.Extensions.HttpClientExtensions.AddBearerToken
+- uid: BB84.Extensions.HttpClientExtensions.WithBearerToken(System.Net.Http.HttpClient,System.String)
+  name: WithBearerToken(HttpClient, string)
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithBearerToken_System_Net_Http_HttpClient_System_String_
+  commentId: M:BB84.Extensions.HttpClientExtensions.WithBearerToken(System.Net.Http.HttpClient,System.String)
+  name.vb: WithBearerToken(HttpClient, String)
+  fullName: BB84.Extensions.HttpClientExtensions.WithBearerToken(System.Net.Http.HttpClient, string)
+  fullName.vb: BB84.Extensions.HttpClientExtensions.WithBearerToken(System.Net.Http.HttpClient, String)
+  nameWithType: HttpClientExtensions.WithBearerToken(HttpClient, string)
+  nameWithType.vb: HttpClientExtensions.WithBearerToken(HttpClient, String)
+- uid: BB84.Extensions.HttpClientExtensions.WithBearerToken*
+  name: WithBearerToken
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithBearerToken_
+  commentId: Overload:BB84.Extensions.HttpClientExtensions.WithBearerToken
   isSpec: "True"
-  fullName: BB84.Extensions.HttpClientExtensions.AddBearerToken
-  nameWithType: HttpClientExtensions.AddBearerToken
-- uid: BB84.Extensions.HttpClientExtensions.AddMediaType(System.Net.Http.HttpClient,System.String)
-  name: AddMediaType(HttpClient, string)
-  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_AddMediaType_System_Net_Http_HttpClient_System_String_
-  commentId: M:BB84.Extensions.HttpClientExtensions.AddMediaType(System.Net.Http.HttpClient,System.String)
-  name.vb: AddMediaType(HttpClient, String)
-  fullName: BB84.Extensions.HttpClientExtensions.AddMediaType(System.Net.Http.HttpClient, string)
-  fullName.vb: BB84.Extensions.HttpClientExtensions.AddMediaType(System.Net.Http.HttpClient, String)
-  nameWithType: HttpClientExtensions.AddMediaType(HttpClient, string)
-  nameWithType.vb: HttpClientExtensions.AddMediaType(HttpClient, String)
-- uid: BB84.Extensions.HttpClientExtensions.AddMediaType*
-  name: AddMediaType
-  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_AddMediaType_
-  commentId: Overload:BB84.Extensions.HttpClientExtensions.AddMediaType
+  fullName: BB84.Extensions.HttpClientExtensions.WithBearerToken
+  nameWithType: HttpClientExtensions.WithBearerToken
+- uid: BB84.Extensions.HttpClientExtensions.WithMediaType(System.Net.Http.HttpClient,System.String)
+  name: WithMediaType(HttpClient, string)
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithMediaType_System_Net_Http_HttpClient_System_String_
+  commentId: M:BB84.Extensions.HttpClientExtensions.WithMediaType(System.Net.Http.HttpClient,System.String)
+  name.vb: WithMediaType(HttpClient, String)
+  fullName: BB84.Extensions.HttpClientExtensions.WithMediaType(System.Net.Http.HttpClient, string)
+  fullName.vb: BB84.Extensions.HttpClientExtensions.WithMediaType(System.Net.Http.HttpClient, String)
+  nameWithType: HttpClientExtensions.WithMediaType(HttpClient, string)
+  nameWithType.vb: HttpClientExtensions.WithMediaType(HttpClient, String)
+- uid: BB84.Extensions.HttpClientExtensions.WithMediaType*
+  name: WithMediaType
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithMediaType_
+  commentId: Overload:BB84.Extensions.HttpClientExtensions.WithMediaType
   isSpec: "True"
-  fullName: BB84.Extensions.HttpClientExtensions.AddMediaType
-  nameWithType: HttpClientExtensions.AddMediaType
+  fullName: BB84.Extensions.HttpClientExtensions.WithMediaType
+  nameWithType: HttpClientExtensions.WithMediaType
+- uid: BB84.Extensions.HttpClientExtensions.WithTimeout(System.Net.Http.HttpClient,System.TimeSpan)
+  name: WithTimeout(HttpClient, TimeSpan)
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithTimeout_System_Net_Http_HttpClient_System_TimeSpan_
+  commentId: M:BB84.Extensions.HttpClientExtensions.WithTimeout(System.Net.Http.HttpClient,System.TimeSpan)
+  fullName: BB84.Extensions.HttpClientExtensions.WithTimeout(System.Net.Http.HttpClient, System.TimeSpan)
+  nameWithType: HttpClientExtensions.WithTimeout(HttpClient, TimeSpan)
+- uid: BB84.Extensions.HttpClientExtensions.WithTimeout*
+  name: WithTimeout
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithTimeout_
+  commentId: Overload:BB84.Extensions.HttpClientExtensions.WithTimeout
+  isSpec: "True"
+  fullName: BB84.Extensions.HttpClientExtensions.WithTimeout
+  nameWithType: HttpClientExtensions.WithTimeout
 - uid: BB84.Extensions.IntegerExtensions
   name: IntegerExtensions
   href: api/BB84.Extensions.IntegerExtensions.html
