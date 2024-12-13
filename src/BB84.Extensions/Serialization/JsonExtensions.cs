@@ -45,6 +45,6 @@ public static class JsonExtensions
 	{
 		options ??= SerializerOptions;
 
-		return JsonSerializer.Serialize(value, typeof(T), options);
+		return JsonSerializer.Serialize(value, options);
 	}
 }
