@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -491,20 +491,20 @@ the definition of the first day of the week.</p>
 
   <h3 id="BB84_Extensions_DateTimeExtensions_WeekOfYear_System_DateTime_" data-uid="BB84.Extensions.DateTimeExtensions.WeekOfYear(System.DateTime)">
   WeekOfYear(DateTime)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.WeekOfYear.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.WeekOfYear.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Returns the week of the year that includes the date in the specified <code class="paramref">dateTime</code> value.</p>
+  <div class="markdown level1 summary"><p>Returns the week of the year that includes the date in the specified <code class="paramref">value</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int WeekOfYear(this DateTime dateTime)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int WeekOfYear(this DateTime value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
     <dd><p>A date and time value.</p>
 </dd>
   </dl>
@@ -523,8 +523,7 @@ the definition of the first day of the week.</p>
 
 
   <h4 class="section" id="BB84_Extensions_DateTimeExtensions_WeekOfYear_System_DateTime__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>The outcome dependes on the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo.currentculture">CurrentCulture</a> information.
-The method does not conform to ISO 8601.</p>
+  <div class="markdown level1 remarks"><p>The method does conform to ISO 8601.</p>
 </div>
 
 
