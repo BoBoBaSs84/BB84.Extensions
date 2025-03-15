@@ -10,7 +10,11 @@
           "relative_path": "api/BB84.Extensions.ArrayExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.ArrayExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.ArrayExtensions.yml\" sourcestartlinenumber=\"1\">The array extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -20,7 +24,11 @@
           "relative_path": "api/BB84.Extensions.BooleanExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.BooleanExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.BooleanExtensions.yml\" sourcestartlinenumber=\"1\">The boolean extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30,7 +38,11 @@
           "relative_path": "api/BB84.Extensions.ByteExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.ByteExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.ByteExtensions.yml\" sourcestartlinenumber=\"1\">The byte extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -40,7 +52,11 @@
           "relative_path": "api/BB84.Extensions.ColorExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.ColorExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.ColorExtensions.yml\" sourcestartlinenumber=\"1\">The color extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -50,7 +66,11 @@
           "relative_path": "api/BB84.Extensions.ComparableExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.ComparableExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.ComparableExtensions.yml\" sourcestartlinenumber=\"1\">The comparable extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -60,7 +80,11 @@
           "relative_path": "api/BB84.Extensions.DateTimeExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.DateTimeExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.DateTimeExtensions.yml\" sourcestartlinenumber=\"1\">The date time extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -70,7 +94,11 @@
           "relative_path": "api/BB84.Extensions.DecimalExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.DecimalExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.DecimalExtensions.yml\" sourcestartlinenumber=\"1\">The decimal extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -80,7 +108,11 @@
           "relative_path": "api/BB84.Extensions.DoubleExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.DoubleExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.DoubleExtensions.yml\" sourcestartlinenumber=\"1\">The double extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -90,7 +122,11 @@
           "relative_path": "api/BB84.Extensions.EnumerableExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.EnumerableExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.EnumerableExtensions.yml\" sourcestartlinenumber=\"1\">The enumerable extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -100,7 +136,11 @@
           "relative_path": "api/BB84.Extensions.EnumeratorExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.EnumeratorExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.EnumeratorExtensions.yml\" sourcestartlinenumber=\"1\">The enumerator extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -110,7 +150,11 @@
           "relative_path": "api/BB84.Extensions.FloatExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.FloatExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.FloatExtensions.yml\" sourcestartlinenumber=\"1\">The float extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -120,7 +164,11 @@
           "relative_path": "api/BB84.Extensions.HttpClientExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.HttpClientExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.HttpClientExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -130,7 +178,11 @@
           "relative_path": "api/BB84.Extensions.IntegerExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.IntegerExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.IntegerExtensions.yml\" sourcestartlinenumber=\"1\">The integer extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -140,7 +192,11 @@
           "relative_path": "api/BB84.Extensions.ListExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.ListExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.ListExtensions.yml\" sourcestartlinenumber=\"1\">The list extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -150,7 +206,11 @@
           "relative_path": "api/BB84.Extensions.ObjectExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.ObjectExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.ObjectExtensions.yml\" sourcestartlinenumber=\"1\">The object extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -160,7 +220,11 @@
           "relative_path": "api/BB84.Extensions.Serialization.JsonExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.Serialization.JsonExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.Serialization.JsonExtensions.yml\" sourcestartlinenumber=\"1\">The json extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -170,7 +234,11 @@
           "relative_path": "api/BB84.Extensions.Serialization.XmlExtension.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.Serialization.XmlExtension",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.Serialization.XmlExtension.yml\" sourcestartlinenumber=\"1\">The XML extension class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -180,7 +248,11 @@
           "relative_path": "api/BB84.Extensions.Serialization.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.Serialization",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -190,7 +262,11 @@
           "relative_path": "api/BB84.Extensions.StreamExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.StreamExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.StreamExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"System.IO.Stream\" data-throw-if-not-resolved=\"false\"></xref> extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -200,7 +276,11 @@
           "relative_path": "api/BB84.Extensions.StringExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.StringExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.StringExtensions.yml\" sourcestartlinenumber=\"1\">The string extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -210,7 +290,11 @@
           "relative_path": "api/BB84.Extensions.TaskExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.TaskExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.TaskExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref> extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -220,7 +304,11 @@
           "relative_path": "api/BB84.Extensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions",
+      "Summary": null
     },
     {
       "type": "Conceptual",
@@ -236,11 +324,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
         ".json": {
           "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
         }
       },
       "version": ""
@@ -259,11 +347,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
         ".json": {
           "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
         }
       },
       "version": ""
