@@ -6,7 +6,7 @@
 public static class ComboBoxExtensions
 {
 	/// <summary>
-	/// Binds the <see cref="ComboBox.DataSource"/> property to the specified data source.
+	/// Binds the <see cref="ListControl.DataSource"/> property to the specified data source.
 	/// </summary>
 	/// <param name="comboBox">The <see cref="ComboBox"/> control to bind.</param>
 	/// <param name="dataSource">The data source to bind to.</param>
