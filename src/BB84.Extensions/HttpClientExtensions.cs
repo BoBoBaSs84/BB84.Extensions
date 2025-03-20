@@ -1,4 +1,5 @@
-﻿using System.Net.Http.Headers;
+﻿using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace BB84.Extensions;
 
@@ -10,6 +11,30 @@ public static class HttpClientExtensions
 	private const string BearerScheme = "Bearer";
 
 	/// <summary>
+	/// Adds the specified <paramref name="baseAddress"/> to the http client configuration.
+	/// </summary>
+	/// <param name="client">The http client which should use the base address.</param>
+	/// <param name="baseAddress">The base address to be used.</param>
+	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
+	public static HttpClient WithBaseAdress(this HttpClient client, string baseAddress)
+	{
+		client.WithBaseAdress(new Uri(baseAddress));
+		return client;
+	}
+
+	/// <summary>
+	/// Adds the specified <paramref name="baseAddress"/> to the http client configuration.
+	/// </summary>
+	/// <param name="client">The http client which should use the base address.</param>
+	/// <param name="baseAddress">The base address to be used.</param>
+	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
+	public static HttpClient WithBaseAdress(this HttpClient client, Uri baseAddress)
+	{
+		client.BaseAddress = baseAddress;
+		return client;
+	}
+
+	/// <summary>
 	/// Adds the specified bearer <paramref name="token"/> to the http client request header.
 	/// </summary>
 	/// <param name="client">The http client which should use the token.</param>
@@ -18,7 +43,6 @@ public static class HttpClientExtensions
 	public static HttpClient WithBearerToken(this HttpClient client, string token)
 	{
 		client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(BearerScheme, token);
-
 		return client;
 	}
 
@@ -31,7 +55,6 @@ public static class HttpClientExtensions
 	public static HttpClient WithMediaType(this HttpClient client, string mediaType)
 	{
 		client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(mediaType));
-
 		return client;
 	}
 
@@ -44,7 +67,6 @@ public static class HttpClientExtensions
 	public static HttpClient WithTimeout(this HttpClient client, TimeSpan timeout)
 	{
 		client.Timeout = timeout;
-
 		return client;
 	}
 }
