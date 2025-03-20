@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net462;net481;net8.0-windows;net9.0-windows</TargetFrameworks>
+	</PropertyGroup>
+	<ItemGroup>
+	  <PackageReference Include="MSTest" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\BB84.WinForms.Extensions\BB84.WinForms.Extensions.csproj" />
+	</ItemGroup>
+</Project>
