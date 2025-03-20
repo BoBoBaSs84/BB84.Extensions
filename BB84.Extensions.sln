@@ -5,19 +5,39 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BB84.Extensions", "src\BB84.Extensions\BB84.Extensions.csproj", "{5570B07F-A9BA-4742-9CFB-242B10D07A06}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BB84.ExtensionsTests", "tests\BB84.ExtensionsTests\BB84.ExtensionsTests.csproj", "{5C7A536C-F618-42EE-80D2-0C27256E1BE7}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F1D2416D-7CCC-4144-84AD-CA525A8E50BD}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
+		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
 		Directory.Build.props = Directory.Build.props
 		Directory.Build.targets = Directory.Build.targets
 		Directory.Packages.props = Directory.Packages.props
 		dotnet-releaser.toml = dotnet-releaser.toml
+		icon.png = icon.png
 		LICENSE = LICENSE
 		PublicKey.snk = PublicKey.snk
 		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{BCDD89BA-4232-4903-A3A5-CDB8922E24C2}"
+	ProjectSection(SolutionItems) = preProject
+		docs\.gitignore = docs\.gitignore
+		docs\docfx.json = docs\docfx.json
+		docs\index.md = docs\index.md
+		docs\toc.yml = docs\toc.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CF6362D6-3ED7-4EB2-B5CA-8E929155D699}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BB84.Extensions.Tests", "tests\BB84.Extensions.Tests\BB84.Extensions.Tests.csproj", "{0A42071F-7CE3-C281-C8FA-5E8DEB581F09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{3B7FB7AD-CAAD-45CD-AEB7-06E70DD308B2}"
+	ProjectSection(SolutionItems) = preProject
+		docs\api\.gitignore = docs\api\.gitignore
+		docs\api\index.md = docs\api\index.md
 	EndProjectSection
 EndProject
 Global
@@ -30,13 +50,18 @@ Global
 		{5570B07F-A9BA-4742-9CFB-242B10D07A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5570B07F-A9BA-4742-9CFB-242B10D07A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5570B07F-A9BA-4742-9CFB-242B10D07A06}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C7A536C-F618-42EE-80D2-0C27256E1BE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C7A536C-F618-42EE-80D2-0C27256E1BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C7A536C-F618-42EE-80D2-0C27256E1BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C7A536C-F618-42EE-80D2-0C27256E1BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A42071F-7CE3-C281-C8FA-5E8DEB581F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A42071F-7CE3-C281-C8FA-5E8DEB581F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A42071F-7CE3-C281-C8FA-5E8DEB581F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A42071F-7CE3-C281-C8FA-5E8DEB581F09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5570B07F-A9BA-4742-9CFB-242B10D07A06} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{0A42071F-7CE3-C281-C8FA-5E8DEB581F09} = {CF6362D6-3ED7-4EB2-B5CA-8E929155D699}
+		{3B7FB7AD-CAAD-45CD-AEB7-06E70DD308B2} = {BCDD89BA-4232-4903-A3A5-CDB8922E24C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8E197513-0E02-4B7B-98D9-2334109C8A94}
