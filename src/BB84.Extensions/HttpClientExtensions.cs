@@ -4,7 +4,7 @@ using System.Net.Http.Headers;
 namespace BB84.Extensions;
 
 /// <summary>
-/// The <see cref="HttpClient"/> extensions class.
+/// The extension methods for the <see cref="HttpClient"/> class.
 /// </summary>
 public static class HttpClientExtensions
 {
