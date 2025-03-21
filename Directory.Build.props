@@ -49,7 +49,7 @@
 
 	<PropertyGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))" Label="Package">
 		<PackageIcon>icon.png</PackageIcon>
-		<PackageId>BB84.Extensions</PackageId>
+		<PackageId>$(AssemblyName)</PackageId>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageProjectUrl>https://github.com/BoBoBaSs84/BB84.Extensions</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
