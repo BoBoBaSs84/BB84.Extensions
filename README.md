@@ -29,6 +29,8 @@ This library provides a set of extension methods for the .NET framework. For exa
 [![net90](https://img.shields.io/badge/net9.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
 [![NuGet](https://img.shields.io/nuget/v/BB84.Extensions.svg?logo=nuget&logoColor=white)](https://www.nuget.org/packages/BB84.WinForms.Extensions)
 
+Even though it's getting on in years, I need a few extensions here and there to make working with WinForms easier and clearer.
+
 This library provides a set of extension methods for the Windows Forms framework. For example, it includes methods to bind the text of a control or the visibility of a control to a property of a class, it contains bindings for data sources and the selected item of a combo box or list box and much more.
 
 **Examples can be found [here](/src/BB84.WinForms.Extensions/README.md).**
