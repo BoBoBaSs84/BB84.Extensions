@@ -1,5 +1,5 @@
 <Project>
 	<ItemGroup Condition="'$(TargetFrameworkIdentifier)'=='.NETFramework'">
-		<Using Include="System.Net.Http" />
+		<Using Remove="System.Net.Http" />
 	</ItemGroup>
 </Project>
