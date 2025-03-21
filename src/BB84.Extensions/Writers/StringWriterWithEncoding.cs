@@ -21,18 +21,15 @@ internal sealed class StringWriterWithEncoding : StringWriter
 		=> _encoding ?? base.Encoding;
 
 	/// <summary>
-	/// Initializes a new instance of the string writer with encoding class.
+	/// Intializes a new instance of the <see cref="StringWriterWithEncoding"/> class.
 	/// </summary>
-	/// <remarks>
-	/// The <see cref="StringWriter.Encoding"/> is used.
-	/// </remarks>
 	internal StringWriterWithEncoding() : base(CultureInfo.InvariantCulture)
 	{ }
 
 	/// <summary>
-	/// Initializes a new instance of the string writer with encoding class.
+	/// Intializes a new instance of the <see cref="StringWriterWithEncoding"/> class.
 	/// </summary>
 	/// <param name="encoding">The character encoding type to use.</param>
-	internal StringWriterWithEncoding(Encoding encoding) : base(CultureInfo.InvariantCulture)
+	internal StringWriterWithEncoding(Encoding encoding) : this()
 		=> _encoding = encoding;
 }

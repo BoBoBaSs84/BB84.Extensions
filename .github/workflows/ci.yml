@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout
@@ -22,11 +22,10 @@ jobs:
         dotnet-version: '9.0.x'
 
     - name: Restore
-      run: dotnet restore
+      run: dotnet restore --verbosity minimal
     
     - name: Build
       run: dotnet build --no-restore --configuration release --verbosity minimal
     
     - name: Test
-      run: dotnet test --no-build --configuration release --verbosity minimal --framework net8.0
-
+      run: dotnet test --no-build --configuration release --verbosity minimal

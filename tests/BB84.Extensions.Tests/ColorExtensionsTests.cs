@@ -40,4 +40,18 @@ public sealed partial class ColorExtensionsTests
 		yield return new object[] { Color.Lime, "#00FF00" };
 		yield return new object[] { Color.Blue, "#0000FF" };
 	}
+
+	public static IEnumerable<object[]> FromRGBHexStringTestData()
+	{
+		yield return new object[] { Color.White, "#FFFFFF" };
+		yield return new object[] { Color.White, "#FFF" };
+		yield return new object[] { Color.Black, "#000000" };
+		yield return new object[] { Color.Black, "#000" };
+		yield return new object[] { Color.Red, "#FF0000" };
+		yield return new object[] { Color.Red, "#F00" };
+		yield return new object[] { Color.Lime, "#00FF00" };
+		yield return new object[] { Color.Lime, "#0F0" };
+		yield return new object[] { Color.Blue, "#0000FF" };
+		yield return new object[] { Color.Blue, "#00F" };
+	}
 }

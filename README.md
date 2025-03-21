@@ -4,62 +4,37 @@
 [![Issues](https://img.shields.io/github/issues/BoBoBaSs84/BB84.Extensions)](https://github.com/BoBoBaSs84/BB84.Extensions/issues)
 [![Commit](https://img.shields.io/github/last-commit/BoBoBaSs84/BB84.Extensions)](https://github.com/BoBoBaSs84/BB84.Extensions/commit/main)
 [![License](https://img.shields.io/github/license/BoBoBaSs84/BB84.Extensions)](https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/LICENSE)
+
+# What to expect...
+
+## BB84.Extensions
+
+[![net20](https://img.shields.io/badge/netstandard2.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
+[![net21](https://img.shields.io/badge/netstandard2.1-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
+[![net462](https://img.shields.io/badge/net462-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
+[![net481](https://img.shields.io/badge/net481-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
+[![net80](https://img.shields.io/badge/net8.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
+[![net90](https://img.shields.io/badge/net9.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
 [![NuGet](https://img.shields.io/nuget/v/BB84.Extensions.svg?logo=nuget&logoColor=white)](https://www.nuget.org/packages/BB84.Extensions)
 
-[![net20](https://img.shields.io/badge/netstandard2.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
-[![net21](https://img.shields.io/badge/netstandard2.1-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
-[![net462](https://img.shields.io/badge/net462-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
-[![net481](https://img.shields.io/badge/net481-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
-[![net80](https://img.shields.io/badge/net8.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
-[![net90](https://img.shields.io/badge/net9.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
+This library provides a set of extension methods for the .NET framework. For example, it includes methods to convert a `Color` to its RGB hexadecimal representation, to get the first day of the week, to iterate over an enumerable and execute an action on each element, take a random item from an array and much more.
 
-# BB84.Extensions
+**Examples can be found [here](/src/BB84.Extensions/README.md).**
 
-A collection of some random C# extensions I needed in many projects.
+## BB84.WinForms.Extensions
 
-## Usage
+[![net462](https://img.shields.io/badge/net462-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
+[![net481](https://img.shields.io/badge/net481-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
+[![net80](https://img.shields.io/badge/net8.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
+[![net90](https://img.shields.io/badge/net9.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
+[![NuGet](https://img.shields.io/nuget/v/BB84.WinForms.Extensions.svg?logo=nuget&logoColor=white)](https://www.nuget.org/packages/BB84.WinForms.Extensions)
 
-Depending on the application, there are several ways to skin a cat.
+Even though it's getting on in years, I need a few extensions here and there to make working with WinForms easier and clearer.
 
-### Example extensions
+This library provides a set of extension methods for the Windows Forms framework. For example, it includes methods to bind the text of a control or the visibility of a control to a property of a class, it contains bindings for data sources and the selected item of a combo box or list box and much more.
 
-#### Start of week
-
-The `StartOfWeek` method returns the first day of the week using the specified date and the definition of the first day of the week.
-
-```csharp
-DateTime today = new(2023, 9, 5);
-DateTime startOfWeek = today.StartOfWeek();
-```
-
-#### Random choice
-
-The `TakeRandom` method returns a randomly chosen item from a given array.
-
-```csharp
-int[] ints = [1, 2, 3];
-int i = ints.TakeRandom();
-```
-
-#### For each
-
-The `ForEach` method iterates over an enumerable and executes an action on each element.
-
-```csharp
-int hits = default;
-IEnumerable<string> strings = ["a", "ab", "b", "bb"];
-strings.ForEach(x => x.Contains("a"), x => hits++);
-```
-
-#### Color to RGB hexadecimal representation
-
-The `ToRGBHexString` method turns any `System.Drawing.Color` into its RGB hexadecimal string representation, with the prefix '#'.
-
-```csharp
-Color color = Color.Green;
-string hexString = color.ToRGBHexString();
-```
+**Examples can be found [here](/src/BB84.WinForms.Extensions/README.md).**
 
 ## Documentation
 
-The complete API documentation can be found [here](https://bobobass84.github.io/BB84.Extensions/api/index.html).
+The complete API documentation can be found [here](https://bobobass84.github.io/BB84.Extensions/).

@@ -1,6 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+	
+	<PropertyGroup Label="Technical">
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net462;net481;net8.0;net9.0</TargetFrameworks>
+	</PropertyGroup>
+
+	<PropertyGroup Label="MetaData">
+		<Description>This library provides a set of extension methods for the .NET framework.</Description>
+	</PropertyGroup>
+
+	<PropertyGroup Label="Package">
+		<PackageTags>library;csharp;extensions;common</PackageTags>
+	</PropertyGroup>
+	
 	<ItemGroup Condition="'$(TargetFrameworkIdentifier)'=='.NETFramework' or '$(TargetFrameworkIdentifier)'=='.NETStandard'">
 		<PackageReference Include="System.Text.Json" />
 		<PackageReference Include="System.Net.Http" />
 	</ItemGroup>
+
 </Project>
