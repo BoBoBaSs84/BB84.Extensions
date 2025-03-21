@@ -1,7 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
 	<PropertyGroup>
 		<TargetFrameworks>net462;net481;net8.0-windows;net9.0-windows</TargetFrameworks>
 		<NoWarn>CA1416</NoWarn>
 		<UseWindowsForms>True</UseWindowsForms>
 	</PropertyGroup>
+
+	<PropertyGroup Label="MetaData">
+		<Description>This library provides a set of extension methods for the Windows Forms framework.</Description>
+	</PropertyGroup>
+
+	<PropertyGroup Label="Package">
+		<PackageTags>library;csharp;extensions;winforms</PackageTags>
+	</PropertyGroup>
+
 </Project>
