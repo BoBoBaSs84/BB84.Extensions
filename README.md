@@ -27,7 +27,7 @@ This library provides a set of extension methods for the .NET framework. For exa
 [![net481](https://img.shields.io/badge/net481-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
 [![net80](https://img.shields.io/badge/net8.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
 [![net90](https://img.shields.io/badge/net9.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
-[![NuGet](https://img.shields.io/nuget/v/BB84.Extensions.svg?logo=nuget&logoColor=white)](https://www.nuget.org/packages/BB84.WinForms.Extensions)
+[![NuGet](https://img.shields.io/nuget/v/BB84.WinForms.Extensions.svg?logo=nuget&logoColor=white)](https://www.nuget.org/packages/BB84.WinForms.Extensions)
 
 Even though it's getting on in years, I need a few extensions here and there to make working with WinForms easier and clearer.
 
@@ -37,4 +37,4 @@ This library provides a set of extension methods for the Windows Forms framework
 
 ## Documentation
 
-The complete API documentation can be found [here](https://bobobass84.github.io/BB84.Extensions/api/index.html).
+The complete API documentation can be found [here](https://bobobass84.github.io/BB84.Extensions/).
