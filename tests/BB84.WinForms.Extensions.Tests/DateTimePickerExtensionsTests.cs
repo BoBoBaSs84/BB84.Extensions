@@ -15,6 +15,28 @@ public sealed class DateTimePickerExtensionsTests
 	}
 
 	[TestMethod]
+	public void WithMaxDateBindingTest()
+	{
+		DateTimePicker dateTimePicker = new();
+
+		dateTimePicker.WithMaxDateBinding(new object(), nameof(dateTimePicker.MaxDate));
+		
+		Assert.AreEqual(1, dateTimePicker.DataBindings.Count);
+		Assert.AreEqual(nameof(dateTimePicker.MaxDate), dateTimePicker.DataBindings[0].PropertyName);
+	}
+
+	[TestMethod]
+	public void WithMinDateBindingTest()
+	{
+		DateTimePicker dateTimePicker = new();
+		
+		dateTimePicker.WithMinDateBinding(new object(), nameof(dateTimePicker.MinDate));
+		
+		Assert.AreEqual(1, dateTimePicker.DataBindings.Count);
+		Assert.AreEqual(nameof(dateTimePicker.MinDate), dateTimePicker.DataBindings[0].PropertyName);
+	}
+
+	[TestMethod]
 	public void WithValueBindingTest()
 	{
 		DateTimePicker dateTimePicker = new();
