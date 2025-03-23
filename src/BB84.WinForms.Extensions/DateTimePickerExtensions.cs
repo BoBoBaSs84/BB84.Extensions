@@ -19,6 +19,32 @@ public static class DateTimePickerExtensions
 	}
 
 	/// <summary>
+	/// Binds the <see cref="DateTimePicker.MaxDate"/> property to the specified data source.
+	/// </summary>
+	/// <param name="dateTimePicker">The <see cref="DateTimePicker"/> control to bind.</param>
+	/// <param name="dataSource">The data source to bind to.</param>
+	/// <param name="dataMember">The property of the data source to bind to.</param>
+	/// <returns>The same <see cref="DateTimePicker"/> control instance, so that multiple calls can be chained.</returns>
+	public static DateTimePicker WithMaxDateBinding(this DateTimePicker dateTimePicker, object dataSource, string dataMember)
+	{
+		dateTimePicker.DataBindings.Add(nameof(dateTimePicker.MaxDate), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
+		return dateTimePicker;
+	}
+
+	/// <summary>
+	/// Binds the <see cref="DateTimePicker.MinDate"/> property to the specified data source.
+	/// </summary>
+	/// <param name="dateTimePicker">The <see cref="DateTimePicker"/> control to bind.</param>
+	/// <param name="dataSource">The data source to bind to.</param>
+	/// <param name="dataMember">The property of the data source to bind to.</param>
+	/// <returns>The same <see cref="DateTimePicker"/> control instance, so that multiple calls can be chained.</returns>
+	public static DateTimePicker WithMinDateBinding(this DateTimePicker dateTimePicker, object dataSource, string dataMember)
+	{
+		dateTimePicker.DataBindings.Add(nameof(dateTimePicker.MinDate), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
+		return dateTimePicker;
+	}
+
+	/// <summary>
 	/// Binds the <see cref="DateTimePicker.Value"/> property to the specified data source.
 	/// </summary>
 	/// <param name="dateTimePicker">The <see cref="DateTimePicker"/> control to bind.</param>
