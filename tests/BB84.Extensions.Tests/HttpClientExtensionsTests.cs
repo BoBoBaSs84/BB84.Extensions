@@ -1,4 +1,5 @@
 ﻿using System.Net.Http;
+using System.Text;
 
 namespace BB84.Extensions.Tests;
 
@@ -13,6 +14,28 @@ public sealed class HttpClientExtensionsTests
 			.WithBaseAdress(baseAddress);
 
 		Assert.AreEqual($"{baseAddress}/", client.BaseAddress!.ToString());
+	}
+
+	[DataTestMethod]
+	[DataRow("FancyUserName", "FancyPassword")]
+	public void WithBasicAuthenticationTest(string username, string password)
+	{
+		using HttpClient client = new HttpClient()
+			.WithBasicAuthentication(username, password);
+		
+		Assert.AreEqual("Basic", client.DefaultRequestHeaders.Authorization!.Scheme);
+		Assert.AreEqual(Convert.ToBase64String(Encoding.ASCII.GetBytes($"{username}:{password}")), client.DefaultRequestHeaders.Authorization.Parameter);
+	}
+
+	[DataTestMethod]
+	[DataRow("FancyUserName", "FancyPassword")]
+	public void WithBasicAuthenticationWithEncodingTest(string username, string password)
+	{
+		using HttpClient client = new HttpClient()
+			.WithBasicAuthentication(username, password, Encoding.UTF8);
+
+		Assert.AreEqual("Basic", client.DefaultRequestHeaders.Authorization!.Scheme);
+		Assert.AreEqual(Convert.ToBase64String(Encoding.UTF8.GetBytes($"{username}:{password}")), client.DefaultRequestHeaders.Authorization.Parameter);
 	}
 
 	[DataTestMethod]
