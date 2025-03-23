@@ -1,5 +1,6 @@
 ﻿using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 
 namespace BB84.Extensions;
 
@@ -8,6 +9,7 @@ namespace BB84.Extensions;
 /// </summary>
 public static class HttpClientExtensions
 {
+	private const string BasicScheme = "Basic";
 	private const string BearerScheme = "Bearer";
 
 	/// <summary>
@@ -31,6 +33,21 @@ public static class HttpClientExtensions
 	public static HttpClient WithBaseAdress(this HttpClient client, Uri baseAddress)
 	{
 		client.BaseAddress = baseAddress;
+		return client;
+	}
+
+	/// <summary>
+	/// Adds basic authentication to the http client request header with the specified <paramref name="username"/> and <paramref name="password"/>.
+	/// </summary>
+	/// <param name="client">The http client which should use the basic authentication.</param>
+	/// <param name="username">The username to be used.</param>
+	/// <param name="password">The password to be used.</param>
+	/// <param name="encoding">The encoding to be used for the username and password. Default is ASCII.</param>
+	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
+	public static HttpClient WithBasicAuthentication(this HttpClient client, string username, string password, Encoding? encoding = null)
+	{
+		encoding ??= Encoding.ASCII;
+		client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(BasicScheme, Convert.ToBase64String(encoding.GetBytes($"{username}:{password}")));
 		return client;
 	}
 
