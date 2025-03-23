@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_HttpClientExtensions" data-uid="BB84.Extensions.HttpClientExtensions" class="text-break">
-Class HttpClientExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/HttpClientExtensions.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class HttpClientExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/HttpClientExtensions.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -153,7 +153,7 @@ Class HttpClientExtensions  <a class="header-action link-secondary" title="View 
 
   <h3 id="BB84_Extensions_HttpClientExtensions_WithBaseAdress_System_Net_Http_HttpClient_System_String_" data-uid="BB84.Extensions.HttpClientExtensions.WithBaseAdress(System.Net.Http.HttpClient,System.String)">
   WithBaseAdress(HttpClient, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/HttpClientExtensions.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/HttpClientExtensions.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds the specified <code class="paramref">baseAddress</code> to the http client configuration.</p>
@@ -195,7 +195,7 @@ Class HttpClientExtensions  <a class="header-action link-secondary" title="View 
 
   <h3 id="BB84_Extensions_HttpClientExtensions_WithBaseAdress_System_Net_Http_HttpClient_System_Uri_" data-uid="BB84.Extensions.HttpClientExtensions.WithBaseAdress(System.Net.Http.HttpClient,System.Uri)">
   WithBaseAdress(HttpClient, Uri)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/HttpClientExtensions.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/HttpClientExtensions.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds the specified <code class="paramref">baseAddress</code> to the http client configuration.</p>
@@ -233,11 +233,59 @@ Class HttpClientExtensions  <a class="header-action link-secondary" title="View 
 
 
 
+  <a id="BB84_Extensions_HttpClientExtensions_WithBasicAuthentication_" data-uid="BB84.Extensions.HttpClientExtensions.WithBasicAuthentication*"></a>
+
+  <h3 id="BB84_Extensions_HttpClientExtensions_WithBasicAuthentication_System_Net_Http_HttpClient_System_String_System_String_System_Text_Encoding_" data-uid="BB84.Extensions.HttpClientExtensions.WithBasicAuthentication(System.Net.Http.HttpClient,System.String,System.String,System.Text.Encoding)">
+  WithBasicAuthentication(HttpClient, string, string, Encoding?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/HttpClientExtensions.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds basic authentication to the http client request header with the specified <code class="paramref">username</code> and <code class="paramref">password</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HttpClient WithBasicAuthentication(this HttpClient client, string username, string password, Encoding? encoding = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>client</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd><p>The http client which should use the basic authentication.</p>
+</dd>
+    <dt><code>username</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The username to be used.</p>
+</dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The password to be used.</p>
+</dd>
+    <dt><code>encoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
+    <dd><p>The encoding to be used for the username and password. Default is ASCII.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd><p>The same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a> instance so that multiple calls can be chained.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="BB84_Extensions_HttpClientExtensions_WithBearerToken_" data-uid="BB84.Extensions.HttpClientExtensions.WithBearerToken*"></a>
 
   <h3 id="BB84_Extensions_HttpClientExtensions_WithBearerToken_System_Net_Http_HttpClient_System_String_" data-uid="BB84.Extensions.HttpClientExtensions.WithBearerToken(System.Net.Http.HttpClient,System.String)">
   WithBearerToken(HttpClient, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/HttpClientExtensions.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/HttpClientExtensions.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds the specified bearer <code class="paramref">token</code> to the http client request header.</p>
@@ -279,7 +327,7 @@ Class HttpClientExtensions  <a class="header-action link-secondary" title="View 
 
   <h3 id="BB84_Extensions_HttpClientExtensions_WithMediaType_System_Net_Http_HttpClient_System_String_" data-uid="BB84.Extensions.HttpClientExtensions.WithMediaType(System.Net.Http.HttpClient,System.String)">
   WithMediaType(HttpClient, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/HttpClientExtensions.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/HttpClientExtensions.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds the specified <code class="paramref">mediaType</code> the accept header for an HTTP request.</p>
@@ -321,7 +369,7 @@ Class HttpClientExtensions  <a class="header-action link-secondary" title="View 
 
   <h3 id="BB84_Extensions_HttpClientExtensions_WithTimeout_System_Net_Http_HttpClient_System_TimeSpan_" data-uid="BB84.Extensions.HttpClientExtensions.WithTimeout(System.Net.Http.HttpClient,System.TimeSpan)">
   WithTimeout(HttpClient, TimeSpan)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/HttpClientExtensions.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/HttpClientExtensions.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds the specified <code class="paramref">timeout</code> to the http client configuration.</p>
@@ -363,7 +411,7 @@ Class HttpClientExtensions  <a class="header-action link-secondary" title="View 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/HttpClientExtensions.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/HttpClientExtensions.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -797,6 +797,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.HttpClientExtensions.WithBaseAdress
   nameWithType: HttpClientExtensions.WithBaseAdress
+- uid: BB84.Extensions.HttpClientExtensions.WithBasicAuthentication(System.Net.Http.HttpClient,System.String,System.String,System.Text.Encoding)
+  name: WithBasicAuthentication(HttpClient, string, string, Encoding?)
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithBasicAuthentication_System_Net_Http_HttpClient_System_String_System_String_System_Text_Encoding_
+  commentId: M:BB84.Extensions.HttpClientExtensions.WithBasicAuthentication(System.Net.Http.HttpClient,System.String,System.String,System.Text.Encoding)
+  name.vb: WithBasicAuthentication(HttpClient, String, String, Encoding)
+  fullName: BB84.Extensions.HttpClientExtensions.WithBasicAuthentication(System.Net.Http.HttpClient, string, string, System.Text.Encoding?)
+  fullName.vb: BB84.Extensions.HttpClientExtensions.WithBasicAuthentication(System.Net.Http.HttpClient, String, String, System.Text.Encoding)
+  nameWithType: HttpClientExtensions.WithBasicAuthentication(HttpClient, string, string, Encoding?)
+  nameWithType.vb: HttpClientExtensions.WithBasicAuthentication(HttpClient, String, String, Encoding)
+- uid: BB84.Extensions.HttpClientExtensions.WithBasicAuthentication*
+  name: WithBasicAuthentication
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithBasicAuthentication_
+  commentId: Overload:BB84.Extensions.HttpClientExtensions.WithBasicAuthentication
+  isSpec: "True"
+  fullName: BB84.Extensions.HttpClientExtensions.WithBasicAuthentication
+  nameWithType: HttpClientExtensions.WithBasicAuthentication
 - uid: BB84.Extensions.HttpClientExtensions.WithBearerToken(System.Net.Http.HttpClient,System.String)
   name: WithBearerToken(HttpClient, string)
   href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithBearerToken_System_Net_Http_HttpClient_System_String_
@@ -1831,6 +1847,38 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithEnabledBinding
   nameWithType: DateTimePickerExtensions.WithEnabledBinding
+- uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMaxDateBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
+  name: WithMaxDateBinding(DateTimePicker, object, string)
+  href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithMaxDateBinding_System_Windows_Forms_DateTimePicker_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.DateTimePickerExtensions.WithMaxDateBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
+  name.vb: WithMaxDateBinding(DateTimePicker, Object, String)
+  fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMaxDateBinding(System.Windows.Forms.DateTimePicker, object, string)
+  fullName.vb: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMaxDateBinding(System.Windows.Forms.DateTimePicker, Object, String)
+  nameWithType: DateTimePickerExtensions.WithMaxDateBinding(DateTimePicker, object, string)
+  nameWithType.vb: DateTimePickerExtensions.WithMaxDateBinding(DateTimePicker, Object, String)
+- uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMaxDateBinding*
+  name: WithMaxDateBinding
+  href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithMaxDateBinding_
+  commentId: Overload:BB84.WinForms.Extensions.DateTimePickerExtensions.WithMaxDateBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMaxDateBinding
+  nameWithType: DateTimePickerExtensions.WithMaxDateBinding
+- uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMinDateBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
+  name: WithMinDateBinding(DateTimePicker, object, string)
+  href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithMinDateBinding_System_Windows_Forms_DateTimePicker_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.DateTimePickerExtensions.WithMinDateBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
+  name.vb: WithMinDateBinding(DateTimePicker, Object, String)
+  fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMinDateBinding(System.Windows.Forms.DateTimePicker, object, string)
+  fullName.vb: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMinDateBinding(System.Windows.Forms.DateTimePicker, Object, String)
+  nameWithType: DateTimePickerExtensions.WithMinDateBinding(DateTimePicker, object, string)
+  nameWithType.vb: DateTimePickerExtensions.WithMinDateBinding(DateTimePicker, Object, String)
+- uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMinDateBinding*
+  name: WithMinDateBinding
+  href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithMinDateBinding_
+  commentId: Overload:BB84.WinForms.Extensions.DateTimePickerExtensions.WithMinDateBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMinDateBinding
+  nameWithType: DateTimePickerExtensions.WithMinDateBinding
 - uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithValueBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
   name: WithValueBinding(DateTimePicker, object, string)
   href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithValueBinding_System_Windows_Forms_DateTimePicker_System_Object_System_String_
@@ -2149,6 +2197,76 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.NumericUpDownExtensions.WithVisibleBinding
   nameWithType: NumericUpDownExtensions.WithVisibleBinding
+- uid: BB84.WinForms.Extensions.PictureBoxExtensions
+  name: PictureBoxExtensions
+  href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html
+  commentId: T:BB84.WinForms.Extensions.PictureBoxExtensions
+  fullName: BB84.WinForms.Extensions.PictureBoxExtensions
+  nameWithType: PictureBoxExtensions
+- uid: BB84.WinForms.Extensions.PictureBoxExtensions.WithEnabledBinding(System.Windows.Forms.PictureBox,System.Object,System.String)
+  name: WithEnabledBinding(PictureBox, object, string)
+  href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html#BB84_WinForms_Extensions_PictureBoxExtensions_WithEnabledBinding_System_Windows_Forms_PictureBox_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.PictureBoxExtensions.WithEnabledBinding(System.Windows.Forms.PictureBox,System.Object,System.String)
+  name.vb: WithEnabledBinding(PictureBox, Object, String)
+  fullName: BB84.WinForms.Extensions.PictureBoxExtensions.WithEnabledBinding(System.Windows.Forms.PictureBox, object, string)
+  fullName.vb: BB84.WinForms.Extensions.PictureBoxExtensions.WithEnabledBinding(System.Windows.Forms.PictureBox, Object, String)
+  nameWithType: PictureBoxExtensions.WithEnabledBinding(PictureBox, object, string)
+  nameWithType.vb: PictureBoxExtensions.WithEnabledBinding(PictureBox, Object, String)
+- uid: BB84.WinForms.Extensions.PictureBoxExtensions.WithEnabledBinding*
+  name: WithEnabledBinding
+  href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html#BB84_WinForms_Extensions_PictureBoxExtensions_WithEnabledBinding_
+  commentId: Overload:BB84.WinForms.Extensions.PictureBoxExtensions.WithEnabledBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.PictureBoxExtensions.WithEnabledBinding
+  nameWithType: PictureBoxExtensions.WithEnabledBinding
+- uid: BB84.WinForms.Extensions.PictureBoxExtensions.WithErrorImageBinding(System.Windows.Forms.PictureBox,System.Object,System.String)
+  name: WithErrorImageBinding(PictureBox, object, string)
+  href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html#BB84_WinForms_Extensions_PictureBoxExtensions_WithErrorImageBinding_System_Windows_Forms_PictureBox_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.PictureBoxExtensions.WithErrorImageBinding(System.Windows.Forms.PictureBox,System.Object,System.String)
+  name.vb: WithErrorImageBinding(PictureBox, Object, String)
+  fullName: BB84.WinForms.Extensions.PictureBoxExtensions.WithErrorImageBinding(System.Windows.Forms.PictureBox, object, string)
+  fullName.vb: BB84.WinForms.Extensions.PictureBoxExtensions.WithErrorImageBinding(System.Windows.Forms.PictureBox, Object, String)
+  nameWithType: PictureBoxExtensions.WithErrorImageBinding(PictureBox, object, string)
+  nameWithType.vb: PictureBoxExtensions.WithErrorImageBinding(PictureBox, Object, String)
+- uid: BB84.WinForms.Extensions.PictureBoxExtensions.WithErrorImageBinding*
+  name: WithErrorImageBinding
+  href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html#BB84_WinForms_Extensions_PictureBoxExtensions_WithErrorImageBinding_
+  commentId: Overload:BB84.WinForms.Extensions.PictureBoxExtensions.WithErrorImageBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.PictureBoxExtensions.WithErrorImageBinding
+  nameWithType: PictureBoxExtensions.WithErrorImageBinding
+- uid: BB84.WinForms.Extensions.PictureBoxExtensions.WithImageBinding(System.Windows.Forms.PictureBox,System.Object,System.String)
+  name: WithImageBinding(PictureBox, object, string)
+  href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html#BB84_WinForms_Extensions_PictureBoxExtensions_WithImageBinding_System_Windows_Forms_PictureBox_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.PictureBoxExtensions.WithImageBinding(System.Windows.Forms.PictureBox,System.Object,System.String)
+  name.vb: WithImageBinding(PictureBox, Object, String)
+  fullName: BB84.WinForms.Extensions.PictureBoxExtensions.WithImageBinding(System.Windows.Forms.PictureBox, object, string)
+  fullName.vb: BB84.WinForms.Extensions.PictureBoxExtensions.WithImageBinding(System.Windows.Forms.PictureBox, Object, String)
+  nameWithType: PictureBoxExtensions.WithImageBinding(PictureBox, object, string)
+  nameWithType.vb: PictureBoxExtensions.WithImageBinding(PictureBox, Object, String)
+- uid: BB84.WinForms.Extensions.PictureBoxExtensions.WithImageBinding*
+  name: WithImageBinding
+  href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html#BB84_WinForms_Extensions_PictureBoxExtensions_WithImageBinding_
+  commentId: Overload:BB84.WinForms.Extensions.PictureBoxExtensions.WithImageBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.PictureBoxExtensions.WithImageBinding
+  nameWithType: PictureBoxExtensions.WithImageBinding
+- uid: BB84.WinForms.Extensions.PictureBoxExtensions.WithVisibleBinding(System.Windows.Forms.PictureBox,System.Object,System.String)
+  name: WithVisibleBinding(PictureBox, object, string)
+  href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html#BB84_WinForms_Extensions_PictureBoxExtensions_WithVisibleBinding_System_Windows_Forms_PictureBox_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.PictureBoxExtensions.WithVisibleBinding(System.Windows.Forms.PictureBox,System.Object,System.String)
+  name.vb: WithVisibleBinding(PictureBox, Object, String)
+  fullName: BB84.WinForms.Extensions.PictureBoxExtensions.WithVisibleBinding(System.Windows.Forms.PictureBox, object, string)
+  fullName.vb: BB84.WinForms.Extensions.PictureBoxExtensions.WithVisibleBinding(System.Windows.Forms.PictureBox, Object, String)
+  nameWithType: PictureBoxExtensions.WithVisibleBinding(PictureBox, object, string)
+  nameWithType.vb: PictureBoxExtensions.WithVisibleBinding(PictureBox, Object, String)
+- uid: BB84.WinForms.Extensions.PictureBoxExtensions.WithVisibleBinding*
+  name: WithVisibleBinding
+  href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html#BB84_WinForms_Extensions_PictureBoxExtensions_WithVisibleBinding_
+  commentId: Overload:BB84.WinForms.Extensions.PictureBoxExtensions.WithVisibleBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.PictureBoxExtensions.WithVisibleBinding
+  nameWithType: PictureBoxExtensions.WithVisibleBinding
 - uid: BB84.WinForms.Extensions.ProgressBarExtensions
   name: ProgressBarExtensions
   href: api/BB84.WinForms.Extensions.ProgressBarExtensions.html
