@@ -2,10 +2,14 @@
 [![CD](https://github.com/BoBoBaSs84/BB84.Extensions/actions/workflows/cd.yml/badge.svg?branch=main)](https://github.com/BoBoBaSs84/BB84.Extensions/actions/workflows/cd.yml)
 [![CodeQL](https://github.com/BoBoBaSs84/BB84.Extensions/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/BoBoBaSs84/BB84.Extensions/actions/workflows/github-code-scanning/codeql)
 [![Dependabot](https://github.com/BoBoBaSs84/BB84.Extensions/actions/workflows/dependabot/dependabot-updates/badge.svg?branch=main)](https://github.com/BoBoBaSs84/BB84.Extensions/actions/workflows/dependabot/dependabot-updates)
+
 [![C#](https://img.shields.io/badge/C%23-13.0-239120)](https://github.com/BoBoBaSs84/BB84.Extensions)
 [![Issues](https://img.shields.io/github/issues/BoBoBaSs84/BB84.Extensions)](https://github.com/BoBoBaSs84/BB84.Extensions/issues)
 [![Commit](https://img.shields.io/github/last-commit/BoBoBaSs84/BB84.Extensions)](https://github.com/BoBoBaSs84/BB84.Extensions/commit/main)
 [![License](https://img.shields.io/github/license/BoBoBaSs84/BB84.Extensions)](https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/LICENSE)
+[![RepoSize](https://img.shields.io/github/repo-size/BoBoBaSs84/BB84.Extensions)](https://github.com/BoBoBaSs84/BB84.Extensions)
+[![Release](https://img.shields.io/github/v/release/BoBoBaSs84/BB84.Extensions)](https://github.com/BoBoBaSs84/BB84.Extensions/releases/latest)
+
 
 # What to expect...
 
