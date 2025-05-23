@@ -20,6 +20,17 @@ public sealed class ButtonExtensionsTests
 	}
 
 	[TestMethod]
+	public void WithTextBindingTest()
+	{
+		Button button = new();
+
+		button.WithTextBinding(new object(), nameof(button.Text));
+
+		Assert.AreEqual(1, button.DataBindings.Count);
+		Assert.AreEqual(nameof(button.Text), button.DataBindings[0].PropertyName);
+	}
+
+	[TestMethod]
 	public void WithVisibleBindingTest()
 	{
 		Button button = new();

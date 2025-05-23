@@ -6,17 +6,29 @@
 namespace BB84.WinForms.Extensions;
 
 /// <summary>
-/// The extension methods for the <see cref="MaskedTextBox"/> control.
+/// Provides extension methods for the <see cref="MaskedTextBox"/> control to simplify data binding.
 /// </summary>
+/// <remarks>
+/// These extension methods allow developers to easily bind common properties of a <see cref="MaskedTextBox"/>
+/// (such as <see cref="Control.Enabled"/>, <see cref="MaskedTextBox.Text"/>, and <see cref="Control.Visible"/>)
+/// to a data source. Each method returns the same <see cref="MaskedTextBox"/> instance, enabling method chaining.
+/// </remarks>
 public static class MaskedTextBoxExtensions
 {
 	/// <summary>
-	/// Binds the <see cref="Control.Enabled"/> property to the specified data source.
+	/// Binds the <see cref="Control.Enabled"/> property of the specified <see cref="MaskedTextBox"/>
+	/// to a property on the provided data source.
 	/// </summary>
-	/// <param name="maskedTextBox">The <see cref="MaskedTextBox"/> control to bind.</param>
-	/// <param name="dataSource">The data source to bind to.</param>
-	/// <param name="dataMember">The property of the data source to bind to.</param>
-	/// <returns>The same <see cref="TextBox"/> control instance, so that multiple calls can be chained.</returns>
+	/// <remarks>
+	/// The binding is configured to update the data source whenever the <see cref="Control.Enabled"/> 
+	/// property changes, using <see cref="DataSourceUpdateMode.OnPropertyChanged"/>.
+	/// </remarks>
+	/// <param name="maskedTextBox">The <see cref="MaskedTextBox"/> to bind.</param>
+	/// <param name="dataSource">The data source containing the property to bind to.</param>
+	/// <param name="dataMember">The name of the property on the data source to bind to.</param>
+	/// <returns>
+	/// The <see cref="MaskedTextBox"/> control with the binding applied, allowing for method chaining.
+	/// </returns>
 	public static MaskedTextBox WithEnabledBinding(this MaskedTextBox maskedTextBox, object dataSource, string dataMember)
 	{
 		maskedTextBox.DataBindings.Add(nameof(maskedTextBox.Enabled), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
@@ -24,12 +36,19 @@ public static class MaskedTextBoxExtensions
 	}
 
 	/// <summary>
-	/// Binds the <see cref="MaskedTextBox.Text"/> property to the specified data source.
+	/// Binds the <see cref="MaskedTextBox.Text"/> property of the specified <see cref="MaskedTextBox"/>
+	/// to a property on the provided data source.
 	/// </summary>
-	/// <param name="maskedTextBox">The <see cref="MaskedTextBox"/> control to bind.</param>
-	/// <param name="dataSource">The data source to bind to.</param>
-	/// <param name="dataMember">The property of the data source to bind to.</param>
-	/// <returns>The same <see cref="MaskedTextBox"/> control instance, so that multiple calls can be chained.</returns>
+	/// <remarks>
+	/// The binding is configured to update the data source whenever the <see cref="MaskedTextBox.Text"/> 
+	/// property changes, using <see cref="DataSourceUpdateMode.OnPropertyChanged"/>.
+	/// </remarks>
+	/// <param name="maskedTextBox">The <see cref="MaskedTextBox"/> to bind.</param>
+	/// <param name="dataSource">The data source containing the property to bind to.</param>
+	/// <param name="dataMember">The name of the property on the data source to bind to.</param>
+	/// <returns>
+	/// The <see cref="MaskedTextBox"/> control with the binding applied, allowing for method chaining.
+	/// </returns>
 	public static MaskedTextBox WithTextBinding(this MaskedTextBox maskedTextBox, object dataSource, string dataMember)
 	{
 		maskedTextBox.DataBindings.Add(nameof(maskedTextBox.Text), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
@@ -37,12 +56,19 @@ public static class MaskedTextBoxExtensions
 	}
 
 	/// <summary>
-	/// Binds the <see cref="Control.Visible"/> property to the specified data source.
+	/// Binds the <see cref="Control.Visible"/> property of the specified <see cref="MaskedTextBox"/>
+	/// to a property on the provided data source.
 	/// </summary>
-	/// <param name="maskedTextBox">The <see cref="MaskedTextBox"/> control to bind.</param>
-	/// <param name="dataSource">The data source to bind to.</param>
-	/// <param name="dataMember">The property of the data source to bind to.</param>
-	/// <returns>The same <see cref="MaskedTextBox"/> control instance, so that multiple calls can be chained.</returns>
+	/// <remarks>
+	/// The binding is configured to update the data source whenever the <see cref="Control.Visible"/> 
+	/// property changes, using <see cref="DataSourceUpdateMode.OnPropertyChanged"/>.
+	/// </remarks>
+	/// <param name="maskedTextBox">The <see cref="MaskedTextBox"/> to bind.</param>
+	/// <param name="dataSource">The data source containing the property to bind to.</param>
+	/// <param name="dataMember">The name of the property on the data source to bind to.</param>
+	/// <returns>
+	/// The <see cref="MaskedTextBox"/> control with the binding applied, allowing for method chaining.
+	/// </returns>
 	public static MaskedTextBox WithVisibleBinding(this MaskedTextBox maskedTextBox, object dataSource, string dataMember)
 	{
 		maskedTextBox.DataBindings.Add(nameof(maskedTextBox.Visible), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
