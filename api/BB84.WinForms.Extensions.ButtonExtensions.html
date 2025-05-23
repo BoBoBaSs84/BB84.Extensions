@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ButtonExtensions ">
       
-      <meta name="description" content="The extension methods for the  control.">
+      <meta name="description" content="Provides extension methods for the  control to simplify data binding.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_WinForms_Extensions_ButtonExtensions" data-uid="BB84.WinForms.Extensions.ButtonExtensions" class="text-break">
-Class ButtonExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ButtonExtensions.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class ButtonExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ButtonExtensions.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Class ButtonExtensions  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>BB84.WinForms.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The extension methods for the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> control.</p>
+  <div class="markdown summary"><p>Provides extension methods for the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> control to simplify data binding.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -143,20 +143,75 @@ Class ButtonExtensions  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h2 id="BB84_WinForms_Extensions_ButtonExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class includes methods to bind common properties of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> control, such as
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.enabled">Enabled</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.text">Text</a>, and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.visible">Visible</a>, to a
+specified data source. These methods return the same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> instance, allowing for
+method chaining.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
 </h2>
 
 
+  <a id="BB84_WinForms_Extensions_ButtonExtensions_WithCommandBinding_" data-uid="BB84.WinForms.Extensions.ButtonExtensions.WithCommandBinding*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_ButtonExtensions_WithCommandBinding_System_Windows_Forms_Button_System_Windows_Input_ICommand_" data-uid="BB84.WinForms.Extensions.ButtonExtensions.WithCommandBinding(System.Windows.Forms.Button,System.Windows.Input.ICommand)">
+  WithCommandBinding(Button, ICommand)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ButtonExtensions.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Binds a command to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a>, enabling the button's click event to execute the command and dynamically
+updating the button's enabled state based on the command's executability.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Button WithCommandBinding(this Button button, ICommand command)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>button</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> to bind the command to.</p>
+</dd>
+    <dt><code>command</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand">ICommand</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand">ICommand</a> to bind to the button.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> control with the binding applied, allowing for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="BB84_WinForms_Extensions_ButtonExtensions_WithCommandBinding_System_Windows_Forms_Button_System_Windows_Input_ICommand__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method attaches event handlers to the button and the command to ensure that:</p>
+<ul><li>The button's <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.click">Click</a> event executes the command when clicked.</li><li>The button's <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.enabled">Enabled</a> property is updated dynamically based on the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand.canexecute">CanExecute(object)</a> state.</li></ul>
+When the button is disposed, the event handlers are automatically detached to prevent memory leaks.
+</div>
+
+
+
+
   <a id="BB84_WinForms_Extensions_ButtonExtensions_WithEnabledBinding_" data-uid="BB84.WinForms.Extensions.ButtonExtensions.WithEnabledBinding*"></a>
 
   <h3 id="BB84_WinForms_Extensions_ButtonExtensions_WithEnabledBinding_System_Windows_Forms_Button_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.ButtonExtensions.WithEnabledBinding(System.Windows.Forms.Button,System.Object,System.String)">
   WithEnabledBinding(Button, object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ButtonExtensions.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ButtonExtensions.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.enabled">Enabled</a> property to the specified data source.</p>
+  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.enabled">Enabled</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> to a property in the provided data
+source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -170,17 +225,17 @@ Class ButtonExtensions  <a class="header-action link-secondary" title="View sour
     <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> control to bind.</p>
 </dd>
     <dt><code>dataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The data source to bind to.</p>
+    <dd><p>The data source object containing the property to bind to.</p>
 </dd>
     <dt><code>dataMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The property of the data source to bind to.</p>
+    <dd><p>The name of the property in the data source to bind to the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.enabled">Enabled</a> property.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a></dt>
-    <dd><p>The same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> control instance, so that multiple calls can be chained.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> control with the binding applied, allowing for method chaining.</p>
 </dd>
   </dl>
 
@@ -190,6 +245,60 @@ Class ButtonExtensions  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h4 class="section" id="BB84_WinForms_Extensions_ButtonExtensions_WithEnabledBinding_System_Windows_Forms_Button_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The binding is configured to update the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.enabled">Enabled</a> property whenever the bound
+property in the data source changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
+</div>
+
+
+
+
+  <a id="BB84_WinForms_Extensions_ButtonExtensions_WithTextBinding_" data-uid="BB84.WinForms.Extensions.ButtonExtensions.WithTextBinding*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_ButtonExtensions_WithTextBinding_System_Windows_Forms_Button_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.ButtonExtensions.WithTextBinding(System.Windows.Forms.Button,System.Object,System.String)">
+  WithTextBinding(Button, object, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ButtonExtensions.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.text">Text</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> to a property in the provided data
+source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Button WithTextBinding(this Button button, object dataSource, string dataMember)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>button</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> control to bind.</p>
+</dd>
+    <dt><code>dataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The data source object containing the property to bind to.</p>
+</dd>
+    <dt><code>dataMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the property in the data source to bind to the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.text">Text</a> property.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> control with the binding applied, allowing for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="BB84_WinForms_Extensions_ButtonExtensions_WithTextBinding_System_Windows_Forms_Button_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The binding is configured to update the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.text">Text</a> property whenever the bound
+property in the data source changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
+</div>
 
 
 
@@ -198,10 +307,11 @@ Class ButtonExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_WinForms_Extensions_ButtonExtensions_WithVisibleBinding_System_Windows_Forms_Button_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.ButtonExtensions.WithVisibleBinding(System.Windows.Forms.Button,System.Object,System.String)">
   WithVisibleBinding(Button, object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ButtonExtensions.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ButtonExtensions.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.visible">Visible</a> property to the specified data source.</p>
+  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.visible">Visible</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> to a property in the provided data
+source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -215,17 +325,17 @@ Class ButtonExtensions  <a class="header-action link-secondary" title="View sour
     <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> control to bind.</p>
 </dd>
     <dt><code>dataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The data source to bind to.</p>
+    <dd><p>The data source object containing the property to bind to.</p>
 </dd>
     <dt><code>dataMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The property of the data source to bind to.</p>
+    <dd><p>The name of the property in the data source to bind to the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.visible">Visible</a> property.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a></dt>
-    <dd><p>The same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> control instance, so that multiple calls can be chained.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.button">Button</a> control with the binding applied, allowing for method chaining.</p>
 </dd>
   </dl>
 
@@ -235,6 +345,10 @@ Class ButtonExtensions  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h4 class="section" id="BB84_WinForms_Extensions_ButtonExtensions_WithVisibleBinding_System_Windows_Forms_Button_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The binding is configured to update the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.visible">Visible</a> property whenever the bound
+property in the data source changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
+</div>
 
 
 
@@ -243,7 +357,7 @@ Class ButtonExtensions  <a class="header-action link-secondary" title="View sour
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ButtonExtensions.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ButtonExtensions.cs/#L19" class="edit-link">Edit this page</a>
         </div>
 
 

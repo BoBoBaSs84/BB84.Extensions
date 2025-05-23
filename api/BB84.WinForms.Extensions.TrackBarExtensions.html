@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class TrackBarExtensions ">
       
-      <meta name="description" content="The extension methods for the  control.">
+      <meta name="description" content="Provides extension methods for binding properties of a  control to a data source, enabling streamlined data binding for common properties such as , , , and others.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_WinForms_Extensions_TrackBarExtensions" data-uid="BB84.WinForms.Extensions.TrackBarExtensions" class="text-break">
-Class TrackBarExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/TrackBarExtensions.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class TrackBarExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/TrackBarExtensions.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,9 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
   <dl><dt>Assembly</dt><dd>BB84.WinForms.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The extension methods for the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control.</p>
+  <div class="markdown summary"><p>Provides extension methods for binding properties of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control to a data source,
+enabling streamlined data binding for common properties such as <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar.minimum">Minimum</a>,
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar.maximum">Maximum</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar.value">Value</a>, and others.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -143,6 +145,11 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
 
 
 
+  <h2 id="BB84_WinForms_Extensions_TrackBarExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>These extension methods simplify the process of binding <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> properties to a data
+source by encapsulating the creation of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.binding">Binding</a> objects.
+Each method returns the same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> instance, allowing for method chaining.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -153,10 +160,11 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
 
   <h3 id="BB84_WinForms_Extensions_TrackBarExtensions_WithEnabledBinding_System_Windows_Forms_TrackBar_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.TrackBarExtensions.WithEnabledBinding(System.Windows.Forms.TrackBar,System.Object,System.String)">
   WithEnabledBinding(TrackBar, object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/TrackBarExtensions.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/TrackBarExtensions.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.enabled">Enabled</a> property to the specified data source.</p>
+  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.enabled">Enabled</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a>
+to a property on the provided data source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -167,20 +175,20 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>trackBar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control to bind.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> to bind.</p>
 </dd>
     <dt><code>dataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The data source to bind to.</p>
+    <dd><p>The data source containing the property to bind to.</p>
 </dd>
     <dt><code>dataMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The property of the data source to bind to.</p>
+    <dd><p>The name of the property on the data source to bind to.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a></dt>
-    <dd><p>The same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control instance, so that multiple calls can be chained.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control with the binding applied, allowing for method chaining.</p>
 </dd>
   </dl>
 
@@ -190,6 +198,10 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section" id="BB84_WinForms_Extensions_TrackBarExtensions_WithEnabledBinding_System_Windows_Forms_TrackBar_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The binding is configured to update the data source whenever the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.enabled">Enabled</a>
+property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
+</div>
 
 
 
@@ -198,10 +210,11 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
 
   <h3 id="BB84_WinForms_Extensions_TrackBarExtensions_WithMaximumBinding_System_Windows_Forms_TrackBar_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.TrackBarExtensions.WithMaximumBinding(System.Windows.Forms.TrackBar,System.Object,System.String)">
   WithMaximumBinding(TrackBar, object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/TrackBarExtensions.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/TrackBarExtensions.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Bind the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar.maximum">Maximum</a> property to the specified data source.</p>
+  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar.maximum">Maximum</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a>
+to a property on the provided data source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -212,20 +225,20 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>trackBar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control to bind.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> to bind.</p>
 </dd>
     <dt><code>dataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The data source to bind to.</p>
+    <dd><p>The data source containing the property to bind to.</p>
 </dd>
     <dt><code>dataMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The property of the data source to bind to.</p>
+    <dd><p>The name of the property on the data source to bind to.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a></dt>
-    <dd><p>The same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control instance, so that multiple calls can be chained.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control with the binding applied, allowing for method chaining.</p>
 </dd>
   </dl>
 
@@ -235,6 +248,10 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section" id="BB84_WinForms_Extensions_TrackBarExtensions_WithMaximumBinding_System_Windows_Forms_TrackBar_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The binding is configured to update the data source whenever the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar.maximum">Maximum</a>
+property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
+</div>
 
 
 
@@ -243,10 +260,11 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
 
   <h3 id="BB84_WinForms_Extensions_TrackBarExtensions_WithMinimumBinding_System_Windows_Forms_TrackBar_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.TrackBarExtensions.WithMinimumBinding(System.Windows.Forms.TrackBar,System.Object,System.String)">
   WithMinimumBinding(TrackBar, object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/TrackBarExtensions.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/TrackBarExtensions.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Bind the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar.minimum">Minimum</a> property to the specified data source.</p>
+  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar.minimum">Minimum</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a>
+to a property on the provided data source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -257,20 +275,20 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>trackBar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control to bind.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> to bind.</p>
 </dd>
     <dt><code>dataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The data source to bind to.</p>
+    <dd><p>The data source containing the property to bind to.</p>
 </dd>
     <dt><code>dataMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The property of the data source to bind to.</p>
+    <dd><p>The name of the property on the data source to bind to.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a></dt>
-    <dd><p>The same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control instance, so that multiple calls can be chained.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control with the binding applied, allowing for method chaining.</p>
 </dd>
   </dl>
 
@@ -280,6 +298,10 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section" id="BB84_WinForms_Extensions_TrackBarExtensions_WithMinimumBinding_System_Windows_Forms_TrackBar_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The binding is configured to update the data source whenever the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar.minimum">Minimum</a>
+property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
+</div>
 
 
 
@@ -288,10 +310,11 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
 
   <h3 id="BB84_WinForms_Extensions_TrackBarExtensions_WithValueBinding_System_Windows_Forms_TrackBar_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.TrackBarExtensions.WithValueBinding(System.Windows.Forms.TrackBar,System.Object,System.String)">
   WithValueBinding(TrackBar, object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/TrackBarExtensions.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/TrackBarExtensions.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Bind the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar.value">Value</a> property to the specified data source.</p>
+  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar.value">Value</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a>
+to a property on the provided data source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -302,20 +325,20 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>trackBar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control to bind.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> to bind.</p>
 </dd>
     <dt><code>dataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The data source to bind to.</p>
+    <dd><p>The data source containing the property to bind to.</p>
 </dd>
     <dt><code>dataMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The property of the data source to bind to.</p>
+    <dd><p>The name of the property on the data source to bind to.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a></dt>
-    <dd><p>The same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control instance, so that multiple calls can be chained.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control with the binding applied, allowing for method chaining.</p>
 </dd>
   </dl>
 
@@ -325,6 +348,10 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section" id="BB84_WinForms_Extensions_TrackBarExtensions_WithValueBinding_System_Windows_Forms_TrackBar_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The binding is configured to update the data source whenever the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar.value">Value</a>
+property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
+</div>
 
 
 
@@ -333,10 +360,11 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
 
   <h3 id="BB84_WinForms_Extensions_TrackBarExtensions_WithVisibleBinding_System_Windows_Forms_TrackBar_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.TrackBarExtensions.WithVisibleBinding(System.Windows.Forms.TrackBar,System.Object,System.String)">
   WithVisibleBinding(TrackBar, object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/TrackBarExtensions.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/TrackBarExtensions.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.visible">Visible</a> property to the specified data source.</p>
+  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.visible">Visible</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a>
+to a property on the provided data source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -347,20 +375,20 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>trackBar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control to bind.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> to bind.</p>
 </dd>
     <dt><code>dataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The data source to bind to.</p>
+    <dd><p>The data source containing the property to bind to.</p>
 </dd>
     <dt><code>dataMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The property of the data source to bind to.</p>
+    <dd><p>The name of the property on the data source to bind to.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a></dt>
-    <dd><p>The same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control instance, so that multiple calls can be chained.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.trackbar">TrackBar</a> control with the binding applied, allowing for method chaining.</p>
 </dd>
   </dl>
 
@@ -370,6 +398,10 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section" id="BB84_WinForms_Extensions_TrackBarExtensions_WithVisibleBinding_System_Windows_Forms_TrackBar_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The binding is configured to update the data source whenever the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.visible">Visible</a>
+property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
+</div>
 
 
 
@@ -378,7 +410,7 @@ Class TrackBarExtensions  <a class="header-action link-secondary" title="View so
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/TrackBarExtensions.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/TrackBarExtensions.cs/#L18" class="edit-link">Edit this page</a>
         </div>
 
 

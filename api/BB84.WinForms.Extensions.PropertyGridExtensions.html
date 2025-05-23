@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class PropertyGridExtensions ">
       
-      <meta name="description" content="The extension methods for the  control.">
+      <meta name="description" content="Provides extension methods for the  control to simplify data binding.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_WinForms_Extensions_PropertyGridExtensions" data-uid="BB84.WinForms.Extensions.PropertyGridExtensions" class="text-break">
-Class PropertyGridExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/PropertyGridExtensions.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class PropertyGridExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/PropertyGridExtensions.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Class PropertyGridExtensions  <a class="header-action link-secondary" title="Vie
   <dl><dt>Assembly</dt><dd>BB84.WinForms.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The extension methods for the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> control.</p>
+  <div class="markdown summary"><p>Provides extension methods for the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> control to simplify data binding.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -143,6 +143,12 @@ Class PropertyGridExtensions  <a class="header-action link-secondary" title="Vie
 
 
 
+  <h2 id="BB84_WinForms_Extensions_PropertyGridExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class includes methods to bind common properties of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> control, such as
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.enabled">Enabled</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid.selectedobject">SelectedObject</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.visible">Visible</a>,
+and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.text">Text</a>, to a specified data source. These methods return the same
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> instance, enabling method chaining for cleaner and more concise code.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -153,10 +159,11 @@ Class PropertyGridExtensions  <a class="header-action link-secondary" title="Vie
 
   <h3 id="BB84_WinForms_Extensions_PropertyGridExtensions_WithEnabledBinding_System_Windows_Forms_PropertyGrid_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.PropertyGridExtensions.WithEnabledBinding(System.Windows.Forms.PropertyGrid,System.Object,System.String)">
   WithEnabledBinding(PropertyGrid, object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/PropertyGridExtensions.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/PropertyGridExtensions.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.enabled">Enabled</a> property to the specified data source.</p>
+  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.enabled">Enabled</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a>
+to a property on the provided data source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -167,20 +174,20 @@ Class PropertyGridExtensions  <a class="header-action link-secondary" title="Vie
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>propertyGrid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> control to bind.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> to bind.</p>
 </dd>
     <dt><code>dataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The data source to bind to.</p>
+    <dd><p>The data source containing the property to bind to.</p>
 </dd>
     <dt><code>dataMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The property of the data source to bind to.</p>
+    <dd><p>The name of the property on the data source to bind to.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a></dt>
-    <dd><p>The same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> control instance, so that multiple calls can be chained.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> control with the binding applied, allowing for method chaining.</p>
 </dd>
   </dl>
 
@@ -190,6 +197,10 @@ Class PropertyGridExtensions  <a class="header-action link-secondary" title="Vie
 
 
 
+  <h4 class="section" id="BB84_WinForms_Extensions_PropertyGridExtensions_WithEnabledBinding_System_Windows_Forms_PropertyGrid_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The binding is configured to update the data source whenever the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.enabled">Enabled</a>
+property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
+</div>
 
 
 
@@ -198,10 +209,11 @@ Class PropertyGridExtensions  <a class="header-action link-secondary" title="Vie
 
   <h3 id="BB84_WinForms_Extensions_PropertyGridExtensions_WithSelectedObjectBinding_System_Windows_Forms_PropertyGrid_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.PropertyGridExtensions.WithSelectedObjectBinding(System.Windows.Forms.PropertyGrid,System.Object,System.String)">
   WithSelectedObjectBinding(PropertyGrid, object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/PropertyGridExtensions.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/PropertyGridExtensions.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid.selectedobject">SelectedObject</a> property to the specified data source.</p>
+  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid.selectedobject">SelectedObject</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a>
+to a property on the provided data source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -212,20 +224,20 @@ Class PropertyGridExtensions  <a class="header-action link-secondary" title="Vie
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>propertyGrid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> control to bind.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> to bind.</p>
 </dd>
     <dt><code>dataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The data source to bind to.</p>
+    <dd><p>The data source containing the property to bind to.</p>
 </dd>
     <dt><code>dataMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The property of the data source to bind to.</p>
+    <dd><p>The name of the property on the data source to bind to.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a></dt>
-    <dd><p>The same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> control instance, so that multiple calls can be chained.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> control with the binding applied, allowing for method chaining.</p>
 </dd>
   </dl>
 
@@ -235,6 +247,10 @@ Class PropertyGridExtensions  <a class="header-action link-secondary" title="Vie
 
 
 
+  <h4 class="section" id="BB84_WinForms_Extensions_PropertyGridExtensions_WithSelectedObjectBinding_System_Windows_Forms_PropertyGrid_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The binding is configured to update the data source whenever the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid.selectedobject">SelectedObject</a>
+property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
+</div>
 
 
 
@@ -243,10 +259,11 @@ Class PropertyGridExtensions  <a class="header-action link-secondary" title="Vie
 
   <h3 id="BB84_WinForms_Extensions_PropertyGridExtensions_WithTextBinding_System_Windows_Forms_PropertyGrid_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.PropertyGridExtensions.WithTextBinding(System.Windows.Forms.PropertyGrid,System.Object,System.String)">
   WithTextBinding(PropertyGrid, object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/PropertyGridExtensions.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/PropertyGridExtensions.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid.text">Text</a> property to the specified data source.</p>
+  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid.text">Text</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a>
+to a property on the provided data source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -257,20 +274,20 @@ Class PropertyGridExtensions  <a class="header-action link-secondary" title="Vie
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>propertyGrid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> control to bind.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> to bind.</p>
 </dd>
     <dt><code>dataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The data source to bind to.</p>
+    <dd><p>The data source containing the property to bind to.</p>
 </dd>
     <dt><code>dataMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The property of the data source to bind to.</p>
+    <dd><p>The name of the property on the data source to bind to.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a></dt>
-    <dd><p>The same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> control instance, so that multiple calls can be chained.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> control with the binding applied, allowing for method chaining.</p>
 </dd>
   </dl>
 
@@ -280,6 +297,10 @@ Class PropertyGridExtensions  <a class="header-action link-secondary" title="Vie
 
 
 
+  <h4 class="section" id="BB84_WinForms_Extensions_PropertyGridExtensions_WithTextBinding_System_Windows_Forms_PropertyGrid_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The binding is configured to update the data source whenever the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid.text">Text</a>
+property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
+</div>
 
 
 
@@ -288,10 +309,11 @@ Class PropertyGridExtensions  <a class="header-action link-secondary" title="Vie
 
   <h3 id="BB84_WinForms_Extensions_PropertyGridExtensions_WithVisibleBinding_System_Windows_Forms_PropertyGrid_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.PropertyGridExtensions.WithVisibleBinding(System.Windows.Forms.PropertyGrid,System.Object,System.String)">
   WithVisibleBinding(PropertyGrid, object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/PropertyGridExtensions.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/PropertyGridExtensions.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.visible">Visible</a> property to the specified data source.</p>
+  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.visible">Visible</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a>
+to a property on the provided data source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -302,20 +324,20 @@ Class PropertyGridExtensions  <a class="header-action link-secondary" title="Vie
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>propertyGrid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> control to bind.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> to bind.</p>
 </dd>
     <dt><code>dataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The data source to bind to.</p>
+    <dd><p>The data source containing the property to bind to.</p>
 </dd>
     <dt><code>dataMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The property of the data source to bind to.</p>
+    <dd><p>The name of the property on the data source to bind to.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a></dt>
-    <dd><p>The same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> control instance, so that multiple calls can be chained.</p>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.propertygrid">PropertyGrid</a> control with the binding applied, allowing for method chaining.</p>
 </dd>
   </dl>
 
@@ -325,6 +347,10 @@ Class PropertyGridExtensions  <a class="header-action link-secondary" title="Vie
 
 
 
+  <h4 class="section" id="BB84_WinForms_Extensions_PropertyGridExtensions_WithVisibleBinding_System_Windows_Forms_PropertyGrid_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The binding is configured to update the data source whenever the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.visible">Visible</a>
+property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
+</div>
 
 
 
@@ -333,7 +359,7 @@ Class PropertyGridExtensions  <a class="header-action link-secondary" title="Vie
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/PropertyGridExtensions.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/PropertyGridExtensions.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 
