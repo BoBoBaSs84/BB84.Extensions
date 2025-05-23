@@ -58,7 +58,7 @@ public sealed class ButtonExtensionsTests
 		Assert.AreEqual(nameof(button.Visible), button.DataBindings[0].PropertyName);
 	}
 
-	private class TestCommand(Action execute, Func<bool>? canExecute) : ICommand
+	private sealed class TestCommand(Action execute, Func<bool>? canExecute) : ICommand
 	{
 		public event EventHandler? CanExecuteChanged;
 		public bool CanExecute(object? parameter) => canExecute?.Invoke() ?? true;
