@@ -7,6 +7,8 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 
+using BB84.Extensions.Common;
+
 namespace BB84.Extensions;
 
 /// <summary>
@@ -14,9 +16,6 @@ namespace BB84.Extensions;
 /// </summary>
 public static class HttpClientExtensions
 {
-	private const string BasicScheme = "Basic";
-	private const string BearerScheme = "Bearer";
-
 	/// <summary>
 	/// Adds the specified <paramref name="baseAddress"/> to the http client configuration.
 	/// </summary>
@@ -52,7 +51,7 @@ public static class HttpClientExtensions
 	public static HttpClient WithBasicAuthentication(this HttpClient client, string username, string password, Encoding? encoding = null)
 	{
 		encoding ??= Encoding.ASCII;
-		client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(BasicScheme, Convert.ToBase64String(encoding.GetBytes($"{username}:{password}")));
+		client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(Constants.HttpHeaders.BasicScheme, Convert.ToBase64String(encoding.GetBytes($"{username}:{password}")));
 		return client;
 	}
 
@@ -64,7 +63,7 @@ public static class HttpClientExtensions
 	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
 	public static HttpClient WithBearerToken(this HttpClient client, string token)
 	{
-		client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(BearerScheme, token);
+		client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(Constants.HttpHeaders.BearerScheme, token);
 		return client;
 	}
 
