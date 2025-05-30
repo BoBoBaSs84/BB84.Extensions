@@ -23,7 +23,7 @@ public static partial class DateTimeExtensions
 	{
 		DayOfWeek day = CultureInfo.InvariantCulture.Calendar.GetDayOfWeek(value);
 
-		if (day >= DayOfWeek.Monday && day <= DayOfWeek.Wednesday)
+		if (day is >= DayOfWeek.Monday and <= DayOfWeek.Wednesday)
 			value = value.AddDays(3);
 
 		return CultureInfo.InvariantCulture.Calendar.GetWeekOfYear(value, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday);

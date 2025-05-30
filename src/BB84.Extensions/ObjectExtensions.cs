@@ -3,7 +3,6 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
-using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 
 namespace BB84.Extensions;
@@ -23,7 +22,7 @@ public static class ObjectExtensions
 	/// <returns>
 	/// <see langword="true"/> if <paramref name="value"/> is <see langword="null"/>; otherwise, <see langword="false"/>.
 	/// </returns>
-	public static bool IsNull([NotNullWhen(true)] this object? value)
+	public static bool IsNull([NotNullWhen(false)] this object? value)
 		=> value is null;
 
 	/// <summary>
