@@ -11,8 +11,9 @@ public static partial class ByteExtensions
 	/// Indicates whether the specified byte array is null.
 	/// </summary>
 	/// <param name="value">The byte array value to test.</param>
-	/// <returns><see langword="true"/> if the <paramref name="value"/>
-	/// is <see langword="null"/>, otherwise <see langword="false"/>.</returns>
-	public static bool IsNull(this byte[]? value)
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is <see langword="null"/>; otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNull([NotNullWhen(false)] this byte[]? value)
 		=> value is null;
 }

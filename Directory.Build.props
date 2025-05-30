@@ -65,6 +65,7 @@
 		<None Include="..\..\LICENSE" Pack="True" PackagePath="\" />
 		<None Include="..\..\icon.png" Pack="True" PackagePath="\" />
 		<None Include="README.md" Pack="True" PackagePath="\" />
+		<Using Include="System.Diagnostics.CodeAnalysis"/>
 	</ItemGroup>
 
 	<ItemGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">

@@ -20,6 +20,6 @@ public static partial class BooleanExtensions
 	/// </summary>
 	/// <param name="value">The nullable <see cref="bool"/> value to work with.</param>
 	/// <returns><see langword="true"/> if the <paramref name="value"/> is false, otherwise <see langword="false"/></returns>
-	public static bool IsFalse(this bool? value)
+	public static bool IsFalse([NotNullWhen(true)] this bool? value)
 		=> value.HasValue && value.Value.Equals(false);
 }

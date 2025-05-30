@@ -11,8 +11,9 @@ public static partial class IntegerExtensions
 	/// Indicates whether the specified integer value is <see langword="null"/> or not.
 	/// </summary>
 	/// <param name="value">The integer value to test.</param>
-	/// <returns><see langword="true"/> if the <paramref name="value"/>
-	/// is <see langword="null"/>, otherwise <see langword="false"/>.</returns>
-	public static bool IsNull(this int? value)
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is <see langword="null"/>; otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNull([NotNullWhen(false)] this int? value)
 		=> value.HasValue.Equals(false);
 }

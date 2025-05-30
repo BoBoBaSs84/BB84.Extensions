@@ -13,6 +13,19 @@ namespace BB84.Extensions;
 public static class ObjectExtensions
 {
 	/// <summary>
+	/// Determines whether the specified object is <see langword="null"/>.
+	/// </summary>
+	/// <remarks>
+	/// This method provides a concise way to check for <see langword="null"/> values.
+	/// </remarks>
+	/// <param name="value">The object to check for <see langword="null"/>.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is <see langword="null"/>; otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNull([NotNullWhen(false)] this object? value)
+		=> value is null;
+
+	/// <summary>
 	/// Converts the value of the specified object to an equivalent Boolean value, using the invariant
 	/// culture formatting information.
 	/// </summary>
