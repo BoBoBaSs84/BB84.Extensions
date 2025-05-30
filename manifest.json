@@ -172,6 +172,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.HttpRequestMessageExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.HttpRequestMessageExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.HttpRequestMessageExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.HttpRequestMessageExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for <xref href=\"System.Net.Http.HttpRequestMessage\" data-throw-if-not-resolved=\"false\"></xref> to simplify common header modifications.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Extensions.IntegerExtensions.yml",
       "output": {
         ".html": {
@@ -294,7 +308,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.TaskExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.TaskExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref> extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.TaskExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref> objects, enabling synchronous and asynchronous\nexecution with optional completion and exception handling actions.</p>\n"
     },
     {
       "type": "ManagedReference",

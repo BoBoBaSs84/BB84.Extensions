@@ -858,6 +858,44 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.HttpClientExtensions.WithTimeout
   nameWithType: HttpClientExtensions.WithTimeout
+- uid: BB84.Extensions.HttpRequestMessageExtensions
+  name: HttpRequestMessageExtensions
+  href: api/BB84.Extensions.HttpRequestMessageExtensions.html
+  commentId: T:BB84.Extensions.HttpRequestMessageExtensions
+  fullName: BB84.Extensions.HttpRequestMessageExtensions
+  nameWithType: HttpRequestMessageExtensions
+- uid: BB84.Extensions.HttpRequestMessageExtensions.WithBearerToken(System.Net.Http.HttpRequestMessage,System.String)
+  name: WithBearerToken(HttpRequestMessage, string)
+  href: api/BB84.Extensions.HttpRequestMessageExtensions.html#BB84_Extensions_HttpRequestMessageExtensions_WithBearerToken_System_Net_Http_HttpRequestMessage_System_String_
+  commentId: M:BB84.Extensions.HttpRequestMessageExtensions.WithBearerToken(System.Net.Http.HttpRequestMessage,System.String)
+  name.vb: WithBearerToken(HttpRequestMessage, String)
+  fullName: BB84.Extensions.HttpRequestMessageExtensions.WithBearerToken(System.Net.Http.HttpRequestMessage, string)
+  fullName.vb: BB84.Extensions.HttpRequestMessageExtensions.WithBearerToken(System.Net.Http.HttpRequestMessage, String)
+  nameWithType: HttpRequestMessageExtensions.WithBearerToken(HttpRequestMessage, string)
+  nameWithType.vb: HttpRequestMessageExtensions.WithBearerToken(HttpRequestMessage, String)
+- uid: BB84.Extensions.HttpRequestMessageExtensions.WithBearerToken*
+  name: WithBearerToken
+  href: api/BB84.Extensions.HttpRequestMessageExtensions.html#BB84_Extensions_HttpRequestMessageExtensions_WithBearerToken_
+  commentId: Overload:BB84.Extensions.HttpRequestMessageExtensions.WithBearerToken
+  isSpec: "True"
+  fullName: BB84.Extensions.HttpRequestMessageExtensions.WithBearerToken
+  nameWithType: HttpRequestMessageExtensions.WithBearerToken
+- uid: BB84.Extensions.HttpRequestMessageExtensions.WithMediaType(System.Net.Http.HttpRequestMessage,System.String)
+  name: WithMediaType(HttpRequestMessage, string)
+  href: api/BB84.Extensions.HttpRequestMessageExtensions.html#BB84_Extensions_HttpRequestMessageExtensions_WithMediaType_System_Net_Http_HttpRequestMessage_System_String_
+  commentId: M:BB84.Extensions.HttpRequestMessageExtensions.WithMediaType(System.Net.Http.HttpRequestMessage,System.String)
+  name.vb: WithMediaType(HttpRequestMessage, String)
+  fullName: BB84.Extensions.HttpRequestMessageExtensions.WithMediaType(System.Net.Http.HttpRequestMessage, string)
+  fullName.vb: BB84.Extensions.HttpRequestMessageExtensions.WithMediaType(System.Net.Http.HttpRequestMessage, String)
+  nameWithType: HttpRequestMessageExtensions.WithMediaType(HttpRequestMessage, string)
+  nameWithType.vb: HttpRequestMessageExtensions.WithMediaType(HttpRequestMessage, String)
+- uid: BB84.Extensions.HttpRequestMessageExtensions.WithMediaType*
+  name: WithMediaType
+  href: api/BB84.Extensions.HttpRequestMessageExtensions.html#BB84_Extensions_HttpRequestMessageExtensions_WithMediaType_
+  commentId: Overload:BB84.Extensions.HttpRequestMessageExtensions.WithMediaType
+  isSpec: "True"
+  fullName: BB84.Extensions.HttpRequestMessageExtensions.WithMediaType
+  nameWithType: HttpRequestMessageExtensions.WithMediaType
 - uid: BB84.Extensions.IntegerExtensions
   name: IntegerExtensions
   href: api/BB84.Extensions.IntegerExtensions.html
@@ -972,6 +1010,22 @@ references:
   commentId: T:BB84.Extensions.ObjectExtensions
   fullName: BB84.Extensions.ObjectExtensions
   nameWithType: ObjectExtensions
+- uid: BB84.Extensions.ObjectExtensions.IsNull(System.Object)
+  name: IsNull(object?)
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_IsNull_System_Object_
+  commentId: M:BB84.Extensions.ObjectExtensions.IsNull(System.Object)
+  name.vb: IsNull(Object)
+  fullName: BB84.Extensions.ObjectExtensions.IsNull(object?)
+  fullName.vb: BB84.Extensions.ObjectExtensions.IsNull(Object)
+  nameWithType: ObjectExtensions.IsNull(object?)
+  nameWithType.vb: ObjectExtensions.IsNull(Object)
+- uid: BB84.Extensions.ObjectExtensions.IsNull*
+  name: IsNull
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_IsNull_
+  commentId: Overload:BB84.Extensions.ObjectExtensions.IsNull
+  isSpec: "True"
+  fullName: BB84.Extensions.ObjectExtensions.IsNull
+  nameWithType: ObjectExtensions.IsNull
 - uid: BB84.Extensions.ObjectExtensions.ToBooleanInvariant(System.Object)
   name: ToBooleanInvariant(object?)
   href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_ToBooleanInvariant_System_Object_
@@ -1485,6 +1539,22 @@ references:
   commentId: T:BB84.Extensions.TaskExtensions
   fullName: BB84.Extensions.TaskExtensions
   nameWithType: TaskExtensions
+- uid: BB84.Extensions.TaskExtensions.AsSync*
+  name: AsSync
+  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_AsSync_
+  commentId: Overload:BB84.Extensions.TaskExtensions.AsSync
+  isSpec: "True"
+  fullName: BB84.Extensions.TaskExtensions.AsSync
+  nameWithType: TaskExtensions.AsSync
+- uid: BB84.Extensions.TaskExtensions.AsSync``1(System.Threading.Tasks.Task{``0})
+  name: AsSync<T>(Task<T>)
+  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_AsSync__1_System_Threading_Tasks_Task___0__
+  commentId: M:BB84.Extensions.TaskExtensions.AsSync``1(System.Threading.Tasks.Task{``0})
+  name.vb: AsSync(Of T)(Task(Of T))
+  fullName: BB84.Extensions.TaskExtensions.AsSync<T>(System.Threading.Tasks.Task<T>)
+  fullName.vb: BB84.Extensions.TaskExtensions.AsSync(Of T)(System.Threading.Tasks.Task(Of T))
+  nameWithType: TaskExtensions.AsSync<T>(Task<T>)
+  nameWithType.vb: TaskExtensions.AsSync(Of T)(Task(Of T))
 - uid: BB84.Extensions.TaskExtensions.ToAsyncVoid(System.Threading.Tasks.Task,System.Action,System.Action{System.Exception})
   name: ToAsyncVoid(Task, Action?, Action<Exception>?)
   href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_ToAsyncVoid_System_Threading_Tasks_Task_System_Action_System_Action_System_Exception__
