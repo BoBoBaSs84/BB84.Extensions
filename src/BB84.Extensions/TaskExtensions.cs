@@ -6,7 +6,8 @@
 namespace BB84.Extensions;
 
 /// <summary>
-/// The <see cref="Task"/> extensions class.
+/// Provides extension methods for working with <see cref="Task"/> objects, enabling synchronous and asynchronous
+/// execution with optional completion and exception handling actions.
 /// </summary>
 public static class TaskExtensions
 {
@@ -83,4 +84,17 @@ public static class TaskExtensions
 			onCompletion?.Invoke();
 		}
 	}
+
+	/// <summary>
+	/// Executes the specified asynchronous task synchronously and returns its result.
+	/// </summary>
+	/// <remarks>
+	/// This method blocks the calling thread until the task completes. Use with caution in environments
+	/// where blocking the thread may lead to deadlocks or performance issues, such as UI applications.
+	/// </remarks>
+	/// <typeparam name="T">The type of the result produced by the task.</typeparam>
+	/// <param name="task">The task to execute synchronously. Cannot be <see langword="null"/>.</param>
+	/// <returns>The result produced by the completed task.</returns>
+	public static T AsSync<T>(this Task<T> task)
+		=> task.GetAwaiter().GetResult();
 }
