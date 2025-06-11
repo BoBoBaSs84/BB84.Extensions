@@ -68,6 +68,46 @@ public static class ListBoxExtensions
 	}
 
 	/// <summary>
+	/// Binds the <see cref="ListBox.SelectedIndex"/> property of the specified <see cref="ListBox"/>
+	/// to a property on the provided data source.
+	/// </summary>
+	/// <remarks>
+	/// The binding is configured to update the data source whenever the <see cref="ListBox.SelectedIndex"/> 
+	/// property changes, using <see cref="DataSourceUpdateMode.OnPropertyChanged"/>.
+	/// </remarks>
+	/// <param name="listBox">The <see cref="ListBox"/> to bind.</param>
+	/// <param name="dataSource">The data source containing the property to bind to.</param>
+	/// <param name="dataMember">The name of the property on the data source to bind to.</param>
+	/// <returns>
+	/// The <see cref="ListBox"/> control with the binding applied, allowing for method chaining.
+	/// </returns>
+	public static ListBox WithSelectedIndexBinding(this ListBox listBox, object dataSource, string dataMember)
+	{
+		listBox.DataBindings.Add(nameof(listBox.SelectedIndex), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
+		return listBox;
+	}
+
+	/// <summary>
+	/// Binds the <see cref="ListControl.SelectedValue"/> property of the specified <see cref="ListBox"/>
+	/// to a property on the provided data source.
+	/// </summary>
+	/// <remarks>
+	/// The binding is configured to update the data source whenever the <see cref="ListControl.SelectedValue"/> 
+	/// property changes, using <see cref="DataSourceUpdateMode.OnPropertyChanged"/>.
+	/// </remarks>
+	/// <param name="listBox">The <see cref="ListBox"/> to bind.</param>
+	/// <param name="dataSource">The data source containing the property to bind to.</param>
+	/// <param name="dataMember">The name of the property on the data source to bind to.</param>
+	/// <returns>
+	/// The <see cref="ListBox"/> control with the binding applied, allowing for method chaining.
+	/// </returns>
+	public static ListBox WithSelectedValueBinding(this ListBox listBox, object dataSource, string dataMember)
+	{
+		listBox.DataBindings.Add(nameof(listBox.SelectedValue), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
+		return listBox;
+	}
+
+	/// <summary>
 	/// Binds the <see cref="Control.Visible"/> property of the specified <see cref="ListBox"/>
 	/// to a property on the provided data source.
 	/// </summary>

@@ -42,6 +42,28 @@ public sealed class ListBoxExtensionsTests
 	}
 
 	[TestMethod]
+	public void WithSelectedIndexBindingTest()
+	{
+		ListBox listBox = new();
+
+		listBox.WithSelectedIndexBinding(new object(), nameof(listBox.SelectedIndex));
+
+		Assert.AreEqual(1, listBox.DataBindings.Count);
+		Assert.AreEqual(nameof(listBox.SelectedIndex), listBox.DataBindings[0].PropertyName);
+	}
+
+	[TestMethod]
+	public void WithSelectedValueBindingTest()
+	{
+		ListBox listBox = new();
+
+		listBox.WithSelectedValueBinding(new object(), nameof(listBox.SelectedValue));
+
+		Assert.AreEqual(1, listBox.DataBindings.Count);
+		Assert.AreEqual(nameof(listBox.SelectedValue), listBox.DataBindings[0].PropertyName);
+	}
+
+	[TestMethod]
 	public void WithVisibleBindingTest()
 	{
 		ListBox listBox = new();

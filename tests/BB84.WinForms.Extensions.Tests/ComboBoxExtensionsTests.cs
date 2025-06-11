@@ -42,6 +42,28 @@ public sealed class ComboBoxExtensionsTests
 	}
 
 	[TestMethod]
+	public void WithSelectedIndexBindingTest()
+	{
+		ComboBox comboBox = new();
+
+		comboBox.WithSelectedIndexBinding(new object(), nameof(comboBox.SelectedIndex));
+		
+		Assert.AreEqual(1, comboBox.DataBindings.Count);
+		Assert.AreEqual(nameof(comboBox.SelectedIndex), comboBox.DataBindings[0].PropertyName);
+	}
+
+	[TestMethod]
+	public void WithSelectedValueBindingTest()
+	{
+		ComboBox comboBox = new();
+		
+		comboBox.WithSelectedValueBinding(new object(), nameof(comboBox.SelectedValue));
+		
+		Assert.AreEqual(1, comboBox.DataBindings.Count);
+		Assert.AreEqual(nameof(comboBox.SelectedValue), comboBox.DataBindings[0].PropertyName);
+	}
+
+	[TestMethod]
 	public void WithVisibleBindingTest()
 	{
 		ComboBox comboBox = new();
