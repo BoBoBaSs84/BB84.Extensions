@@ -1784,6 +1784,22 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithEnabledBinding
   nameWithType: ComboBoxExtensions.WithEnabledBinding
+- uid: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedIndexBinding(System.Windows.Forms.ComboBox,System.Object,System.String)
+  name: WithSelectedIndexBinding(ComboBox, object, string)
+  href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html#BB84_WinForms_Extensions_ComboBoxExtensions_WithSelectedIndexBinding_System_Windows_Forms_ComboBox_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedIndexBinding(System.Windows.Forms.ComboBox,System.Object,System.String)
+  name.vb: WithSelectedIndexBinding(ComboBox, Object, String)
+  fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedIndexBinding(System.Windows.Forms.ComboBox, object, string)
+  fullName.vb: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedIndexBinding(System.Windows.Forms.ComboBox, Object, String)
+  nameWithType: ComboBoxExtensions.WithSelectedIndexBinding(ComboBox, object, string)
+  nameWithType.vb: ComboBoxExtensions.WithSelectedIndexBinding(ComboBox, Object, String)
+- uid: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedIndexBinding*
+  name: WithSelectedIndexBinding
+  href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html#BB84_WinForms_Extensions_ComboBoxExtensions_WithSelectedIndexBinding_
+  commentId: Overload:BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedIndexBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedIndexBinding
+  nameWithType: ComboBoxExtensions.WithSelectedIndexBinding
 - uid: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedItemBinding(System.Windows.Forms.ComboBox,System.Object,System.String)
   name: WithSelectedItemBinding(ComboBox, object, string)
   href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html#BB84_WinForms_Extensions_ComboBoxExtensions_WithSelectedItemBinding_System_Windows_Forms_ComboBox_System_Object_System_String_
@@ -1800,6 +1816,22 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedItemBinding
   nameWithType: ComboBoxExtensions.WithSelectedItemBinding
+- uid: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ComboBox,System.Object,System.String)
+  name: WithSelectedValueBinding(ComboBox, object, string)
+  href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html#BB84_WinForms_Extensions_ComboBoxExtensions_WithSelectedValueBinding_System_Windows_Forms_ComboBox_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ComboBox,System.Object,System.String)
+  name.vb: WithSelectedValueBinding(ComboBox, Object, String)
+  fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ComboBox, object, string)
+  fullName.vb: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ComboBox, Object, String)
+  nameWithType: ComboBoxExtensions.WithSelectedValueBinding(ComboBox, object, string)
+  nameWithType.vb: ComboBoxExtensions.WithSelectedValueBinding(ComboBox, Object, String)
+- uid: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedValueBinding*
+  name: WithSelectedValueBinding
+  href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html#BB84_WinForms_Extensions_ComboBoxExtensions_WithSelectedValueBinding_
+  commentId: Overload:BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedValueBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedValueBinding
+  nameWithType: ComboBoxExtensions.WithSelectedValueBinding
 - uid: BB84.WinForms.Extensions.ComboBoxExtensions.WithVisibleBinding(System.Windows.Forms.ComboBox,System.Object,System.String)
   name: WithVisibleBinding(ComboBox, object, string)
   href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html#BB84_WinForms_Extensions_ComboBoxExtensions_WithVisibleBinding_System_Windows_Forms_ComboBox_System_Object_System_String_
@@ -2102,6 +2134,22 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.ListBoxExtensions.WithEnabledBinding
   nameWithType: ListBoxExtensions.WithEnabledBinding
+- uid: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedIndexBinding(System.Windows.Forms.ListBox,System.Object,System.String)
+  name: WithSelectedIndexBinding(ListBox, object, string)
+  href: api/BB84.WinForms.Extensions.ListBoxExtensions.html#BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedIndexBinding_System_Windows_Forms_ListBox_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedIndexBinding(System.Windows.Forms.ListBox,System.Object,System.String)
+  name.vb: WithSelectedIndexBinding(ListBox, Object, String)
+  fullName: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedIndexBinding(System.Windows.Forms.ListBox, object, string)
+  fullName.vb: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedIndexBinding(System.Windows.Forms.ListBox, Object, String)
+  nameWithType: ListBoxExtensions.WithSelectedIndexBinding(ListBox, object, string)
+  nameWithType.vb: ListBoxExtensions.WithSelectedIndexBinding(ListBox, Object, String)
+- uid: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedIndexBinding*
+  name: WithSelectedIndexBinding
+  href: api/BB84.WinForms.Extensions.ListBoxExtensions.html#BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedIndexBinding_
+  commentId: Overload:BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedIndexBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedIndexBinding
+  nameWithType: ListBoxExtensions.WithSelectedIndexBinding
 - uid: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedItemBinding(System.Windows.Forms.ListBox,System.Object,System.String)
   name: WithSelectedItemBinding(ListBox, object, string)
   href: api/BB84.WinForms.Extensions.ListBoxExtensions.html#BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedItemBinding_System_Windows_Forms_ListBox_System_Object_System_String_
@@ -2118,6 +2166,22 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedItemBinding
   nameWithType: ListBoxExtensions.WithSelectedItemBinding
+- uid: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ListBox,System.Object,System.String)
+  name: WithSelectedValueBinding(ListBox, object, string)
+  href: api/BB84.WinForms.Extensions.ListBoxExtensions.html#BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedValueBinding_System_Windows_Forms_ListBox_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ListBox,System.Object,System.String)
+  name.vb: WithSelectedValueBinding(ListBox, Object, String)
+  fullName: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ListBox, object, string)
+  fullName.vb: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ListBox, Object, String)
+  nameWithType: ListBoxExtensions.WithSelectedValueBinding(ListBox, object, string)
+  nameWithType.vb: ListBoxExtensions.WithSelectedValueBinding(ListBox, Object, String)
+- uid: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding*
+  name: WithSelectedValueBinding
+  href: api/BB84.WinForms.Extensions.ListBoxExtensions.html#BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedValueBinding_
+  commentId: Overload:BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding
+  nameWithType: ListBoxExtensions.WithSelectedValueBinding
 - uid: BB84.WinForms.Extensions.ListBoxExtensions.WithVisibleBinding(System.Windows.Forms.ListBox,System.Object,System.String)
   name: WithVisibleBinding(ListBox, object, string)
   href: api/BB84.WinForms.Extensions.ListBoxExtensions.html#BB84_WinForms_Extensions_ListBoxExtensions_WithVisibleBinding_System_Windows_Forms_ListBox_System_Object_System_String_

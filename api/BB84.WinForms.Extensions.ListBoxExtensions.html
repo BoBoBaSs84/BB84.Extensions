@@ -242,6 +242,56 @@ property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet
 
 
 
+  <a id="BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedIndexBinding_" data-uid="BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedIndexBinding*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedIndexBinding_System_Windows_Forms_ListBox_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedIndexBinding(System.Windows.Forms.ListBox,System.Object,System.String)">
+  WithSelectedIndexBinding(ListBox, object, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ListBoxExtensions.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listbox.selectedindex">SelectedIndex</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listbox">ListBox</a>
+to a property on the provided data source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ListBox WithSelectedIndexBinding(this ListBox listBox, object dataSource, string dataMember)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listBox</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listbox">ListBox</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listbox">ListBox</a> to bind.</p>
+</dd>
+    <dt><code>dataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The data source containing the property to bind to.</p>
+</dd>
+    <dt><code>dataMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the property on the data source to bind to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listbox">ListBox</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listbox">ListBox</a> control with the binding applied, allowing for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedIndexBinding_System_Windows_Forms_ListBox_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The binding is configured to update the data source whenever the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listbox.selectedindex">SelectedIndex</a>
+property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
+</div>
+
+
+
+
   <a id="BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedItemBinding_" data-uid="BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedItemBinding*"></a>
 
   <h3 id="BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedItemBinding_System_Windows_Forms_ListBox_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedItemBinding(System.Windows.Forms.ListBox,System.Object,System.String)">
@@ -292,11 +342,61 @@ property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet
 
 
 
+  <a id="BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedValueBinding_" data-uid="BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedValueBinding_System_Windows_Forms_ListBox_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ListBox,System.Object,System.String)">
+  WithSelectedValueBinding(ListBox, object, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ListBoxExtensions.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol.selectedvalue">SelectedValue</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listbox">ListBox</a>
+to a property on the provided data source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ListBox WithSelectedValueBinding(this ListBox listBox, object dataSource, string dataMember)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listBox</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listbox">ListBox</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listbox">ListBox</a> to bind.</p>
+</dd>
+    <dt><code>dataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The data source containing the property to bind to.</p>
+</dd>
+    <dt><code>dataMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the property on the data source to bind to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listbox">ListBox</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listbox">ListBox</a> control with the binding applied, allowing for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedValueBinding_System_Windows_Forms_ListBox_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The binding is configured to update the data source whenever the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol.selectedvalue">SelectedValue</a>
+property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
+</div>
+
+
+
+
   <a id="BB84_WinForms_Extensions_ListBoxExtensions_WithVisibleBinding_" data-uid="BB84.WinForms.Extensions.ListBoxExtensions.WithVisibleBinding*"></a>
 
   <h3 id="BB84_WinForms_Extensions_ListBoxExtensions_WithVisibleBinding_System_Windows_Forms_ListBox_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.ListBoxExtensions.WithVisibleBinding(System.Windows.Forms.ListBox,System.Object,System.String)">
   WithVisibleBinding(ListBox, object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ListBoxExtensions.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ListBoxExtensions.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.visible">Visible</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listbox">ListBox</a>
