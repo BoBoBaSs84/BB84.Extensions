@@ -13,10 +13,10 @@ public sealed class HttpClientExtensionsTests
 {
 	[DataTestMethod]
 	[DataRow("https://example.com")]
-	public void WithBaseAdressTest(string baseAddress)
+	public void WithBaseAddressTest(string baseAddress)
 	{
 		using HttpClient client = new HttpClient()
-			.WithBaseAdress(baseAddress);
+			.WithBaseAddress(baseAddress);
 
 		Assert.AreEqual($"{baseAddress}/", client.BaseAddress!.ToString());
 	}

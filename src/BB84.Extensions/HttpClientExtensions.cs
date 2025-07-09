@@ -22,9 +22,9 @@ public static class HttpClientExtensions
 	/// <param name="client">The http client which should use the base address.</param>
 	/// <param name="baseAddress">The base address to be used.</param>
 	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
-	public static HttpClient WithBaseAdress(this HttpClient client, string baseAddress)
+	public static HttpClient WithBaseAddress(this HttpClient client, string baseAddress)
 	{
-		client.WithBaseAdress(new Uri(baseAddress));
+		client.WithBaseAddress(new Uri(baseAddress));
 		return client;
 	}
 
@@ -34,7 +34,7 @@ public static class HttpClientExtensions
 	/// <param name="client">The http client which should use the base address.</param>
 	/// <param name="baseAddress">The base address to be used.</param>
 	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
-	public static HttpClient WithBaseAdress(this HttpClient client, Uri baseAddress)
+	public static HttpClient WithBaseAddress(this HttpClient client, Uri baseAddress)
 	{
 		client.BaseAddress = baseAddress;
 		return client;
