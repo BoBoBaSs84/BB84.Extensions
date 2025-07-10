@@ -25,4 +25,15 @@ public static class DoubleExtensions
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this double? value)
 		=> value.HasValue.Equals(false);
+
+	/// <summary>
+	/// Determines whether the specified nullable double has a value.
+	/// </summary>
+	/// <param name="value">The nullable double to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if the <paramref name="value"/> is not <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotNull([NotNullWhen(true)] this double? value)
+		=> value.HasValue.Equals(true);
 }

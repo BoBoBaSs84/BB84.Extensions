@@ -50,6 +50,17 @@ public static class BooleanExtensions
 		=> value.HasValue.Equals(false);
 
 	/// <summary>
+	/// Determines whether the specified nullable boolean has a non-null value.
+	/// </summary>
+	/// <param name="value">The nullable boolean to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if the <paramref name="value"/> is not <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotNull([NotNullWhen(true)] this bool? value)
+		=> value.HasValue.Equals(true);
+
+	/// <summary>
 	/// Determines whether the specified boolean value is true.
 	/// </summary>
 	/// <param name="value">The <see langword="bool"/> value to evaluate.</param>

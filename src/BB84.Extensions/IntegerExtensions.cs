@@ -94,4 +94,15 @@ public static class IntegerExtensions
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this int? value)
 		=> value.HasValue.Equals(false);
+
+	/// <summary>
+	/// Determines whether the specified nullable integer has a non-null value.
+	/// </summary>
+	/// <param name="value">The nullable integer to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is not <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotNull([NotNullWhen(true)] this int? value)
+		=> value.HasValue.Equals(true);
 }
