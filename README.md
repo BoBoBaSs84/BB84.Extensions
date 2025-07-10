@@ -27,7 +27,7 @@
 
 ### Version Information
 
-- **Current Version**: 2.14.x (versioned using date-based scheme)
+- **Current Version**: 2.15.x (versioned using date-based scheme)
 - **Author**: Robert Peter Meyer
 - **Copyright**: © 2023 Robert Peter Meyer
 - **License**: MIT License

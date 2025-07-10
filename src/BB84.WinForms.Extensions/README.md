@@ -5,46 +5,75 @@
 
 # BB84.WinForms.Extensions
 
-A collection of some WinForms extensions I needed in many projects. It consists of some useful control and dialog extension methods.
+Specialized extension methods for Windows Forms controls, focusing on simplified data binding.
 
 ## Usage
 
 Depending on the application, there are several ways to skin a cat.
 
-### Bindings
-
-On the 'TextBox', for example, the text, whether the 'TextBox' is active or even whether the 'TextBox' is visible or not can be configured using the extension methods.
-The same applies to the NumericUpDown control. At a 'ComboBox' control, for example, the data source and the selected item can be bound to a property.
+#### Basic Data Binding
 
 ```csharp
-/// <summary>
-/// The character form class.
-/// </summary>
-public partial class CharacterForm : Form
+using BB84.WinForms.Extensions;
+
+public partial class MyForm : Form
 {
-	private readonly CharacterViewModel _viewModel;
+    private MyViewModel viewModel = new();
 
-	/// <summary>
-	/// Initializes a new instance of the <see cref="CharacterForm"/> class.
-	/// </summary>
-	/// <param name="viewModel">The character view model instance to use.</param>
-	public CharacterForm(CharacterViewModel viewModel)
-	{
-		InitializeComponent();
+    public MyForm()
+    {
+        InitializeComponent();
+        SetupDataBindings();
+    }
 
-		_viewModel = viewModel;
+    private void SetupDataBindings()
+    {
+        // Chain multiple bindings
+        textBox1
+            .BindText(viewModel, nameof(MyViewModel.Name))
+            .BindEnabled(viewModel, nameof(MyViewModel.IsEditable))
+            .BindVisible(viewModel, nameof(MyViewModel.IsVisible));
 
-		FirstNameTextBox.WithTextBinding(_viewModel.Model, nameof(_viewModel.Model.FirstName));
-		LastNameTextBox.WithTextBinding(_viewModel.Model, nameof(_viewModel.Model.LastName));
-		LevelNumericUpDown.WithValueBinding(_viewModel.Model, nameof(_viewModel.Model.Level));
-		
-		ExperienceNumericUpDown.WithValueBinding(_viewModel.Model, nameof(_viewModel.Model.Experience))
-			.WithEnabledBinding(_viewModel, nameof(_viewModel.CanChangeExperience));
-		
-		CritterComboBox.WithDataSource(_viewModel.CritterTypes)
-			.WithSelectedItemBinding(viewModel.Model, nameof(viewModel.Model.CritterType));
-	}
+        // Bind checkbox
+        checkBox1.BindChecked(viewModel, nameof(MyViewModel.IsSelected));
+
+        // Bind combo box
+        comboBox1
+            .SetDataSource(categories)
+            .BindSelectedItem(viewModel, nameof(MyViewModel.SelectedCategory));
+
+        // Bind numeric up/down
+        numericUpDown1
+            .BindValue(viewModel, nameof(MyViewModel.Count))
+            .BindMinimum(viewModel, nameof(MyViewModel.MinCount))
+            .BindMaximum(viewModel, nameof(MyViewModel.MaxCount));
+    }
 }
 ```
 
-This applies to a lot of standard controls.
+#### Command Binding for Buttons
+
+```csharp
+using BB84.WinForms.Extensions;
+using System.Windows.Input;
+
+public class MyViewModel : INotifyPropertyChanged
+{
+    public ICommand SaveCommand { get; private set; }
+
+    public MyViewModel()
+    {
+        SaveCommand = new RelayCommand(Save, CanSave);
+    }
+
+    private void Save() => /* Save logic */;
+    private bool CanSave() => /* Validation logic */;
+}
+
+// In the form
+saveButton.BindCommand(viewModel.SaveCommand);
+```
+
+## Documentation
+
+The complete API documentation can be found [here](https://bobobass84.github.io/BB84.Extensions/api/index.html).

@@ -8,7 +8,7 @@
 
 # BB84.Extensions
 
-This library provides a set of extension methods for the .NET framework. For example, it includes methods to convert a `Color` to its RGB hexadecimal representation, to get the first day of the week, to iterate over an enumerable and execute an action on each element, take a random item from an array and much more.
+The core extension methods library providing utilities for common .NET types.
 
 ## Usage
 
