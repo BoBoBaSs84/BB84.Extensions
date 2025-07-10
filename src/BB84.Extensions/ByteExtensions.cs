@@ -186,6 +186,17 @@ public static partial class ByteExtensions
 	}
 
 	/// <summary>
+	/// Determines whether the specified byte is null.
+	/// </summary>
+	/// <param name="value">The byte array to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified byte is <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNull([NotNullWhen(false)] this byte? value)
+		=> value is null;
+
+	/// <summary>
 	/// Determines whether the specified byte array is null.
 	/// </summary>
 	/// <param name="value">The byte array to check.</param>
@@ -195,6 +206,28 @@ public static partial class ByteExtensions
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this byte[]? value)
 		=> value is null;
+
+	/// <summary>
+	/// Determines whether the specified byte is not null.
+	/// </summary>
+	/// <param name="value">The byte array to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified byte is not <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotNull([NotNullWhen(true)] this byte? value)
+		=> value is not null;
+
+	/// <summary>
+	/// Determines whether the specified byte array is not null.
+	/// </summary>
+	/// <param name="value">The byte array to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified byte array is not <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotNull([NotNullWhen(true)] this byte[]? value)
+		=> value is not null;
 
 	/// <summary>
 	/// Converts the specified byte array to its equivalent Base64 string representation.
