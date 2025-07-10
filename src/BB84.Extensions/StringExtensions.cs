@@ -216,6 +216,17 @@ public static partial class StringExtensions
 		=> value is null;
 
 	/// <summary>
+	/// Determines whether the specified nullable string has a non-null value.
+	/// </summary>
+	/// <param name="value">The nullable string to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if the <paramref name="value"/> is not <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotNull([NotNullWhen(true)] this string? value)
+		=> value is not null;
+
+	/// <summary>
 	/// Determines whether the specified nullable string has a null value or is empty.
 	/// </summary>
 	/// <param name="value">The nullable string to check.</param>
@@ -227,15 +238,38 @@ public static partial class StringExtensions
 		=> string.IsNullOrEmpty(value);
 
 	/// <summary>
-	/// Determines whether the specified string is null, empty, or consists only of white-space characters.
+	/// Determines whether the specified nullable string has a non-null value or is not empty.
 	/// </summary>
 	/// <param name="value">The nullable string to check.</param>
 	/// <returns>
-	/// <see langword="true"/> if the string is null, empty, or consists only of white-space characters;
+	/// <see langword="true"/> if the <paramref name="value"/> is not <see langword="null"/> and not empty;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotNullOrEmpty([NotNullWhen(true)] this string? value)
+		=> string.IsNullOrEmpty(value).Equals(false);
+
+	/// <summary>
+	/// Determines whether the specified string is null, empty or consists only of white-space characters.
+	/// </summary>
+	/// <param name="value">The nullable string to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if the string is null, empty or consists only of white-space characters;
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNullOrWhiteSpace([NotNullWhen(false)] this string? value)
 		=> string.IsNullOrWhiteSpace(value);
+
+	/// <summary>
+	/// Determines whether the specified string is not null, not empty or does not consists only of
+	/// white-space characters.
+	/// </summary>
+	/// <param name="value">The nullable string to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if the <paramref name="value"/> is not <see langword="null"/>, not empty
+	/// and does not consists only of white-space characters; otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotNullOrWhiteSpace([NotNullWhen(true)] this string? value)
+		=> string.IsNullOrWhiteSpace(value).Equals(false);
 
 	/// <summary>
 	/// Removes all linebreaks from the specified string.
