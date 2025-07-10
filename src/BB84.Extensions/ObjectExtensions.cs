@@ -30,6 +30,17 @@ public static class ObjectExtensions
 		=> value is null;
 
 	/// <summary>
+	/// Determines whether the specified nullable object has a non-null value.
+	/// </summary>
+	/// <param name="value">The nullable object to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if the <paramref name="value"/> is not <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotNull([NotNullWhen(true)] this object? value)
+		=> value is not null;
+
+	/// <summary>
 	/// Converts the value of the specified object to an equivalent Boolean value, using the invariant
 	/// culture formatting information.
 	/// </summary>
