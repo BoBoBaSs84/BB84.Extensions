@@ -12,20 +12,6 @@
 [![RepoSize](https://img.shields.io/github/repo-size/BoBoBaSs84/BB84.Extensions)](https://github.com/BoBoBaSs84/BB84.Extensions)
 [![Release](https://img.shields.io/github/v/release/BoBoBaSs84/BB84.Extensions)](https://github.com/BoBoBaSs84/BB84.Extensions/releases/latest)
 
-## 🗺️ Table of Contents
-
-1. [Project Overview](#project-overview)
-2. [Architecture](#architecture)
-3. [Libraries](#libraries)
-4. [Installation](#installation)
-5. [Usage Examples](#usage-examples)
-6. [Development Guidelines](#development-guidelines)
-7. [Testing](#testing)
-8. [Building and Deployment](#building-and-deployment)
-9. [Contributing](#contributing)
-10. [Documentation](#documentation)
-11. [License](#license)
-
 ## 🔎 Project Overview
 
 **BB84.Extensions** is a comprehensive collection of extension methods for the .NET framework and Windows Forms applications. The project consists of two main libraries that provide utility methods to simplify common programming tasks and enhance developer productivity.
@@ -636,8 +622,6 @@ docfx docs/docfx.json --serve
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for the full license text.
 
----
-
 ## 📚 Support and Resources
 
 - **GitHub Repository**: [https://github.com/BoBoBaSs84/BB84.Extensions](https://github.com/BoBoBaSs84/BB84.Extensions)
@@ -646,5 +630,3 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
   - [BB84.WinForms.Extensions](https://www.nuget.org/packages/BB84.WinForms.Extensions)
 - **Issues and Bug Reports**: [GitHub Issues](https://github.com/BoBoBaSs84/BB84.Extensions/issues)
 - **API Documentation**: [Online Documentation](https://bobobass84.github.io/BB84.Extensions/)
-
----
