@@ -6,7 +6,23 @@
 namespace BB84.Extensions;
 
 /// <summary>
-/// The float extensions class.
+/// Provides extension methods for working with nullable <see cref="float"/> values.
 /// </summary>
-public static partial class FloatExtensions
-{ }
+/// <remarks>
+/// This class includes utility methods to simplify common operations on nullable float
+/// values, such as checking for null or non-null states. These methods are designed to
+/// improve code readability and reduce boilerplate when working with nullable floats.
+/// </remarks>
+public static class FloatExtensions
+{
+	/// <summary>
+	/// Determines whether the specified nullable float has a null value.
+	/// </summary>
+	/// <param name="value">The nullable float to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if the <paramref name="value"/> is <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNull([NotNullWhen(false)] this float? value)
+		=> value.HasValue.Equals(false);
+}
