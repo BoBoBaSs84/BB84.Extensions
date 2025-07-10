@@ -8,16 +8,16 @@ namespace BB84.Extensions.Tests;
 public sealed partial class DecimalExtensionsTests
 {
 	[TestMethod]
-	public void IsNullTrueTest()
+	public void IsNotNullTrueTest()
 	{
-		decimal? value = null;
-		Assert.IsTrue(value.IsNull());
+		decimal? value = 13.753m;
+		Assert.IsTrue(value.IsNotNull());
 	}
 
 	[TestMethod]
-	public void IsNullFalseTest()
+	public void IsNotNullFalseTest()
 	{
-		decimal? value = 13.753m;
-		Assert.IsFalse(value.IsNull());
+		decimal? value = null;
+		Assert.IsFalse(value.IsNotNull());
 	}
 }
