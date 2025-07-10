@@ -6,47 +6,76 @@
 namespace BB84.Extensions;
 
 /// <summary>
-/// The comparable extensions class.
+/// Provides extension methods for comparing values that implement the <see cref="IComparable"/> interface.
 /// </summary>
+/// <remarks>
+/// This class includes methods for performing common comparison operations, such as checking if a value
+/// is greater than, less than, or equal to another value. These methods are implemented as extension
+/// methods to enhance readability and simplify comparison logic in code.
+/// </remarks>
 public static class ComparableExtensions
 {
 	/// <summary>
-	/// Check if a value is greater or equal than another value.
+	/// Determines whether the current value is greater than or equal to the specified comparative value.
 	/// </summary>
-	/// <typeparam name="T">The type that implements <see cref="IComparable"/>.</typeparam>
+	/// <remarks>
+	/// This method uses the <see cref="IComparable.CompareTo"/> method to perform the comparison.
+	/// </remarks>
+	/// <typeparam name="T">The type of the values being compared.</typeparam>
 	/// <param name="value">The value to compare.</param>
-	/// <param name="comparativeValue">The value to compare with.</param>
-	/// <returns>True if the value is greater or equal than the othe value, otherwise false.</returns>
+	/// <param name="comparativeValue">The value to compare against.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is greater than or equal to <paramref name="comparativeValue"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
 	public static bool IsGreaterOrEqualThan<T>(this T value, T comparativeValue) where T : IComparable
 		=> value.CompareTo(comparativeValue) >= 0;
 
 	/// <summary>
-	/// Check if a value is greater than another value.
+	/// Determines whether the current value is greater than the specified comparative value.
 	/// </summary>
-	/// <typeparam name="T">The type that implements <see cref="IComparable"/>.</typeparam>
+	/// <remarks>
+	/// This method uses the <see cref="IComparable.CompareTo"/> method to perform the comparison.
+	/// </remarks>
+	/// <typeparam name="T">The type of the values being compared.</typeparam>
 	/// <param name="value">The value to compare.</param>
-	/// <param name="comparativeValue">The value to compare with.</param>
-	/// <returns>True if the value is greater than the othe value, otherwise false.</returns>
+	/// <param name="comparativeValue">The value to compare against.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is greater than the <paramref name="comparativeValue"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
 	public static bool IsGreaterThan<T>(this T value, T comparativeValue) where T : IComparable
 		=> value.CompareTo(comparativeValue) > 0;
 
 	/// <summary>
-	/// Check if a value is less or equal than another value.
+	/// Determines whether the current value is less than or equal to the specified comparative value.
 	/// </summary>
-	/// <typeparam name="T">The type that implements <see cref="IComparable"/>.</typeparam>
+	/// <remarks>
+	/// This method uses the <see cref="IComparable.CompareTo"/> method to perform the comparison.
+	/// </remarks>
+	/// <typeparam name="T">The type of the values being compared.</typeparam>
 	/// <param name="value">The value to compare.</param>
-	/// <param name="comparativeValue">The value to compare with.</param>
-	/// <returns>True if the value is less or equal than the othe value, otherwise false.</returns>
+	/// <param name="comparativeValue">The value to compare against.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is less than or equal to <paramref name="comparativeValue"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
 	public static bool IsLessOrEqualThan<T>(this T value, T comparativeValue) where T : IComparable
 		=> value.CompareTo(comparativeValue) <= 0;
 
 	/// <summary>
-	/// Check if a value is less than another value.
+	/// Determines whether the current value is less than the specified comparative value.
 	/// </summary>
-	/// <typeparam name="T">The type that implements <see cref="IComparable"/>.</typeparam>
+	/// <remarks>
+	/// This method uses the <see cref="IComparable.CompareTo"/> method to perform the comparison.
+	/// </remarks>
+	/// <typeparam name="T">The type of the values being compared.</typeparam>
 	/// <param name="value">The value to compare.</param>
-	/// <param name="comparativeValue">The value to compare with.</param>
-	/// <returns>True if the value is lesser than the othe value, otherwise false.</returns>
+	/// <param name="comparativeValue">The value to compare against.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is less than the <paramref name="comparativeValue"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
 	public static bool IsLessThan<T>(this T value, T comparativeValue) where T : IComparable
 		=> value.CompareTo(comparativeValue) < 0;
 }

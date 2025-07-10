@@ -11,8 +11,15 @@ using System.Text.RegularExpressions;
 namespace BB84.Extensions;
 
 /// <summary>
-/// The string extensions class.
+/// Provides a set of extension methods for working with strings, including compression,
+/// encoding, formatting, and validation.
 /// </summary>
+/// <remarks>This <see cref="StringExtensions"/> class includes utility methods for common string
+/// operations such as compressing and decompressing strings, encoding and decoding Base64 strings,
+/// formatting strings with culture-specific options, and checking for null or empty values. It also
+/// provides methods for removing unwanted whitespace or line breaks, and generating MD5 hashes for
+/// strings.
+/// </remarks>
 public static partial class StringExtensions
 {
 #if NET6_0_OR_GREATER
@@ -30,74 +37,115 @@ public static partial class StringExtensions
 #endif
 
 	/// <summary>
-	/// Compresses a string and returns a deflate compressed, Base64 encoded string.
+	/// Compresses the specified string using the provided compression level and returns the result
+	/// as a Base64-encoded string.
 	/// </summary>
-	/// <param name="stringValue">The input string value to compress.</param>
-	/// <param name="compressionLevel">The compression level to use.</param>
-	/// <returns>The compressed base64 encoded string.</returns>
-	public static string Compress(this string stringValue, CompressionLevel compressionLevel = CompressionLevel.Optimal)
+	/// <remarks>
+	/// This method compresses the input string into a byte array, applies the specified compression level,
+	/// and encodes the compressed data as a Base64 string for safe storage or transmission.
+	/// </remarks>
+	/// <param name="value">The string to compress.</param>
+	/// <param name="compressionLevel">The level of compression to apply.</param>
+	/// <returns>A Base64-encoded string representing the compressed data.</returns>
+	public static string Compress(this string value, CompressionLevel compressionLevel = CompressionLevel.Optimal)
 	{
-		byte[] inputBuffer = stringValue.GetBytes();
+		byte[] inputBuffer = value.GetBytes();
 		byte[] outputBuffer = inputBuffer.Compress(compressionLevel);
 		return Convert.ToBase64String(outputBuffer);
 	}
 
 	/// <summary>
-	/// Decompresses a deflate compressed, Base64 encoded string and returns an uncompressed string.
+	/// Decompresses a Base64-encoded, compressed string and returns the resulting decompressed string.
 	/// </summary>
-	/// <param name="stringValue">The input string value to decompress.</param>
-	/// <returns></returns>
-	public static string Decompress(this string stringValue)
+	/// <remarks>This method assumes the input string is Base64-encoded and represents compressed data.
+	/// The decompression process involves decoding the Base64 string into a byte array, decompressing
+	/// the byte array and converting the resulting byte array back into a string.
+	/// </remarks>
+	/// <param name="value">A Base64-encoded string representing compressed data.</param>
+	/// <returns>
+	/// The decompressed string obtained from the input. If the input is invalid or cannot be decompressed,
+	/// an exception may be thrown.
+	/// </returns>
+	public static string Decompress(this string value)
 	{
-		byte[] inputBuffer = Convert.FromBase64String(stringValue);
+		byte[] inputBuffer = Convert.FromBase64String(value);
 		byte[] outputBuffer = inputBuffer.Decompress();
 		return outputBuffer.GetString();
 	}
 
 	/// <summary>
-	/// Determines whether this string and a specified <see cref="string"/> object have the same value.
+	/// Determines whether the specified string is equal to the current string, using a case-sensitive
+	/// comparison.
 	/// </summary>
-	/// <param name="stringValue">The input string to work with.</param>
-	/// <param name="otherValue">The string to compare.</param>
-	/// <returns>true if the value of the value parameter is the same as this string; otherwise false.</returns>
-	public static bool EqualsCaseSensitive(this string stringValue, string otherValue)
-		=> stringValue.Equals(otherValue, StringComparison.Ordinal);
+	/// <param name="value">The string to compare against <paramref name="comparisonValue"/>.</param>
+	/// <param name="comparisonValue">The string to compare to <paramref name="value"/>.</param>
+	/// <returns>
+	/// <see langword="true"/> if the two strings are equal using a case-sensitive, ordinal comparison;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool EqualsCaseSensitive(this string value, string comparisonValue)
+		=> value.Equals(comparisonValue, StringComparison.Ordinal);
 
 	/// <summary>
-	/// Determines whether this string and a specified <see cref="string"/> object have the same value.
+	/// Determines whether two strings are equal, ignoring case.
 	/// </summary>
-	/// <param name="stringValue">The input string to work with.</param>
-	/// <param name="otherValue">The string to compare</param>
-	/// <returns>true if the value of the value parameter is the same as this string; otherwise false.</returns>
-	public static bool EqualsIgnoreCase(this string stringValue, string otherValue)
-		=> stringValue.Equals(otherValue, StringComparison.OrdinalIgnoreCase);
+	/// <param name="value">The string to compare against <paramref name="comparisonValue"/>.</param>
+	/// <param name="comparisonValue">The string to compare to <paramref name="value"/>.</param>
+	/// <returns>
+	/// <see langword="true"/> if the two strings are equal ignoring case, ordinal comparison;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool EqualsIgnoreCase(this string value, string comparisonValue)
+		=> value.Equals(comparisonValue, StringComparison.OrdinalIgnoreCase);
 
 	/// <summary>
-	/// Formats the string with <paramref name="parameters"/> to an invariant culture.
+	/// Formats the specified string using the provided parameters, with formatting rules based on the
+	/// invariant culture.
 	/// </summary>
-	/// <param name="stringValue">The string with placeholders.</param>
-	/// <param name="parameters">The parameters to set for the placeholders.</param>
-	/// <returns>The formated string.</returns>
-	public static string FormatInvariant(this string stringValue, params object[] parameters)
-			=> string.Format(CultureInfo.InvariantCulture, stringValue, parameters);
+	/// <remarks>
+	/// This method uses <see cref="CultureInfo.InvariantCulture"/> to ensure consistent formatting
+	/// regardless of the current culture.
+	/// </remarks>
+	/// <param name="value">The composite format string to format.</param>
+	/// <param name="parameters">
+	/// An array of objects to format. These objects are inserted into the format string.
+	/// </param>
+	/// <returns>
+	/// A formatted string where placeholders in <paramref name="value"/> are replaced with the string
+	/// representations of the corresponding objects in <paramref name="parameters"/>.
+	/// </returns>
+	public static string FormatInvariant(this string value, params object[] parameters)
+			=> string.Format(CultureInfo.InvariantCulture, value, parameters);
 
 	/// <summary>
-	/// Formats the string with <paramref name="parameters"/> to an provided culture.
+	/// Formats the specified string using the provided format provider and parameters.
 	/// </summary>
-	/// <param name="stringValue">The string with placeholders.</param>
-	/// <param name="formatProvider">The format provider to use.</param>
-	/// <param name="parameters">The parameters to set for the placeholders.</param>
-	/// <returns>The formated string.</returns>
-	public static string Format(this string stringValue, IFormatProvider formatProvider, params object[] parameters)
-			=> string.Format(formatProvider, stringValue, parameters);
+	/// <remarks>
+	/// This method is an extension method for the <see cref="string"/> class. It simplifies the use of
+	/// <see cref="string.Format(IFormatProvider, string, object[])"/> by allowing the format string to
+	/// be called directly on the string instance.
+	/// </remarks>
+	/// <param name="value">The composite format string to format.</param>
+	/// <param name="formatProvider">An object that provides culture-specific formatting information.</param>
+	/// <param name="parameters">An array of objects to format and include in the resulting string.</param>
+	/// <returns>
+	/// A formatted string where placeholders in <paramref name="value"/> are replaced by the corresponding
+	/// values in <paramref name="parameters"/>.
+	/// </returns>
+	public static string Format(this string value, IFormatProvider formatProvider, params object[] parameters)
+			=> string.Format(formatProvider, value, parameters);
 
 	/// <summary>
-	/// Decodes the provided string from a base64 string.
+	/// Decodes a Base64-encoded string into its original representation using the specified character encoding.
 	/// </summary>
-	/// <param name="value">The input string to work with.</param>
-	/// <param name="encoding">The encoding to use.</param>
-	/// <returns>The decoded string.</returns>
-	/// <exception cref="ArgumentException">The provided string is not a valid base64 string.</exception>
+	/// <remarks>
+	/// This method extends the <see cref="string"/> type to provide a convenient way to decode Base64-encoded
+	/// strings into their original form using a specified encoding. The input string must be a valid
+	/// Base64-encoded string.
+	/// </remarks>
+	/// <param name="value">The Base64-encoded string to decode.</param>
+	/// <param name="encoding">The character encoding to use for decoding the byte array into a string.</param>
+	/// <returns>The decoded string represented in the specified encoding.</returns>
 	public static string FromBase64(this string value, Encoding encoding)
 	{
 		byte[] buffer = value.FromBase64();
@@ -105,99 +153,130 @@ public static partial class StringExtensions
 	}
 
 	/// <summary>
-	/// Returns all the characters in the specified string encoded into a sequence of bytes.
+	/// Converts the specified string to a byte array using the provided encoding.
 	/// </summary>
 	/// <remarks>
-	/// If <paramref name="encoding"/> is not provided, <see cref="Encoding.UTF8"/> is used.
+	/// If the <paramref name="encoding"/> parameter is <see langword="null"/>, the method defaults to
+	/// using <see cref="Encoding.UTF8"/>.
 	/// </remarks>
-	/// <param name="stringValue">The string value containing the characters to encode.</param>
-	/// <param name="encoding">The character encoding to use.</param>
-	/// <returns>A byte array containing the results of encoding the specified set of characters.</returns>
-	public static byte[] GetBytes(this string stringValue, Encoding? encoding = null)
+	/// <param name="value">The string to convert to a byte array.</param>
+	/// <param name="encoding">The character encoding to use for the conversion.</param>
+	/// <returns>A byte array representing the encoded string.</returns>
+	public static byte[] GetBytes(this string value, Encoding? encoding = null)
 	{
 		encoding ??= Encoding.UTF8;
-		return encoding.GetBytes(stringValue);
+		return encoding.GetBytes(value);
 	}
 
 	/// <summary>
-	/// Gets a string with the MD5 hash value of a given string (UT8 Encoded)
+	/// Computes the MD5 hash of the specified string using UTF-8 encoding.
 	/// </summary>
-	/// <param name="stringValue">The input string to work with.</param>
-	/// <returns>The MD5 hashed string.</returns>
-	public static string GetMd5Utf8(this string stringValue)
-		=> GetMd5Bytes(stringValue, Encoding.UTF8).GetHexString();
+	/// <remarks>
+	/// This method uses UTF-8 encoding to convert the input string into bytes before computing the MD5
+	/// hash. The resulting hash is returned as a hexadecimal string.
+	/// </remarks>
+	/// <param name="value">The input string to compute the MD5 hash for.</param>
+	/// <returns>A hexadecimal string representation of the MD5 hash of the input string.</returns>
+	public static string GetMd5Utf8(this string value)
+		=> GetMd5Bytes(value, Encoding.UTF8).GetHexString();
 
 	/// <summary>
-	/// Gets a string with the MD5 hash value of a given string (ASCII Encoded)
+	/// Computes the MD5 hash of the specified string using ASCII encoding.
 	/// </summary>
-	/// <param name="stringValue">The input string to work with.</param>
-	/// <returns>The MD5 hashed string.</returns>
-	public static string GetMd5Ascii(this string stringValue)
-		=> GetMd5Bytes(stringValue, Encoding.ASCII).GetHexString();
+	/// <remarks>
+	/// This method uses ASCII encoding to convert the input string into bytes before computing the MD5
+	/// hash. The resulting hash is returned as a hexadecimal string.
+	/// </remarks>
+	/// <param name="value">The input string to compute the MD5 hash for.</param>
+	/// <returns>A hexadecimal string representation of the MD5 hash of the input string.</returns>
+	public static string GetMd5Ascii(this string value)
+		=> GetMd5Bytes(value, Encoding.ASCII).GetHexString();
 
 	/// <summary>
-	/// Gets a string with the MD5 hash value of a given string (Unicode Encoded)
+	/// Computes the MD5 hash of the specified string using Unicode encoding.
 	/// </summary>
-	/// <param name="stringValue">The input string to work with.</param>
-	/// <returns>The MD5 hashed string.</returns>
-	public static string GetMd5Unicode(this string stringValue)
-		=> GetMd5Bytes(stringValue, Encoding.Unicode).GetHexString();
+	/// <remarks>
+	/// This method uses Unicode encoding to convert the input string into bytes before computing the MD5
+	/// hash. The resulting hash is returned as a hexadecimal string.
+	/// </remarks>
+	/// <param name="value">The input string to compute the MD5 hash for.</param>
+	/// <returns>A hexadecimal string representation of the MD5 hash of the input string.</returns>
+	public static string GetMd5Unicode(this string value)
+		=> GetMd5Bytes(value, Encoding.Unicode).GetHexString();
 
 	/// <summary>
-	/// Indicates whether the specified string value is <see langword="null"/> or not.
+	/// Determines whether the specified nullable string has a null value.
 	/// </summary>
-	/// <param name="value">The string value to check.</param>
+	/// <param name="value">The nullable string to check.</param>
 	/// <returns>
-	/// <see langword="true"/> if <paramref name="value"/> is <see langword="null"/>; otherwise, <see langword="false"/>.
+	/// <see langword="true"/> if the <paramref name="value"/> is <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this string? value)
 		=> value is null;
 
 	/// <summary>
-	/// Indicates whether the specified string value is <see langword="null"/> or an <see cref="string.Empty"/>.
+	/// Determines whether the specified nullable string has a null value or is empty.
 	/// </summary>
-	/// <param name="value">The string value to test.</param>
-	/// <returns>True if the value parameter is null or an empty string, otherwise false.</returns>
+	/// <param name="value">The nullable string to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if the <paramref name="value"/> is <see langword="null"/> or empty;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
 	public static bool IsNullOrEmpty([NotNullWhen(false)] this string? value)
 		=> string.IsNullOrEmpty(value);
 
 	/// <summary>
-	/// Indicates whether a specified string is null, empty, or consists only of white-space characters.
+	/// Determines whether the specified string is null, empty, or consists only of white-space characters.
 	/// </summary>
-	/// <param name="value">The string value to test.</param>
-	/// <returns>True if the value parameter is null or an empty string or if value consists
-	/// exclusively of white-space characters, otherwise false.</returns>
+	/// <param name="value">The nullable string to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if the string is null, empty, or consists only of white-space characters;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
 	public static bool IsNullOrWhiteSpace([NotNullWhen(false)] this string? value)
 		=> string.IsNullOrWhiteSpace(value);
 
 	/// <summary>
-	/// Removes unwanted linebreaks within the provided string value.
+	/// Removes all linebreaks from the specified string.
 	/// </summary>
-	/// <param name="value">The input string value to modify.</param>
-	/// <returns>The same <see cref="string"/> instance so that multiple calls can be chained.</returns>
+	/// <param name="value">
+	/// The input string from which linebreaks will be removed.</param>
+	/// <returns>
+	/// A new string with all linebreaks removed. If the input string is empty, an empty string is returned.
+	/// </returns>
 	public static string RemoveLinebreak(this string value)
 		=> LinebreakRegex.Replace(value, string.Empty);
 
 	/// <summary>
-	/// Removes unwanted whitespace within the provided string value.
+	/// Removes all whitespaces from the specified string.
 	/// </summary>
-	/// <param name="stringValue">The input string value to modify.</param>
-	/// <returns>The same <see cref="string"/> instance so that multiple calls can be chained.</returns>
-	public static string RemoveWhitespace(this string stringValue)
-		=> WhitespaceRegex.Replace(stringValue, string.Empty);
+	/// <param name="value">
+	/// The input string from which whitespaces will be removed.</param>
+	/// <returns>
+	/// A new string with all whitespaces removed. If the input string is empty, an empty string is returned.
+	/// </returns>
+	public static string RemoveWhitespace(this string value)
+		=> WhitespaceRegex.Replace(value, string.Empty);
 
 	/// <summary>
-	/// Encodes the provided string to a base64 string.
+	/// Converts the specified string to its Base64-encoded representation using the specified encoding.
 	/// </summary>
-	/// <param name="stringValue">The input string to work with.</param>
-	/// <param name="encoding">The encoding to use.</param>
-	/// <returns>The encoded string.</returns>
-	public static string ToBase64(this string stringValue, Encoding encoding)
+	/// <remarks>
+	/// If the <paramref name="value"/> is null or consists only of whitespace, an empty string is returned.
+	/// </remarks>
+	/// <param name="value">The string to encode.</param>
+	/// <param name="encoding">The character encoding to use for converting the string to bytes.</param>
+	/// <returns>
+	/// A Base64-encoded string representation of the input string, or an empty string if <paramref name="value"/>
+	/// is null or whitespace.
+	/// </returns>
+	public static string ToBase64(this string value, Encoding encoding)
 	{
-		if (stringValue.IsNullOrWhiteSpace())
+		if (value.IsNullOrWhiteSpace())
 			return string.Empty;
 
-		byte[] buffer = encoding.GetBytes(stringValue);
+		byte[] buffer = encoding.GetBytes(value);
 		return buffer.ToBase64();
 	}
 

@@ -6,8 +6,13 @@
 namespace BB84.Extensions.Helper;
 
 /// <summary>
-/// The random helper class.
+/// Provides a thread-safe, lazily initialized instance of a pseudo-random number generator.
 /// </summary>
+/// <remarks>
+/// This class ensures that the <see cref="Random"/> instance is initialized with a unique seed
+/// based on a hash of a GUID, providing better randomness across application runs.
+/// The <see cref="Random"/> property can be used to generate random numbers in a thread-safe manner.
+/// </remarks>
 internal static class RandomHelper
 {
 	private static readonly Lazy<Random> LazyRandom = new(() => new(Guid.NewGuid().GetHashCode()));
