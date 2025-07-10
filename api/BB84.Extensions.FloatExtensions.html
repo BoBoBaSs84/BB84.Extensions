@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class FloatExtensions ">
       
-      <meta name="description" content="The float extensions class.">
+      <meta name="description" content="Provides extension methods for working with nullable  values.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_FloatExtensions" data-uid="BB84.Extensions.FloatExtensions" class="text-break">
-Class FloatExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/FloatExtensions.IsNull.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class FloatExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/FloatExtensions.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Class FloatExtensions  <a class="header-action link-secondary" title="View sourc
   <dl><dt>Assembly</dt><dd>BB84.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The float extensions class.</p>
+  <div class="markdown summary"><p>Provides extension methods for working with nullable <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> values.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -143,20 +143,65 @@ Class FloatExtensions  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <h2 id="BB84_Extensions_FloatExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class includes utility methods to simplify common operations on nullable float
+values, such as checking for null or non-null states. These methods are designed to
+improve code readability and reduce boilerplate when working with nullable floats.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
 </h2>
 
 
+  <a id="BB84_Extensions_FloatExtensions_IsNotNull_" data-uid="BB84.Extensions.FloatExtensions.IsNotNull*"></a>
+
+  <h3 id="BB84_Extensions_FloatExtensions_IsNotNull_System_Nullable_System_Single__" data-uid="BB84.Extensions.FloatExtensions.IsNotNull(System.Nullable{System.Single})">
+  IsNotNull(float?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/FloatExtensions.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified nullable float has a value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNotNull(this float? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
+    <dd><p>The nullable float to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is not <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="BB84_Extensions_FloatExtensions_IsNull_" data-uid="BB84.Extensions.FloatExtensions.IsNull*"></a>
 
   <h3 id="BB84_Extensions_FloatExtensions_IsNull_System_Nullable_System_Single__" data-uid="BB84.Extensions.FloatExtensions.IsNull(System.Nullable{System.Single})">
   IsNull(float?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/FloatExtensions.IsNull.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/FloatExtensions.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Indicates whether the specified float value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or not.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified nullable float has a null value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -167,14 +212,15 @@ Class FloatExtensions  <a class="header-action link-secondary" title="View sourc
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
-    <dd><p>The float value to check.</p>
+    <dd><p>The nullable float to check.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -192,7 +238,7 @@ Class FloatExtensions  <a class="header-action link-secondary" title="View sourc
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/FloatExtensions.IsNull.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/FloatExtensions.cs/#L16" class="edit-link">Edit this page</a>
         </div>
 
 

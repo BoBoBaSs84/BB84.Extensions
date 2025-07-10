@@ -14,7 +14,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.ArrayExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.ArrayExtensions.yml\" sourcestartlinenumber=\"1\">The array extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.ArrayExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with arrays.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -28,7 +28,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.BooleanExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.BooleanExtensions.yml\" sourcestartlinenumber=\"1\">The boolean extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.BooleanExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with <xref href=\"System.Boolean\" data-throw-if-not-resolved=\"false\"></xref> and nullable <xref href=\"System.Boolean\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -42,7 +42,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.ByteExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.ByteExtensions.yml\" sourcestartlinenumber=\"1\">The byte extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.ByteExtensions.yml\" sourcestartlinenumber=\"1\">Provides a set of extension methods for working with <xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref> arrays, including\ncompression, decompression, encoding,hashing, and utility methods.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -56,7 +56,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.ColorExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.ColorExtensions.yml\" sourcestartlinenumber=\"1\">The color extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.ColorExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for converting between <xref href=\"System.Drawing.Color\" data-throw-if-not-resolved=\"false\"></xref> objects and various representations,\nincluding byte arrays and hexadecimal strings, for both ARGB and RGB formats.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -70,7 +70,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.ComparableExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.ComparableExtensions.yml\" sourcestartlinenumber=\"1\">The comparable extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.ComparableExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for comparing values that implement the <xref href=\"System.IComparable\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -84,7 +84,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.DateTimeExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.DateTimeExtensions.yml\" sourcestartlinenumber=\"1\">The date time extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.DateTimeExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref> to simplify common date-related calculations,\nsuch as determining the start or end of a fiscal year, month, week, or year, as well as calculating\nthe ISO 8601 week of the year.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -98,7 +98,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.DecimalExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.DecimalExtensions.yml\" sourcestartlinenumber=\"1\">The decimal extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.DecimalExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with nullable <xref href=\"System.Decimal\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -112,7 +112,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.DoubleExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.DoubleExtensions.yml\" sourcestartlinenumber=\"1\">The double extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.DoubleExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with nullable <xref href=\"System.Double\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -126,7 +126,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.EnumerableExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.EnumerableExtensions.yml\" sourcestartlinenumber=\"1\">The enumerable extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.EnumerableExtensions.yml\" sourcestartlinenumber=\"1\">Provides a set of extension methods for <xref href=\"System.Collections.Generic.IEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref> to simplify\ncommon operations such as iterating over elements with actions, applying conditions,\nand selecting random items.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -140,7 +140,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.EnumeratorExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.EnumeratorExtensions.yml\" sourcestartlinenumber=\"1\">The enumerator extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.EnumeratorExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with enumeration types and value types.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -154,7 +154,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.FloatExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.FloatExtensions.yml\" sourcestartlinenumber=\"1\">The float extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.FloatExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with nullable <xref href=\"System.Single\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -168,7 +168,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.HttpClientExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.HttpClientExtensions.yml\" sourcestartlinenumber=\"1\">The extension methods for the <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.HttpClientExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for configuring and enhancing the behavior of <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref>\ninstances.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -196,7 +196,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.IntegerExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.IntegerExtensions.yml\" sourcestartlinenumber=\"1\">The integer extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.IntegerExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with nullable <xref href=\"System.Int32\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -210,7 +210,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.ListExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.ListExtensions.yml\" sourcestartlinenumber=\"1\">The list extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.ListExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with <xref href=\"System.Collections.Generic.IList%601\" data-throw-if-not-resolved=\"false\"></xref> objects, enabling\nconditional addition of items or collections.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -224,7 +224,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.ObjectExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.ObjectExtensions.yml\" sourcestartlinenumber=\"1\">The object extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.ObjectExtensions.yml\" sourcestartlinenumber=\"1\">Provides a set of extension methods for performing common operations on objects,\nsuch as null checks and type conversions using invariant culture formatting.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -238,7 +238,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.Serialization.JsonExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.Serialization.JsonExtensions.yml\" sourcestartlinenumber=\"1\">The json extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.Serialization.JsonExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for serializing and deserializing objects to and from JSON.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -252,7 +252,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.Serialization.XmlExtension",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.Serialization.XmlExtension.yml\" sourcestartlinenumber=\"1\">The XML extension class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.Serialization.XmlExtension.yml\" sourcestartlinenumber=\"1\">Provides extension methods for serializing and deserializing objects to and from XML.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -280,7 +280,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.StreamExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.StreamExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"System.IO.Stream\" data-throw-if-not-resolved=\"false\"></xref> extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.StreamExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with <xref href=\"System.IO.Stream\" data-throw-if-not-resolved=\"false\"></xref> objects.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -294,7 +294,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.StringExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.StringExtensions.yml\" sourcestartlinenumber=\"1\">The string extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.StringExtensions.yml\" sourcestartlinenumber=\"1\">Provides a set of extension methods for working with strings, including compression,\nencoding, formatting, and validation.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -308,7 +308,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.TaskExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.TaskExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref> objects, enabling synchronous and asynchronous\nexecution with optional completion and exception handling actions.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.TaskExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Threading.Tasks.Task%601\" data-throw-if-not-resolved=\"false\"></xref>\nobjects, enabling additional functionality such as converting tasks to synchronous or asynchronous\nvoid methods, handling exceptions, and retrieving results safely.</p>\n"
     },
     {
       "type": "ManagedReference",

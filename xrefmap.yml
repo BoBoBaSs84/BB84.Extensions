@@ -60,6 +60,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.BooleanExtensions.IsFalse
   nameWithType: BooleanExtensions.IsFalse
+- uid: BB84.Extensions.BooleanExtensions.IsNotNull(System.Nullable{System.Boolean})
+  name: IsNotNull(bool?)
+  href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsNotNull_System_Nullable_System_Boolean__
+  commentId: M:BB84.Extensions.BooleanExtensions.IsNotNull(System.Nullable{System.Boolean})
+  name.vb: IsNotNull(Boolean?)
+  fullName: BB84.Extensions.BooleanExtensions.IsNotNull(bool?)
+  fullName.vb: BB84.Extensions.BooleanExtensions.IsNotNull(Boolean?)
+  nameWithType: BooleanExtensions.IsNotNull(bool?)
+  nameWithType.vb: BooleanExtensions.IsNotNull(Boolean?)
+- uid: BB84.Extensions.BooleanExtensions.IsNotNull*
+  name: IsNotNull
+  href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsNotNull_
+  commentId: Overload:BB84.Extensions.BooleanExtensions.IsNotNull
+  isSpec: "True"
+  fullName: BB84.Extensions.BooleanExtensions.IsNotNull
+  nameWithType: BooleanExtensions.IsNotNull
 - uid: BB84.Extensions.BooleanExtensions.IsNull(System.Nullable{System.Boolean})
   name: IsNull(bool?)
   href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsNull_System_Nullable_System_Boolean__
@@ -219,6 +235,31 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ByteExtensions.GetString
   nameWithType: ByteExtensions.GetString
+- uid: BB84.Extensions.ByteExtensions.IsNotNull(System.Byte[])
+  name: IsNotNull(byte[]?)
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_IsNotNull_System_Byte___
+  commentId: M:BB84.Extensions.ByteExtensions.IsNotNull(System.Byte[])
+  name.vb: IsNotNull(Byte())
+  fullName: BB84.Extensions.ByteExtensions.IsNotNull(byte[]?)
+  fullName.vb: BB84.Extensions.ByteExtensions.IsNotNull(Byte())
+  nameWithType: ByteExtensions.IsNotNull(byte[]?)
+  nameWithType.vb: ByteExtensions.IsNotNull(Byte())
+- uid: BB84.Extensions.ByteExtensions.IsNotNull(System.Nullable{System.Byte})
+  name: IsNotNull(byte?)
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_IsNotNull_System_Nullable_System_Byte__
+  commentId: M:BB84.Extensions.ByteExtensions.IsNotNull(System.Nullable{System.Byte})
+  name.vb: IsNotNull(Byte?)
+  fullName: BB84.Extensions.ByteExtensions.IsNotNull(byte?)
+  fullName.vb: BB84.Extensions.ByteExtensions.IsNotNull(Byte?)
+  nameWithType: ByteExtensions.IsNotNull(byte?)
+  nameWithType.vb: ByteExtensions.IsNotNull(Byte?)
+- uid: BB84.Extensions.ByteExtensions.IsNotNull*
+  name: IsNotNull
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_IsNotNull_
+  commentId: Overload:BB84.Extensions.ByteExtensions.IsNotNull
+  isSpec: "True"
+  fullName: BB84.Extensions.ByteExtensions.IsNotNull
+  nameWithType: ByteExtensions.IsNotNull
 - uid: BB84.Extensions.ByteExtensions.IsNull(System.Byte[])
   name: IsNull(byte[]?)
   href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_IsNull_System_Byte___
@@ -228,6 +269,15 @@ references:
   fullName.vb: BB84.Extensions.ByteExtensions.IsNull(Byte())
   nameWithType: ByteExtensions.IsNull(byte[]?)
   nameWithType.vb: ByteExtensions.IsNull(Byte())
+- uid: BB84.Extensions.ByteExtensions.IsNull(System.Nullable{System.Byte})
+  name: IsNull(byte?)
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_IsNull_System_Nullable_System_Byte__
+  commentId: M:BB84.Extensions.ByteExtensions.IsNull(System.Nullable{System.Byte})
+  name.vb: IsNull(Byte?)
+  fullName: BB84.Extensions.ByteExtensions.IsNull(byte?)
+  fullName.vb: BB84.Extensions.ByteExtensions.IsNull(Byte?)
+  nameWithType: ByteExtensions.IsNull(byte?)
+  nameWithType.vb: ByteExtensions.IsNull(Byte?)
 - uid: BB84.Extensions.ByteExtensions.IsNull*
   name: IsNull
   href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_IsNull_
@@ -599,6 +649,22 @@ references:
   commentId: T:BB84.Extensions.DecimalExtensions
   fullName: BB84.Extensions.DecimalExtensions
   nameWithType: DecimalExtensions
+- uid: BB84.Extensions.DecimalExtensions.IsNotNull(System.Nullable{System.Decimal})
+  name: IsNotNull(decimal?)
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNotNull_System_Nullable_System_Decimal__
+  commentId: M:BB84.Extensions.DecimalExtensions.IsNotNull(System.Nullable{System.Decimal})
+  name.vb: IsNotNull(Decimal?)
+  fullName: BB84.Extensions.DecimalExtensions.IsNotNull(decimal?)
+  fullName.vb: BB84.Extensions.DecimalExtensions.IsNotNull(Decimal?)
+  nameWithType: DecimalExtensions.IsNotNull(decimal?)
+  nameWithType.vb: DecimalExtensions.IsNotNull(Decimal?)
+- uid: BB84.Extensions.DecimalExtensions.IsNotNull*
+  name: IsNotNull
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNotNull_
+  commentId: Overload:BB84.Extensions.DecimalExtensions.IsNotNull
+  isSpec: "True"
+  fullName: BB84.Extensions.DecimalExtensions.IsNotNull
+  nameWithType: DecimalExtensions.IsNotNull
 - uid: BB84.Extensions.DecimalExtensions.IsNull(System.Nullable{System.Decimal})
   name: IsNull(decimal?)
   href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNull_System_Nullable_System_Decimal__
@@ -621,6 +687,22 @@ references:
   commentId: T:BB84.Extensions.DoubleExtensions
   fullName: BB84.Extensions.DoubleExtensions
   nameWithType: DoubleExtensions
+- uid: BB84.Extensions.DoubleExtensions.IsNotNull(System.Nullable{System.Double})
+  name: IsNotNull(double?)
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNotNull_System_Nullable_System_Double__
+  commentId: M:BB84.Extensions.DoubleExtensions.IsNotNull(System.Nullable{System.Double})
+  name.vb: IsNotNull(Double?)
+  fullName: BB84.Extensions.DoubleExtensions.IsNotNull(double?)
+  fullName.vb: BB84.Extensions.DoubleExtensions.IsNotNull(Double?)
+  nameWithType: DoubleExtensions.IsNotNull(double?)
+  nameWithType.vb: DoubleExtensions.IsNotNull(Double?)
+- uid: BB84.Extensions.DoubleExtensions.IsNotNull*
+  name: IsNotNull
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNotNull_
+  commentId: Overload:BB84.Extensions.DoubleExtensions.IsNotNull
+  isSpec: "True"
+  fullName: BB84.Extensions.DoubleExtensions.IsNotNull
+  nameWithType: DoubleExtensions.IsNotNull
 - uid: BB84.Extensions.DoubleExtensions.IsNull(System.Nullable{System.Double})
   name: IsNull(double?)
   href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNull_System_Nullable_System_Double__
@@ -753,6 +835,22 @@ references:
   commentId: T:BB84.Extensions.FloatExtensions
   fullName: BB84.Extensions.FloatExtensions
   nameWithType: FloatExtensions
+- uid: BB84.Extensions.FloatExtensions.IsNotNull(System.Nullable{System.Single})
+  name: IsNotNull(float?)
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNotNull_System_Nullable_System_Single__
+  commentId: M:BB84.Extensions.FloatExtensions.IsNotNull(System.Nullable{System.Single})
+  name.vb: IsNotNull(Single?)
+  fullName: BB84.Extensions.FloatExtensions.IsNotNull(float?)
+  fullName.vb: BB84.Extensions.FloatExtensions.IsNotNull(Single?)
+  nameWithType: FloatExtensions.IsNotNull(float?)
+  nameWithType.vb: FloatExtensions.IsNotNull(Single?)
+- uid: BB84.Extensions.FloatExtensions.IsNotNull*
+  name: IsNotNull
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNotNull_
+  commentId: Overload:BB84.Extensions.FloatExtensions.IsNotNull
+  isSpec: "True"
+  fullName: BB84.Extensions.FloatExtensions.IsNotNull
+  nameWithType: FloatExtensions.IsNotNull
 - uid: BB84.Extensions.FloatExtensions.IsNull(System.Nullable{System.Single})
   name: IsNull(float?)
   href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNull_System_Nullable_System_Single__
@@ -775,28 +873,28 @@ references:
   commentId: T:BB84.Extensions.HttpClientExtensions
   fullName: BB84.Extensions.HttpClientExtensions
   nameWithType: HttpClientExtensions
-- uid: BB84.Extensions.HttpClientExtensions.WithBaseAdress(System.Net.Http.HttpClient,System.String)
-  name: WithBaseAdress(HttpClient, string)
-  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithBaseAdress_System_Net_Http_HttpClient_System_String_
-  commentId: M:BB84.Extensions.HttpClientExtensions.WithBaseAdress(System.Net.Http.HttpClient,System.String)
-  name.vb: WithBaseAdress(HttpClient, String)
-  fullName: BB84.Extensions.HttpClientExtensions.WithBaseAdress(System.Net.Http.HttpClient, string)
-  fullName.vb: BB84.Extensions.HttpClientExtensions.WithBaseAdress(System.Net.Http.HttpClient, String)
-  nameWithType: HttpClientExtensions.WithBaseAdress(HttpClient, string)
-  nameWithType.vb: HttpClientExtensions.WithBaseAdress(HttpClient, String)
-- uid: BB84.Extensions.HttpClientExtensions.WithBaseAdress(System.Net.Http.HttpClient,System.Uri)
-  name: WithBaseAdress(HttpClient, Uri)
-  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithBaseAdress_System_Net_Http_HttpClient_System_Uri_
-  commentId: M:BB84.Extensions.HttpClientExtensions.WithBaseAdress(System.Net.Http.HttpClient,System.Uri)
-  fullName: BB84.Extensions.HttpClientExtensions.WithBaseAdress(System.Net.Http.HttpClient, System.Uri)
-  nameWithType: HttpClientExtensions.WithBaseAdress(HttpClient, Uri)
-- uid: BB84.Extensions.HttpClientExtensions.WithBaseAdress*
-  name: WithBaseAdress
-  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithBaseAdress_
-  commentId: Overload:BB84.Extensions.HttpClientExtensions.WithBaseAdress
+- uid: BB84.Extensions.HttpClientExtensions.WithBaseAddress(System.Net.Http.HttpClient,System.String)
+  name: WithBaseAddress(HttpClient, string)
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithBaseAddress_System_Net_Http_HttpClient_System_String_
+  commentId: M:BB84.Extensions.HttpClientExtensions.WithBaseAddress(System.Net.Http.HttpClient,System.String)
+  name.vb: WithBaseAddress(HttpClient, String)
+  fullName: BB84.Extensions.HttpClientExtensions.WithBaseAddress(System.Net.Http.HttpClient, string)
+  fullName.vb: BB84.Extensions.HttpClientExtensions.WithBaseAddress(System.Net.Http.HttpClient, String)
+  nameWithType: HttpClientExtensions.WithBaseAddress(HttpClient, string)
+  nameWithType.vb: HttpClientExtensions.WithBaseAddress(HttpClient, String)
+- uid: BB84.Extensions.HttpClientExtensions.WithBaseAddress(System.Net.Http.HttpClient,System.Uri)
+  name: WithBaseAddress(HttpClient, Uri)
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithBaseAddress_System_Net_Http_HttpClient_System_Uri_
+  commentId: M:BB84.Extensions.HttpClientExtensions.WithBaseAddress(System.Net.Http.HttpClient,System.Uri)
+  fullName: BB84.Extensions.HttpClientExtensions.WithBaseAddress(System.Net.Http.HttpClient, System.Uri)
+  nameWithType: HttpClientExtensions.WithBaseAddress(HttpClient, Uri)
+- uid: BB84.Extensions.HttpClientExtensions.WithBaseAddress*
+  name: WithBaseAddress
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithBaseAddress_
+  commentId: Overload:BB84.Extensions.HttpClientExtensions.WithBaseAddress
   isSpec: "True"
-  fullName: BB84.Extensions.HttpClientExtensions.WithBaseAdress
-  nameWithType: HttpClientExtensions.WithBaseAdress
+  fullName: BB84.Extensions.HttpClientExtensions.WithBaseAddress
+  nameWithType: HttpClientExtensions.WithBaseAddress
 - uid: BB84.Extensions.HttpClientExtensions.WithBasicAuthentication(System.Net.Http.HttpClient,System.String,System.String,System.Text.Encoding)
   name: WithBasicAuthentication(HttpClient, string, string, Encoding?)
   href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithBasicAuthentication_System_Net_Http_HttpClient_System_String_System_String_System_Text_Encoding_
@@ -950,6 +1048,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.IntegerExtensions.For
   nameWithType: IntegerExtensions.For
+- uid: BB84.Extensions.IntegerExtensions.IsNotNull(System.Nullable{System.Int32})
+  name: IsNotNull(int?)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNotNull_System_Nullable_System_Int32__
+  commentId: M:BB84.Extensions.IntegerExtensions.IsNotNull(System.Nullable{System.Int32})
+  name.vb: IsNotNull(Integer?)
+  fullName: BB84.Extensions.IntegerExtensions.IsNotNull(int?)
+  fullName.vb: BB84.Extensions.IntegerExtensions.IsNotNull(Integer?)
+  nameWithType: IntegerExtensions.IsNotNull(int?)
+  nameWithType.vb: IntegerExtensions.IsNotNull(Integer?)
+- uid: BB84.Extensions.IntegerExtensions.IsNotNull*
+  name: IsNotNull
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNotNull_
+  commentId: Overload:BB84.Extensions.IntegerExtensions.IsNotNull
+  isSpec: "True"
+  fullName: BB84.Extensions.IntegerExtensions.IsNotNull
+  nameWithType: IntegerExtensions.IsNotNull
 - uid: BB84.Extensions.IntegerExtensions.IsNull(System.Nullable{System.Int32})
   name: IsNull(int?)
   href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNull_System_Nullable_System_Int32__
@@ -1010,6 +1124,22 @@ references:
   commentId: T:BB84.Extensions.ObjectExtensions
   fullName: BB84.Extensions.ObjectExtensions
   nameWithType: ObjectExtensions
+- uid: BB84.Extensions.ObjectExtensions.IsNotNull(System.Object)
+  name: IsNotNull(object?)
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_IsNotNull_System_Object_
+  commentId: M:BB84.Extensions.ObjectExtensions.IsNotNull(System.Object)
+  name.vb: IsNotNull(Object)
+  fullName: BB84.Extensions.ObjectExtensions.IsNotNull(object?)
+  fullName.vb: BB84.Extensions.ObjectExtensions.IsNotNull(Object)
+  nameWithType: ObjectExtensions.IsNotNull(object?)
+  nameWithType.vb: ObjectExtensions.IsNotNull(Object)
+- uid: BB84.Extensions.ObjectExtensions.IsNotNull*
+  name: IsNotNull
+  href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_IsNotNull_
+  commentId: Overload:BB84.Extensions.ObjectExtensions.IsNotNull
+  isSpec: "True"
+  fullName: BB84.Extensions.ObjectExtensions.IsNotNull
+  nameWithType: ObjectExtensions.IsNotNull
 - uid: BB84.Extensions.ObjectExtensions.IsNull(System.Object)
   name: IsNull(object?)
   href: api/BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_IsNull_System_Object_
@@ -1437,6 +1567,54 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.StringExtensions.GetMd5Utf8
   nameWithType: StringExtensions.GetMd5Utf8
+- uid: BB84.Extensions.StringExtensions.IsNotNull(System.String)
+  name: IsNotNull(string?)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNotNull_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.IsNotNull(System.String)
+  name.vb: IsNotNull(String)
+  fullName: BB84.Extensions.StringExtensions.IsNotNull(string?)
+  fullName.vb: BB84.Extensions.StringExtensions.IsNotNull(String)
+  nameWithType: StringExtensions.IsNotNull(string?)
+  nameWithType.vb: StringExtensions.IsNotNull(String)
+- uid: BB84.Extensions.StringExtensions.IsNotNull*
+  name: IsNotNull
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNotNull_
+  commentId: Overload:BB84.Extensions.StringExtensions.IsNotNull
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.IsNotNull
+  nameWithType: StringExtensions.IsNotNull
+- uid: BB84.Extensions.StringExtensions.IsNotNullOrEmpty(System.String)
+  name: IsNotNullOrEmpty(string?)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNotNullOrEmpty_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.IsNotNullOrEmpty(System.String)
+  name.vb: IsNotNullOrEmpty(String)
+  fullName: BB84.Extensions.StringExtensions.IsNotNullOrEmpty(string?)
+  fullName.vb: BB84.Extensions.StringExtensions.IsNotNullOrEmpty(String)
+  nameWithType: StringExtensions.IsNotNullOrEmpty(string?)
+  nameWithType.vb: StringExtensions.IsNotNullOrEmpty(String)
+- uid: BB84.Extensions.StringExtensions.IsNotNullOrEmpty*
+  name: IsNotNullOrEmpty
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNotNullOrEmpty_
+  commentId: Overload:BB84.Extensions.StringExtensions.IsNotNullOrEmpty
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.IsNotNullOrEmpty
+  nameWithType: StringExtensions.IsNotNullOrEmpty
+- uid: BB84.Extensions.StringExtensions.IsNotNullOrWhiteSpace(System.String)
+  name: IsNotNullOrWhiteSpace(string?)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNotNullOrWhiteSpace_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.IsNotNullOrWhiteSpace(System.String)
+  name.vb: IsNotNullOrWhiteSpace(String)
+  fullName: BB84.Extensions.StringExtensions.IsNotNullOrWhiteSpace(string?)
+  fullName.vb: BB84.Extensions.StringExtensions.IsNotNullOrWhiteSpace(String)
+  nameWithType: StringExtensions.IsNotNullOrWhiteSpace(string?)
+  nameWithType.vb: StringExtensions.IsNotNullOrWhiteSpace(String)
+- uid: BB84.Extensions.StringExtensions.IsNotNullOrWhiteSpace*
+  name: IsNotNullOrWhiteSpace
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNotNullOrWhiteSpace_
+  commentId: Overload:BB84.Extensions.StringExtensions.IsNotNullOrWhiteSpace
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.IsNotNullOrWhiteSpace
+  nameWithType: StringExtensions.IsNotNullOrWhiteSpace
 - uid: BB84.Extensions.StringExtensions.IsNull(System.String)
   name: IsNull(string?)
   href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNull_System_String_

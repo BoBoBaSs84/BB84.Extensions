@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ObjectExtensions ">
       
-      <meta name="description" content="The object extensions class.">
+      <meta name="description" content="Provides a set of extension methods for performing common operations on objects, such as null checks and type conversions using invariant culture formatting.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_ObjectExtensions" data-uid="BB84.Extensions.ObjectExtensions" class="text-break">
-Class ObjectExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Class ObjectExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,8 @@ Class ObjectExtensions  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>BB84.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The object extensions class.</p>
+  <div class="markdown summary"><p>Provides a set of extension methods for performing common operations on objects,
+such as null checks and type conversions using invariant culture formatting.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -143,20 +144,65 @@ Class ObjectExtensions  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h2 id="BB84_Extensions_ObjectExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The <a class="xref" href="BB84.Extensions.ObjectExtensions.html">ObjectExtensions</a> class includes utility methods that simplify
+working with objects in .NET. These methods are particularly useful for scenarios
+where null checks or culture-invariant type conversions are required.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
 </h2>
 
 
+  <a id="BB84_Extensions_ObjectExtensions_IsNotNull_" data-uid="BB84.Extensions.ObjectExtensions.IsNotNull*"></a>
+
+  <h3 id="BB84_Extensions_ObjectExtensions_IsNotNull_System_Object_" data-uid="BB84.Extensions.ObjectExtensions.IsNotNull(System.Object)">
+  IsNotNull(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified nullable object has a non-null value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNotNull(this object? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The nullable object to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is not <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="BB84_Extensions_ObjectExtensions_IsNull_" data-uid="BB84.Extensions.ObjectExtensions.IsNull*"></a>
 
   <h3 id="BB84_Extensions_ObjectExtensions_IsNull_System_Object_" data-uid="BB84.Extensions.ObjectExtensions.IsNull(System.Object)">
   IsNull(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Determines whether the specified object is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified nullable object has a null value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -167,14 +213,15 @@ Class ObjectExtensions  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The object to check for <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+    <dd><p>The nullable object to check.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -184,9 +231,6 @@ Class ObjectExtensions  <a class="header-action link-secondary" title="View sour
 
 
 
-  <h4 class="section" id="BB84_Extensions_ObjectExtensions_IsNull_System_Object__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>This method provides a concise way to check for <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> values.</p>
-</div>
 
 
 
@@ -195,7 +239,7 @@ Class ObjectExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_Extensions_ObjectExtensions_ToBooleanInvariant_System_Object_" data-uid="BB84.Extensions.ObjectExtensions.ToBooleanInvariant(System.Object)">
   ToBooleanInvariant(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the value of the specified object to an equivalent Boolean value, using the invariant
@@ -237,7 +281,7 @@ If value is null, the method returns false.</p>
 
   <h3 id="BB84_Extensions_ObjectExtensions_ToDateTimeInvariant_System_Object_" data-uid="BB84.Extensions.ObjectExtensions.ToDateTimeInvariant(System.Object)">
   ToDateTimeInvariant(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the value of the specified object to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> object, using the
@@ -278,7 +322,7 @@ of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime.
 
   <h3 id="BB84_Extensions_ObjectExtensions_ToDecimalInvariant_System_Object_" data-uid="BB84.Extensions.ObjectExtensions.ToDecimalInvariant(System.Object)">
   ToDecimalInvariant(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the value of the specified object to an equivalent decimal number, using the invariant
@@ -318,7 +362,7 @@ culture formatting information.</p>
 
   <h3 id="BB84_Extensions_ObjectExtensions_ToDoubleInvariant_System_Object_" data-uid="BB84.Extensions.ObjectExtensions.ToDoubleInvariant(System.Object)">
   ToDoubleInvariant(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the value of the specified object to an double-precision floating-point number,
@@ -359,7 +403,7 @@ if value is null.</p>
 
   <h3 id="BB84_Extensions_ObjectExtensions_ToInt16Invariant_System_Object_" data-uid="BB84.Extensions.ObjectExtensions.ToInt16Invariant(System.Object)">
   ToInt16Invariant(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the value of the specified object to a 16-bit signed integer, using the invariant
@@ -399,7 +443,7 @@ culture formatting information.</p>
 
   <h3 id="BB84_Extensions_ObjectExtensions_ToInt32Invariant_System_Object_" data-uid="BB84.Extensions.ObjectExtensions.ToInt32Invariant(System.Object)">
   ToInt32Invariant(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the value of the specified object to a 32-bit signed integer, using the invariant
@@ -439,7 +483,7 @@ culture formatting information.</p>
 
   <h3 id="BB84_Extensions_ObjectExtensions_ToInt64Invariant_System_Object_" data-uid="BB84.Extensions.ObjectExtensions.ToInt64Invariant(System.Object)">
   ToInt64Invariant(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the value of the specified object to a 64-bit signed integer, using the invariant
@@ -479,7 +523,7 @@ culture formatting information.</p>
 
   <h3 id="BB84_Extensions_ObjectExtensions_ToStringInvariant_System_Object_" data-uid="BB84.Extensions.ObjectExtensions.ToStringInvariant(System.Object)">
   ToStringInvariant(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the value of the specified object to its equivalent string representation using
@@ -520,7 +564,7 @@ whose value is null. If value is null, the method returns <a class="xref" href="
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ObjectExtensions.cs/#L19" class="edit-link">Edit this page</a>
         </div>
 
 

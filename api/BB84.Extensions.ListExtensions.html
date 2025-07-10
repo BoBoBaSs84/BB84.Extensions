@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ListExtensions ">
       
-      <meta name="description" content="The list extensions class.">
+      <meta name="description" content="Provides extension methods for working with  objects, enabling conditional addition of items or collections.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_ListExtensions" data-uid="BB84.Extensions.ListExtensions" class="text-break">
-Class ListExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class ListExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,8 @@ Class ListExtensions  <a class="header-action link-secondary" title="View source
   <dl><dt>Assembly</dt><dd>BB84.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The list extensions class.</p>
+  <div class="markdown summary"><p>Provides extension methods for working with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a> objects, enabling
+conditional addition of items or collections.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -143,6 +144,10 @@ Class ListExtensions  <a class="header-action link-secondary" title="View source
 
 
 
+  <h2 id="BB84_Extensions_ListExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class includes methods to add items or collections to a list only if they are not null.
+These methods help simplify common null-checking patterns when working with lists.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -153,7 +158,7 @@ Class ListExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="BB84_Extensions_ListExtensions_AddIfNotNull__1_System_Collections_Generic_IList___0____0_" data-uid="BB84.Extensions.ListExtensions.AddIfNotNull``1(System.Collections.Generic.IList{``0},``0)">
   AddIfNotNull&lt;T&gt;(IList&lt;T&gt;, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.AddIfNotNull.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds the item of <code class="typeparamref">T</code> to the <code class="paramref">target</code> when not null.</p>
@@ -201,7 +206,7 @@ Class ListExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="BB84_Extensions_ListExtensions_AddRangeIfNotNull__1_System_Collections_Generic_IList___0__System_Collections_Generic_IEnumerable___0__" data-uid="BB84.Extensions.ListExtensions.AddRangeIfNotNull``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0})">
   AddRangeIfNotNull&lt;T&gt;(IList&lt;T&gt;, IEnumerable&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.AddRangeIfNotNull.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> to the <code class="paramref">target</code> when not null.</p>
@@ -249,7 +254,7 @@ Class ListExtensions  <a class="header-action link-secondary" title="View source
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L16" class="edit-link">Edit this page</a>
         </div>
 
 

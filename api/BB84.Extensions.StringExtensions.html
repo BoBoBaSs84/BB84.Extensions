@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class StringExtensions ">
       
-      <meta name="description" content="The string extensions class.">
+      <meta name="description" content="Provides a set of extension methods for working with strings, including compression, encoding, formatting, and validation.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_StringExtensions" data-uid="BB84.Extensions.StringExtensions" class="text-break">
-Class StringExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.ToBase64.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class StringExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,8 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>BB84.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The string extensions class.</p>
+  <div class="markdown summary"><p>Provides a set of extension methods for working with strings, including compression,
+encoding, formatting, and validation.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -143,6 +144,13 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h2 id="BB84_Extensions_StringExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This <a class="xref" href="BB84.Extensions.StringExtensions.html">StringExtensions</a> class includes utility methods for common string
+operations such as compressing and decompressing strings, encoding and decoding Base64 strings,
+formatting strings with culture-specific options, and checking for null or empty values. It also
+provides methods for removing unwanted whitespace or line breaks, and generating MD5 hashes for
+strings.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -153,31 +161,32 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_Extensions_StringExtensions_Compress_System_String_System_IO_Compression_CompressionLevel_" data-uid="BB84.Extensions.StringExtensions.Compress(System.String,System.IO.Compression.CompressionLevel)">
   Compress(string, CompressionLevel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.Compress.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Compresses a string and returns a deflate compressed, Base64 encoded string.</p>
+  <div class="markdown level1 summary"><p>Compresses the specified string using the provided compression level and returns the result
+as a Base64-encoded string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Compress(this string stringValue, CompressionLevel compressionLevel = CompressionLevel.Optimal)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string Compress(this string value, CompressionLevel compressionLevel = CompressionLevel.Optimal)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>stringValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The input string value to compress.</p>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to compress.</p>
 </dd>
     <dt><code>compressionLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.compression.compressionlevel">CompressionLevel</a></dt>
-    <dd><p>The compression level to use.</p>
+    <dd><p>The level of compression to apply.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The compressed base64 encoded string.</p>
+    <dd><p>A Base64-encoded string representing the compressed data.</p>
 </dd>
   </dl>
 
@@ -187,6 +196,10 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h4 class="section" id="BB84_Extensions_StringExtensions_Compress_System_String_System_IO_Compression_CompressionLevel__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method compresses the input string into a byte array, applies the specified compression level,
+and encodes the compressed data as a Base64 string for safe storage or transmission.</p>
+</div>
 
 
 
@@ -195,28 +208,30 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_Extensions_StringExtensions_Decompress_System_String_" data-uid="BB84.Extensions.StringExtensions.Decompress(System.String)">
   Decompress(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.Decompress.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Decompresses a deflate compressed, Base64 encoded string and returns an uncompressed string.</p>
+  <div class="markdown level1 summary"><p>Decompresses a Base64-encoded, compressed string and returns the resulting decompressed string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Decompress(this string stringValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string Decompress(this string value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>stringValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The input string value to decompress.</p>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A Base64-encoded string representing compressed data.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The decompressed string obtained from the input. If the input is invalid or cannot be decompressed,
+an exception may be thrown.</p>
+</dd>
   </dl>
 
 
@@ -225,6 +240,11 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h4 class="section" id="BB84_Extensions_StringExtensions_Decompress_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method assumes the input string is Base64-encoded and represents compressed data.
+The decompression process involves decoding the Base64 string into a byte array, decompressing
+the byte array and converting the resulting byte array back into a string.</p>
+</div>
 
 
 
@@ -233,31 +253,33 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_Extensions_StringExtensions_EqualsCaseSensitive_System_String_System_String_" data-uid="BB84.Extensions.StringExtensions.EqualsCaseSensitive(System.String,System.String)">
   EqualsCaseSensitive(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.EqualsCaseSensitive.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Determines whether this string and a specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> object have the same value.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified string is equal to the current string, using a case-sensitive
+comparison.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool EqualsCaseSensitive(this string stringValue, string otherValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool EqualsCaseSensitive(this string value, string comparisonValue)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>stringValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The input string to work with.</p>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to compare against <code class="paramref">comparisonValue</code>.</p>
 </dd>
-    <dt><code>otherValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The string to compare.</p>
+    <dt><code>comparisonValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to compare to <code class="paramref">value</code>.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>true if the value of the value parameter is the same as this string; otherwise false.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the two strings are equal using a case-sensitive, ordinal comparison;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -275,31 +297,32 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_Extensions_StringExtensions_EqualsIgnoreCase_System_String_System_String_" data-uid="BB84.Extensions.StringExtensions.EqualsIgnoreCase(System.String,System.String)">
   EqualsIgnoreCase(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.EqualsIgnoreCase.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Determines whether this string and a specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> object have the same value.</p>
+  <div class="markdown level1 summary"><p>Determines whether two strings are equal, ignoring case.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool EqualsIgnoreCase(this string stringValue, string otherValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool EqualsIgnoreCase(this string value, string comparisonValue)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>stringValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The input string to work with.</p>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to compare against <code class="paramref">comparisonValue</code>.</p>
 </dd>
-    <dt><code>otherValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The string to compare</p>
+    <dt><code>comparisonValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to compare to <code class="paramref">value</code>.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>true if the value of the value parameter is the same as this string; otherwise false.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the two strings are equal ignoring case, ordinal comparison;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -317,34 +340,35 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_Extensions_StringExtensions_Format_System_String_System_IFormatProvider_System_Object___" data-uid="BB84.Extensions.StringExtensions.Format(System.String,System.IFormatProvider,System.Object[])">
   Format(string, IFormatProvider, params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.Format.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Formats the string with <code class="paramref">parameters</code> to an provided culture.</p>
+  <div class="markdown level1 summary"><p>Formats the specified string using the provided format provider and parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Format(this string stringValue, IFormatProvider formatProvider, params object[] parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string Format(this string value, IFormatProvider formatProvider, params object[] parameters)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>stringValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The string with placeholders.</p>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The composite format string to format.</p>
 </dd>
     <dt><code>formatProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
-    <dd><p>The format provider to use.</p>
+    <dd><p>An object that provides culture-specific formatting information.</p>
 </dd>
     <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd><p>The parameters to set for the placeholders.</p>
+    <dd><p>An array of objects to format and include in the resulting string.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The formated string.</p>
+    <dd><p>A formatted string where placeholders in <code class="paramref">value</code> are replaced by the corresponding
+values in <code class="paramref">parameters</code>.</p>
 </dd>
   </dl>
 
@@ -354,6 +378,11 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h4 class="section" id="BB84_Extensions_StringExtensions_Format_System_String_System_IFormatProvider_System_Object____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method is an extension method for the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> class. It simplifies the use of
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string.format#system-string-format(system-iformatprovider-system-string-system-object())">Format(IFormatProvider, string, params object[])</a> by allowing the format string to
+be called directly on the string instance.</p>
+</div>
 
 
 
@@ -362,31 +391,33 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_Extensions_StringExtensions_FormatInvariant_System_String_System_Object___" data-uid="BB84.Extensions.StringExtensions.FormatInvariant(System.String,System.Object[])">
   FormatInvariant(string, params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.Format.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Formats the string with <code class="paramref">parameters</code> to an invariant culture.</p>
+  <div class="markdown level1 summary"><p>Formats the specified string using the provided parameters, with formatting rules based on the
+invariant culture.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string FormatInvariant(this string stringValue, params object[] parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string FormatInvariant(this string value, params object[] parameters)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>stringValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The string with placeholders.</p>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The composite format string to format.</p>
 </dd>
     <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd><p>The parameters to set for the placeholders.</p>
+    <dd><p>An array of objects to format. These objects are inserted into the format string.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The formated string.</p>
+    <dd><p>A formatted string where placeholders in <code class="paramref">value</code> are replaced with the string
+representations of the corresponding objects in <code class="paramref">parameters</code>.</p>
 </dd>
   </dl>
 
@@ -396,6 +427,10 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h4 class="section" id="BB84_Extensions_StringExtensions_FormatInvariant_System_String_System_Object____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo.invariantculture">InvariantCulture</a> to ensure consistent formatting
+regardless of the current culture.</p>
+</div>
 
 
 
@@ -404,10 +439,10 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_Extensions_StringExtensions_FromBase64_System_String_System_Text_Encoding_" data-uid="BB84.Extensions.StringExtensions.FromBase64(System.String,System.Text.Encoding)">
   FromBase64(string, Encoding)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.FromBase64.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Decodes the provided string from a base64 string.</p>
+  <div class="markdown level1 summary"><p>Decodes a Base64-encoded string into its original representation using the specified character encoding.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -418,17 +453,17 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The input string to work with.</p>
+    <dd><p>The Base64-encoded string to decode.</p>
 </dd>
     <dt><code>encoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
-    <dd><p>The encoding to use.</p>
+    <dd><p>The character encoding to use for decoding the byte array into a string.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The decoded string.</p>
+    <dd><p>The decoded string represented in the specified encoding.</p>
 </dd>
   </dl>
 
@@ -438,13 +473,12 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h4 class="section" id="BB84_Extensions_StringExtensions_FromBase64_System_String_System_Text_Encoding__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method extends the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> type to provide a convenient way to decode Base64-encoded
+strings into their original form using a specified encoding. The input string must be a valid
+Base64-encoded string.</p>
+</div>
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
-    <dd><p>The provided string is not a valid base64 string.</p>
-</dd>
-  </dl>
 
 
 
@@ -452,31 +486,31 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_Extensions_StringExtensions_GetBytes_System_String_System_Text_Encoding_" data-uid="BB84.Extensions.StringExtensions.GetBytes(System.String,System.Text.Encoding)">
   GetBytes(string, Encoding?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.GetBytes.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L165"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Returns all the characters in the specified string encoded into a sequence of bytes.</p>
+  <div class="markdown level1 summary"><p>Converts the specified string to a byte array using the provided encoding.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte[] GetBytes(this string stringValue, Encoding? encoding = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static byte[] GetBytes(this string value, Encoding? encoding = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>stringValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The string value containing the characters to encode.</p>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to convert to a byte array.</p>
 </dd>
     <dt><code>encoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
-    <dd><p>The character encoding to use.</p>
+    <dd><p>The character encoding to use for the conversion.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd><p>A byte array containing the results of encoding the specified set of characters.</p>
+    <dd><p>A byte array representing the encoded string.</p>
 </dd>
   </dl>
 
@@ -487,7 +521,8 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
 
   <h4 class="section" id="BB84_Extensions_StringExtensions_GetBytes_System_String_System_Text_Encoding__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <code class="paramref">encoding</code> is not provided, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding.utf8">UTF8</a> is used.</p>
+  <div class="markdown level1 remarks"><p>If the <code class="paramref">encoding</code> parameter is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the method defaults to
+using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding.utf8">UTF8</a>.</p>
 </div>
 
 
@@ -497,28 +532,28 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_Extensions_StringExtensions_GetMd5Ascii_System_String_" data-uid="BB84.Extensions.StringExtensions.GetMd5Ascii(System.String)">
   GetMd5Ascii(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.GetMd5.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L192"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets a string with the MD5 hash value of a given string (ASCII Encoded)</p>
+  <div class="markdown level1 summary"><p>Computes the MD5 hash of the specified string using ASCII encoding.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetMd5Ascii(this string stringValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string GetMd5Ascii(this string value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>stringValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The input string to work with.</p>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to compute the MD5 hash for.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The MD5 hashed string.</p>
+    <dd><p>A hexadecimal string representation of the MD5 hash of the input string.</p>
 </dd>
   </dl>
 
@@ -528,6 +563,10 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h4 class="section" id="BB84_Extensions_StringExtensions_GetMd5Ascii_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method uses ASCII encoding to convert the input string into bytes before computing the MD5
+hash. The resulting hash is returned as a hexadecimal string.</p>
+</div>
 
 
 
@@ -536,28 +575,28 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_Extensions_StringExtensions_GetMd5Unicode_System_String_" data-uid="BB84.Extensions.StringExtensions.GetMd5Unicode(System.String)">
   GetMd5Unicode(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.GetMd5.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L204"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets a string with the MD5 hash value of a given string (Unicode Encoded)</p>
+  <div class="markdown level1 summary"><p>Computes the MD5 hash of the specified string using Unicode encoding.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetMd5Unicode(this string stringValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string GetMd5Unicode(this string value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>stringValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The input string to work with.</p>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to compute the MD5 hash for.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The MD5 hashed string.</p>
+    <dd><p>A hexadecimal string representation of the MD5 hash of the input string.</p>
 </dd>
   </dl>
 
@@ -567,6 +606,10 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h4 class="section" id="BB84_Extensions_StringExtensions_GetMd5Unicode_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method uses Unicode encoding to convert the input string into bytes before computing the MD5
+hash. The resulting hash is returned as a hexadecimal string.</p>
+</div>
 
 
 
@@ -575,28 +618,153 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_Extensions_StringExtensions_GetMd5Utf8_System_String_" data-uid="BB84.Extensions.StringExtensions.GetMd5Utf8(System.String)">
   GetMd5Utf8(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.GetMd5.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L180"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets a string with the MD5 hash value of a given string (UT8 Encoded)</p>
+  <div class="markdown level1 summary"><p>Computes the MD5 hash of the specified string using UTF-8 encoding.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetMd5Utf8(this string stringValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string GetMd5Utf8(this string value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>stringValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The input string to work with.</p>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to compute the MD5 hash for.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The MD5 hashed string.</p>
+    <dd><p>A hexadecimal string representation of the MD5 hash of the input string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="BB84_Extensions_StringExtensions_GetMd5Utf8_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method uses UTF-8 encoding to convert the input string into bytes before computing the MD5
+hash. The resulting hash is returned as a hexadecimal string.</p>
+</div>
+
+
+
+
+  <a id="BB84_Extensions_StringExtensions_IsNotNull_" data-uid="BB84.Extensions.StringExtensions.IsNotNull*"></a>
+
+  <h3 id="BB84_Extensions_StringExtensions_IsNotNull_System_String_" data-uid="BB84.Extensions.StringExtensions.IsNotNull(System.String)">
+  IsNotNull(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified nullable string has a non-null value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNotNull(this string? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The nullable string to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is not <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Extensions_StringExtensions_IsNotNullOrEmpty_" data-uid="BB84.Extensions.StringExtensions.IsNotNullOrEmpty*"></a>
+
+  <h3 id="BB84_Extensions_StringExtensions_IsNotNullOrEmpty_System_String_" data-uid="BB84.Extensions.StringExtensions.IsNotNullOrEmpty(System.String)">
+  IsNotNullOrEmpty(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified nullable string has a non-null value or is not empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNotNullOrEmpty(this string? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The nullable string to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is not <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> and not empty;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Extensions_StringExtensions_IsNotNullOrWhiteSpace_" data-uid="BB84.Extensions.StringExtensions.IsNotNullOrWhiteSpace*"></a>
+
+  <h3 id="BB84_Extensions_StringExtensions_IsNotNullOrWhiteSpace_System_String_" data-uid="BB84.Extensions.StringExtensions.IsNotNullOrWhiteSpace(System.String)">
+  IsNotNullOrWhiteSpace(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified string is not null, not empty or does not consists only of
+white-space characters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNotNullOrWhiteSpace(this string? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The nullable string to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is not <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, not empty
+and does not consists only of white-space characters; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -614,10 +782,10 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_Extensions_StringExtensions_IsNull_System_String_" data-uid="BB84.Extensions.StringExtensions.IsNull(System.String)">
   IsNull(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.IsNull.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Indicates whether the specified string value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or not.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified nullable string has a null value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -628,14 +796,15 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The string value to check.</p>
+    <dd><p>The nullable string to check.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -653,10 +822,10 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_Extensions_StringExtensions_IsNullOrEmpty_System_String_" data-uid="BB84.Extensions.StringExtensions.IsNullOrEmpty(System.String)">
   IsNullOrEmpty(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.IsNull.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L237"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Indicates whether the specified string value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string.empty">Empty</a>.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified nullable string has a null value or is empty.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -667,14 +836,15 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The string value to test.</p>
+    <dd><p>The nullable string to check.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if the value parameter is null or an empty string, otherwise false.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -692,10 +862,10 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="BB84_Extensions_StringExtensions_IsNullOrWhiteSpace_System_String_" data-uid="BB84.Extensions.StringExtensions.IsNullOrWhiteSpace(System.String)">
   IsNullOrWhiteSpace(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.IsNull.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Indicates whether a specified string is null, empty, or consists only of white-space characters.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified string is null, empty or consists only of white-space characters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -706,15 +876,15 @@ Class StringExtensions  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The string value to test.</p>
+    <dd><p>The nullable string to check.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if the value parameter is null or an empty string or if value consists
-exclusively of white-space characters, otherwise false.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string is null, empty or consists only of white-space characters;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -732,10 +902,10 @@ exclusively of white-space characters, otherwise false.</p>
 
   <h3 id="BB84_Extensions_StringExtensions_RemoveLinebreak_System_String_" data-uid="BB84.Extensions.StringExtensions.RemoveLinebreak(System.String)">
   RemoveLinebreak(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.RemoveLinebreak.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L282"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Removes unwanted linebreaks within the provided string value.</p>
+  <div class="markdown level1 summary"><p>Removes all linebreaks from the specified string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -746,14 +916,14 @@ exclusively of white-space characters, otherwise false.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The input string value to modify.</p>
+    <dd><p>The input string from which linebreaks will be removed.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> instance so that multiple calls can be chained.</p>
+    <dd><p>A new string with all linebreaks removed. If the input string is empty, an empty string is returned.</p>
 </dd>
   </dl>
 
@@ -771,28 +941,28 @@ exclusively of white-space characters, otherwise false.</p>
 
   <h3 id="BB84_Extensions_StringExtensions_RemoveWhitespace_System_String_" data-uid="BB84.Extensions.StringExtensions.RemoveWhitespace(System.String)">
   RemoveWhitespace(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.RemoveWhitespace.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L293"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Removes unwanted whitespace within the provided string value.</p>
+  <div class="markdown level1 summary"><p>Removes all whitespaces from the specified string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RemoveWhitespace(this string stringValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string RemoveWhitespace(this string value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>stringValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The input string value to modify.</p>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string from which whitespaces will be removed.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> instance so that multiple calls can be chained.</p>
+    <dd><p>A new string with all whitespaces removed. If the input string is empty, an empty string is returned.</p>
 </dd>
   </dl>
 
@@ -810,31 +980,32 @@ exclusively of white-space characters, otherwise false.</p>
 
   <h3 id="BB84_Extensions_StringExtensions_ToBase64_System_String_System_Text_Encoding_" data-uid="BB84.Extensions.StringExtensions.ToBase64(System.String,System.Text.Encoding)">
   ToBase64(string, Encoding)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.ToBase64.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Encodes the provided string to a base64 string.</p>
+  <div class="markdown level1 summary"><p>Converts the specified string to its Base64-encoded representation using the specified encoding.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ToBase64(this string stringValue, Encoding encoding)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string ToBase64(this string value, Encoding encoding)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>stringValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The input string to work with.</p>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to encode.</p>
 </dd>
     <dt><code>encoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
-    <dd><p>The encoding to use.</p>
+    <dd><p>The character encoding to use for converting the string to bytes.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The encoded string.</p>
+    <dd><p>A Base64-encoded string representation of the input string, or an empty string if <code class="paramref">value</code>
+is null or whitespace.</p>
 </dd>
   </dl>
 
@@ -844,6 +1015,9 @@ exclusively of white-space characters, otherwise false.</p>
 
 
 
+  <h4 class="section" id="BB84_Extensions_StringExtensions_ToBase64_System_String_System_Text_Encoding__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If the <code class="paramref">value</code> is null or consists only of whitespace, an empty string is returned.</p>
+</div>
 
 
 
@@ -852,7 +1026,7 @@ exclusively of white-space characters, otherwise false.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.ToBase64.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L23" class="edit-link">Edit this page</a>
         </div>
 
 

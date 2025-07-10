@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class JsonExtensions ">
       
-      <meta name="description" content="The json extensions class.">
+      <meta name="description" content="Provides extension methods for serializing and deserializing objects to and from JSON.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_Serialization_JsonExtensions" data-uid="BB84.Extensions.Serialization.JsonExtensions" class="text-break">
-Class JsonExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/Serialization/JsonExtensions.cs/#L15"><i class="bi bi-code-slash"></i></a>
+Class JsonExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/Serialization/JsonExtensions.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Class JsonExtensions  <a class="header-action link-secondary" title="View source
   <dl><dt>Assembly</dt><dd>BB84.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The json extensions class.</p>
+  <div class="markdown summary"><p>Provides extension methods for serializing and deserializing objects to and from JSON.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -143,6 +143,11 @@ Class JsonExtensions  <a class="header-action link-secondary" title="View source
 
 
 
+  <h2 id="BB84_Extensions_Serialization_JsonExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class includes methods for converting objects to JSON strings and creating objects
+from JSON strings. It uses default JSON serialization options, such as camel-cased property
+names and ignoring null values, unless custom options are provided.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -153,38 +158,39 @@ Class JsonExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="BB84_Extensions_Serialization_JsonExtensions_FromJson__1_System_String_System_Text_Json_JsonSerializerOptions_" data-uid="BB84.Extensions.Serialization.JsonExtensions.FromJson``1(System.String,System.Text.Json.JsonSerializerOptions)">
   FromJson&lt;T&gt;(string, JsonSerializerOptions?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/Serialization/JsonExtensions.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/Serialization/JsonExtensions.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates an object instance from the specified JSON string.</p>
+  <div class="markdown level1 summary"><p>Deserializes the specified JSON string into an object of type <code class="typeparamref">T</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T FromJson&lt;T&gt;(this string jsonValue, JsonSerializerOptions? options = null) where T : class</code></pre>
+    <pre><code class="lang-csharp hljs">public static T FromJson&lt;T&gt;(this string value, JsonSerializerOptions? options = null) where T : class</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>jsonValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The JSON string to deserialize.</p>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The JSON string to deserialize. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.</p>
 </dd>
     <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
-    <dd><p>The json serializer options to use.</p>
+    <dd><p>Optional <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a> to customize the deserialization process.
+If not provided, default options are used.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd><p>An object instance.</p>
+    <dd><p>An object of type <code class="typeparamref">T</code> deserialized from the JSON string.</p>
 </dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The Type of the object we are operating on.</p>
+    <dd><p>The type of the object to deserialize. Must be a reference type.</p>
 </dd>
   </dl>
 
@@ -201,10 +207,10 @@ Class JsonExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="BB84_Extensions_Serialization_JsonExtensions_ToJson__1___0_System_Text_Json_JsonSerializerOptions_" data-uid="BB84.Extensions.Serialization.JsonExtensions.ToJson``1(``0,System.Text.Json.JsonSerializerOptions)">
   ToJson&lt;T&gt;(T, JsonSerializerOptions?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/Serialization/JsonExtensions.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/Serialization/JsonExtensions.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Converts an object to its serialized JSON format.</p>
+  <div class="markdown level1 summary"><p>Converts the specified object of type <code class="typeparamref">T</code> to its JSON string representation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -215,24 +221,25 @@ Class JsonExtensions  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <span class="xref">T</span></dt>
-    <dd><p>The object we are operating on.</p>
+    <dd><p>The object to serialize.</p>
 </dd>
     <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
-    <dd><p>The json serializer options to use.</p>
+    <dd><p>Optional <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a> to customize the deserialization process.
+If not provided, default options are used.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The JSON string representation of the object <code class="typeparamref">T</code>.</p>
+    <dd><p>A JSON string representation of the specified object.</p>
 </dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The type of object we are operating on.</p>
+    <dd><p>The type of the object to serialize. Must be a reference type.</p>
 </dd>
   </dl>
 
@@ -249,7 +256,7 @@ Class JsonExtensions  <a class="header-action link-secondary" title="View source
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/Serialization/JsonExtensions.cs/#L15" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/Serialization/JsonExtensions.cs/#L20" class="edit-link">Edit this page</a>
         </div>
 
 

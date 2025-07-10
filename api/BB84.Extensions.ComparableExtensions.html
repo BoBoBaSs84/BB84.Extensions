@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ComparableExtensions ">
       
-      <meta name="description" content="The comparable extensions class.">
+      <meta name="description" content="Provides extension methods for comparing values that implement the  interface.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_ComparableExtensions" data-uid="BB84.Extensions.ComparableExtensions" class="text-break">
-Class ComparableExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ComparableExtensions.IsLessThan.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class ComparableExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ComparableExtensions.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Class ComparableExtensions  <a class="header-action link-secondary" title="View 
   <dl><dt>Assembly</dt><dd>BB84.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The comparable extensions class.</p>
+  <div class="markdown summary"><p>Provides extension methods for comparing values that implement the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a> interface.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -143,6 +143,11 @@ Class ComparableExtensions  <a class="header-action link-secondary" title="View 
 
 
 
+  <h2 id="BB84_Extensions_ComparableExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class includes methods for performing common comparison operations, such as checking if a value
+is greater than, less than, or equal to another value. These methods are implemented as extension
+methods to enhance readability and simplify comparison logic in code.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -153,10 +158,10 @@ Class ComparableExtensions  <a class="header-action link-secondary" title="View 
 
   <h3 id="BB84_Extensions_ComparableExtensions_IsGreaterOrEqualThan__1___0___0_" data-uid="BB84.Extensions.ComparableExtensions.IsGreaterOrEqualThan``1(``0,``0)">
   IsGreaterOrEqualThan&lt;T&gt;(T, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ComparableExtensions.IsGreaterOrEqualThan.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ComparableExtensions.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Check if a value is greater or equal than another value.</p>
+  <div class="markdown level1 summary"><p>Determines whether the current value is greater than or equal to the specified comparative value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -170,21 +175,22 @@ Class ComparableExtensions  <a class="header-action link-secondary" title="View 
     <dd><p>The value to compare.</p>
 </dd>
     <dt><code>comparativeValue</code> <span class="xref">T</span></dt>
-    <dd><p>The value to compare with.</p>
+    <dd><p>The value to compare against.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if the value is greater or equal than the othe value, otherwise false.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">value</code> is greater than or equal to <code class="paramref">comparativeValue</code>;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The type that implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a>.</p>
+    <dd><p>The type of the values being compared.</p>
 </dd>
   </dl>
 
@@ -193,6 +199,9 @@ Class ComparableExtensions  <a class="header-action link-secondary" title="View 
 
 
 
+  <h4 class="section" id="BB84_Extensions_ComparableExtensions_IsGreaterOrEqualThan__1___0___0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method uses the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable.compareto">CompareTo(object)</a> method to perform the comparison.</p>
+</div>
 
 
 
@@ -201,10 +210,10 @@ Class ComparableExtensions  <a class="header-action link-secondary" title="View 
 
   <h3 id="BB84_Extensions_ComparableExtensions_IsGreaterThan__1___0___0_" data-uid="BB84.Extensions.ComparableExtensions.IsGreaterThan``1(``0,``0)">
   IsGreaterThan&lt;T&gt;(T, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ComparableExtensions.IsGreaterThan.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ComparableExtensions.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Check if a value is greater than another value.</p>
+  <div class="markdown level1 summary"><p>Determines whether the current value is greater than the specified comparative value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -218,21 +227,22 @@ Class ComparableExtensions  <a class="header-action link-secondary" title="View 
     <dd><p>The value to compare.</p>
 </dd>
     <dt><code>comparativeValue</code> <span class="xref">T</span></dt>
-    <dd><p>The value to compare with.</p>
+    <dd><p>The value to compare against.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if the value is greater than the othe value, otherwise false.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">value</code> is greater than the <code class="paramref">comparativeValue</code>;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The type that implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a>.</p>
+    <dd><p>The type of the values being compared.</p>
 </dd>
   </dl>
 
@@ -241,6 +251,9 @@ Class ComparableExtensions  <a class="header-action link-secondary" title="View 
 
 
 
+  <h4 class="section" id="BB84_Extensions_ComparableExtensions_IsGreaterThan__1___0___0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method uses the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable.compareto">CompareTo(object)</a> method to perform the comparison.</p>
+</div>
 
 
 
@@ -249,10 +262,10 @@ Class ComparableExtensions  <a class="header-action link-secondary" title="View 
 
   <h3 id="BB84_Extensions_ComparableExtensions_IsLessOrEqualThan__1___0___0_" data-uid="BB84.Extensions.ComparableExtensions.IsLessOrEqualThan``1(``0,``0)">
   IsLessOrEqualThan&lt;T&gt;(T, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ComparableExtensions.IsLessOrEqualThan.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ComparableExtensions.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Check if a value is less or equal than another value.</p>
+  <div class="markdown level1 summary"><p>Determines whether the current value is less than or equal to the specified comparative value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -266,21 +279,22 @@ Class ComparableExtensions  <a class="header-action link-secondary" title="View 
     <dd><p>The value to compare.</p>
 </dd>
     <dt><code>comparativeValue</code> <span class="xref">T</span></dt>
-    <dd><p>The value to compare with.</p>
+    <dd><p>The value to compare against.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if the value is less or equal than the othe value, otherwise false.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">value</code> is less than or equal to <code class="paramref">comparativeValue</code>;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The type that implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a>.</p>
+    <dd><p>The type of the values being compared.</p>
 </dd>
   </dl>
 
@@ -289,6 +303,9 @@ Class ComparableExtensions  <a class="header-action link-secondary" title="View 
 
 
 
+  <h4 class="section" id="BB84_Extensions_ComparableExtensions_IsLessOrEqualThan__1___0___0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method uses the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable.compareto">CompareTo(object)</a> method to perform the comparison.</p>
+</div>
 
 
 
@@ -297,10 +314,10 @@ Class ComparableExtensions  <a class="header-action link-secondary" title="View 
 
   <h3 id="BB84_Extensions_ComparableExtensions_IsLessThan__1___0___0_" data-uid="BB84.Extensions.ComparableExtensions.IsLessThan``1(``0,``0)">
   IsLessThan&lt;T&gt;(T, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ComparableExtensions.IsLessThan.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ComparableExtensions.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Check if a value is less than another value.</p>
+  <div class="markdown level1 summary"><p>Determines whether the current value is less than the specified comparative value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -314,21 +331,22 @@ Class ComparableExtensions  <a class="header-action link-secondary" title="View 
     <dd><p>The value to compare.</p>
 </dd>
     <dt><code>comparativeValue</code> <span class="xref">T</span></dt>
-    <dd><p>The value to compare with.</p>
+    <dd><p>The value to compare against.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if the value is lesser than the othe value, otherwise false.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">value</code> is less than the <code class="paramref">comparativeValue</code>;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The type that implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a>.</p>
+    <dd><p>The type of the values being compared.</p>
 </dd>
   </dl>
 
@@ -337,6 +355,9 @@ Class ComparableExtensions  <a class="header-action link-secondary" title="View 
 
 
 
+  <h4 class="section" id="BB84_Extensions_ComparableExtensions_IsLessThan__1___0___0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method uses the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable.compareto">CompareTo(object)</a> method to perform the comparison.</p>
+</div>
 
 
 
@@ -345,7 +366,7 @@ Class ComparableExtensions  <a class="header-action link-secondary" title="View 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ComparableExtensions.IsLessThan.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ComparableExtensions.cs/#L16" class="edit-link">Edit this page</a>
         </div>
 
 

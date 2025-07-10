@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class BooleanExtensions ">
       
-      <meta name="description" content="The boolean extensions class.">
+      <meta name="description" content="Provides extension methods for working with  and nullable  values.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_BooleanExtensions" data-uid="BB84.Extensions.BooleanExtensions" class="text-break">
-Class BooleanExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/BooleanExtensions.IsTrue.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class BooleanExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/BooleanExtensions.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Class BooleanExtensions  <a class="header-action link-secondary" title="View sou
   <dl><dt>Assembly</dt><dd>BB84.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The boolean extensions class.</p>
+  <div class="markdown summary"><p>Provides extension methods for working with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> and nullable <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> values.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -143,6 +143,12 @@ Class BooleanExtensions  <a class="header-action link-secondary" title="View sou
 
 
 
+  <h2 id="BB84_Extensions_BooleanExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class includes utility methods to simplify common operations on <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> and nullable
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> values,  such as checking for <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> or
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> states. These methods are designed to improve code readability and reduce
+boilerplate logic when working with Boolean values.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -153,10 +159,10 @@ Class BooleanExtensions  <a class="header-action link-secondary" title="View sou
 
   <h3 id="BB84_Extensions_BooleanExtensions_IsFalse_System_Boolean_" data-uid="BB84.Extensions.BooleanExtensions.IsFalse(System.Boolean)">
   IsFalse(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/BooleanExtensions.IsFalse.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/BooleanExtensions.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Indicates whether the specified Boolean <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified boolean value is false.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -167,14 +173,15 @@ Class BooleanExtensions  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> value to work with.</p>
+    <dd><p>The boolean value to evaluate.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is false, otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a></p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -192,10 +199,10 @@ Class BooleanExtensions  <a class="header-action link-secondary" title="View sou
 
   <h3 id="BB84_Extensions_BooleanExtensions_IsFalse_System_Nullable_System_Boolean__" data-uid="BB84.Extensions.BooleanExtensions.IsFalse(System.Nullable{System.Boolean})">
   IsFalse(bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/BooleanExtensions.IsFalse.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/BooleanExtensions.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Indicates whether the specified nullable Boolean <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified nullable boolean value is false.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -206,14 +213,55 @@ Class BooleanExtensions  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd><p>The nullable <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> value to work with.</p>
+    <dd><p>The nullable boolean value to evaluate.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is false, otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a></p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is not <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> and
+equals <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Extensions_BooleanExtensions_IsNotNull_" data-uid="BB84.Extensions.BooleanExtensions.IsNotNull*"></a>
+
+  <h3 id="BB84_Extensions_BooleanExtensions_IsNotNull_System_Nullable_System_Boolean__" data-uid="BB84.Extensions.BooleanExtensions.IsNotNull(System.Nullable{System.Boolean})">
+  IsNotNull(bool?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/BooleanExtensions.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified nullable boolean has a non-null value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNotNull(this bool? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p>The nullable boolean to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is not <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -231,10 +279,10 @@ Class BooleanExtensions  <a class="header-action link-secondary" title="View sou
 
   <h3 id="BB84_Extensions_BooleanExtensions_IsNull_System_Nullable_System_Boolean__" data-uid="BB84.Extensions.BooleanExtensions.IsNull(System.Nullable{System.Boolean})">
   IsNull(bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/BooleanExtensions.IsNull.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/BooleanExtensions.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Indicates whether the specified boolean value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or not.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified nullable boolean has a null value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -245,14 +293,15 @@ Class BooleanExtensions  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd><p>The boolean value to test.</p>
+    <dd><p>The nullable boolean to check.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -270,10 +319,10 @@ Class BooleanExtensions  <a class="header-action link-secondary" title="View sou
 
   <h3 id="BB84_Extensions_BooleanExtensions_IsTrue_System_Boolean_" data-uid="BB84.Extensions.BooleanExtensions.IsTrue(System.Boolean)">
   IsTrue(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/BooleanExtensions.IsTrue.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/BooleanExtensions.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Indicates whether the specified Boolean <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified boolean value is true.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -284,14 +333,15 @@ Class BooleanExtensions  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> value to work with.</p>
+    <dd><p>The <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">bool</a> value to evaluate.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is true, otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a></p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -309,10 +359,10 @@ Class BooleanExtensions  <a class="header-action link-secondary" title="View sou
 
   <h3 id="BB84_Extensions_BooleanExtensions_IsTrue_System_Nullable_System_Boolean__" data-uid="BB84.Extensions.BooleanExtensions.IsTrue(System.Nullable{System.Boolean})">
   IsTrue(bool?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/BooleanExtensions.IsTrue.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/BooleanExtensions.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Indicates whether the specified nullable Boolean <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified nullable boolean value is true.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -323,14 +373,15 @@ Class BooleanExtensions  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd><p>The nullable <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> value to work with.</p>
+    <dd><p>The nullable boolean to evaluate.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is true, otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a></p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">value</code> is not <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> and
+equals <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -348,7 +399,7 @@ Class BooleanExtensions  <a class="header-action link-secondary" title="View sou
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/BooleanExtensions.IsTrue.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/BooleanExtensions.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 
