@@ -6,9 +6,15 @@
 namespace BB84.Extensions;
 
 /// <summary>
-/// Provides extension methods for working with <see cref="Task"/> objects, enabling synchronous and asynchronous
-/// execution with optional completion and exception handling actions.
+/// Provides extension methods for working with <see cref="Task"/> and <see cref="Task{TResult}"/>
+/// objects, enabling additional functionality such as converting tasks to synchronous or asynchronous
+/// void methods, handling exceptions, and retrieving results safely.
 /// </summary>
+/// <remarks>
+/// These methods are designed to simplify task handling in scenarios where synchronous or void-returning
+/// behavior is required. Use caution when blocking threads or converting tasks to void, as this can lead
+/// to potential deadlocks or performance issues in certain environments, such as UI applications.
+/// </remarks>
 public static class TaskExtensions
 {
 	/// <summary>

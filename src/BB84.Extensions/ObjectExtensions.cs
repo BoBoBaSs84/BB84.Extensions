@@ -8,19 +8,23 @@ using System.Globalization;
 namespace BB84.Extensions;
 
 /// <summary>
-/// The object extensions class.
+/// Provides a set of extension methods for performing common operations on objects,
+/// such as null checks and type conversions using invariant culture formatting.
 /// </summary>
+/// <remarks>
+/// The <see cref="ObjectExtensions"/> class includes utility methods that simplify
+/// working with objects in .NET. These methods are particularly useful for scenarios
+/// where null checks or culture-invariant type conversions are required.
+/// </remarks>
 public static class ObjectExtensions
 {
 	/// <summary>
-	/// Determines whether the specified object is <see langword="null"/>.
+	/// Determines whether the specified nullable object has a null value.
 	/// </summary>
-	/// <remarks>
-	/// This method provides a concise way to check for <see langword="null"/> values.
-	/// </remarks>
-	/// <param name="value">The object to check for <see langword="null"/>.</param>
+	/// <param name="value">The nullable object to check.</param>
 	/// <returns>
-	/// <see langword="true"/> if <paramref name="value"/> is <see langword="null"/>; otherwise, <see langword="false"/>.
+	/// <see langword="true"/> if the <paramref name="value"/> is <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this object? value)
 		=> value is null;

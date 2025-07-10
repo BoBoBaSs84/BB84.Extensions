@@ -12,8 +12,14 @@ using System.Text.RegularExpressions;
 namespace BB84.Extensions;
 
 /// <summary>
-/// The byte extensions class.
+/// Provides a set of extension methods for working with <see cref="byte"/> arrays, including
+/// compression, decompression, encoding,hashing, and utility methods.
 /// </summary>
+/// <remarks>
+/// This class includes methods for common operations on byte arrays, such as converting to and
+/// from Base64, generating MD5 hashes, and encoding/decoding strings. It also provides utility
+/// methods for checking nullability and obtaining hexadecimal representations of byte arrays.
+/// </remarks>
 public static partial class ByteExtensions
 {
 #if NET7_0_OR_GREATER
@@ -26,11 +32,18 @@ public static partial class ByteExtensions
 #endif
 
 	/// <summary>
-	/// Compresses the provided byte array and returns the compressed byte array.
+	/// Compresses the specified byte array using the Deflate algorithm.
 	/// </summary>
+	/// <remarks>
+	/// This method uses the <see cref="DeflateStream"/> class to perform compression. The caller is
+	/// responsible for ensuring that the input data is suitable for compression and for handling the
+	/// compressed output appropriately.
+	/// </remarks>
 	/// <param name="inputBuffer">The byte array to compress.</param>
-	/// <param name="compressionLevel">The compression level to use.</param>
-	/// <returns>The compressed byte array.</returns>
+	/// <param name="compressionLevel">The level of compression to apply.</param>
+	/// <returns>
+	/// A byte array containing the compressed data. The returned array will be empty if the input array is empty.
+	/// </returns>
 	public static byte[] Compress(this byte[] inputBuffer, CompressionLevel compressionLevel = CompressionLevel.Optimal)
 	{
 		byte[] outputBuffer;
@@ -47,10 +60,17 @@ public static partial class ByteExtensions
 	}
 
 	/// <summary>
-	/// Decompresses the provided byte array and returns the decompressed byte array.
+	/// Decompresses the specified byte array using the Deflate compression algorithm.
 	/// </summary>
-	/// <param name="inputBuffer">The byte array to decompress.</param>
-	/// <returns>The decompressed byte array.</returns>
+	/// <remarks>
+	/// This method uses the <see cref="DeflateStream"/> class to perform
+	/// decompression. Ensure that the input data is properly compressed using the Deflate algorithm
+	/// before calling this method.
+	/// </remarks>
+	/// <param name="inputBuffer">The compressed byte array to decompress.</param>
+	/// <returns>
+	/// A byte array containing the decompressed data. Returns an empty array if the input contains no data.
+	/// </returns>
 	public static byte[] Decompress(this byte[] inputBuffer)
 	{
 		byte[] outputBuffer;
@@ -67,12 +87,20 @@ public static partial class ByteExtensions
 	}
 
 	/// <summary>
-	/// Converts the specified <paramref name="value"/>, which encodes binary data as base-64 digits,
-	/// to an equivalent 8-bit unsigned integer array.
+	/// Converts the specified Base64-encoded string to its equivalent byte array representation.
 	/// </summary>
-	/// <param name="value">The string to convert.</param>
-	/// <returns>An array of 8-bit unsigned integers that is equivalent to <paramref name="value"/>.</returns>
-	/// <exception cref="ArgumentException"></exception>
+	/// <remarks>
+	/// The input string is trimmed of any leading or trailing whitespace before validation and decoding.
+	/// Ensure that the input string is a valid Base64-encoded string to avoid exceptions.
+	/// </remarks>
+	/// <param name="value">The Base64-encoded string to convert.</param>
+	/// <returns>
+	/// A byte array containing the decoded data from the Base64 string. Returns an empty array if the
+	/// input string is null or empty.
+	/// </returns>
+	/// <exception cref="ArgumentException">
+	/// Thrown if <paramref name="value"/> is not a valid Base64-encoded string.
+	/// </exception>
 	public static byte[] FromBase64(this string value)
 	{
 		if (value.IsNullOrEmpty())
@@ -90,10 +118,17 @@ public static partial class ByteExtensions
 	}
 
 	/// <summary>
-	/// Gets the hex string of a byte array
+	/// Converts the specified byte array to its hexadecimal string representation.
 	/// </summary>
-	/// <param name="inputBuffer">The byte array to work with.</param>
-	/// <returns>The hexed string</returns>
+	/// <remarks>
+	/// This method processes each byte in the array and converts it to a two-character hexadecimal
+	/// string using uppercase letters. The resulting string concatenates these representations in order.
+	/// </remarks>
+	/// <param name="inputBuffer">The byte array to convert.</param>
+	/// <returns>
+	/// A string containing the hexadecimal representation of the byte array, with each byte represented
+	/// as two uppercase hexadecimal characters.
+	/// </returns>
 	public static string GetHexString(this byte[] inputBuffer)
 	{
 		StringBuilder sb = new();
@@ -103,10 +138,14 @@ public static partial class ByteExtensions
 	}
 
 	/// <summary>
-	/// Returns the MD5 hash as byte array for a given byte array.
+	/// Computes the MD5 hash value for the specified byte array.
 	/// </summary>
-	/// <param name="value">The input byte array to work with.</param>
-	/// <returns>The MD5 hash as byte array.</returns>
+	/// <remarks>
+	/// This method is not intended for cryptographic purposes. MD5 is considered insecure for
+	/// cryptographic use cases.
+	/// </remarks>
+	/// <param name="value">The input byte array for which the MD5 hash is to be computed.</param>
+	/// <returns>A byte array containing the computed MD5 hash value.</returns>
 	[SuppressMessage("Security", "CA5351", Justification = "Not used for cryptographic algorithms.")]
 	public static byte[] GetMD5(this byte[] value)
 	{
@@ -118,22 +157,28 @@ public static partial class ByteExtensions
 	}
 
 	/// <summary>
-	/// Returns the MD5 hash as string for a given byte array.
+	/// Computes the MD5 hash of the specified byte array and returns it as a hexadecimal string.
 	/// </summary>
-	/// <param name="value">The input byte array to work with.</param>
-	/// <returns>The MD5 hash as string.</returns>
+	/// <remarks>
+	/// The returned string is in lowercase and contains no separators.
+	/// </remarks>
+	/// <param name="value">The byte array to compute the MD5 hash for.</param>
+	/// <returns>
+	/// A string representing the MD5 hash of the input byte array in hexadecimal format.
+	/// </returns>
 	public static string GetMD5String(this byte[] value)
 		=> value.GetMD5().GetHexString();
 
 	/// <summary>
-	/// Returns all the bytes in the specified byte array decoded into a string.
+	/// Converts the specified byte array to a string using the provided encoding.
 	/// </summary>
-	/// <remarks>
-	/// If <paramref name="encoding"/> is not provided, <see cref="Encoding.UTF8"/> is used.
-	/// </remarks>
-	/// <param name="inputBuffer">The byte array containing the sequence of bytes to decode.</param>
-	/// <param name="encoding">The character encoding to use.</param>
-	/// <returns>A string that contains the results of decoding the specified sequence of bytes.</returns>
+	/// <param name="inputBuffer">The byte array to convert to a string.</param>
+	/// <param name="encoding">
+	/// The character encoding to use for the conversion. If null, <see cref="Encoding.UTF8"/> is used by default.
+	/// </param>
+	/// <returns>
+	/// A string representation of the byte array, decoded using the specified or default encoding.
+	/// </returns>
 	public static string GetString(this byte[] inputBuffer, Encoding? encoding = null)
 	{
 		encoding ??= Encoding.UTF8;
@@ -141,21 +186,24 @@ public static partial class ByteExtensions
 	}
 
 	/// <summary>
-	/// Indicates whether the specified byte array is null.
+	/// Determines whether the specified byte array is null.
 	/// </summary>
-	/// <param name="value">The byte array value to test.</param>
+	/// <param name="value">The byte array to check.</param>
 	/// <returns>
-	/// <see langword="true"/> if <paramref name="value"/> is <see langword="null"/>; otherwise, <see langword="false"/>.
+	/// <see langword="true"/> if the specified byte array is <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this byte[]? value)
 		=> value is null;
 
 	/// <summary>
-	/// Converts an array of 8-bit unsigned integers to its equivalent string representation
-	/// that is encoded with base-64 digits.
+	/// Converts the specified byte array to its equivalent Base64 string representation.
 	/// </summary>
-	/// <param name="byteArray">An array of 8-bit unsigned integers.</param>
-	/// <returns>The string representation, in base 64, of the contents of <paramref name="byteArray"/>.</returns>
+	/// <param name="byteArray">The byte array to convert to a Base64 string.</param>
+	/// <returns>
+	/// A Base64-encoded string representation of the byte array.
+	/// Returns an empty string if the byte array is empty.
+	/// </returns>
 	public static string ToBase64(this byte[] byteArray)
 		=> byteArray.Length.Equals(0) ? string.Empty : Convert.ToBase64String(byteArray);
 }

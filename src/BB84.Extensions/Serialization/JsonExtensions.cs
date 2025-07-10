@@ -10,8 +10,13 @@ using System.Text.Json.Serialization;
 namespace BB84.Extensions.Serialization;
 
 /// <summary>
-/// The json extensions class.
+/// Provides extension methods for serializing and deserializing objects to and from JSON.
 /// </summary>
+/// <remarks>
+/// This class includes methods for converting objects to JSON strings and creating objects
+/// from JSON strings. It uses default JSON serialization options, such as camel-cased property
+/// names and ignoring null values, unless custom options are provided.
+/// </remarks>
 public static class JsonExtensions
 {
 	/// <summary>
@@ -24,32 +29,35 @@ public static class JsonExtensions
 	};
 
 	/// <summary>
-	/// Creates an object instance from the specified JSON string.
+	/// Deserializes the specified JSON string into an object of type <typeparamref name="T"/>.
 	/// </summary>
-	/// <typeparam name="T">The Type of the object we are operating on.</typeparam>
-	/// <param name="jsonValue">The JSON string to deserialize.</param>
-	/// <param name="options">The json serializer options to use.</param>
-	/// <returns>An object instance.</returns>
-	public static T FromJson<T>(this string jsonValue, JsonSerializerOptions? options = null) where T : class
+	/// <typeparam name="T">The type of the object to deserialize. Must be a reference type.</typeparam>
+	/// <param name="value">The JSON string to deserialize. Cannot be <see langword="null"/> or empty.</param>
+	/// <param name="options">
+	/// Optional <see cref="JsonSerializerOptions"/> to customize the deserialization process.
+	/// If not provided, default options are used.
+	/// </param>
+	/// <returns>An object of type <typeparamref name="T"/> deserialized from the JSON string.</returns>
+	public static T FromJson<T>(this string value, JsonSerializerOptions? options = null) where T : class
 	{
 		options ??= SerializerOptions;
-
-		T obj = JsonSerializer.Deserialize<T>(jsonValue, options)!;
+		T obj = JsonSerializer.Deserialize<T>(value, options)!;
 		return (T)Convert.ChangeType(obj, typeof(T), CultureInfo.InvariantCulture);
 	}
 
-
 	/// <summary>
-	/// Converts an object to its serialized JSON format.
+	/// Converts the specified object of type <typeparamref name="T"/> to its JSON string representation.
 	/// </summary>
-	/// <typeparam name="T">The type of object we are operating on.</typeparam>
-	/// <param name="value">The object we are operating on.</param>
-	/// <param name="options">The json serializer options to use.</param>
-	/// <returns>The JSON string representation of the object <typeparamref name="T"/>.</returns>
+	/// <typeparam name="T">The type of the object to serialize. Must be a reference type.</typeparam>
+	/// <param name="value">The object to serialize.</param>
+	/// <param name="options">
+	/// Optional <see cref="JsonSerializerOptions"/> to customize the deserialization process.
+	/// If not provided, default options are used.
+	/// </param>
+	/// <returns>A JSON string representation of the specified object.</returns>
 	public static string ToJson<T>(this T value, JsonSerializerOptions? options = null) where T : class
 	{
 		options ??= SerializerOptions;
-
 		return JsonSerializer.Serialize(value, options);
 	}
 }

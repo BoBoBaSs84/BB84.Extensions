@@ -6,16 +6,26 @@
 namespace BB84.Extensions;
 
 /// <summary>
-/// The <see cref="Stream"/> extensions class.
+/// Provides extension methods for working with <see cref="Stream"/> objects.
 /// </summary>
+/// <remarks>
+/// This class contains utility methods that extend the functionality of the <see cref="Stream"/>
+/// class, enabling common operations such as converting a stream to a byte array.
+/// </remarks>
 public static class StreamExtensions
 {
 	/// <summary>
-	/// The method will keep reading (and copying into a <see cref="MemoryStream"/>)
-	/// until it runs out of data.
+	/// Converts the contents of the specified <see cref="Stream"/> to a byte array.
 	/// </summary>
-	/// <param name="inputStream">The stream to work with.</param>
-	/// <returns>The <see cref="Stream"/> as <see cref="byte"/> array.</returns>
+	/// <remarks>
+	/// The method reads the entire content of the <paramref name="inputStream"/> and returns
+	/// it as a byte array. The position of the <paramref name="inputStream"/> is advanced as
+	/// the data is read.
+	/// </remarks>
+	/// <param name="inputStream">The input <see cref="Stream"/> to read from.</param>
+	/// <returns>
+	/// A byte array containing the data read from the <paramref name="inputStream"/>.
+	/// </returns>
 	public static byte[] ToByteArray(this Stream inputStream)
 	{
 		byte[] buffer = new byte[16 * 1024];

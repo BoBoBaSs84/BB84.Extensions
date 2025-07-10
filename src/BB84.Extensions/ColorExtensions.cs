@@ -8,16 +8,32 @@ using System.Drawing;
 namespace BB84.Extensions;
 
 /// <summary>
-/// The color extensions class.
+/// Provides extension methods for converting between <see cref="Color"/> objects and various representations,
+/// including byte arrays and hexadecimal strings, for both ARGB and RGB formats.
 /// </summary>
+/// <remarks>
+/// This class includes methods to create <see cref="Color"/> objects from ARGB or RGB byte arrays and
+/// hex strings, as well as methods to convert <see cref="Color"/> objects back into these formats. It
+/// supports both 32-bit ARGB and 24-bit RGB representations. The methods handle endianness where applicable
+/// and validate input to ensure correct usage.
+/// </remarks>
 public static class ColorExtensions
 {
 	/// <summary>
-	/// Converts to provided four byte <paramref name="value"/> into 32-bit color.
+	/// Creates a <see cref="Color"/> instance from a byte array containing ARGB color components.
 	/// </summary>
-	/// <param name="value">The four byte array to convert.</param>
-	/// <returns>The 32-bit color.</returns>
-	/// <exception cref="ArgumentException"></exception>
+	/// <remarks>
+	/// The byte array must represent the color components in ARGB order, with each component occupying one
+	/// byte. If the system architecture is not little-endian, the byte array is reversed before processing.
+	/// </remarks>
+	/// <param name="value">
+	/// A byte array containing exactly 4 elements, representing the alpha, red, green, and blue components
+	/// of the color in ARGB order.
+	/// </param>
+	/// <returns>A <see cref="Color"/> instance corresponding to the specified ARGB components.</returns>
+	/// <exception cref="ArgumentException">
+	/// Thrown if <paramref name="value"/> does not contain exactly 4 elements.
+	/// </exception>
 	public static Color FromArgbByteArray(this byte[] value)
 	{
 		if (value.Length != 4)
@@ -35,10 +51,23 @@ public static class ColorExtensions
 	}
 
 	/// <summary>
-	/// Returns a <see cref="Color"/> from an ARGB hex representation (i.e. <b>#FF00FF00</b>)
+	/// Converts a hexadecimal ARGB color string to a <see cref="Color"/> object.
 	/// </summary>
-	/// <param name="value">The hex string to convert.</param>
-	/// <returns>The hex string as <see cref="Color"/>.</returns>
+	/// <remarks>
+	/// The input string must be in the format "<c>#AARRGGBB</c>", where:
+	/// <list type="bullet">
+	/// <item><c>AA</c> represents the alpha channel (transparency).</item>
+	/// <item><c>RR</c> represents the red channel.</item>
+	/// <item><c>GG</c> represents the green channel.</item>
+	/// <item><c>BB</c> represents the blue channel.</item>
+	/// </list>
+	/// Example: "#FF112233" represents a fully opaque color with red = 17, green = 34, and blue = 51.
+	/// </remarks>
+	/// <param name="value">A string representing the color in ARGB hexadecimal format.</param>
+	/// <returns>
+	/// A <see cref="Color"/> instance corresponding to the specified ARGB hexadecimal string.
+	/// Returns <see cref="Color.Empty"/> if the input string does not meet the required format.
+	/// </returns>
 	public static Color FromARGBHexString(this string value)
 	{
 		Color color = Color.Empty;
@@ -57,11 +86,21 @@ public static class ColorExtensions
 	}
 
 	/// <summary>
-	/// Converts to provided three byte <paramref name="value"/> into 24-bit color.
+	/// Creates a <see cref="Color"/> instance from a byte array containing RGB values.
 	/// </summary>
-	/// <param name="value">The three byte array to convert.</param>
-	/// <returns>The 24-bit color.</returns>
-	/// <exception cref="ArgumentException"></exception>
+	/// <remarks>
+	/// The byte array must represent the RGB components in the order: red, green, blue. If the
+	/// system architecture is not little-endian, the array is reversed internally to ensure correct
+	/// color representation.
+	/// </remarks>
+	/// <param name="value">
+	/// A byte array containing exactly three elements representing the red, green, and blue components
+	/// of the color, in that order.
+	/// </param>
+	/// <returns>A <see cref="Color"/> instance corresponding to the specified RGB values.</returns>
+	/// <exception cref="ArgumentException">
+	/// Thrown if <paramref name="value"/> does not contain exactly three elements.
+	/// </exception>
 	public static Color FromRgbByteArray(this byte[] value)
 	{
 		if (value.Length != 3)
@@ -78,10 +117,22 @@ public static class ColorExtensions
 	}
 
 	/// <summary>
-	/// Returns a <see cref="Color"/> from an RGB hex representation (i.e. <b>#00FF00</b> or <b>#FFF</b>)
+	/// Converts a hexadecimal RGB color string to a <see cref="Color"/> object.
 	/// </summary>
-	/// <param name="value">The hex string to convert.</param>
-	/// <returns>The hex string as <see cref="Color"/>.</returns>
+	/// <remarks>
+	/// The input string must be in the format "<c>#RRGGBB</c>", where:
+	/// <list type="bullet">
+	/// <item><c>RR</c> represents the red channel.</item>
+	/// <item><c>GG</c> represents the green channel.</item>
+	/// <item><c>BB</c> represents the blue channel.</item>
+	/// </list>
+	/// Example: "#112233" represents a fully opaque color with red = 17, green = 34, and blue = 51.
+	/// </remarks>
+	/// <param name="value">A string representing the color in RGB hexadecimal format.</param>
+	/// <returns>
+	/// A <see cref="Color"/> instance corresponding to the specified RGB hexadecimal string.
+	/// Returns <see cref="Color.Empty"/> if the input string does not meet the required format.
+	/// </returns>
 	public static Color FromRGBHexString(this string value)
 	{
 		Color color = Color.Empty;
@@ -114,13 +165,17 @@ public static class ColorExtensions
 	}
 
 	/// <summary>
-	/// Converts to provided <paramref name="color"/> into a four byte array.
+	/// Converts the specified color <paramref name="value"/> to a byte array in ARGB format.
 	/// </summary>
-	/// <param name="color">The color to convert.</param>
-	/// <returns>The four byte array.</returns>
-	public static byte[] ToArgbByteArray(this Color color)
+	/// <remarks>
+	/// The resulting byte array contains the blue, green, red, and alpha components of the color in that order.
+	/// If the system is not little-endian, the byte order is reversed to ensure compatibility.
+	/// </remarks>
+	/// <param name="value">The <see cref="Color"/> to convert.</param>
+	/// <returns>A byte array containing the color components in ARGB order.</returns>
+	public static byte[] ToArgbByteArray(this Color value)
 	{
-		byte[] bytes = [color.B, color.G, color.R, color.A];
+		byte[] bytes = [value.B, value.G, value.R, value.A];
 
 		if (!BitConverter.IsLittleEndian)
 			Array.Reverse(bytes);
@@ -129,21 +184,29 @@ public static class ColorExtensions
 	}
 
 	/// <summary>
-	/// Returns the <see cref="Color"/> as ARGB hex representation (i.e. <b>#FF00FF00</b>)
+	/// Converts the specified color <paramref name="value"/> to its ARGB hexadecimal string representation.
 	/// </summary>
-	/// <param name="value">The color to convert.</param>
-	/// <returns>The color as hex string.</returns>
+	/// <param name="value">The <see cref="Color"/> value to convert.</param>
+	/// <returns>
+	/// A string representing the color in ARGB hexadecimal format, prefixed with a '#' character.
+	/// The format is "#AARRGGBB", where AA, RR, GG, and BB are the alpha, red, green, and blue components
+	/// of the color, respectively, in two-digit hexadecimal notation.
+	/// </returns>
 	public static string ToARGBHexString(this Color value)
 		=> $"#{value.A:X2}{value.R:X2}{value.G:X2}{value.B:X2}";
 
 	/// <summary>
-	/// Converts to provided <paramref name="color"/> into a three byte array.
+	/// Converts the specified color <paramref name="value"/> to a byte array in RGB format.
 	/// </summary>
-	/// <param name="color">The color to convert.</param>
-	/// <returns>The three byte array.</returns>
-	public static byte[] ToRgbByteArray(this Color color)
+	/// <remarks>
+	/// The resulting byte array contains the blue, green and red components of the color in that order.
+	/// If the system is not little-endian, the byte order is reversed to ensure compatibility.
+	/// </remarks>
+	/// <param name="value">The <see cref="Color"/> to convert.</param>
+	/// <returns>A byte array containing the color components in RGB order.</returns>
+	public static byte[] ToRgbByteArray(this Color value)
 	{
-		byte[] bytes = [color.B, color.G, color.R];
+		byte[] bytes = [value.B, value.G, value.R];
 
 		if (!BitConverter.IsLittleEndian)
 			Array.Reverse(bytes);
@@ -152,10 +215,14 @@ public static class ColorExtensions
 	}
 
 	/// <summary>
-	/// Returns the <see cref="Color"/> as RGB hex representation (i.e. <b>#00FF00</b>)
+	/// Converts the specified color <paramref name="value"/> to its RGB hexadecimal string representation.
 	/// </summary>
-	/// <param name="value">The color to convert.</param>
-	/// <returns>The color as hex string.</returns>
+	/// <param name="value">The <see cref="Color"/> value to convert.</param>
+	/// <returns>
+	/// A string representing the color in RGB hexadecimal format, prefixed with a '#' character.
+	/// The format is "#RRGGBB", where RR, GG, and BB are the red, green, and blue components
+	/// of the color, respectively, in two-digit hexadecimal notation.
+	/// </returns>
 	public static string ToRGBHexString(this Color value)
 		=> $"#{value.R:X2}{value.G:X2}{value.B:X2}";
 }
