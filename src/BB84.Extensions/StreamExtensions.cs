@@ -8,7 +8,7 @@ namespace BB84.Extensions;
 /// <summary>
 /// The <see cref="Stream"/> extensions class.
 /// </summary>
-public static partial class StreamExtensions
+public static class StreamExtensions
 {
 	/// <summary>
 	/// The method will keep reading (and copying into a <see cref="MemoryStream"/>)

@@ -12,8 +12,15 @@ using BB84.Extensions.Common;
 namespace BB84.Extensions;
 
 /// <summary>
-/// The extension methods for the <see cref="HttpClient"/> class.
+/// Provides extension methods for configuring and enhancing the behavior of <see cref="HttpClient"/>
+/// instances.
 /// </summary>
+/// <remarks>
+/// This class includes methods for setting common HTTP client configurations, such as base addresses,
+/// authentication headers, media types, and timeouts. These methods are designed to simplify and streamline
+/// the setup of <see cref="HttpClient"/> instances by enabling a fluent API style, allowing multiple
+/// configurations to be chained together.
+/// </remarks>
 public static class HttpClientExtensions
 {
 	/// <summary>

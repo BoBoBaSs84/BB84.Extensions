@@ -6,7 +6,23 @@
 namespace BB84.Extensions;
 
 /// <summary>
-/// The decimal extensions class.
+/// Provides extension methods for working with nullable <see cref="decimal"/> values.
 /// </summary>
-public static partial class DecimalExtensions
-{ }
+/// <remarks>
+/// This class includes utility methods to simplify common operations on nullable decimal
+/// values, such as checking for null or non-null states. These methods are designed to
+/// improve code readability and reduce boilerplate when working with nullable decimals.
+/// </remarks>
+public static class DecimalExtensions
+{
+	/// <summary>
+	/// Determines whether the specified nullable decimal has a null value.
+	/// </summary>
+	/// <param name="value">The nullable decimal value to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if the <paramref name="value"/> is <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNull([NotNullWhen(false)] this decimal? value)
+		=> value.HasValue.Equals(false);
+}

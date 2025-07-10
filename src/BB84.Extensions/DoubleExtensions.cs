@@ -6,7 +6,23 @@
 namespace BB84.Extensions;
 
 /// <summary>
-/// The double extensions class.
+/// Provides extension methods for working with nullable <see cref="double"/> values.
 /// </summary>
-public static partial class DoubleExtensions
-{ }
+/// <remarks>
+/// This class includes utility methods to simplify common operations on nullable double
+/// values, such as checking for null or non-null states. These methods are designed to
+/// improve code readability and reduce boilerplate when working with nullable doubles.
+/// </remarks>
+public static class DoubleExtensions
+{
+	/// <summary>
+	/// Determines whether the specified nullable double has a null value.
+	/// </summary>
+	/// <param name="value">The nullable double to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if the <paramref name="value"/> is <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNull([NotNullWhen(false)] this double? value)
+		=> value.HasValue.Equals(false);
+}
