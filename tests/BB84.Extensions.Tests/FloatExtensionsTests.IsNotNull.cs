@@ -5,11 +5,11 @@
 // LICENSE file in the root directory of this source tree.
 namespace BB84.Extensions.Tests;
 
-public sealed partial class DoubleExtensionsTests
+public partial class FloatExtensionsTests
 {
 	[DataTestMethod]
-	[DataRow(1.67d, true)]
+	[DataRow(1.67f, true)]
 	[DataRow(null, false)]
-	public void IsNotNullTest(double? value, bool expected)
-		=> Assert.AreEqual(expected, value.IsNotNull());
+	public void IsNotNullTest(float? value, bool expected)
+	=> Assert.AreEqual(expected, value.IsNotNull());
 }

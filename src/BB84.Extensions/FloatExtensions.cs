@@ -25,4 +25,15 @@ public static class FloatExtensions
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this float? value)
 		=> value.HasValue.Equals(false);
+
+	/// <summary>
+	/// Determines whether the specified nullable float has a value.
+	/// </summary>
+	/// <param name="value">The nullable float to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if the <paramref name="value"/> is not <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotNull([NotNullWhen(true)] this float? value)
+		=> value.HasValue.Equals(true);
 }
