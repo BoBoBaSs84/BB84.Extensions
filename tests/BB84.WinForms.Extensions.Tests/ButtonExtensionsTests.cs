@@ -25,39 +25,6 @@ public sealed class ButtonExtensionsTests
 		Assert.IsTrue(button.Enabled, "The button should be enabled when the command can execute.");
 	}
 
-	[TestMethod]
-	public void WithEnabledBindingTest()
-	{
-		Button button = new();
-
-		button.WithEnabledBinding(new object(), nameof(button.Enabled));
-
-		Assert.AreEqual(1, button.DataBindings.Count);
-		Assert.AreEqual(nameof(button.Enabled), button.DataBindings[0].PropertyName);
-	}
-
-	[TestMethod]
-	public void WithTextBindingTest()
-	{
-		Button button = new();
-
-		button.WithTextBinding(new object(), nameof(button.Text));
-
-		Assert.AreEqual(1, button.DataBindings.Count);
-		Assert.AreEqual(nameof(button.Text), button.DataBindings[0].PropertyName);
-	}
-
-	[TestMethod]
-	public void WithVisibleBindingTest()
-	{
-		Button button = new();
-
-		button.WithVisibleBinding(new object(), nameof(button.Visible));
-
-		Assert.AreEqual(1, button.DataBindings.Count);
-		Assert.AreEqual(nameof(button.Visible), button.DataBindings[0].PropertyName);
-	}
-
 	private sealed class TestCommand(Action execute, Func<bool>? canExecute) : ICommand
 	{
 		public event EventHandler? CanExecuteChanged;

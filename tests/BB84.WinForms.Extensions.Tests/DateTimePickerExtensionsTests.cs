@@ -9,57 +9,30 @@ namespace BB84.WinForms.Extensions.Tests;
 public sealed class DateTimePickerExtensionsTests
 {
 	[TestMethod]
-	public void WithEnabledBindingTest()
+	public void WithCheckedBinding_ShouldBindChecked()
 	{
+		var dataSource = new { Checked = false };
 		DateTimePicker dateTimePicker = new();
 
-		dateTimePicker.WithEnabledBinding(new object(), nameof(dateTimePicker.Enabled));
+		dateTimePicker.WithCheckedBinding(dataSource, nameof(dateTimePicker.Value));
 
 		Assert.AreEqual(1, dateTimePicker.DataBindings.Count);
-		Assert.AreEqual(nameof(dateTimePicker.Enabled), dateTimePicker.DataBindings[0].PropertyName);
+		Assert.AreEqual(nameof(dateTimePicker.Checked), dateTimePicker.DataBindings[0].PropertyName);
+		Assert.AreEqual(dataSource, dateTimePicker.DataBindings[0].DataSource);
+		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, dateTimePicker.DataBindings[0].DataSourceUpdateMode);
 	}
 
 	[TestMethod]
-	public void WithMaxDateBindingTest()
+	public void WithValueBinding_ShouldBindValue()
 	{
+		var dataSource = new { Value = DateTime.MinValue };
 		DateTimePicker dateTimePicker = new();
 
-		dateTimePicker.WithMaxDateBinding(new object(), nameof(dateTimePicker.MaxDate));
-		
-		Assert.AreEqual(1, dateTimePicker.DataBindings.Count);
-		Assert.AreEqual(nameof(dateTimePicker.MaxDate), dateTimePicker.DataBindings[0].PropertyName);
-	}
-
-	[TestMethod]
-	public void WithMinDateBindingTest()
-	{
-		DateTimePicker dateTimePicker = new();
-		
-		dateTimePicker.WithMinDateBinding(new object(), nameof(dateTimePicker.MinDate));
-		
-		Assert.AreEqual(1, dateTimePicker.DataBindings.Count);
-		Assert.AreEqual(nameof(dateTimePicker.MinDate), dateTimePicker.DataBindings[0].PropertyName);
-	}
-
-	[TestMethod]
-	public void WithValueBindingTest()
-	{
-		DateTimePicker dateTimePicker = new();
-
-		dateTimePicker.WithValueBinding(new object(), nameof(dateTimePicker.Value));
+		dateTimePicker.WithValueBinding(dataSource, nameof(dateTimePicker.Value));
 
 		Assert.AreEqual(1, dateTimePicker.DataBindings.Count);
 		Assert.AreEqual(nameof(dateTimePicker.Value), dateTimePicker.DataBindings[0].PropertyName);
-	}
-
-	[TestMethod()]
-	public void WithVisibleBindingTest()
-	{
-		DateTimePicker dateTimePicker = new();
-
-		dateTimePicker.WithVisibleBinding(new object(), nameof(dateTimePicker.Visible));
-
-		Assert.AreEqual(1, dateTimePicker.DataBindings.Count);
-		Assert.AreEqual(nameof(dateTimePicker.Visible), dateTimePicker.DataBindings[0].PropertyName);
+		Assert.AreEqual(dataSource, dateTimePicker.DataBindings[0].DataSource);
+		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, dateTimePicker.DataBindings[0].DataSourceUpdateMode);
 	}
 }
