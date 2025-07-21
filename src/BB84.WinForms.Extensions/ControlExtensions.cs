@@ -37,6 +37,26 @@ public static class ControlExtensions
 	}
 
 	/// <summary>
+	/// Binds the <see cref="Control.Tag"/> property of the specified <see cref="GroupBox"/> to a
+	/// property on the provided data source.
+	/// </summary>
+	/// <remarks>
+	/// The binding is configured to update the data source whenever the <see cref="Control.Tag"/> 
+	/// property changes, using <see cref="DataSourceUpdateMode.OnPropertyChanged"/>.
+	/// </remarks>
+	/// <param name="control">The <see cref="Control"/> to bind.</param>
+	/// <param name="dataSource">The data source containing the property to bind to.</param>
+	/// <param name="dataMember">The name of the property on the data source to bind to.</param>
+	/// <returns>
+	/// The <see cref="Control"/> control with the binding applied, allowing for method chaining.
+	/// </returns>
+	public static Control WithTagBinding(this Control control, object dataSource, string dataMember)
+	{
+		control.DataBindings.Add(nameof(control.Tag), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
+		return control;
+	}
+
+	/// <summary>
 	/// Binds the <see cref="Control.Text"/> property of the specified <see cref="Control"/> to a
 	/// property on the provided data source.
 	/// </summary>

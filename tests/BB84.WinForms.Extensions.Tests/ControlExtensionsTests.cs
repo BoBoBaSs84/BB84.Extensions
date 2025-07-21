@@ -26,6 +26,20 @@ public sealed class ControlExtensionsTests
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
+	public void WithTagBinding_ShouldBindEnabledProperty(Control control)
+	{
+		var dataSource = new { Tag = new object() };
+
+		control.WithTagBinding(dataSource, nameof(dataSource.Tag));
+
+		Assert.AreEqual(1, control.DataBindings.Count);
+		Assert.AreEqual(nameof(control.Tag), control.DataBindings[0].PropertyName);
+		Assert.AreEqual(dataSource, control.DataBindings[0].DataSource);
+		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, control.DataBindings[0].DataSourceUpdateMode);
+	}
+
+	[TestMethod]
+	[DynamicData(nameof(TestData))]
 	public void WithTextBinding_ShouldBindTextProperty(Control control)
 	{
 		var dataSource = new { Text = "Test" };
