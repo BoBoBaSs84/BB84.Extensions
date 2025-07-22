@@ -11,7 +11,7 @@ public sealed class PictureBoxExtensionsTests
 	[TestMethod]
 	public void WithImageBinding_ShouldBindImage()
 	{
-		var dataSource = new { Image = new Bitmap("Test.bmp") };
+		var dataSource = new { Image = new Bitmap(320, 240) };
 		PictureBox pictureBox = new();
 
 		pictureBox.WithImageBinding(dataSource, nameof(pictureBox.Image));
