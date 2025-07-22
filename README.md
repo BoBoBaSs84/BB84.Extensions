@@ -202,69 +202,56 @@ Specialized extension methods for Windows Forms controls, focusing on simplified
 **CheckBox Extensions**
 
 - Checked property binding
-- Standard control property bindings
 
 **ComboBox Extensions**
 
 - DataSource binding
 - SelectedItem binding
-- Standard control property bindings
 
 **DataGridView Extensions**
 
 - DataSource binding
-- Column configuration helpers
-- Standard control property bindings
+
+**DateTimePicker Extensions**
+
+- Value property binding
 
 **Label Extensions**
 
 - Text property binding
-- Standard control property bindings
 
 **ListBox Extensions**
 
 - DataSource binding
 - SelectedItem binding
-- Multi-selection support
 
 **NumericUpDown Extensions**
 
 - Value property binding
-- Range property bindings (Minimum, Maximum)
 
 **PictureBox Extensions**
 
 - Image property binding
-- ErrorImage binding
 
 **PropertyGrid Extensions**
 
 - SelectedObject binding
-- Property browsing configuration
 
 **ProgressBar Extensions**
 
-- Value, Minimum, Maximum property bindings
+- Value property binding
 
 **RadioButton Extensions**
 
 - Checked property binding
-- Grouping support
 
 **TextBox Extensions**
 
 - Text property binding
-- Input validation support
 
 **TrackBar Extensions**
 
-- Value, Minimum, Maximum property bindings
-- Tick configuration
-
-**TreeView Extensions**
-
-- SelectedNode binding
-- Node manipulation helpers
+- Value property binding
 
 ## 💾 Installation
 
