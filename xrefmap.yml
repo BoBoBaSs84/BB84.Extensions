@@ -1787,73 +1787,25 @@ references:
   commentId: N:BB84.WinForms.Extensions
   fullName: BB84.WinForms.Extensions
   nameWithType: BB84.WinForms.Extensions
-- uid: BB84.WinForms.Extensions.ButtonExtensions
-  name: ButtonExtensions
-  href: api/BB84.WinForms.Extensions.ButtonExtensions.html
-  commentId: T:BB84.WinForms.Extensions.ButtonExtensions
-  fullName: BB84.WinForms.Extensions.ButtonExtensions
-  nameWithType: ButtonExtensions
-- uid: BB84.WinForms.Extensions.ButtonExtensions.WithCommandBinding(System.Windows.Forms.Button,System.Windows.Input.ICommand)
-  name: WithCommandBinding(Button, ICommand)
-  href: api/BB84.WinForms.Extensions.ButtonExtensions.html#BB84_WinForms_Extensions_ButtonExtensions_WithCommandBinding_System_Windows_Forms_Button_System_Windows_Input_ICommand_
-  commentId: M:BB84.WinForms.Extensions.ButtonExtensions.WithCommandBinding(System.Windows.Forms.Button,System.Windows.Input.ICommand)
-  fullName: BB84.WinForms.Extensions.ButtonExtensions.WithCommandBinding(System.Windows.Forms.Button, System.Windows.Input.ICommand)
-  nameWithType: ButtonExtensions.WithCommandBinding(Button, ICommand)
-- uid: BB84.WinForms.Extensions.ButtonExtensions.WithCommandBinding*
+- uid: BB84.WinForms.Extensions.ButtonBaseExtensions
+  name: ButtonBaseExtensions
+  href: api/BB84.WinForms.Extensions.ButtonBaseExtensions.html
+  commentId: T:BB84.WinForms.Extensions.ButtonBaseExtensions
+  fullName: BB84.WinForms.Extensions.ButtonBaseExtensions
+  nameWithType: ButtonBaseExtensions
+- uid: BB84.WinForms.Extensions.ButtonBaseExtensions.WithCommandBinding(System.Windows.Forms.ButtonBase,System.Windows.Input.ICommand)
+  name: WithCommandBinding(ButtonBase, ICommand)
+  href: api/BB84.WinForms.Extensions.ButtonBaseExtensions.html#BB84_WinForms_Extensions_ButtonBaseExtensions_WithCommandBinding_System_Windows_Forms_ButtonBase_System_Windows_Input_ICommand_
+  commentId: M:BB84.WinForms.Extensions.ButtonBaseExtensions.WithCommandBinding(System.Windows.Forms.ButtonBase,System.Windows.Input.ICommand)
+  fullName: BB84.WinForms.Extensions.ButtonBaseExtensions.WithCommandBinding(System.Windows.Forms.ButtonBase, System.Windows.Input.ICommand)
+  nameWithType: ButtonBaseExtensions.WithCommandBinding(ButtonBase, ICommand)
+- uid: BB84.WinForms.Extensions.ButtonBaseExtensions.WithCommandBinding*
   name: WithCommandBinding
-  href: api/BB84.WinForms.Extensions.ButtonExtensions.html#BB84_WinForms_Extensions_ButtonExtensions_WithCommandBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ButtonExtensions.WithCommandBinding
+  href: api/BB84.WinForms.Extensions.ButtonBaseExtensions.html#BB84_WinForms_Extensions_ButtonBaseExtensions_WithCommandBinding_
+  commentId: Overload:BB84.WinForms.Extensions.ButtonBaseExtensions.WithCommandBinding
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ButtonExtensions.WithCommandBinding
-  nameWithType: ButtonExtensions.WithCommandBinding
-- uid: BB84.WinForms.Extensions.ButtonExtensions.WithEnabledBinding(System.Windows.Forms.Button,System.Object,System.String)
-  name: WithEnabledBinding(Button, object, string)
-  href: api/BB84.WinForms.Extensions.ButtonExtensions.html#BB84_WinForms_Extensions_ButtonExtensions_WithEnabledBinding_System_Windows_Forms_Button_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.ButtonExtensions.WithEnabledBinding(System.Windows.Forms.Button,System.Object,System.String)
-  name.vb: WithEnabledBinding(Button, Object, String)
-  fullName: BB84.WinForms.Extensions.ButtonExtensions.WithEnabledBinding(System.Windows.Forms.Button, object, string)
-  fullName.vb: BB84.WinForms.Extensions.ButtonExtensions.WithEnabledBinding(System.Windows.Forms.Button, Object, String)
-  nameWithType: ButtonExtensions.WithEnabledBinding(Button, object, string)
-  nameWithType.vb: ButtonExtensions.WithEnabledBinding(Button, Object, String)
-- uid: BB84.WinForms.Extensions.ButtonExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.ButtonExtensions.html#BB84_WinForms_Extensions_ButtonExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ButtonExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ButtonExtensions.WithEnabledBinding
-  nameWithType: ButtonExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.ButtonExtensions.WithTextBinding(System.Windows.Forms.Button,System.Object,System.String)
-  name: WithTextBinding(Button, object, string)
-  href: api/BB84.WinForms.Extensions.ButtonExtensions.html#BB84_WinForms_Extensions_ButtonExtensions_WithTextBinding_System_Windows_Forms_Button_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.ButtonExtensions.WithTextBinding(System.Windows.Forms.Button,System.Object,System.String)
-  name.vb: WithTextBinding(Button, Object, String)
-  fullName: BB84.WinForms.Extensions.ButtonExtensions.WithTextBinding(System.Windows.Forms.Button, object, string)
-  fullName.vb: BB84.WinForms.Extensions.ButtonExtensions.WithTextBinding(System.Windows.Forms.Button, Object, String)
-  nameWithType: ButtonExtensions.WithTextBinding(Button, object, string)
-  nameWithType.vb: ButtonExtensions.WithTextBinding(Button, Object, String)
-- uid: BB84.WinForms.Extensions.ButtonExtensions.WithTextBinding*
-  name: WithTextBinding
-  href: api/BB84.WinForms.Extensions.ButtonExtensions.html#BB84_WinForms_Extensions_ButtonExtensions_WithTextBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ButtonExtensions.WithTextBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ButtonExtensions.WithTextBinding
-  nameWithType: ButtonExtensions.WithTextBinding
-- uid: BB84.WinForms.Extensions.ButtonExtensions.WithVisibleBinding(System.Windows.Forms.Button,System.Object,System.String)
-  name: WithVisibleBinding(Button, object, string)
-  href: api/BB84.WinForms.Extensions.ButtonExtensions.html#BB84_WinForms_Extensions_ButtonExtensions_WithVisibleBinding_System_Windows_Forms_Button_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.ButtonExtensions.WithVisibleBinding(System.Windows.Forms.Button,System.Object,System.String)
-  name.vb: WithVisibleBinding(Button, Object, String)
-  fullName: BB84.WinForms.Extensions.ButtonExtensions.WithVisibleBinding(System.Windows.Forms.Button, object, string)
-  fullName.vb: BB84.WinForms.Extensions.ButtonExtensions.WithVisibleBinding(System.Windows.Forms.Button, Object, String)
-  nameWithType: ButtonExtensions.WithVisibleBinding(Button, object, string)
-  nameWithType.vb: ButtonExtensions.WithVisibleBinding(Button, Object, String)
-- uid: BB84.WinForms.Extensions.ButtonExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.ButtonExtensions.html#BB84_WinForms_Extensions_ButtonExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ButtonExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ButtonExtensions.WithVisibleBinding
-  nameWithType: ButtonExtensions.WithVisibleBinding
+  fullName: BB84.WinForms.Extensions.ButtonBaseExtensions.WithCommandBinding
+  nameWithType: ButtonBaseExtensions.WithCommandBinding
 - uid: BB84.WinForms.Extensions.CheckBoxExtensions
   name: CheckBoxExtensions
   href: api/BB84.WinForms.Extensions.CheckBoxExtensions.html
@@ -1876,92 +1828,12 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.CheckBoxExtensions.WithCheckedBinding
   nameWithType: CheckBoxExtensions.WithCheckedBinding
-- uid: BB84.WinForms.Extensions.CheckBoxExtensions.WithEnabledBinding(System.Windows.Forms.CheckBox,System.Object,System.String)
-  name: WithEnabledBinding(CheckBox, object, string)
-  href: api/BB84.WinForms.Extensions.CheckBoxExtensions.html#BB84_WinForms_Extensions_CheckBoxExtensions_WithEnabledBinding_System_Windows_Forms_CheckBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.CheckBoxExtensions.WithEnabledBinding(System.Windows.Forms.CheckBox,System.Object,System.String)
-  name.vb: WithEnabledBinding(CheckBox, Object, String)
-  fullName: BB84.WinForms.Extensions.CheckBoxExtensions.WithEnabledBinding(System.Windows.Forms.CheckBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.CheckBoxExtensions.WithEnabledBinding(System.Windows.Forms.CheckBox, Object, String)
-  nameWithType: CheckBoxExtensions.WithEnabledBinding(CheckBox, object, string)
-  nameWithType.vb: CheckBoxExtensions.WithEnabledBinding(CheckBox, Object, String)
-- uid: BB84.WinForms.Extensions.CheckBoxExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.CheckBoxExtensions.html#BB84_WinForms_Extensions_CheckBoxExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.CheckBoxExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.CheckBoxExtensions.WithEnabledBinding
-  nameWithType: CheckBoxExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.CheckBoxExtensions.WithTextBinding(System.Windows.Forms.CheckBox,System.Object,System.String)
-  name: WithTextBinding(CheckBox, object, string)
-  href: api/BB84.WinForms.Extensions.CheckBoxExtensions.html#BB84_WinForms_Extensions_CheckBoxExtensions_WithTextBinding_System_Windows_Forms_CheckBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.CheckBoxExtensions.WithTextBinding(System.Windows.Forms.CheckBox,System.Object,System.String)
-  name.vb: WithTextBinding(CheckBox, Object, String)
-  fullName: BB84.WinForms.Extensions.CheckBoxExtensions.WithTextBinding(System.Windows.Forms.CheckBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.CheckBoxExtensions.WithTextBinding(System.Windows.Forms.CheckBox, Object, String)
-  nameWithType: CheckBoxExtensions.WithTextBinding(CheckBox, object, string)
-  nameWithType.vb: CheckBoxExtensions.WithTextBinding(CheckBox, Object, String)
-- uid: BB84.WinForms.Extensions.CheckBoxExtensions.WithTextBinding*
-  name: WithTextBinding
-  href: api/BB84.WinForms.Extensions.CheckBoxExtensions.html#BB84_WinForms_Extensions_CheckBoxExtensions_WithTextBinding_
-  commentId: Overload:BB84.WinForms.Extensions.CheckBoxExtensions.WithTextBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.CheckBoxExtensions.WithTextBinding
-  nameWithType: CheckBoxExtensions.WithTextBinding
-- uid: BB84.WinForms.Extensions.CheckBoxExtensions.WithVisibleBinding(System.Windows.Forms.CheckBox,System.Object,System.String)
-  name: WithVisibleBinding(CheckBox, object, string)
-  href: api/BB84.WinForms.Extensions.CheckBoxExtensions.html#BB84_WinForms_Extensions_CheckBoxExtensions_WithVisibleBinding_System_Windows_Forms_CheckBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.CheckBoxExtensions.WithVisibleBinding(System.Windows.Forms.CheckBox,System.Object,System.String)
-  name.vb: WithVisibleBinding(CheckBox, Object, String)
-  fullName: BB84.WinForms.Extensions.CheckBoxExtensions.WithVisibleBinding(System.Windows.Forms.CheckBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.CheckBoxExtensions.WithVisibleBinding(System.Windows.Forms.CheckBox, Object, String)
-  nameWithType: CheckBoxExtensions.WithVisibleBinding(CheckBox, object, string)
-  nameWithType.vb: CheckBoxExtensions.WithVisibleBinding(CheckBox, Object, String)
-- uid: BB84.WinForms.Extensions.CheckBoxExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.CheckBoxExtensions.html#BB84_WinForms_Extensions_CheckBoxExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.CheckBoxExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.CheckBoxExtensions.WithVisibleBinding
-  nameWithType: CheckBoxExtensions.WithVisibleBinding
 - uid: BB84.WinForms.Extensions.ComboBoxExtensions
   name: ComboBoxExtensions
   href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html
   commentId: T:BB84.WinForms.Extensions.ComboBoxExtensions
   fullName: BB84.WinForms.Extensions.ComboBoxExtensions
   nameWithType: ComboBoxExtensions
-- uid: BB84.WinForms.Extensions.ComboBoxExtensions.WithDataSource(System.Windows.Forms.ComboBox,System.Object)
-  name: WithDataSource(ComboBox, object)
-  href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html#BB84_WinForms_Extensions_ComboBoxExtensions_WithDataSource_System_Windows_Forms_ComboBox_System_Object_
-  commentId: M:BB84.WinForms.Extensions.ComboBoxExtensions.WithDataSource(System.Windows.Forms.ComboBox,System.Object)
-  name.vb: WithDataSource(ComboBox, Object)
-  fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithDataSource(System.Windows.Forms.ComboBox, object)
-  fullName.vb: BB84.WinForms.Extensions.ComboBoxExtensions.WithDataSource(System.Windows.Forms.ComboBox, Object)
-  nameWithType: ComboBoxExtensions.WithDataSource(ComboBox, object)
-  nameWithType.vb: ComboBoxExtensions.WithDataSource(ComboBox, Object)
-- uid: BB84.WinForms.Extensions.ComboBoxExtensions.WithDataSource*
-  name: WithDataSource
-  href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html#BB84_WinForms_Extensions_ComboBoxExtensions_WithDataSource_
-  commentId: Overload:BB84.WinForms.Extensions.ComboBoxExtensions.WithDataSource
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithDataSource
-  nameWithType: ComboBoxExtensions.WithDataSource
-- uid: BB84.WinForms.Extensions.ComboBoxExtensions.WithEnabledBinding(System.Windows.Forms.ComboBox,System.Object,System.String)
-  name: WithEnabledBinding(ComboBox, object, string)
-  href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html#BB84_WinForms_Extensions_ComboBoxExtensions_WithEnabledBinding_System_Windows_Forms_ComboBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.ComboBoxExtensions.WithEnabledBinding(System.Windows.Forms.ComboBox,System.Object,System.String)
-  name.vb: WithEnabledBinding(ComboBox, Object, String)
-  fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithEnabledBinding(System.Windows.Forms.ComboBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.ComboBoxExtensions.WithEnabledBinding(System.Windows.Forms.ComboBox, Object, String)
-  nameWithType: ComboBoxExtensions.WithEnabledBinding(ComboBox, object, string)
-  nameWithType.vb: ComboBoxExtensions.WithEnabledBinding(ComboBox, Object, String)
-- uid: BB84.WinForms.Extensions.ComboBoxExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html#BB84_WinForms_Extensions_ComboBoxExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ComboBoxExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithEnabledBinding
-  nameWithType: ComboBoxExtensions.WithEnabledBinding
 - uid: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedIndexBinding(System.Windows.Forms.ComboBox,System.Object,System.String)
   name: WithSelectedIndexBinding(ComboBox, object, string)
   href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html#BB84_WinForms_Extensions_ComboBoxExtensions_WithSelectedIndexBinding_System_Windows_Forms_ComboBox_System_Object_System_String_
@@ -1994,200 +1866,142 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedItemBinding
   nameWithType: ComboBoxExtensions.WithSelectedItemBinding
-- uid: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ComboBox,System.Object,System.String)
-  name: WithSelectedValueBinding(ComboBox, object, string)
-  href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html#BB84_WinForms_Extensions_ComboBoxExtensions_WithSelectedValueBinding_System_Windows_Forms_ComboBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ComboBox,System.Object,System.String)
-  name.vb: WithSelectedValueBinding(ComboBox, Object, String)
-  fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ComboBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ComboBox, Object, String)
-  nameWithType: ComboBoxExtensions.WithSelectedValueBinding(ComboBox, object, string)
-  nameWithType.vb: ComboBoxExtensions.WithSelectedValueBinding(ComboBox, Object, String)
-- uid: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedValueBinding*
-  name: WithSelectedValueBinding
-  href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html#BB84_WinForms_Extensions_ComboBoxExtensions_WithSelectedValueBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedValueBinding
+- uid: BB84.WinForms.Extensions.ControlExtensions
+  name: ControlExtensions
+  href: api/BB84.WinForms.Extensions.ControlExtensions.html
+  commentId: T:BB84.WinForms.Extensions.ControlExtensions
+  fullName: BB84.WinForms.Extensions.ControlExtensions
+  nameWithType: ControlExtensions
+- uid: BB84.WinForms.Extensions.ControlExtensions.WithEnabledBinding(System.Windows.Forms.Control,System.Object,System.String)
+  name: WithEnabledBinding(Control, object, string)
+  href: api/BB84.WinForms.Extensions.ControlExtensions.html#BB84_WinForms_Extensions_ControlExtensions_WithEnabledBinding_System_Windows_Forms_Control_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.ControlExtensions.WithEnabledBinding(System.Windows.Forms.Control,System.Object,System.String)
+  name.vb: WithEnabledBinding(Control, Object, String)
+  fullName: BB84.WinForms.Extensions.ControlExtensions.WithEnabledBinding(System.Windows.Forms.Control, object, string)
+  fullName.vb: BB84.WinForms.Extensions.ControlExtensions.WithEnabledBinding(System.Windows.Forms.Control, Object, String)
+  nameWithType: ControlExtensions.WithEnabledBinding(Control, object, string)
+  nameWithType.vb: ControlExtensions.WithEnabledBinding(Control, Object, String)
+- uid: BB84.WinForms.Extensions.ControlExtensions.WithEnabledBinding*
+  name: WithEnabledBinding
+  href: api/BB84.WinForms.Extensions.ControlExtensions.html#BB84_WinForms_Extensions_ControlExtensions_WithEnabledBinding_
+  commentId: Overload:BB84.WinForms.Extensions.ControlExtensions.WithEnabledBinding
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedValueBinding
-  nameWithType: ComboBoxExtensions.WithSelectedValueBinding
-- uid: BB84.WinForms.Extensions.ComboBoxExtensions.WithVisibleBinding(System.Windows.Forms.ComboBox,System.Object,System.String)
-  name: WithVisibleBinding(ComboBox, object, string)
-  href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html#BB84_WinForms_Extensions_ComboBoxExtensions_WithVisibleBinding_System_Windows_Forms_ComboBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.ComboBoxExtensions.WithVisibleBinding(System.Windows.Forms.ComboBox,System.Object,System.String)
-  name.vb: WithVisibleBinding(ComboBox, Object, String)
-  fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithVisibleBinding(System.Windows.Forms.ComboBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.ComboBoxExtensions.WithVisibleBinding(System.Windows.Forms.ComboBox, Object, String)
-  nameWithType: ComboBoxExtensions.WithVisibleBinding(ComboBox, object, string)
-  nameWithType.vb: ComboBoxExtensions.WithVisibleBinding(ComboBox, Object, String)
-- uid: BB84.WinForms.Extensions.ComboBoxExtensions.WithVisibleBinding*
+  fullName: BB84.WinForms.Extensions.ControlExtensions.WithEnabledBinding
+  nameWithType: ControlExtensions.WithEnabledBinding
+- uid: BB84.WinForms.Extensions.ControlExtensions.WithTagBinding(System.Windows.Forms.Control,System.Object,System.String)
+  name: WithTagBinding(Control, object, string)
+  href: api/BB84.WinForms.Extensions.ControlExtensions.html#BB84_WinForms_Extensions_ControlExtensions_WithTagBinding_System_Windows_Forms_Control_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.ControlExtensions.WithTagBinding(System.Windows.Forms.Control,System.Object,System.String)
+  name.vb: WithTagBinding(Control, Object, String)
+  fullName: BB84.WinForms.Extensions.ControlExtensions.WithTagBinding(System.Windows.Forms.Control, object, string)
+  fullName.vb: BB84.WinForms.Extensions.ControlExtensions.WithTagBinding(System.Windows.Forms.Control, Object, String)
+  nameWithType: ControlExtensions.WithTagBinding(Control, object, string)
+  nameWithType.vb: ControlExtensions.WithTagBinding(Control, Object, String)
+- uid: BB84.WinForms.Extensions.ControlExtensions.WithTagBinding*
+  name: WithTagBinding
+  href: api/BB84.WinForms.Extensions.ControlExtensions.html#BB84_WinForms_Extensions_ControlExtensions_WithTagBinding_
+  commentId: Overload:BB84.WinForms.Extensions.ControlExtensions.WithTagBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.ControlExtensions.WithTagBinding
+  nameWithType: ControlExtensions.WithTagBinding
+- uid: BB84.WinForms.Extensions.ControlExtensions.WithTextBinding(System.Windows.Forms.Control,System.Object,System.String)
+  name: WithTextBinding(Control, object, string)
+  href: api/BB84.WinForms.Extensions.ControlExtensions.html#BB84_WinForms_Extensions_ControlExtensions_WithTextBinding_System_Windows_Forms_Control_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.ControlExtensions.WithTextBinding(System.Windows.Forms.Control,System.Object,System.String)
+  name.vb: WithTextBinding(Control, Object, String)
+  fullName: BB84.WinForms.Extensions.ControlExtensions.WithTextBinding(System.Windows.Forms.Control, object, string)
+  fullName.vb: BB84.WinForms.Extensions.ControlExtensions.WithTextBinding(System.Windows.Forms.Control, Object, String)
+  nameWithType: ControlExtensions.WithTextBinding(Control, object, string)
+  nameWithType.vb: ControlExtensions.WithTextBinding(Control, Object, String)
+- uid: BB84.WinForms.Extensions.ControlExtensions.WithTextBinding*
+  name: WithTextBinding
+  href: api/BB84.WinForms.Extensions.ControlExtensions.html#BB84_WinForms_Extensions_ControlExtensions_WithTextBinding_
+  commentId: Overload:BB84.WinForms.Extensions.ControlExtensions.WithTextBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.ControlExtensions.WithTextBinding
+  nameWithType: ControlExtensions.WithTextBinding
+- uid: BB84.WinForms.Extensions.ControlExtensions.WithVisibleBinding(System.Windows.Forms.Control,System.Object,System.String)
+  name: WithVisibleBinding(Control, object, string)
+  href: api/BB84.WinForms.Extensions.ControlExtensions.html#BB84_WinForms_Extensions_ControlExtensions_WithVisibleBinding_System_Windows_Forms_Control_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.ControlExtensions.WithVisibleBinding(System.Windows.Forms.Control,System.Object,System.String)
+  name.vb: WithVisibleBinding(Control, Object, String)
+  fullName: BB84.WinForms.Extensions.ControlExtensions.WithVisibleBinding(System.Windows.Forms.Control, object, string)
+  fullName.vb: BB84.WinForms.Extensions.ControlExtensions.WithVisibleBinding(System.Windows.Forms.Control, Object, String)
+  nameWithType: ControlExtensions.WithVisibleBinding(Control, object, string)
+  nameWithType.vb: ControlExtensions.WithVisibleBinding(Control, Object, String)
+- uid: BB84.WinForms.Extensions.ControlExtensions.WithVisibleBinding*
   name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.ComboBoxExtensions.html#BB84_WinForms_Extensions_ComboBoxExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ComboBoxExtensions.WithVisibleBinding
+  href: api/BB84.WinForms.Extensions.ControlExtensions.html#BB84_WinForms_Extensions_ControlExtensions_WithVisibleBinding_
+  commentId: Overload:BB84.WinForms.Extensions.ControlExtensions.WithVisibleBinding
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithVisibleBinding
-  nameWithType: ComboBoxExtensions.WithVisibleBinding
+  fullName: BB84.WinForms.Extensions.ControlExtensions.WithVisibleBinding
+  nameWithType: ControlExtensions.WithVisibleBinding
 - uid: BB84.WinForms.Extensions.DataGridExtensions
   name: DataGridExtensions
   href: api/BB84.WinForms.Extensions.DataGridExtensions.html
   commentId: T:BB84.WinForms.Extensions.DataGridExtensions
   fullName: BB84.WinForms.Extensions.DataGridExtensions
   nameWithType: DataGridExtensions
-- uid: BB84.WinForms.Extensions.DataGridExtensions.WithDataSource(System.Windows.Forms.DataGrid,System.Object)
-  name: WithDataSource(DataGrid, object)
-  href: api/BB84.WinForms.Extensions.DataGridExtensions.html#BB84_WinForms_Extensions_DataGridExtensions_WithDataSource_System_Windows_Forms_DataGrid_System_Object_
-  commentId: M:BB84.WinForms.Extensions.DataGridExtensions.WithDataSource(System.Windows.Forms.DataGrid,System.Object)
-  name.vb: WithDataSource(DataGrid, Object)
-  fullName: BB84.WinForms.Extensions.DataGridExtensions.WithDataSource(System.Windows.Forms.DataGrid, object)
-  fullName.vb: BB84.WinForms.Extensions.DataGridExtensions.WithDataSource(System.Windows.Forms.DataGrid, Object)
-  nameWithType: DataGridExtensions.WithDataSource(DataGrid, object)
-  nameWithType.vb: DataGridExtensions.WithDataSource(DataGrid, Object)
-- uid: BB84.WinForms.Extensions.DataGridExtensions.WithDataSource*
-  name: WithDataSource
-  href: api/BB84.WinForms.Extensions.DataGridExtensions.html#BB84_WinForms_Extensions_DataGridExtensions_WithDataSource_
-  commentId: Overload:BB84.WinForms.Extensions.DataGridExtensions.WithDataSource
+- uid: BB84.WinForms.Extensions.DataGridExtensions.WithDataSourceBinding(System.Windows.Forms.DataGrid,System.Object)
+  name: WithDataSourceBinding(DataGrid, object)
+  href: api/BB84.WinForms.Extensions.DataGridExtensions.html#BB84_WinForms_Extensions_DataGridExtensions_WithDataSourceBinding_System_Windows_Forms_DataGrid_System_Object_
+  commentId: M:BB84.WinForms.Extensions.DataGridExtensions.WithDataSourceBinding(System.Windows.Forms.DataGrid,System.Object)
+  name.vb: WithDataSourceBinding(DataGrid, Object)
+  fullName: BB84.WinForms.Extensions.DataGridExtensions.WithDataSourceBinding(System.Windows.Forms.DataGrid, object)
+  fullName.vb: BB84.WinForms.Extensions.DataGridExtensions.WithDataSourceBinding(System.Windows.Forms.DataGrid, Object)
+  nameWithType: DataGridExtensions.WithDataSourceBinding(DataGrid, object)
+  nameWithType.vb: DataGridExtensions.WithDataSourceBinding(DataGrid, Object)
+- uid: BB84.WinForms.Extensions.DataGridExtensions.WithDataSourceBinding*
+  name: WithDataSourceBinding
+  href: api/BB84.WinForms.Extensions.DataGridExtensions.html#BB84_WinForms_Extensions_DataGridExtensions_WithDataSourceBinding_
+  commentId: Overload:BB84.WinForms.Extensions.DataGridExtensions.WithDataSourceBinding
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.DataGridExtensions.WithDataSource
-  nameWithType: DataGridExtensions.WithDataSource
-- uid: BB84.WinForms.Extensions.DataGridExtensions.WithEnabledBinding(System.Windows.Forms.DataGrid,System.Object,System.String)
-  name: WithEnabledBinding(DataGrid, object, string)
-  href: api/BB84.WinForms.Extensions.DataGridExtensions.html#BB84_WinForms_Extensions_DataGridExtensions_WithEnabledBinding_System_Windows_Forms_DataGrid_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.DataGridExtensions.WithEnabledBinding(System.Windows.Forms.DataGrid,System.Object,System.String)
-  name.vb: WithEnabledBinding(DataGrid, Object, String)
-  fullName: BB84.WinForms.Extensions.DataGridExtensions.WithEnabledBinding(System.Windows.Forms.DataGrid, object, string)
-  fullName.vb: BB84.WinForms.Extensions.DataGridExtensions.WithEnabledBinding(System.Windows.Forms.DataGrid, Object, String)
-  nameWithType: DataGridExtensions.WithEnabledBinding(DataGrid, object, string)
-  nameWithType.vb: DataGridExtensions.WithEnabledBinding(DataGrid, Object, String)
-- uid: BB84.WinForms.Extensions.DataGridExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.DataGridExtensions.html#BB84_WinForms_Extensions_DataGridExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.DataGridExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.DataGridExtensions.WithEnabledBinding
-  nameWithType: DataGridExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.DataGridExtensions.WithVisibleBinding(System.Windows.Forms.DataGrid,System.Object,System.String)
-  name: WithVisibleBinding(DataGrid, object, string)
-  href: api/BB84.WinForms.Extensions.DataGridExtensions.html#BB84_WinForms_Extensions_DataGridExtensions_WithVisibleBinding_System_Windows_Forms_DataGrid_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.DataGridExtensions.WithVisibleBinding(System.Windows.Forms.DataGrid,System.Object,System.String)
-  name.vb: WithVisibleBinding(DataGrid, Object, String)
-  fullName: BB84.WinForms.Extensions.DataGridExtensions.WithVisibleBinding(System.Windows.Forms.DataGrid, object, string)
-  fullName.vb: BB84.WinForms.Extensions.DataGridExtensions.WithVisibleBinding(System.Windows.Forms.DataGrid, Object, String)
-  nameWithType: DataGridExtensions.WithVisibleBinding(DataGrid, object, string)
-  nameWithType.vb: DataGridExtensions.WithVisibleBinding(DataGrid, Object, String)
-- uid: BB84.WinForms.Extensions.DataGridExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.DataGridExtensions.html#BB84_WinForms_Extensions_DataGridExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.DataGridExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.DataGridExtensions.WithVisibleBinding
-  nameWithType: DataGridExtensions.WithVisibleBinding
+  fullName: BB84.WinForms.Extensions.DataGridExtensions.WithDataSourceBinding
+  nameWithType: DataGridExtensions.WithDataSourceBinding
 - uid: BB84.WinForms.Extensions.DataGridViewExtensions
   name: DataGridViewExtensions
   href: api/BB84.WinForms.Extensions.DataGridViewExtensions.html
   commentId: T:BB84.WinForms.Extensions.DataGridViewExtensions
   fullName: BB84.WinForms.Extensions.DataGridViewExtensions
   nameWithType: DataGridViewExtensions
-- uid: BB84.WinForms.Extensions.DataGridViewExtensions.WithDataSource(System.Windows.Forms.DataGridView,System.Object)
-  name: WithDataSource(DataGridView, object)
-  href: api/BB84.WinForms.Extensions.DataGridViewExtensions.html#BB84_WinForms_Extensions_DataGridViewExtensions_WithDataSource_System_Windows_Forms_DataGridView_System_Object_
-  commentId: M:BB84.WinForms.Extensions.DataGridViewExtensions.WithDataSource(System.Windows.Forms.DataGridView,System.Object)
-  name.vb: WithDataSource(DataGridView, Object)
-  fullName: BB84.WinForms.Extensions.DataGridViewExtensions.WithDataSource(System.Windows.Forms.DataGridView, object)
-  fullName.vb: BB84.WinForms.Extensions.DataGridViewExtensions.WithDataSource(System.Windows.Forms.DataGridView, Object)
-  nameWithType: DataGridViewExtensions.WithDataSource(DataGridView, object)
-  nameWithType.vb: DataGridViewExtensions.WithDataSource(DataGridView, Object)
-- uid: BB84.WinForms.Extensions.DataGridViewExtensions.WithDataSource*
-  name: WithDataSource
-  href: api/BB84.WinForms.Extensions.DataGridViewExtensions.html#BB84_WinForms_Extensions_DataGridViewExtensions_WithDataSource_
-  commentId: Overload:BB84.WinForms.Extensions.DataGridViewExtensions.WithDataSource
+- uid: BB84.WinForms.Extensions.DataGridViewExtensions.WithDataSourceBinding(System.Windows.Forms.DataGridView,System.Object)
+  name: WithDataSourceBinding(DataGridView, object)
+  href: api/BB84.WinForms.Extensions.DataGridViewExtensions.html#BB84_WinForms_Extensions_DataGridViewExtensions_WithDataSourceBinding_System_Windows_Forms_DataGridView_System_Object_
+  commentId: M:BB84.WinForms.Extensions.DataGridViewExtensions.WithDataSourceBinding(System.Windows.Forms.DataGridView,System.Object)
+  name.vb: WithDataSourceBinding(DataGridView, Object)
+  fullName: BB84.WinForms.Extensions.DataGridViewExtensions.WithDataSourceBinding(System.Windows.Forms.DataGridView, object)
+  fullName.vb: BB84.WinForms.Extensions.DataGridViewExtensions.WithDataSourceBinding(System.Windows.Forms.DataGridView, Object)
+  nameWithType: DataGridViewExtensions.WithDataSourceBinding(DataGridView, object)
+  nameWithType.vb: DataGridViewExtensions.WithDataSourceBinding(DataGridView, Object)
+- uid: BB84.WinForms.Extensions.DataGridViewExtensions.WithDataSourceBinding*
+  name: WithDataSourceBinding
+  href: api/BB84.WinForms.Extensions.DataGridViewExtensions.html#BB84_WinForms_Extensions_DataGridViewExtensions_WithDataSourceBinding_
+  commentId: Overload:BB84.WinForms.Extensions.DataGridViewExtensions.WithDataSourceBinding
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.DataGridViewExtensions.WithDataSource
-  nameWithType: DataGridViewExtensions.WithDataSource
-- uid: BB84.WinForms.Extensions.DataGridViewExtensions.WithEnabledBinding(System.Windows.Forms.DataGridView,System.Object,System.String)
-  name: WithEnabledBinding(DataGridView, object, string)
-  href: api/BB84.WinForms.Extensions.DataGridViewExtensions.html#BB84_WinForms_Extensions_DataGridViewExtensions_WithEnabledBinding_System_Windows_Forms_DataGridView_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.DataGridViewExtensions.WithEnabledBinding(System.Windows.Forms.DataGridView,System.Object,System.String)
-  name.vb: WithEnabledBinding(DataGridView, Object, String)
-  fullName: BB84.WinForms.Extensions.DataGridViewExtensions.WithEnabledBinding(System.Windows.Forms.DataGridView, object, string)
-  fullName.vb: BB84.WinForms.Extensions.DataGridViewExtensions.WithEnabledBinding(System.Windows.Forms.DataGridView, Object, String)
-  nameWithType: DataGridViewExtensions.WithEnabledBinding(DataGridView, object, string)
-  nameWithType.vb: DataGridViewExtensions.WithEnabledBinding(DataGridView, Object, String)
-- uid: BB84.WinForms.Extensions.DataGridViewExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.DataGridViewExtensions.html#BB84_WinForms_Extensions_DataGridViewExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.DataGridViewExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.DataGridViewExtensions.WithEnabledBinding
-  nameWithType: DataGridViewExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.DataGridViewExtensions.WithVisibleBinding(System.Windows.Forms.DataGridView,System.Object,System.String)
-  name: WithVisibleBinding(DataGridView, object, string)
-  href: api/BB84.WinForms.Extensions.DataGridViewExtensions.html#BB84_WinForms_Extensions_DataGridViewExtensions_WithVisibleBinding_System_Windows_Forms_DataGridView_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.DataGridViewExtensions.WithVisibleBinding(System.Windows.Forms.DataGridView,System.Object,System.String)
-  name.vb: WithVisibleBinding(DataGridView, Object, String)
-  fullName: BB84.WinForms.Extensions.DataGridViewExtensions.WithVisibleBinding(System.Windows.Forms.DataGridView, object, string)
-  fullName.vb: BB84.WinForms.Extensions.DataGridViewExtensions.WithVisibleBinding(System.Windows.Forms.DataGridView, Object, String)
-  nameWithType: DataGridViewExtensions.WithVisibleBinding(DataGridView, object, string)
-  nameWithType.vb: DataGridViewExtensions.WithVisibleBinding(DataGridView, Object, String)
-- uid: BB84.WinForms.Extensions.DataGridViewExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.DataGridViewExtensions.html#BB84_WinForms_Extensions_DataGridViewExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.DataGridViewExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.DataGridViewExtensions.WithVisibleBinding
-  nameWithType: DataGridViewExtensions.WithVisibleBinding
+  fullName: BB84.WinForms.Extensions.DataGridViewExtensions.WithDataSourceBinding
+  nameWithType: DataGridViewExtensions.WithDataSourceBinding
 - uid: BB84.WinForms.Extensions.DateTimePickerExtensions
   name: DateTimePickerExtensions
   href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html
   commentId: T:BB84.WinForms.Extensions.DateTimePickerExtensions
   fullName: BB84.WinForms.Extensions.DateTimePickerExtensions
   nameWithType: DateTimePickerExtensions
-- uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithEnabledBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
-  name: WithEnabledBinding(DateTimePicker, object, string)
-  href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithEnabledBinding_System_Windows_Forms_DateTimePicker_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.DateTimePickerExtensions.WithEnabledBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
-  name.vb: WithEnabledBinding(DateTimePicker, Object, String)
-  fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithEnabledBinding(System.Windows.Forms.DateTimePicker, object, string)
-  fullName.vb: BB84.WinForms.Extensions.DateTimePickerExtensions.WithEnabledBinding(System.Windows.Forms.DateTimePicker, Object, String)
-  nameWithType: DateTimePickerExtensions.WithEnabledBinding(DateTimePicker, object, string)
-  nameWithType.vb: DateTimePickerExtensions.WithEnabledBinding(DateTimePicker, Object, String)
-- uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.DateTimePickerExtensions.WithEnabledBinding
+- uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithCheckedBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
+  name: WithCheckedBinding(DateTimePicker, object, string)
+  href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithCheckedBinding_System_Windows_Forms_DateTimePicker_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.DateTimePickerExtensions.WithCheckedBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
+  name.vb: WithCheckedBinding(DateTimePicker, Object, String)
+  fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithCheckedBinding(System.Windows.Forms.DateTimePicker, object, string)
+  fullName.vb: BB84.WinForms.Extensions.DateTimePickerExtensions.WithCheckedBinding(System.Windows.Forms.DateTimePicker, Object, String)
+  nameWithType: DateTimePickerExtensions.WithCheckedBinding(DateTimePicker, object, string)
+  nameWithType.vb: DateTimePickerExtensions.WithCheckedBinding(DateTimePicker, Object, String)
+- uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithCheckedBinding*
+  name: WithCheckedBinding
+  href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithCheckedBinding_
+  commentId: Overload:BB84.WinForms.Extensions.DateTimePickerExtensions.WithCheckedBinding
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithEnabledBinding
-  nameWithType: DateTimePickerExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMaxDateBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
-  name: WithMaxDateBinding(DateTimePicker, object, string)
-  href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithMaxDateBinding_System_Windows_Forms_DateTimePicker_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.DateTimePickerExtensions.WithMaxDateBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
-  name.vb: WithMaxDateBinding(DateTimePicker, Object, String)
-  fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMaxDateBinding(System.Windows.Forms.DateTimePicker, object, string)
-  fullName.vb: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMaxDateBinding(System.Windows.Forms.DateTimePicker, Object, String)
-  nameWithType: DateTimePickerExtensions.WithMaxDateBinding(DateTimePicker, object, string)
-  nameWithType.vb: DateTimePickerExtensions.WithMaxDateBinding(DateTimePicker, Object, String)
-- uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMaxDateBinding*
-  name: WithMaxDateBinding
-  href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithMaxDateBinding_
-  commentId: Overload:BB84.WinForms.Extensions.DateTimePickerExtensions.WithMaxDateBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMaxDateBinding
-  nameWithType: DateTimePickerExtensions.WithMaxDateBinding
-- uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMinDateBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
-  name: WithMinDateBinding(DateTimePicker, object, string)
-  href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithMinDateBinding_System_Windows_Forms_DateTimePicker_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.DateTimePickerExtensions.WithMinDateBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
-  name.vb: WithMinDateBinding(DateTimePicker, Object, String)
-  fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMinDateBinding(System.Windows.Forms.DateTimePicker, object, string)
-  fullName.vb: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMinDateBinding(System.Windows.Forms.DateTimePicker, Object, String)
-  nameWithType: DateTimePickerExtensions.WithMinDateBinding(DateTimePicker, object, string)
-  nameWithType.vb: DateTimePickerExtensions.WithMinDateBinding(DateTimePicker, Object, String)
-- uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMinDateBinding*
-  name: WithMinDateBinding
-  href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithMinDateBinding_
-  commentId: Overload:BB84.WinForms.Extensions.DateTimePickerExtensions.WithMinDateBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithMinDateBinding
-  nameWithType: DateTimePickerExtensions.WithMinDateBinding
+  fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithCheckedBinding
+  nameWithType: DateTimePickerExtensions.WithCheckedBinding
 - uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithValueBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
   name: WithValueBinding(DateTimePicker, object, string)
   href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithValueBinding_System_Windows_Forms_DateTimePicker_System_Object_System_String_
@@ -2204,114 +2018,12 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithValueBinding
   nameWithType: DateTimePickerExtensions.WithValueBinding
-- uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithVisibleBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
-  name: WithVisibleBinding(DateTimePicker, object, string)
-  href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithVisibleBinding_System_Windows_Forms_DateTimePicker_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.DateTimePickerExtensions.WithVisibleBinding(System.Windows.Forms.DateTimePicker,System.Object,System.String)
-  name.vb: WithVisibleBinding(DateTimePicker, Object, String)
-  fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithVisibleBinding(System.Windows.Forms.DateTimePicker, object, string)
-  fullName.vb: BB84.WinForms.Extensions.DateTimePickerExtensions.WithVisibleBinding(System.Windows.Forms.DateTimePicker, Object, String)
-  nameWithType: DateTimePickerExtensions.WithVisibleBinding(DateTimePicker, object, string)
-  nameWithType.vb: DateTimePickerExtensions.WithVisibleBinding(DateTimePicker, Object, String)
-- uid: BB84.WinForms.Extensions.DateTimePickerExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.DateTimePickerExtensions.html#BB84_WinForms_Extensions_DateTimePickerExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.DateTimePickerExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithVisibleBinding
-  nameWithType: DateTimePickerExtensions.WithVisibleBinding
-- uid: BB84.WinForms.Extensions.LabelExtensions
-  name: LabelExtensions
-  href: api/BB84.WinForms.Extensions.LabelExtensions.html
-  commentId: T:BB84.WinForms.Extensions.LabelExtensions
-  fullName: BB84.WinForms.Extensions.LabelExtensions
-  nameWithType: LabelExtensions
-- uid: BB84.WinForms.Extensions.LabelExtensions.WithEnabledBinding(System.Windows.Forms.Label,System.Object,System.String)
-  name: WithEnabledBinding(Label, object, string)
-  href: api/BB84.WinForms.Extensions.LabelExtensions.html#BB84_WinForms_Extensions_LabelExtensions_WithEnabledBinding_System_Windows_Forms_Label_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.LabelExtensions.WithEnabledBinding(System.Windows.Forms.Label,System.Object,System.String)
-  name.vb: WithEnabledBinding(Label, Object, String)
-  fullName: BB84.WinForms.Extensions.LabelExtensions.WithEnabledBinding(System.Windows.Forms.Label, object, string)
-  fullName.vb: BB84.WinForms.Extensions.LabelExtensions.WithEnabledBinding(System.Windows.Forms.Label, Object, String)
-  nameWithType: LabelExtensions.WithEnabledBinding(Label, object, string)
-  nameWithType.vb: LabelExtensions.WithEnabledBinding(Label, Object, String)
-- uid: BB84.WinForms.Extensions.LabelExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.LabelExtensions.html#BB84_WinForms_Extensions_LabelExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.LabelExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.LabelExtensions.WithEnabledBinding
-  nameWithType: LabelExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.LabelExtensions.WithTextBinding(System.Windows.Forms.Label,System.Object,System.String)
-  name: WithTextBinding(Label, object, string)
-  href: api/BB84.WinForms.Extensions.LabelExtensions.html#BB84_WinForms_Extensions_LabelExtensions_WithTextBinding_System_Windows_Forms_Label_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.LabelExtensions.WithTextBinding(System.Windows.Forms.Label,System.Object,System.String)
-  name.vb: WithTextBinding(Label, Object, String)
-  fullName: BB84.WinForms.Extensions.LabelExtensions.WithTextBinding(System.Windows.Forms.Label, object, string)
-  fullName.vb: BB84.WinForms.Extensions.LabelExtensions.WithTextBinding(System.Windows.Forms.Label, Object, String)
-  nameWithType: LabelExtensions.WithTextBinding(Label, object, string)
-  nameWithType.vb: LabelExtensions.WithTextBinding(Label, Object, String)
-- uid: BB84.WinForms.Extensions.LabelExtensions.WithTextBinding*
-  name: WithTextBinding
-  href: api/BB84.WinForms.Extensions.LabelExtensions.html#BB84_WinForms_Extensions_LabelExtensions_WithTextBinding_
-  commentId: Overload:BB84.WinForms.Extensions.LabelExtensions.WithTextBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.LabelExtensions.WithTextBinding
-  nameWithType: LabelExtensions.WithTextBinding
-- uid: BB84.WinForms.Extensions.LabelExtensions.WithVisibleBinding(System.Windows.Forms.Label,System.Object,System.String)
-  name: WithVisibleBinding(Label, object, string)
-  href: api/BB84.WinForms.Extensions.LabelExtensions.html#BB84_WinForms_Extensions_LabelExtensions_WithVisibleBinding_System_Windows_Forms_Label_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.LabelExtensions.WithVisibleBinding(System.Windows.Forms.Label,System.Object,System.String)
-  name.vb: WithVisibleBinding(Label, Object, String)
-  fullName: BB84.WinForms.Extensions.LabelExtensions.WithVisibleBinding(System.Windows.Forms.Label, object, string)
-  fullName.vb: BB84.WinForms.Extensions.LabelExtensions.WithVisibleBinding(System.Windows.Forms.Label, Object, String)
-  nameWithType: LabelExtensions.WithVisibleBinding(Label, object, string)
-  nameWithType.vb: LabelExtensions.WithVisibleBinding(Label, Object, String)
-- uid: BB84.WinForms.Extensions.LabelExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.LabelExtensions.html#BB84_WinForms_Extensions_LabelExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.LabelExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.LabelExtensions.WithVisibleBinding
-  nameWithType: LabelExtensions.WithVisibleBinding
 - uid: BB84.WinForms.Extensions.ListBoxExtensions
   name: ListBoxExtensions
   href: api/BB84.WinForms.Extensions.ListBoxExtensions.html
   commentId: T:BB84.WinForms.Extensions.ListBoxExtensions
   fullName: BB84.WinForms.Extensions.ListBoxExtensions
   nameWithType: ListBoxExtensions
-- uid: BB84.WinForms.Extensions.ListBoxExtensions.WithDataSource(System.Windows.Forms.ListBox,System.Object)
-  name: WithDataSource(ListBox, object)
-  href: api/BB84.WinForms.Extensions.ListBoxExtensions.html#BB84_WinForms_Extensions_ListBoxExtensions_WithDataSource_System_Windows_Forms_ListBox_System_Object_
-  commentId: M:BB84.WinForms.Extensions.ListBoxExtensions.WithDataSource(System.Windows.Forms.ListBox,System.Object)
-  name.vb: WithDataSource(ListBox, Object)
-  fullName: BB84.WinForms.Extensions.ListBoxExtensions.WithDataSource(System.Windows.Forms.ListBox, object)
-  fullName.vb: BB84.WinForms.Extensions.ListBoxExtensions.WithDataSource(System.Windows.Forms.ListBox, Object)
-  nameWithType: ListBoxExtensions.WithDataSource(ListBox, object)
-  nameWithType.vb: ListBoxExtensions.WithDataSource(ListBox, Object)
-- uid: BB84.WinForms.Extensions.ListBoxExtensions.WithDataSource*
-  name: WithDataSource
-  href: api/BB84.WinForms.Extensions.ListBoxExtensions.html#BB84_WinForms_Extensions_ListBoxExtensions_WithDataSource_
-  commentId: Overload:BB84.WinForms.Extensions.ListBoxExtensions.WithDataSource
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ListBoxExtensions.WithDataSource
-  nameWithType: ListBoxExtensions.WithDataSource
-- uid: BB84.WinForms.Extensions.ListBoxExtensions.WithEnabledBinding(System.Windows.Forms.ListBox,System.Object,System.String)
-  name: WithEnabledBinding(ListBox, object, string)
-  href: api/BB84.WinForms.Extensions.ListBoxExtensions.html#BB84_WinForms_Extensions_ListBoxExtensions_WithEnabledBinding_System_Windows_Forms_ListBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.ListBoxExtensions.WithEnabledBinding(System.Windows.Forms.ListBox,System.Object,System.String)
-  name.vb: WithEnabledBinding(ListBox, Object, String)
-  fullName: BB84.WinForms.Extensions.ListBoxExtensions.WithEnabledBinding(System.Windows.Forms.ListBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.ListBoxExtensions.WithEnabledBinding(System.Windows.Forms.ListBox, Object, String)
-  nameWithType: ListBoxExtensions.WithEnabledBinding(ListBox, object, string)
-  nameWithType.vb: ListBoxExtensions.WithEnabledBinding(ListBox, Object, String)
-- uid: BB84.WinForms.Extensions.ListBoxExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.ListBoxExtensions.html#BB84_WinForms_Extensions_ListBoxExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ListBoxExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ListBoxExtensions.WithEnabledBinding
-  nameWithType: ListBoxExtensions.WithEnabledBinding
 - uid: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedIndexBinding(System.Windows.Forms.ListBox,System.Object,System.String)
   name: WithSelectedIndexBinding(ListBox, object, string)
   href: api/BB84.WinForms.Extensions.ListBoxExtensions.html#BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedIndexBinding_System_Windows_Forms_ListBox_System_Object_System_String_
@@ -2344,222 +2056,72 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedItemBinding
   nameWithType: ListBoxExtensions.WithSelectedItemBinding
-- uid: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ListBox,System.Object,System.String)
-  name: WithSelectedValueBinding(ListBox, object, string)
-  href: api/BB84.WinForms.Extensions.ListBoxExtensions.html#BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedValueBinding_System_Windows_Forms_ListBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ListBox,System.Object,System.String)
-  name.vb: WithSelectedValueBinding(ListBox, Object, String)
-  fullName: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ListBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding(System.Windows.Forms.ListBox, Object, String)
-  nameWithType: ListBoxExtensions.WithSelectedValueBinding(ListBox, object, string)
-  nameWithType.vb: ListBoxExtensions.WithSelectedValueBinding(ListBox, Object, String)
-- uid: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding*
+- uid: BB84.WinForms.Extensions.ListControlExtensions
+  name: ListControlExtensions
+  href: api/BB84.WinForms.Extensions.ListControlExtensions.html
+  commentId: T:BB84.WinForms.Extensions.ListControlExtensions
+  fullName: BB84.WinForms.Extensions.ListControlExtensions
+  nameWithType: ListControlExtensions
+- uid: BB84.WinForms.Extensions.ListControlExtensions.WithDataSourceBinding(System.Windows.Forms.ListControl,System.Object)
+  name: WithDataSourceBinding(ListControl, object)
+  href: api/BB84.WinForms.Extensions.ListControlExtensions.html#BB84_WinForms_Extensions_ListControlExtensions_WithDataSourceBinding_System_Windows_Forms_ListControl_System_Object_
+  commentId: M:BB84.WinForms.Extensions.ListControlExtensions.WithDataSourceBinding(System.Windows.Forms.ListControl,System.Object)
+  name.vb: WithDataSourceBinding(ListControl, Object)
+  fullName: BB84.WinForms.Extensions.ListControlExtensions.WithDataSourceBinding(System.Windows.Forms.ListControl, object)
+  fullName.vb: BB84.WinForms.Extensions.ListControlExtensions.WithDataSourceBinding(System.Windows.Forms.ListControl, Object)
+  nameWithType: ListControlExtensions.WithDataSourceBinding(ListControl, object)
+  nameWithType.vb: ListControlExtensions.WithDataSourceBinding(ListControl, Object)
+- uid: BB84.WinForms.Extensions.ListControlExtensions.WithDataSourceBinding*
+  name: WithDataSourceBinding
+  href: api/BB84.WinForms.Extensions.ListControlExtensions.html#BB84_WinForms_Extensions_ListControlExtensions_WithDataSourceBinding_
+  commentId: Overload:BB84.WinForms.Extensions.ListControlExtensions.WithDataSourceBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.ListControlExtensions.WithDataSourceBinding
+  nameWithType: ListControlExtensions.WithDataSourceBinding
+- uid: BB84.WinForms.Extensions.ListControlExtensions.WithSelectedValueBinding(System.Windows.Forms.ListControl,System.Object,System.String)
+  name: WithSelectedValueBinding(ListControl, object, string)
+  href: api/BB84.WinForms.Extensions.ListControlExtensions.html#BB84_WinForms_Extensions_ListControlExtensions_WithSelectedValueBinding_System_Windows_Forms_ListControl_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.ListControlExtensions.WithSelectedValueBinding(System.Windows.Forms.ListControl,System.Object,System.String)
+  name.vb: WithSelectedValueBinding(ListControl, Object, String)
+  fullName: BB84.WinForms.Extensions.ListControlExtensions.WithSelectedValueBinding(System.Windows.Forms.ListControl, object, string)
+  fullName.vb: BB84.WinForms.Extensions.ListControlExtensions.WithSelectedValueBinding(System.Windows.Forms.ListControl, Object, String)
+  nameWithType: ListControlExtensions.WithSelectedValueBinding(ListControl, object, string)
+  nameWithType.vb: ListControlExtensions.WithSelectedValueBinding(ListControl, Object, String)
+- uid: BB84.WinForms.Extensions.ListControlExtensions.WithSelectedValueBinding*
   name: WithSelectedValueBinding
-  href: api/BB84.WinForms.Extensions.ListBoxExtensions.html#BB84_WinForms_Extensions_ListBoxExtensions_WithSelectedValueBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding
+  href: api/BB84.WinForms.Extensions.ListControlExtensions.html#BB84_WinForms_Extensions_ListControlExtensions_WithSelectedValueBinding_
+  commentId: Overload:BB84.WinForms.Extensions.ListControlExtensions.WithSelectedValueBinding
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ListBoxExtensions.WithSelectedValueBinding
-  nameWithType: ListBoxExtensions.WithSelectedValueBinding
-- uid: BB84.WinForms.Extensions.ListBoxExtensions.WithVisibleBinding(System.Windows.Forms.ListBox,System.Object,System.String)
-  name: WithVisibleBinding(ListBox, object, string)
-  href: api/BB84.WinForms.Extensions.ListBoxExtensions.html#BB84_WinForms_Extensions_ListBoxExtensions_WithVisibleBinding_System_Windows_Forms_ListBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.ListBoxExtensions.WithVisibleBinding(System.Windows.Forms.ListBox,System.Object,System.String)
-  name.vb: WithVisibleBinding(ListBox, Object, String)
-  fullName: BB84.WinForms.Extensions.ListBoxExtensions.WithVisibleBinding(System.Windows.Forms.ListBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.ListBoxExtensions.WithVisibleBinding(System.Windows.Forms.ListBox, Object, String)
-  nameWithType: ListBoxExtensions.WithVisibleBinding(ListBox, object, string)
-  nameWithType.vb: ListBoxExtensions.WithVisibleBinding(ListBox, Object, String)
-- uid: BB84.WinForms.Extensions.ListBoxExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.ListBoxExtensions.html#BB84_WinForms_Extensions_ListBoxExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ListBoxExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ListBoxExtensions.WithVisibleBinding
-  nameWithType: ListBoxExtensions.WithVisibleBinding
-- uid: BB84.WinForms.Extensions.ListViewExtensions
-  name: ListViewExtensions
-  href: api/BB84.WinForms.Extensions.ListViewExtensions.html
-  commentId: T:BB84.WinForms.Extensions.ListViewExtensions
-  fullName: BB84.WinForms.Extensions.ListViewExtensions
-  nameWithType: ListViewExtensions
-- uid: BB84.WinForms.Extensions.ListViewExtensions.WithEnabledBinding(System.Windows.Forms.ListView,System.Object,System.String)
-  name: WithEnabledBinding(ListView, object, string)
-  href: api/BB84.WinForms.Extensions.ListViewExtensions.html#BB84_WinForms_Extensions_ListViewExtensions_WithEnabledBinding_System_Windows_Forms_ListView_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.ListViewExtensions.WithEnabledBinding(System.Windows.Forms.ListView,System.Object,System.String)
-  name.vb: WithEnabledBinding(ListView, Object, String)
-  fullName: BB84.WinForms.Extensions.ListViewExtensions.WithEnabledBinding(System.Windows.Forms.ListView, object, string)
-  fullName.vb: BB84.WinForms.Extensions.ListViewExtensions.WithEnabledBinding(System.Windows.Forms.ListView, Object, String)
-  nameWithType: ListViewExtensions.WithEnabledBinding(ListView, object, string)
-  nameWithType.vb: ListViewExtensions.WithEnabledBinding(ListView, Object, String)
-- uid: BB84.WinForms.Extensions.ListViewExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.ListViewExtensions.html#BB84_WinForms_Extensions_ListViewExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ListViewExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ListViewExtensions.WithEnabledBinding
-  nameWithType: ListViewExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.ListViewExtensions.WithVisibleBinding(System.Windows.Forms.ListView,System.Object,System.String)
-  name: WithVisibleBinding(ListView, object, string)
-  href: api/BB84.WinForms.Extensions.ListViewExtensions.html#BB84_WinForms_Extensions_ListViewExtensions_WithVisibleBinding_System_Windows_Forms_ListView_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.ListViewExtensions.WithVisibleBinding(System.Windows.Forms.ListView,System.Object,System.String)
-  name.vb: WithVisibleBinding(ListView, Object, String)
-  fullName: BB84.WinForms.Extensions.ListViewExtensions.WithVisibleBinding(System.Windows.Forms.ListView, object, string)
-  fullName.vb: BB84.WinForms.Extensions.ListViewExtensions.WithVisibleBinding(System.Windows.Forms.ListView, Object, String)
-  nameWithType: ListViewExtensions.WithVisibleBinding(ListView, object, string)
-  nameWithType.vb: ListViewExtensions.WithVisibleBinding(ListView, Object, String)
-- uid: BB84.WinForms.Extensions.ListViewExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.ListViewExtensions.html#BB84_WinForms_Extensions_ListViewExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ListViewExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ListViewExtensions.WithVisibleBinding
-  nameWithType: ListViewExtensions.WithVisibleBinding
-- uid: BB84.WinForms.Extensions.MaskedTextBoxExtensions
-  name: MaskedTextBoxExtensions
-  href: api/BB84.WinForms.Extensions.MaskedTextBoxExtensions.html
-  commentId: T:BB84.WinForms.Extensions.MaskedTextBoxExtensions
-  fullName: BB84.WinForms.Extensions.MaskedTextBoxExtensions
-  nameWithType: MaskedTextBoxExtensions
-- uid: BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithEnabledBinding(System.Windows.Forms.MaskedTextBox,System.Object,System.String)
-  name: WithEnabledBinding(MaskedTextBox, object, string)
-  href: api/BB84.WinForms.Extensions.MaskedTextBoxExtensions.html#BB84_WinForms_Extensions_MaskedTextBoxExtensions_WithEnabledBinding_System_Windows_Forms_MaskedTextBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithEnabledBinding(System.Windows.Forms.MaskedTextBox,System.Object,System.String)
-  name.vb: WithEnabledBinding(MaskedTextBox, Object, String)
-  fullName: BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithEnabledBinding(System.Windows.Forms.MaskedTextBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithEnabledBinding(System.Windows.Forms.MaskedTextBox, Object, String)
-  nameWithType: MaskedTextBoxExtensions.WithEnabledBinding(MaskedTextBox, object, string)
-  nameWithType.vb: MaskedTextBoxExtensions.WithEnabledBinding(MaskedTextBox, Object, String)
-- uid: BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.MaskedTextBoxExtensions.html#BB84_WinForms_Extensions_MaskedTextBoxExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithEnabledBinding
-  nameWithType: MaskedTextBoxExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithTextBinding(System.Windows.Forms.MaskedTextBox,System.Object,System.String)
-  name: WithTextBinding(MaskedTextBox, object, string)
-  href: api/BB84.WinForms.Extensions.MaskedTextBoxExtensions.html#BB84_WinForms_Extensions_MaskedTextBoxExtensions_WithTextBinding_System_Windows_Forms_MaskedTextBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithTextBinding(System.Windows.Forms.MaskedTextBox,System.Object,System.String)
-  name.vb: WithTextBinding(MaskedTextBox, Object, String)
-  fullName: BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithTextBinding(System.Windows.Forms.MaskedTextBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithTextBinding(System.Windows.Forms.MaskedTextBox, Object, String)
-  nameWithType: MaskedTextBoxExtensions.WithTextBinding(MaskedTextBox, object, string)
-  nameWithType.vb: MaskedTextBoxExtensions.WithTextBinding(MaskedTextBox, Object, String)
-- uid: BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithTextBinding*
-  name: WithTextBinding
-  href: api/BB84.WinForms.Extensions.MaskedTextBoxExtensions.html#BB84_WinForms_Extensions_MaskedTextBoxExtensions_WithTextBinding_
-  commentId: Overload:BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithTextBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithTextBinding
-  nameWithType: MaskedTextBoxExtensions.WithTextBinding
-- uid: BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithVisibleBinding(System.Windows.Forms.MaskedTextBox,System.Object,System.String)
-  name: WithVisibleBinding(MaskedTextBox, object, string)
-  href: api/BB84.WinForms.Extensions.MaskedTextBoxExtensions.html#BB84_WinForms_Extensions_MaskedTextBoxExtensions_WithVisibleBinding_System_Windows_Forms_MaskedTextBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithVisibleBinding(System.Windows.Forms.MaskedTextBox,System.Object,System.String)
-  name.vb: WithVisibleBinding(MaskedTextBox, Object, String)
-  fullName: BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithVisibleBinding(System.Windows.Forms.MaskedTextBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithVisibleBinding(System.Windows.Forms.MaskedTextBox, Object, String)
-  nameWithType: MaskedTextBoxExtensions.WithVisibleBinding(MaskedTextBox, object, string)
-  nameWithType.vb: MaskedTextBoxExtensions.WithVisibleBinding(MaskedTextBox, Object, String)
-- uid: BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.MaskedTextBoxExtensions.html#BB84_WinForms_Extensions_MaskedTextBoxExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.MaskedTextBoxExtensions.WithVisibleBinding
-  nameWithType: MaskedTextBoxExtensions.WithVisibleBinding
+  fullName: BB84.WinForms.Extensions.ListControlExtensions.WithSelectedValueBinding
+  nameWithType: ListControlExtensions.WithSelectedValueBinding
 - uid: BB84.WinForms.Extensions.MonthCalendarExtensions
   name: MonthCalendarExtensions
   href: api/BB84.WinForms.Extensions.MonthCalendarExtensions.html
   commentId: T:BB84.WinForms.Extensions.MonthCalendarExtensions
   fullName: BB84.WinForms.Extensions.MonthCalendarExtensions
   nameWithType: MonthCalendarExtensions
-- uid: BB84.WinForms.Extensions.MonthCalendarExtensions.WithEnabledBinding(System.Windows.Forms.MonthCalendar,System.Object,System.String)
-  name: WithEnabledBinding(MonthCalendar, object, string)
-  href: api/BB84.WinForms.Extensions.MonthCalendarExtensions.html#BB84_WinForms_Extensions_MonthCalendarExtensions_WithEnabledBinding_System_Windows_Forms_MonthCalendar_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.MonthCalendarExtensions.WithEnabledBinding(System.Windows.Forms.MonthCalendar,System.Object,System.String)
-  name.vb: WithEnabledBinding(MonthCalendar, Object, String)
-  fullName: BB84.WinForms.Extensions.MonthCalendarExtensions.WithEnabledBinding(System.Windows.Forms.MonthCalendar, object, string)
-  fullName.vb: BB84.WinForms.Extensions.MonthCalendarExtensions.WithEnabledBinding(System.Windows.Forms.MonthCalendar, Object, String)
-  nameWithType: MonthCalendarExtensions.WithEnabledBinding(MonthCalendar, object, string)
-  nameWithType.vb: MonthCalendarExtensions.WithEnabledBinding(MonthCalendar, Object, String)
-- uid: BB84.WinForms.Extensions.MonthCalendarExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.MonthCalendarExtensions.html#BB84_WinForms_Extensions_MonthCalendarExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.MonthCalendarExtensions.WithEnabledBinding
+- uid: BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionRangeBinding(System.Windows.Forms.MonthCalendar,System.Object,System.String)
+  name: WithSelectionRangeBinding(MonthCalendar, object, string)
+  href: api/BB84.WinForms.Extensions.MonthCalendarExtensions.html#BB84_WinForms_Extensions_MonthCalendarExtensions_WithSelectionRangeBinding_System_Windows_Forms_MonthCalendar_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionRangeBinding(System.Windows.Forms.MonthCalendar,System.Object,System.String)
+  name.vb: WithSelectionRangeBinding(MonthCalendar, Object, String)
+  fullName: BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionRangeBinding(System.Windows.Forms.MonthCalendar, object, string)
+  fullName.vb: BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionRangeBinding(System.Windows.Forms.MonthCalendar, Object, String)
+  nameWithType: MonthCalendarExtensions.WithSelectionRangeBinding(MonthCalendar, object, string)
+  nameWithType.vb: MonthCalendarExtensions.WithSelectionRangeBinding(MonthCalendar, Object, String)
+- uid: BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionRangeBinding*
+  name: WithSelectionRangeBinding
+  href: api/BB84.WinForms.Extensions.MonthCalendarExtensions.html#BB84_WinForms_Extensions_MonthCalendarExtensions_WithSelectionRangeBinding_
+  commentId: Overload:BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionRangeBinding
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.MonthCalendarExtensions.WithEnabledBinding
-  nameWithType: MonthCalendarExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionEndBinding(System.Windows.Forms.MonthCalendar,System.Object,System.String)
-  name: WithSelectionEndBinding(MonthCalendar, object, string)
-  href: api/BB84.WinForms.Extensions.MonthCalendarExtensions.html#BB84_WinForms_Extensions_MonthCalendarExtensions_WithSelectionEndBinding_System_Windows_Forms_MonthCalendar_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionEndBinding(System.Windows.Forms.MonthCalendar,System.Object,System.String)
-  name.vb: WithSelectionEndBinding(MonthCalendar, Object, String)
-  fullName: BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionEndBinding(System.Windows.Forms.MonthCalendar, object, string)
-  fullName.vb: BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionEndBinding(System.Windows.Forms.MonthCalendar, Object, String)
-  nameWithType: MonthCalendarExtensions.WithSelectionEndBinding(MonthCalendar, object, string)
-  nameWithType.vb: MonthCalendarExtensions.WithSelectionEndBinding(MonthCalendar, Object, String)
-- uid: BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionEndBinding*
-  name: WithSelectionEndBinding
-  href: api/BB84.WinForms.Extensions.MonthCalendarExtensions.html#BB84_WinForms_Extensions_MonthCalendarExtensions_WithSelectionEndBinding_
-  commentId: Overload:BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionEndBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionEndBinding
-  nameWithType: MonthCalendarExtensions.WithSelectionEndBinding
-- uid: BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionStartBinding(System.Windows.Forms.MonthCalendar,System.Object,System.String)
-  name: WithSelectionStartBinding(MonthCalendar, object, string)
-  href: api/BB84.WinForms.Extensions.MonthCalendarExtensions.html#BB84_WinForms_Extensions_MonthCalendarExtensions_WithSelectionStartBinding_System_Windows_Forms_MonthCalendar_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionStartBinding(System.Windows.Forms.MonthCalendar,System.Object,System.String)
-  name.vb: WithSelectionStartBinding(MonthCalendar, Object, String)
-  fullName: BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionStartBinding(System.Windows.Forms.MonthCalendar, object, string)
-  fullName.vb: BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionStartBinding(System.Windows.Forms.MonthCalendar, Object, String)
-  nameWithType: MonthCalendarExtensions.WithSelectionStartBinding(MonthCalendar, object, string)
-  nameWithType.vb: MonthCalendarExtensions.WithSelectionStartBinding(MonthCalendar, Object, String)
-- uid: BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionStartBinding*
-  name: WithSelectionStartBinding
-  href: api/BB84.WinForms.Extensions.MonthCalendarExtensions.html#BB84_WinForms_Extensions_MonthCalendarExtensions_WithSelectionStartBinding_
-  commentId: Overload:BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionStartBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionStartBinding
-  nameWithType: MonthCalendarExtensions.WithSelectionStartBinding
-- uid: BB84.WinForms.Extensions.MonthCalendarExtensions.WithVisibleBinding(System.Windows.Forms.MonthCalendar,System.Object,System.String)
-  name: WithVisibleBinding(MonthCalendar, object, string)
-  href: api/BB84.WinForms.Extensions.MonthCalendarExtensions.html#BB84_WinForms_Extensions_MonthCalendarExtensions_WithVisibleBinding_System_Windows_Forms_MonthCalendar_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.MonthCalendarExtensions.WithVisibleBinding(System.Windows.Forms.MonthCalendar,System.Object,System.String)
-  name.vb: WithVisibleBinding(MonthCalendar, Object, String)
-  fullName: BB84.WinForms.Extensions.MonthCalendarExtensions.WithVisibleBinding(System.Windows.Forms.MonthCalendar, object, string)
-  fullName.vb: BB84.WinForms.Extensions.MonthCalendarExtensions.WithVisibleBinding(System.Windows.Forms.MonthCalendar, Object, String)
-  nameWithType: MonthCalendarExtensions.WithVisibleBinding(MonthCalendar, object, string)
-  nameWithType.vb: MonthCalendarExtensions.WithVisibleBinding(MonthCalendar, Object, String)
-- uid: BB84.WinForms.Extensions.MonthCalendarExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.MonthCalendarExtensions.html#BB84_WinForms_Extensions_MonthCalendarExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.MonthCalendarExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.MonthCalendarExtensions.WithVisibleBinding
-  nameWithType: MonthCalendarExtensions.WithVisibleBinding
+  fullName: BB84.WinForms.Extensions.MonthCalendarExtensions.WithSelectionRangeBinding
+  nameWithType: MonthCalendarExtensions.WithSelectionRangeBinding
 - uid: BB84.WinForms.Extensions.NumericUpDownExtensions
   name: NumericUpDownExtensions
   href: api/BB84.WinForms.Extensions.NumericUpDownExtensions.html
   commentId: T:BB84.WinForms.Extensions.NumericUpDownExtensions
   fullName: BB84.WinForms.Extensions.NumericUpDownExtensions
   nameWithType: NumericUpDownExtensions
-- uid: BB84.WinForms.Extensions.NumericUpDownExtensions.WithEnabledBinding(System.Windows.Forms.NumericUpDown,System.Object,System.String)
-  name: WithEnabledBinding(NumericUpDown, object, string)
-  href: api/BB84.WinForms.Extensions.NumericUpDownExtensions.html#BB84_WinForms_Extensions_NumericUpDownExtensions_WithEnabledBinding_System_Windows_Forms_NumericUpDown_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.NumericUpDownExtensions.WithEnabledBinding(System.Windows.Forms.NumericUpDown,System.Object,System.String)
-  name.vb: WithEnabledBinding(NumericUpDown, Object, String)
-  fullName: BB84.WinForms.Extensions.NumericUpDownExtensions.WithEnabledBinding(System.Windows.Forms.NumericUpDown, object, string)
-  fullName.vb: BB84.WinForms.Extensions.NumericUpDownExtensions.WithEnabledBinding(System.Windows.Forms.NumericUpDown, Object, String)
-  nameWithType: NumericUpDownExtensions.WithEnabledBinding(NumericUpDown, object, string)
-  nameWithType.vb: NumericUpDownExtensions.WithEnabledBinding(NumericUpDown, Object, String)
-- uid: BB84.WinForms.Extensions.NumericUpDownExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.NumericUpDownExtensions.html#BB84_WinForms_Extensions_NumericUpDownExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.NumericUpDownExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.NumericUpDownExtensions.WithEnabledBinding
-  nameWithType: NumericUpDownExtensions.WithEnabledBinding
 - uid: BB84.WinForms.Extensions.NumericUpDownExtensions.WithValueBinding(System.Windows.Forms.NumericUpDown,System.Object,System.String)
   name: WithValueBinding(NumericUpDown, object, string)
   href: api/BB84.WinForms.Extensions.NumericUpDownExtensions.html#BB84_WinForms_Extensions_NumericUpDownExtensions_WithValueBinding_System_Windows_Forms_NumericUpDown_System_Object_System_String_
@@ -2576,60 +2138,12 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.NumericUpDownExtensions.WithValueBinding
   nameWithType: NumericUpDownExtensions.WithValueBinding
-- uid: BB84.WinForms.Extensions.NumericUpDownExtensions.WithVisibleBinding(System.Windows.Forms.NumericUpDown,System.Object,System.String)
-  name: WithVisibleBinding(NumericUpDown, object, string)
-  href: api/BB84.WinForms.Extensions.NumericUpDownExtensions.html#BB84_WinForms_Extensions_NumericUpDownExtensions_WithVisibleBinding_System_Windows_Forms_NumericUpDown_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.NumericUpDownExtensions.WithVisibleBinding(System.Windows.Forms.NumericUpDown,System.Object,System.String)
-  name.vb: WithVisibleBinding(NumericUpDown, Object, String)
-  fullName: BB84.WinForms.Extensions.NumericUpDownExtensions.WithVisibleBinding(System.Windows.Forms.NumericUpDown, object, string)
-  fullName.vb: BB84.WinForms.Extensions.NumericUpDownExtensions.WithVisibleBinding(System.Windows.Forms.NumericUpDown, Object, String)
-  nameWithType: NumericUpDownExtensions.WithVisibleBinding(NumericUpDown, object, string)
-  nameWithType.vb: NumericUpDownExtensions.WithVisibleBinding(NumericUpDown, Object, String)
-- uid: BB84.WinForms.Extensions.NumericUpDownExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.NumericUpDownExtensions.html#BB84_WinForms_Extensions_NumericUpDownExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.NumericUpDownExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.NumericUpDownExtensions.WithVisibleBinding
-  nameWithType: NumericUpDownExtensions.WithVisibleBinding
 - uid: BB84.WinForms.Extensions.PictureBoxExtensions
   name: PictureBoxExtensions
   href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html
   commentId: T:BB84.WinForms.Extensions.PictureBoxExtensions
   fullName: BB84.WinForms.Extensions.PictureBoxExtensions
   nameWithType: PictureBoxExtensions
-- uid: BB84.WinForms.Extensions.PictureBoxExtensions.WithEnabledBinding(System.Windows.Forms.PictureBox,System.Object,System.String)
-  name: WithEnabledBinding(PictureBox, object, string)
-  href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html#BB84_WinForms_Extensions_PictureBoxExtensions_WithEnabledBinding_System_Windows_Forms_PictureBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.PictureBoxExtensions.WithEnabledBinding(System.Windows.Forms.PictureBox,System.Object,System.String)
-  name.vb: WithEnabledBinding(PictureBox, Object, String)
-  fullName: BB84.WinForms.Extensions.PictureBoxExtensions.WithEnabledBinding(System.Windows.Forms.PictureBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.PictureBoxExtensions.WithEnabledBinding(System.Windows.Forms.PictureBox, Object, String)
-  nameWithType: PictureBoxExtensions.WithEnabledBinding(PictureBox, object, string)
-  nameWithType.vb: PictureBoxExtensions.WithEnabledBinding(PictureBox, Object, String)
-- uid: BB84.WinForms.Extensions.PictureBoxExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html#BB84_WinForms_Extensions_PictureBoxExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.PictureBoxExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.PictureBoxExtensions.WithEnabledBinding
-  nameWithType: PictureBoxExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.PictureBoxExtensions.WithErrorImageBinding(System.Windows.Forms.PictureBox,System.Object,System.String)
-  name: WithErrorImageBinding(PictureBox, object, string)
-  href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html#BB84_WinForms_Extensions_PictureBoxExtensions_WithErrorImageBinding_System_Windows_Forms_PictureBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.PictureBoxExtensions.WithErrorImageBinding(System.Windows.Forms.PictureBox,System.Object,System.String)
-  name.vb: WithErrorImageBinding(PictureBox, Object, String)
-  fullName: BB84.WinForms.Extensions.PictureBoxExtensions.WithErrorImageBinding(System.Windows.Forms.PictureBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.PictureBoxExtensions.WithErrorImageBinding(System.Windows.Forms.PictureBox, Object, String)
-  nameWithType: PictureBoxExtensions.WithErrorImageBinding(PictureBox, object, string)
-  nameWithType.vb: PictureBoxExtensions.WithErrorImageBinding(PictureBox, Object, String)
-- uid: BB84.WinForms.Extensions.PictureBoxExtensions.WithErrorImageBinding*
-  name: WithErrorImageBinding
-  href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html#BB84_WinForms_Extensions_PictureBoxExtensions_WithErrorImageBinding_
-  commentId: Overload:BB84.WinForms.Extensions.PictureBoxExtensions.WithErrorImageBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.PictureBoxExtensions.WithErrorImageBinding
-  nameWithType: PictureBoxExtensions.WithErrorImageBinding
 - uid: BB84.WinForms.Extensions.PictureBoxExtensions.WithImageBinding(System.Windows.Forms.PictureBox,System.Object,System.String)
   name: WithImageBinding(PictureBox, object, string)
   href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html#BB84_WinForms_Extensions_PictureBoxExtensions_WithImageBinding_System_Windows_Forms_PictureBox_System_Object_System_String_
@@ -2646,76 +2160,12 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.PictureBoxExtensions.WithImageBinding
   nameWithType: PictureBoxExtensions.WithImageBinding
-- uid: BB84.WinForms.Extensions.PictureBoxExtensions.WithVisibleBinding(System.Windows.Forms.PictureBox,System.Object,System.String)
-  name: WithVisibleBinding(PictureBox, object, string)
-  href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html#BB84_WinForms_Extensions_PictureBoxExtensions_WithVisibleBinding_System_Windows_Forms_PictureBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.PictureBoxExtensions.WithVisibleBinding(System.Windows.Forms.PictureBox,System.Object,System.String)
-  name.vb: WithVisibleBinding(PictureBox, Object, String)
-  fullName: BB84.WinForms.Extensions.PictureBoxExtensions.WithVisibleBinding(System.Windows.Forms.PictureBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.PictureBoxExtensions.WithVisibleBinding(System.Windows.Forms.PictureBox, Object, String)
-  nameWithType: PictureBoxExtensions.WithVisibleBinding(PictureBox, object, string)
-  nameWithType.vb: PictureBoxExtensions.WithVisibleBinding(PictureBox, Object, String)
-- uid: BB84.WinForms.Extensions.PictureBoxExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.PictureBoxExtensions.html#BB84_WinForms_Extensions_PictureBoxExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.PictureBoxExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.PictureBoxExtensions.WithVisibleBinding
-  nameWithType: PictureBoxExtensions.WithVisibleBinding
 - uid: BB84.WinForms.Extensions.ProgressBarExtensions
   name: ProgressBarExtensions
   href: api/BB84.WinForms.Extensions.ProgressBarExtensions.html
   commentId: T:BB84.WinForms.Extensions.ProgressBarExtensions
   fullName: BB84.WinForms.Extensions.ProgressBarExtensions
   nameWithType: ProgressBarExtensions
-- uid: BB84.WinForms.Extensions.ProgressBarExtensions.WithEnabledBinding(System.Windows.Forms.ProgressBar,System.Object,System.String)
-  name: WithEnabledBinding(ProgressBar, object, string)
-  href: api/BB84.WinForms.Extensions.ProgressBarExtensions.html#BB84_WinForms_Extensions_ProgressBarExtensions_WithEnabledBinding_System_Windows_Forms_ProgressBar_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.ProgressBarExtensions.WithEnabledBinding(System.Windows.Forms.ProgressBar,System.Object,System.String)
-  name.vb: WithEnabledBinding(ProgressBar, Object, String)
-  fullName: BB84.WinForms.Extensions.ProgressBarExtensions.WithEnabledBinding(System.Windows.Forms.ProgressBar, object, string)
-  fullName.vb: BB84.WinForms.Extensions.ProgressBarExtensions.WithEnabledBinding(System.Windows.Forms.ProgressBar, Object, String)
-  nameWithType: ProgressBarExtensions.WithEnabledBinding(ProgressBar, object, string)
-  nameWithType.vb: ProgressBarExtensions.WithEnabledBinding(ProgressBar, Object, String)
-- uid: BB84.WinForms.Extensions.ProgressBarExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.ProgressBarExtensions.html#BB84_WinForms_Extensions_ProgressBarExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ProgressBarExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ProgressBarExtensions.WithEnabledBinding
-  nameWithType: ProgressBarExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.ProgressBarExtensions.WithMaximumBinding(System.Windows.Forms.ProgressBar,System.Object,System.String)
-  name: WithMaximumBinding(ProgressBar, object, string)
-  href: api/BB84.WinForms.Extensions.ProgressBarExtensions.html#BB84_WinForms_Extensions_ProgressBarExtensions_WithMaximumBinding_System_Windows_Forms_ProgressBar_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.ProgressBarExtensions.WithMaximumBinding(System.Windows.Forms.ProgressBar,System.Object,System.String)
-  name.vb: WithMaximumBinding(ProgressBar, Object, String)
-  fullName: BB84.WinForms.Extensions.ProgressBarExtensions.WithMaximumBinding(System.Windows.Forms.ProgressBar, object, string)
-  fullName.vb: BB84.WinForms.Extensions.ProgressBarExtensions.WithMaximumBinding(System.Windows.Forms.ProgressBar, Object, String)
-  nameWithType: ProgressBarExtensions.WithMaximumBinding(ProgressBar, object, string)
-  nameWithType.vb: ProgressBarExtensions.WithMaximumBinding(ProgressBar, Object, String)
-- uid: BB84.WinForms.Extensions.ProgressBarExtensions.WithMaximumBinding*
-  name: WithMaximumBinding
-  href: api/BB84.WinForms.Extensions.ProgressBarExtensions.html#BB84_WinForms_Extensions_ProgressBarExtensions_WithMaximumBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ProgressBarExtensions.WithMaximumBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ProgressBarExtensions.WithMaximumBinding
-  nameWithType: ProgressBarExtensions.WithMaximumBinding
-- uid: BB84.WinForms.Extensions.ProgressBarExtensions.WithMinimumBinding(System.Windows.Forms.ProgressBar,System.Object,System.String)
-  name: WithMinimumBinding(ProgressBar, object, string)
-  href: api/BB84.WinForms.Extensions.ProgressBarExtensions.html#BB84_WinForms_Extensions_ProgressBarExtensions_WithMinimumBinding_System_Windows_Forms_ProgressBar_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.ProgressBarExtensions.WithMinimumBinding(System.Windows.Forms.ProgressBar,System.Object,System.String)
-  name.vb: WithMinimumBinding(ProgressBar, Object, String)
-  fullName: BB84.WinForms.Extensions.ProgressBarExtensions.WithMinimumBinding(System.Windows.Forms.ProgressBar, object, string)
-  fullName.vb: BB84.WinForms.Extensions.ProgressBarExtensions.WithMinimumBinding(System.Windows.Forms.ProgressBar, Object, String)
-  nameWithType: ProgressBarExtensions.WithMinimumBinding(ProgressBar, object, string)
-  nameWithType.vb: ProgressBarExtensions.WithMinimumBinding(ProgressBar, Object, String)
-- uid: BB84.WinForms.Extensions.ProgressBarExtensions.WithMinimumBinding*
-  name: WithMinimumBinding
-  href: api/BB84.WinForms.Extensions.ProgressBarExtensions.html#BB84_WinForms_Extensions_ProgressBarExtensions_WithMinimumBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ProgressBarExtensions.WithMinimumBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ProgressBarExtensions.WithMinimumBinding
-  nameWithType: ProgressBarExtensions.WithMinimumBinding
 - uid: BB84.WinForms.Extensions.ProgressBarExtensions.WithValueBinding(System.Windows.Forms.ProgressBar,System.Object,System.String)
   name: WithValueBinding(ProgressBar, object, string)
   href: api/BB84.WinForms.Extensions.ProgressBarExtensions.html#BB84_WinForms_Extensions_ProgressBarExtensions_WithValueBinding_System_Windows_Forms_ProgressBar_System_Object_System_String_
@@ -2732,92 +2182,6 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.ProgressBarExtensions.WithValueBinding
   nameWithType: ProgressBarExtensions.WithValueBinding
-- uid: BB84.WinForms.Extensions.ProgressBarExtensions.WithVisibleBinding(System.Windows.Forms.ProgressBar,System.Object,System.String)
-  name: WithVisibleBinding(ProgressBar, object, string)
-  href: api/BB84.WinForms.Extensions.ProgressBarExtensions.html#BB84_WinForms_Extensions_ProgressBarExtensions_WithVisibleBinding_System_Windows_Forms_ProgressBar_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.ProgressBarExtensions.WithVisibleBinding(System.Windows.Forms.ProgressBar,System.Object,System.String)
-  name.vb: WithVisibleBinding(ProgressBar, Object, String)
-  fullName: BB84.WinForms.Extensions.ProgressBarExtensions.WithVisibleBinding(System.Windows.Forms.ProgressBar, object, string)
-  fullName.vb: BB84.WinForms.Extensions.ProgressBarExtensions.WithVisibleBinding(System.Windows.Forms.ProgressBar, Object, String)
-  nameWithType: ProgressBarExtensions.WithVisibleBinding(ProgressBar, object, string)
-  nameWithType.vb: ProgressBarExtensions.WithVisibleBinding(ProgressBar, Object, String)
-- uid: BB84.WinForms.Extensions.ProgressBarExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.ProgressBarExtensions.html#BB84_WinForms_Extensions_ProgressBarExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.ProgressBarExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.ProgressBarExtensions.WithVisibleBinding
-  nameWithType: ProgressBarExtensions.WithVisibleBinding
-- uid: BB84.WinForms.Extensions.PropertyGridExtensions
-  name: PropertyGridExtensions
-  href: api/BB84.WinForms.Extensions.PropertyGridExtensions.html
-  commentId: T:BB84.WinForms.Extensions.PropertyGridExtensions
-  fullName: BB84.WinForms.Extensions.PropertyGridExtensions
-  nameWithType: PropertyGridExtensions
-- uid: BB84.WinForms.Extensions.PropertyGridExtensions.WithEnabledBinding(System.Windows.Forms.PropertyGrid,System.Object,System.String)
-  name: WithEnabledBinding(PropertyGrid, object, string)
-  href: api/BB84.WinForms.Extensions.PropertyGridExtensions.html#BB84_WinForms_Extensions_PropertyGridExtensions_WithEnabledBinding_System_Windows_Forms_PropertyGrid_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.PropertyGridExtensions.WithEnabledBinding(System.Windows.Forms.PropertyGrid,System.Object,System.String)
-  name.vb: WithEnabledBinding(PropertyGrid, Object, String)
-  fullName: BB84.WinForms.Extensions.PropertyGridExtensions.WithEnabledBinding(System.Windows.Forms.PropertyGrid, object, string)
-  fullName.vb: BB84.WinForms.Extensions.PropertyGridExtensions.WithEnabledBinding(System.Windows.Forms.PropertyGrid, Object, String)
-  nameWithType: PropertyGridExtensions.WithEnabledBinding(PropertyGrid, object, string)
-  nameWithType.vb: PropertyGridExtensions.WithEnabledBinding(PropertyGrid, Object, String)
-- uid: BB84.WinForms.Extensions.PropertyGridExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.PropertyGridExtensions.html#BB84_WinForms_Extensions_PropertyGridExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.PropertyGridExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.PropertyGridExtensions.WithEnabledBinding
-  nameWithType: PropertyGridExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.PropertyGridExtensions.WithSelectedObjectBinding(System.Windows.Forms.PropertyGrid,System.Object,System.String)
-  name: WithSelectedObjectBinding(PropertyGrid, object, string)
-  href: api/BB84.WinForms.Extensions.PropertyGridExtensions.html#BB84_WinForms_Extensions_PropertyGridExtensions_WithSelectedObjectBinding_System_Windows_Forms_PropertyGrid_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.PropertyGridExtensions.WithSelectedObjectBinding(System.Windows.Forms.PropertyGrid,System.Object,System.String)
-  name.vb: WithSelectedObjectBinding(PropertyGrid, Object, String)
-  fullName: BB84.WinForms.Extensions.PropertyGridExtensions.WithSelectedObjectBinding(System.Windows.Forms.PropertyGrid, object, string)
-  fullName.vb: BB84.WinForms.Extensions.PropertyGridExtensions.WithSelectedObjectBinding(System.Windows.Forms.PropertyGrid, Object, String)
-  nameWithType: PropertyGridExtensions.WithSelectedObjectBinding(PropertyGrid, object, string)
-  nameWithType.vb: PropertyGridExtensions.WithSelectedObjectBinding(PropertyGrid, Object, String)
-- uid: BB84.WinForms.Extensions.PropertyGridExtensions.WithSelectedObjectBinding*
-  name: WithSelectedObjectBinding
-  href: api/BB84.WinForms.Extensions.PropertyGridExtensions.html#BB84_WinForms_Extensions_PropertyGridExtensions_WithSelectedObjectBinding_
-  commentId: Overload:BB84.WinForms.Extensions.PropertyGridExtensions.WithSelectedObjectBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.PropertyGridExtensions.WithSelectedObjectBinding
-  nameWithType: PropertyGridExtensions.WithSelectedObjectBinding
-- uid: BB84.WinForms.Extensions.PropertyGridExtensions.WithTextBinding(System.Windows.Forms.PropertyGrid,System.Object,System.String)
-  name: WithTextBinding(PropertyGrid, object, string)
-  href: api/BB84.WinForms.Extensions.PropertyGridExtensions.html#BB84_WinForms_Extensions_PropertyGridExtensions_WithTextBinding_System_Windows_Forms_PropertyGrid_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.PropertyGridExtensions.WithTextBinding(System.Windows.Forms.PropertyGrid,System.Object,System.String)
-  name.vb: WithTextBinding(PropertyGrid, Object, String)
-  fullName: BB84.WinForms.Extensions.PropertyGridExtensions.WithTextBinding(System.Windows.Forms.PropertyGrid, object, string)
-  fullName.vb: BB84.WinForms.Extensions.PropertyGridExtensions.WithTextBinding(System.Windows.Forms.PropertyGrid, Object, String)
-  nameWithType: PropertyGridExtensions.WithTextBinding(PropertyGrid, object, string)
-  nameWithType.vb: PropertyGridExtensions.WithTextBinding(PropertyGrid, Object, String)
-- uid: BB84.WinForms.Extensions.PropertyGridExtensions.WithTextBinding*
-  name: WithTextBinding
-  href: api/BB84.WinForms.Extensions.PropertyGridExtensions.html#BB84_WinForms_Extensions_PropertyGridExtensions_WithTextBinding_
-  commentId: Overload:BB84.WinForms.Extensions.PropertyGridExtensions.WithTextBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.PropertyGridExtensions.WithTextBinding
-  nameWithType: PropertyGridExtensions.WithTextBinding
-- uid: BB84.WinForms.Extensions.PropertyGridExtensions.WithVisibleBinding(System.Windows.Forms.PropertyGrid,System.Object,System.String)
-  name: WithVisibleBinding(PropertyGrid, object, string)
-  href: api/BB84.WinForms.Extensions.PropertyGridExtensions.html#BB84_WinForms_Extensions_PropertyGridExtensions_WithVisibleBinding_System_Windows_Forms_PropertyGrid_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.PropertyGridExtensions.WithVisibleBinding(System.Windows.Forms.PropertyGrid,System.Object,System.String)
-  name.vb: WithVisibleBinding(PropertyGrid, Object, String)
-  fullName: BB84.WinForms.Extensions.PropertyGridExtensions.WithVisibleBinding(System.Windows.Forms.PropertyGrid, object, string)
-  fullName.vb: BB84.WinForms.Extensions.PropertyGridExtensions.WithVisibleBinding(System.Windows.Forms.PropertyGrid, Object, String)
-  nameWithType: PropertyGridExtensions.WithVisibleBinding(PropertyGrid, object, string)
-  nameWithType.vb: PropertyGridExtensions.WithVisibleBinding(PropertyGrid, Object, String)
-- uid: BB84.WinForms.Extensions.PropertyGridExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.PropertyGridExtensions.html#BB84_WinForms_Extensions_PropertyGridExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.PropertyGridExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.PropertyGridExtensions.WithVisibleBinding
-  nameWithType: PropertyGridExtensions.WithVisibleBinding
 - uid: BB84.WinForms.Extensions.RadioButtonExtensions
   name: RadioButtonExtensions
   href: api/BB84.WinForms.Extensions.RadioButtonExtensions.html
@@ -2840,216 +2204,34 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.RadioButtonExtensions.WithCheckedBinding
   nameWithType: RadioButtonExtensions.WithCheckedBinding
-- uid: BB84.WinForms.Extensions.RadioButtonExtensions.WithEnabledBinding(System.Windows.Forms.RadioButton,System.Object,System.String)
-  name: WithEnabledBinding(RadioButton, object, string)
-  href: api/BB84.WinForms.Extensions.RadioButtonExtensions.html#BB84_WinForms_Extensions_RadioButtonExtensions_WithEnabledBinding_System_Windows_Forms_RadioButton_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.RadioButtonExtensions.WithEnabledBinding(System.Windows.Forms.RadioButton,System.Object,System.String)
-  name.vb: WithEnabledBinding(RadioButton, Object, String)
-  fullName: BB84.WinForms.Extensions.RadioButtonExtensions.WithEnabledBinding(System.Windows.Forms.RadioButton, object, string)
-  fullName.vb: BB84.WinForms.Extensions.RadioButtonExtensions.WithEnabledBinding(System.Windows.Forms.RadioButton, Object, String)
-  nameWithType: RadioButtonExtensions.WithEnabledBinding(RadioButton, object, string)
-  nameWithType.vb: RadioButtonExtensions.WithEnabledBinding(RadioButton, Object, String)
-- uid: BB84.WinForms.Extensions.RadioButtonExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.RadioButtonExtensions.html#BB84_WinForms_Extensions_RadioButtonExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.RadioButtonExtensions.WithEnabledBinding
+- uid: BB84.WinForms.Extensions.ScrollBarExtensions
+  name: ScrollBarExtensions
+  href: api/BB84.WinForms.Extensions.ScrollBarExtensions.html
+  commentId: T:BB84.WinForms.Extensions.ScrollBarExtensions
+  fullName: BB84.WinForms.Extensions.ScrollBarExtensions
+  nameWithType: ScrollBarExtensions
+- uid: BB84.WinForms.Extensions.ScrollBarExtensions.WithValueBinding(System.Windows.Forms.ScrollBar,System.Object,System.String)
+  name: WithValueBinding(ScrollBar, object, string)
+  href: api/BB84.WinForms.Extensions.ScrollBarExtensions.html#BB84_WinForms_Extensions_ScrollBarExtensions_WithValueBinding_System_Windows_Forms_ScrollBar_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.ScrollBarExtensions.WithValueBinding(System.Windows.Forms.ScrollBar,System.Object,System.String)
+  name.vb: WithValueBinding(ScrollBar, Object, String)
+  fullName: BB84.WinForms.Extensions.ScrollBarExtensions.WithValueBinding(System.Windows.Forms.ScrollBar, object, string)
+  fullName.vb: BB84.WinForms.Extensions.ScrollBarExtensions.WithValueBinding(System.Windows.Forms.ScrollBar, Object, String)
+  nameWithType: ScrollBarExtensions.WithValueBinding(ScrollBar, object, string)
+  nameWithType.vb: ScrollBarExtensions.WithValueBinding(ScrollBar, Object, String)
+- uid: BB84.WinForms.Extensions.ScrollBarExtensions.WithValueBinding*
+  name: WithValueBinding
+  href: api/BB84.WinForms.Extensions.ScrollBarExtensions.html#BB84_WinForms_Extensions_ScrollBarExtensions_WithValueBinding_
+  commentId: Overload:BB84.WinForms.Extensions.ScrollBarExtensions.WithValueBinding
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.RadioButtonExtensions.WithEnabledBinding
-  nameWithType: RadioButtonExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.RadioButtonExtensions.WithTextBinding(System.Windows.Forms.RadioButton,System.Object,System.String)
-  name: WithTextBinding(RadioButton, object, string)
-  href: api/BB84.WinForms.Extensions.RadioButtonExtensions.html#BB84_WinForms_Extensions_RadioButtonExtensions_WithTextBinding_System_Windows_Forms_RadioButton_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.RadioButtonExtensions.WithTextBinding(System.Windows.Forms.RadioButton,System.Object,System.String)
-  name.vb: WithTextBinding(RadioButton, Object, String)
-  fullName: BB84.WinForms.Extensions.RadioButtonExtensions.WithTextBinding(System.Windows.Forms.RadioButton, object, string)
-  fullName.vb: BB84.WinForms.Extensions.RadioButtonExtensions.WithTextBinding(System.Windows.Forms.RadioButton, Object, String)
-  nameWithType: RadioButtonExtensions.WithTextBinding(RadioButton, object, string)
-  nameWithType.vb: RadioButtonExtensions.WithTextBinding(RadioButton, Object, String)
-- uid: BB84.WinForms.Extensions.RadioButtonExtensions.WithTextBinding*
-  name: WithTextBinding
-  href: api/BB84.WinForms.Extensions.RadioButtonExtensions.html#BB84_WinForms_Extensions_RadioButtonExtensions_WithTextBinding_
-  commentId: Overload:BB84.WinForms.Extensions.RadioButtonExtensions.WithTextBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.RadioButtonExtensions.WithTextBinding
-  nameWithType: RadioButtonExtensions.WithTextBinding
-- uid: BB84.WinForms.Extensions.RadioButtonExtensions.WithVisibleBinding(System.Windows.Forms.RadioButton,System.Object,System.String)
-  name: WithVisibleBinding(RadioButton, object, string)
-  href: api/BB84.WinForms.Extensions.RadioButtonExtensions.html#BB84_WinForms_Extensions_RadioButtonExtensions_WithVisibleBinding_System_Windows_Forms_RadioButton_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.RadioButtonExtensions.WithVisibleBinding(System.Windows.Forms.RadioButton,System.Object,System.String)
-  name.vb: WithVisibleBinding(RadioButton, Object, String)
-  fullName: BB84.WinForms.Extensions.RadioButtonExtensions.WithVisibleBinding(System.Windows.Forms.RadioButton, object, string)
-  fullName.vb: BB84.WinForms.Extensions.RadioButtonExtensions.WithVisibleBinding(System.Windows.Forms.RadioButton, Object, String)
-  nameWithType: RadioButtonExtensions.WithVisibleBinding(RadioButton, object, string)
-  nameWithType.vb: RadioButtonExtensions.WithVisibleBinding(RadioButton, Object, String)
-- uid: BB84.WinForms.Extensions.RadioButtonExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.RadioButtonExtensions.html#BB84_WinForms_Extensions_RadioButtonExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.RadioButtonExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.RadioButtonExtensions.WithVisibleBinding
-  nameWithType: RadioButtonExtensions.WithVisibleBinding
-- uid: BB84.WinForms.Extensions.RichTextBoxExtensions
-  name: RichTextBoxExtensions
-  href: api/BB84.WinForms.Extensions.RichTextBoxExtensions.html
-  commentId: T:BB84.WinForms.Extensions.RichTextBoxExtensions
-  fullName: BB84.WinForms.Extensions.RichTextBoxExtensions
-  nameWithType: RichTextBoxExtensions
-- uid: BB84.WinForms.Extensions.RichTextBoxExtensions.WithEnabledBinding(System.Windows.Forms.RichTextBox,System.Object,System.String)
-  name: WithEnabledBinding(RichTextBox, object, string)
-  href: api/BB84.WinForms.Extensions.RichTextBoxExtensions.html#BB84_WinForms_Extensions_RichTextBoxExtensions_WithEnabledBinding_System_Windows_Forms_RichTextBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.RichTextBoxExtensions.WithEnabledBinding(System.Windows.Forms.RichTextBox,System.Object,System.String)
-  name.vb: WithEnabledBinding(RichTextBox, Object, String)
-  fullName: BB84.WinForms.Extensions.RichTextBoxExtensions.WithEnabledBinding(System.Windows.Forms.RichTextBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.RichTextBoxExtensions.WithEnabledBinding(System.Windows.Forms.RichTextBox, Object, String)
-  nameWithType: RichTextBoxExtensions.WithEnabledBinding(RichTextBox, object, string)
-  nameWithType.vb: RichTextBoxExtensions.WithEnabledBinding(RichTextBox, Object, String)
-- uid: BB84.WinForms.Extensions.RichTextBoxExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.RichTextBoxExtensions.html#BB84_WinForms_Extensions_RichTextBoxExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.RichTextBoxExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.RichTextBoxExtensions.WithEnabledBinding
-  nameWithType: RichTextBoxExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.RichTextBoxExtensions.WithTextBinding(System.Windows.Forms.RichTextBox,System.Object,System.String)
-  name: WithTextBinding(RichTextBox, object, string)
-  href: api/BB84.WinForms.Extensions.RichTextBoxExtensions.html#BB84_WinForms_Extensions_RichTextBoxExtensions_WithTextBinding_System_Windows_Forms_RichTextBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.RichTextBoxExtensions.WithTextBinding(System.Windows.Forms.RichTextBox,System.Object,System.String)
-  name.vb: WithTextBinding(RichTextBox, Object, String)
-  fullName: BB84.WinForms.Extensions.RichTextBoxExtensions.WithTextBinding(System.Windows.Forms.RichTextBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.RichTextBoxExtensions.WithTextBinding(System.Windows.Forms.RichTextBox, Object, String)
-  nameWithType: RichTextBoxExtensions.WithTextBinding(RichTextBox, object, string)
-  nameWithType.vb: RichTextBoxExtensions.WithTextBinding(RichTextBox, Object, String)
-- uid: BB84.WinForms.Extensions.RichTextBoxExtensions.WithTextBinding*
-  name: WithTextBinding
-  href: api/BB84.WinForms.Extensions.RichTextBoxExtensions.html#BB84_WinForms_Extensions_RichTextBoxExtensions_WithTextBinding_
-  commentId: Overload:BB84.WinForms.Extensions.RichTextBoxExtensions.WithTextBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.RichTextBoxExtensions.WithTextBinding
-  nameWithType: RichTextBoxExtensions.WithTextBinding
-- uid: BB84.WinForms.Extensions.RichTextBoxExtensions.WithVisibleBinding(System.Windows.Forms.RichTextBox,System.Object,System.String)
-  name: WithVisibleBinding(RichTextBox, object, string)
-  href: api/BB84.WinForms.Extensions.RichTextBoxExtensions.html#BB84_WinForms_Extensions_RichTextBoxExtensions_WithVisibleBinding_System_Windows_Forms_RichTextBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.RichTextBoxExtensions.WithVisibleBinding(System.Windows.Forms.RichTextBox,System.Object,System.String)
-  name.vb: WithVisibleBinding(RichTextBox, Object, String)
-  fullName: BB84.WinForms.Extensions.RichTextBoxExtensions.WithVisibleBinding(System.Windows.Forms.RichTextBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.RichTextBoxExtensions.WithVisibleBinding(System.Windows.Forms.RichTextBox, Object, String)
-  nameWithType: RichTextBoxExtensions.WithVisibleBinding(RichTextBox, object, string)
-  nameWithType.vb: RichTextBoxExtensions.WithVisibleBinding(RichTextBox, Object, String)
-- uid: BB84.WinForms.Extensions.RichTextBoxExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.RichTextBoxExtensions.html#BB84_WinForms_Extensions_RichTextBoxExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.RichTextBoxExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.RichTextBoxExtensions.WithVisibleBinding
-  nameWithType: RichTextBoxExtensions.WithVisibleBinding
-- uid: BB84.WinForms.Extensions.TextBoxExtensions
-  name: TextBoxExtensions
-  href: api/BB84.WinForms.Extensions.TextBoxExtensions.html
-  commentId: T:BB84.WinForms.Extensions.TextBoxExtensions
-  fullName: BB84.WinForms.Extensions.TextBoxExtensions
-  nameWithType: TextBoxExtensions
-- uid: BB84.WinForms.Extensions.TextBoxExtensions.WithEnabledBinding(System.Windows.Forms.TextBox,System.Object,System.String)
-  name: WithEnabledBinding(TextBox, object, string)
-  href: api/BB84.WinForms.Extensions.TextBoxExtensions.html#BB84_WinForms_Extensions_TextBoxExtensions_WithEnabledBinding_System_Windows_Forms_TextBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.TextBoxExtensions.WithEnabledBinding(System.Windows.Forms.TextBox,System.Object,System.String)
-  name.vb: WithEnabledBinding(TextBox, Object, String)
-  fullName: BB84.WinForms.Extensions.TextBoxExtensions.WithEnabledBinding(System.Windows.Forms.TextBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.TextBoxExtensions.WithEnabledBinding(System.Windows.Forms.TextBox, Object, String)
-  nameWithType: TextBoxExtensions.WithEnabledBinding(TextBox, object, string)
-  nameWithType.vb: TextBoxExtensions.WithEnabledBinding(TextBox, Object, String)
-- uid: BB84.WinForms.Extensions.TextBoxExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.TextBoxExtensions.html#BB84_WinForms_Extensions_TextBoxExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.TextBoxExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.TextBoxExtensions.WithEnabledBinding
-  nameWithType: TextBoxExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.TextBoxExtensions.WithTextBinding(System.Windows.Forms.TextBox,System.Object,System.String)
-  name: WithTextBinding(TextBox, object, string)
-  href: api/BB84.WinForms.Extensions.TextBoxExtensions.html#BB84_WinForms_Extensions_TextBoxExtensions_WithTextBinding_System_Windows_Forms_TextBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.TextBoxExtensions.WithTextBinding(System.Windows.Forms.TextBox,System.Object,System.String)
-  name.vb: WithTextBinding(TextBox, Object, String)
-  fullName: BB84.WinForms.Extensions.TextBoxExtensions.WithTextBinding(System.Windows.Forms.TextBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.TextBoxExtensions.WithTextBinding(System.Windows.Forms.TextBox, Object, String)
-  nameWithType: TextBoxExtensions.WithTextBinding(TextBox, object, string)
-  nameWithType.vb: TextBoxExtensions.WithTextBinding(TextBox, Object, String)
-- uid: BB84.WinForms.Extensions.TextBoxExtensions.WithTextBinding*
-  name: WithTextBinding
-  href: api/BB84.WinForms.Extensions.TextBoxExtensions.html#BB84_WinForms_Extensions_TextBoxExtensions_WithTextBinding_
-  commentId: Overload:BB84.WinForms.Extensions.TextBoxExtensions.WithTextBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.TextBoxExtensions.WithTextBinding
-  nameWithType: TextBoxExtensions.WithTextBinding
-- uid: BB84.WinForms.Extensions.TextBoxExtensions.WithVisibleBinding(System.Windows.Forms.TextBox,System.Object,System.String)
-  name: WithVisibleBinding(TextBox, object, string)
-  href: api/BB84.WinForms.Extensions.TextBoxExtensions.html#BB84_WinForms_Extensions_TextBoxExtensions_WithVisibleBinding_System_Windows_Forms_TextBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.TextBoxExtensions.WithVisibleBinding(System.Windows.Forms.TextBox,System.Object,System.String)
-  name.vb: WithVisibleBinding(TextBox, Object, String)
-  fullName: BB84.WinForms.Extensions.TextBoxExtensions.WithVisibleBinding(System.Windows.Forms.TextBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.TextBoxExtensions.WithVisibleBinding(System.Windows.Forms.TextBox, Object, String)
-  nameWithType: TextBoxExtensions.WithVisibleBinding(TextBox, object, string)
-  nameWithType.vb: TextBoxExtensions.WithVisibleBinding(TextBox, Object, String)
-- uid: BB84.WinForms.Extensions.TextBoxExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.TextBoxExtensions.html#BB84_WinForms_Extensions_TextBoxExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.TextBoxExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.TextBoxExtensions.WithVisibleBinding
-  nameWithType: TextBoxExtensions.WithVisibleBinding
+  fullName: BB84.WinForms.Extensions.ScrollBarExtensions.WithValueBinding
+  nameWithType: ScrollBarExtensions.WithValueBinding
 - uid: BB84.WinForms.Extensions.TrackBarExtensions
   name: TrackBarExtensions
   href: api/BB84.WinForms.Extensions.TrackBarExtensions.html
   commentId: T:BB84.WinForms.Extensions.TrackBarExtensions
   fullName: BB84.WinForms.Extensions.TrackBarExtensions
   nameWithType: TrackBarExtensions
-- uid: BB84.WinForms.Extensions.TrackBarExtensions.WithEnabledBinding(System.Windows.Forms.TrackBar,System.Object,System.String)
-  name: WithEnabledBinding(TrackBar, object, string)
-  href: api/BB84.WinForms.Extensions.TrackBarExtensions.html#BB84_WinForms_Extensions_TrackBarExtensions_WithEnabledBinding_System_Windows_Forms_TrackBar_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.TrackBarExtensions.WithEnabledBinding(System.Windows.Forms.TrackBar,System.Object,System.String)
-  name.vb: WithEnabledBinding(TrackBar, Object, String)
-  fullName: BB84.WinForms.Extensions.TrackBarExtensions.WithEnabledBinding(System.Windows.Forms.TrackBar, object, string)
-  fullName.vb: BB84.WinForms.Extensions.TrackBarExtensions.WithEnabledBinding(System.Windows.Forms.TrackBar, Object, String)
-  nameWithType: TrackBarExtensions.WithEnabledBinding(TrackBar, object, string)
-  nameWithType.vb: TrackBarExtensions.WithEnabledBinding(TrackBar, Object, String)
-- uid: BB84.WinForms.Extensions.TrackBarExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.TrackBarExtensions.html#BB84_WinForms_Extensions_TrackBarExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.TrackBarExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.TrackBarExtensions.WithEnabledBinding
-  nameWithType: TrackBarExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.TrackBarExtensions.WithMaximumBinding(System.Windows.Forms.TrackBar,System.Object,System.String)
-  name: WithMaximumBinding(TrackBar, object, string)
-  href: api/BB84.WinForms.Extensions.TrackBarExtensions.html#BB84_WinForms_Extensions_TrackBarExtensions_WithMaximumBinding_System_Windows_Forms_TrackBar_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.TrackBarExtensions.WithMaximumBinding(System.Windows.Forms.TrackBar,System.Object,System.String)
-  name.vb: WithMaximumBinding(TrackBar, Object, String)
-  fullName: BB84.WinForms.Extensions.TrackBarExtensions.WithMaximumBinding(System.Windows.Forms.TrackBar, object, string)
-  fullName.vb: BB84.WinForms.Extensions.TrackBarExtensions.WithMaximumBinding(System.Windows.Forms.TrackBar, Object, String)
-  nameWithType: TrackBarExtensions.WithMaximumBinding(TrackBar, object, string)
-  nameWithType.vb: TrackBarExtensions.WithMaximumBinding(TrackBar, Object, String)
-- uid: BB84.WinForms.Extensions.TrackBarExtensions.WithMaximumBinding*
-  name: WithMaximumBinding
-  href: api/BB84.WinForms.Extensions.TrackBarExtensions.html#BB84_WinForms_Extensions_TrackBarExtensions_WithMaximumBinding_
-  commentId: Overload:BB84.WinForms.Extensions.TrackBarExtensions.WithMaximumBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.TrackBarExtensions.WithMaximumBinding
-  nameWithType: TrackBarExtensions.WithMaximumBinding
-- uid: BB84.WinForms.Extensions.TrackBarExtensions.WithMinimumBinding(System.Windows.Forms.TrackBar,System.Object,System.String)
-  name: WithMinimumBinding(TrackBar, object, string)
-  href: api/BB84.WinForms.Extensions.TrackBarExtensions.html#BB84_WinForms_Extensions_TrackBarExtensions_WithMinimumBinding_System_Windows_Forms_TrackBar_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.TrackBarExtensions.WithMinimumBinding(System.Windows.Forms.TrackBar,System.Object,System.String)
-  name.vb: WithMinimumBinding(TrackBar, Object, String)
-  fullName: BB84.WinForms.Extensions.TrackBarExtensions.WithMinimumBinding(System.Windows.Forms.TrackBar, object, string)
-  fullName.vb: BB84.WinForms.Extensions.TrackBarExtensions.WithMinimumBinding(System.Windows.Forms.TrackBar, Object, String)
-  nameWithType: TrackBarExtensions.WithMinimumBinding(TrackBar, object, string)
-  nameWithType.vb: TrackBarExtensions.WithMinimumBinding(TrackBar, Object, String)
-- uid: BB84.WinForms.Extensions.TrackBarExtensions.WithMinimumBinding*
-  name: WithMinimumBinding
-  href: api/BB84.WinForms.Extensions.TrackBarExtensions.html#BB84_WinForms_Extensions_TrackBarExtensions_WithMinimumBinding_
-  commentId: Overload:BB84.WinForms.Extensions.TrackBarExtensions.WithMinimumBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.TrackBarExtensions.WithMinimumBinding
-  nameWithType: TrackBarExtensions.WithMinimumBinding
 - uid: BB84.WinForms.Extensions.TrackBarExtensions.WithValueBinding(System.Windows.Forms.TrackBar,System.Object,System.String)
   name: WithValueBinding(TrackBar, object, string)
   href: api/BB84.WinForms.Extensions.TrackBarExtensions.html#BB84_WinForms_Extensions_TrackBarExtensions_WithValueBinding_System_Windows_Forms_TrackBar_System_Object_System_String_
@@ -3066,73 +2248,3 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.TrackBarExtensions.WithValueBinding
   nameWithType: TrackBarExtensions.WithValueBinding
-- uid: BB84.WinForms.Extensions.TrackBarExtensions.WithVisibleBinding(System.Windows.Forms.TrackBar,System.Object,System.String)
-  name: WithVisibleBinding(TrackBar, object, string)
-  href: api/BB84.WinForms.Extensions.TrackBarExtensions.html#BB84_WinForms_Extensions_TrackBarExtensions_WithVisibleBinding_System_Windows_Forms_TrackBar_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.TrackBarExtensions.WithVisibleBinding(System.Windows.Forms.TrackBar,System.Object,System.String)
-  name.vb: WithVisibleBinding(TrackBar, Object, String)
-  fullName: BB84.WinForms.Extensions.TrackBarExtensions.WithVisibleBinding(System.Windows.Forms.TrackBar, object, string)
-  fullName.vb: BB84.WinForms.Extensions.TrackBarExtensions.WithVisibleBinding(System.Windows.Forms.TrackBar, Object, String)
-  nameWithType: TrackBarExtensions.WithVisibleBinding(TrackBar, object, string)
-  nameWithType.vb: TrackBarExtensions.WithVisibleBinding(TrackBar, Object, String)
-- uid: BB84.WinForms.Extensions.TrackBarExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.TrackBarExtensions.html#BB84_WinForms_Extensions_TrackBarExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.TrackBarExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.TrackBarExtensions.WithVisibleBinding
-  nameWithType: TrackBarExtensions.WithVisibleBinding
-- uid: BB84.WinForms.Extensions.TreeViewExtensions
-  name: TreeViewExtensions
-  href: api/BB84.WinForms.Extensions.TreeViewExtensions.html
-  commentId: T:BB84.WinForms.Extensions.TreeViewExtensions
-  fullName: BB84.WinForms.Extensions.TreeViewExtensions
-  nameWithType: TreeViewExtensions
-- uid: BB84.WinForms.Extensions.TreeViewExtensions.WithEnabledBinding(System.Windows.Forms.TreeView,System.Object,System.String)
-  name: WithEnabledBinding(TreeView, object, string)
-  href: api/BB84.WinForms.Extensions.TreeViewExtensions.html#BB84_WinForms_Extensions_TreeViewExtensions_WithEnabledBinding_System_Windows_Forms_TreeView_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.TreeViewExtensions.WithEnabledBinding(System.Windows.Forms.TreeView,System.Object,System.String)
-  name.vb: WithEnabledBinding(TreeView, Object, String)
-  fullName: BB84.WinForms.Extensions.TreeViewExtensions.WithEnabledBinding(System.Windows.Forms.TreeView, object, string)
-  fullName.vb: BB84.WinForms.Extensions.TreeViewExtensions.WithEnabledBinding(System.Windows.Forms.TreeView, Object, String)
-  nameWithType: TreeViewExtensions.WithEnabledBinding(TreeView, object, string)
-  nameWithType.vb: TreeViewExtensions.WithEnabledBinding(TreeView, Object, String)
-- uid: BB84.WinForms.Extensions.TreeViewExtensions.WithEnabledBinding*
-  name: WithEnabledBinding
-  href: api/BB84.WinForms.Extensions.TreeViewExtensions.html#BB84_WinForms_Extensions_TreeViewExtensions_WithEnabledBinding_
-  commentId: Overload:BB84.WinForms.Extensions.TreeViewExtensions.WithEnabledBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.TreeViewExtensions.WithEnabledBinding
-  nameWithType: TreeViewExtensions.WithEnabledBinding
-- uid: BB84.WinForms.Extensions.TreeViewExtensions.WithSelectedNodeBinding(System.Windows.Forms.TreeView,System.Object,System.String)
-  name: WithSelectedNodeBinding(TreeView, object, string)
-  href: api/BB84.WinForms.Extensions.TreeViewExtensions.html#BB84_WinForms_Extensions_TreeViewExtensions_WithSelectedNodeBinding_System_Windows_Forms_TreeView_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.TreeViewExtensions.WithSelectedNodeBinding(System.Windows.Forms.TreeView,System.Object,System.String)
-  name.vb: WithSelectedNodeBinding(TreeView, Object, String)
-  fullName: BB84.WinForms.Extensions.TreeViewExtensions.WithSelectedNodeBinding(System.Windows.Forms.TreeView, object, string)
-  fullName.vb: BB84.WinForms.Extensions.TreeViewExtensions.WithSelectedNodeBinding(System.Windows.Forms.TreeView, Object, String)
-  nameWithType: TreeViewExtensions.WithSelectedNodeBinding(TreeView, object, string)
-  nameWithType.vb: TreeViewExtensions.WithSelectedNodeBinding(TreeView, Object, String)
-- uid: BB84.WinForms.Extensions.TreeViewExtensions.WithSelectedNodeBinding*
-  name: WithSelectedNodeBinding
-  href: api/BB84.WinForms.Extensions.TreeViewExtensions.html#BB84_WinForms_Extensions_TreeViewExtensions_WithSelectedNodeBinding_
-  commentId: Overload:BB84.WinForms.Extensions.TreeViewExtensions.WithSelectedNodeBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.TreeViewExtensions.WithSelectedNodeBinding
-  nameWithType: TreeViewExtensions.WithSelectedNodeBinding
-- uid: BB84.WinForms.Extensions.TreeViewExtensions.WithVisibleBinding(System.Windows.Forms.TreeView,System.Object,System.String)
-  name: WithVisibleBinding(TreeView, object, string)
-  href: api/BB84.WinForms.Extensions.TreeViewExtensions.html#BB84_WinForms_Extensions_TreeViewExtensions_WithVisibleBinding_System_Windows_Forms_TreeView_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.TreeViewExtensions.WithVisibleBinding(System.Windows.Forms.TreeView,System.Object,System.String)
-  name.vb: WithVisibleBinding(TreeView, Object, String)
-  fullName: BB84.WinForms.Extensions.TreeViewExtensions.WithVisibleBinding(System.Windows.Forms.TreeView, object, string)
-  fullName.vb: BB84.WinForms.Extensions.TreeViewExtensions.WithVisibleBinding(System.Windows.Forms.TreeView, Object, String)
-  nameWithType: TreeViewExtensions.WithVisibleBinding(TreeView, object, string)
-  nameWithType.vb: TreeViewExtensions.WithVisibleBinding(TreeView, Object, String)
-- uid: BB84.WinForms.Extensions.TreeViewExtensions.WithVisibleBinding*
-  name: WithVisibleBinding
-  href: api/BB84.WinForms.Extensions.TreeViewExtensions.html#BB84_WinForms_Extensions_TreeViewExtensions_WithVisibleBinding_
-  commentId: Overload:BB84.WinForms.Extensions.TreeViewExtensions.WithVisibleBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.TreeViewExtensions.WithVisibleBinding
-  nameWithType: TreeViewExtensions.WithVisibleBinding

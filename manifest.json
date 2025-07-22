@@ -326,17 +326,17 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.WinForms.Extensions.ButtonExtensions.yml",
+      "source_relative_path": "api/BB84.WinForms.Extensions.ButtonBaseExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BB84.WinForms.Extensions.ButtonExtensions.html"
+          "relative_path": "api/BB84.WinForms.Extensions.ButtonBaseExtensions.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BB84.WinForms.Extensions.ButtonExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.ButtonExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for the <xref href=\"System.Windows.Forms.Button\" data-throw-if-not-resolved=\"false\"></xref> control to simplify data binding.</p>\n"
+      "Title": "BB84.WinForms.Extensions.ButtonBaseExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.ButtonBaseExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for the <xref href=\"System.Windows.Forms.ButtonBase\" data-throw-if-not-resolved=\"false\"></xref> control to simplify data binding.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -350,7 +350,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.WinForms.Extensions.CheckBoxExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.CheckBoxExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for the <xref href=\"System.Windows.Forms.CheckBox\" data-throw-if-not-resolved=\"false\"></xref> control to simplify data binding.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.CheckBoxExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.CheckBox\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.CheckBox.Checked\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -364,7 +364,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.WinForms.Extensions.ComboBoxExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.ComboBoxExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.ComboBox\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.ComboBox.DataSource\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"System.Windows.Forms.Control.Enabled\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Windows.Forms.Control.Visible\" data-throw-if-not-resolved=\"false\"></xref>, and others.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.ComboBoxExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.ComboBox\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.ComboBox.SelectedItem\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"System.Windows.Forms.ComboBox.SelectedIndex\" data-throw-if-not-resolved=\"false\"></xref> and others.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.WinForms.Extensions.ControlExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.WinForms.Extensions.ControlExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.WinForms.Extensions.ControlExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.ControlExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for the <xref href=\"System.Windows.Forms.Control\" data-throw-if-not-resolved=\"false\"></xref> class to simplify data binding.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -378,7 +392,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.WinForms.Extensions.DataGridExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.DataGridExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.DataGrid\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.DataGrid.DataSource\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"System.Windows.Forms.Control.Enabled\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Windows.Forms.Control.Visible\" data-throw-if-not-resolved=\"false\"></xref>, and others.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.DataGridExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.DataGrid\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.DataGrid.DataSource\" data-throw-if-not-resolved=\"false\"></xref> and\nothers.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -392,7 +406,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.WinForms.Extensions.DataGridViewExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.DataGridViewExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.DataGridView\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.DataGridView.DataSource\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"System.Windows.Forms.Control.Enabled\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Windows.Forms.Control.Visible\" data-throw-if-not-resolved=\"false\"></xref>, and others.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.DataGridViewExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.DataGridView\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.DataGridView.DataSource\" data-throw-if-not-resolved=\"false\"></xref> and\nothers.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -406,21 +420,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.WinForms.Extensions.DateTimePickerExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.DateTimePickerExtensions.yml\" sourcestartlinenumber=\"1\">The extension methods for the <xref href=\"System.Windows.Forms.DateTimePicker\" data-throw-if-not-resolved=\"false\"></xref> control.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BB84.WinForms.Extensions.LabelExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.WinForms.Extensions.LabelExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BB84.WinForms.Extensions.LabelExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.LabelExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for the <xref href=\"System.Windows.Forms.Label\" data-throw-if-not-resolved=\"false\"></xref> control to simplify data binding.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.DateTimePickerExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.DateTimePicker\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.DateTimePicker.Checked\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"System.Windows.Forms.DateTimePicker.Value\" data-throw-if-not-resolved=\"false\"></xref> and others.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -434,35 +434,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.WinForms.Extensions.ListBoxExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.ListBoxExtensions.yml\" sourcestartlinenumber=\"1\">The extension methods for the <xref href=\"System.Windows.Forms.ListBox\" data-throw-if-not-resolved=\"false\"></xref> control.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.ListBoxExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.ListBox\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.ListBox.SelectedItem\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"System.Windows.Forms.ListBox.SelectedIndex\" data-throw-if-not-resolved=\"false\"></xref> and others.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.WinForms.Extensions.ListViewExtensions.yml",
+      "source_relative_path": "api/BB84.WinForms.Extensions.ListControlExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BB84.WinForms.Extensions.ListViewExtensions.html"
+          "relative_path": "api/BB84.WinForms.Extensions.ListControlExtensions.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BB84.WinForms.Extensions.ListViewExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.ListViewExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.ListView\" data-throw-if-not-resolved=\"false\"></xref> control\nto a data source, enabling streamlined data binding for common properties such as\n<xref href=\"System.Windows.Forms.Control.Enabled\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Windows.Forms.Control.Visible\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BB84.WinForms.Extensions.MaskedTextBoxExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.WinForms.Extensions.MaskedTextBoxExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BB84.WinForms.Extensions.MaskedTextBoxExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.MaskedTextBoxExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for the <xref href=\"System.Windows.Forms.MaskedTextBox\" data-throw-if-not-resolved=\"false\"></xref> control to simplify data binding.</p>\n"
+      "Title": "BB84.WinForms.Extensions.ListControlExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.ListControlExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for the <xref href=\"System.Windows.Forms.ListControl\" data-throw-if-not-resolved=\"false\"></xref> class to simplify data binding.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -476,7 +462,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.WinForms.Extensions.MonthCalendarExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.MonthCalendarExtensions.yml\" sourcestartlinenumber=\"1\">The extension methods for the <xref href=\"System.Windows.Forms.MonthCalendar\" data-throw-if-not-resolved=\"false\"></xref> control.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.MonthCalendarExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for the <xref href=\"System.Windows.Forms.MonthCalendar\" data-throw-if-not-resolved=\"false\"></xref> class to simplify data binding.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -490,7 +476,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.WinForms.Extensions.NumericUpDownExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.NumericUpDownExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.NumericUpDown\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.Control.Enabled\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"System.Windows.Forms.NumericUpDown.Value\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Windows.Forms.Control.Visible\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.NumericUpDownExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.NumericUpDown\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.NumericUpDown.Value\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -504,7 +490,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.WinForms.Extensions.PictureBoxExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.PictureBoxExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for the <xref href=\"System.Windows.Forms.PictureBox\" data-throw-if-not-resolved=\"false\"></xref> control to simplify data binding of common properties.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.PictureBoxExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.PictureBox\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.PictureBox.Image\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -518,21 +504,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.WinForms.Extensions.ProgressBarExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.ProgressBarExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.ProgressBar\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.ProgressBar.Minimum\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"System.Windows.Forms.ProgressBar.Maximum\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Windows.Forms.ProgressBar.Value\" data-throw-if-not-resolved=\"false\"></xref>, and others.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BB84.WinForms.Extensions.PropertyGridExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.WinForms.Extensions.PropertyGridExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BB84.WinForms.Extensions.PropertyGridExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.PropertyGridExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for the <xref href=\"System.Windows.Forms.PropertyGrid\" data-throw-if-not-resolved=\"false\"></xref> control to simplify data binding.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.ProgressBarExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.ProgressBar\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.ProgressBar.Value\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -546,35 +518,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.WinForms.Extensions.RadioButtonExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.RadioButtonExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for the <xref href=\"System.Windows.Forms.RadioButton\" data-throw-if-not-resolved=\"false\"></xref> control to simplify data binding.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.RadioButtonExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.RadioButton\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.RadioButton.Checked\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.WinForms.Extensions.RichTextBoxExtensions.yml",
+      "source_relative_path": "api/BB84.WinForms.Extensions.ScrollBarExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BB84.WinForms.Extensions.RichTextBoxExtensions.html"
+          "relative_path": "api/BB84.WinForms.Extensions.ScrollBarExtensions.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BB84.WinForms.Extensions.RichTextBoxExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.RichTextBoxExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for the <xref href=\"System.Windows.Forms.RichTextBox\" data-throw-if-not-resolved=\"false\"></xref> control to simplify data binding.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BB84.WinForms.Extensions.TextBoxExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.WinForms.Extensions.TextBoxExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BB84.WinForms.Extensions.TextBoxExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.TextBoxExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for the <xref href=\"System.Windows.Forms.TextBox\" data-throw-if-not-resolved=\"false\"></xref> control to simplify data binding.</p>\n"
+      "Title": "BB84.WinForms.Extensions.ScrollBarExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.ScrollBarExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.ScrollBar\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.ScrollBar.Value\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -588,21 +546,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.WinForms.Extensions.TrackBarExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.TrackBarExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.TrackBar\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.TrackBar.Minimum\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"System.Windows.Forms.TrackBar.Maximum\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Windows.Forms.TrackBar.Value\" data-throw-if-not-resolved=\"false\"></xref>, and others.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BB84.WinForms.Extensions.TreeViewExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.WinForms.Extensions.TreeViewExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BB84.WinForms.Extensions.TreeViewExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.TreeViewExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.NumericUpDown\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.Control.Enabled\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"System.Windows.Forms.TreeView.SelectedNode\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Windows.Forms.Control.Visible\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.TrackBarExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.TrackBar\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.TrackBar.Value\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
