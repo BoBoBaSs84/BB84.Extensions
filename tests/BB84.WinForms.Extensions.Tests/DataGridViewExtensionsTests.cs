@@ -9,35 +9,13 @@ namespace BB84.WinForms.Extensions.Tests;
 public sealed class DataGridViewExtensionsTests
 {
 	[TestMethod]
-	public void WithDataSourceTest()
+	public void WithDataSourceBinding_ShouldBindDataSource()
 	{
+		var dataSource = new List<string> { "Item1", "Item2", "Item3" };
 		DataGridView dataGridView = new();
 
-		dataGridView.WithDataSource(new List<int>());
+		dataGridView.WithDataSourceBinding(dataSource);
 
-		Assert.IsNotNull(dataGridView.DataSource);
-		Assert.IsInstanceOfType<List<int>>(dataGridView.DataSource);
-	}
-
-	[TestMethod]
-	public void WithEnabledBindingTest()
-	{
-		DataGridView dataGridView = new();
-
-		dataGridView.WithEnabledBinding(new object(), nameof(dataGridView.Enabled));
-
-		Assert.AreEqual(1, dataGridView.DataBindings.Count);
-		Assert.AreEqual(nameof(dataGridView.Enabled), dataGridView.DataBindings[0].PropertyName);
-	}
-
-	[TestMethod]
-	public void WithVisibleBindingTest()
-	{
-		DataGridView dataGridView = new();
-
-		dataGridView.WithVisibleBinding(new object(), nameof(dataGridView.Visible));
-
-		Assert.AreEqual(1, dataGridView.DataBindings.Count);
-		Assert.AreEqual(nameof(dataGridView.Visible), dataGridView.DataBindings[0].PropertyName);
+		Assert.AreEqual(dataSource, dataGridView.DataSource);
 	}
 }

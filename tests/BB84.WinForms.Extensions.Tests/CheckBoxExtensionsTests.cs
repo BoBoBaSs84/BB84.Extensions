@@ -9,46 +9,46 @@ namespace BB84.WinForms.Extensions.Tests;
 public sealed class CheckBoxExtensionsTests
 {
 	[TestMethod]
-	public void WithCheckedBindingTest()
+	public void WithCheckedBinding_ShouldBindChecked()
 	{
+		var dataSource = new { Checked = false };
 		CheckBox checkBox = new();
 
-		checkBox.WithCheckedBinding(new object(), nameof(checkBox.Checked));
+		checkBox.WithCheckedBinding(dataSource, nameof(checkBox.Checked));
 
 		Assert.AreEqual(1, checkBox.DataBindings.Count);
 		Assert.AreEqual(nameof(checkBox.Checked), checkBox.DataBindings[0].PropertyName);
+		Assert.AreEqual(dataSource, checkBox.DataBindings[0].DataSource);
+		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, checkBox.DataBindings[0].DataSourceUpdateMode);
+	}
+#if NET5_0_OR_GREATER
+
+	[TestMethod]
+	public void WithCheckStateBinding_ShouldBindCheckState()
+	{
+		var dataSource = new { CheckState = CheckState.Unchecked };
+		CheckBox checkBox = new();
+
+		checkBox.WithCheckStateBinding(dataSource, nameof(checkBox.CheckState));
+		Assert.AreEqual(1, checkBox.DataBindings.Count);
+
+		Assert.AreEqual(nameof(checkBox.CheckState), checkBox.DataBindings[0].PropertyName);
+		Assert.AreEqual(dataSource, checkBox.DataBindings[0].DataSource);
+		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, checkBox.DataBindings[0].DataSourceUpdateMode);
 	}
 
 	[TestMethod]
-	public void WithEnabledBindingTest()
+	public void WithCheckAlignBinding_ShouldBindCheckAlign()
 	{
+		var dataSource = new { CheckAlign = ContentAlignment.MiddleLeft };
 		CheckBox checkBox = new();
 
-		checkBox.WithEnabledBinding(new object(), nameof(checkBox.Enabled));
+		checkBox.WithCheckAlignBinding(dataSource, nameof(checkBox.CheckAlign));
 
 		Assert.AreEqual(1, checkBox.DataBindings.Count);
-		Assert.AreEqual(nameof(checkBox.Enabled), checkBox.DataBindings[0].PropertyName);
+		Assert.AreEqual(nameof(checkBox.CheckAlign), checkBox.DataBindings[0].PropertyName);
+		Assert.AreEqual(dataSource, checkBox.DataBindings[0].DataSource);
+		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, checkBox.DataBindings[0].DataSourceUpdateMode);
 	}
-
-	[TestMethod()]
-	public void WithTextBindingTest()
-	{
-		CheckBox checkBox = new();
-
-		checkBox.WithTextBinding(new object(), nameof(checkBox.Text));
-
-		Assert.AreEqual(1, checkBox.DataBindings.Count);
-		Assert.AreEqual(nameof(checkBox.Text), checkBox.DataBindings[0].PropertyName);
-	}
-
-	[TestMethod]
-	public void WithVisibleBindingTest()
-	{
-		CheckBox checkBox = new();
-
-		checkBox.WithVisibleBinding(new object(), nameof(checkBox.Visible));
-
-		Assert.AreEqual(1, checkBox.DataBindings.Count);
-		Assert.AreEqual(nameof(checkBox.Visible), checkBox.DataBindings[0].PropertyName);
-	}
+#endif
 }

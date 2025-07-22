@@ -8,69 +8,32 @@ namespace BB84.WinForms.Extensions.Tests;
 [TestClass]
 public sealed class ListBoxExtensionsTests
 {
-	[TestMethod]
-	public void WithDataSourceTest()
-	{
-		ListBox listBox = new();
-
-		listBox.WithDataSource(new List<int>());
-
-		Assert.IsNotNull(listBox.DataSource);
-		Assert.IsInstanceOfType<List<int>>(listBox.DataSource);
-	}
 
 	[TestMethod]
-	public void WithEnabledBindingTest()
+	public void WithSelectedItemBinding_ShouldBindSelectedItem()
 	{
+		var dataSource = new { SelectedItem = "Item1" };
 		ListBox listBox = new();
 
-		listBox.WithEnabledBinding(new object(), nameof(listBox.Enabled));
-
-		Assert.AreEqual(1, listBox.DataBindings.Count);
-		Assert.AreEqual(nameof(listBox.Enabled), listBox.DataBindings[0].PropertyName);
-	}
-
-	[TestMethod]
-	public void WithSelectedItemBindingTest()
-	{
-		ListBox listBox = new();
-
-		listBox.WithSelectedItemBinding(new object(), nameof(listBox.SelectedItem));
+		listBox.WithSelectedItemBinding(dataSource, nameof(listBox.SelectedItem));
 
 		Assert.AreEqual(1, listBox.DataBindings.Count);
 		Assert.AreEqual(nameof(listBox.SelectedItem), listBox.DataBindings[0].PropertyName);
+		Assert.AreEqual(dataSource, listBox.DataBindings[0].DataSource);
+		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, listBox.DataBindings[0].DataSourceUpdateMode);
 	}
 
 	[TestMethod]
-	public void WithSelectedIndexBindingTest()
+	public void WithSelectedIndexBinding_ShouldBindSelectedIndex()
 	{
+		var dataSource = new { SelectedIndex = 1 };
 		ListBox listBox = new();
 
-		listBox.WithSelectedIndexBinding(new object(), nameof(listBox.SelectedIndex));
+		listBox.WithSelectedIndexBinding(dataSource, nameof(listBox.SelectedIndex));
 
 		Assert.AreEqual(1, listBox.DataBindings.Count);
 		Assert.AreEqual(nameof(listBox.SelectedIndex), listBox.DataBindings[0].PropertyName);
-	}
-
-	[TestMethod]
-	public void WithSelectedValueBindingTest()
-	{
-		ListBox listBox = new();
-
-		listBox.WithSelectedValueBinding(new object(), nameof(listBox.SelectedValue));
-
-		Assert.AreEqual(1, listBox.DataBindings.Count);
-		Assert.AreEqual(nameof(listBox.SelectedValue), listBox.DataBindings[0].PropertyName);
-	}
-
-	[TestMethod]
-	public void WithVisibleBindingTest()
-	{
-		ListBox listBox = new();
-
-		listBox.WithVisibleBinding(new object(), nameof(listBox.Visible));
-
-		Assert.AreEqual(1, listBox.DataBindings.Count);
-		Assert.AreEqual(nameof(listBox.Visible), listBox.DataBindings[0].PropertyName);
+		Assert.AreEqual(dataSource, listBox.DataBindings[0].DataSource);
+		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, listBox.DataBindings[0].DataSourceUpdateMode);
 	}
 }
