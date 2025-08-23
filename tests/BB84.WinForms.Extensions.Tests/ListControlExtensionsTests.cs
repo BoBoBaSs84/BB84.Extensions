@@ -35,6 +35,39 @@ public sealed class ListControlExtensionsTests
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, listControl.DataBindings[0].DataSourceUpdateMode);
 	}
 
+	[TestMethod]
+	[DynamicData(nameof(TestData))]
+	public void WithDisplayMember_ShouldSetDisplayMember(ListControl listControl)
+	{
+		const string displayMember = "Name";
+		
+		listControl.WithDisplayMember(displayMember);
+		
+		Assert.AreEqual(displayMember, listControl.DisplayMember);
+	}
+
+	[TestMethod]
+	[DynamicData(nameof(TestData))]
+	public void WithValueMember_ShouldSetValueMember(ListControl listControl)
+	{
+		const string valueMember = "Id";
+		
+		listControl.WithValueMember(valueMember);
+		
+		Assert.AreEqual(valueMember, listControl.ValueMember);
+	}
+
+	[TestMethod]
+	[DynamicData(nameof(TestData))]
+	public void WithEnumDataSource_ShouldBindEnumDataSource(ListControl listControl)
+	{
+		listControl.WithEnumeratorBinding(TestEnum.First);
+		
+		Assert.IsNotNull(listControl.DataSource);
+		Assert.AreEqual("Value", listControl.DisplayMember);
+		Assert.AreEqual("Key", listControl.ValueMember);
+	}
+
 	private static List<ListControl> GetListControls()
 	{
 		Assembly assembly = typeof(ListControl).Assembly;
@@ -65,5 +98,12 @@ public sealed class ListControlExtensionsTests
 	{
 		foreach (ListControl control in GetListControls())
 			yield return new object[] { control };
+	}
+
+	private enum TestEnum
+	{
+		First,
+		Second,
+		Third
 	}
 }
