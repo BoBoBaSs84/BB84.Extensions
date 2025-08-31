@@ -2078,6 +2078,38 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.ListControlExtensions.WithDataSourceBinding
   nameWithType: ListControlExtensions.WithDataSourceBinding
+- uid: BB84.WinForms.Extensions.ListControlExtensions.WithDisplayMember(System.Windows.Forms.ListControl,System.String)
+  name: WithDisplayMember(ListControl, string)
+  href: api/BB84.WinForms.Extensions.ListControlExtensions.html#BB84_WinForms_Extensions_ListControlExtensions_WithDisplayMember_System_Windows_Forms_ListControl_System_String_
+  commentId: M:BB84.WinForms.Extensions.ListControlExtensions.WithDisplayMember(System.Windows.Forms.ListControl,System.String)
+  name.vb: WithDisplayMember(ListControl, String)
+  fullName: BB84.WinForms.Extensions.ListControlExtensions.WithDisplayMember(System.Windows.Forms.ListControl, string)
+  fullName.vb: BB84.WinForms.Extensions.ListControlExtensions.WithDisplayMember(System.Windows.Forms.ListControl, String)
+  nameWithType: ListControlExtensions.WithDisplayMember(ListControl, string)
+  nameWithType.vb: ListControlExtensions.WithDisplayMember(ListControl, String)
+- uid: BB84.WinForms.Extensions.ListControlExtensions.WithDisplayMember*
+  name: WithDisplayMember
+  href: api/BB84.WinForms.Extensions.ListControlExtensions.html#BB84_WinForms_Extensions_ListControlExtensions_WithDisplayMember_
+  commentId: Overload:BB84.WinForms.Extensions.ListControlExtensions.WithDisplayMember
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.ListControlExtensions.WithDisplayMember
+  nameWithType: ListControlExtensions.WithDisplayMember
+- uid: BB84.WinForms.Extensions.ListControlExtensions.WithEnumeratorBinding*
+  name: WithEnumeratorBinding
+  href: api/BB84.WinForms.Extensions.ListControlExtensions.html#BB84_WinForms_Extensions_ListControlExtensions_WithEnumeratorBinding_
+  commentId: Overload:BB84.WinForms.Extensions.ListControlExtensions.WithEnumeratorBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.ListControlExtensions.WithEnumeratorBinding
+  nameWithType: ListControlExtensions.WithEnumeratorBinding
+- uid: BB84.WinForms.Extensions.ListControlExtensions.WithEnumeratorBinding``1(System.Windows.Forms.ListControl,``0)
+  name: WithEnumeratorBinding<T>(ListControl, T)
+  href: api/BB84.WinForms.Extensions.ListControlExtensions.html#BB84_WinForms_Extensions_ListControlExtensions_WithEnumeratorBinding__1_System_Windows_Forms_ListControl___0_
+  commentId: M:BB84.WinForms.Extensions.ListControlExtensions.WithEnumeratorBinding``1(System.Windows.Forms.ListControl,``0)
+  name.vb: WithEnumeratorBinding(Of T)(ListControl, T)
+  fullName: BB84.WinForms.Extensions.ListControlExtensions.WithEnumeratorBinding<T>(System.Windows.Forms.ListControl, T)
+  fullName.vb: BB84.WinForms.Extensions.ListControlExtensions.WithEnumeratorBinding(Of T)(System.Windows.Forms.ListControl, T)
+  nameWithType: ListControlExtensions.WithEnumeratorBinding<T>(ListControl, T)
+  nameWithType.vb: ListControlExtensions.WithEnumeratorBinding(Of T)(ListControl, T)
 - uid: BB84.WinForms.Extensions.ListControlExtensions.WithSelectedValueBinding(System.Windows.Forms.ListControl,System.Object,System.String)
   name: WithSelectedValueBinding(ListControl, object, string)
   href: api/BB84.WinForms.Extensions.ListControlExtensions.html#BB84_WinForms_Extensions_ListControlExtensions_WithSelectedValueBinding_System_Windows_Forms_ListControl_System_Object_System_String_
@@ -2094,6 +2126,22 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.ListControlExtensions.WithSelectedValueBinding
   nameWithType: ListControlExtensions.WithSelectedValueBinding
+- uid: BB84.WinForms.Extensions.ListControlExtensions.WithValueMember(System.Windows.Forms.ListControl,System.String)
+  name: WithValueMember(ListControl, string)
+  href: api/BB84.WinForms.Extensions.ListControlExtensions.html#BB84_WinForms_Extensions_ListControlExtensions_WithValueMember_System_Windows_Forms_ListControl_System_String_
+  commentId: M:BB84.WinForms.Extensions.ListControlExtensions.WithValueMember(System.Windows.Forms.ListControl,System.String)
+  name.vb: WithValueMember(ListControl, String)
+  fullName: BB84.WinForms.Extensions.ListControlExtensions.WithValueMember(System.Windows.Forms.ListControl, string)
+  fullName.vb: BB84.WinForms.Extensions.ListControlExtensions.WithValueMember(System.Windows.Forms.ListControl, String)
+  nameWithType: ListControlExtensions.WithValueMember(ListControl, string)
+  nameWithType.vb: ListControlExtensions.WithValueMember(ListControl, String)
+- uid: BB84.WinForms.Extensions.ListControlExtensions.WithValueMember*
+  name: WithValueMember
+  href: api/BB84.WinForms.Extensions.ListControlExtensions.html#BB84_WinForms_Extensions_ListControlExtensions_WithValueMember_
+  commentId: Overload:BB84.WinForms.Extensions.ListControlExtensions.WithValueMember
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.ListControlExtensions.WithValueMember
+  nameWithType: ListControlExtensions.WithValueMember
 - uid: BB84.WinForms.Extensions.MonthCalendarExtensions
   name: MonthCalendarExtensions
   href: api/BB84.WinForms.Extensions.MonthCalendarExtensions.html

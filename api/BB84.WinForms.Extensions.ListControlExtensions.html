@@ -198,6 +198,97 @@ implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.c
 
 
 
+  <a id="BB84_WinForms_Extensions_ListControlExtensions_WithDisplayMember_" data-uid="BB84.WinForms.Extensions.ListControlExtensions.WithDisplayMember*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_ListControlExtensions_WithDisplayMember_System_Windows_Forms_ListControl_System_String_" data-uid="BB84.WinForms.Extensions.ListControlExtensions.WithDisplayMember(System.Windows.Forms.ListControl,System.String)">
+  WithDisplayMember(ListControl, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ListControlExtensions.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol.displaymember">DisplayMember</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol">ListControl</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ListControl WithDisplayMember(this ListControl listControl, string displayMember)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listControl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol">ListControl</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol">ListControl</a> to set the display member for.</p>
+</dd>
+    <dt><code>displayMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the property to display for each item in the list.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol">ListControl</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol">ListControl</a> control with the display member set, allowing for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_WinForms_Extensions_ListControlExtensions_WithEnumeratorBinding_" data-uid="BB84.WinForms.Extensions.ListControlExtensions.WithEnumeratorBinding*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_ListControlExtensions_WithEnumeratorBinding__1_System_Windows_Forms_ListControl___0_" data-uid="BB84.WinForms.Extensions.ListControlExtensions.WithEnumeratorBinding``1(System.Windows.Forms.ListControl,``0)">
+  WithEnumeratorBinding&lt;T&gt;(ListControl, T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ListControlExtensions.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol.datasource">DataSource</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol">ListControl</a>
+to an enumeration of type <code class="typeparamref">T</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ListControl WithEnumeratorBinding&lt;T&gt;(this ListControl listControl, T value) where T : struct, IComparable, IFormattable, IConvertible</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listControl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol">ListControl</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol">ListControl</a> to bind.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd><p>The enumeration value used to determine the type <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol">ListControl</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol">ListControl</a> control with the binding applied, allowing for method chaining.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The enumeration type to bind to the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol.datasource">DataSource</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="BB84_WinForms_Extensions_ListControlExtensions_WithSelectedValueBinding_" data-uid="BB84.WinForms.Extensions.ListControlExtensions.WithSelectedValueBinding*"></a>
 
   <h3 id="BB84_WinForms_Extensions_ListControlExtensions_WithSelectedValueBinding_System_Windows_Forms_ListControl_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.ListControlExtensions.WithSelectedValueBinding(System.Windows.Forms.ListControl,System.Object,System.String)">
@@ -244,6 +335,48 @@ to a property on the provided data source.</p>
   <div class="markdown level1 remarks"><p>The binding is configured to update the data source whenever the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol.selectedvalue">SelectedValue</a>
 property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
 </div>
+
+
+
+
+  <a id="BB84_WinForms_Extensions_ListControlExtensions_WithValueMember_" data-uid="BB84.WinForms.Extensions.ListControlExtensions.WithValueMember*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_ListControlExtensions_WithValueMember_System_Windows_Forms_ListControl_System_String_" data-uid="BB84.WinForms.Extensions.ListControlExtensions.WithValueMember(System.Windows.Forms.ListControl,System.String)">
+  WithValueMember(ListControl, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.WinForms.Extensions/ListControlExtensions.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol.valuemember">ValueMember</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol">ListControl</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ListControl WithValueMember(this ListControl listControl, string valueMember)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listControl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol">ListControl</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol">ListControl</a> to set the value member for.</p>
+</dd>
+    <dt><code>valueMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the property to use as the actual value for each item in the list.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol">ListControl</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.listcontrol">ListControl</a> control with the value member set, allowing for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 
