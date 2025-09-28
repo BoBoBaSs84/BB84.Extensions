@@ -33,9 +33,9 @@ public class JsonExtensionsTests
 
 		string jsonString = testClass.ToJson();
 
-		Assert.IsTrue(jsonString.Contains($@"{nameof(testClass.Id)}"":""{testClass.Id}"));
-		Assert.IsTrue(jsonString.Contains($@"{nameof(testClass.Name)}"":""{testClass.Name}"));
-		Assert.IsTrue(jsonString.Contains($@"{nameof(testClass.Description)}"":""{testClass.Description}"));
+		Assert.Contains($@"{nameof(testClass.Id)}"":""{testClass.Id}", jsonString);
+		Assert.Contains($@"{nameof(testClass.Name)}"":""{testClass.Name}", jsonString);
+		Assert.Contains($@"{nameof(testClass.Description)}"":""{testClass.Description}", jsonString);
 	}
 
 	private sealed class TestClass

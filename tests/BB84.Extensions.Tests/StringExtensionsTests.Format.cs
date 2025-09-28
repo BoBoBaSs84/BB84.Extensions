@@ -17,7 +17,7 @@ public sealed partial class StringExtensionsTests
 
 		string result = testString.FormatInvariant(dateTime);
 
-		Assert.IsTrue(result.Contains(dateTime.ToString(CultureInfo.InvariantCulture)));
+		Assert.Contains(dateTime.ToString(CultureInfo.InvariantCulture), result);
 	}
 
 	[TestMethod]
@@ -28,6 +28,6 @@ public sealed partial class StringExtensionsTests
 
 		string result = testString.Format(CultureInfo.GetCultureInfo("de-DE"), dateTime);
 
-		Assert.IsTrue(result.Contains(dateTime.ToString(CultureInfo.GetCultureInfo("de-DE"))));
+		Assert.Contains(dateTime.ToString(CultureInfo.GetCultureInfo("de-DE")), result);
 	}
 }

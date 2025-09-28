@@ -21,11 +21,10 @@ public sealed partial class IntegerExtensionsTests
 
 	[TestMethod]
 	[Description("Should throw an exception.")]
-	[ExpectedException(typeof(ArgumentOutOfRangeException))]
 	public void ArrayUpException()
 	{
 		int value = 15;
 		int maxValue = 0;
-		_ = value.ArrayUp(maxValue);
+		Assert.ThrowsExactly<ArgumentOutOfRangeException>(() => _ = value.ArrayUp(maxValue));
 	}
 }

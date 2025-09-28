@@ -7,7 +7,7 @@ namespace BB84.Extensions.Tests;
 
 public sealed partial class DoubleExtensionsTests
 {
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow(1.67d, false)]
 	[DataRow(null, true)]
 	public void IsNullTest(double? value, bool expected)

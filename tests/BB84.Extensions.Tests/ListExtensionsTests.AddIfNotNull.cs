@@ -10,32 +10,31 @@ public sealed partial class ListExtensionsTests
 	[TestMethod]
 	public void AddIfNotNullTest()
 	{
-		IList<TestClass> target = new List<TestClass>();
+		IList<TestClass> target = [];
 		TestClass item = new();
 
 		target.AddIfNotNull(item);
 
-		Assert.AreEqual(1, target.Count);
+		Assert.HasCount(1, target);
 	}
 
 	[TestMethod]
 	public void AddIfNotNullItemNullTest()
 	{
-		IList<TestClass> target = new List<TestClass>();
+		IList<TestClass> target = [];
 		TestClass item = default!;
 
 		target.AddIfNotNull(item);
 
-		Assert.AreEqual(0, target.Count);
+		Assert.IsEmpty(target);
 	}
 
 	[TestMethod]
-	[ExpectedException(typeof(ArgumentNullException))]
 	public void AddIfNotNullTargetNullTest()
 	{
 		IList<TestClass> target = default!;
 		TestClass item = new();
 
-		target.AddIfNotNull(item);
+		Assert.ThrowsExactly<ArgumentNullException>(() => target.AddIfNotNull(item));
 	}
 }

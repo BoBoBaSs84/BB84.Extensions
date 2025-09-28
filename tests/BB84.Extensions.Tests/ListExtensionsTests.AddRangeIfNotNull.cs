@@ -10,43 +10,42 @@ public sealed partial class ListExtensionsTests
 	[TestMethod]
 	public void AddRangeIfNotNullTest()
 	{
-		IList<TestClass> target = new List<TestClass>();
-		IEnumerable<TestClass> items = new List<TestClass>() { new(), default! };
+		IList<TestClass> target = [];
+		IEnumerable<TestClass> items = [new(), default!];
 
 		target.AddRangeIfNotNull(items);
 
-		Assert.AreEqual(1, target.Count);
+		Assert.HasCount(1, target);
 	}
 
 	[TestMethod]
-	[ExpectedException(typeof(ArgumentNullException))]
 	public void AddRangeIfNotNullTargetNullTest()
 	{
 		IList<TestClass> target = default!;
-		IEnumerable<TestClass> items = new List<TestClass>() { new() };
+		IEnumerable<TestClass> items = [new()];
 
-		target.AddRangeIfNotNull(items);
+		Assert.ThrowsExactly<ArgumentNullException>(() => target.AddRangeIfNotNull(items));
 	}
 
 	[TestMethod]
 	public void AddRangeIfNotNullItemsNullTest()
 	{
-		IList<TestClass> target = new List<TestClass>();
+		IList<TestClass> target = [];
 		IEnumerable<TestClass> items = default!;
 
 		target.AddRangeIfNotNull(items);
 
-		Assert.AreEqual(0, target.Count);
+		Assert.IsEmpty(target);
 	}
 
 	[TestMethod]
 	public void AddRangeIfNotNullItemsEmptyTest()
 	{
-		IList<TestClass> target = new List<TestClass>();
-		IEnumerable<TestClass> items = new List<TestClass>();
+		IList<TestClass> target = [];
+		IEnumerable<TestClass> items = [];
 
 		target.AddRangeIfNotNull(items);
 
-		Assert.AreEqual(0, target.Count);
+		Assert.IsEmpty(target);
 	}
 }

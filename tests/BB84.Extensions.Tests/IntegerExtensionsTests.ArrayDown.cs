@@ -21,11 +21,10 @@ public sealed partial class IntegerExtensionsTests
 
 	[TestMethod]
 	[Description("Should throw an exception.")]
-	[ExpectedException(typeof(ArgumentOutOfRangeException))]
 	public void ArrayDownException()
 	{
 		int value = 0;
 		int minValue = 15;
-		_ = value.ArrayDown(minValue);
+		Assert.ThrowsExactly<ArgumentOutOfRangeException>(() => _ = value.ArrayDown(minValue));
 	}
 }

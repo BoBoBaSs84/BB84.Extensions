@@ -7,7 +7,7 @@ namespace BB84.Extensions.Tests;
 
 public partial class FloatExtensionsTests
 {
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow(1.67f, true)]
 	[DataRow(null, false)]
 	public void IsNotNullTest(float? value, bool expected)

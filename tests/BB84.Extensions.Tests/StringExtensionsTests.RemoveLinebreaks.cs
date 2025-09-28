@@ -7,7 +7,7 @@ namespace BB84.Extensions.Tests;
 
 public partial class StringExtensionsTests
 {
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow("Unit\rTest", "UnitTest")]
 	[DataRow("Unit\r\nTest", "UnitTest")]
 	[DataRow("Unit\nTest", "UnitTest")]

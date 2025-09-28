@@ -37,12 +37,12 @@ public class XmlExtensionTests
 
 		string xmlString = testClass.ToXml();
 
-		Assert.IsTrue(xmlString.Contains("<Fancy Id="));
-		Assert.IsTrue(xmlString.Contains("<Name>UnitTestName</Name>"));
-		Assert.IsTrue(xmlString.Contains("<Description>UnitTestDescription</Description>"));
+		Assert.Contains("<Fancy Id=", xmlString);
+		Assert.Contains("<Name>UnitTestName</Name>", xmlString);
+		Assert.Contains("<Description>UnitTestDescription</Description>", xmlString);
 	}
 
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow("utf-8"), DataRow("utf-16"), DataRow("utf-32")]
 	public void EncodingTest(string encoding)
 	{
@@ -51,7 +51,7 @@ public class XmlExtensionTests
 
 		string xmlString = testClass.ToXml(settings: _writerSettings);
 
-		Assert.IsTrue(xmlString.Contains($"encoding=\"{encoding}\""));
+		Assert.Contains($"encoding=\"{encoding}\"", xmlString);
 	}
 
 	[XmlRoot("Fancy")]

@@ -7,13 +7,13 @@ namespace BB84.Extensions.Tests;
 
 public partial class ByteExtensionsTests
 {
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow(byte.MinValue, true)]
 	[DataRow(null, false)]
 	public void IsNotNullTest(byte? value, bool expected)
 		=> Assert.AreEqual(expected, value.IsNotNull());
 
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow(new byte[] { 0 }, true)]
 	[DataRow(null, false)]
 	public void IsNotNullTest(byte[]? value, bool expected)

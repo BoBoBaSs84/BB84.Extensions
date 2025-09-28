@@ -9,17 +9,16 @@ namespace BB84.Extensions.Tests;
 
 public sealed partial class StringExtensionsTests
 {
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow("UnitTest", "VW5pdFRlc3Q=")]
 	[DataRow("", "")]
 	public void FromBase64Test(string expected, string value)
 		=> Assert.AreEqual(expected, value.FromBase64(Encoding.UTF8));
 
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow("%")]
 	[DataRow("$")]
 	[DataRow("#")]
-	[ExpectedException(typeof(ArgumentException))]
 	public void FromBase64ExceptionTest(string value)
-		=> value.FromBase64();
+		=> Assert.ThrowsExactly<ArgumentException>(value.FromBase64);
 }
