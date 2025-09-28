@@ -11,7 +11,7 @@ namespace BB84.Extensions.Tests;
 [TestClass]
 public sealed class HttpClientExtensionsTests
 {
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow("https://example.com")]
 	public void WithBaseAddressTest(string baseAddress)
 	{
@@ -21,7 +21,7 @@ public sealed class HttpClientExtensionsTests
 		Assert.AreEqual($"{baseAddress}/", client.BaseAddress!.ToString());
 	}
 
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow("FancyUserName", "FancyPassword")]
 	public void WithBasicAuthenticationTest(string username, string password)
 	{
@@ -32,7 +32,7 @@ public sealed class HttpClientExtensionsTests
 		Assert.AreEqual(Convert.ToBase64String(Encoding.ASCII.GetBytes($"{username}:{password}")), client.DefaultRequestHeaders.Authorization.Parameter);
 	}
 
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow("FancyUserName", "FancyPassword")]
 	public void WithBasicAuthenticationWithEncodingTest(string username, string password)
 	{
@@ -43,7 +43,7 @@ public sealed class HttpClientExtensionsTests
 		Assert.AreEqual(Convert.ToBase64String(Encoding.UTF8.GetBytes($"{username}:{password}")), client.DefaultRequestHeaders.Authorization.Parameter);
 	}
 
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow("FancyToken")]
 	[DataRow("")]
 	public void WithBearerTokenTest(string token)
@@ -54,7 +54,7 @@ public sealed class HttpClientExtensionsTests
 		Assert.AreEqual(token, client.DefaultRequestHeaders.Authorization!.Parameter);
 	}
 
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow("application/json")]
 	[DataRow("text/plain")]
 	public void WithMediaTypeTest(string mediaType)

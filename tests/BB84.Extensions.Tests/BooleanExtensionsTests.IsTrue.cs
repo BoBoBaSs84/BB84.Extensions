@@ -7,13 +7,13 @@ namespace BB84.Extensions.Tests;
 
 public partial class BooleanExtensionsTests
 {
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow(true, true)]
 	[DataRow(false, false)]
 	public void IsTrueTest(bool value, bool expected)
 		=> Assert.AreEqual(expected, value.IsTrue());
 
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow(true, true)]
 	[DataRow(false, false)]
 	[DataRow(null, false)]

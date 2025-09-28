@@ -7,7 +7,7 @@ namespace BB84.Extensions.Tests;
 
 public sealed partial class IntegerExtensionsTests
 {
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow(1, true)]
 	[DataRow(null, false)]
 	public void IsNotNullTest(int? value, bool expected)

@@ -7,7 +7,7 @@ namespace BB84.Extensions.Tests;
 
 public partial class StringExtensionsTests
 {
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow("Unit Test", "UnitTest")]
 	[DataRow("Unit  Test", "UnitTest")]
 	public void RemoveWhitespaceTest(string value, string expected)

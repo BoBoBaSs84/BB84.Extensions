@@ -7,7 +7,7 @@ namespace BB84.Extensions.Tests;
 
 public partial class BooleanExtensionsTests
 {
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow(true, false)]
 	[DataRow(false, false)]
 	[DataRow(null, true)]

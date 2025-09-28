@@ -10,7 +10,7 @@ public sealed partial class StreamExtensionsTests
 {
 	private readonly static Random Random = new();
 
-	[DataTestMethod]
+	[TestMethod]
 	[DynamicData(nameof(GetData), DynamicDataSourceType.Method)]
 	public void ToByteArrayTest(byte[] buffer)
 	{

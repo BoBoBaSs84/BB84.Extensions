@@ -10,7 +10,7 @@ public sealed partial class EnumerableExtensionsTests
 	[TestMethod]
 	public void ForEachTest()
 	{
-		IList<TestClass> list = new List<TestClass>();
+		IList<TestClass> list = [];
 		for (int i = 0; i < 10; i++)
 			list.Add(new TestClass() { Value = i + 1 });
 
@@ -26,7 +26,7 @@ public sealed partial class EnumerableExtensionsTests
 	public void ForEachWithPredicateTest()
 	{
 		int hits = default;
-		IEnumerable<string> strings = new List<string>() { "a", "ab", "b", "bb" };
+		IEnumerable<string> strings = ["a", "ab", "b", "bb"];
 
 		strings.ForEach(x => x.Contains('a'), x => hits++);
 
@@ -37,7 +37,7 @@ public sealed partial class EnumerableExtensionsTests
 	public void ForEachWithPredicateAndBreakTest()
 	{
 		int hits = default;
-		IEnumerable<string> strings = new List<string>() { "a", "ab", "b", "bb" };
+		IEnumerable<string> strings = ["a", "ab", "b", "bb"];
 
 		strings.ForEach(x => x.Contains('b'), x => x.StartsWith("b", StringComparison.OrdinalIgnoreCase), x => hits++);
 

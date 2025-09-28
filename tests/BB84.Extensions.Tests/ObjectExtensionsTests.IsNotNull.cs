@@ -7,7 +7,7 @@ namespace BB84.Extensions.Tests;
 
 public sealed partial class ObjectExtensionsTests
 {
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow(null, false)]
 	[DataRow("", true)]
 	[DataRow("test", true)]

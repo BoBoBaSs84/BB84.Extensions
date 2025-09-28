@@ -7,7 +7,7 @@ namespace BB84.Extensions.Tests;
 
 public partial class StringExtensionsTests
 {
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow("Test", false)]
 	[DataRow(null, true)]
 	[DataRow("", false)]
@@ -15,7 +15,7 @@ public partial class StringExtensionsTests
 	public void IsNullTest(string? value, bool expected)
 		=> Assert.AreEqual(expected, value.IsNull());
 
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow("Test", false)]
 	[DataRow(null, true)]
 	[DataRow("", true)]
@@ -23,7 +23,7 @@ public partial class StringExtensionsTests
 	public void IsNullOrEmptyTest(string? value, bool expected)
 		=> Assert.AreEqual(expected, value.IsNullOrEmpty());
 
-	[DataTestMethod]
+	[TestMethod]
 	[DataRow("Test", false)]
 	[DataRow(null, true)]
 	[DataRow("", true)]
