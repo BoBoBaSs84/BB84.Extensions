@@ -17,6 +17,50 @@ namespace BB84.Extensions;
 public static class BooleanExtensions
 {
 	/// <summary>
+	/// Determines whether the specified bool is equal to its default value (false).
+	/// </summary>
+	/// <param name="value">The bool to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is equal to its default value (false);
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsDefault(this bool value)
+		=> value.Equals(default);
+
+	/// <summary>
+	/// Determines whether the specified nullable bool is equal to its default value <see langword="null"/>.
+	/// </summary>
+	/// <param name="value">The nullable bool to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is equal to its default value <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsDefault([NotNullWhen(false)] this bool? value)
+		=> value.Equals(default);
+
+	/// <summary>
+	/// Determines whether the specified bool is not equal to its default value (false).
+	/// </summary>
+	/// <param name="value">The bool to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is not equal to its default value (false);
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotDefault(this bool value)
+		=> value.Equals(default).Equals(false);
+
+	/// <summary>
+	/// Determines whether the specified bool is not equal to its default value <see langword="null"/>.
+	/// </summary>
+	/// <param name="value">The bool to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is not equal to its default value <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotDefault([NotNullWhen(true)] this bool? value)
+		=> value.Equals(default).Equals(false);
+
+	/// <summary>
 	/// Determines whether the specified boolean value is false.
 	/// </summary>
 	/// <param name="value">The boolean value to evaluate.</param>

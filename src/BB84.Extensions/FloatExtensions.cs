@@ -16,6 +16,50 @@ namespace BB84.Extensions;
 public static class FloatExtensions
 {
 	/// <summary>
+	/// Determines whether the specified float is equal to its default value (0).
+	/// </summary>
+	/// <param name="value">The float to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is equal to its default value (0);
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsDefault(this float value)
+		=> value.Equals(default);
+
+	/// <summary>
+	/// Determines whether the specified nullable float is equal to its default value <see langword="null"/>.
+	/// </summary>
+	/// <param name="value">The nullable float to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is equal to its default value <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsDefault([NotNullWhen(false)] this float? value)
+		=> value.Equals(default);
+
+	/// <summary>
+	/// Determines whether the specified float is not equal to its default value (0).
+	/// </summary>
+	/// <param name="value">The float to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is not equal to its default value (0);
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotDefault(this float value)
+		=> value.Equals(default).Equals(false);
+
+	/// <summary>
+	/// Determines whether the specified float is not equal to its default value <see langword="null"/>.
+	/// </summary>
+	/// <param name="value">The float to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is not equal to its default value <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotDefault([NotNullWhen(true)] this float? value)
+		=> value.Equals(default).Equals(false);
+
+	/// <summary>
 	/// Determines whether the specified nullable float has a null value.
 	/// </summary>
 	/// <param name="value">The nullable float to check.</param>

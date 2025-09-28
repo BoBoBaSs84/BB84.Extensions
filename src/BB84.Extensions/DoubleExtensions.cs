@@ -16,6 +16,50 @@ namespace BB84.Extensions;
 public static class DoubleExtensions
 {
 	/// <summary>
+	/// Determines whether the specified double is equal to its default value (0).
+	/// </summary>
+	/// <param name="value">The double to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is equal to its default value (0);
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsDefault(this double value)
+		=> value.Equals(default);
+
+	/// <summary>
+	/// Determines whether the specified nullable double is equal to its default value <see langword="null"/>.
+	/// </summary>
+	/// <param name="value">The nullable double to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is equal to its default value <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsDefault([NotNullWhen(false)] this double? value)
+		=> value.Equals(default);
+
+	/// <summary>
+	/// Determines whether the specified double is not equal to its default value (0).
+	/// </summary>
+	/// <param name="value">The double to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is not equal to its default value (0);
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotDefault(this double value)
+		=> value.Equals(default).Equals(false);
+
+	/// <summary>
+	/// Determines whether the specified double is not equal to its default value <see langword="null"/>.
+	/// </summary>
+	/// <param name="value">The double to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is not equal to its default value <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotDefault([NotNullWhen(true)] this double? value)
+		=> value.Equals(default).Equals(false);
+
+	/// <summary>
 	/// Determines whether the specified nullable double has a null value.
 	/// </summary>
 	/// <param name="value">The nullable double to check.</param>
