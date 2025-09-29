@@ -21,7 +21,7 @@ public static class LongExtensions
 	/// <param name="action">The action to execute for each long in the range.</param>
 	public static void For(this long value, Action<long> action)
 	{
-		for (int i = 0; i < value; i++)
+		for (long i = 0; i < value; i++)
 			action(i);
 	}
 
