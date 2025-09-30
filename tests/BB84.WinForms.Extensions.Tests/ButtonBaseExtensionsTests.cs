@@ -12,7 +12,7 @@ namespace BB84.WinForms.Extensions.Tests;
 public sealed class ButtonBaseExtensionsTests
 {
 	[TestMethod]
-	public void WithCommandBinding_ShouldBindSimpleCommand()
+	public void WithCommandBindingShouldBindSimpleCommand()
 	{
 		bool isCommandExecuted = false;
 		bool canCommandExecute = true;
@@ -29,7 +29,7 @@ public sealed class ButtonBaseExtensionsTests
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithCommandBinding_ShouldBindCommand(ButtonBase buttonBase)
+	public void WithCommandBindingShouldBindCommand(ButtonBase buttonBase)
 	{
 		var dataSource = new { Command = new TestCommand(() => { }, () => true) };
 
@@ -43,7 +43,7 @@ public sealed class ButtonBaseExtensionsTests
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithCommandParameterBinding_ShouldBindCommandParameter(ButtonBase buttonBase)
+	public void WithCommandParameterBindingShouldBindCommandParameter(ButtonBase buttonBase)
 	{
 		var dataSource = new { CommandParameter = new object() };
 

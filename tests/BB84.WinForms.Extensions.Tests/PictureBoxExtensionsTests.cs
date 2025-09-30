@@ -9,7 +9,7 @@ namespace BB84.WinForms.Extensions.Tests;
 public sealed class PictureBoxExtensionsTests
 {
 	[TestMethod]
-	public void WithImageBinding_ShouldBindImage()
+	public void WithImageBindingShouldBindImage()
 	{
 		var dataSource = new { Image = new Bitmap(320, 240) };
 		PictureBox pictureBox = new();

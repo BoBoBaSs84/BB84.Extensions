@@ -12,7 +12,7 @@ public sealed class ControlExtensionsTests
 {
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithEnabledBinding_ShouldBindEnabledProperty(Control control)
+	public void WithEnabledBindingShouldBindEnabledProperty(Control control)
 	{
 		var dataSource = new { Enabled = true };
 
@@ -26,7 +26,7 @@ public sealed class ControlExtensionsTests
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithTagBinding_ShouldBindEnabledProperty(Control control)
+	public void WithTagBindingShouldBindEnabledProperty(Control control)
 	{
 		var dataSource = new { Tag = new object() };
 
@@ -40,7 +40,7 @@ public sealed class ControlExtensionsTests
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithTextBinding_ShouldBindTextProperty(Control control)
+	public void WithTextBindingShouldBindTextProperty(Control control)
 	{
 		var dataSource = new { Text = "Test" };
 
@@ -54,7 +54,7 @@ public sealed class ControlExtensionsTests
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithVisibleBinding_ShouldBindVisibleProperty(Control control)
+	public void WithVisibleBindingShouldBindVisibleProperty(Control control)
 	{
 		var dataSource = new { Visible = true };
 

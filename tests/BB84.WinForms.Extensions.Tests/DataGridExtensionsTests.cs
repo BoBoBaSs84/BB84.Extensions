@@ -10,7 +10,7 @@ namespace BB84.WinForms.Extensions.Tests;
 public sealed class DataGridExtensionsTests
 {
 	[TestMethod]
-	public void WithDataSourceBinding_ShouldBindDataSource()
+	public void WithDataSourceBindingShouldBindDataSource()
 	{
 		var dataSource = new List<string> { "Item1", "Item2", "Item3" };
 		DataGrid dataGrid = new();

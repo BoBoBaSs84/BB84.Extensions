@@ -10,7 +10,7 @@ public sealed class ListBoxExtensionsTests
 {
 
 	[TestMethod]
-	public void WithSelectedItemBinding_ShouldBindSelectedItem()
+	public void WithSelectedItemBindingShouldBindSelectedItem()
 	{
 		var dataSource = new { SelectedItem = "Item1" };
 		ListBox listBox = new();
@@ -24,7 +24,7 @@ public sealed class ListBoxExtensionsTests
 	}
 
 	[TestMethod]
-	public void WithSelectedIndexBinding_ShouldBindSelectedIndex()
+	public void WithSelectedIndexBindingShouldBindSelectedIndex()
 	{
 		var dataSource = new { SelectedIndex = 1 };
 		ListBox listBox = new();
