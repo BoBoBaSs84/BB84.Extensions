@@ -214,6 +214,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.LongExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.LongExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.LongExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.LongExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with nullable <xref href=\"System.Int64\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Extensions.ObjectExtensions.yml",
       "output": {
         ".html": {
@@ -267,6 +281,20 @@
       "IsMRef": true,
       "Title": "BB84.Extensions.Serialization",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.ShortExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.ShortExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.ShortExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.ShortExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with nullable <xref href=\"System.Int16\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
     },
     {
       "type": "ManagedReference",

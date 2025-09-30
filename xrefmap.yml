@@ -35,6 +35,31 @@ references:
   commentId: T:BB84.Extensions.BooleanExtensions
   fullName: BB84.Extensions.BooleanExtensions
   nameWithType: BooleanExtensions
+- uid: BB84.Extensions.BooleanExtensions.IsDefault(System.Boolean)
+  name: IsDefault(bool)
+  href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsDefault_System_Boolean_
+  commentId: M:BB84.Extensions.BooleanExtensions.IsDefault(System.Boolean)
+  name.vb: IsDefault(Boolean)
+  fullName: BB84.Extensions.BooleanExtensions.IsDefault(bool)
+  fullName.vb: BB84.Extensions.BooleanExtensions.IsDefault(Boolean)
+  nameWithType: BooleanExtensions.IsDefault(bool)
+  nameWithType.vb: BooleanExtensions.IsDefault(Boolean)
+- uid: BB84.Extensions.BooleanExtensions.IsDefault(System.Nullable{System.Boolean})
+  name: IsDefault(bool?)
+  href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsDefault_System_Nullable_System_Boolean__
+  commentId: M:BB84.Extensions.BooleanExtensions.IsDefault(System.Nullable{System.Boolean})
+  name.vb: IsDefault(Boolean?)
+  fullName: BB84.Extensions.BooleanExtensions.IsDefault(bool?)
+  fullName.vb: BB84.Extensions.BooleanExtensions.IsDefault(Boolean?)
+  nameWithType: BooleanExtensions.IsDefault(bool?)
+  nameWithType.vb: BooleanExtensions.IsDefault(Boolean?)
+- uid: BB84.Extensions.BooleanExtensions.IsDefault*
+  name: IsDefault
+  href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsDefault_
+  commentId: Overload:BB84.Extensions.BooleanExtensions.IsDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.BooleanExtensions.IsDefault
+  nameWithType: BooleanExtensions.IsDefault
 - uid: BB84.Extensions.BooleanExtensions.IsFalse(System.Boolean)
   name: IsFalse(bool)
   href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsFalse_System_Boolean_
@@ -60,6 +85,31 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.BooleanExtensions.IsFalse
   nameWithType: BooleanExtensions.IsFalse
+- uid: BB84.Extensions.BooleanExtensions.IsNotDefault(System.Boolean)
+  name: IsNotDefault(bool)
+  href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsNotDefault_System_Boolean_
+  commentId: M:BB84.Extensions.BooleanExtensions.IsNotDefault(System.Boolean)
+  name.vb: IsNotDefault(Boolean)
+  fullName: BB84.Extensions.BooleanExtensions.IsNotDefault(bool)
+  fullName.vb: BB84.Extensions.BooleanExtensions.IsNotDefault(Boolean)
+  nameWithType: BooleanExtensions.IsNotDefault(bool)
+  nameWithType.vb: BooleanExtensions.IsNotDefault(Boolean)
+- uid: BB84.Extensions.BooleanExtensions.IsNotDefault(System.Nullable{System.Boolean})
+  name: IsNotDefault(bool?)
+  href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsNotDefault_System_Nullable_System_Boolean__
+  commentId: M:BB84.Extensions.BooleanExtensions.IsNotDefault(System.Nullable{System.Boolean})
+  name.vb: IsNotDefault(Boolean?)
+  fullName: BB84.Extensions.BooleanExtensions.IsNotDefault(bool?)
+  fullName.vb: BB84.Extensions.BooleanExtensions.IsNotDefault(Boolean?)
+  nameWithType: BooleanExtensions.IsNotDefault(bool?)
+  nameWithType.vb: BooleanExtensions.IsNotDefault(Boolean?)
+- uid: BB84.Extensions.BooleanExtensions.IsNotDefault*
+  name: IsNotDefault
+  href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsNotDefault_
+  commentId: Overload:BB84.Extensions.BooleanExtensions.IsNotDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.BooleanExtensions.IsNotDefault
+  nameWithType: BooleanExtensions.IsNotDefault
 - uid: BB84.Extensions.BooleanExtensions.IsNotNull(System.Nullable{System.Boolean})
   name: IsNotNull(bool?)
   href: api/BB84.Extensions.BooleanExtensions.html#BB84_Extensions_BooleanExtensions_IsNotNull_System_Nullable_System_Boolean__
@@ -649,6 +699,56 @@ references:
   commentId: T:BB84.Extensions.DecimalExtensions
   fullName: BB84.Extensions.DecimalExtensions
   nameWithType: DecimalExtensions
+- uid: BB84.Extensions.DecimalExtensions.IsDefault(System.Decimal)
+  name: IsDefault(decimal)
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsDefault_System_Decimal_
+  commentId: M:BB84.Extensions.DecimalExtensions.IsDefault(System.Decimal)
+  name.vb: IsDefault(Decimal)
+  fullName: BB84.Extensions.DecimalExtensions.IsDefault(decimal)
+  fullName.vb: BB84.Extensions.DecimalExtensions.IsDefault(Decimal)
+  nameWithType: DecimalExtensions.IsDefault(decimal)
+  nameWithType.vb: DecimalExtensions.IsDefault(Decimal)
+- uid: BB84.Extensions.DecimalExtensions.IsDefault(System.Nullable{System.Decimal})
+  name: IsDefault(decimal?)
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsDefault_System_Nullable_System_Decimal__
+  commentId: M:BB84.Extensions.DecimalExtensions.IsDefault(System.Nullable{System.Decimal})
+  name.vb: IsDefault(Decimal?)
+  fullName: BB84.Extensions.DecimalExtensions.IsDefault(decimal?)
+  fullName.vb: BB84.Extensions.DecimalExtensions.IsDefault(Decimal?)
+  nameWithType: DecimalExtensions.IsDefault(decimal?)
+  nameWithType.vb: DecimalExtensions.IsDefault(Decimal?)
+- uid: BB84.Extensions.DecimalExtensions.IsDefault*
+  name: IsDefault
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsDefault_
+  commentId: Overload:BB84.Extensions.DecimalExtensions.IsDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.DecimalExtensions.IsDefault
+  nameWithType: DecimalExtensions.IsDefault
+- uid: BB84.Extensions.DecimalExtensions.IsNotDefault(System.Decimal)
+  name: IsNotDefault(decimal)
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNotDefault_System_Decimal_
+  commentId: M:BB84.Extensions.DecimalExtensions.IsNotDefault(System.Decimal)
+  name.vb: IsNotDefault(Decimal)
+  fullName: BB84.Extensions.DecimalExtensions.IsNotDefault(decimal)
+  fullName.vb: BB84.Extensions.DecimalExtensions.IsNotDefault(Decimal)
+  nameWithType: DecimalExtensions.IsNotDefault(decimal)
+  nameWithType.vb: DecimalExtensions.IsNotDefault(Decimal)
+- uid: BB84.Extensions.DecimalExtensions.IsNotDefault(System.Nullable{System.Decimal})
+  name: IsNotDefault(decimal?)
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNotDefault_System_Nullable_System_Decimal__
+  commentId: M:BB84.Extensions.DecimalExtensions.IsNotDefault(System.Nullable{System.Decimal})
+  name.vb: IsNotDefault(Decimal?)
+  fullName: BB84.Extensions.DecimalExtensions.IsNotDefault(decimal?)
+  fullName.vb: BB84.Extensions.DecimalExtensions.IsNotDefault(Decimal?)
+  nameWithType: DecimalExtensions.IsNotDefault(decimal?)
+  nameWithType.vb: DecimalExtensions.IsNotDefault(Decimal?)
+- uid: BB84.Extensions.DecimalExtensions.IsNotDefault*
+  name: IsNotDefault
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNotDefault_
+  commentId: Overload:BB84.Extensions.DecimalExtensions.IsNotDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.DecimalExtensions.IsNotDefault
+  nameWithType: DecimalExtensions.IsNotDefault
 - uid: BB84.Extensions.DecimalExtensions.IsNotNull(System.Nullable{System.Decimal})
   name: IsNotNull(decimal?)
   href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNotNull_System_Nullable_System_Decimal__
@@ -687,6 +787,56 @@ references:
   commentId: T:BB84.Extensions.DoubleExtensions
   fullName: BB84.Extensions.DoubleExtensions
   nameWithType: DoubleExtensions
+- uid: BB84.Extensions.DoubleExtensions.IsDefault(System.Double)
+  name: IsDefault(double)
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsDefault_System_Double_
+  commentId: M:BB84.Extensions.DoubleExtensions.IsDefault(System.Double)
+  name.vb: IsDefault(Double)
+  fullName: BB84.Extensions.DoubleExtensions.IsDefault(double)
+  fullName.vb: BB84.Extensions.DoubleExtensions.IsDefault(Double)
+  nameWithType: DoubleExtensions.IsDefault(double)
+  nameWithType.vb: DoubleExtensions.IsDefault(Double)
+- uid: BB84.Extensions.DoubleExtensions.IsDefault(System.Nullable{System.Double})
+  name: IsDefault(double?)
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsDefault_System_Nullable_System_Double__
+  commentId: M:BB84.Extensions.DoubleExtensions.IsDefault(System.Nullable{System.Double})
+  name.vb: IsDefault(Double?)
+  fullName: BB84.Extensions.DoubleExtensions.IsDefault(double?)
+  fullName.vb: BB84.Extensions.DoubleExtensions.IsDefault(Double?)
+  nameWithType: DoubleExtensions.IsDefault(double?)
+  nameWithType.vb: DoubleExtensions.IsDefault(Double?)
+- uid: BB84.Extensions.DoubleExtensions.IsDefault*
+  name: IsDefault
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsDefault_
+  commentId: Overload:BB84.Extensions.DoubleExtensions.IsDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.DoubleExtensions.IsDefault
+  nameWithType: DoubleExtensions.IsDefault
+- uid: BB84.Extensions.DoubleExtensions.IsNotDefault(System.Double)
+  name: IsNotDefault(double)
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNotDefault_System_Double_
+  commentId: M:BB84.Extensions.DoubleExtensions.IsNotDefault(System.Double)
+  name.vb: IsNotDefault(Double)
+  fullName: BB84.Extensions.DoubleExtensions.IsNotDefault(double)
+  fullName.vb: BB84.Extensions.DoubleExtensions.IsNotDefault(Double)
+  nameWithType: DoubleExtensions.IsNotDefault(double)
+  nameWithType.vb: DoubleExtensions.IsNotDefault(Double)
+- uid: BB84.Extensions.DoubleExtensions.IsNotDefault(System.Nullable{System.Double})
+  name: IsNotDefault(double?)
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNotDefault_System_Nullable_System_Double__
+  commentId: M:BB84.Extensions.DoubleExtensions.IsNotDefault(System.Nullable{System.Double})
+  name.vb: IsNotDefault(Double?)
+  fullName: BB84.Extensions.DoubleExtensions.IsNotDefault(double?)
+  fullName.vb: BB84.Extensions.DoubleExtensions.IsNotDefault(Double?)
+  nameWithType: DoubleExtensions.IsNotDefault(double?)
+  nameWithType.vb: DoubleExtensions.IsNotDefault(Double?)
+- uid: BB84.Extensions.DoubleExtensions.IsNotDefault*
+  name: IsNotDefault
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNotDefault_
+  commentId: Overload:BB84.Extensions.DoubleExtensions.IsNotDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.DoubleExtensions.IsNotDefault
+  nameWithType: DoubleExtensions.IsNotDefault
 - uid: BB84.Extensions.DoubleExtensions.IsNotNull(System.Nullable{System.Double})
   name: IsNotNull(double?)
   href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNotNull_System_Nullable_System_Double__
@@ -835,6 +985,56 @@ references:
   commentId: T:BB84.Extensions.FloatExtensions
   fullName: BB84.Extensions.FloatExtensions
   nameWithType: FloatExtensions
+- uid: BB84.Extensions.FloatExtensions.IsDefault(System.Nullable{System.Single})
+  name: IsDefault(float?)
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsDefault_System_Nullable_System_Single__
+  commentId: M:BB84.Extensions.FloatExtensions.IsDefault(System.Nullable{System.Single})
+  name.vb: IsDefault(Single?)
+  fullName: BB84.Extensions.FloatExtensions.IsDefault(float?)
+  fullName.vb: BB84.Extensions.FloatExtensions.IsDefault(Single?)
+  nameWithType: FloatExtensions.IsDefault(float?)
+  nameWithType.vb: FloatExtensions.IsDefault(Single?)
+- uid: BB84.Extensions.FloatExtensions.IsDefault(System.Single)
+  name: IsDefault(float)
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsDefault_System_Single_
+  commentId: M:BB84.Extensions.FloatExtensions.IsDefault(System.Single)
+  name.vb: IsDefault(Single)
+  fullName: BB84.Extensions.FloatExtensions.IsDefault(float)
+  fullName.vb: BB84.Extensions.FloatExtensions.IsDefault(Single)
+  nameWithType: FloatExtensions.IsDefault(float)
+  nameWithType.vb: FloatExtensions.IsDefault(Single)
+- uid: BB84.Extensions.FloatExtensions.IsDefault*
+  name: IsDefault
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsDefault_
+  commentId: Overload:BB84.Extensions.FloatExtensions.IsDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.FloatExtensions.IsDefault
+  nameWithType: FloatExtensions.IsDefault
+- uid: BB84.Extensions.FloatExtensions.IsNotDefault(System.Nullable{System.Single})
+  name: IsNotDefault(float?)
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNotDefault_System_Nullable_System_Single__
+  commentId: M:BB84.Extensions.FloatExtensions.IsNotDefault(System.Nullable{System.Single})
+  name.vb: IsNotDefault(Single?)
+  fullName: BB84.Extensions.FloatExtensions.IsNotDefault(float?)
+  fullName.vb: BB84.Extensions.FloatExtensions.IsNotDefault(Single?)
+  nameWithType: FloatExtensions.IsNotDefault(float?)
+  nameWithType.vb: FloatExtensions.IsNotDefault(Single?)
+- uid: BB84.Extensions.FloatExtensions.IsNotDefault(System.Single)
+  name: IsNotDefault(float)
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNotDefault_System_Single_
+  commentId: M:BB84.Extensions.FloatExtensions.IsNotDefault(System.Single)
+  name.vb: IsNotDefault(Single)
+  fullName: BB84.Extensions.FloatExtensions.IsNotDefault(float)
+  fullName.vb: BB84.Extensions.FloatExtensions.IsNotDefault(Single)
+  nameWithType: FloatExtensions.IsNotDefault(float)
+  nameWithType.vb: FloatExtensions.IsNotDefault(Single)
+- uid: BB84.Extensions.FloatExtensions.IsNotDefault*
+  name: IsNotDefault
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNotDefault_
+  commentId: Overload:BB84.Extensions.FloatExtensions.IsNotDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.FloatExtensions.IsNotDefault
+  nameWithType: FloatExtensions.IsNotDefault
 - uid: BB84.Extensions.FloatExtensions.IsNotNull(System.Nullable{System.Single})
   name: IsNotNull(float?)
   href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNotNull_System_Nullable_System_Single__
@@ -1048,6 +1248,56 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.IntegerExtensions.For
   nameWithType: IntegerExtensions.For
+- uid: BB84.Extensions.IntegerExtensions.IsDefault(System.Int32)
+  name: IsDefault(int)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsDefault_System_Int32_
+  commentId: M:BB84.Extensions.IntegerExtensions.IsDefault(System.Int32)
+  name.vb: IsDefault(Integer)
+  fullName: BB84.Extensions.IntegerExtensions.IsDefault(int)
+  fullName.vb: BB84.Extensions.IntegerExtensions.IsDefault(Integer)
+  nameWithType: IntegerExtensions.IsDefault(int)
+  nameWithType.vb: IntegerExtensions.IsDefault(Integer)
+- uid: BB84.Extensions.IntegerExtensions.IsDefault(System.Nullable{System.Int32})
+  name: IsDefault(int?)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsDefault_System_Nullable_System_Int32__
+  commentId: M:BB84.Extensions.IntegerExtensions.IsDefault(System.Nullable{System.Int32})
+  name.vb: IsDefault(Integer?)
+  fullName: BB84.Extensions.IntegerExtensions.IsDefault(int?)
+  fullName.vb: BB84.Extensions.IntegerExtensions.IsDefault(Integer?)
+  nameWithType: IntegerExtensions.IsDefault(int?)
+  nameWithType.vb: IntegerExtensions.IsDefault(Integer?)
+- uid: BB84.Extensions.IntegerExtensions.IsDefault*
+  name: IsDefault
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsDefault_
+  commentId: Overload:BB84.Extensions.IntegerExtensions.IsDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.IntegerExtensions.IsDefault
+  nameWithType: IntegerExtensions.IsDefault
+- uid: BB84.Extensions.IntegerExtensions.IsNotDefault(System.Int32)
+  name: IsNotDefault(int)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNotDefault_System_Int32_
+  commentId: M:BB84.Extensions.IntegerExtensions.IsNotDefault(System.Int32)
+  name.vb: IsNotDefault(Integer)
+  fullName: BB84.Extensions.IntegerExtensions.IsNotDefault(int)
+  fullName.vb: BB84.Extensions.IntegerExtensions.IsNotDefault(Integer)
+  nameWithType: IntegerExtensions.IsNotDefault(int)
+  nameWithType.vb: IntegerExtensions.IsNotDefault(Integer)
+- uid: BB84.Extensions.IntegerExtensions.IsNotDefault(System.Nullable{System.Int32})
+  name: IsNotDefault(int?)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNotDefault_System_Nullable_System_Int32__
+  commentId: M:BB84.Extensions.IntegerExtensions.IsNotDefault(System.Nullable{System.Int32})
+  name.vb: IsNotDefault(Integer?)
+  fullName: BB84.Extensions.IntegerExtensions.IsNotDefault(int?)
+  fullName.vb: BB84.Extensions.IntegerExtensions.IsNotDefault(Integer?)
+  nameWithType: IntegerExtensions.IsNotDefault(int?)
+  nameWithType.vb: IntegerExtensions.IsNotDefault(Integer?)
+- uid: BB84.Extensions.IntegerExtensions.IsNotDefault*
+  name: IsNotDefault
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNotDefault_
+  commentId: Overload:BB84.Extensions.IntegerExtensions.IsNotDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.IntegerExtensions.IsNotDefault
+  nameWithType: IntegerExtensions.IsNotDefault
 - uid: BB84.Extensions.IntegerExtensions.IsNotNull(System.Nullable{System.Int32})
   name: IsNotNull(int?)
   href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNotNull_System_Nullable_System_Int32__
@@ -1118,6 +1368,110 @@ references:
   fullName.vb: BB84.Extensions.ListExtensions.AddRangeIfNotNull(Of T)(System.Collections.Generic.IList(Of T), System.Collections.Generic.IEnumerable(Of T))
   nameWithType: ListExtensions.AddRangeIfNotNull<T>(IList<T>, IEnumerable<T>)
   nameWithType.vb: ListExtensions.AddRangeIfNotNull(Of T)(IList(Of T), IEnumerable(Of T))
+- uid: BB84.Extensions.LongExtensions
+  name: LongExtensions
+  href: api/BB84.Extensions.LongExtensions.html
+  commentId: T:BB84.Extensions.LongExtensions
+  fullName: BB84.Extensions.LongExtensions
+  nameWithType: LongExtensions
+- uid: BB84.Extensions.LongExtensions.For(System.Int64,System.Action{System.Int64})
+  name: For(long, Action<long>)
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_For_System_Int64_System_Action_System_Int64__
+  commentId: M:BB84.Extensions.LongExtensions.For(System.Int64,System.Action{System.Int64})
+  name.vb: For(Long, Action(Of Long))
+  fullName: BB84.Extensions.LongExtensions.For(long, System.Action<long>)
+  fullName.vb: BB84.Extensions.LongExtensions.For(Long, System.Action(Of Long))
+  nameWithType: LongExtensions.For(long, Action<long>)
+  nameWithType.vb: LongExtensions.For(Long, Action(Of Long))
+- uid: BB84.Extensions.LongExtensions.For*
+  name: For
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_For_
+  commentId: Overload:BB84.Extensions.LongExtensions.For
+  isSpec: "True"
+  fullName: BB84.Extensions.LongExtensions.For
+  nameWithType: LongExtensions.For
+- uid: BB84.Extensions.LongExtensions.IsDefault(System.Int64)
+  name: IsDefault(long)
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsDefault_System_Int64_
+  commentId: M:BB84.Extensions.LongExtensions.IsDefault(System.Int64)
+  name.vb: IsDefault(Long)
+  fullName: BB84.Extensions.LongExtensions.IsDefault(long)
+  fullName.vb: BB84.Extensions.LongExtensions.IsDefault(Long)
+  nameWithType: LongExtensions.IsDefault(long)
+  nameWithType.vb: LongExtensions.IsDefault(Long)
+- uid: BB84.Extensions.LongExtensions.IsDefault(System.Nullable{System.Int64})
+  name: IsDefault(long?)
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsDefault_System_Nullable_System_Int64__
+  commentId: M:BB84.Extensions.LongExtensions.IsDefault(System.Nullable{System.Int64})
+  name.vb: IsDefault(Long?)
+  fullName: BB84.Extensions.LongExtensions.IsDefault(long?)
+  fullName.vb: BB84.Extensions.LongExtensions.IsDefault(Long?)
+  nameWithType: LongExtensions.IsDefault(long?)
+  nameWithType.vb: LongExtensions.IsDefault(Long?)
+- uid: BB84.Extensions.LongExtensions.IsDefault*
+  name: IsDefault
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsDefault_
+  commentId: Overload:BB84.Extensions.LongExtensions.IsDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.LongExtensions.IsDefault
+  nameWithType: LongExtensions.IsDefault
+- uid: BB84.Extensions.LongExtensions.IsNotDefault(System.Int64)
+  name: IsNotDefault(long)
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNotDefault_System_Int64_
+  commentId: M:BB84.Extensions.LongExtensions.IsNotDefault(System.Int64)
+  name.vb: IsNotDefault(Long)
+  fullName: BB84.Extensions.LongExtensions.IsNotDefault(long)
+  fullName.vb: BB84.Extensions.LongExtensions.IsNotDefault(Long)
+  nameWithType: LongExtensions.IsNotDefault(long)
+  nameWithType.vb: LongExtensions.IsNotDefault(Long)
+- uid: BB84.Extensions.LongExtensions.IsNotDefault(System.Nullable{System.Int64})
+  name: IsNotDefault(long?)
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNotDefault_System_Nullable_System_Int64__
+  commentId: M:BB84.Extensions.LongExtensions.IsNotDefault(System.Nullable{System.Int64})
+  name.vb: IsNotDefault(Long?)
+  fullName: BB84.Extensions.LongExtensions.IsNotDefault(long?)
+  fullName.vb: BB84.Extensions.LongExtensions.IsNotDefault(Long?)
+  nameWithType: LongExtensions.IsNotDefault(long?)
+  nameWithType.vb: LongExtensions.IsNotDefault(Long?)
+- uid: BB84.Extensions.LongExtensions.IsNotDefault*
+  name: IsNotDefault
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNotDefault_
+  commentId: Overload:BB84.Extensions.LongExtensions.IsNotDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.LongExtensions.IsNotDefault
+  nameWithType: LongExtensions.IsNotDefault
+- uid: BB84.Extensions.LongExtensions.IsNotNull(System.Nullable{System.Int64})
+  name: IsNotNull(long?)
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNotNull_System_Nullable_System_Int64__
+  commentId: M:BB84.Extensions.LongExtensions.IsNotNull(System.Nullable{System.Int64})
+  name.vb: IsNotNull(Long?)
+  fullName: BB84.Extensions.LongExtensions.IsNotNull(long?)
+  fullName.vb: BB84.Extensions.LongExtensions.IsNotNull(Long?)
+  nameWithType: LongExtensions.IsNotNull(long?)
+  nameWithType.vb: LongExtensions.IsNotNull(Long?)
+- uid: BB84.Extensions.LongExtensions.IsNotNull*
+  name: IsNotNull
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNotNull_
+  commentId: Overload:BB84.Extensions.LongExtensions.IsNotNull
+  isSpec: "True"
+  fullName: BB84.Extensions.LongExtensions.IsNotNull
+  nameWithType: LongExtensions.IsNotNull
+- uid: BB84.Extensions.LongExtensions.IsNull(System.Nullable{System.Int64})
+  name: IsNull(long?)
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNull_System_Nullable_System_Int64__
+  commentId: M:BB84.Extensions.LongExtensions.IsNull(System.Nullable{System.Int64})
+  name.vb: IsNull(Long?)
+  fullName: BB84.Extensions.LongExtensions.IsNull(long?)
+  fullName.vb: BB84.Extensions.LongExtensions.IsNull(Long?)
+  nameWithType: LongExtensions.IsNull(long?)
+  nameWithType.vb: LongExtensions.IsNull(Long?)
+- uid: BB84.Extensions.LongExtensions.IsNull*
+  name: IsNull
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNull_
+  commentId: Overload:BB84.Extensions.LongExtensions.IsNull
+  isSpec: "True"
+  fullName: BB84.Extensions.LongExtensions.IsNull
+  nameWithType: LongExtensions.IsNull
 - uid: BB84.Extensions.ObjectExtensions
   name: ObjectExtensions
   href: api/BB84.Extensions.ObjectExtensions.html
@@ -1366,6 +1720,110 @@ references:
   fullName.vb: BB84.Extensions.Serialization.XmlExtension.ToXml(Of T)(T, System.Xml.Serialization.XmlSerializerNamespaces, System.Xml.XmlWriterSettings)
   nameWithType: XmlExtension.ToXml<T>(T, XmlSerializerNamespaces?, XmlWriterSettings?)
   nameWithType.vb: XmlExtension.ToXml(Of T)(T, XmlSerializerNamespaces, XmlWriterSettings)
+- uid: BB84.Extensions.ShortExtensions
+  name: ShortExtensions
+  href: api/BB84.Extensions.ShortExtensions.html
+  commentId: T:BB84.Extensions.ShortExtensions
+  fullName: BB84.Extensions.ShortExtensions
+  nameWithType: ShortExtensions
+- uid: BB84.Extensions.ShortExtensions.For(System.Int16,System.Action{System.Int16})
+  name: For(short, Action<short>)
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_For_System_Int16_System_Action_System_Int16__
+  commentId: M:BB84.Extensions.ShortExtensions.For(System.Int16,System.Action{System.Int16})
+  name.vb: For(Short, Action(Of Short))
+  fullName: BB84.Extensions.ShortExtensions.For(short, System.Action<short>)
+  fullName.vb: BB84.Extensions.ShortExtensions.For(Short, System.Action(Of Short))
+  nameWithType: ShortExtensions.For(short, Action<short>)
+  nameWithType.vb: ShortExtensions.For(Short, Action(Of Short))
+- uid: BB84.Extensions.ShortExtensions.For*
+  name: For
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_For_
+  commentId: Overload:BB84.Extensions.ShortExtensions.For
+  isSpec: "True"
+  fullName: BB84.Extensions.ShortExtensions.For
+  nameWithType: ShortExtensions.For
+- uid: BB84.Extensions.ShortExtensions.IsDefault(System.Int16)
+  name: IsDefault(short)
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsDefault_System_Int16_
+  commentId: M:BB84.Extensions.ShortExtensions.IsDefault(System.Int16)
+  name.vb: IsDefault(Short)
+  fullName: BB84.Extensions.ShortExtensions.IsDefault(short)
+  fullName.vb: BB84.Extensions.ShortExtensions.IsDefault(Short)
+  nameWithType: ShortExtensions.IsDefault(short)
+  nameWithType.vb: ShortExtensions.IsDefault(Short)
+- uid: BB84.Extensions.ShortExtensions.IsDefault(System.Nullable{System.Int16})
+  name: IsDefault(short?)
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsDefault_System_Nullable_System_Int16__
+  commentId: M:BB84.Extensions.ShortExtensions.IsDefault(System.Nullable{System.Int16})
+  name.vb: IsDefault(Short?)
+  fullName: BB84.Extensions.ShortExtensions.IsDefault(short?)
+  fullName.vb: BB84.Extensions.ShortExtensions.IsDefault(Short?)
+  nameWithType: ShortExtensions.IsDefault(short?)
+  nameWithType.vb: ShortExtensions.IsDefault(Short?)
+- uid: BB84.Extensions.ShortExtensions.IsDefault*
+  name: IsDefault
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsDefault_
+  commentId: Overload:BB84.Extensions.ShortExtensions.IsDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.ShortExtensions.IsDefault
+  nameWithType: ShortExtensions.IsDefault
+- uid: BB84.Extensions.ShortExtensions.IsNotDefault(System.Int16)
+  name: IsNotDefault(short)
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNotDefault_System_Int16_
+  commentId: M:BB84.Extensions.ShortExtensions.IsNotDefault(System.Int16)
+  name.vb: IsNotDefault(Short)
+  fullName: BB84.Extensions.ShortExtensions.IsNotDefault(short)
+  fullName.vb: BB84.Extensions.ShortExtensions.IsNotDefault(Short)
+  nameWithType: ShortExtensions.IsNotDefault(short)
+  nameWithType.vb: ShortExtensions.IsNotDefault(Short)
+- uid: BB84.Extensions.ShortExtensions.IsNotDefault(System.Nullable{System.Int16})
+  name: IsNotDefault(short?)
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNotDefault_System_Nullable_System_Int16__
+  commentId: M:BB84.Extensions.ShortExtensions.IsNotDefault(System.Nullable{System.Int16})
+  name.vb: IsNotDefault(Short?)
+  fullName: BB84.Extensions.ShortExtensions.IsNotDefault(short?)
+  fullName.vb: BB84.Extensions.ShortExtensions.IsNotDefault(Short?)
+  nameWithType: ShortExtensions.IsNotDefault(short?)
+  nameWithType.vb: ShortExtensions.IsNotDefault(Short?)
+- uid: BB84.Extensions.ShortExtensions.IsNotDefault*
+  name: IsNotDefault
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNotDefault_
+  commentId: Overload:BB84.Extensions.ShortExtensions.IsNotDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.ShortExtensions.IsNotDefault
+  nameWithType: ShortExtensions.IsNotDefault
+- uid: BB84.Extensions.ShortExtensions.IsNotNull(System.Nullable{System.Int16})
+  name: IsNotNull(short?)
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNotNull_System_Nullable_System_Int16__
+  commentId: M:BB84.Extensions.ShortExtensions.IsNotNull(System.Nullable{System.Int16})
+  name.vb: IsNotNull(Short?)
+  fullName: BB84.Extensions.ShortExtensions.IsNotNull(short?)
+  fullName.vb: BB84.Extensions.ShortExtensions.IsNotNull(Short?)
+  nameWithType: ShortExtensions.IsNotNull(short?)
+  nameWithType.vb: ShortExtensions.IsNotNull(Short?)
+- uid: BB84.Extensions.ShortExtensions.IsNotNull*
+  name: IsNotNull
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNotNull_
+  commentId: Overload:BB84.Extensions.ShortExtensions.IsNotNull
+  isSpec: "True"
+  fullName: BB84.Extensions.ShortExtensions.IsNotNull
+  nameWithType: ShortExtensions.IsNotNull
+- uid: BB84.Extensions.ShortExtensions.IsNull(System.Nullable{System.Int16})
+  name: IsNull(short?)
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNull_System_Nullable_System_Int16__
+  commentId: M:BB84.Extensions.ShortExtensions.IsNull(System.Nullable{System.Int16})
+  name.vb: IsNull(Short?)
+  fullName: BB84.Extensions.ShortExtensions.IsNull(short?)
+  fullName.vb: BB84.Extensions.ShortExtensions.IsNull(Short?)
+  nameWithType: ShortExtensions.IsNull(short?)
+  nameWithType.vb: ShortExtensions.IsNull(Short?)
+- uid: BB84.Extensions.ShortExtensions.IsNull*
+  name: IsNull
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNull_
+  commentId: Overload:BB84.Extensions.ShortExtensions.IsNull
+  isSpec: "True"
+  fullName: BB84.Extensions.ShortExtensions.IsNull
+  nameWithType: ShortExtensions.IsNull
 - uid: BB84.Extensions.StreamExtensions
   name: StreamExtensions
   href: api/BB84.Extensions.StreamExtensions.html
