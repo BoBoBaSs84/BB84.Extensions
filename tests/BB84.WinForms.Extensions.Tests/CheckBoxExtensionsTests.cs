@@ -9,7 +9,7 @@ namespace BB84.WinForms.Extensions.Tests;
 public sealed class CheckBoxExtensionsTests
 {
 	[TestMethod]
-	public void WithCheckedBinding_ShouldBindChecked()
+	public void WithCheckedBindingShouldBindChecked()
 	{
 		var dataSource = new { Checked = false };
 		CheckBox checkBox = new();
@@ -24,7 +24,7 @@ public sealed class CheckBoxExtensionsTests
 #if NET5_0_OR_GREATER
 
 	[TestMethod]
-	public void WithCheckStateBinding_ShouldBindCheckState()
+	public void WithCheckStateBindingShouldBindCheckState()
 	{
 		var dataSource = new { CheckState = CheckState.Unchecked };
 		CheckBox checkBox = new();
@@ -38,7 +38,7 @@ public sealed class CheckBoxExtensionsTests
 	}
 
 	[TestMethod]
-	public void WithCheckAlignBinding_ShouldBindCheckAlign()
+	public void WithCheckAlignBindingShouldBindCheckAlign()
 	{
 		var dataSource = new { CheckAlign = ContentAlignment.MiddleLeft };
 		CheckBox checkBox = new();

@@ -9,7 +9,7 @@ namespace BB84.WinForms.Extensions.Tests;
 public sealed class DateTimePickerExtensionsTests
 {
 	[TestMethod]
-	public void WithCheckedBinding_ShouldBindChecked()
+	public void WithCheckedBindingShouldBindChecked()
 	{
 		var dataSource = new { Checked = false };
 		DateTimePicker dateTimePicker = new();
@@ -23,7 +23,7 @@ public sealed class DateTimePickerExtensionsTests
 	}
 
 	[TestMethod]
-	public void WithValueBinding_ShouldBindValue()
+	public void WithValueBindingShouldBindValue()
 	{
 		var dataSource = new { Value = DateTime.MinValue };
 		DateTimePicker dateTimePicker = new();

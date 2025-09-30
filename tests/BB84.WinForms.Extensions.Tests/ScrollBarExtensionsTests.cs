@@ -12,7 +12,7 @@ public sealed class ScrollBarExtensionsTests
 {
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithValueBinding_ShouldBindValue(ScrollBar scrollBar)
+	public void WithValueBindingShouldBindValue(ScrollBar scrollBar)
 	{
 		var dataSource = new { Value = 50 };
 

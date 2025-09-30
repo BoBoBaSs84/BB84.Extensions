@@ -12,7 +12,7 @@ public sealed class ListControlExtensionsTests
 {
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithDataSourceBinding_ShouldBindDataSource(ListControl listControl)
+	public void WithDataSourceBindingShouldBindDataSource(ListControl listControl)
 	{
 		var dataSource = new List<string> { "Item1", "Item2", "Item3" };
 
@@ -23,7 +23,7 @@ public sealed class ListControlExtensionsTests
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithSelectedValueBinding_ShouldBindSelectedValue(ListControl listControl)
+	public void WithSelectedValueBindingShouldBindSelectedValue(ListControl listControl)
 	{
 		var dataSource = new { SelectedValue = "Item1" };
 
@@ -37,7 +37,7 @@ public sealed class ListControlExtensionsTests
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithDisplayMember_ShouldSetDisplayMember(ListControl listControl)
+	public void WithDisplayMemberShouldSetDisplayMember(ListControl listControl)
 	{
 		const string displayMember = "Name";
 		
@@ -48,7 +48,7 @@ public sealed class ListControlExtensionsTests
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithValueMember_ShouldSetValueMember(ListControl listControl)
+	public void WithValueMemberShouldSetValueMember(ListControl listControl)
 	{
 		const string valueMember = "Id";
 		
@@ -59,7 +59,7 @@ public sealed class ListControlExtensionsTests
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithEnumDataSource_ShouldBindEnumDataSource(ListControl listControl)
+	public void WithEnumDataSourceShouldBindEnumDataSource(ListControl listControl)
 	{
 		listControl.WithEnumeratorBinding(TestEnum.First);
 		

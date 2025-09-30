@@ -9,7 +9,7 @@ namespace BB84.WinForms.Extensions.Tests;
 public sealed class MonthCalendarExtensionsTests
 {
 	[TestMethod]
-	public void WithSelectionRangeBinding_ShouldBindSelectionRange()
+	public void WithSelectionRangeBindingShouldBindSelectionRange()
 	{
 		var dataSource = new { SelectionRange = new SelectionRange(DateTime.MinValue, DateTime.MaxValue) };
 		MonthCalendar monthCalendar = new();
