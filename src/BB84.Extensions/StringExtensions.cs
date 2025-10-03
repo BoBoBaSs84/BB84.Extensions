@@ -5,6 +5,7 @@
 // LICENSE file in the root directory of this source tree.
 using System.Globalization;
 using System.IO.Compression;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -71,6 +72,83 @@ public static partial class StringExtensions
 		byte[] inputBuffer = Convert.FromBase64String(value);
 		byte[] outputBuffer = inputBuffer.Decompress();
 		return outputBuffer.GetString();
+	}
+
+	/// <summary>
+	/// Encrypts the specified text using AES encryption with a key derived from the provided key string.
+	/// </summary>
+	/// <param name="value">The text to encrypt.</param>
+	/// <param name="key">The key used for encryption. It is hashed to derive a suitable AES key.</param>
+	/// <returns>The encrypted text, encoded as a Base64 string.</returns>
+	public static string Encrypt(this string value, string key)
+	{
+		byte[] buffer = Encoding.UTF8.GetBytes(value);
+		byte[] aesKey = new byte[24];
+
+#if NET8_0_OR_GREATER
+		Buffer.BlockCopy(SHA512.HashData(Encoding.UTF8.GetBytes(key)), 0, aesKey, 0, 24);
+#else
+		SHA512 hash = SHA512.Create();
+		Buffer.BlockCopy(hash.ComputeHash(Encoding.UTF8.GetBytes(key)), 0, aesKey, 0, 24);
+#endif
+
+		using Aes aes = Aes.Create();
+		aes.Key = aesKey;
+
+		using ICryptoTransform encryptor = aes.CreateEncryptor(aes.Key, aes.IV);
+		using MemoryStream resultStream = new();
+		using (CryptoStream aesStream = new(resultStream, encryptor, CryptoStreamMode.Write))
+		using (MemoryStream plainStream = new(buffer))
+		{
+			plainStream.CopyTo(aesStream);
+		}
+
+		byte[] result = resultStream.ToArray();
+		byte[] combined = new byte[aes.IV.Length + result.Length];
+		Array.ConstrainedCopy(aes.IV, 0, combined, 0, aes.IV.Length);
+		Array.ConstrainedCopy(result, 0, combined, aes.IV.Length, result.Length);
+
+		return combined.ToBase64();
+	}
+
+	/// <summary>
+	/// Decrypts the specified encrypted text using AES decryption with a key derived from the provided key string.
+	/// </summary>
+	/// <param name="encryptedValue">The encrypted text to decrypt, encoded as a Base64 string.</param>
+	/// <param name="key">The key used for decryption. It is hashed to derive a suitable AES key.</param>
+	/// <returns>The decrypted text.</returns>
+	public static string Decrypt(this string encryptedValue, string key)
+	{
+		byte[] combined = encryptedValue.FromBase64();
+		byte[] buffer = new byte[combined.Length];
+		byte[] aesKey = new byte[24];
+
+#if NET8_0_OR_GREATER
+		Buffer.BlockCopy(SHA512.HashData(Encoding.UTF8.GetBytes(key)), 0, aesKey, 0, 24);
+#else
+		SHA512 hash = SHA512.Create();
+		Buffer.BlockCopy(hash.ComputeHash(Encoding.UTF8.GetBytes(key)), 0, aesKey, 0, 24);
+#endif
+		using Aes aes = Aes.Create();
+		aes.Key = aesKey;
+
+		byte[] iv = new byte[aes.IV.Length];
+		byte[] ciphertext = new byte[buffer.Length - iv.Length];
+
+		Array.ConstrainedCopy(combined, 0, iv, 0, iv.Length);
+		Array.ConstrainedCopy(combined, iv.Length, ciphertext, 0, ciphertext.Length);
+
+		aes.IV = iv;
+
+		using ICryptoTransform decryptor = aes.CreateDecryptor(aes.Key, aes.IV);
+		using MemoryStream resultStream = new();
+		using (CryptoStream aesStream = new(resultStream, decryptor, CryptoStreamMode.Write))
+		using (MemoryStream plainStream = new(ciphertext))
+		{
+			plainStream.CopyTo(aesStream);
+		}
+
+		return resultStream.ToArray().GetString();
 	}
 
 	/// <summary>
@@ -313,6 +391,15 @@ public static partial class StringExtensions
 		byte[] buffer = encoding.GetBytes(value);
 		return buffer.ToBase64();
 	}
+
+	/// <summary>
+	/// Converts an enumerable collection of strings into a single string, with each element separated
+	/// </summary>
+	/// <param name="values">The collection of strings to join.</param>
+	/// <param name="separator">The string to use as a separator between each element.</param>
+	/// <returns>The concatenated string with elements separated by the specified separator.</returns>
+	public static string Join(this IEnumerable<string> values, string separator)
+		=> string.Join(separator, values);
 
 	private static byte[] GetMd5Bytes(string stringValue, Encoding encoding)
 		=> encoding.GetBytes(stringValue).GetMD5();
