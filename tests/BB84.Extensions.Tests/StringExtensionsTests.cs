@@ -10,4 +10,9 @@ public sealed partial class StringExtensionsTests
 {
 	private const string DecompressedContent = "SuperFancyUnitTestContent";
 	private const string CompressedContent = "Cy4tSC1yS8xLrgzNyywJSS0ucc7PK0nNKwEA";
+
+	private static IEnumerable<object[]> GetJoinTestData()
+	{
+		yield return new object[] { new string[] { "Hello", "World" }, " ", "Hello World" };
+	}
 }
