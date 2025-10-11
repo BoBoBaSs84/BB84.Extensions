@@ -186,6 +186,50 @@ public static partial class ByteExtensions
 	}
 
 	/// <summary>
+	/// Determines whether the specified byte is equal to its default value (0).
+	/// </summary>
+	/// <param name="value">The byte to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is equal to its default value (0);
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsDefault(this byte value)
+		=> value.Equals(default);
+
+	/// <summary>
+	/// Determines whether the specified nullable byte is equal to its default value <see langword="null"/>.
+	/// </summary>
+	/// <param name="value">The nullable byte to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is equal to its default value <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsDefault([NotNullWhen(false)] this byte? value)
+		=> value.Equals(default);
+
+	/// <summary>
+	/// Determines whether the specified byte is not equal to its default value (0).
+	/// </summary>
+	/// <param name="value">The byte to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is not equal to its default value (0);
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotDefault(this byte value)
+		=> value.Equals(default).Equals(false);
+
+	/// <summary>
+	/// Determines whether the specified byte is not equal to its default value <see langword="null"/>.
+	/// </summary>
+	/// <param name="value">The byte to check.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is not equal to its default value <see langword="null"/>;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNotDefault([NotNullWhen(true)] this byte? value)
+		=> value.Equals(default).Equals(false);
+
+	/// <summary>
 	/// Determines whether the specified byte is null.
 	/// </summary>
 	/// <param name="value">The byte array to check.</param>
