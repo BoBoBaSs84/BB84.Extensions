@@ -8,6 +8,7 @@
 	  <PackageReference Include="MSTest" />
 	</ItemGroup>
 	<ItemGroup>
+  	<PackageReference Include="System.Text.Json" />
 		<ProjectReference Include="..\..\src\BB84.WinForms.Extensions\BB84.WinForms.Extensions.csproj" />
 	</ItemGroup>
 </Project>
