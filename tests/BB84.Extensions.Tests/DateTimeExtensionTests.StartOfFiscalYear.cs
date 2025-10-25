@@ -8,7 +8,7 @@ namespace BB84.Extensions.Tests;
 public sealed partial class DateTimeExtensionTests
 {
 	[TestMethod]
-	[DynamicData(nameof(GetStartOfFiscalYearTestData), DynamicDataSourceType.Method)]
+	[DynamicData(nameof(GetStartOfFiscalYearTestData))]
 	public void StartOfFiscalYearTest(DateTime value, int startMonth, DateTime expected)
 		=> Assert.AreEqual(expected, value.StartOfFiscalYear(startMonth));
 

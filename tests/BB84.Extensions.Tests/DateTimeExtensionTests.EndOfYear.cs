@@ -8,7 +8,7 @@ namespace BB84.Extensions.Tests;
 public sealed partial class DateTimeExtensionTests
 {
 	[TestMethod]
-	[DynamicData(nameof(GetEndOfYearTestData), DynamicDataSourceType.Method)]
+	[DynamicData(nameof(GetEndOfYearTestData))]
 	public void EndOfYearTest(DateTime value, DateTime expected)
 		=> Assert.AreEqual(expected, value.EndOfYear());
 }

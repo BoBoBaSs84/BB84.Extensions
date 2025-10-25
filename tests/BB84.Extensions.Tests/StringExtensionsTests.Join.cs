@@ -8,7 +8,7 @@ namespace BB84.Extensions.Tests;
 public sealed partial class StringExtensionsTests
 {
 	[TestMethod]
-	[DynamicData(nameof(GetJoinTestData), DynamicDataSourceType.Method)]
+	[DynamicData(nameof(GetJoinTestData))]
 	public void JoinTest(string[] values, string separator, string expected)
 		=> Assert.AreEqual(expected, values.Join(separator));
 }
