@@ -10,7 +10,7 @@ namespace BB84.Extensions.Tests;
 public sealed partial class ColorExtensionsTests
 {
 	[TestMethod]
-	[DynamicData(nameof(GetRgbHexData), DynamicDataSourceType.Method)]
+	[DynamicData(nameof(GetRgbHexData))]
 	public void ToRGBHexStringTest(Color value, string expected)
 		=> Assert.AreEqual(expected, value.ToRGBHexString());
 }

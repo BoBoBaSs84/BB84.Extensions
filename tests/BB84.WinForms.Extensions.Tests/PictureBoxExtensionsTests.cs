@@ -16,7 +16,7 @@ public sealed class PictureBoxExtensionsTests
 
 		pictureBox.WithImageBinding(dataSource, nameof(pictureBox.Image));
 
-		Assert.AreEqual(1, pictureBox.DataBindings.Count);
+		Assert.HasCount(1, pictureBox.DataBindings);
 		Assert.AreEqual(nameof(pictureBox.Image), pictureBox.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, pictureBox.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, pictureBox.DataBindings[0].DataSourceUpdateMode);

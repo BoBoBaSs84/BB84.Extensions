@@ -16,7 +16,7 @@ public sealed class CheckBoxExtensionsTests
 
 		checkBox.WithCheckedBinding(dataSource, nameof(checkBox.Checked));
 
-		Assert.AreEqual(1, checkBox.DataBindings.Count);
+		Assert.HasCount(1, checkBox.DataBindings);
 		Assert.AreEqual(nameof(checkBox.Checked), checkBox.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, checkBox.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, checkBox.DataBindings[0].DataSourceUpdateMode);

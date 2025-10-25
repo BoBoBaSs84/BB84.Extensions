@@ -7,7 +7,7 @@ namespace BB84.Extensions.Tests;
 
 public sealed partial class ObjectExtensionsTests
 {
-	[TestMethod("Object to invariant date time test")]
+	[TestMethod(DisplayName = "Object to invariant date time test")]
 	public void ToDateTimeInvariant()
 	{
 		object obj = DateTime.MaxValue;

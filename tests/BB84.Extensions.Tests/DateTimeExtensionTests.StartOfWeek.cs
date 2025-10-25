@@ -8,7 +8,7 @@ namespace BB84.Extensions.Tests;
 public sealed partial class DateTimeExtensionTests
 {
 	[TestMethod]
-	[DynamicData(nameof(GetStartOfWeekTestData), DynamicDataSourceType.Method)]
+	[DynamicData(nameof(GetStartOfWeekTestData))]
 	public void StartOfWeekTest(DateTime value, DateTime expected)
 		=> Assert.AreEqual(expected, value.StartOfWeek());
 }

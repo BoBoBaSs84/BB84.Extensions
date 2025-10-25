@@ -18,7 +18,7 @@ public sealed class ControlExtensionsTests
 
 		control.WithEnabledBinding(dataSource, nameof(dataSource.Enabled));
 
-		Assert.AreEqual(1, control.DataBindings.Count);
+		Assert.HasCount(1, control.DataBindings);
 		Assert.AreEqual(nameof(control.Enabled), control.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, control.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, control.DataBindings[0].DataSourceUpdateMode);
@@ -32,7 +32,7 @@ public sealed class ControlExtensionsTests
 
 		control.WithTagBinding(dataSource, nameof(dataSource.Tag));
 
-		Assert.AreEqual(1, control.DataBindings.Count);
+		Assert.HasCount(1, control.DataBindings);
 		Assert.AreEqual(nameof(control.Tag), control.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, control.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, control.DataBindings[0].DataSourceUpdateMode);
@@ -46,7 +46,7 @@ public sealed class ControlExtensionsTests
 
 		control.WithTextBinding(dataSource, nameof(dataSource.Text));
 
-		Assert.AreEqual(1, control.DataBindings.Count);
+		Assert.HasCount(1, control.DataBindings);
 		Assert.AreEqual(nameof(control.Text), control.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, control.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, control.DataBindings[0].DataSourceUpdateMode);
@@ -60,7 +60,7 @@ public sealed class ControlExtensionsTests
 
 		control.WithVisibleBinding(dataSource, nameof(dataSource.Visible));
 
-		Assert.AreEqual(1, control.DataBindings.Count);
+		Assert.HasCount(1, control.DataBindings);
 		Assert.AreEqual(nameof(control.Visible), control.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, control.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, control.DataBindings[0].DataSourceUpdateMode);

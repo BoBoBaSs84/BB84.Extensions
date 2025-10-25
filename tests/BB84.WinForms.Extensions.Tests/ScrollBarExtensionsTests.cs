@@ -18,7 +18,7 @@ public sealed class ScrollBarExtensionsTests
 
 		scrollBar.WithValueBinding(dataSource, nameof(dataSource.Value));
 
-		Assert.AreEqual(1, scrollBar.DataBindings.Count);
+		Assert.HasCount(1, scrollBar.DataBindings);
 		Assert.AreEqual(nameof(scrollBar.Value), scrollBar.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, scrollBar.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, scrollBar.DataBindings[0].DataSourceUpdateMode);

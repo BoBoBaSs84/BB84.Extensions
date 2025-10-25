@@ -10,7 +10,7 @@ namespace BB84.Extensions.Tests;
 public sealed partial class ColorExtensionsTests
 {
 	[TestMethod]
-	[DynamicData(nameof(GetArgbByteData), DynamicDataSourceType.Method)]
+	[DynamicData(nameof(GetArgbByteData))]
 	public void ToArgbByteArrayTest(Color value, byte[] excpected)
 		=> Assert.IsTrue(excpected.SequenceEqual(value.ToArgbByteArray()));
 }

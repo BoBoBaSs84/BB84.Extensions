@@ -16,7 +16,7 @@ public sealed class NumericUpDownExtensionsTests
 
 		numericUpDown.WithValueBinding(dataSource, nameof(numericUpDown.Value));
 
-		Assert.AreEqual(1, numericUpDown.DataBindings.Count);
+		Assert.HasCount(1, numericUpDown.DataBindings);
 		Assert.AreEqual(nameof(numericUpDown.Value), numericUpDown.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, numericUpDown.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, numericUpDown.DataBindings[0].DataSourceUpdateMode);

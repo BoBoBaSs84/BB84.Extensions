@@ -11,7 +11,7 @@ public sealed partial class StreamExtensionsTests
 	private readonly static Random Random = new();
 
 	[TestMethod]
-	[DynamicData(nameof(GetData), DynamicDataSourceType.Method)]
+	[DynamicData(nameof(GetData))]
 	public void ToByteArrayTest(byte[] buffer)
 	{
 		MemoryStream stream = new(buffer);

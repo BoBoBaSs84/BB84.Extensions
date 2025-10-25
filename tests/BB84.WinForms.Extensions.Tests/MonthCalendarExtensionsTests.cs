@@ -16,7 +16,7 @@ public sealed class MonthCalendarExtensionsTests
 
 		monthCalendar.WithSelectionRangeBinding(dataSource, nameof(monthCalendar.SelectionRange));
 
-		Assert.AreEqual(1, monthCalendar.DataBindings.Count);
+		Assert.HasCount(1, monthCalendar.DataBindings);
 		Assert.AreEqual(nameof(monthCalendar.SelectionRange), monthCalendar.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, monthCalendar.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, monthCalendar.DataBindings[0].DataSourceUpdateMode);
