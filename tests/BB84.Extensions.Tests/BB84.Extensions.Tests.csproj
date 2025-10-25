@@ -6,7 +6,6 @@
 	  <PackageReference Include="MSTest" />
 	</ItemGroup>
 	<ItemGroup>
-  	<PackageReference Include="System.Text.Json" />
 		<ProjectReference Include="..\..\src\BB84.Extensions\BB84.Extensions.csproj" />
 	</ItemGroup>
 </Project>

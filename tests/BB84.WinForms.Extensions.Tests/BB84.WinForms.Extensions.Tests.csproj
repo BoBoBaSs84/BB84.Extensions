@@ -1,14 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFrameworks>net462;net481;net8.0-windows;net9.0-windows</TargetFrameworks>
-		<NoWarn>CA1416</NoWarn>
+		<NoWarn>$(NoWarn);CA1416</NoWarn>
 		<UseWindowsForms>True</UseWindowsForms>
 	</PropertyGroup>
 	<ItemGroup>
 	  <PackageReference Include="MSTest" />
 	</ItemGroup>
 	<ItemGroup>
-  	<PackageReference Include="System.Text.Json" />
 		<ProjectReference Include="..\..\src\BB84.WinForms.Extensions\BB84.WinForms.Extensions.csproj" />
 	</ItemGroup>
 </Project>
