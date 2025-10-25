@@ -17,7 +17,7 @@ public sealed class ListBoxExtensionsTests
 
 		listBox.WithSelectedItemBinding(dataSource, nameof(listBox.SelectedItem));
 
-		Assert.AreEqual(1, listBox.DataBindings.Count);
+		Assert.HasCount(1, listBox.DataBindings);
 		Assert.AreEqual(nameof(listBox.SelectedItem), listBox.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, listBox.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, listBox.DataBindings[0].DataSourceUpdateMode);
@@ -31,7 +31,7 @@ public sealed class ListBoxExtensionsTests
 
 		listBox.WithSelectedIndexBinding(dataSource, nameof(listBox.SelectedIndex));
 
-		Assert.AreEqual(1, listBox.DataBindings.Count);
+		Assert.HasCount(1, listBox.DataBindings);
 		Assert.AreEqual(nameof(listBox.SelectedIndex), listBox.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, listBox.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, listBox.DataBindings[0].DataSourceUpdateMode);

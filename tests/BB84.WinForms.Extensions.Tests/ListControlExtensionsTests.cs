@@ -29,7 +29,7 @@ public sealed class ListControlExtensionsTests
 
 		listControl.WithSelectedValueBinding(dataSource, nameof(dataSource.SelectedValue));
 
-		Assert.AreEqual(1, listControl.DataBindings.Count);
+		Assert.HasCount(1, listControl.DataBindings);
 		Assert.AreEqual(nameof(listControl.SelectedValue), listControl.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, listControl.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, listControl.DataBindings[0].DataSourceUpdateMode);

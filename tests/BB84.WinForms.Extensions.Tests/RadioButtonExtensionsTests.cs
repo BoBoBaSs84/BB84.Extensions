@@ -16,7 +16,7 @@ public sealed class RadioButtonExtensionsTests
 
 		radioButton.WithCheckedBinding(dataSource, nameof(radioButton.Checked));
 
-		Assert.AreEqual(1, radioButton.DataBindings.Count);
+		Assert.HasCount(1, radioButton.DataBindings);
 		Assert.AreEqual(nameof(radioButton.Checked), radioButton.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, radioButton.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, radioButton.DataBindings[0].DataSourceUpdateMode);

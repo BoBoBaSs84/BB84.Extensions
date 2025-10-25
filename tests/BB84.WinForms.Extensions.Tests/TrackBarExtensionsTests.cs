@@ -16,7 +16,7 @@ public sealed class TrackBarExtensionsTests
 
 		trackBar.WithValueBinding(dataSource, nameof(trackBar.Value));
 
-		Assert.AreEqual(1, trackBar.DataBindings.Count);
+		Assert.HasCount(1, trackBar.DataBindings);
 		Assert.AreEqual(nameof(trackBar.Value), trackBar.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, trackBar.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, trackBar.DataBindings[0].DataSourceUpdateMode);

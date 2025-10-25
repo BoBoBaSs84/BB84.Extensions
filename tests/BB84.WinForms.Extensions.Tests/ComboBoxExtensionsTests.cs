@@ -16,7 +16,7 @@ public sealed class ComboBoxExtensionsTests
 
 		comboBox.WithSelectedItemBinding(dataSource, nameof(comboBox.SelectedItem));
 
-		Assert.AreEqual(1, comboBox.DataBindings.Count);
+		Assert.HasCount(1, comboBox.DataBindings);
 		Assert.AreEqual(nameof(comboBox.SelectedItem), comboBox.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, comboBox.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, comboBox.DataBindings[0].DataSourceUpdateMode);
@@ -30,7 +30,7 @@ public sealed class ComboBoxExtensionsTests
 
 		comboBox.WithSelectedIndexBinding(dataSource, nameof(comboBox.SelectedIndex));
 
-		Assert.AreEqual(1, comboBox.DataBindings.Count);
+		Assert.HasCount(1, comboBox.DataBindings);
 		Assert.AreEqual(nameof(comboBox.SelectedIndex), comboBox.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, comboBox.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, comboBox.DataBindings[0].DataSourceUpdateMode);

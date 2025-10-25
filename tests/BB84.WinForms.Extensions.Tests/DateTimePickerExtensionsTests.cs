@@ -16,7 +16,7 @@ public sealed class DateTimePickerExtensionsTests
 
 		dateTimePicker.WithCheckedBinding(dataSource, nameof(dateTimePicker.Value));
 
-		Assert.AreEqual(1, dateTimePicker.DataBindings.Count);
+		Assert.HasCount(1, dateTimePicker.DataBindings);
 		Assert.AreEqual(nameof(dateTimePicker.Checked), dateTimePicker.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, dateTimePicker.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, dateTimePicker.DataBindings[0].DataSourceUpdateMode);
@@ -30,7 +30,7 @@ public sealed class DateTimePickerExtensionsTests
 
 		dateTimePicker.WithValueBinding(dataSource, nameof(dateTimePicker.Value));
 
-		Assert.AreEqual(1, dateTimePicker.DataBindings.Count);
+		Assert.HasCount(1, dateTimePicker.DataBindings);
 		Assert.AreEqual(nameof(dateTimePicker.Value), dateTimePicker.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, dateTimePicker.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, dateTimePicker.DataBindings[0].DataSourceUpdateMode);

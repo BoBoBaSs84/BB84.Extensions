@@ -16,7 +16,7 @@ public class ProgressBarExtensionsTests
 
 		progressBar.WithValueBinding(dataSource, nameof(progressBar.Value));
 
-		Assert.AreEqual(1, progressBar.DataBindings.Count);
+		Assert.HasCount(1, progressBar.DataBindings);
 		Assert.AreEqual(nameof(progressBar.Value), progressBar.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, progressBar.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, progressBar.DataBindings[0].DataSourceUpdateMode);

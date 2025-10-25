@@ -16,7 +16,7 @@ public sealed partial class IntegerExtensionsTests
 
 		int[] array = value.ArrayUp(maxValue);
 
-		Assert.AreEqual(16, array.Length);
+		Assert.HasCount(16, array);
 	}
 
 	[TestMethod]
