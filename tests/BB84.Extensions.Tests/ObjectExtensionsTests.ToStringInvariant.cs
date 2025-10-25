@@ -7,7 +7,7 @@ namespace BB84.Extensions.Tests;
 
 public sealed partial class ObjectExtensionsTests
 {
-	[TestMethod("Object to invariant string test")]
+	[TestMethod(DisplayName = "Object to invariant string test")]
 	[DataRow("UnitTest", "UnitTest")]
 	[DataRow(null, "")]
 	public void ToStringInvariant(object value, string expected)

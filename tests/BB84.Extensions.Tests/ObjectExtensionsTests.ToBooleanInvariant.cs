@@ -7,7 +7,7 @@ namespace BB84.Extensions.Tests;
 
 public sealed partial class ObjectExtensionsTests
 {
-	[TestMethod("Object to invariant bool test")]
+	[TestMethod(DisplayName = "Object to invariant bool test")]
 	public void ToBooleanInvariant()
 	{
 		object obj = true;
