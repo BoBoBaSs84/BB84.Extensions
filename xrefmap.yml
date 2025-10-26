@@ -285,6 +285,56 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ByteExtensions.GetString
   nameWithType: ByteExtensions.GetString
+- uid: BB84.Extensions.ByteExtensions.IsDefault(System.Byte)
+  name: IsDefault(byte)
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_IsDefault_System_Byte_
+  commentId: M:BB84.Extensions.ByteExtensions.IsDefault(System.Byte)
+  name.vb: IsDefault(Byte)
+  fullName: BB84.Extensions.ByteExtensions.IsDefault(byte)
+  fullName.vb: BB84.Extensions.ByteExtensions.IsDefault(Byte)
+  nameWithType: ByteExtensions.IsDefault(byte)
+  nameWithType.vb: ByteExtensions.IsDefault(Byte)
+- uid: BB84.Extensions.ByteExtensions.IsDefault(System.Nullable{System.Byte})
+  name: IsDefault(byte?)
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_IsDefault_System_Nullable_System_Byte__
+  commentId: M:BB84.Extensions.ByteExtensions.IsDefault(System.Nullable{System.Byte})
+  name.vb: IsDefault(Byte?)
+  fullName: BB84.Extensions.ByteExtensions.IsDefault(byte?)
+  fullName.vb: BB84.Extensions.ByteExtensions.IsDefault(Byte?)
+  nameWithType: ByteExtensions.IsDefault(byte?)
+  nameWithType.vb: ByteExtensions.IsDefault(Byte?)
+- uid: BB84.Extensions.ByteExtensions.IsDefault*
+  name: IsDefault
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_IsDefault_
+  commentId: Overload:BB84.Extensions.ByteExtensions.IsDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.ByteExtensions.IsDefault
+  nameWithType: ByteExtensions.IsDefault
+- uid: BB84.Extensions.ByteExtensions.IsNotDefault(System.Byte)
+  name: IsNotDefault(byte)
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_IsNotDefault_System_Byte_
+  commentId: M:BB84.Extensions.ByteExtensions.IsNotDefault(System.Byte)
+  name.vb: IsNotDefault(Byte)
+  fullName: BB84.Extensions.ByteExtensions.IsNotDefault(byte)
+  fullName.vb: BB84.Extensions.ByteExtensions.IsNotDefault(Byte)
+  nameWithType: ByteExtensions.IsNotDefault(byte)
+  nameWithType.vb: ByteExtensions.IsNotDefault(Byte)
+- uid: BB84.Extensions.ByteExtensions.IsNotDefault(System.Nullable{System.Byte})
+  name: IsNotDefault(byte?)
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_IsNotDefault_System_Nullable_System_Byte__
+  commentId: M:BB84.Extensions.ByteExtensions.IsNotDefault(System.Nullable{System.Byte})
+  name.vb: IsNotDefault(Byte?)
+  fullName: BB84.Extensions.ByteExtensions.IsNotDefault(byte?)
+  fullName.vb: BB84.Extensions.ByteExtensions.IsNotDefault(Byte?)
+  nameWithType: ByteExtensions.IsNotDefault(byte?)
+  nameWithType.vb: ByteExtensions.IsNotDefault(Byte?)
+- uid: BB84.Extensions.ByteExtensions.IsNotDefault*
+  name: IsNotDefault
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_IsNotDefault_
+  commentId: Overload:BB84.Extensions.ByteExtensions.IsNotDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.ByteExtensions.IsNotDefault
+  nameWithType: ByteExtensions.IsNotDefault
 - uid: BB84.Extensions.ByteExtensions.IsNotNull(System.Byte[])
   name: IsNotNull(byte[]?)
   href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_IsNotNull_System_Byte___
@@ -1881,6 +1931,38 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.StringExtensions.Decompress
   nameWithType: StringExtensions.Decompress
+- uid: BB84.Extensions.StringExtensions.Decrypt(System.String,System.String)
+  name: Decrypt(string, string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_Decrypt_System_String_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.Decrypt(System.String,System.String)
+  name.vb: Decrypt(String, String)
+  fullName: BB84.Extensions.StringExtensions.Decrypt(string, string)
+  fullName.vb: BB84.Extensions.StringExtensions.Decrypt(String, String)
+  nameWithType: StringExtensions.Decrypt(string, string)
+  nameWithType.vb: StringExtensions.Decrypt(String, String)
+- uid: BB84.Extensions.StringExtensions.Decrypt*
+  name: Decrypt
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_Decrypt_
+  commentId: Overload:BB84.Extensions.StringExtensions.Decrypt
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.Decrypt
+  nameWithType: StringExtensions.Decrypt
+- uid: BB84.Extensions.StringExtensions.Encrypt(System.String,System.String)
+  name: Encrypt(string, string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_Encrypt_System_String_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.Encrypt(System.String,System.String)
+  name.vb: Encrypt(String, String)
+  fullName: BB84.Extensions.StringExtensions.Encrypt(string, string)
+  fullName.vb: BB84.Extensions.StringExtensions.Encrypt(String, String)
+  nameWithType: StringExtensions.Encrypt(string, string)
+  nameWithType.vb: StringExtensions.Encrypt(String, String)
+- uid: BB84.Extensions.StringExtensions.Encrypt*
+  name: Encrypt
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_Encrypt_
+  commentId: Overload:BB84.Extensions.StringExtensions.Encrypt
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.Encrypt
+  nameWithType: StringExtensions.Encrypt
 - uid: BB84.Extensions.StringExtensions.EqualsCaseSensitive(System.String,System.String)
   name: EqualsCaseSensitive(string, string)
   href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_EqualsCaseSensitive_System_String_System_String_
@@ -2121,6 +2203,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.StringExtensions.IsNullOrWhiteSpace
   nameWithType: StringExtensions.IsNullOrWhiteSpace
+- uid: BB84.Extensions.StringExtensions.Join(System.Collections.Generic.IEnumerable{System.String},System.String)
+  name: Join(IEnumerable<string>, string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_Join_System_Collections_Generic_IEnumerable_System_String__System_String_
+  commentId: M:BB84.Extensions.StringExtensions.Join(System.Collections.Generic.IEnumerable{System.String},System.String)
+  name.vb: Join(IEnumerable(Of String), String)
+  fullName: BB84.Extensions.StringExtensions.Join(System.Collections.Generic.IEnumerable<string>, string)
+  fullName.vb: BB84.Extensions.StringExtensions.Join(System.Collections.Generic.IEnumerable(Of String), String)
+  nameWithType: StringExtensions.Join(IEnumerable<string>, string)
+  nameWithType.vb: StringExtensions.Join(IEnumerable(Of String), String)
+- uid: BB84.Extensions.StringExtensions.Join*
+  name: Join
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_Join_
+  commentId: Overload:BB84.Extensions.StringExtensions.Join
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.Join
+  nameWithType: StringExtensions.Join
 - uid: BB84.Extensions.StringExtensions.RemoveLinebreak(System.String)
   name: RemoveLinebreak(string)
   href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_RemoveLinebreak_System_String_

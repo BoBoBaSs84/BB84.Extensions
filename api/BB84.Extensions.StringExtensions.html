@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_StringExtensions" data-uid="BB84.Extensions.StringExtensions" class="text-break">
-Class StringExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L23"><i class="bi bi-code-slash"></i></a>
+Class StringExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -161,7 +161,7 @@ strings.</p>
 
   <h3 id="BB84_Extensions_StringExtensions_Compress_System_String_System_IO_Compression_CompressionLevel_" data-uid="BB84.Extensions.StringExtensions.Compress(System.String,System.IO.Compression.CompressionLevel)">
   Compress(string, CompressionLevel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Compresses the specified string using the provided compression level and returns the result
@@ -208,7 +208,7 @@ and encodes the compressed data as a Base64 string for safe storage or transmiss
 
   <h3 id="BB84_Extensions_StringExtensions_Decompress_System_String_" data-uid="BB84.Extensions.StringExtensions.Decompress(System.String)">
   Decompress(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Decompresses a Base64-encoded, compressed string and returns the resulting decompressed string.</p>
@@ -249,11 +249,95 @@ the byte array and converting the resulting byte array back into a string.</p>
 
 
 
+  <a id="BB84_Extensions_StringExtensions_Decrypt_" data-uid="BB84.Extensions.StringExtensions.Decrypt*"></a>
+
+  <h3 id="BB84_Extensions_StringExtensions_Decrypt_System_String_System_String_" data-uid="BB84.Extensions.StringExtensions.Decrypt(System.String,System.String)">
+  Decrypt(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Decrypts the specified encrypted text using AES decryption with a key derived from the provided key string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Decrypt(this string encryptedValue, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>encryptedValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The encrypted text to decrypt, encoded as a Base64 string.</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key used for decryption. It is hashed to derive a suitable AES key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The decrypted text.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Extensions_StringExtensions_Encrypt_" data-uid="BB84.Extensions.StringExtensions.Encrypt*"></a>
+
+  <h3 id="BB84_Extensions_StringExtensions_Encrypt_System_String_System_String_" data-uid="BB84.Extensions.StringExtensions.Encrypt(System.String,System.String)">
+  Encrypt(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Encrypts the specified text using AES encryption with a key derived from the provided key string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Encrypt(this string value, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text to encrypt.</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key used for encryption. It is hashed to derive a suitable AES key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The encrypted text, encoded as a Base64 string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="BB84_Extensions_StringExtensions_EqualsCaseSensitive_" data-uid="BB84.Extensions.StringExtensions.EqualsCaseSensitive*"></a>
 
   <h3 id="BB84_Extensions_StringExtensions_EqualsCaseSensitive_System_String_System_String_" data-uid="BB84.Extensions.StringExtensions.EqualsCaseSensitive(System.String,System.String)">
   EqualsCaseSensitive(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified string is equal to the current string, using a case-sensitive
@@ -297,7 +381,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_StringExtensions_EqualsIgnoreCase_System_String_System_String_" data-uid="BB84.Extensions.StringExtensions.EqualsIgnoreCase(System.String,System.String)">
   EqualsIgnoreCase(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L176"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether two strings are equal, ignoring case.</p>
@@ -340,7 +424,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_StringExtensions_Format_System_String_System_IFormatProvider_System_Object___" data-uid="BB84.Extensions.StringExtensions.Format(System.String,System.IFormatProvider,System.Object[])">
   Format(string, IFormatProvider, params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L213"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Formats the specified string using the provided format provider and parameters.</p>
@@ -391,7 +475,7 @@ be called directly on the string instance.</p>
 
   <h3 id="BB84_Extensions_StringExtensions_FormatInvariant_System_String_System_Object___" data-uid="BB84.Extensions.StringExtensions.FormatInvariant(System.String,System.Object[])">
   FormatInvariant(string, params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L195"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Formats the specified string using the provided parameters, with formatting rules based on the
@@ -439,7 +523,7 @@ regardless of the current culture.</p>
 
   <h3 id="BB84_Extensions_StringExtensions_FromBase64_System_String_System_Text_Encoding_" data-uid="BB84.Extensions.StringExtensions.FromBase64(System.String,System.Text.Encoding)">
   FromBase64(string, Encoding)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L227"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Decodes a Base64-encoded string into its original representation using the specified character encoding.</p>
@@ -486,7 +570,7 @@ Base64-encoded string.</p>
 
   <h3 id="BB84_Extensions_StringExtensions_GetBytes_System_String_System_Text_Encoding_" data-uid="BB84.Extensions.StringExtensions.GetBytes(System.String,System.Text.Encoding)">
   GetBytes(string, Encoding?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L243"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the specified string to a byte array using the provided encoding.</p>
@@ -532,7 +616,7 @@ using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.e
 
   <h3 id="BB84_Extensions_StringExtensions_GetMd5Ascii_System_String_" data-uid="BB84.Extensions.StringExtensions.GetMd5Ascii(System.String)">
   GetMd5Ascii(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L270"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Computes the MD5 hash of the specified string using ASCII encoding.</p>
@@ -575,7 +659,7 @@ hash. The resulting hash is returned as a hexadecimal string.</p>
 
   <h3 id="BB84_Extensions_StringExtensions_GetMd5Unicode_System_String_" data-uid="BB84.Extensions.StringExtensions.GetMd5Unicode(System.String)">
   GetMd5Unicode(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L282"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Computes the MD5 hash of the specified string using Unicode encoding.</p>
@@ -618,7 +702,7 @@ hash. The resulting hash is returned as a hexadecimal string.</p>
 
   <h3 id="BB84_Extensions_StringExtensions_GetMd5Utf8_System_String_" data-uid="BB84.Extensions.StringExtensions.GetMd5Utf8(System.String)">
   GetMd5Utf8(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L258"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Computes the MD5 hash of the specified string using UTF-8 encoding.</p>
@@ -661,7 +745,7 @@ hash. The resulting hash is returned as a hexadecimal string.</p>
 
   <h3 id="BB84_Extensions_StringExtensions_IsNotNull_System_String_" data-uid="BB84.Extensions.StringExtensions.IsNotNull(System.String)">
   IsNotNull(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L304"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable string has a non-null value.</p>
@@ -701,7 +785,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_StringExtensions_IsNotNullOrEmpty_System_String_" data-uid="BB84.Extensions.StringExtensions.IsNotNullOrEmpty(System.String)">
   IsNotNullOrEmpty(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L326"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable string has a non-null value or is not empty.</p>
@@ -741,7 +825,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_StringExtensions_IsNotNullOrWhiteSpace_System_String_" data-uid="BB84.Extensions.StringExtensions.IsNotNullOrWhiteSpace(System.String)">
   IsNotNullOrWhiteSpace(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L349"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified string is not null, not empty or does not consists only of
@@ -782,7 +866,7 @@ and does not consists only of white-space characters; otherwise, <a href="https:
 
   <h3 id="BB84_Extensions_StringExtensions_IsNull_System_String_" data-uid="BB84.Extensions.StringExtensions.IsNull(System.String)">
   IsNull(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L293"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable string has a null value.</p>
@@ -822,7 +906,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_StringExtensions_IsNullOrEmpty_System_String_" data-uid="BB84.Extensions.StringExtensions.IsNullOrEmpty(System.String)">
   IsNullOrEmpty(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L315"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable string has a null value or is empty.</p>
@@ -862,7 +946,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_StringExtensions_IsNullOrWhiteSpace_System_String_" data-uid="BB84.Extensions.StringExtensions.IsNullOrWhiteSpace(System.String)">
   IsNullOrWhiteSpace(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L337"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified string is null, empty or consists only of white-space characters.</p>
@@ -898,11 +982,53 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
 
 
+  <a id="BB84_Extensions_StringExtensions_Join_" data-uid="BB84.Extensions.StringExtensions.Join*"></a>
+
+  <h3 id="BB84_Extensions_StringExtensions_Join_System_Collections_Generic_IEnumerable_System_String__System_String_" data-uid="BB84.Extensions.StringExtensions.Join(System.Collections.Generic.IEnumerable{System.String},System.String)">
+  Join(IEnumerable&lt;string&gt;, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an enumerable collection of strings into a single string, with each element separated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(this IEnumerable&lt;string&gt; values, string separator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>The collection of strings to join.</p>
+</dd>
+    <dt><code>separator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to use as a separator between each element.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The concatenated string with elements separated by the specified separator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="BB84_Extensions_StringExtensions_RemoveLinebreak_" data-uid="BB84.Extensions.StringExtensions.RemoveLinebreak*"></a>
 
   <h3 id="BB84_Extensions_StringExtensions_RemoveLinebreak_System_String_" data-uid="BB84.Extensions.StringExtensions.RemoveLinebreak(System.String)">
   RemoveLinebreak(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L360"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes all linebreaks from the specified string.</p>
@@ -941,7 +1067,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_StringExtensions_RemoveWhitespace_System_String_" data-uid="BB84.Extensions.StringExtensions.RemoveWhitespace(System.String)">
   RemoveWhitespace(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L371"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes all whitespaces from the specified string.</p>
@@ -980,7 +1106,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_StringExtensions_ToBase64_System_String_System_Text_Encoding_" data-uid="BB84.Extensions.StringExtensions.ToBase64(System.String,System.Text.Encoding)">
   ToBase64(string, Encoding)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L386"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the specified string to its Base64-encoded representation using the specified encoding.</p>
@@ -1026,7 +1152,7 @@ is null or whitespace.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L23" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/StringExtensions.cs/#L24" class="edit-link">Edit this page</a>
         </div>
 
 
