@@ -79,6 +79,45 @@ public static class EnumerableExtensions
 	}
 
 	/// <summary>
+	/// Returns <see langword="true"/> if the collection of <paramref name="values"/> contains no items.
+	/// </summary>
+	/// <typeparam name="T">The type of elements in the sequence.</typeparam>
+	/// <param name="values">The collection of elements to check.</param>
+	/// <returns>True if the collection is empty; otherwise, false.</returns>
+	public static bool IsEmpty<T>(this IEnumerable<T> values)
+		=> !values.Any();
+
+	/// <summary>
+	/// Returns <see langword="true"/> if the collection of <paramref name="values"/> contains at least
+	/// one item.
+	/// </summary>
+	/// <typeparam name="T">The type of elements in the sequence.</typeparam>
+	/// <param name="values">The collection of elements to check.</param>
+	/// <returns>True if the collection contains items; otherwise, false.</returns>
+	public static bool IsNotEmpty<T>(this IEnumerable<T> values)
+		=> values.Any();
+
+	/// <summary>
+	/// Returns <see langword="true"/> if the collection of <paramref name="values"/> is null or contains
+	/// no items.
+	/// </summary>
+	/// <typeparam name="T">The type of elements in the sequence.</typeparam>
+	/// <param name="values">The collection of elements to check.</param>
+	/// <returns>True if the collection is null or empty; otherwise, false.</returns>
+	public static bool IsNullOrEmpty<T>([NotNullWhen(false)] this IEnumerable<T>? values)
+		=> values is null || !values.Any();
+
+	/// <summary>
+	/// Returns <see langword="true"/> if the collection of <paramref name="values"/> is not null and contains
+	/// at least one item.
+	/// </summary>
+	/// <typeparam name="T">The type of elements in the sequence.</typeparam>
+	/// <param name="values">The collection of elements to check.</param>
+	/// <returns>True if the collection is not null and contains items; otherwise, false.</returns>
+	public static bool IsNotNullOrEmpty<T>([NotNullWhen(true)] this IEnumerable<T>? values)
+		=> values is not null && values.Any();
+
+	/// <summary>
 	/// Returns a randomly choosen item from the collection of <paramref name="values"/>.
 	/// </summary>
 	/// <typeparam name="T">The type of object in the collection.</typeparam>
