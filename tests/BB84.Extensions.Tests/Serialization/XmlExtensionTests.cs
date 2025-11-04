@@ -31,6 +31,19 @@ public class XmlExtensionTests
 	}
 
 	[TestMethod]
+	public void FromXmlWithRootAttributeTest()
+	{
+		string xmlString = XmlTextString;
+		XmlRootAttribute rootAttribute = new("Fancy");
+
+		TestClass testClass = xmlString.FromXml<TestClass>(rootAttribute);
+
+		Assert.AreEqual(Guid.Parse("348798ee-12f2-4a20-b030-756bb6a4134d"), testClass.Id);
+		Assert.AreEqual("UnitTestName", testClass.Name);
+		Assert.AreEqual("UnitTestDescription", testClass.Description);
+	}
+
+	[TestMethod]
 	public void ToXmlTest()
 	{
 		TestClass testClass = new() { Id = Guid.NewGuid(), Name = "UnitTestName", Description = "UnitTestDescription" };

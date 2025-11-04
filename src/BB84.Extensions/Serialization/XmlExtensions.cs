@@ -63,6 +63,31 @@ public static class XmlExtension
 	}
 
 	/// <summary>
+	/// Deserializes the specified XML string into an object of type <typeparamref name="T"/>.
+	/// </summary>
+	/// <remarks>
+	/// This method uses an <see cref="XmlSerializer"/> to perform the deserialization. Ensure that the
+	/// type <typeparamref name="T"/> is compatible with XML serialization.
+	/// </remarks>
+	/// <typeparam name="T">The type of the object to deserialize. Must be a reference type.</typeparam>
+	/// <param name="value">The XML string to deserialize.</param>
+	/// <param name="rootAttribute">The <see cref="XmlRootAttribute"/> that specifies the root element
+	/// name and namespace.</param>
+	/// <param name="settings">An optional <see cref="XmlReaderSettings"/> instance that specifies the settings
+	/// for the XML reader. If <see langword="null"/>, the <see cref="ReaderSettings"/> are used.</param>
+	/// <returns>An instance of type <typeparamref name="T"/> deserialized from the provided XML string.</returns>
+	public static T FromXml<T>(this string value, XmlRootAttribute rootAttribute, XmlReaderSettings? settings = null) where T : class
+	{
+		settings ??= ReaderSettings;
+
+		using StringReader stringReader = new(value);
+		using XmlReader xmlReader = XmlReader.Create(stringReader, settings);
+		XmlSerializer serializer = new(typeof(T), rootAttribute);
+
+		return (T)serializer.Deserialize(xmlReader)!;
+	}
+
+	/// <summary>
 	/// Serializes the specified object of type <typeparamref name="T"/> into an XML string.
 	/// </summary>
 	/// <remarks>
