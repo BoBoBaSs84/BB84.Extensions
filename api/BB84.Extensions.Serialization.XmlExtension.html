@@ -157,6 +157,63 @@ and deserialization scenarios.</p>
 
   <a id="BB84_Extensions_Serialization_XmlExtension_FromXml_" data-uid="BB84.Extensions.Serialization.XmlExtension.FromXml*"></a>
 
+  <h3 id="BB84_Extensions_Serialization_XmlExtension_FromXml__1_System_String_System_Xml_Serialization_XmlRootAttribute_System_Xml_XmlReaderSettings_" data-uid="BB84.Extensions.Serialization.XmlExtension.FromXml``1(System.String,System.Xml.Serialization.XmlRootAttribute,System.Xml.XmlReaderSettings)">
+  FromXml&lt;T&gt;(string, XmlRootAttribute, XmlReaderSettings?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/Serialization/XmlExtensions.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes the specified XML string into an object of type <code class="typeparamref">T</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T FromXml&lt;T&gt;(this string value, XmlRootAttribute rootAttribute, XmlReaderSettings? settings = null) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The XML string to deserialize.</p>
+</dd>
+    <dt><code>rootAttribute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.serialization.xmlrootattribute">XmlRootAttribute</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.serialization.xmlrootattribute">XmlRootAttribute</a> that specifies the root element
+name and namespace.</p>
+</dd>
+    <dt><code>settings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmlreadersettings">XmlReaderSettings</a></dt>
+    <dd><p>An optional <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmlreadersettings">XmlReaderSettings</a> instance that specifies the settings
+for the XML reader. If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the <span class="xref">BB84.Extensions.Serialization.XmlExtension.ReaderSettings</span> are used.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>An instance of type <code class="typeparamref">T</code> deserialized from the provided XML string.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the object to deserialize. Must be a reference type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="BB84_Extensions_Serialization_XmlExtension_FromXml__1_System_String_System_Xml_Serialization_XmlRootAttribute_System_Xml_XmlReaderSettings__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method uses an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.serialization.xmlserializer">XmlSerializer</a> to perform the deserialization. Ensure that the
+type <code class="typeparamref">T</code> is compatible with XML serialization.</p>
+</div>
+
+
+
+
+  <a id="BB84_Extensions_Serialization_XmlExtension_FromXml_" data-uid="BB84.Extensions.Serialization.XmlExtension.FromXml*"></a>
+
   <h3 id="BB84_Extensions_Serialization_XmlExtension_FromXml__1_System_String_System_Xml_XmlReaderSettings_" data-uid="BB84.Extensions.Serialization.XmlExtension.FromXml``1(System.String,System.Xml.XmlReaderSettings)">
   FromXml&lt;T&gt;(string, XmlReaderSettings?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/Serialization/XmlExtensions.cs/#L54"><i class="bi bi-code-slash"></i></a>
@@ -212,7 +269,7 @@ type <code class="typeparamref">T</code> is compatible with XML serialization.</
 
   <h3 id="BB84_Extensions_Serialization_XmlExtension_ToXml__1___0_System_Xml_Serialization_XmlSerializerNamespaces_System_Xml_XmlWriterSettings_" data-uid="BB84.Extensions.Serialization.XmlExtension.ToXml``1(``0,System.Xml.Serialization.XmlSerializerNamespaces,System.Xml.XmlWriterSettings)">
   ToXml&lt;T&gt;(T, XmlSerializerNamespaces?, XmlWriterSettings?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/Serialization/XmlExtensions.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/Serialization/XmlExtensions.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Serializes the specified object of type <code class="typeparamref">T</code> into an XML string.</p>
