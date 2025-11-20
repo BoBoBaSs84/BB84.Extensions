@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_ListExtensions" data-uid="BB84.Extensions.ListExtensions" class="text-break">
-Class ListExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L16"><i class="bi bi-code-slash"></i></a>
+Class ListExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -158,20 +158,20 @@ These methods help simplify common null-checking patterns when working with list
 
   <h3 id="BB84_Extensions_ListExtensions_AddIfNotNull__1_System_Collections_Generic_IList___0____0_" data-uid="BB84.Extensions.ListExtensions.AddIfNotNull``1(System.Collections.Generic.IList{``0},``0)">
   AddIfNotNull&lt;T&gt;(IList&lt;T&gt;, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Adds the item of <code class="typeparamref">T</code> to the <code class="paramref">target</code> when not null.</p>
+  <div class="markdown level1 summary"><p>Adds the item of <code class="typeparamref">T</code> to the <code class="paramref">list</code> when not null.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AddIfNotNull&lt;T&gt;(this IList&lt;T&gt; target, T item)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AddIfNotNull&lt;T&gt;(this IList&lt;T&gt; list, T item)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</dt>
+    <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</dt>
     <dd><p>The sequence of <code class="typeparamref">T</code> to work with.</p>
 </dd>
     <dt><code>item</code> <span class="xref">T</span></dt>
@@ -206,20 +206,20 @@ These methods help simplify common null-checking patterns when working with list
 
   <h3 id="BB84_Extensions_ListExtensions_AddRangeIfNotNull__1_System_Collections_Generic_IList___0__System_Collections_Generic_IEnumerable___0__" data-uid="BB84.Extensions.ListExtensions.AddRangeIfNotNull``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0})">
   AddRangeIfNotNull&lt;T&gt;(IList&lt;T&gt;, IEnumerable&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Adds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> to the <code class="paramref">target</code> when not null.</p>
+  <div class="markdown level1 summary"><p>Adds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> to the <code class="paramref">list</code> when not null.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AddRangeIfNotNull&lt;T&gt;(this IList&lt;T&gt; target, IEnumerable&lt;T&gt; items)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AddRangeIfNotNull&lt;T&gt;(this IList&lt;T&gt; list, IEnumerable&lt;T&gt; items)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</dt>
+    <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</dt>
     <dd><p>The sequence of <code class="typeparamref">T</code> to work with.</p>
 </dd>
     <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
@@ -250,11 +250,105 @@ These methods help simplify common null-checking patterns when working with list
 
 
 
+  <a id="BB84_Extensions_ListExtensions_Randomize_" data-uid="BB84.Extensions.ListExtensions.Randomize*"></a>
+
+  <h3 id="BB84_Extensions_ListExtensions_Randomize__1_System_Collections_Generic_IList___0__" data-uid="BB84.Extensions.ListExtensions.Randomize``1(System.Collections.Generic.IList{``0})">
+  Randomize&lt;T&gt;(IList&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a new list with the elements of the <code class="paramref">list</code> list in random order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IList&lt;T&gt; Randomize&lt;T&gt;(this IList&lt;T&gt; list)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</dt>
+    <dd><p>The list to randomize.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</dt>
+    <dd><p>A new list containing the elements of the <code class="paramref">list</code> list in a randomized order.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of elements in the list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="BB84_Extensions_ListExtensions_Randomize__1_System_Collections_Generic_IList___0___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method uses a random number generator to shuffle the elements of the list.
+The original list remains unchanged.</p>
+</div>
+
+
+
+
+  <a id="BB84_Extensions_ListExtensions_TakeRandom_" data-uid="BB84.Extensions.ListExtensions.TakeRandom*"></a>
+
+  <h3 id="BB84_Extensions_ListExtensions_TakeRandom__1_System_Collections_Generic_IList___0__" data-uid="BB84.Extensions.ListExtensions.TakeRandom``1(System.Collections.Generic.IList{``0})">
+  TakeRandom&lt;T&gt;(IList&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a random element from the specified list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T TakeRandom&lt;T&gt;(this IList&lt;T&gt; list)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</dt>
+    <dd><p>The list from which to take a random element.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>A random element from the <code class="paramref">list</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of elements in the list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L16" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L18" class="edit-link">Edit this page</a>
         </div>
 
 

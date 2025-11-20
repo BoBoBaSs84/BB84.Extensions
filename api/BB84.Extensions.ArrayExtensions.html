@@ -153,24 +153,69 @@ as selecting random elements.</p>
 </h2>
 
 
-  <a id="BB84_Extensions_ArrayExtensions_TakeRandom_" data-uid="BB84.Extensions.ArrayExtensions.TakeRandom*"></a>
+  <a id="BB84_Extensions_ArrayExtensions_Randomize_" data-uid="BB84.Extensions.ArrayExtensions.Randomize*"></a>
 
-  <h3 id="BB84_Extensions_ArrayExtensions_TakeRandom__1___0___" data-uid="BB84.Extensions.ArrayExtensions.TakeRandom``1(``0[])">
-  TakeRandom&lt;T&gt;(T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ArrayExtensions.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Extensions_ArrayExtensions_Randomize__1___0___" data-uid="BB84.Extensions.ArrayExtensions.Randomize``1(``0[])">
+  Randomize&lt;T&gt;(T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ArrayExtensions.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Selects a random element from the specified <code class="paramref">values</code>.</p>
+  <div class="markdown level1 summary"><p>Randomizes the order of elements in the specified array.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T TakeRandom&lt;T&gt;(this T[] values)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] Randomize&lt;T&gt;(this T[] array)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>values</code> T[]</dt>
+    <dt><code>array</code> T[]</dt>
+    <dd><p>The array to randomize.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd><p>A new array containing the elements of the original array in random order.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of elements in the array.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Extensions_ArrayExtensions_TakeRandom_" data-uid="BB84.Extensions.ArrayExtensions.TakeRandom*"></a>
+
+  <h3 id="BB84_Extensions_ArrayExtensions_TakeRandom__1___0___" data-uid="BB84.Extensions.ArrayExtensions.TakeRandom``1(``0[])">
+  TakeRandom&lt;T&gt;(T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ArrayExtensions.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects a random element from the specified <code class="paramref">array</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T TakeRandom&lt;T&gt;(this T[] array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
     <dd><p>The array from which to select a random element.</p>
 </dd>
   </dl>
@@ -178,7 +223,7 @@ as selecting random elements.</p>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd><p>A randomly selected element of <code class="typeparamref">T</code> from the <code class="paramref">values</code>.</p>
+    <dd><p>A randomly selected element of <code class="typeparamref">T</code> from the <code class="paramref">array</code>.</p>
 </dd>
   </dl>
 

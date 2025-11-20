@@ -13,6 +13,22 @@ references:
   commentId: T:BB84.Extensions.ArrayExtensions
   fullName: BB84.Extensions.ArrayExtensions
   nameWithType: ArrayExtensions
+- uid: BB84.Extensions.ArrayExtensions.Randomize*
+  name: Randomize
+  href: api/BB84.Extensions.ArrayExtensions.html#BB84_Extensions_ArrayExtensions_Randomize_
+  commentId: Overload:BB84.Extensions.ArrayExtensions.Randomize
+  isSpec: "True"
+  fullName: BB84.Extensions.ArrayExtensions.Randomize
+  nameWithType: ArrayExtensions.Randomize
+- uid: BB84.Extensions.ArrayExtensions.Randomize``1(``0[])
+  name: Randomize<T>(T[])
+  href: api/BB84.Extensions.ArrayExtensions.html#BB84_Extensions_ArrayExtensions_Randomize__1___0___
+  commentId: M:BB84.Extensions.ArrayExtensions.Randomize``1(``0[])
+  name.vb: Randomize(Of T)(T())
+  fullName: BB84.Extensions.ArrayExtensions.Randomize<T>(T[])
+  fullName.vb: BB84.Extensions.ArrayExtensions.Randomize(Of T)(T())
+  nameWithType: ArrayExtensions.Randomize<T>(T[])
+  nameWithType.vb: ArrayExtensions.Randomize(Of T)(T())
 - uid: BB84.Extensions.ArrayExtensions.TakeRandom*
   name: TakeRandom
   href: api/BB84.Extensions.ArrayExtensions.html#BB84_Extensions_ArrayExtensions_TakeRandom_
@@ -1023,6 +1039,22 @@ references:
   fullName.vb: BB84.Extensions.EnumerableExtensions.IsNullOrEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
   nameWithType: EnumerableExtensions.IsNullOrEmpty<T>(IEnumerable<T>?)
   nameWithType.vb: EnumerableExtensions.IsNullOrEmpty(Of T)(IEnumerable(Of T))
+- uid: BB84.Extensions.EnumerableExtensions.Randomize*
+  name: Randomize
+  href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_Randomize_
+  commentId: Overload:BB84.Extensions.EnumerableExtensions.Randomize
+  isSpec: "True"
+  fullName: BB84.Extensions.EnumerableExtensions.Randomize
+  nameWithType: EnumerableExtensions.Randomize
+- uid: BB84.Extensions.EnumerableExtensions.Randomize``1(System.Collections.Generic.IEnumerable{``0})
+  name: Randomize<T>(IEnumerable<T>)
+  href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_Randomize__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:BB84.Extensions.EnumerableExtensions.Randomize``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: Randomize(Of T)(IEnumerable(Of T))
+  fullName: BB84.Extensions.EnumerableExtensions.Randomize<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: BB84.Extensions.EnumerableExtensions.Randomize(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: EnumerableExtensions.Randomize<T>(IEnumerable<T>)
+  nameWithType.vb: EnumerableExtensions.Randomize(Of T)(IEnumerable(Of T))
 - uid: BB84.Extensions.EnumerableExtensions.TakeRandom*
   name: TakeRandom
   href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_TakeRandom_
@@ -1482,6 +1514,38 @@ references:
   fullName.vb: BB84.Extensions.ListExtensions.AddRangeIfNotNull(Of T)(System.Collections.Generic.IList(Of T), System.Collections.Generic.IEnumerable(Of T))
   nameWithType: ListExtensions.AddRangeIfNotNull<T>(IList<T>, IEnumerable<T>)
   nameWithType.vb: ListExtensions.AddRangeIfNotNull(Of T)(IList(Of T), IEnumerable(Of T))
+- uid: BB84.Extensions.ListExtensions.Randomize*
+  name: Randomize
+  href: api/BB84.Extensions.ListExtensions.html#BB84_Extensions_ListExtensions_Randomize_
+  commentId: Overload:BB84.Extensions.ListExtensions.Randomize
+  isSpec: "True"
+  fullName: BB84.Extensions.ListExtensions.Randomize
+  nameWithType: ListExtensions.Randomize
+- uid: BB84.Extensions.ListExtensions.Randomize``1(System.Collections.Generic.IList{``0})
+  name: Randomize<T>(IList<T>)
+  href: api/BB84.Extensions.ListExtensions.html#BB84_Extensions_ListExtensions_Randomize__1_System_Collections_Generic_IList___0__
+  commentId: M:BB84.Extensions.ListExtensions.Randomize``1(System.Collections.Generic.IList{``0})
+  name.vb: Randomize(Of T)(IList(Of T))
+  fullName: BB84.Extensions.ListExtensions.Randomize<T>(System.Collections.Generic.IList<T>)
+  fullName.vb: BB84.Extensions.ListExtensions.Randomize(Of T)(System.Collections.Generic.IList(Of T))
+  nameWithType: ListExtensions.Randomize<T>(IList<T>)
+  nameWithType.vb: ListExtensions.Randomize(Of T)(IList(Of T))
+- uid: BB84.Extensions.ListExtensions.TakeRandom*
+  name: TakeRandom
+  href: api/BB84.Extensions.ListExtensions.html#BB84_Extensions_ListExtensions_TakeRandom_
+  commentId: Overload:BB84.Extensions.ListExtensions.TakeRandom
+  isSpec: "True"
+  fullName: BB84.Extensions.ListExtensions.TakeRandom
+  nameWithType: ListExtensions.TakeRandom
+- uid: BB84.Extensions.ListExtensions.TakeRandom``1(System.Collections.Generic.IList{``0})
+  name: TakeRandom<T>(IList<T>)
+  href: api/BB84.Extensions.ListExtensions.html#BB84_Extensions_ListExtensions_TakeRandom__1_System_Collections_Generic_IList___0__
+  commentId: M:BB84.Extensions.ListExtensions.TakeRandom``1(System.Collections.Generic.IList{``0})
+  name.vb: TakeRandom(Of T)(IList(Of T))
+  fullName: BB84.Extensions.ListExtensions.TakeRandom<T>(System.Collections.Generic.IList<T>)
+  fullName.vb: BB84.Extensions.ListExtensions.TakeRandom(Of T)(System.Collections.Generic.IList(Of T))
+  nameWithType: ListExtensions.TakeRandom<T>(IList<T>)
+  nameWithType.vb: ListExtensions.TakeRandom(Of T)(IList(Of T))
 - uid: BB84.Extensions.LongExtensions
   name: LongExtensions
   href: api/BB84.Extensions.LongExtensions.html
