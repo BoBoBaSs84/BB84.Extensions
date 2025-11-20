@@ -118,6 +118,17 @@ public static class EnumerableExtensions
 		=> values is not null && values.Any();
 
 	/// <summary>
+	/// Randomizes the order of the items in the collection of <paramref name="values"/>.
+	/// </summary>
+	/// <typeparam name="T">The type of object in the collection.</typeparam>
+	/// <param name="values">The collection of objects to randomize.</param>
+	/// <returns>
+	/// A new collection with the items in a randomized order.
+	/// </returns>
+	public static IEnumerable<T> Randomize<T>(this IEnumerable<T> values)
+		=> values.ToList().Randomize();
+
+	/// <summary>
 	/// Returns a randomly choosen item from the collection of <paramref name="values"/>.
 	/// </summary>
 	/// <typeparam name="T">The type of object in the collection.</typeparam>
