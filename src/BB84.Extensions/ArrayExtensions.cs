@@ -17,16 +17,27 @@ namespace BB84.Extensions;
 public static class ArrayExtensions
 {
 	/// <summary>
-	/// Selects a random element from the specified <paramref name="values"/>.
+	/// Randomizes the order of elements in the specified array.
+	/// </summary>
+	/// <typeparam name="T">The type of elements in the array.</typeparam>
+	/// <param name="array">The array to randomize.</param>
+	/// <returns>
+	/// A new array containing the elements of the original array in random order.
+	/// </returns>
+	public static T[] Randomize<T>(this T[] array)
+		=> [.. array.ToList().Randomize()];
+
+	/// <summary>
+	/// Selects a random element from the specified <paramref name="array"/>.
 	/// </summary>
 	/// <remarks>
 	/// This method uses a random number generator to select an element from the array.
 	/// </remarks>
 	/// <typeparam name="T">The type of elements in the array.</typeparam>
-	/// <param name="values">The array from which to select a random element.</param>
+	/// <param name="array">The array from which to select a random element.</param>
 	/// <returns>
-	/// A randomly selected element of <typeparamref name="T"/> from the <paramref name="values"/>.
+	/// A randomly selected element of <typeparamref name="T"/> from the <paramref name="array"/>.
 	/// </returns>
-	public static T TakeRandom<T>(this T[] values)
-		=> values[RandomHelper.Random.Next(0, values.Length)];
+	public static T TakeRandom<T>(this T[] array)
+		=> array.ToList().TakeRandom();
 }
