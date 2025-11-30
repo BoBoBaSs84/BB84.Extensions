@@ -38,6 +38,28 @@ public static class DecimalExtensions
 		=> value.Equals(default);
 
 	/// <summary>
+	/// Determines whether the specified decimal value is negative.
+	/// </summary>
+	/// <param name="value">The decimal value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is less than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNegative(this decimal value)
+		=> value < 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable decimal value is negative.
+	/// </summary>
+	/// <param name="value">The nullable decimal value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is less than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNegative([NotNullWhen(true)] this decimal? value)
+		=> value.HasValue && value.Value < 0;
+
+	/// <summary>
 	/// Determines whether the specified decimal is not equal to its default value (0).
 	/// </summary>
 	/// <param name="value">The decimal to check.</param>
@@ -80,4 +102,70 @@ public static class DecimalExtensions
 	/// </returns>
 	public static bool IsNotNull([NotNullWhen(true)] this decimal? value)
 		=> value.HasValue.Equals(true);
+
+	/// <summary>
+	/// Determines whether the specified decimal value is non-negative.
+	/// </summary>
+	/// <param name="value">The decimal value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is greater than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonNegative(this decimal value)
+		=> value >= 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable decimal value is non-negative.
+	/// </summary>
+	/// <param name="value">The nullable decimal value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is greater than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonNegative([NotNullWhen(true)] this decimal? value)
+		=> value.HasValue && value.Value >= 0;
+
+	/// <summary>
+	/// Determines whether the specified decimal value is less than or equal to zero.
+	/// </summary>
+	/// <param name="value">The decimal value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is less than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonPositive(this decimal value)
+		=> value <= 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable decimal value is non-positive.
+	/// </summary>
+	/// <param name="value">The nullable decimal value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the value is not <see langword="null"/> and less than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonPositive([NotNullWhen(true)] this decimal? value)
+		=> value.HasValue && value.Value <= 0;
+
+	/// <summary>
+	/// Determines whether the specified decimal value is positive.
+	/// </summary>
+	/// <param name="value">The decimal value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is greater than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsPositive(this decimal value)
+		=> value > 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable decimal value is positive.
+	/// </summary>
+	/// <param name="value">The nullable decimal value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is greater than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsPositive([NotNullWhen(true)] this decimal? value)
+		=> value.HasValue && value.Value > 0;
 }

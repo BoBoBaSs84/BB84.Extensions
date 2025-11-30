@@ -38,6 +38,28 @@ public static class DoubleExtensions
 		=> value.Equals(default);
 
 	/// <summary>
+	/// Determines whether the specified double value is negative.
+	/// </summary>
+	/// <param name="value">The double value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is less than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNegative(this double value)
+		=> value < 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable double value is negative.
+	/// </summary>
+	/// <param name="value">The nullable double value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is less than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNegative([NotNullWhen(true)] this double? value)
+		=> value.HasValue && value.Value < 0;
+
+	/// <summary>
 	/// Determines whether the specified double is not equal to its default value (0).
 	/// </summary>
 	/// <param name="value">The double to check.</param>
@@ -80,4 +102,70 @@ public static class DoubleExtensions
 	/// </returns>
 	public static bool IsNotNull([NotNullWhen(true)] this double? value)
 		=> value.HasValue.Equals(true);
+
+	/// <summary>
+	/// Determines whether the specified double value is non-negative.
+	/// </summary>
+	/// <param name="value">The double value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is greater than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonNegative(this double value)
+		=> value >= 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable double value is non-negative.
+	/// </summary>
+	/// <param name="value">The nullable double value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is greater than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonNegative([NotNullWhen(true)] this double? value)
+		=> value.HasValue && value.Value >= 0;
+
+	/// <summary>
+	/// Determines whether the specified double value is less than or equal to zero.
+	/// </summary>
+	/// <param name="value">The double value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is less than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonPositive(this double value)
+		=> value <= 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable double value is non-positive.
+	/// </summary>
+	/// <param name="value">The nullable double value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the value is not <see langword="null"/> and less than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonPositive([NotNullWhen(true)] this double? value)
+		=> value.HasValue && value.Value <= 0;
+
+	/// <summary>
+	/// Determines whether the specified double value is positive.
+	/// </summary>
+	/// <param name="value">The double value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is greater than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsPositive(this double value)
+		=> value > 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable double value is positive.
+	/// </summary>
+	/// <param name="value">The nullable double value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is greater than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsPositive([NotNullWhen(true)] this double? value)
+		=> value.HasValue && value.Value > 0;
 }

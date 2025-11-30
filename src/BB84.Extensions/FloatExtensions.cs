@@ -38,6 +38,28 @@ public static class FloatExtensions
 		=> value.Equals(default);
 
 	/// <summary>
+	/// Determines whether the specified float value is negative.
+	/// </summary>
+	/// <param name="value">The float value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is less than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNegative(this float value)
+		=> value < 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable float value is negative.
+	/// </summary>
+	/// <param name="value">The nullable float value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is less than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNegative([NotNullWhen(true)] this float? value)
+		=> value.HasValue && value.Value < 0;
+
+	/// <summary>
 	/// Determines whether the specified float is not equal to its default value (0).
 	/// </summary>
 	/// <param name="value">The float to check.</param>
@@ -80,4 +102,70 @@ public static class FloatExtensions
 	/// </returns>
 	public static bool IsNotNull([NotNullWhen(true)] this float? value)
 		=> value.HasValue.Equals(true);
+
+	/// <summary>
+	/// Determines whether the specified float value is non-negative.
+	/// </summary>
+	/// <param name="value">The float value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is greater than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonNegative(this float value)
+		=> value >= 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable float value is non-negative.
+	/// </summary>
+	/// <param name="value">The nullable float value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is greater than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonNegative([NotNullWhen(true)] this float? value)
+		=> value.HasValue && value.Value >= 0;
+
+	/// <summary>
+	/// Determines whether the specified float value is less than or equal to zero.
+	/// </summary>
+	/// <param name="value">The float value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is less than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonPositive(this float value)
+		=> value <= 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable float value is non-positive.
+	/// </summary>
+	/// <param name="value">The nullable float value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the value is not <see langword="null"/> and less than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonPositive([NotNullWhen(true)] this float? value)
+		=> value.HasValue && value.Value <= 0;
+
+	/// <summary>
+	/// Determines whether the specified float value is positive.
+	/// </summary>
+	/// <param name="value">The float value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is greater than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsPositive(this float value)
+		=> value > 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable float value is positive.
+	/// </summary>
+	/// <param name="value">The nullable float value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is greater than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsPositive([NotNullWhen(true)] this float? value)
+		=> value.HasValue && value.Value > 0;
 }

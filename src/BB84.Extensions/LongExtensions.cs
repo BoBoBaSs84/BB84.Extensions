@@ -53,6 +53,28 @@ public static class LongExtensions
 		=> value.Equals(default);
 
 	/// <summary>
+	/// Determines whether the specified long value is negative.
+	/// </summary>
+	/// <param name="value">The long value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is less than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNegative(this long value)
+		=> value < 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable long value is negative.
+	/// </summary>
+	/// <param name="value">The nullable long value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is less than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNegative([NotNullWhen(true)] this long? value)
+		=> value.HasValue && value.Value < 0;
+
+	/// <summary>
 	/// Determines whether the specified long is not equal to its default value (0).
 	/// </summary>
 	/// <param name="value">The long to check.</param>
@@ -95,4 +117,70 @@ public static class LongExtensions
 	/// </returns>
 	public static bool IsNotNull([NotNullWhen(true)] this long? value)
 		=> value.HasValue.Equals(true);
+
+	/// <summary>
+	/// Determines whether the specified long value is non-negative.
+	/// </summary>
+	/// <param name="value">The long value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is greater than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonNegative(this long value)
+		=> value >= 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable long value is non-negative.
+	/// </summary>
+	/// <param name="value">The nullable long value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is greater than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonNegative([NotNullWhen(true)] this long? value)
+		=> value.HasValue && value.Value >= 0;
+
+	/// <summary>
+	/// Determines whether the specified long value is less than or equal to zero.
+	/// </summary>
+	/// <param name="value">The long value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is less than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonPositive(this long value)
+		=> value <= 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable long value is non-positive.
+	/// </summary>
+	/// <param name="value">The nullable long value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the value is not <see langword="null"/> and less than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonPositive([NotNullWhen(true)] this long? value)
+		=> value.HasValue && value.Value <= 0;
+
+	/// <summary>
+	/// Determines whether the specified long value is positive.
+	/// </summary>
+	/// <param name="value">The long value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is greater than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsPositive(this long value)
+		=> value > 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable long value is positive.
+	/// </summary>
+	/// <param name="value">The nullable long value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is greater than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsPositive([NotNullWhen(true)] this long? value)
+		=> value.HasValue && value.Value > 0;
 }

@@ -53,6 +53,28 @@ public static class ShortExtensions
 		=> value.Equals(default);
 
 	/// <summary>
+	/// Determines whether the specified short value is negative.
+	/// </summary>
+	/// <param name="value">The short value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is less than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNegative(this short value)
+		=> value < 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable short value is negative.
+	/// </summary>
+	/// <param name="value">The nullable short value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is less than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNegative([NotNullWhen(true)] this short? value)
+		=> value.HasValue && value.Value < 0;
+
+	/// <summary>
 	/// Determines whether the specified short is not equal to its default value (0).
 	/// </summary>
 	/// <param name="value">The short to check.</param>
@@ -95,4 +117,70 @@ public static class ShortExtensions
 	/// </returns>
 	public static bool IsNotNull([NotNullWhen(true)] this short? value)
 		=> value.HasValue.Equals(true);
+
+	/// <summary>
+	/// Determines whether the specified short value is non-negative.
+	/// </summary>
+	/// <param name="value">The short value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is greater than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonNegative(this short value)
+		=> value >= 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable short value is non-negative.
+	/// </summary>
+	/// <param name="value">The nullable short value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is greater than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonNegative([NotNullWhen(true)] this short? value)
+		=> value.HasValue && value.Value >= 0;
+
+	/// <summary>
+	/// Determines whether the specified short value is less than or equal to zero.
+	/// </summary>
+	/// <param name="value">The short value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is less than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonPositive(this short value)
+		=> value <= 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable short value is non-positive.
+	/// </summary>
+	/// <param name="value">The nullable short value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the value is not <see langword="null"/> and less than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonPositive([NotNullWhen(true)] this short? value)
+		=> value.HasValue && value.Value <= 0;
+
+	/// <summary>
+	/// Determines whether the specified short value is positive.
+	/// </summary>
+	/// <param name="value">The short value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is greater than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsPositive(this short value)
+		=> value > 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable short value is positive.
+	/// </summary>
+	/// <param name="value">The nullable short value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is greater than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsPositive([NotNullWhen(true)] this short? value)
+		=> value.HasValue && value.Value > 0;
 }
