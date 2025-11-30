@@ -22,7 +22,7 @@ public sealed class LongExtensionsTests
 
 	[TestMethod]
 	[Description("Should determine whether a long is its default value (0).")]
-	public void IsDefaultLong()
+	public void IsDefault()
 	{
 		long value = default;
 		Assert.IsTrue(value.IsDefault());
@@ -33,7 +33,7 @@ public sealed class LongExtensionsTests
 
 	[TestMethod]
 	[Description("Should determine whether a nullable long is its default value (null).")]
-	public void IsDefaultNullableLong()
+	public void IsDefaultNullable()
 	{
 		long? value = default;
 		Assert.IsTrue(value.IsDefault());
@@ -47,7 +47,7 @@ public sealed class LongExtensionsTests
 
 	[TestMethod]
 	[Description("Should determine whether a long is not its default value (0).")]
-	public void IsNotDefaultLong()
+	public void IsNotDefault()
 	{
 		long value = default;
 		Assert.IsFalse(value.IsNotDefault());
@@ -58,7 +58,7 @@ public sealed class LongExtensionsTests
 
 	[TestMethod]
 	[Description("Should determine whether a nullable long is not its default value (null).")]
-	public void IsNotDefaultNullableLong()
+	public void IsNotDefaultNullable()
 	{
 		long? value = default;
 		Assert.IsFalse(value.IsNotDefault());

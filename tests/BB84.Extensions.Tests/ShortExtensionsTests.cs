@@ -22,7 +22,7 @@ public sealed class ShortExtensionsTests
 
 	[TestMethod]
 	[Description("Should determine whether a short is its default value (0).")]
-	public void IsDefaultLong()
+	public void IsDefault()
 	{
 		short value = default;
 		Assert.IsTrue(value.IsDefault());
@@ -33,7 +33,7 @@ public sealed class ShortExtensionsTests
 
 	[TestMethod]
 	[Description("Should determine whether a nullable short is its default value (null).")]
-	public void IsDefaultNullableLong()
+	public void IsDefaultNullable()
 	{
 		short? value = default;
 		Assert.IsTrue(value.IsDefault());
@@ -47,7 +47,7 @@ public sealed class ShortExtensionsTests
 
 	[TestMethod]
 	[Description("Should determine whether a short is not its default value (0).")]
-	public void IsNotDefaultLong()
+	public void IsNotDefault()
 	{
 		short value = default;
 		Assert.IsFalse(value.IsNotDefault());
@@ -58,7 +58,7 @@ public sealed class ShortExtensionsTests
 
 	[TestMethod]
 	[Description("Should determine whether a nullable short is not its default value (null).")]
-	public void IsNotDefaultNullableLong()
+	public void IsNotDefaultNullable()
 	{
 		short? value = default;
 		Assert.IsFalse(value.IsNotDefault());
