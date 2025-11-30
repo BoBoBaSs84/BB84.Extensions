@@ -97,4 +97,108 @@ public sealed class ShortExtensionsTests
 		value = 15;
 		Assert.IsTrue(value.IsNotNull());
 	}
+
+	[TestMethod]
+	[Description("Should determine whether a short or nullable short is a negative value.")]
+	public void IsNegativeTest()
+	{
+		short value = -1;
+		Assert.IsTrue(value.IsNegative());
+
+		value = 1;
+		Assert.IsFalse(value.IsNegative());
+
+		value = 0;
+		Assert.IsFalse(value.IsNegative());
+
+		short? nullableValue = -1;
+		Assert.IsTrue(nullableValue.IsNegative());
+
+		nullableValue = 1;
+		Assert.IsFalse(nullableValue.IsNegative());
+
+		nullableValue = null;
+		Assert.IsFalse(nullableValue.IsNegative());
+
+		nullableValue = 0;
+		Assert.IsFalse(nullableValue.IsNegative());
+	}
+
+	[TestMethod]
+	[Description("Should determine whether a short or nullable short is a non negative value.")]
+	public void IsNonNegativeTest()
+	{
+		short value = -1;
+		Assert.IsFalse(value.IsNonNegative());
+
+		value = 1;
+		Assert.IsTrue(value.IsNonNegative());
+
+		value = 0;
+		Assert.IsTrue(value.IsNonNegative());
+
+		short? nullableValue = -1;
+		Assert.IsFalse(nullableValue.IsNonNegative());
+
+		nullableValue = 1;
+		Assert.IsTrue(nullableValue.IsNonNegative());
+
+		nullableValue = null;
+		Assert.IsFalse(nullableValue.IsNonNegative());
+
+		nullableValue = 0;
+		Assert.IsTrue(nullableValue.IsNonNegative());
+	}
+
+	[TestMethod]
+	[Description("Should determine whether a short or nullable short is a non positive value.")]
+	public void IsNonPositiveTest()
+	{
+		short value = 1;
+		Assert.IsFalse(value.IsNonPositive());
+
+		value = -1;
+		Assert.IsTrue(value.IsNonPositive());
+
+		value = 0;
+		Assert.IsTrue(value.IsNonPositive());
+
+		short? nullableValue = -1;
+		Assert.IsTrue(nullableValue.IsNonPositive());
+
+		nullableValue = 1;
+		Assert.IsFalse(nullableValue.IsNonPositive());
+
+		nullableValue = null;
+		Assert.IsFalse(nullableValue.IsNonPositive());
+
+		nullableValue = 0;
+		Assert.IsTrue(nullableValue.IsNonPositive());
+	}
+
+	[TestMethod]
+	[Description("Should determine whether a short or nullable short is a positive value.")]
+	public void IsPositiveTest()
+	{
+		short value = 1;
+		Assert.IsTrue(value.IsPositive());
+
+		value = -1;
+		Assert.IsFalse(value.IsPositive());
+
+		value = 0;
+		Assert.IsFalse(value.IsPositive());
+
+		short? nullableValue = -1;
+		Assert.IsFalse(nullableValue.IsPositive());
+
+		nullableValue = 1;
+		Assert.IsTrue(nullableValue.IsPositive());
+
+		nullableValue = null;
+		Assert.IsFalse(nullableValue.IsPositive());
+
+		nullableValue = 0;
+		Assert.IsFalse(nullableValue.IsPositive());
+	}
 }
