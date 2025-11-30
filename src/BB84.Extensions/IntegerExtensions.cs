@@ -107,6 +107,28 @@ public static class IntegerExtensions
 		=> value.Equals(default);
 
 	/// <summary>
+	/// Determines whether the specified int value is negative.
+	/// </summary>
+	/// <param name="value">The int value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is less than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNegative(this int value)
+		=> value < 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable int value is negative.
+	/// </summary>
+	/// <param name="value">The nullable int value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is less than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNegative([NotNullWhen(true)] this int? value)
+		=> value.HasValue && value.Value < 0;
+
+	/// <summary>
 	/// Determines whether the specified integer is not equal to its default value (0).
 	/// </summary>
 	/// <param name="value">The integer to check.</param>
@@ -149,4 +171,70 @@ public static class IntegerExtensions
 	/// </returns>
 	public static bool IsNotNull([NotNullWhen(true)] this int? value)
 		=> value.HasValue.Equals(true);
+
+	/// <summary>
+	/// Determines whether the specified int value is non-negative.
+	/// </summary>
+	/// <param name="value">The int value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is greater than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonNegative(this int value)
+		=> value >= 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable int value is non-negative.
+	/// </summary>
+	/// <param name="value">The nullable int value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is greater than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonNegative([NotNullWhen(true)] this int? value)
+		=> value.HasValue && value.Value >= 0;
+
+	/// <summary>
+	/// Determines whether the specified int value is less than or equal to zero.
+	/// </summary>
+	/// <param name="value">The int value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is less than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonPositive(this int value)
+		=> value <= 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable int value is non-positive.
+	/// </summary>
+	/// <param name="value">The nullable int value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the value is not <see langword="null"/> and less than or equal to zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsNonPositive([NotNullWhen(true)] this int? value)
+		=> value.HasValue && value.Value <= 0;
+
+	/// <summary>
+	/// Determines whether the specified int value is positive.
+	/// </summary>
+	/// <param name="value">The int value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if the specified value is greater than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsPositive(this int value)
+		=> value > 0;
+
+	/// <summary>
+	/// Determines whether the specified nullable int value is positive.
+	/// </summary>
+	/// <param name="value">The nullable int value to evaluate.</param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> has a value and is greater than zero;
+	/// otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool IsPositive([NotNullWhen(true)] this int? value)
+		=> value.HasValue && value.Value > 0;
 }
