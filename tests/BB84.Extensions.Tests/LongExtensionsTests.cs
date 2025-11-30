@@ -97,4 +97,108 @@ public sealed class LongExtensionsTests
 		value = 15;
 		Assert.IsTrue(value.IsNotNull());
 	}
+
+	[TestMethod]
+	[Description("Should determine whether a long or nullable long is a negative value.")]
+	public void IsNegativeTest()
+	{
+		long value = -1;
+		Assert.IsTrue(value.IsNegative());
+
+		value = 1;
+		Assert.IsFalse(value.IsNegative());
+
+		value = 0;
+		Assert.IsFalse(value.IsNegative());
+
+		long? nullableValue = -1;
+		Assert.IsTrue(nullableValue.IsNegative());
+
+		nullableValue = 1;
+		Assert.IsFalse(nullableValue.IsNegative());
+
+		nullableValue = null;
+		Assert.IsFalse(nullableValue.IsNegative());
+
+		nullableValue = 0;
+		Assert.IsFalse(nullableValue.IsNegative());
+	}
+
+	[TestMethod]
+	[Description("Should determine whether a long or nullable long is a non negative value.")]
+	public void IsNonNegativeTest()
+	{
+		long value = -1;
+		Assert.IsFalse(value.IsNonNegative());
+
+		value = 1;
+		Assert.IsTrue(value.IsNonNegative());
+
+		value = 0;
+		Assert.IsTrue(value.IsNonNegative());
+
+		long? nullableValue = -1;
+		Assert.IsFalse(nullableValue.IsNonNegative());
+
+		nullableValue = 1;
+		Assert.IsTrue(nullableValue.IsNonNegative());
+
+		nullableValue = null;
+		Assert.IsFalse(nullableValue.IsNonNegative());
+
+		nullableValue = 0;
+		Assert.IsTrue(nullableValue.IsNonNegative());
+	}
+
+	[TestMethod]
+	[Description("Should determine whether a long or nullable long is a non positive value.")]
+	public void IsNonPositiveTest()
+	{
+		long value = 1;
+		Assert.IsFalse(value.IsNonPositive());
+
+		value = -1;
+		Assert.IsTrue(value.IsNonPositive());
+
+		value = 0;
+		Assert.IsTrue(value.IsNonPositive());
+
+		long? nullableValue = -1;
+		Assert.IsTrue(nullableValue.IsNonPositive());
+
+		nullableValue = 1;
+		Assert.IsFalse(nullableValue.IsNonPositive());
+
+		nullableValue = null;
+		Assert.IsFalse(nullableValue.IsNonPositive());
+
+		nullableValue = 0;
+		Assert.IsTrue(nullableValue.IsNonPositive());
+	}
+
+	[TestMethod]
+	[Description("Should determine whether a long or nullable long is a positive value.")]
+	public void IsPositiveTest()
+	{
+		long value = 1;
+		Assert.IsTrue(value.IsPositive());
+
+		value = -1;
+		Assert.IsFalse(value.IsPositive());
+
+		value = 0;
+		Assert.IsFalse(value.IsPositive());
+
+		long? nullableValue = -1;
+		Assert.IsFalse(nullableValue.IsPositive());
+
+		nullableValue = 1;
+		Assert.IsTrue(nullableValue.IsPositive());
+
+		nullableValue = null;
+		Assert.IsFalse(nullableValue.IsPositive());
+
+		nullableValue = 0;
+		Assert.IsFalse(nullableValue.IsPositive());
+	}
 }
