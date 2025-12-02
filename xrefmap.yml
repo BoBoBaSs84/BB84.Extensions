@@ -790,6 +790,81 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.DecimalExtensions.IsDefault
   nameWithType: DecimalExtensions.IsDefault
+- uid: BB84.Extensions.DecimalExtensions.IsNegative(System.Decimal)
+  name: IsNegative(decimal)
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNegative_System_Decimal_
+  commentId: M:BB84.Extensions.DecimalExtensions.IsNegative(System.Decimal)
+  name.vb: IsNegative(Decimal)
+  fullName: BB84.Extensions.DecimalExtensions.IsNegative(decimal)
+  fullName.vb: BB84.Extensions.DecimalExtensions.IsNegative(Decimal)
+  nameWithType: DecimalExtensions.IsNegative(decimal)
+  nameWithType.vb: DecimalExtensions.IsNegative(Decimal)
+- uid: BB84.Extensions.DecimalExtensions.IsNegative(System.Nullable{System.Decimal})
+  name: IsNegative(decimal?)
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNegative_System_Nullable_System_Decimal__
+  commentId: M:BB84.Extensions.DecimalExtensions.IsNegative(System.Nullable{System.Decimal})
+  name.vb: IsNegative(Decimal?)
+  fullName: BB84.Extensions.DecimalExtensions.IsNegative(decimal?)
+  fullName.vb: BB84.Extensions.DecimalExtensions.IsNegative(Decimal?)
+  nameWithType: DecimalExtensions.IsNegative(decimal?)
+  nameWithType.vb: DecimalExtensions.IsNegative(Decimal?)
+- uid: BB84.Extensions.DecimalExtensions.IsNegative*
+  name: IsNegative
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNegative_
+  commentId: Overload:BB84.Extensions.DecimalExtensions.IsNegative
+  isSpec: "True"
+  fullName: BB84.Extensions.DecimalExtensions.IsNegative
+  nameWithType: DecimalExtensions.IsNegative
+- uid: BB84.Extensions.DecimalExtensions.IsNonNegative(System.Decimal)
+  name: IsNonNegative(decimal)
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNonNegative_System_Decimal_
+  commentId: M:BB84.Extensions.DecimalExtensions.IsNonNegative(System.Decimal)
+  name.vb: IsNonNegative(Decimal)
+  fullName: BB84.Extensions.DecimalExtensions.IsNonNegative(decimal)
+  fullName.vb: BB84.Extensions.DecimalExtensions.IsNonNegative(Decimal)
+  nameWithType: DecimalExtensions.IsNonNegative(decimal)
+  nameWithType.vb: DecimalExtensions.IsNonNegative(Decimal)
+- uid: BB84.Extensions.DecimalExtensions.IsNonNegative(System.Nullable{System.Decimal})
+  name: IsNonNegative(decimal?)
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNonNegative_System_Nullable_System_Decimal__
+  commentId: M:BB84.Extensions.DecimalExtensions.IsNonNegative(System.Nullable{System.Decimal})
+  name.vb: IsNonNegative(Decimal?)
+  fullName: BB84.Extensions.DecimalExtensions.IsNonNegative(decimal?)
+  fullName.vb: BB84.Extensions.DecimalExtensions.IsNonNegative(Decimal?)
+  nameWithType: DecimalExtensions.IsNonNegative(decimal?)
+  nameWithType.vb: DecimalExtensions.IsNonNegative(Decimal?)
+- uid: BB84.Extensions.DecimalExtensions.IsNonNegative*
+  name: IsNonNegative
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNonNegative_
+  commentId: Overload:BB84.Extensions.DecimalExtensions.IsNonNegative
+  isSpec: "True"
+  fullName: BB84.Extensions.DecimalExtensions.IsNonNegative
+  nameWithType: DecimalExtensions.IsNonNegative
+- uid: BB84.Extensions.DecimalExtensions.IsNonPositive(System.Decimal)
+  name: IsNonPositive(decimal)
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNonPositive_System_Decimal_
+  commentId: M:BB84.Extensions.DecimalExtensions.IsNonPositive(System.Decimal)
+  name.vb: IsNonPositive(Decimal)
+  fullName: BB84.Extensions.DecimalExtensions.IsNonPositive(decimal)
+  fullName.vb: BB84.Extensions.DecimalExtensions.IsNonPositive(Decimal)
+  nameWithType: DecimalExtensions.IsNonPositive(decimal)
+  nameWithType.vb: DecimalExtensions.IsNonPositive(Decimal)
+- uid: BB84.Extensions.DecimalExtensions.IsNonPositive(System.Nullable{System.Decimal})
+  name: IsNonPositive(decimal?)
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNonPositive_System_Nullable_System_Decimal__
+  commentId: M:BB84.Extensions.DecimalExtensions.IsNonPositive(System.Nullable{System.Decimal})
+  name.vb: IsNonPositive(Decimal?)
+  fullName: BB84.Extensions.DecimalExtensions.IsNonPositive(decimal?)
+  fullName.vb: BB84.Extensions.DecimalExtensions.IsNonPositive(Decimal?)
+  nameWithType: DecimalExtensions.IsNonPositive(decimal?)
+  nameWithType.vb: DecimalExtensions.IsNonPositive(Decimal?)
+- uid: BB84.Extensions.DecimalExtensions.IsNonPositive*
+  name: IsNonPositive
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNonPositive_
+  commentId: Overload:BB84.Extensions.DecimalExtensions.IsNonPositive
+  isSpec: "True"
+  fullName: BB84.Extensions.DecimalExtensions.IsNonPositive
+  nameWithType: DecimalExtensions.IsNonPositive
 - uid: BB84.Extensions.DecimalExtensions.IsNotDefault(System.Decimal)
   name: IsNotDefault(decimal)
   href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsNotDefault_System_Decimal_
@@ -847,6 +922,31 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.DecimalExtensions.IsNull
   nameWithType: DecimalExtensions.IsNull
+- uid: BB84.Extensions.DecimalExtensions.IsPositive(System.Decimal)
+  name: IsPositive(decimal)
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsPositive_System_Decimal_
+  commentId: M:BB84.Extensions.DecimalExtensions.IsPositive(System.Decimal)
+  name.vb: IsPositive(Decimal)
+  fullName: BB84.Extensions.DecimalExtensions.IsPositive(decimal)
+  fullName.vb: BB84.Extensions.DecimalExtensions.IsPositive(Decimal)
+  nameWithType: DecimalExtensions.IsPositive(decimal)
+  nameWithType.vb: DecimalExtensions.IsPositive(Decimal)
+- uid: BB84.Extensions.DecimalExtensions.IsPositive(System.Nullable{System.Decimal})
+  name: IsPositive(decimal?)
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsPositive_System_Nullable_System_Decimal__
+  commentId: M:BB84.Extensions.DecimalExtensions.IsPositive(System.Nullable{System.Decimal})
+  name.vb: IsPositive(Decimal?)
+  fullName: BB84.Extensions.DecimalExtensions.IsPositive(decimal?)
+  fullName.vb: BB84.Extensions.DecimalExtensions.IsPositive(Decimal?)
+  nameWithType: DecimalExtensions.IsPositive(decimal?)
+  nameWithType.vb: DecimalExtensions.IsPositive(Decimal?)
+- uid: BB84.Extensions.DecimalExtensions.IsPositive*
+  name: IsPositive
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsPositive_
+  commentId: Overload:BB84.Extensions.DecimalExtensions.IsPositive
+  isSpec: "True"
+  fullName: BB84.Extensions.DecimalExtensions.IsPositive
+  nameWithType: DecimalExtensions.IsPositive
 - uid: BB84.Extensions.DoubleExtensions
   name: DoubleExtensions
   href: api/BB84.Extensions.DoubleExtensions.html
@@ -878,6 +978,81 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.DoubleExtensions.IsDefault
   nameWithType: DoubleExtensions.IsDefault
+- uid: BB84.Extensions.DoubleExtensions.IsNegative(System.Double)
+  name: IsNegative(double)
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNegative_System_Double_
+  commentId: M:BB84.Extensions.DoubleExtensions.IsNegative(System.Double)
+  name.vb: IsNegative(Double)
+  fullName: BB84.Extensions.DoubleExtensions.IsNegative(double)
+  fullName.vb: BB84.Extensions.DoubleExtensions.IsNegative(Double)
+  nameWithType: DoubleExtensions.IsNegative(double)
+  nameWithType.vb: DoubleExtensions.IsNegative(Double)
+- uid: BB84.Extensions.DoubleExtensions.IsNegative(System.Nullable{System.Double})
+  name: IsNegative(double?)
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNegative_System_Nullable_System_Double__
+  commentId: M:BB84.Extensions.DoubleExtensions.IsNegative(System.Nullable{System.Double})
+  name.vb: IsNegative(Double?)
+  fullName: BB84.Extensions.DoubleExtensions.IsNegative(double?)
+  fullName.vb: BB84.Extensions.DoubleExtensions.IsNegative(Double?)
+  nameWithType: DoubleExtensions.IsNegative(double?)
+  nameWithType.vb: DoubleExtensions.IsNegative(Double?)
+- uid: BB84.Extensions.DoubleExtensions.IsNegative*
+  name: IsNegative
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNegative_
+  commentId: Overload:BB84.Extensions.DoubleExtensions.IsNegative
+  isSpec: "True"
+  fullName: BB84.Extensions.DoubleExtensions.IsNegative
+  nameWithType: DoubleExtensions.IsNegative
+- uid: BB84.Extensions.DoubleExtensions.IsNonNegative(System.Double)
+  name: IsNonNegative(double)
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNonNegative_System_Double_
+  commentId: M:BB84.Extensions.DoubleExtensions.IsNonNegative(System.Double)
+  name.vb: IsNonNegative(Double)
+  fullName: BB84.Extensions.DoubleExtensions.IsNonNegative(double)
+  fullName.vb: BB84.Extensions.DoubleExtensions.IsNonNegative(Double)
+  nameWithType: DoubleExtensions.IsNonNegative(double)
+  nameWithType.vb: DoubleExtensions.IsNonNegative(Double)
+- uid: BB84.Extensions.DoubleExtensions.IsNonNegative(System.Nullable{System.Double})
+  name: IsNonNegative(double?)
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNonNegative_System_Nullable_System_Double__
+  commentId: M:BB84.Extensions.DoubleExtensions.IsNonNegative(System.Nullable{System.Double})
+  name.vb: IsNonNegative(Double?)
+  fullName: BB84.Extensions.DoubleExtensions.IsNonNegative(double?)
+  fullName.vb: BB84.Extensions.DoubleExtensions.IsNonNegative(Double?)
+  nameWithType: DoubleExtensions.IsNonNegative(double?)
+  nameWithType.vb: DoubleExtensions.IsNonNegative(Double?)
+- uid: BB84.Extensions.DoubleExtensions.IsNonNegative*
+  name: IsNonNegative
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNonNegative_
+  commentId: Overload:BB84.Extensions.DoubleExtensions.IsNonNegative
+  isSpec: "True"
+  fullName: BB84.Extensions.DoubleExtensions.IsNonNegative
+  nameWithType: DoubleExtensions.IsNonNegative
+- uid: BB84.Extensions.DoubleExtensions.IsNonPositive(System.Double)
+  name: IsNonPositive(double)
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNonPositive_System_Double_
+  commentId: M:BB84.Extensions.DoubleExtensions.IsNonPositive(System.Double)
+  name.vb: IsNonPositive(Double)
+  fullName: BB84.Extensions.DoubleExtensions.IsNonPositive(double)
+  fullName.vb: BB84.Extensions.DoubleExtensions.IsNonPositive(Double)
+  nameWithType: DoubleExtensions.IsNonPositive(double)
+  nameWithType.vb: DoubleExtensions.IsNonPositive(Double)
+- uid: BB84.Extensions.DoubleExtensions.IsNonPositive(System.Nullable{System.Double})
+  name: IsNonPositive(double?)
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNonPositive_System_Nullable_System_Double__
+  commentId: M:BB84.Extensions.DoubleExtensions.IsNonPositive(System.Nullable{System.Double})
+  name.vb: IsNonPositive(Double?)
+  fullName: BB84.Extensions.DoubleExtensions.IsNonPositive(double?)
+  fullName.vb: BB84.Extensions.DoubleExtensions.IsNonPositive(Double?)
+  nameWithType: DoubleExtensions.IsNonPositive(double?)
+  nameWithType.vb: DoubleExtensions.IsNonPositive(Double?)
+- uid: BB84.Extensions.DoubleExtensions.IsNonPositive*
+  name: IsNonPositive
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNonPositive_
+  commentId: Overload:BB84.Extensions.DoubleExtensions.IsNonPositive
+  isSpec: "True"
+  fullName: BB84.Extensions.DoubleExtensions.IsNonPositive
+  nameWithType: DoubleExtensions.IsNonPositive
 - uid: BB84.Extensions.DoubleExtensions.IsNotDefault(System.Double)
   name: IsNotDefault(double)
   href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsNotDefault_System_Double_
@@ -935,6 +1110,31 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.DoubleExtensions.IsNull
   nameWithType: DoubleExtensions.IsNull
+- uid: BB84.Extensions.DoubleExtensions.IsPositive(System.Double)
+  name: IsPositive(double)
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsPositive_System_Double_
+  commentId: M:BB84.Extensions.DoubleExtensions.IsPositive(System.Double)
+  name.vb: IsPositive(Double)
+  fullName: BB84.Extensions.DoubleExtensions.IsPositive(double)
+  fullName.vb: BB84.Extensions.DoubleExtensions.IsPositive(Double)
+  nameWithType: DoubleExtensions.IsPositive(double)
+  nameWithType.vb: DoubleExtensions.IsPositive(Double)
+- uid: BB84.Extensions.DoubleExtensions.IsPositive(System.Nullable{System.Double})
+  name: IsPositive(double?)
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsPositive_System_Nullable_System_Double__
+  commentId: M:BB84.Extensions.DoubleExtensions.IsPositive(System.Nullable{System.Double})
+  name.vb: IsPositive(Double?)
+  fullName: BB84.Extensions.DoubleExtensions.IsPositive(double?)
+  fullName.vb: BB84.Extensions.DoubleExtensions.IsPositive(Double?)
+  nameWithType: DoubleExtensions.IsPositive(double?)
+  nameWithType.vb: DoubleExtensions.IsPositive(Double?)
+- uid: BB84.Extensions.DoubleExtensions.IsPositive*
+  name: IsPositive
+  href: api/BB84.Extensions.DoubleExtensions.html#BB84_Extensions_DoubleExtensions_IsPositive_
+  commentId: Overload:BB84.Extensions.DoubleExtensions.IsPositive
+  isSpec: "True"
+  fullName: BB84.Extensions.DoubleExtensions.IsPositive
+  nameWithType: DoubleExtensions.IsPositive
 - uid: BB84.Extensions.EnumerableExtensions
   name: EnumerableExtensions
   href: api/BB84.Extensions.EnumerableExtensions.html
@@ -1156,6 +1356,81 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.FloatExtensions.IsDefault
   nameWithType: FloatExtensions.IsDefault
+- uid: BB84.Extensions.FloatExtensions.IsNegative(System.Nullable{System.Single})
+  name: IsNegative(float?)
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNegative_System_Nullable_System_Single__
+  commentId: M:BB84.Extensions.FloatExtensions.IsNegative(System.Nullable{System.Single})
+  name.vb: IsNegative(Single?)
+  fullName: BB84.Extensions.FloatExtensions.IsNegative(float?)
+  fullName.vb: BB84.Extensions.FloatExtensions.IsNegative(Single?)
+  nameWithType: FloatExtensions.IsNegative(float?)
+  nameWithType.vb: FloatExtensions.IsNegative(Single?)
+- uid: BB84.Extensions.FloatExtensions.IsNegative(System.Single)
+  name: IsNegative(float)
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNegative_System_Single_
+  commentId: M:BB84.Extensions.FloatExtensions.IsNegative(System.Single)
+  name.vb: IsNegative(Single)
+  fullName: BB84.Extensions.FloatExtensions.IsNegative(float)
+  fullName.vb: BB84.Extensions.FloatExtensions.IsNegative(Single)
+  nameWithType: FloatExtensions.IsNegative(float)
+  nameWithType.vb: FloatExtensions.IsNegative(Single)
+- uid: BB84.Extensions.FloatExtensions.IsNegative*
+  name: IsNegative
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNegative_
+  commentId: Overload:BB84.Extensions.FloatExtensions.IsNegative
+  isSpec: "True"
+  fullName: BB84.Extensions.FloatExtensions.IsNegative
+  nameWithType: FloatExtensions.IsNegative
+- uid: BB84.Extensions.FloatExtensions.IsNonNegative(System.Nullable{System.Single})
+  name: IsNonNegative(float?)
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNonNegative_System_Nullable_System_Single__
+  commentId: M:BB84.Extensions.FloatExtensions.IsNonNegative(System.Nullable{System.Single})
+  name.vb: IsNonNegative(Single?)
+  fullName: BB84.Extensions.FloatExtensions.IsNonNegative(float?)
+  fullName.vb: BB84.Extensions.FloatExtensions.IsNonNegative(Single?)
+  nameWithType: FloatExtensions.IsNonNegative(float?)
+  nameWithType.vb: FloatExtensions.IsNonNegative(Single?)
+- uid: BB84.Extensions.FloatExtensions.IsNonNegative(System.Single)
+  name: IsNonNegative(float)
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNonNegative_System_Single_
+  commentId: M:BB84.Extensions.FloatExtensions.IsNonNegative(System.Single)
+  name.vb: IsNonNegative(Single)
+  fullName: BB84.Extensions.FloatExtensions.IsNonNegative(float)
+  fullName.vb: BB84.Extensions.FloatExtensions.IsNonNegative(Single)
+  nameWithType: FloatExtensions.IsNonNegative(float)
+  nameWithType.vb: FloatExtensions.IsNonNegative(Single)
+- uid: BB84.Extensions.FloatExtensions.IsNonNegative*
+  name: IsNonNegative
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNonNegative_
+  commentId: Overload:BB84.Extensions.FloatExtensions.IsNonNegative
+  isSpec: "True"
+  fullName: BB84.Extensions.FloatExtensions.IsNonNegative
+  nameWithType: FloatExtensions.IsNonNegative
+- uid: BB84.Extensions.FloatExtensions.IsNonPositive(System.Nullable{System.Single})
+  name: IsNonPositive(float?)
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNonPositive_System_Nullable_System_Single__
+  commentId: M:BB84.Extensions.FloatExtensions.IsNonPositive(System.Nullable{System.Single})
+  name.vb: IsNonPositive(Single?)
+  fullName: BB84.Extensions.FloatExtensions.IsNonPositive(float?)
+  fullName.vb: BB84.Extensions.FloatExtensions.IsNonPositive(Single?)
+  nameWithType: FloatExtensions.IsNonPositive(float?)
+  nameWithType.vb: FloatExtensions.IsNonPositive(Single?)
+- uid: BB84.Extensions.FloatExtensions.IsNonPositive(System.Single)
+  name: IsNonPositive(float)
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNonPositive_System_Single_
+  commentId: M:BB84.Extensions.FloatExtensions.IsNonPositive(System.Single)
+  name.vb: IsNonPositive(Single)
+  fullName: BB84.Extensions.FloatExtensions.IsNonPositive(float)
+  fullName.vb: BB84.Extensions.FloatExtensions.IsNonPositive(Single)
+  nameWithType: FloatExtensions.IsNonPositive(float)
+  nameWithType.vb: FloatExtensions.IsNonPositive(Single)
+- uid: BB84.Extensions.FloatExtensions.IsNonPositive*
+  name: IsNonPositive
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNonPositive_
+  commentId: Overload:BB84.Extensions.FloatExtensions.IsNonPositive
+  isSpec: "True"
+  fullName: BB84.Extensions.FloatExtensions.IsNonPositive
+  nameWithType: FloatExtensions.IsNonPositive
 - uid: BB84.Extensions.FloatExtensions.IsNotDefault(System.Nullable{System.Single})
   name: IsNotDefault(float?)
   href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsNotDefault_System_Nullable_System_Single__
@@ -1213,6 +1488,31 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.FloatExtensions.IsNull
   nameWithType: FloatExtensions.IsNull
+- uid: BB84.Extensions.FloatExtensions.IsPositive(System.Nullable{System.Single})
+  name: IsPositive(float?)
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsPositive_System_Nullable_System_Single__
+  commentId: M:BB84.Extensions.FloatExtensions.IsPositive(System.Nullable{System.Single})
+  name.vb: IsPositive(Single?)
+  fullName: BB84.Extensions.FloatExtensions.IsPositive(float?)
+  fullName.vb: BB84.Extensions.FloatExtensions.IsPositive(Single?)
+  nameWithType: FloatExtensions.IsPositive(float?)
+  nameWithType.vb: FloatExtensions.IsPositive(Single?)
+- uid: BB84.Extensions.FloatExtensions.IsPositive(System.Single)
+  name: IsPositive(float)
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsPositive_System_Single_
+  commentId: M:BB84.Extensions.FloatExtensions.IsPositive(System.Single)
+  name.vb: IsPositive(Single)
+  fullName: BB84.Extensions.FloatExtensions.IsPositive(float)
+  fullName.vb: BB84.Extensions.FloatExtensions.IsPositive(Single)
+  nameWithType: FloatExtensions.IsPositive(float)
+  nameWithType.vb: FloatExtensions.IsPositive(Single)
+- uid: BB84.Extensions.FloatExtensions.IsPositive*
+  name: IsPositive
+  href: api/BB84.Extensions.FloatExtensions.html#BB84_Extensions_FloatExtensions_IsPositive_
+  commentId: Overload:BB84.Extensions.FloatExtensions.IsPositive
+  isSpec: "True"
+  fullName: BB84.Extensions.FloatExtensions.IsPositive
+  nameWithType: FloatExtensions.IsPositive
 - uid: BB84.Extensions.HttpClientExtensions
   name: HttpClientExtensions
   href: api/BB84.Extensions.HttpClientExtensions.html
@@ -1419,6 +1719,81 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.IntegerExtensions.IsDefault
   nameWithType: IntegerExtensions.IsDefault
+- uid: BB84.Extensions.IntegerExtensions.IsNegative(System.Int32)
+  name: IsNegative(int)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNegative_System_Int32_
+  commentId: M:BB84.Extensions.IntegerExtensions.IsNegative(System.Int32)
+  name.vb: IsNegative(Integer)
+  fullName: BB84.Extensions.IntegerExtensions.IsNegative(int)
+  fullName.vb: BB84.Extensions.IntegerExtensions.IsNegative(Integer)
+  nameWithType: IntegerExtensions.IsNegative(int)
+  nameWithType.vb: IntegerExtensions.IsNegative(Integer)
+- uid: BB84.Extensions.IntegerExtensions.IsNegative(System.Nullable{System.Int32})
+  name: IsNegative(int?)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNegative_System_Nullable_System_Int32__
+  commentId: M:BB84.Extensions.IntegerExtensions.IsNegative(System.Nullable{System.Int32})
+  name.vb: IsNegative(Integer?)
+  fullName: BB84.Extensions.IntegerExtensions.IsNegative(int?)
+  fullName.vb: BB84.Extensions.IntegerExtensions.IsNegative(Integer?)
+  nameWithType: IntegerExtensions.IsNegative(int?)
+  nameWithType.vb: IntegerExtensions.IsNegative(Integer?)
+- uid: BB84.Extensions.IntegerExtensions.IsNegative*
+  name: IsNegative
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNegative_
+  commentId: Overload:BB84.Extensions.IntegerExtensions.IsNegative
+  isSpec: "True"
+  fullName: BB84.Extensions.IntegerExtensions.IsNegative
+  nameWithType: IntegerExtensions.IsNegative
+- uid: BB84.Extensions.IntegerExtensions.IsNonNegative(System.Int32)
+  name: IsNonNegative(int)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNonNegative_System_Int32_
+  commentId: M:BB84.Extensions.IntegerExtensions.IsNonNegative(System.Int32)
+  name.vb: IsNonNegative(Integer)
+  fullName: BB84.Extensions.IntegerExtensions.IsNonNegative(int)
+  fullName.vb: BB84.Extensions.IntegerExtensions.IsNonNegative(Integer)
+  nameWithType: IntegerExtensions.IsNonNegative(int)
+  nameWithType.vb: IntegerExtensions.IsNonNegative(Integer)
+- uid: BB84.Extensions.IntegerExtensions.IsNonNegative(System.Nullable{System.Int32})
+  name: IsNonNegative(int?)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNonNegative_System_Nullable_System_Int32__
+  commentId: M:BB84.Extensions.IntegerExtensions.IsNonNegative(System.Nullable{System.Int32})
+  name.vb: IsNonNegative(Integer?)
+  fullName: BB84.Extensions.IntegerExtensions.IsNonNegative(int?)
+  fullName.vb: BB84.Extensions.IntegerExtensions.IsNonNegative(Integer?)
+  nameWithType: IntegerExtensions.IsNonNegative(int?)
+  nameWithType.vb: IntegerExtensions.IsNonNegative(Integer?)
+- uid: BB84.Extensions.IntegerExtensions.IsNonNegative*
+  name: IsNonNegative
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNonNegative_
+  commentId: Overload:BB84.Extensions.IntegerExtensions.IsNonNegative
+  isSpec: "True"
+  fullName: BB84.Extensions.IntegerExtensions.IsNonNegative
+  nameWithType: IntegerExtensions.IsNonNegative
+- uid: BB84.Extensions.IntegerExtensions.IsNonPositive(System.Int32)
+  name: IsNonPositive(int)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNonPositive_System_Int32_
+  commentId: M:BB84.Extensions.IntegerExtensions.IsNonPositive(System.Int32)
+  name.vb: IsNonPositive(Integer)
+  fullName: BB84.Extensions.IntegerExtensions.IsNonPositive(int)
+  fullName.vb: BB84.Extensions.IntegerExtensions.IsNonPositive(Integer)
+  nameWithType: IntegerExtensions.IsNonPositive(int)
+  nameWithType.vb: IntegerExtensions.IsNonPositive(Integer)
+- uid: BB84.Extensions.IntegerExtensions.IsNonPositive(System.Nullable{System.Int32})
+  name: IsNonPositive(int?)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNonPositive_System_Nullable_System_Int32__
+  commentId: M:BB84.Extensions.IntegerExtensions.IsNonPositive(System.Nullable{System.Int32})
+  name.vb: IsNonPositive(Integer?)
+  fullName: BB84.Extensions.IntegerExtensions.IsNonPositive(int?)
+  fullName.vb: BB84.Extensions.IntegerExtensions.IsNonPositive(Integer?)
+  nameWithType: IntegerExtensions.IsNonPositive(int?)
+  nameWithType.vb: IntegerExtensions.IsNonPositive(Integer?)
+- uid: BB84.Extensions.IntegerExtensions.IsNonPositive*
+  name: IsNonPositive
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNonPositive_
+  commentId: Overload:BB84.Extensions.IntegerExtensions.IsNonPositive
+  isSpec: "True"
+  fullName: BB84.Extensions.IntegerExtensions.IsNonPositive
+  nameWithType: IntegerExtensions.IsNonPositive
 - uid: BB84.Extensions.IntegerExtensions.IsNotDefault(System.Int32)
   name: IsNotDefault(int)
   href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsNotDefault_System_Int32_
@@ -1476,6 +1851,31 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.IntegerExtensions.IsNull
   nameWithType: IntegerExtensions.IsNull
+- uid: BB84.Extensions.IntegerExtensions.IsPositive(System.Int32)
+  name: IsPositive(int)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsPositive_System_Int32_
+  commentId: M:BB84.Extensions.IntegerExtensions.IsPositive(System.Int32)
+  name.vb: IsPositive(Integer)
+  fullName: BB84.Extensions.IntegerExtensions.IsPositive(int)
+  fullName.vb: BB84.Extensions.IntegerExtensions.IsPositive(Integer)
+  nameWithType: IntegerExtensions.IsPositive(int)
+  nameWithType.vb: IntegerExtensions.IsPositive(Integer)
+- uid: BB84.Extensions.IntegerExtensions.IsPositive(System.Nullable{System.Int32})
+  name: IsPositive(int?)
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsPositive_System_Nullable_System_Int32__
+  commentId: M:BB84.Extensions.IntegerExtensions.IsPositive(System.Nullable{System.Int32})
+  name.vb: IsPositive(Integer?)
+  fullName: BB84.Extensions.IntegerExtensions.IsPositive(int?)
+  fullName.vb: BB84.Extensions.IntegerExtensions.IsPositive(Integer?)
+  nameWithType: IntegerExtensions.IsPositive(int?)
+  nameWithType.vb: IntegerExtensions.IsPositive(Integer?)
+- uid: BB84.Extensions.IntegerExtensions.IsPositive*
+  name: IsPositive
+  href: api/BB84.Extensions.IntegerExtensions.html#BB84_Extensions_IntegerExtensions_IsPositive_
+  commentId: Overload:BB84.Extensions.IntegerExtensions.IsPositive
+  isSpec: "True"
+  fullName: BB84.Extensions.IntegerExtensions.IsPositive
+  nameWithType: IntegerExtensions.IsPositive
 - uid: BB84.Extensions.ListExtensions
   name: ListExtensions
   href: api/BB84.Extensions.ListExtensions.html
@@ -1593,6 +1993,81 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.LongExtensions.IsDefault
   nameWithType: LongExtensions.IsDefault
+- uid: BB84.Extensions.LongExtensions.IsNegative(System.Int64)
+  name: IsNegative(long)
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNegative_System_Int64_
+  commentId: M:BB84.Extensions.LongExtensions.IsNegative(System.Int64)
+  name.vb: IsNegative(Long)
+  fullName: BB84.Extensions.LongExtensions.IsNegative(long)
+  fullName.vb: BB84.Extensions.LongExtensions.IsNegative(Long)
+  nameWithType: LongExtensions.IsNegative(long)
+  nameWithType.vb: LongExtensions.IsNegative(Long)
+- uid: BB84.Extensions.LongExtensions.IsNegative(System.Nullable{System.Int64})
+  name: IsNegative(long?)
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNegative_System_Nullable_System_Int64__
+  commentId: M:BB84.Extensions.LongExtensions.IsNegative(System.Nullable{System.Int64})
+  name.vb: IsNegative(Long?)
+  fullName: BB84.Extensions.LongExtensions.IsNegative(long?)
+  fullName.vb: BB84.Extensions.LongExtensions.IsNegative(Long?)
+  nameWithType: LongExtensions.IsNegative(long?)
+  nameWithType.vb: LongExtensions.IsNegative(Long?)
+- uid: BB84.Extensions.LongExtensions.IsNegative*
+  name: IsNegative
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNegative_
+  commentId: Overload:BB84.Extensions.LongExtensions.IsNegative
+  isSpec: "True"
+  fullName: BB84.Extensions.LongExtensions.IsNegative
+  nameWithType: LongExtensions.IsNegative
+- uid: BB84.Extensions.LongExtensions.IsNonNegative(System.Int64)
+  name: IsNonNegative(long)
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNonNegative_System_Int64_
+  commentId: M:BB84.Extensions.LongExtensions.IsNonNegative(System.Int64)
+  name.vb: IsNonNegative(Long)
+  fullName: BB84.Extensions.LongExtensions.IsNonNegative(long)
+  fullName.vb: BB84.Extensions.LongExtensions.IsNonNegative(Long)
+  nameWithType: LongExtensions.IsNonNegative(long)
+  nameWithType.vb: LongExtensions.IsNonNegative(Long)
+- uid: BB84.Extensions.LongExtensions.IsNonNegative(System.Nullable{System.Int64})
+  name: IsNonNegative(long?)
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNonNegative_System_Nullable_System_Int64__
+  commentId: M:BB84.Extensions.LongExtensions.IsNonNegative(System.Nullable{System.Int64})
+  name.vb: IsNonNegative(Long?)
+  fullName: BB84.Extensions.LongExtensions.IsNonNegative(long?)
+  fullName.vb: BB84.Extensions.LongExtensions.IsNonNegative(Long?)
+  nameWithType: LongExtensions.IsNonNegative(long?)
+  nameWithType.vb: LongExtensions.IsNonNegative(Long?)
+- uid: BB84.Extensions.LongExtensions.IsNonNegative*
+  name: IsNonNegative
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNonNegative_
+  commentId: Overload:BB84.Extensions.LongExtensions.IsNonNegative
+  isSpec: "True"
+  fullName: BB84.Extensions.LongExtensions.IsNonNegative
+  nameWithType: LongExtensions.IsNonNegative
+- uid: BB84.Extensions.LongExtensions.IsNonPositive(System.Int64)
+  name: IsNonPositive(long)
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNonPositive_System_Int64_
+  commentId: M:BB84.Extensions.LongExtensions.IsNonPositive(System.Int64)
+  name.vb: IsNonPositive(Long)
+  fullName: BB84.Extensions.LongExtensions.IsNonPositive(long)
+  fullName.vb: BB84.Extensions.LongExtensions.IsNonPositive(Long)
+  nameWithType: LongExtensions.IsNonPositive(long)
+  nameWithType.vb: LongExtensions.IsNonPositive(Long)
+- uid: BB84.Extensions.LongExtensions.IsNonPositive(System.Nullable{System.Int64})
+  name: IsNonPositive(long?)
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNonPositive_System_Nullable_System_Int64__
+  commentId: M:BB84.Extensions.LongExtensions.IsNonPositive(System.Nullable{System.Int64})
+  name.vb: IsNonPositive(Long?)
+  fullName: BB84.Extensions.LongExtensions.IsNonPositive(long?)
+  fullName.vb: BB84.Extensions.LongExtensions.IsNonPositive(Long?)
+  nameWithType: LongExtensions.IsNonPositive(long?)
+  nameWithType.vb: LongExtensions.IsNonPositive(Long?)
+- uid: BB84.Extensions.LongExtensions.IsNonPositive*
+  name: IsNonPositive
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNonPositive_
+  commentId: Overload:BB84.Extensions.LongExtensions.IsNonPositive
+  isSpec: "True"
+  fullName: BB84.Extensions.LongExtensions.IsNonPositive
+  nameWithType: LongExtensions.IsNonPositive
 - uid: BB84.Extensions.LongExtensions.IsNotDefault(System.Int64)
   name: IsNotDefault(long)
   href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsNotDefault_System_Int64_
@@ -1650,6 +2125,31 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.LongExtensions.IsNull
   nameWithType: LongExtensions.IsNull
+- uid: BB84.Extensions.LongExtensions.IsPositive(System.Int64)
+  name: IsPositive(long)
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsPositive_System_Int64_
+  commentId: M:BB84.Extensions.LongExtensions.IsPositive(System.Int64)
+  name.vb: IsPositive(Long)
+  fullName: BB84.Extensions.LongExtensions.IsPositive(long)
+  fullName.vb: BB84.Extensions.LongExtensions.IsPositive(Long)
+  nameWithType: LongExtensions.IsPositive(long)
+  nameWithType.vb: LongExtensions.IsPositive(Long)
+- uid: BB84.Extensions.LongExtensions.IsPositive(System.Nullable{System.Int64})
+  name: IsPositive(long?)
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsPositive_System_Nullable_System_Int64__
+  commentId: M:BB84.Extensions.LongExtensions.IsPositive(System.Nullable{System.Int64})
+  name.vb: IsPositive(Long?)
+  fullName: BB84.Extensions.LongExtensions.IsPositive(long?)
+  fullName.vb: BB84.Extensions.LongExtensions.IsPositive(Long?)
+  nameWithType: LongExtensions.IsPositive(long?)
+  nameWithType.vb: LongExtensions.IsPositive(Long?)
+- uid: BB84.Extensions.LongExtensions.IsPositive*
+  name: IsPositive
+  href: api/BB84.Extensions.LongExtensions.html#BB84_Extensions_LongExtensions_IsPositive_
+  commentId: Overload:BB84.Extensions.LongExtensions.IsPositive
+  isSpec: "True"
+  fullName: BB84.Extensions.LongExtensions.IsPositive
+  nameWithType: LongExtensions.IsPositive
 - uid: BB84.Extensions.ObjectExtensions
   name: ObjectExtensions
   href: api/BB84.Extensions.ObjectExtensions.html
@@ -1954,6 +2454,81 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ShortExtensions.IsDefault
   nameWithType: ShortExtensions.IsDefault
+- uid: BB84.Extensions.ShortExtensions.IsNegative(System.Int16)
+  name: IsNegative(short)
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNegative_System_Int16_
+  commentId: M:BB84.Extensions.ShortExtensions.IsNegative(System.Int16)
+  name.vb: IsNegative(Short)
+  fullName: BB84.Extensions.ShortExtensions.IsNegative(short)
+  fullName.vb: BB84.Extensions.ShortExtensions.IsNegative(Short)
+  nameWithType: ShortExtensions.IsNegative(short)
+  nameWithType.vb: ShortExtensions.IsNegative(Short)
+- uid: BB84.Extensions.ShortExtensions.IsNegative(System.Nullable{System.Int16})
+  name: IsNegative(short?)
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNegative_System_Nullable_System_Int16__
+  commentId: M:BB84.Extensions.ShortExtensions.IsNegative(System.Nullable{System.Int16})
+  name.vb: IsNegative(Short?)
+  fullName: BB84.Extensions.ShortExtensions.IsNegative(short?)
+  fullName.vb: BB84.Extensions.ShortExtensions.IsNegative(Short?)
+  nameWithType: ShortExtensions.IsNegative(short?)
+  nameWithType.vb: ShortExtensions.IsNegative(Short?)
+- uid: BB84.Extensions.ShortExtensions.IsNegative*
+  name: IsNegative
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNegative_
+  commentId: Overload:BB84.Extensions.ShortExtensions.IsNegative
+  isSpec: "True"
+  fullName: BB84.Extensions.ShortExtensions.IsNegative
+  nameWithType: ShortExtensions.IsNegative
+- uid: BB84.Extensions.ShortExtensions.IsNonNegative(System.Int16)
+  name: IsNonNegative(short)
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNonNegative_System_Int16_
+  commentId: M:BB84.Extensions.ShortExtensions.IsNonNegative(System.Int16)
+  name.vb: IsNonNegative(Short)
+  fullName: BB84.Extensions.ShortExtensions.IsNonNegative(short)
+  fullName.vb: BB84.Extensions.ShortExtensions.IsNonNegative(Short)
+  nameWithType: ShortExtensions.IsNonNegative(short)
+  nameWithType.vb: ShortExtensions.IsNonNegative(Short)
+- uid: BB84.Extensions.ShortExtensions.IsNonNegative(System.Nullable{System.Int16})
+  name: IsNonNegative(short?)
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNonNegative_System_Nullable_System_Int16__
+  commentId: M:BB84.Extensions.ShortExtensions.IsNonNegative(System.Nullable{System.Int16})
+  name.vb: IsNonNegative(Short?)
+  fullName: BB84.Extensions.ShortExtensions.IsNonNegative(short?)
+  fullName.vb: BB84.Extensions.ShortExtensions.IsNonNegative(Short?)
+  nameWithType: ShortExtensions.IsNonNegative(short?)
+  nameWithType.vb: ShortExtensions.IsNonNegative(Short?)
+- uid: BB84.Extensions.ShortExtensions.IsNonNegative*
+  name: IsNonNegative
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNonNegative_
+  commentId: Overload:BB84.Extensions.ShortExtensions.IsNonNegative
+  isSpec: "True"
+  fullName: BB84.Extensions.ShortExtensions.IsNonNegative
+  nameWithType: ShortExtensions.IsNonNegative
+- uid: BB84.Extensions.ShortExtensions.IsNonPositive(System.Int16)
+  name: IsNonPositive(short)
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNonPositive_System_Int16_
+  commentId: M:BB84.Extensions.ShortExtensions.IsNonPositive(System.Int16)
+  name.vb: IsNonPositive(Short)
+  fullName: BB84.Extensions.ShortExtensions.IsNonPositive(short)
+  fullName.vb: BB84.Extensions.ShortExtensions.IsNonPositive(Short)
+  nameWithType: ShortExtensions.IsNonPositive(short)
+  nameWithType.vb: ShortExtensions.IsNonPositive(Short)
+- uid: BB84.Extensions.ShortExtensions.IsNonPositive(System.Nullable{System.Int16})
+  name: IsNonPositive(short?)
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNonPositive_System_Nullable_System_Int16__
+  commentId: M:BB84.Extensions.ShortExtensions.IsNonPositive(System.Nullable{System.Int16})
+  name.vb: IsNonPositive(Short?)
+  fullName: BB84.Extensions.ShortExtensions.IsNonPositive(short?)
+  fullName.vb: BB84.Extensions.ShortExtensions.IsNonPositive(Short?)
+  nameWithType: ShortExtensions.IsNonPositive(short?)
+  nameWithType.vb: ShortExtensions.IsNonPositive(Short?)
+- uid: BB84.Extensions.ShortExtensions.IsNonPositive*
+  name: IsNonPositive
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNonPositive_
+  commentId: Overload:BB84.Extensions.ShortExtensions.IsNonPositive
+  isSpec: "True"
+  fullName: BB84.Extensions.ShortExtensions.IsNonPositive
+  nameWithType: ShortExtensions.IsNonPositive
 - uid: BB84.Extensions.ShortExtensions.IsNotDefault(System.Int16)
   name: IsNotDefault(short)
   href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsNotDefault_System_Int16_
@@ -2011,6 +2586,31 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ShortExtensions.IsNull
   nameWithType: ShortExtensions.IsNull
+- uid: BB84.Extensions.ShortExtensions.IsPositive(System.Int16)
+  name: IsPositive(short)
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsPositive_System_Int16_
+  commentId: M:BB84.Extensions.ShortExtensions.IsPositive(System.Int16)
+  name.vb: IsPositive(Short)
+  fullName: BB84.Extensions.ShortExtensions.IsPositive(short)
+  fullName.vb: BB84.Extensions.ShortExtensions.IsPositive(Short)
+  nameWithType: ShortExtensions.IsPositive(short)
+  nameWithType.vb: ShortExtensions.IsPositive(Short)
+- uid: BB84.Extensions.ShortExtensions.IsPositive(System.Nullable{System.Int16})
+  name: IsPositive(short?)
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsPositive_System_Nullable_System_Int16__
+  commentId: M:BB84.Extensions.ShortExtensions.IsPositive(System.Nullable{System.Int16})
+  name.vb: IsPositive(Short?)
+  fullName: BB84.Extensions.ShortExtensions.IsPositive(short?)
+  fullName.vb: BB84.Extensions.ShortExtensions.IsPositive(Short?)
+  nameWithType: ShortExtensions.IsPositive(short?)
+  nameWithType.vb: ShortExtensions.IsPositive(Short?)
+- uid: BB84.Extensions.ShortExtensions.IsPositive*
+  name: IsPositive
+  href: api/BB84.Extensions.ShortExtensions.html#BB84_Extensions_ShortExtensions_IsPositive_
+  commentId: Overload:BB84.Extensions.ShortExtensions.IsPositive
+  isSpec: "True"
+  fullName: BB84.Extensions.ShortExtensions.IsPositive
+  nameWithType: ShortExtensions.IsPositive
 - uid: BB84.Extensions.StreamExtensions
   name: StreamExtensions
   href: api/BB84.Extensions.StreamExtensions.html
