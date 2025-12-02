@@ -27,7 +27,7 @@
 
 ### Version Information
 
-- **Current Version**: 3.2.x (versioned using date-based scheme)
+- **Current Version**: 4.0.x (versioned using date-based scheme)
 - **Author**: Robert Peter Meyer
 - **Copyright**: © 2023 Robert Peter Meyer
 - **License**: MIT License
@@ -56,17 +56,17 @@ The project supports multiple .NET target frameworks to ensure broad compatibili
 
 - .NET Standard 2.0
 - .NET Standard 2.1
-- .NET Framework 4.6.2
+- .NET Framework 4.7.2
 - .NET Framework 4.8.1
 - .NET 8.0
-- .NET 9.0
+- .NET 10.0
 
 #### BB84.WinForms.Extensions
 
-- .NET Framework 4.6.2
+- .NET Framework 4.7.2
 - .NET Framework 4.8.1
 - .NET 8.0 (Windows)
-- .NET 9.0 (Windows)
+- .NET 10.0 (Windows)
 
 ### Build Configuration
 
