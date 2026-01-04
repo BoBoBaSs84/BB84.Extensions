@@ -80,6 +80,12 @@ public sealed partial class DateTimeExtensionTests
 		yield return new object[] { new DateTime(2024, 12, 31), 4, new DateTime(2025, 3, 31) };
 	}
 
+	public static IEnumerable<object[]> GetUntilTestData()
+	{
+		yield return new object[] { new DateTime(2000, 1, 1), new DateTime(2000, 1, 1), 1 };
+		yield return new object[] { new DateTime(2000, 1, 1), new DateTime(2000, 12, 31), 365 };
+	}
+
 	public static IEnumerable<object[]> GetWeekOfYearTestData()
 	{
 		yield return new object[] { new DateTime(2000, 3, 31), 13 };

@@ -92,7 +92,6 @@ public static class DateTimeExtensions
 	/// <exception cref="ArgumentOutOfRangeException">
 	/// Thrown if <paramref name="startMonth"/> is less than 1 or greater than 12.
 	/// </exception>
-
 	public static DateTime StartOfFiscalYear(this DateTime value, int startMonth = 10)
 	{
 		if (startMonth is < 1 or > 12)
@@ -133,6 +132,27 @@ public static class DateTimeExtensions
 	/// <returns>A <see cref="DateTime"/> instance representing the start of the year.</returns>
 	public static DateTime StartOfYear(this DateTime value)
 		=> new(value.Year, 1, 1);
+
+	/// <summary>
+	/// Returns an enumerable collection of dates from the start date to the end date, inclusive.
+	/// </summary>
+	/// <param name="startValue">The date to start from.</param>
+	/// <param name="endValue">The date to end at.</param>
+	/// <returns>
+	/// An <see cref="IEnumerable{DateTime}"/> containing all dates from <paramref name="startValue"/>
+	/// until <paramref name="endValue"/>, inclusive.
+	/// </returns>
+	/// <exception cref="ArgumentException">
+	/// Thrown if <paramref name="endValue"/> is less than <paramref name="startValue"/>.
+	/// </exception>
+	public static IEnumerable<DateTime> Until(this DateTime startValue, DateTime endValue)
+	{
+		if (endValue < startValue)
+			throw new ArgumentOutOfRangeException(nameof(endValue), "End date must be greater than or equal to start date.");
+
+		for (DateTime date = startValue.Date; date <= endValue.Date; date = date.AddDays(1))
+			yield return date;
+	}
 
 	/// <summary>
 	/// Calculates the week of the year for the specified <paramref name="value"/> according to the ISO 8601 standard.
