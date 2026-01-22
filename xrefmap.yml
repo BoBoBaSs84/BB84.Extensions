@@ -743,6 +743,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.DateTimeExtensions.StartOfYear
   nameWithType: DateTimeExtensions.StartOfYear
+- uid: BB84.Extensions.DateTimeExtensions.Until(System.DateTime,System.DateTime)
+  name: Until(DateTime, DateTime)
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_Until_System_DateTime_System_DateTime_
+  commentId: M:BB84.Extensions.DateTimeExtensions.Until(System.DateTime,System.DateTime)
+  name.vb: Until(Date, Date)
+  fullName: BB84.Extensions.DateTimeExtensions.Until(System.DateTime, System.DateTime)
+  fullName.vb: BB84.Extensions.DateTimeExtensions.Until(Date, Date)
+  nameWithType: DateTimeExtensions.Until(DateTime, DateTime)
+  nameWithType.vb: DateTimeExtensions.Until(Date, Date)
+- uid: BB84.Extensions.DateTimeExtensions.Until*
+  name: Until
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_Until_
+  commentId: Overload:BB84.Extensions.DateTimeExtensions.Until
+  isSpec: "True"
+  fullName: BB84.Extensions.DateTimeExtensions.Until
+  nameWithType: DateTimeExtensions.Until
 - uid: BB84.Extensions.DateTimeExtensions.WeekOfYear(System.DateTime)
   name: WeekOfYear(DateTime)
   href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_WeekOfYear_System_DateTime_

@@ -343,7 +343,7 @@ subtracting one day.</p>
 
   <h3 id="BB84_Extensions_DateTimeExtensions_StartOfFiscalYear_System_DateTime_System_Int32_" data-uid="BB84.Extensions.DateTimeExtensions.StartOfFiscalYear(System.DateTime,System.Int32)">
   StartOfFiscalYear(DateTime, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Calculates the start date of the fiscal year based on the specified start month.</p>
@@ -391,7 +391,7 @@ subtracting one day.</p>
 
   <h3 id="BB84_Extensions_DateTimeExtensions_StartOfMonth_System_DateTime_" data-uid="BB84.Extensions.DateTimeExtensions.StartOfMonth(System.DateTime)">
   StartOfMonth(DateTime)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Calculates the first day of the month for the specified <code class="paramref">value</code>.</p>
@@ -430,7 +430,7 @@ subtracting one day.</p>
 
   <h3 id="BB84_Extensions_DateTimeExtensions_StartOfWeek_System_DateTime_System_DayOfWeek_" data-uid="BB84.Extensions.DateTimeExtensions.StartOfWeek(System.DateTime,System.DayOfWeek)">
   StartOfWeek(DateTime, DayOfWeek)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Calculates the date of the start of the week for the specified <code class="paramref">value</code>,
@@ -478,7 +478,7 @@ ensure it falls within the same week.</p>
 
   <h3 id="BB84_Extensions_DateTimeExtensions_StartOfYear_System_DateTime_" data-uid="BB84.Extensions.DateTimeExtensions.StartOfYear(System.DateTime)">
   StartOfYear(DateTime)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> representing the first day of the year for the specified <code class="paramref">value</code>.</p>
@@ -513,11 +513,60 @@ ensure it falls within the same week.</p>
 
 
 
+  <a id="BB84_Extensions_DateTimeExtensions_Until_" data-uid="BB84.Extensions.DateTimeExtensions.Until*"></a>
+
+  <h3 id="BB84_Extensions_DateTimeExtensions_Until_System_DateTime_System_DateTime_" data-uid="BB84.Extensions.DateTimeExtensions.Until(System.DateTime,System.DateTime)">
+  Until(DateTime, DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an enumerable collection of dates from the start date to the end date, inclusive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;DateTime&gt; Until(this DateTime startValue, DateTime endValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The date to start from.</p>
+</dd>
+    <dt><code>endValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The date to end at.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</dt>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> containing all dates from <code class="paramref">startValue</code>
+until <code class="paramref">endValue</code>, inclusive.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown if <code class="paramref">endValue</code> is less than <code class="paramref">startValue</code>.</p>
+</dd>
+  </dl>
+
+
+
   <a id="BB84_Extensions_DateTimeExtensions_WeekOfYear_" data-uid="BB84.Extensions.DateTimeExtensions.WeekOfYear*"></a>
 
   <h3 id="BB84_Extensions_DateTimeExtensions_WeekOfYear_System_DateTime_" data-uid="BB84.Extensions.DateTimeExtensions.WeekOfYear(System.DateTime)">
   WeekOfYear(DateTime)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/DateTimeExtensions.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Calculates the week of the year for the specified <code class="paramref">value</code> according to the ISO 8601 standard.</p>
