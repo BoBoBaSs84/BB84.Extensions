@@ -65,6 +65,7 @@ public sealed partial class DateTimeExtensionTests
 	public static IEnumerable<object[]> GetStartOfFiscalYearTestData()
 	{
 		yield return new object[] { new DateTime(2001, 1, 1), 10, new DateTime(2000, 10, 1) };
+		yield return new object[] { new DateTime(2010, 10, 1), 10, new DateTime(2010, 10, 1) };
 		yield return new object[] { new DateTime(2023, 4, 6), 7, new DateTime(2022, 7, 1) };
 		yield return new object[] { new DateTime(2022, 9, 7), 1, new DateTime(2022, 1, 1) };
 		yield return new object[] { new DateTime(2013, 9, 8), 2, new DateTime(2013, 2, 1) };

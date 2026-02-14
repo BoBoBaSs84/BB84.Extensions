@@ -99,7 +99,7 @@ public static class DateTimeExtensions
 
 		DateTime startOfFiscalYear = new(value.Year, startMonth, 1);
 
-		return startOfFiscalYear < value ? startOfFiscalYear : startOfFiscalYear.AddYears(-1);
+		return startOfFiscalYear <= value ? startOfFiscalYear : startOfFiscalYear.AddYears(-1);
 	}
 
 	/// <summary>
