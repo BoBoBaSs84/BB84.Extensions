@@ -410,6 +410,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.WinForms.Extensions.Controls.FlagsCheckBox",
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.yml\" sourcestartlinenumber=\"1\">Represents a user control that displays a set of check boxes for selecting multiple values\nof an enum type marked with the <xref href=\"System.FlagsAttribute\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.WinForms.Extensions.Controls.FlagsRadioButton",
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.yml\" sourcestartlinenumber=\"1\">Represents a user control that displays a set of radio buttons for selecting multiple values\nof an enum type marked with the <xref href=\"System.FlagsAttribute\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.WinForms.Extensions.Controls.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.WinForms.Extensions.Controls.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.WinForms.Extensions.Controls",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BB84.WinForms.Extensions.DataGridExtensions.yml",
       "output": {
         ".html": {
@@ -449,6 +491,62 @@
       "IsMRef": true,
       "Title": "BB84.WinForms.Extensions.DateTimePickerExtensions",
       "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.DateTimePickerExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.DateTimePicker\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.DateTimePicker.Checked\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"System.Windows.Forms.DateTimePicker.Value\" data-throw-if-not-resolved=\"false\"></xref> and others.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.WinForms.Extensions.FlagsCheckBoxExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding and working with the <xref href=\"BB84.WinForms.Extensions.Controls.FlagsCheckBox\" data-throw-if-not-resolved=\"false\"></xref> control.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.WinForms.Extensions.FlagsRadioButtonExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding and working with the <xref href=\"BB84.WinForms.Extensions.Controls.FlagsRadioButton\" data-throw-if-not-resolved=\"false\"></xref> control.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers",
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.yml\" sourcestartlinenumber=\"1\">Provides helpers that resolve friendly names for enum values used by the flags controls.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.WinForms.Extensions.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.WinForms.Extensions.Helpers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.WinForms.Extensions.Helpers",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
