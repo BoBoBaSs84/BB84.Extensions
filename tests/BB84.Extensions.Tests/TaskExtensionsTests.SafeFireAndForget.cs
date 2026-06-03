@@ -8,31 +8,33 @@ namespace BB84.Extensions.Tests;
 public sealed partial class TaskExtensionsTests
 {
 	[TestMethod]
-	public void SafeFireAndForgetNoException()
+	public async Task SafeFireAndForgetNoException()
 	{
-		bool taskCompleted = false;
+		TaskCompletionSource<bool> tcs = new(TaskCreationOptions.RunContinuationsAsynchronously);
 		bool exceptionOccured = false;
 
-		AwaitableTask().SafeFireAndForget(() => taskCompleted = true, (e) => exceptionOccured = true);
+		AwaitableTask()
+			.SafeFireAndForget(() => tcs.TrySetResult(true), (e) => { exceptionOccured = true; tcs.TrySetResult(true); });
 
-		Task.Delay(100).Wait();
-
+		var completed = await Task.WhenAny(tcs.Task, Task.Delay(1000)).ConfigureAwait(false);
+		Assert.AreEqual(tcs.Task, completed, "Timed out waiting for task completion");
 		Assert.IsFalse(exceptionOccured);
-		Assert.IsTrue(taskCompleted);
+		Assert.IsTrue(tcs.Task.Result);
 	}
 
 	[TestMethod]
-	public void SafeFireAndForgetException()
+	public async Task SafeFireAndForgetException()
 	{
-		bool taskCompleted = false;
+		TaskCompletionSource<bool> tcs = new(TaskCreationOptions.RunContinuationsAsynchronously);
 		bool exceptionOccured = false;
 
-		AwaitableTask(true).SafeFireAndForget(() => taskCompleted = true, (e) => exceptionOccured = true);
+		AwaitableTask(true)
+			.SafeFireAndForget(() => tcs.TrySetResult(true), (e) => { exceptionOccured = true; tcs.TrySetResult(true); });
 
-		Task.Delay(200).Wait();
-
+		var completed = await Task.WhenAny(tcs.Task, Task.Delay(1000)).ConfigureAwait(false);
+		Assert.AreEqual(tcs.Task, completed, "Timed out waiting for task completion");
 		Assert.IsTrue(exceptionOccured);
-		Assert.IsTrue(taskCompleted);
+		Assert.IsTrue(tcs.Task.Result);
 	}
 
 	[TestMethod]
