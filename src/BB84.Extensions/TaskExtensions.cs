@@ -3,6 +3,9 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+#pragma warning disable CA1510 // Use ArgumentNullException throw helper
+using System.ComponentModel;
+
 namespace BB84.Extensions;
 
 /// <summary>
@@ -14,6 +17,7 @@ namespace BB84.Extensions;
 /// These methods are designed to simplify task handling in scenarios where synchronous or void-returning
 /// behavior is required. Use caution when blocking threads or converting tasks to void, as this can lead
 /// to potential deadlocks or performance issues in certain environments, such as UI applications.
+/// Prefer SafeFireAndForget over async void for observable, testable fire-and-forget semantics.
 /// </remarks>
 public static class TaskExtensions
 {
@@ -24,6 +28,8 @@ public static class TaskExtensions
 	/// <param name="task">The task to execute.</param>
 	/// <param name="onCompletion">The action to invoke if the task has been completed.</param>
 	/// <param name="onException">The action to invoke if an exception occurs.</param>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	[Obsolete("ToAsyncVoid is risky. Prefer TaskExtensions.SafeFireAndForget for observable fire-and-forget semantics.")]
 	public static async void ToAsyncVoid(this Task task, Action? onCompletion = null, Action<Exception>? onException = null)
 	{
 		try
@@ -47,6 +53,8 @@ public static class TaskExtensions
 	/// <param name="task">The task to await.</param>
 	/// <param name="onCompletion">The action to invoke if the task has been completed.</param>
 	/// <param name="onException">The action to invoke if an exception occurs.</param>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	[Obsolete("ToSyncVoid is risky. Prefer TaskExtensions.ToSafeSync for safer synchronous wait patterns.")]
 	public static void ToSyncVoid(this Task task, Action? onCompletion = null, Action<Exception>? onException = null)
 	{
 		try
@@ -72,11 +80,20 @@ public static class TaskExtensions
 	/// <param name="task">The task to get the result for.</param>
 	/// <param name="onCompletion">The action to invoke if the task has been completed.</param>
 	/// <param name="onException">The action to invoke if an exception occurs.</param>
+	/// <param name="timeout">
+	/// Optional timeout after which a <see cref="TimeoutException"/> is raised and handled by <paramref name="onException"/>.
+	/// </param>
 	/// <returns>The result <typeparamref name="T"/> or <see langword="null"/></returns>
-	public static T ToSafeSync<T>(this Task<T> task, Action? onCompletion = null, Action<Exception>? onException = null)
+	public static T ToSafeSync<T>(this Task<T> task, Action? onCompletion = null, Action<Exception>? onException = null, TimeSpan? timeout = null)
 	{
 		try
 		{
+			if (timeout.HasValue)
+			{
+				if (!task.Wait(timeout.Value))
+					throw new TimeoutException();
+			}
+
 			return task.GetAwaiter()
 				.GetResult();
 		}
@@ -84,6 +101,40 @@ public static class TaskExtensions
 		{
 			onException?.Invoke(ex);
 			return default!;
+		}
+		finally
+		{
+			onCompletion?.Invoke();
+		}
+	}
+
+	/// <summary>
+	/// Executes the provided <paramref name="task"/> synchronously and handles exceptions safely.
+	/// </summary>
+	/// <param name="task">The task to await.</param>
+	/// <param name="onCompletion">The action to invoke if the task has been completed.</param>
+	/// <param name="onException">The action to invoke if an exception occurs.</param>
+	/// <param name="timeout">
+	/// Optional timeout after which a <see cref="TimeoutException"/> is raised and handled by <paramref name="onException"/>.
+	/// </param>
+	public static void ToSafeSync(this Task task, Action? onCompletion = null, Action<Exception>? onException = null, TimeSpan? timeout = null)
+	{
+		try
+		{
+			if (timeout.HasValue)
+			{
+				if (!task.Wait(timeout.Value))
+					throw new TimeoutException();
+			}
+			else
+			{
+				// ensure any exception is rethrown and can be observed by the caller of onException
+				task.GetAwaiter().GetResult();
+			}
+		}
+		catch (Exception ex)
+		{
+			onException?.Invoke(ex);
 		}
 		finally
 		{
@@ -103,4 +154,30 @@ public static class TaskExtensions
 	/// <returns>The result produced by the completed task.</returns>
 	public static T AsSync<T>(this Task<T> task)
 		=> task.GetAwaiter().GetResult();
+
+	/// <summary>
+	/// Safely fire-and-forget a <see cref="Task"/> without using <c>async void</c>.
+	/// The task's completion and faulting are observed by continuations so exceptions can be handled.
+	/// </summary>
+	/// <param name="task">The task to run fire-and-forget.</param>
+	/// <param name="onCompletion">Optional action invoked after the task completes (successful or failed).</param>
+	/// <param name="onException">Optional action invoked when the task faults with an exception.</param>
+	public static void SafeFireAndForget(this Task task, Action? onCompletion = null, Action<Exception>? onException = null)
+	{
+		if (task is null)
+			throw new ArgumentNullException(nameof(task));
+
+		_ = task.ContinueWith(t =>
+		{
+			try
+			{
+				if (t.IsFaulted)
+					onException?.Invoke(t.Exception!.GetBaseException());
+			}
+			finally
+			{
+				onCompletion?.Invoke();
+			}
+		}, TaskScheduler.Default);
+	}
 }
