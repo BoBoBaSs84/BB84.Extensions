@@ -3042,22 +3042,31 @@ references:
   fullName.vb: BB84.Extensions.TaskExtensions.AsSync(Of T)(System.Threading.Tasks.Task(Of T))
   nameWithType: TaskExtensions.AsSync<T>(Task<T>)
   nameWithType.vb: TaskExtensions.AsSync(Of T)(Task(Of T))
-- uid: BB84.Extensions.TaskExtensions.ToAsyncVoid(System.Threading.Tasks.Task,System.Action,System.Action{System.Exception})
-  name: ToAsyncVoid(Task, Action?, Action<Exception>?)
-  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_ToAsyncVoid_System_Threading_Tasks_Task_System_Action_System_Action_System_Exception__
-  commentId: M:BB84.Extensions.TaskExtensions.ToAsyncVoid(System.Threading.Tasks.Task,System.Action,System.Action{System.Exception})
-  name.vb: ToAsyncVoid(Task, Action, Action(Of Exception))
-  fullName: BB84.Extensions.TaskExtensions.ToAsyncVoid(System.Threading.Tasks.Task, System.Action?, System.Action<System.Exception>?)
-  fullName.vb: BB84.Extensions.TaskExtensions.ToAsyncVoid(System.Threading.Tasks.Task, System.Action, System.Action(Of System.Exception))
-  nameWithType: TaskExtensions.ToAsyncVoid(Task, Action?, Action<Exception>?)
-  nameWithType.vb: TaskExtensions.ToAsyncVoid(Task, Action, Action(Of Exception))
-- uid: BB84.Extensions.TaskExtensions.ToAsyncVoid*
-  name: ToAsyncVoid
-  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_ToAsyncVoid_
-  commentId: Overload:BB84.Extensions.TaskExtensions.ToAsyncVoid
+- uid: BB84.Extensions.TaskExtensions.SafeFireAndForget(System.Threading.Tasks.Task,System.Action,System.Action{System.Exception})
+  name: SafeFireAndForget(Task, Action?, Action<Exception>?)
+  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_SafeFireAndForget_System_Threading_Tasks_Task_System_Action_System_Action_System_Exception__
+  commentId: M:BB84.Extensions.TaskExtensions.SafeFireAndForget(System.Threading.Tasks.Task,System.Action,System.Action{System.Exception})
+  name.vb: SafeFireAndForget(Task, Action, Action(Of Exception))
+  fullName: BB84.Extensions.TaskExtensions.SafeFireAndForget(System.Threading.Tasks.Task, System.Action?, System.Action<System.Exception>?)
+  fullName.vb: BB84.Extensions.TaskExtensions.SafeFireAndForget(System.Threading.Tasks.Task, System.Action, System.Action(Of System.Exception))
+  nameWithType: TaskExtensions.SafeFireAndForget(Task, Action?, Action<Exception>?)
+  nameWithType.vb: TaskExtensions.SafeFireAndForget(Task, Action, Action(Of Exception))
+- uid: BB84.Extensions.TaskExtensions.SafeFireAndForget*
+  name: SafeFireAndForget
+  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_SafeFireAndForget_
+  commentId: Overload:BB84.Extensions.TaskExtensions.SafeFireAndForget
   isSpec: "True"
-  fullName: BB84.Extensions.TaskExtensions.ToAsyncVoid
-  nameWithType: TaskExtensions.ToAsyncVoid
+  fullName: BB84.Extensions.TaskExtensions.SafeFireAndForget
+  nameWithType: TaskExtensions.SafeFireAndForget
+- uid: BB84.Extensions.TaskExtensions.ToSafeSync(System.Threading.Tasks.Task,System.Action,System.Action{System.Exception},System.Nullable{System.TimeSpan})
+  name: ToSafeSync(Task, Action?, Action<Exception>?, TimeSpan?)
+  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_ToSafeSync_System_Threading_Tasks_Task_System_Action_System_Action_System_Exception__System_Nullable_System_TimeSpan__
+  commentId: M:BB84.Extensions.TaskExtensions.ToSafeSync(System.Threading.Tasks.Task,System.Action,System.Action{System.Exception},System.Nullable{System.TimeSpan})
+  name.vb: ToSafeSync(Task, Action, Action(Of Exception), TimeSpan?)
+  fullName: BB84.Extensions.TaskExtensions.ToSafeSync(System.Threading.Tasks.Task, System.Action?, System.Action<System.Exception>?, System.TimeSpan?)
+  fullName.vb: BB84.Extensions.TaskExtensions.ToSafeSync(System.Threading.Tasks.Task, System.Action, System.Action(Of System.Exception), System.TimeSpan?)
+  nameWithType: TaskExtensions.ToSafeSync(Task, Action?, Action<Exception>?, TimeSpan?)
+  nameWithType.vb: TaskExtensions.ToSafeSync(Task, Action, Action(Of Exception), TimeSpan?)
 - uid: BB84.Extensions.TaskExtensions.ToSafeSync*
   name: ToSafeSync
   href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_ToSafeSync_
@@ -3065,31 +3074,15 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.TaskExtensions.ToSafeSync
   nameWithType: TaskExtensions.ToSafeSync
-- uid: BB84.Extensions.TaskExtensions.ToSafeSync``1(System.Threading.Tasks.Task{``0},System.Action,System.Action{System.Exception})
-  name: ToSafeSync<T>(Task<T>, Action?, Action<Exception>?)
-  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_ToSafeSync__1_System_Threading_Tasks_Task___0__System_Action_System_Action_System_Exception__
-  commentId: M:BB84.Extensions.TaskExtensions.ToSafeSync``1(System.Threading.Tasks.Task{``0},System.Action,System.Action{System.Exception})
-  name.vb: ToSafeSync(Of T)(Task(Of T), Action, Action(Of Exception))
-  fullName: BB84.Extensions.TaskExtensions.ToSafeSync<T>(System.Threading.Tasks.Task<T>, System.Action?, System.Action<System.Exception>?)
-  fullName.vb: BB84.Extensions.TaskExtensions.ToSafeSync(Of T)(System.Threading.Tasks.Task(Of T), System.Action, System.Action(Of System.Exception))
-  nameWithType: TaskExtensions.ToSafeSync<T>(Task<T>, Action?, Action<Exception>?)
-  nameWithType.vb: TaskExtensions.ToSafeSync(Of T)(Task(Of T), Action, Action(Of Exception))
-- uid: BB84.Extensions.TaskExtensions.ToSyncVoid(System.Threading.Tasks.Task,System.Action,System.Action{System.Exception})
-  name: ToSyncVoid(Task, Action?, Action<Exception>?)
-  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_ToSyncVoid_System_Threading_Tasks_Task_System_Action_System_Action_System_Exception__
-  commentId: M:BB84.Extensions.TaskExtensions.ToSyncVoid(System.Threading.Tasks.Task,System.Action,System.Action{System.Exception})
-  name.vb: ToSyncVoid(Task, Action, Action(Of Exception))
-  fullName: BB84.Extensions.TaskExtensions.ToSyncVoid(System.Threading.Tasks.Task, System.Action?, System.Action<System.Exception>?)
-  fullName.vb: BB84.Extensions.TaskExtensions.ToSyncVoid(System.Threading.Tasks.Task, System.Action, System.Action(Of System.Exception))
-  nameWithType: TaskExtensions.ToSyncVoid(Task, Action?, Action<Exception>?)
-  nameWithType.vb: TaskExtensions.ToSyncVoid(Task, Action, Action(Of Exception))
-- uid: BB84.Extensions.TaskExtensions.ToSyncVoid*
-  name: ToSyncVoid
-  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_ToSyncVoid_
-  commentId: Overload:BB84.Extensions.TaskExtensions.ToSyncVoid
-  isSpec: "True"
-  fullName: BB84.Extensions.TaskExtensions.ToSyncVoid
-  nameWithType: TaskExtensions.ToSyncVoid
+- uid: BB84.Extensions.TaskExtensions.ToSafeSync``1(System.Threading.Tasks.Task{``0},System.Action,System.Action{System.Exception},System.Nullable{System.TimeSpan})
+  name: ToSafeSync<T>(Task<T>, Action?, Action<Exception>?, TimeSpan?)
+  href: api/BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_ToSafeSync__1_System_Threading_Tasks_Task___0__System_Action_System_Action_System_Exception__System_Nullable_System_TimeSpan__
+  commentId: M:BB84.Extensions.TaskExtensions.ToSafeSync``1(System.Threading.Tasks.Task{``0},System.Action,System.Action{System.Exception},System.Nullable{System.TimeSpan})
+  name.vb: ToSafeSync(Of T)(Task(Of T), Action, Action(Of Exception), TimeSpan?)
+  fullName: BB84.Extensions.TaskExtensions.ToSafeSync<T>(System.Threading.Tasks.Task<T>, System.Action?, System.Action<System.Exception>?, System.TimeSpan?)
+  fullName.vb: BB84.Extensions.TaskExtensions.ToSafeSync(Of T)(System.Threading.Tasks.Task(Of T), System.Action, System.Action(Of System.Exception), System.TimeSpan?)
+  nameWithType: TaskExtensions.ToSafeSync<T>(Task<T>, Action?, Action<Exception>?, TimeSpan?)
+  nameWithType.vb: TaskExtensions.ToSafeSync(Of T)(Task(Of T), Action, Action(Of Exception), TimeSpan?)
 - uid: BB84.WinForms.Extensions
   name: BB84.WinForms.Extensions
   href: api/BB84.WinForms.Extensions.html
