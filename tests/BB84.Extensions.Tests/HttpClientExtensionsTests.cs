@@ -13,7 +13,7 @@ public sealed class HttpClientExtensionsTests
 {
 	[TestMethod]
 	[DataRow("https://example.com")]
-	public void WithBaseAddressTest(string baseAddress)
+	public void WithBaseAddressShouldSetBaseAddress(string baseAddress)
 	{
 		using HttpClient client = new HttpClient()
 			.WithBaseAddress(baseAddress);
@@ -22,19 +22,57 @@ public sealed class HttpClientExtensionsTests
 	}
 
 	[TestMethod]
+	[DataRow("https://example.com")]
+	public void WithBaseAddressWithUriKindShouldSetBaseAddress(string baseAddress)
+	{
+		using HttpClient client = new HttpClient()
+			.WithBaseAddress(baseAddress, UriKind.Absolute);
+
+		Assert.AreEqual($"{baseAddress}/", client.BaseAddress!.ToString());
+	}
+
+	[TestMethod]
+	[DataRow(null)]
+	public void WithBaseAddressWithNullShouldThrowArgumentNullException(string? baseAddress)
+	{
+		using HttpClient client = new();
+
+		Assert.Throws<ArgumentNullException>(() => client.WithBaseAddress(baseAddress!));
+	}
+
+	[TestMethod]
+	[DataRow("")]
+	[DataRow("   ")]
+	public void WithBaseAddressWithEmptyOrWhitespaceShouldThrowArgumentException(string baseAddress)
+	{
+		using HttpClient client = new();
+
+		Assert.Throws<ArgumentException>(() => client.WithBaseAddress(baseAddress));
+	}
+
+	[TestMethod]
+	[DataRow("not a uri")]
+	public void WithBaseAddressWithInvalidUriShouldThrowArgumentException(string baseAddress)
+	{
+		using HttpClient client = new();
+
+		Assert.Throws<ArgumentException>(() => client.WithBaseAddress(baseAddress));
+	}
+
+	[TestMethod]
 	[DataRow("FancyUserName", "FancyPassword")]
-	public void WithBasicAuthenticationTest(string username, string password)
+	public void WithBasicAuthenticationShouldSetAuthorizationHeader(string username, string password)
 	{
 		using HttpClient client = new HttpClient()
 			.WithBasicAuthentication(username, password);
-		
+
 		Assert.AreEqual("Basic", client.DefaultRequestHeaders.Authorization!.Scheme);
 		Assert.AreEqual(Convert.ToBase64String(Encoding.ASCII.GetBytes($"{username}:{password}")), client.DefaultRequestHeaders.Authorization.Parameter);
 	}
 
 	[TestMethod]
 	[DataRow("FancyUserName", "FancyPassword")]
-	public void WithBasicAuthenticationWithEncodingTest(string username, string password)
+	public void WithBasicAuthenticationWithEncodingShouldSetAuthorizationHeader(string username, string password)
 	{
 		using HttpClient client = new HttpClient()
 			.WithBasicAuthentication(username, password, Encoding.UTF8);
@@ -44,9 +82,36 @@ public sealed class HttpClientExtensionsTests
 	}
 
 	[TestMethod]
+	[DataRow(null, "password")]
+	public void WithBasicAuthenticationWithNullUsernameShouldThrowArgumentNullException(string? username, string password)
+	{
+		using HttpClient client = new();
+
+		Assert.Throws<ArgumentNullException>(() => client.WithBasicAuthentication(username!, password));
+	}
+
+	[TestMethod]
+	[DataRow("", "password")]
+	[DataRow("   ", "password")]
+	public void WithBasicAuthenticationWithEmptyOrWhitespaceUsernameShouldThrowArgumentException(string username, string password)
+	{
+		using HttpClient client = new();
+
+		Assert.Throws<ArgumentException>(() => client.WithBasicAuthentication(username, password));
+	}
+
+	[TestMethod]
+	[DataRow("username", null)]
+	public void WithBasicAuthenticationWithNullPasswordShouldThrowArgumentNullException(string username, string? password)
+	{
+		using HttpClient client = new();
+
+		Assert.Throws<ArgumentNullException>(() => client.WithBasicAuthentication(username, password!));
+	}
+
+	[TestMethod]
 	[DataRow("FancyToken")]
-	[DataRow("")]
-	public void WithBearerTokenTest(string token)
+	public void WithBearerTokenShouldSetAuthorizationHeader(string token)
 	{
 		using HttpClient client = new HttpClient()
 			.WithBearerToken(token);
@@ -55,9 +120,27 @@ public sealed class HttpClientExtensionsTests
 	}
 
 	[TestMethod]
+	[DataRow(null)]
+	public void WithBearerTokenWithNullShouldThrowArgumentNullException(string? token)
+	{
+		using HttpClient client = new();
+
+		Assert.Throws<ArgumentNullException>(() => client.WithBearerToken(token!));
+	}
+
+	[TestMethod]
+	[DataRow("")]
+	public void WithBearerTokenWithEmptyShouldThrowArgumentException(string token)
+	{
+		using HttpClient client = new();
+
+		Assert.Throws<ArgumentException>(() => client.WithBearerToken(token));
+	}
+
+	[TestMethod]
 	[DataRow("application/json")]
 	[DataRow("text/plain")]
-	public void WithMediaTypeTest(string mediaType)
+	public void WithMediaTypeShouldAddMediaTypeToAcceptHeader(string mediaType)
 	{
 		using HttpClient client = new HttpClient()
 			.WithMediaType(mediaType);
@@ -66,7 +149,18 @@ public sealed class HttpClientExtensionsTests
 	}
 
 	[TestMethod]
-	public void WithTimeout()
+	[DataRow("application/json")]
+	public void WithMediaTypeCalledTwiceShouldNotDuplicateEntry(string mediaType)
+	{
+		using HttpClient client = new HttpClient()
+			.WithMediaType(mediaType)
+			.WithMediaType(mediaType);
+
+		Assert.HasCount(1, client.DefaultRequestHeaders.Accept);
+	}
+
+	[TestMethod]
+	public void WithTimeoutShouldSetTimeout()
 	{
 		TimeSpan timeout = new(0, 0, 15);
 
@@ -76,3 +170,4 @@ public sealed class HttpClientExtensionsTests
 		Assert.AreEqual(timeout, client.Timeout);
 	}
 }
+

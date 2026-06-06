@@ -11,7 +11,7 @@ namespace BB84.Extensions.Tests;
 public sealed class HttpRequestMessageExtensionsTests
 {
 	[TestMethod]
-	public void WithBearerTokenTest()
+	public void WithBearerTokenShouldSetAuthorizationHeader()
 	{
 		string token = "test_token";
 		HttpRequestMessage httpRequestMessage = new();
@@ -24,7 +24,23 @@ public sealed class HttpRequestMessageExtensionsTests
 	}
 
 	[TestMethod]
-	public void WithMediaTypeTest()
+	public void WithBearerTokenWithNullShouldThrowArgumentNullException()
+	{
+		HttpRequestMessage httpRequestMessage = new();
+
+		Assert.Throws<ArgumentNullException>(() => httpRequestMessage.WithBearerToken(null!));
+	}
+
+	[TestMethod]
+	public void WithBearerTokenWithEmptyShouldThrowArgumentException()
+	{
+		HttpRequestMessage httpRequestMessage = new();
+
+		Assert.Throws<ArgumentException>(() => httpRequestMessage.WithBearerToken(string.Empty));
+	}
+
+	[TestMethod]
+	public void WithMediaTypeShouldAddMediaTypeToAcceptHeader()
 	{
 		string mediaType = "application/json";
 		HttpRequestMessage httpRequestMessage = new();
@@ -33,4 +49,16 @@ public sealed class HttpRequestMessageExtensionsTests
 
 		Assert.Contains(h => h.MediaType == mediaType, httpRequestMessage.Headers.Accept);
 	}
+
+	[TestMethod]
+	public void WithMediaTypeCalledTwiceShouldNotDuplicateEntry()
+	{
+		string mediaType = "application/json";
+		HttpRequestMessage httpRequestMessage = new();
+
+		httpRequestMessage.WithMediaType(mediaType).WithMediaType(mediaType);
+
+		Assert.HasCount(1, httpRequestMessage.Headers.Accept);
+	}
 }
+

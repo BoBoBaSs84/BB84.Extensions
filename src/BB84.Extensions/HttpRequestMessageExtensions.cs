@@ -31,6 +31,14 @@ public static class HttpRequestMessageExtensions
 	/// <returns>The same <see cref="HttpRequestMessage"/> instance, allowing for method chaining.</returns>
 	public static HttpRequestMessage WithBearerToken(this HttpRequestMessage httpRequestMessage, string token)
 	{
+#if NET6_0_OR_GREATER
+		ArgumentNullException.ThrowIfNull(token);
+#else
+		if (token is null)
+			throw new ArgumentNullException(nameof(token));
+#endif
+		if (string.IsNullOrEmpty(token))
+			throw new ArgumentException("The token must not be empty.", nameof(token));
 		httpRequestMessage.Headers.Authorization = new AuthenticationHeaderValue(Constants.HttpHeaders.BearerScheme, token);
 		return httpRequestMessage;
 	}
@@ -48,7 +56,8 @@ public static class HttpRequestMessageExtensions
 	/// <returns>The same <see cref="HttpRequestMessage"/> instance, allowing for method chaining.</returns>
 	public static HttpRequestMessage WithMediaType(this HttpRequestMessage httpRequestMessage, string mediaType)
 	{
-		httpRequestMessage.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(mediaType));
+		if (!httpRequestMessage.Headers.Accept.Any(h => h.MediaType == mediaType))
+			httpRequestMessage.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(mediaType));
 		return httpRequestMessage;
 	}
 }
