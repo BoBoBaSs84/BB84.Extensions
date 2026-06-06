@@ -54,7 +54,7 @@ public static class ListExtensions
 			throw new ArgumentNullException(nameof(list));
 #endif
 
-		if (items is null || items.Any().Equals(false))
+		if (items is null || !items.Any())
 			return;
 
 		items.ForEach(list.AddIfNotNull);

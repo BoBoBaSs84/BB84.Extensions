@@ -83,7 +83,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault(this short value)
-		=> value.Equals(default).Equals(false);
+		=> !value.Equals(default);
 
 	/// <summary>
 	/// Determines whether the specified short is not equal to its default value <see langword="null"/>.
@@ -94,7 +94,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault([NotNullWhen(true)] this short? value)
-		=> value.Equals(default).Equals(false);
+		=> !value.Equals(default);
 
 	/// <summary>
 	/// Determines whether the specified nullable short has a null value.
@@ -105,7 +105,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this short? value)
-		=> value.HasValue.Equals(false);
+		=> !value.HasValue;
 
 	/// <summary>
 	/// Determines whether the specified nullable short has a value.

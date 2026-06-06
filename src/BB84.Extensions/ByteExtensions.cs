@@ -109,7 +109,7 @@ public static partial class ByteExtensions
 		value = value.Trim();
 		bool isValidBase64 = (value.Length % 4 == 0) && Base64Regex.IsMatch(value);
 
-		if (isValidBase64.Equals(false))
+		if (!isValidBase64)
 			throw new ArgumentException($"{value} is not valid base64");
 
 		byte[] bytes = Convert.FromBase64String(value);
@@ -216,7 +216,7 @@ public static partial class ByteExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault(this byte value)
-		=> value.Equals(default).Equals(false);
+		=> !value.Equals(default);
 
 	/// <summary>
 	/// Determines whether the specified byte is not equal to its default value <see langword="null"/>.
@@ -227,7 +227,7 @@ public static partial class ByteExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault([NotNullWhen(true)] this byte? value)
-		=> value.Equals(default).Equals(false);
+		=> !value.Equals(default);
 
 	/// <summary>
 	/// Determines whether the specified byte is null.

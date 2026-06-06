@@ -137,7 +137,7 @@ public static class IntegerExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault(this int value)
-		=> value.Equals(default).Equals(false);
+		=> !value.Equals(default);
 
 	/// <summary>
 	/// Determines whether the specified integer is not equal to its default value <see langword="null"/>.
@@ -148,7 +148,7 @@ public static class IntegerExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault([NotNullWhen(true)] this int? value)
-		=> value.Equals(default).Equals(false);
+		=> !value.Equals(default);
 
 	/// <summary>
 	/// Determines whether the specified nullable integer has a null value.
@@ -159,7 +159,7 @@ public static class IntegerExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this int? value)
-		=> value.HasValue.Equals(false);
+		=> !value.HasValue;
 
 	/// <summary>
 	/// Determines whether the specified nullable integer has a non-null value.

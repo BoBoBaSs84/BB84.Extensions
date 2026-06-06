@@ -68,7 +68,7 @@ public static class DecimalExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault(this decimal value)
-		=> value.Equals(default).Equals(false);
+		=> !value.Equals(default);
 
 	/// <summary>
 	/// Determines whether the specified decimal is not equal to its default value <see langword="null"/>.
@@ -79,7 +79,7 @@ public static class DecimalExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault([NotNullWhen(true)] this decimal? value)
-		=> value.Equals(default).Equals(false);
+		=> !value.Equals(default);
 
 	/// <summary>
 	/// Determines whether the specified nullable decimal has a null value.
@@ -90,7 +90,7 @@ public static class DecimalExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this decimal? value)
-		=> value.HasValue.Equals(false);
+		=> !value.HasValue;
 
 	/// <summary>
 	/// Determines whether the specified nullable decimal has a value.
