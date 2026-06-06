@@ -11,7 +11,10 @@
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
     <File Path=".gitignore" />
+    <File Path="BB84.Extensions.slnx.licenseheader" />
+    <File Path="CODEOWNERS" />
     <File Path="CODE_OF_CONDUCT.md" />
     <File Path="Directory.Build.props" />
     <File Path="Directory.Build.targets" />
