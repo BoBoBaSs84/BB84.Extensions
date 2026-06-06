@@ -94,4 +94,41 @@ public static class ListExtensions
 	/// <returns>A random element from the <paramref name="list"/>.</returns>
 	public static T TakeRandom<T>(this IList<T> list)
 		=> list[RandomHelper.Random.Next(0, list.Count)];
+
+	/// <summary>
+	/// Returns a random element from the specified list, or the default value of
+	/// <typeparamref name="T"/> if the list is empty.
+	/// </summary>
+	/// <typeparam name="T">The type of elements in the list.</typeparam>
+	/// <param name="list">The list from which to take a random element.</param>
+	/// <returns>
+	/// A random element from <paramref name="list"/>, or <see langword="default"/> if the list is empty.
+	/// </returns>
+	public static T? TakeRandomOrDefault<T>(this IList<T> list)
+		=> list.Count == 0 ? default : list.TakeRandom();
+
+	/// <summary>
+	/// Attempts to retrieve a random element from the specified list.
+	/// </summary>
+	/// <typeparam name="T">The type of elements in the list.</typeparam>
+	/// <param name="list">The list from which to take a random element.</param>
+	/// <param name="result">
+	/// When this method returns <see langword="true"/>, contains a randomly selected element from
+	/// <paramref name="list"/>; otherwise, the default value of <typeparamref name="T"/>.
+	/// </param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="list"/> is not empty and a random element was
+	/// selected; otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool TryTakeRandom<T>(this IList<T> list, [MaybeNullWhen(false)] out T result)
+	{
+		if (list.Count == 0)
+		{
+			result = default;
+			return false;
+		}
+
+		result = list.TakeRandom();
+		return true;
+	}
 }

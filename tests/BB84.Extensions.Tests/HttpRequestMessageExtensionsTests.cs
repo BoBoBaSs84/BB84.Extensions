@@ -31,6 +31,6 @@ public sealed class HttpRequestMessageExtensionsTests
 
 		httpRequestMessage.WithMediaType(mediaType);
 
-		Assert.IsTrue(httpRequestMessage.Headers.Accept.Any(h => h.MediaType == mediaType));
+		Assert.Contains(h => h.MediaType == mediaType, httpRequestMessage.Headers.Accept);
 	}
 }

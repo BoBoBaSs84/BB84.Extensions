@@ -136,4 +136,32 @@ public static class EnumerableExtensions
 	/// <returns>A random item from the collection.</returns>
 	public static T TakeRandom<T>(this IEnumerable<T> values)
 		=> values.ToArray().TakeRandom();
+
+	/// <summary>
+	/// Returns a randomly chosen item from the collection of <paramref name="values"/>, or the
+	/// default value of <typeparamref name="T"/> if the collection is empty.
+	/// </summary>
+	/// <typeparam name="T">The type of object in the collection.</typeparam>
+	/// <param name="values">The collection of objects to choose from.</param>
+	/// <returns>
+	/// A random item from the collection, or <see langword="default"/> if the collection is empty.
+	/// </returns>
+	public static T? TakeRandomOrDefault<T>(this IEnumerable<T> values)
+		=> values.ToArray().TakeRandomOrDefault();
+
+	/// <summary>
+	/// Attempts to retrieve a randomly chosen item from the collection of <paramref name="values"/>.
+	/// </summary>
+	/// <typeparam name="T">The type of object in the collection.</typeparam>
+	/// <param name="values">The collection of objects to choose from.</param>
+	/// <param name="result">
+	/// When this method returns <see langword="true"/>, contains a randomly selected element from
+	/// <paramref name="values"/>; otherwise, the default value of <typeparamref name="T"/>.
+	/// </param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="values"/> is not empty and a random element was
+	/// selected; otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool TryTakeRandom<T>(this IEnumerable<T> values, [MaybeNullWhen(false)] out T result)
+		=> values.ToArray().TryTakeRandom(out result);
 }

@@ -8,12 +8,56 @@ namespace BB84.Extensions.Tests;
 public sealed partial class ArrayExtensionsTests
 {
 	[TestMethod]
-	public void TakeRandom()
+	public void TakeRandomShouldReturnElementFromArray()
 	{
-		int[] ints = [1, 2, 3];
+		int[] ints = [1, 2, 3, 4, 5];
 
-		int i = ints.TakeRandom();
+		int result = ints.TakeRandom();
 
-		Assert.IsTrue(ints.Contains(i));
+		Assert.Contains(result, ints);
+	}
+
+	[TestMethod]
+	public void TakeRandomOrDefaultWithNonEmptyArrayShouldReturnElement()
+	{
+		int[] ints = [1, 2, 3, 4, 5];
+
+		int? result = ints.TakeRandomOrDefault();
+
+		Assert.IsNotNull(result);
+		Assert.Contains(result.Value, ints);
+	}
+
+	[TestMethod]
+	public void TakeRandomOrDefaultWithEmptyArrayShouldReturnDefault()
+	{
+		int[] ints = [];
+
+		int result = ints.TakeRandomOrDefault();
+
+		Assert.AreEqual(default, result);
+	}
+
+	[TestMethod]
+	public void TryTakeRandomWithNonEmptyArrayShouldReturnTrueAndElement()
+	{
+		int[] ints = [1, 2, 3, 4, 5];
+
+		bool success = ints.TryTakeRandom(out int result);
+
+		Assert.IsTrue(success);
+		Assert.Contains(result, ints);
+	}
+
+	[TestMethod]
+	public void TryTakeRandomWithEmptyArrayShouldReturnFalseAndDefault()
+	{
+		int[] ints = [];
+
+		bool success = ints.TryTakeRandom(out int result);
+
+		Assert.IsFalse(success);
+		Assert.AreEqual(default, result);
 	}
 }
+

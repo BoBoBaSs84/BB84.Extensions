@@ -3,8 +3,6 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
-using BB84.Extensions.Helper;
-
 namespace BB84.Extensions;
 
 /// <summary>
@@ -40,4 +38,33 @@ public static class ArrayExtensions
 	/// </returns>
 	public static T TakeRandom<T>(this T[] array)
 		=> array.ToList().TakeRandom();
+
+	/// <summary>
+	/// Returns a random element from the specified <paramref name="array"/>, or the default value of
+	/// <typeparamref name="T"/> if the array is empty.
+	/// </summary>
+	/// <typeparam name="T">The type of elements in the array.</typeparam>
+	/// <param name="array">The array from which to select a random element.</param>
+	/// <returns>
+	/// A randomly selected element from <paramref name="array"/>, or <see langword="default"/> if
+	/// the array is empty.
+	/// </returns>
+	public static T? TakeRandomOrDefault<T>(this T[] array)
+		=> array.ToList().TakeRandomOrDefault();
+
+	/// <summary>
+	/// Attempts to retrieve a random element from the specified <paramref name="array"/>.
+	/// </summary>
+	/// <typeparam name="T">The type of elements in the array.</typeparam>
+	/// <param name="array">The array from which to select a random element.</param>
+	/// <param name="result">
+	/// When this method returns <see langword="true"/>, contains a randomly selected element from
+	/// <paramref name="array"/>; otherwise, the default value of <typeparamref name="T"/>.
+	/// </param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="array"/> is not empty and a random element was
+	/// selected; otherwise, <see langword="false"/>.
+	/// </returns>
+	public static bool TryTakeRandom<T>(this T[] array, [MaybeNullWhen(false)] out T result)
+		=> array.ToList().TryTakeRandom(out result);
 }

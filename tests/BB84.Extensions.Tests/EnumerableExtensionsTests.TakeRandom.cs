@@ -8,12 +8,56 @@ namespace BB84.Extensions.Tests;
 public sealed partial class EnumerableExtensionsTests
 {
 	[TestMethod]
-	public void TakeRandom()
+	public void TakeRandomShouldReturnElementFromSequence()
 	{
 		IEnumerable<int> ints = [1, 2, 3, 4, 5];
 
-		int i = ints.TakeRandom();
+		int result = ints.TakeRandom();
 
-		Assert.IsTrue(ints.Contains(i));
+		Assert.Contains(result, ints);
+	}
+
+	[TestMethod]
+	public void TakeRandomOrDefaultWithNonEmptySequenceShouldReturnElement()
+	{
+		IEnumerable<int> ints = [1, 2, 3, 4, 5];
+
+		int? result = ints.TakeRandomOrDefault();
+
+		Assert.IsNotNull(result);
+		Assert.Contains(result.Value, ints);
+	}
+
+	[TestMethod]
+	public void TakeRandomOrDefaultWithEmptySequenceShouldReturnDefault()
+	{
+		IEnumerable<int> ints = [];
+
+		int result = ints.TakeRandomOrDefault();
+
+		Assert.AreEqual(default, result);
+	}
+
+	[TestMethod]
+	public void TryTakeRandomWithNonEmptySequenceShouldReturnTrueAndElement()
+	{
+		IEnumerable<int> ints = [1, 2, 3, 4, 5];
+
+		bool success = ints.TryTakeRandom(out int result);
+
+		Assert.IsTrue(success);
+		Assert.Contains(result, ints);
+	}
+
+	[TestMethod]
+	public void TryTakeRandomWithEmptySequenceShouldReturnFalseAndDefault()
+	{
+		IEnumerable<int> ints = [];
+
+		bool success = ints.TryTakeRandom(out int result);
+
+		Assert.IsFalse(success);
+		Assert.AreEqual(default, result);
 	}
 }
+
