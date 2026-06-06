@@ -29,10 +29,33 @@ public static class HttpClientExtensions
 	/// <param name="client">The http client which should use the base address.</param>
 	/// <param name="baseAddress">The base address to be used.</param>
 	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
+	/// <exception cref="ArgumentNullException">If <paramref name="baseAddress"/> is <see langword="null"/>.</exception>
+	/// <exception cref="ArgumentException">If <paramref name="baseAddress"/> is empty, whitespace, or not a valid absolute URI.</exception>
 	public static HttpClient WithBaseAddress(this HttpClient client, string baseAddress)
+		=> client.WithBaseAddress(baseAddress, UriKind.Absolute);
+
+	/// <summary>
+	/// Adds the specified <paramref name="baseAddress"/> to the http client configuration.
+	/// </summary>
+	/// <param name="client">The http client which should use the base address.</param>
+	/// <param name="baseAddress">The base address to be used.</param>
+	/// <param name="uriKind">Specifies whether the URI string is relative, absolute, or indeterminate.</param>
+	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
+	/// <exception cref="ArgumentNullException">If <paramref name="baseAddress"/> is <see langword="null"/>.</exception>
+	/// <exception cref="ArgumentException">If <paramref name="baseAddress"/> is empty, whitespace, or not a valid URI for the given <paramref name="uriKind"/>.</exception>
+	public static HttpClient WithBaseAddress(this HttpClient client, string baseAddress, UriKind uriKind)
 	{
-		client.WithBaseAddress(new Uri(baseAddress));
-		return client;
+#if NET6_0_OR_GREATER
+		ArgumentNullException.ThrowIfNull(baseAddress);
+#else
+		if (baseAddress is null)
+			throw new ArgumentNullException(nameof(baseAddress));
+#endif
+		if (string.IsNullOrWhiteSpace(baseAddress))
+			throw new ArgumentException("The base address must not be empty or whitespace.", nameof(baseAddress));
+		if (!Uri.TryCreate(baseAddress, uriKind, out Uri? uri))
+			throw new ArgumentException($"'{baseAddress}' is not a valid URI.", nameof(baseAddress));
+		return client.WithBaseAddress(uri);
 	}
 
 	/// <summary>
@@ -57,6 +80,17 @@ public static class HttpClientExtensions
 	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
 	public static HttpClient WithBasicAuthentication(this HttpClient client, string username, string password, Encoding? encoding = null)
 	{
+#if NET6_0_OR_GREATER
+		ArgumentNullException.ThrowIfNull(username);
+		ArgumentNullException.ThrowIfNull(password);
+#else
+		if (username is null)
+			throw new ArgumentNullException(nameof(username));
+		if (password is null)
+			throw new ArgumentNullException(nameof(password));
+#endif
+		if (string.IsNullOrWhiteSpace(username))
+			throw new ArgumentException("The username must not be empty or whitespace.", nameof(username));
 		encoding ??= Encoding.ASCII;
 		client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(Constants.HttpHeaders.BasicScheme, Convert.ToBase64String(encoding.GetBytes($"{username}:{password}")));
 		return client;
@@ -70,6 +104,14 @@ public static class HttpClientExtensions
 	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
 	public static HttpClient WithBearerToken(this HttpClient client, string token)
 	{
+#if NET6_0_OR_GREATER
+		ArgumentNullException.ThrowIfNull(token);
+#else
+		if (token is null)
+			throw new ArgumentNullException(nameof(token));
+#endif
+		if (string.IsNullOrEmpty(token))
+			throw new ArgumentException("The token must not be empty.", nameof(token));
 		client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(Constants.HttpHeaders.BearerScheme, token);
 		return client;
 	}
@@ -82,7 +124,8 @@ public static class HttpClientExtensions
 	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
 	public static HttpClient WithMediaType(this HttpClient client, string mediaType)
 	{
-		client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(mediaType));
+		if (!client.DefaultRequestHeaders.Accept.Any(h => h.MediaType == mediaType))
+			client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(mediaType));
 		return client;
 	}
 
