@@ -47,7 +47,7 @@ public static class BooleanExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault(this bool value)
-		=> value.Equals(default).Equals(false);
+		=> !value.Equals(default);
 
 	/// <summary>
 	/// Determines whether the specified bool is not equal to its default value <see langword="null"/>.
@@ -58,7 +58,7 @@ public static class BooleanExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault([NotNullWhen(true)] this bool? value)
-		=> value.Equals(default).Equals(false);
+		=> !value.Equals(default);
 
 	/// <summary>
 	/// Determines whether the specified boolean value is false.
@@ -69,7 +69,7 @@ public static class BooleanExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsFalse(this bool value)
-		=> value.Equals(false);
+		=> !value;
 
 	/// <summary>
 	/// Determines whether the specified nullable boolean value is false.
@@ -80,7 +80,7 @@ public static class BooleanExtensions
 	/// equals <see langword="false"/>; otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsFalse([NotNullWhen(true)] this bool? value)
-		=> value.HasValue && value.Value.Equals(false);
+		=> value.HasValue && !value.Value;
 
 	/// <summary>
 	/// Determines whether the specified nullable boolean has a null value.
@@ -91,7 +91,7 @@ public static class BooleanExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this bool? value)
-		=> value.HasValue.Equals(false);
+		=> !value.HasValue;
 
 	/// <summary>
 	/// Determines whether the specified nullable boolean has a non-null value.

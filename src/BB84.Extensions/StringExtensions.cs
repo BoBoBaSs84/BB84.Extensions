@@ -324,7 +324,7 @@ public static partial class StringExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotNullOrEmpty([NotNullWhen(true)] this string? value)
-		=> string.IsNullOrEmpty(value).Equals(false);
+		=> !string.IsNullOrEmpty(value);
 
 	/// <summary>
 	/// Determines whether the specified string is null, empty or consists only of white-space characters.
@@ -347,7 +347,7 @@ public static partial class StringExtensions
 	/// and does not consists only of white-space characters; otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotNullOrWhiteSpace([NotNullWhen(true)] this string? value)
-		=> string.IsNullOrWhiteSpace(value).Equals(false);
+		=> !string.IsNullOrWhiteSpace(value);
 
 	/// <summary>
 	/// Removes all linebreaks from the specified string.

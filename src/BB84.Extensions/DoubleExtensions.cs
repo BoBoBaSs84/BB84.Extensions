@@ -68,7 +68,7 @@ public static class DoubleExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault(this double value)
-		=> value.Equals(default).Equals(false);
+		=> !value.Equals(default);
 
 	/// <summary>
 	/// Determines whether the specified double is not equal to its default value <see langword="null"/>.
@@ -79,7 +79,7 @@ public static class DoubleExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault([NotNullWhen(true)] this double? value)
-		=> value.Equals(default).Equals(false);
+		=> !value.Equals(default);
 
 	/// <summary>
 	/// Determines whether the specified nullable double has a null value.
@@ -90,7 +90,7 @@ public static class DoubleExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this double? value)
-		=> value.HasValue.Equals(false);
+		=> !value.HasValue;
 
 	/// <summary>
 	/// Determines whether the specified nullable double has a value.
