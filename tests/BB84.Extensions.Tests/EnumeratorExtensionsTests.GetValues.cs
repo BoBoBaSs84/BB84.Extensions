@@ -16,6 +16,6 @@ public sealed partial class EnumeratorExtensionsTests
 
 		IEnumerable<TestType> list = type.GetValues();
 
-		Assert.AreEqual(3, list.Count());
+		Assert.HasCount(3, list);
 	}
 }
