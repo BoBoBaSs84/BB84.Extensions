@@ -23,6 +23,18 @@ DateTime today = new(2023, 9, 5);
 DateTime startOfWeek = today.StartOfWeek();
 ```
 
+### Range check
+
+The `IsBetween` method determines whether a comparable value falls within a given range. The bounds are inclusive by default; pass `inclusive: false` for an exclusive range. Throws `ArgumentOutOfRangeException` if `min` is greater than `max`.
+
+```csharp
+int value = 5;
+bool inRange = value.IsBetween(1, 10);          // true  (inclusive)
+bool inRangeEx = value.IsBetween(1, 10, false); // true  (exclusive)
+bool onBound = 10.IsBetween(1, 10);             // true  (inclusive boundary)
+bool onBoundEx = 10.IsBetween(1, 10, false);    // false (exclusive boundary)
+```
+
 ### Random choice
 
 The `TakeRandom` method returns a randomly chosen item from a given array.
