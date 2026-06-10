@@ -16,10 +16,9 @@ jobs:
       DOTNET_CLI_TELEMETRY_OPTOUT: true
       SOLUTION: BB84.Extensions.slnx
       CONFIGURATION: Release
-      EnableWindowsTargeting: true
 
     name: Build & Test
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: Checkout repository
@@ -27,11 +26,6 @@ jobs:
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v5
-
-      - name: Install mono
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y mono-complete
 
       - name: Restore dependencies
         run: dotnet restore ${{ env.SOLUTION }}
