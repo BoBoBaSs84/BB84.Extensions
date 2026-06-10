@@ -155,25 +155,43 @@ public static class DateTimeExtensions
 	}
 
 	/// <summary>
-	/// Calculates the week of the year for the specified <paramref name="value"/> according to the ISO 8601 standard.
+	/// Calculates the week of the year for the specified <paramref name="value"/>.
 	/// </summary>
 	/// <remarks>
-	/// This method uses the <see cref="CultureInfo.InvariantCulture"/> calendar to calculate the week of the year.
-	/// If the specified date falls on a Monday, Tuesday, or Wednesday, it adjusts the date forward by three days
-	/// to ensure correct week calculation according to the ISO 8601 standard.
+	/// When using the default parameters (<see cref="CalendarWeekRule.FirstFourDayWeek"/> and
+	/// <see cref="DayOfWeek.Monday"/>), this method returns an ISO 8601-compliant week number.
 	/// </remarks>
 	/// <param name="value">The <see cref="DateTime"/> value for which to determine the week of the year.</param>
-	/// <returns>
-	/// An integer representing the week of the year, based on the ISO 8601 standard, where the first week of the year
-	/// is the one containing at least four days and Monday is considered the first day of the week.
-	/// </returns>
-	public static int WeekOfYear(this DateTime value)
+	/// <param name="rule">The <see cref="CalendarWeekRule"/> to use for the calculation.</param>
+	/// <param name="firstDayOfWeek">The <see cref="DayOfWeek"/> that is considered the first day of the week.</param>
+	/// <returns>An integer representing the week of the year.</returns>
+	public static int WeekOfYear(this DateTime value, CalendarWeekRule rule = CalendarWeekRule.FirstFourDayWeek, DayOfWeek firstDayOfWeek = DayOfWeek.Monday)
 	{
 		DayOfWeek day = CultureInfo.InvariantCulture.Calendar.GetDayOfWeek(value);
 
 		if (day is >= DayOfWeek.Monday and <= DayOfWeek.Wednesday)
 			value = value.AddDays(3);
 
-		return CultureInfo.InvariantCulture.Calendar.GetWeekOfYear(value, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday);
+		return CultureInfo.InvariantCulture.Calendar.GetWeekOfYear(value, rule, firstDayOfWeek);
 	}
+#if NET6_0_OR_GREATER
+
+	/// <summary>
+	/// Converts a <see cref="DateTime"/> to a <see cref="DateOnly"/> by extracting the date component and discarding
+	/// the time component.
+	/// </summary>
+	/// <param name="value">The <see cref="DateTime"/> to convert.</param>
+	/// <returns>A <see cref="DateOnly"/> representing the date component of the <see cref="DateTime"/>.</returns>
+	public static DateOnly ToDateOnly(this DateTime value)
+		=> DateOnly.FromDateTime(value);
+
+	/// <summary>
+	/// Converts a <see cref="DateTime"/> to a <see cref="TimeOnly"/> by extracting the time component and discarding
+	/// the date component.
+	/// </summary>
+	/// <param name="value">The <see cref="DateTime"/> to convert.</param>
+	/// <returns>A <see cref="TimeOnly"/> representing the time component of the <see cref="DateTime"/>.</returns>
+	public static TimeOnly ToTimeOnly(this DateTime value)
+		=> TimeOnly.FromDateTime(value);
+#endif
 }

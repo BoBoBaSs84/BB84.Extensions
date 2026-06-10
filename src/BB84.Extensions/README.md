@@ -42,6 +42,27 @@ IEnumerable<string> strings = ["a", "ab", "b", "bb"];
 strings.ForEach(x => x.Contains("a"), x => hits++);
 ```
 
+### Start of DateOnly month
+
+The `StartOfMonth` method returns the first day of the month for a given `DateOnly` value. The companion method `EndOfMonth` returns the last day.
+
+```csharp
+DateOnly today = new(2023, 9, 15);
+DateOnly start = today.StartOfMonth(); // 2023-09-01
+DateOnly end   = today.EndOfMonth();   // 2023-09-30
+```
+
+Equivalent helpers `StartOfWeek`, `EndOfWeek`, `StartOfYear`, `EndOfYear`, and `WeekOfYear` are also available.
+
+### TimeOnly range check
+
+The `IsBetween` method returns whether a `TimeOnly` value falls within a given range (start inclusive, end exclusive), correctly handling midnight-crossing ranges.
+
+```csharp
+TimeOnly value = new(23, 30);
+bool night = value.IsBetween(new TimeOnly(22, 0), new TimeOnly(2, 0)); // true
+```
+
 ### Color to RGB hexadecimal representation
 
 The `ToRGBHexString` method turns any `System.Drawing.Color` into its RGB hexadecimal string representation, with the prefix '#'.
