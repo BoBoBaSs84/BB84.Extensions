@@ -44,9 +44,11 @@ public partial class MyForm : Form
 
         // Bind numeric up/down
         numericUpDown1
-            .BindValue(viewModel, nameof(MyViewModel.Count))
-            .BindMinimum(viewModel, nameof(MyViewModel.MinCount))
-            .BindMaximum(viewModel, nameof(MyViewModel.MaxCount));
+            .WithValueBinding(viewModel, nameof(MyViewModel.Count))
+            .WithMinimumBinding(viewModel, nameof(MyViewModel.MinCount))
+            .WithMaximumBinding(viewModel, nameof(MyViewModel.MaxCount))
+            .WithIncrementBinding(viewModel, nameof(MyViewModel.Step))
+            .WithDecimalPlacesBinding(viewModel, nameof(MyViewModel.Precision));
     }
 }
 ```
