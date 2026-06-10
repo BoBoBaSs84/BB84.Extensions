@@ -78,4 +78,38 @@ public static class ComparableExtensions
 	/// </returns>
 	public static bool IsLessThan<T>(this T value, T comparativeValue) where T : IComparable
 		=> value.CompareTo(comparativeValue) < 0;
+
+	/// <summary>
+	/// Determines whether the current value falls within the range defined by <paramref name="min"/> and
+	/// <paramref name="max"/>.
+	/// </summary>
+	/// <remarks>
+	/// This method uses the <see cref="IComparable.CompareTo"/> method to perform the comparison.
+	/// When <paramref name="inclusive"/> is <see langword="true"/> (the default), the comparison is
+	/// <c>min &lt;= value &lt;= max</c>. When <see langword="false"/>, the comparison is
+	/// <c>min &lt; value &lt; max</c>.
+	/// </remarks>
+	/// <typeparam name="T">The type of the values being compared.</typeparam>
+	/// <param name="value">The value to check.</param>
+	/// <param name="min">The lower bound of the range.</param>
+	/// <param name="max">The upper bound of the range.</param>
+	/// <param name="inclusive">
+	/// When <see langword="true"/>, the range boundaries are included; otherwise, they are excluded.
+	/// </param>
+	/// <returns>
+	/// <see langword="true"/> if <paramref name="value"/> is within the range; otherwise,
+	/// <see langword="false"/>.
+	/// </returns>
+	/// <exception cref="ArgumentOutOfRangeException">
+	/// Thrown when <paramref name="min"/> is greater than <paramref name="max"/>.
+	/// </exception>
+	public static bool IsBetween<T>(this T value, T min, T max, bool inclusive = true) where T : IComparable
+	{
+		if (min.CompareTo(max) > 0)
+			throw new ArgumentOutOfRangeException(nameof(min), $"The parameter {nameof(min)} must not be greater than {nameof(max)}.");
+
+		return inclusive
+			? value.CompareTo(min) >= 0 && value.CompareTo(max) <= 0
+			: value.CompareTo(min) > 0 && value.CompareTo(max) < 0;
+	}
 }
