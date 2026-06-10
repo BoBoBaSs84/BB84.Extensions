@@ -44,6 +44,27 @@ int[] ints = [1, 2, 3];
 int i = ints.TakeRandom();
 ```
 
+### Dictionary helpers
+
+`DictionaryExtensions` provides safe retrieval and manipulation helpers for `IDictionary<TKey, TValue>`.
+
+```csharp
+IDictionary<string, int> scores = new Dictionary<string, int> { ["alice"] = 10 };
+
+// Return value or a fallback
+int score = scores.GetOrDefault("bob", 0);           // 0
+
+// Return existing or add via factory
+int val = scores.GetOrAdd("bob", k => k.Length);     // adds "bob" → 3
+
+// Add new or update existing
+scores.AddOrUpdate("alice", 1, (_, v) => v + 5);     // alice → 15
+
+// Null / empty checks
+bool empty = scores.IsNullOrEmpty();                  // false
+bool hasEntries = scores.IsNotNullOrEmpty();          // true
+```
+
 ### For each
 
 The `ForEach` method iterates over an enumerable and executes an action on each element.
