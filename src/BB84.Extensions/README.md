@@ -75,6 +75,20 @@ IEnumerable<string> strings = ["a", "ab", "b", "bb"];
 strings.ForEach(x => x.Contains("a"), x => hits++);
 ```
 
+### Chunk
+
+The `Chunk` method splits a sequence into arrays of at most `size` elements. The final chunk contains the remaining elements when the sequence length is not evenly divisible by `size`.
+
+```csharp
+IEnumerable<int> values = [1, 2, 3, 4, 5];
+foreach (int[] chunk in values.Chunk(2))
+    Console.WriteLine(string.Join(", ", chunk));
+// Output:
+// 1, 2
+// 3, 4
+// 5
+```
+
 ### Start of DateOnly month
 
 The `StartOfMonth` method returns the first day of the month for a given `DateOnly` value. The companion method `EndOfMonth` returns the last day.

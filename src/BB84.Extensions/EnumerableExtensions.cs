@@ -164,4 +164,67 @@ public static class EnumerableExtensions
 	/// </returns>
 	public static bool TryTakeRandom<T>(this IEnumerable<T> values, [MaybeNullWhen(false)] out T result)
 		=> values.ToArray().TryTakeRandom(out result);
+
+	/// <summary>
+	/// Splits the elements of <paramref name="values"/> into chunks of at most
+	/// <paramref name="size"/> elements each. The last chunk will contain the remaining elements
+	/// if the sequence length is not evenly divisible by <paramref name="size"/>.
+	/// </summary>
+	/// <typeparam name="T">The type of elements in the sequence.</typeparam>
+	/// <param name="values">The sequence to partition.</param>
+	/// <param name="size">The maximum number of elements in each chunk.</param>
+	/// <returns>
+	/// An <see cref="IEnumerable{T}"/> of <typeparamref name="T"/>[] where each array contains
+	/// at most <paramref name="size"/> elements.
+	/// </returns>
+	/// <exception cref="ArgumentNullException">
+	/// Thrown when <paramref name="values"/> is <see langword="null"/>.
+	/// </exception>
+	/// <exception cref="ArgumentOutOfRangeException">
+	/// Thrown when <paramref name="size"/> is less than or equal to zero.
+	/// </exception>
+	public static IEnumerable<T[]> Chunk<T>(this IEnumerable<T> values, int size)
+	{
+#if NET6_0_OR_GREATER
+		ArgumentNullException.ThrowIfNull(values);
+#else
+		if (values is null)
+			throw new ArgumentNullException(nameof(values));
+#endif
+		if (size <= 0)
+			throw new ArgumentOutOfRangeException(nameof(size), "Size must be greater than zero.");
+
+#if NET6_0_OR_GREATER
+		return Enumerable.Chunk(values, size);
+#else
+		return ChunkIterator(values, size);
+#endif
+	}
+
+#if !NET6_0_OR_GREATER
+	private static IEnumerable<T[]> ChunkIterator<T>(IEnumerable<T> values, int size)
+	{
+		T[] chunk = new T[size];
+		int index = 0;
+
+		foreach (T value in values)
+		{
+			chunk[index++] = value;
+
+			if (index == size)
+			{
+				yield return chunk;
+				chunk = new T[size];
+				index = 0;
+			}
+		}
+
+		if (index > 0)
+		{
+			T[] remainder = new T[index];
+			Array.Copy(chunk, remainder, index);
+			yield return remainder;
+		}
+	}
+#endif
 }
