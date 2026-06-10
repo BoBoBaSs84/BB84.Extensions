@@ -110,6 +110,28 @@ TimeOnly value = new(23, 30);
 bool night = value.IsBetween(new TimeOnly(22, 0), new TimeOnly(2, 0)); // true
 ```
 
+### Span and Memory helpers
+
+`SpanExtensions` provides allocation-free helpers for `ReadOnlySpan<T>` and `ReadOnlyMemory<byte>` on `netstandard2.1` and all modern .NET targets.
+
+```csharp
+// IsEmpty — readable alias for Length == 0
+ReadOnlySpan<int> empty = ReadOnlySpan<int>.Empty;
+bool isEmpty = empty.IsEmpty();         // true
+
+// TakeRandom — random element without heap allocation
+ReadOnlySpan<int> nums = new int[] { 1, 2, 3 };
+int picked = nums.TakeRandom();
+
+// GetHexString — uppercase hex, mirrors ByteExtensions.GetHexString
+ReadOnlySpan<byte> bytes = new byte[] { 0xFF, 0x0A };
+string hex = bytes.GetHexString();      // "FF0A"
+
+// ToByteArray — convenience conversion from ReadOnlyMemory<byte>
+ReadOnlyMemory<byte> mem = new byte[] { 1, 2, 3, 4 };
+byte[] arr = mem.ToByteArray();
+```
+
 ### Color to RGB hexadecimal representation
 
 The `ToRGBHexString` method turns any `System.Drawing.Color` into its RGB hexadecimal string representation, with the prefix '#'.
