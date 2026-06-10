@@ -17,7 +17,7 @@ namespace BB84.Extensions;
 /// </summary>
 /// <remarks>
 /// This class includes methods for common operations on byte arrays, such as converting to and
-/// from Base64, generating MD5 hashes, and encoding/decoding strings. It also provides utility
+/// from Base64, generating MD5, SHA-256, and SHA-512 hashes, and encoding/decoding strings. It also provides utility
 /// methods for checking nullability and obtaining hexadecimal representations of byte arrays.
 /// </remarks>
 public static partial class ByteExtensions
@@ -168,6 +168,54 @@ public static partial class ByteExtensions
 	/// </returns>
 	public static string GetMD5String(this byte[] value)
 		=> value.GetMD5().GetHexString();
+
+	/// <summary>
+	/// Computes the SHA-256 hash value for the specified byte array.
+	/// </summary>
+	/// <param name="value">The input byte array for which the SHA-256 hash is to be computed.</param>
+	/// <returns>A byte array containing the computed SHA-256 hash value.</returns>
+	public static byte[] GetSHA256(this byte[] value)
+	{
+#if NET8_0_OR_GREATER
+		return SHA256.HashData(value);
+#else
+		return SHA256.Create().ComputeHash(value);
+#endif
+	}
+
+	/// <summary>
+	/// Computes the SHA-256 hash of the specified byte array and returns it as a hexadecimal string.
+	/// </summary>
+	/// <param name="value">The byte array to compute the SHA-256 hash for.</param>
+	/// <returns>
+	/// A string representing the SHA-256 hash of the input byte array in hexadecimal format.
+	/// </returns>
+	public static string GetSHA256String(this byte[] value)
+		=> value.GetSHA256().GetHexString();
+
+	/// <summary>
+	/// Computes the SHA-512 hash value for the specified byte array.
+	/// </summary>
+	/// <param name="value">The input byte array for which the SHA-512 hash is to be computed.</param>
+	/// <returns>A byte array containing the computed SHA-512 hash value.</returns>
+	public static byte[] GetSHA512(this byte[] value)
+	{
+#if NET8_0_OR_GREATER
+		return SHA512.HashData(value);
+#else
+		return SHA512.Create().ComputeHash(value);
+#endif
+	}
+
+	/// <summary>
+	/// Computes the SHA-512 hash of the specified byte array and returns it as a hexadecimal string.
+	/// </summary>
+	/// <param name="value">The byte array to compute the SHA-512 hash for.</param>
+	/// <returns>
+	/// A string representing the SHA-512 hash of the input byte array in hexadecimal format.
+	/// </returns>
+	public static string GetSHA512String(this byte[] value)
+		=> value.GetSHA512().GetHexString();
 
 	/// <summary>
 	/// Converts the specified byte array to a string using the provided encoding.
