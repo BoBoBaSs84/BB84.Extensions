@@ -49,6 +49,12 @@ public partial class MyForm : Form
             .WithMaximumBinding(viewModel, nameof(MyViewModel.MaxCount))
             .WithIncrementBinding(viewModel, nameof(MyViewModel.Step))
             .WithDecimalPlacesBinding(viewModel, nameof(MyViewModel.Precision));
+
+        // Bind tool strip items
+        toolStripButton1
+            .WithEnabledBinding(viewModel, nameof(MyViewModel.IsEditable))
+            .WithVisibleBinding(viewModel, nameof(MyViewModel.IsVisible))
+            .WithTextBinding(viewModel, nameof(MyViewModel.ButtonText));
     }
 }
 ```
