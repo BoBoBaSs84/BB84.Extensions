@@ -15,6 +15,7 @@ jobs:
     env:
       DOTNET_NOLOGO: true
       DOTNET_CLI_TELEMETRY_OPTOUT: true
+      EnableWindowsTargeting: true
 
     name: Build, Test & Publish
     runs-on: ubuntu-latest
