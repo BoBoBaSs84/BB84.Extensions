@@ -132,6 +132,36 @@ ReadOnlyMemory<byte> mem = new byte[] { 1, 2, 3, 4 };
 byte[] arr = mem.ToByteArray();
 ```
 
+### SHA-256 and SHA-512 hashing
+
+`StringExtensions` provides SHA-256 and SHA-512 hashing overloads following the same naming pattern as the existing MD5 methods.
+
+```csharp
+string value = "UnitTest";
+
+// SHA-256
+string sha256Utf8    = value.GetSha256Utf8();
+string sha256Ascii   = value.GetSha256Ascii();
+string sha256Unicode = value.GetSha256Unicode();
+
+// SHA-512
+string sha512Utf8    = value.GetSha512Utf8();
+string sha512Ascii   = value.GetSha512Ascii();
+string sha512Unicode = value.GetSha512Unicode();
+```
+
+`ByteExtensions` exposes the same algorithms directly on byte arrays:
+
+```csharp
+byte[] data = Encoding.UTF8.GetBytes("UnitTest");
+
+byte[] sha256Hash   = data.GetSHA256();
+string sha256String = data.GetSHA256String();
+
+byte[] sha512Hash   = data.GetSHA512();
+string sha512String = data.GetSHA512String();
+```
+
 ### Color to RGB hexadecimal representation
 
 The `ToRGBHexString` method turns any `System.Drawing.Color` into its RGB hexadecimal string representation, with the prefix '#'.
