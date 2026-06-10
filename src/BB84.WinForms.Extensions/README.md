@@ -6,82 +6,189 @@
 # BB84.WinForms.Extensions
 
 Specialized extension methods for Windows Forms controls, focusing on simplified data binding.
+All binding methods follow the same fluent `With*Binding(dataSource, dataMember)` convention and return the
+control instance so calls can be chained.
 
-## Usage
+## 🧰 Usage
 
-Depending on the application, there are several ways to skin a cat.
+### Control extensions
 
-#### Basic Data Binding
-
-```csharp
-using BB84.WinForms.Extensions;
-
-public partial class MyForm : Form
-{
-    private MyViewModel viewModel = new();
-
-    public MyForm()
-    {
-        InitializeComponent();
-        SetupDataBindings();
-    }
-
-    private void SetupDataBindings()
-    {
-        // Chain multiple bindings
-        textBox1
-            .BindText(viewModel, nameof(MyViewModel.Name))
-            .BindEnabled(viewModel, nameof(MyViewModel.IsEditable))
-            .BindVisible(viewModel, nameof(MyViewModel.IsVisible));
-
-        // Bind checkbox
-        checkBox1.BindChecked(viewModel, nameof(MyViewModel.IsSelected));
-
-        // Bind combo box
-        comboBox1
-            .SetDataSource(categories)
-            .BindSelectedItem(viewModel, nameof(MyViewModel.SelectedCategory));
-
-        // Bind numeric up/down
-        numericUpDown1
-            .WithValueBinding(viewModel, nameof(MyViewModel.Count))
-            .WithMinimumBinding(viewModel, nameof(MyViewModel.MinCount))
-            .WithMaximumBinding(viewModel, nameof(MyViewModel.MaxCount))
-            .WithIncrementBinding(viewModel, nameof(MyViewModel.Step))
-            .WithDecimalPlacesBinding(viewModel, nameof(MyViewModel.Precision));
-
-        // Bind tool strip items
-        toolStripButton1
-            .WithEnabledBinding(viewModel, nameof(MyViewModel.IsEditable))
-            .WithVisibleBinding(viewModel, nameof(MyViewModel.IsVisible))
-            .WithTextBinding(viewModel, nameof(MyViewModel.ButtonText));
-    }
-}
-```
-
-#### Command Binding for Buttons
+`ControlExtensions` targets the base `Control` class and is therefore available on every WinForms control.
 
 ```csharp
-using BB84.WinForms.Extensions;
-using System.Windows.Input;
-
-public class MyViewModel : INotifyPropertyChanged
-{
-    public ICommand SaveCommand { get; private set; }
-
-    public MyViewModel()
-    {
-        SaveCommand = new RelayCommand(Save, CanSave);
-    }
-
-    private void Save() => /* Save logic */;
-    private bool CanSave() => /* Validation logic */;
-}
-
-// In the form
-saveButton.BindCommand(viewModel.SaveCommand);
+textBox1
+    .WithTextBinding(vm, nameof(vm.Name))
+    .WithEnabledBinding(vm, nameof(vm.IsEditable))
+    .WithVisibleBinding(vm, nameof(vm.IsVisible))
+    .WithTagBinding(vm, nameof(vm.Tag));
 ```
 
-## Documentation
+### ButtonBase extensions
+
+`ButtonBaseExtensions` adds `ICommand` binding and data-source–based command binding for `Button`,
+`CheckBox`, `RadioButton`, and any other `ButtonBase`-derived control.
+
+```csharp
+// Bind an ICommand directly — wires Click and CanExecuteChanged automatically
+saveButton.WithCommandBinding(viewModel.SaveCommand);
+
+// Bind a command property from a data source (.NET 5+ targets)
+saveButton.WithCommandBinding(viewModel, nameof(viewModel.SaveCommand));
+
+// Bind a command parameter from a data source (.NET 5+ targets)
+saveButton.WithCommandParameterBinding(viewModel, nameof(viewModel.CommandParameter));
+```
+
+### CheckBox extensions
+
+```csharp
+checkBox1
+    .WithCheckedBinding(vm, nameof(vm.IsSelected))
+    .WithCheckStateBinding(vm, nameof(vm.CheckState))
+    .WithCheckAlignBinding(vm, nameof(vm.Alignment));
+```
+
+### ComboBox extensions
+
+```csharp
+comboBox1
+    .WithDataSourceBinding(categories)                          // set items
+    .WithDisplayMember(nameof(Category.Name))
+    .WithValueMember(nameof(Category.Id))
+    .WithSelectedItemBinding(vm, nameof(vm.SelectedCategory))
+    .WithSelectedIndexBinding(vm, nameof(vm.SelectedIndex));
+```
+
+### DataGrid / DataGridView extensions
+
+```csharp
+dataGrid1.WithDataSourceBinding(dataTable);
+dataGridView1.WithDataSourceBinding(bindingList);
+```
+
+### DateTimePicker extensions
+
+```csharp
+dateTimePicker1
+    .WithValueBinding(vm, nameof(vm.SelectedDate))
+    .WithCheckedBinding(vm, nameof(vm.HasDate));
+```
+
+### FlagsCheckBox control
+
+`FlagsCheckBox` is a composite user control that renders one `CheckBox` per non-zero flag value of a
+`[Flags]` enum and keeps a `SelectedValue` property in sync.
+
+```csharp
+// Fluent configuration
+flagsCheckBox1
+    .WithDisplayName()                                  // use DisplayAttribute.Name for labels
+    .WithFlowDirection(FlowDirection.TopDown)
+    .WithSelectedValueBinding(vm, nameof(vm.Permissions));
+
+// Or use description attribute labels
+flagsCheckBox1.WithDescriptionName();
+
+// Custom label resolver
+flagsCheckBox1.WithDisplayNameResolver(e => e.ToString().ToUpper());
+```
+
+### FlagsRadioButton control
+
+`FlagsRadioButton` is the single-selection counterpart of `FlagsCheckBox` — one radio button per
+non-zero flag, bound to a single enum value.
+
+```csharp
+flagsRadioButton1
+    .WithDisplayName()
+    .WithFlowDirection(FlowDirection.LeftToRight)
+    .WithSelectedValueBinding(vm, nameof(vm.AccessLevel));
+```
+
+### ListBox extensions
+
+```csharp
+listBox1
+    .WithDataSourceBinding(items)
+    .WithSelectedItemBinding(vm, nameof(vm.SelectedItem))
+    .WithSelectedIndexBinding(vm, nameof(vm.SelectedIndex));
+```
+
+### ListControl extensions
+
+`ListControlExtensions` targets the base `ListControl` class (`ComboBox`, `ListBox`, and any derived type).
+
+```csharp
+comboBox1
+    .WithDataSourceBinding(items)
+    .WithDisplayMember(nameof(Item.Label))
+    .WithValueMember(nameof(Item.Id))
+    .WithSelectedValueBinding(vm, nameof(vm.SelectedId));
+
+// Populate from an enum type
+comboBox1.WithEnumeratorBinding(MyEnum.Default);
+```
+
+### MonthCalendar extensions
+
+```csharp
+monthCalendar1.WithSelectionRangeBinding(vm, nameof(vm.DateRange));
+```
+
+### NumericUpDown extensions
+
+```csharp
+numericUpDown1
+    .WithValueBinding(vm, nameof(vm.Count))
+    .WithMinimumBinding(vm, nameof(vm.MinCount))
+    .WithMaximumBinding(vm, nameof(vm.MaxCount))
+    .WithIncrementBinding(vm, nameof(vm.Step))
+    .WithDecimalPlacesBinding(vm, nameof(vm.Precision));
+```
+
+### PictureBox extensions
+
+```csharp
+pictureBox1.WithImageBinding(vm, nameof(vm.Photo));
+```
+
+### ProgressBar extensions
+
+```csharp
+progressBar1.WithValueBinding(vm, nameof(vm.Progress));
+```
+
+### RadioButton extensions
+
+```csharp
+radioButton1.WithCheckedBinding(vm, nameof(vm.IsOptionA));
+```
+
+### ScrollBar extensions
+
+```csharp
+hScrollBar1.WithValueBinding(vm, nameof(vm.ScrollPosition));
+vScrollBar1.WithValueBinding(vm, nameof(vm.ScrollPosition));
+```
+
+### ToolStripItem extensions
+
+Available on .NET 8 and later. Targets `ToolStripButton`, `ToolStripMenuItem`, and any other
+`ToolStripItem`-derived class.
+
+```csharp
+toolStripButton1
+    .WithEnabledBinding(vm, nameof(vm.CanSave))
+    .WithTextBinding(vm, nameof(vm.SaveLabel))
+    .WithVisibleBinding(vm, nameof(vm.ShowSave));
+```
+
+### TrackBar extensions
+
+```csharp
+trackBar1.WithValueBinding(vm, nameof(vm.Volume));
+```
+
+## 📖 Documentation
 
 The complete API documentation can be found [here](https://bobobass84.github.io/BB84.Extensions/api/index.html).
