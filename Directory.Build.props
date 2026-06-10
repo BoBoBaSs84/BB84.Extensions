@@ -2,7 +2,7 @@
 
 	<PropertyGroup Label="Versioning">
 		<VersionMajor>4</VersionMajor>
-		<VersionMinor>3</VersionMinor>
+		<VersionMinor>4</VersionMinor>
 		<VersionPatch>$([System.DateTime]::UtcNow.ToString("MMdd"))</VersionPatch>
 		<VersionRevision>$([System.DateTime]::UtcNow.TimeOfDay.TotalMinutes.ToString("0"))</VersionRevision>
 		<VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch).$(VersionRevision)</VersionPrefix>
@@ -34,12 +34,13 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))" Label="MetaData">
-		<Authors>BoBoBaSs84</Authors>
-		<Company>https://github.com/BoBoBaSs84</Company>
-		<Copyright>Copyright © $([System.DateTime]::UtcNow.Year) BoBoBaSs84</Copyright>		
+		<Author>BoBoBaSs84</Author>
+		<Authors>$(Author)</Authors>
+		<Company>https://github.com/$(Author)</Company>
+		<Copyright>Copyright © $([System.DateTime]::UtcNow.Year) $(Author)</Copyright>		
 		<Product>BB84.Extensions</Product>		
 		<RepositoryType>git</RepositoryType>
-		<RepositoryUrl>https://github.com/BoBoBaSs84/BB84.Extensions</RepositoryUrl>
+		<RepositoryUrl>https://github.com/$(Author)/$(Product)</RepositoryUrl>
 		<Title>$(AssemblyName)</Title>
 	</PropertyGroup>
 
@@ -49,7 +50,7 @@
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageProjectUrl>https://github.com/BoBoBaSs84/BB84.Extensions</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageReleaseNotes>https://github.com/BoBoBaSs84/BB84.Extensions/releases/tag/$(FileVersion)</PackageReleaseNotes>
+		<PackageReleaseNotes>https://github.com/BoBoBaSs84/BB84.Extensions/releases/tag/v$(FileVersion)</PackageReleaseNotes>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>		
 		<PackageVersion>$(FileVersion)</PackageVersion>
 	</PropertyGroup>

@@ -6,6 +6,7 @@ project = "BB84.Extensions.slnx"
 [github]
 user = "BoBoBaSs84"
 repo = "BB84.Extensions"
+version_prefix = "v"
 [test]
 enable = false
 [nuget]

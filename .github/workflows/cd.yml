@@ -1,57 +1,68 @@
 name: Continuous Deployment
 
 on:
-  workflow_dispatch:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+.[0-9]+"
+
+permissions:
+  contents: write
+  packages: write
+  id-token: write
 
 jobs:
-  publish:
-    permissions:
-      contents: write
-      packages: write
-    runs-on: windows-latest
+  deploy:
+    env:
+      DOTNET_NOLOGO: true
+      DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+    name: Build, Test & Publish
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v6
-      with:
-        fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v5
-      with:
-        dotnet-version: '10.0.x'
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v5
 
-    - name: Publish NuGet
-      shell: bash
-      run: |
-        dotnet tool install --global dotnet-releaser
-        dotnet-releaser run --nuget-token "${{secrets.NUGET_TOKEN}}" --github-token "${{secrets.GITHUB_TOKEN}}" dotnet-releaser.toml
+      - name: Install mono
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mono-complete
 
-  docs:
-    permissions:
-      contents: write
-      pages: write
-    runs-on: windows-latest
+      - name: Publish NuGet
+        shell: bash
+        run: |
+          dotnet tool install --global dotnet-releaser
+          dotnet-releaser run --nuget-token "${{ secrets.NUGET_TOKEN }}" --github-token "${{ secrets.GITHUB_TOKEN }}" dotnet-releaser.toml
+
+  pages:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v6
-      with:
-        fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v6
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v5
-      with:
-        dotnet-version: '10.0.x'
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v5
 
-    - name: Setup DocFx
-      run: dotnet tool update -g docfx
+      - name: Setup DocFx
+        run: dotnet tool update -g docfx
 
-    - name: Run DocFx
-      run: docfx docs/docfx.json
+      - name: Run DocFx
+        run: docfx docs/docfx.json
 
-    - name: Deploy Docs
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: docs/_site
+      - name: Upload artifact
+        uses: actions/upload-artifact@v7
+        with:
+          path: docs/_site
+
+      - name: Deploy to GitHub Pages
+        id: deployment  
+        uses: actions/deploy-pages@v5
