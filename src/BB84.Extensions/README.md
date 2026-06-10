@@ -132,6 +132,20 @@ ReadOnlyMemory<byte> mem = new byte[] { 1, 2, 3, 4 };
 byte[] arr = mem.ToByteArray();
 ```
 
+### Stream to byte array
+
+The `ToByteArray` method reads the entire content of a `Stream` into a byte array. The async
+counterpart `ToByteArrayAsync` does the same without blocking the calling thread and supports
+cancellation.
+
+```csharp
+// synchronous
+byte[] bytes = stream.ToByteArray();
+
+// asynchronous
+byte[] bytes = await stream.ToByteArrayAsync(cancellationToken);
+```
+
 ### SHA-256 and SHA-512 hashing
 
 `StringExtensions` provides SHA-256 and SHA-512 hashing overloads following the same naming pattern as the existing MD5 methods.

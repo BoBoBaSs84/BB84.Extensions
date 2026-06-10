@@ -10,7 +10,8 @@ namespace BB84.Extensions;
 /// </summary>
 /// <remarks>
 /// This class contains utility methods that extend the functionality of the <see cref="Stream"/>
-/// class, enabling common operations such as converting a stream to a byte array.
+/// class, enabling common operations such as converting a stream to a byte array synchronously
+/// or asynchronously.
 /// </remarks>
 public static class StreamExtensions
 {
@@ -33,6 +34,30 @@ public static class StreamExtensions
 		using MemoryStream memoryStream = new();
 		while ((read = inputStream.Read(buffer, 0, buffer.Length)) > 0)
 			memoryStream.Write(buffer, 0, read);
+		return memoryStream.ToArray();
+	}
+
+	/// <summary>
+	/// Asynchronously converts the contents of the specified <see cref="Stream"/> to a byte array.
+	/// </summary>
+	/// <remarks>
+	/// The method reads the entire content of the <paramref name="inputStream"/> asynchronously
+	/// and returns it as a byte array. The position of the <paramref name="inputStream"/> is
+	/// advanced as the data is read.
+	/// </remarks>
+	/// <param name="inputStream">The input <see cref="Stream"/> to read from.</param>
+	/// <param name="cancellationToken">A token to monitor for cancellation requests.</param>
+	/// <returns>
+	/// A task that represents the asynchronous operation. The task result contains a byte array
+	/// with the data read from the <paramref name="inputStream"/>.
+	/// </returns>
+	public static async Task<byte[]> ToByteArrayAsync(this Stream inputStream, CancellationToken cancellationToken = default)
+	{
+		using MemoryStream memoryStream = new();
+		
+		await inputStream.CopyToAsync(memoryStream, 16 * 1024, cancellationToken)
+			.ConfigureAwait(false);
+		
 		return memoryStream.ToArray();
 	}
 }
