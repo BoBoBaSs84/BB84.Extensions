@@ -36,6 +36,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ArrayExtensions.TakeRandom
   nameWithType: ArrayExtensions.TakeRandom
+- uid: BB84.Extensions.ArrayExtensions.TakeRandomOrDefault*
+  name: TakeRandomOrDefault
+  href: api/BB84.Extensions.ArrayExtensions.html#BB84_Extensions_ArrayExtensions_TakeRandomOrDefault_
+  commentId: Overload:BB84.Extensions.ArrayExtensions.TakeRandomOrDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.ArrayExtensions.TakeRandomOrDefault
+  nameWithType: ArrayExtensions.TakeRandomOrDefault
+- uid: BB84.Extensions.ArrayExtensions.TakeRandomOrDefault``1(``0[])
+  name: TakeRandomOrDefault<T>(T[])
+  href: api/BB84.Extensions.ArrayExtensions.html#BB84_Extensions_ArrayExtensions_TakeRandomOrDefault__1___0___
+  commentId: M:BB84.Extensions.ArrayExtensions.TakeRandomOrDefault``1(``0[])
+  name.vb: TakeRandomOrDefault(Of T)(T())
+  fullName: BB84.Extensions.ArrayExtensions.TakeRandomOrDefault<T>(T[])
+  fullName.vb: BB84.Extensions.ArrayExtensions.TakeRandomOrDefault(Of T)(T())
+  nameWithType: ArrayExtensions.TakeRandomOrDefault<T>(T[])
+  nameWithType.vb: ArrayExtensions.TakeRandomOrDefault(Of T)(T())
 - uid: BB84.Extensions.ArrayExtensions.TakeRandom``1(``0[])
   name: TakeRandom<T>(T[])
   href: api/BB84.Extensions.ArrayExtensions.html#BB84_Extensions_ArrayExtensions_TakeRandom__1___0___
@@ -45,6 +61,22 @@ references:
   fullName.vb: BB84.Extensions.ArrayExtensions.TakeRandom(Of T)(T())
   nameWithType: ArrayExtensions.TakeRandom<T>(T[])
   nameWithType.vb: ArrayExtensions.TakeRandom(Of T)(T())
+- uid: BB84.Extensions.ArrayExtensions.TryTakeRandom*
+  name: TryTakeRandom
+  href: api/BB84.Extensions.ArrayExtensions.html#BB84_Extensions_ArrayExtensions_TryTakeRandom_
+  commentId: Overload:BB84.Extensions.ArrayExtensions.TryTakeRandom
+  isSpec: "True"
+  fullName: BB84.Extensions.ArrayExtensions.TryTakeRandom
+  nameWithType: ArrayExtensions.TryTakeRandom
+- uid: BB84.Extensions.ArrayExtensions.TryTakeRandom``1(``0[],``0@)
+  name: TryTakeRandom<T>(T[], out T)
+  href: api/BB84.Extensions.ArrayExtensions.html#BB84_Extensions_ArrayExtensions_TryTakeRandom__1___0_____0__
+  commentId: M:BB84.Extensions.ArrayExtensions.TryTakeRandom``1(``0[],``0@)
+  name.vb: TryTakeRandom(Of T)(T(), T)
+  fullName: BB84.Extensions.ArrayExtensions.TryTakeRandom<T>(T[], out T)
+  fullName.vb: BB84.Extensions.ArrayExtensions.TryTakeRandom(Of T)(T(), T)
+  nameWithType: ArrayExtensions.TryTakeRandom<T>(T[], out T)
+  nameWithType.vb: ArrayExtensions.TryTakeRandom(Of T)(T(), T)
 - uid: BB84.Extensions.BooleanExtensions
   name: BooleanExtensions
   href: api/BB84.Extensions.BooleanExtensions.html
@@ -285,6 +317,70 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ByteExtensions.GetMD5String
   nameWithType: ByteExtensions.GetMD5String
+- uid: BB84.Extensions.ByteExtensions.GetSHA256(System.Byte[])
+  name: GetSHA256(byte[])
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetSHA256_System_Byte___
+  commentId: M:BB84.Extensions.ByteExtensions.GetSHA256(System.Byte[])
+  name.vb: GetSHA256(Byte())
+  fullName: BB84.Extensions.ByteExtensions.GetSHA256(byte[])
+  fullName.vb: BB84.Extensions.ByteExtensions.GetSHA256(Byte())
+  nameWithType: ByteExtensions.GetSHA256(byte[])
+  nameWithType.vb: ByteExtensions.GetSHA256(Byte())
+- uid: BB84.Extensions.ByteExtensions.GetSHA256*
+  name: GetSHA256
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetSHA256_
+  commentId: Overload:BB84.Extensions.ByteExtensions.GetSHA256
+  isSpec: "True"
+  fullName: BB84.Extensions.ByteExtensions.GetSHA256
+  nameWithType: ByteExtensions.GetSHA256
+- uid: BB84.Extensions.ByteExtensions.GetSHA256String(System.Byte[])
+  name: GetSHA256String(byte[])
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetSHA256String_System_Byte___
+  commentId: M:BB84.Extensions.ByteExtensions.GetSHA256String(System.Byte[])
+  name.vb: GetSHA256String(Byte())
+  fullName: BB84.Extensions.ByteExtensions.GetSHA256String(byte[])
+  fullName.vb: BB84.Extensions.ByteExtensions.GetSHA256String(Byte())
+  nameWithType: ByteExtensions.GetSHA256String(byte[])
+  nameWithType.vb: ByteExtensions.GetSHA256String(Byte())
+- uid: BB84.Extensions.ByteExtensions.GetSHA256String*
+  name: GetSHA256String
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetSHA256String_
+  commentId: Overload:BB84.Extensions.ByteExtensions.GetSHA256String
+  isSpec: "True"
+  fullName: BB84.Extensions.ByteExtensions.GetSHA256String
+  nameWithType: ByteExtensions.GetSHA256String
+- uid: BB84.Extensions.ByteExtensions.GetSHA512(System.Byte[])
+  name: GetSHA512(byte[])
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetSHA512_System_Byte___
+  commentId: M:BB84.Extensions.ByteExtensions.GetSHA512(System.Byte[])
+  name.vb: GetSHA512(Byte())
+  fullName: BB84.Extensions.ByteExtensions.GetSHA512(byte[])
+  fullName.vb: BB84.Extensions.ByteExtensions.GetSHA512(Byte())
+  nameWithType: ByteExtensions.GetSHA512(byte[])
+  nameWithType.vb: ByteExtensions.GetSHA512(Byte())
+- uid: BB84.Extensions.ByteExtensions.GetSHA512*
+  name: GetSHA512
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetSHA512_
+  commentId: Overload:BB84.Extensions.ByteExtensions.GetSHA512
+  isSpec: "True"
+  fullName: BB84.Extensions.ByteExtensions.GetSHA512
+  nameWithType: ByteExtensions.GetSHA512
+- uid: BB84.Extensions.ByteExtensions.GetSHA512String(System.Byte[])
+  name: GetSHA512String(byte[])
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetSHA512String_System_Byte___
+  commentId: M:BB84.Extensions.ByteExtensions.GetSHA512String(System.Byte[])
+  name.vb: GetSHA512String(Byte())
+  fullName: BB84.Extensions.ByteExtensions.GetSHA512String(byte[])
+  fullName.vb: BB84.Extensions.ByteExtensions.GetSHA512String(Byte())
+  nameWithType: ByteExtensions.GetSHA512String(byte[])
+  nameWithType.vb: ByteExtensions.GetSHA512String(Byte())
+- uid: BB84.Extensions.ByteExtensions.GetSHA512String*
+  name: GetSHA512String
+  href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetSHA512String_
+  commentId: Overload:BB84.Extensions.ByteExtensions.GetSHA512String
+  isSpec: "True"
+  fullName: BB84.Extensions.ByteExtensions.GetSHA512String
+  nameWithType: ByteExtensions.GetSHA512String
 - uid: BB84.Extensions.ByteExtensions.GetString(System.Byte[],System.Text.Encoding)
   name: GetString(byte[], Encoding?)
   href: api/BB84.Extensions.ByteExtensions.html#BB84_Extensions_ByteExtensions_GetString_System_Byte___System_Text_Encoding_
@@ -545,6 +641,22 @@ references:
   commentId: T:BB84.Extensions.ComparableExtensions
   fullName: BB84.Extensions.ComparableExtensions
   nameWithType: ComparableExtensions
+- uid: BB84.Extensions.ComparableExtensions.IsBetween*
+  name: IsBetween
+  href: api/BB84.Extensions.ComparableExtensions.html#BB84_Extensions_ComparableExtensions_IsBetween_
+  commentId: Overload:BB84.Extensions.ComparableExtensions.IsBetween
+  isSpec: "True"
+  fullName: BB84.Extensions.ComparableExtensions.IsBetween
+  nameWithType: ComparableExtensions.IsBetween
+- uid: BB84.Extensions.ComparableExtensions.IsBetween``1(``0,``0,``0,System.Boolean)
+  name: IsBetween<T>(T, T, T, bool)
+  href: api/BB84.Extensions.ComparableExtensions.html#BB84_Extensions_ComparableExtensions_IsBetween__1___0___0___0_System_Boolean_
+  commentId: M:BB84.Extensions.ComparableExtensions.IsBetween``1(``0,``0,``0,System.Boolean)
+  name.vb: IsBetween(Of T)(T, T, T, Boolean)
+  fullName: BB84.Extensions.ComparableExtensions.IsBetween<T>(T, T, T, bool)
+  fullName.vb: BB84.Extensions.ComparableExtensions.IsBetween(Of T)(T, T, T, Boolean)
+  nameWithType: ComparableExtensions.IsBetween<T>(T, T, T, bool)
+  nameWithType.vb: ComparableExtensions.IsBetween(Of T)(T, T, T, Boolean)
 - uid: BB84.Extensions.ComparableExtensions.IsGreaterOrEqualThan*
   name: IsGreaterOrEqualThan
   href: api/BB84.Extensions.ComparableExtensions.html#BB84_Extensions_ComparableExtensions_IsGreaterOrEqualThan_
@@ -759,15 +871,15 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.DateTimeExtensions.Until
   nameWithType: DateTimeExtensions.Until
-- uid: BB84.Extensions.DateTimeExtensions.WeekOfYear(System.DateTime)
-  name: WeekOfYear(DateTime)
-  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_WeekOfYear_System_DateTime_
-  commentId: M:BB84.Extensions.DateTimeExtensions.WeekOfYear(System.DateTime)
-  name.vb: WeekOfYear(Date)
-  fullName: BB84.Extensions.DateTimeExtensions.WeekOfYear(System.DateTime)
-  fullName.vb: BB84.Extensions.DateTimeExtensions.WeekOfYear(Date)
-  nameWithType: DateTimeExtensions.WeekOfYear(DateTime)
-  nameWithType.vb: DateTimeExtensions.WeekOfYear(Date)
+- uid: BB84.Extensions.DateTimeExtensions.WeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)
+  name: WeekOfYear(DateTime, CalendarWeekRule, DayOfWeek)
+  href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_WeekOfYear_System_DateTime_System_Globalization_CalendarWeekRule_System_DayOfWeek_
+  commentId: M:BB84.Extensions.DateTimeExtensions.WeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)
+  name.vb: WeekOfYear(Date, CalendarWeekRule, DayOfWeek)
+  fullName: BB84.Extensions.DateTimeExtensions.WeekOfYear(System.DateTime, System.Globalization.CalendarWeekRule, System.DayOfWeek)
+  fullName.vb: BB84.Extensions.DateTimeExtensions.WeekOfYear(Date, System.Globalization.CalendarWeekRule, System.DayOfWeek)
+  nameWithType: DateTimeExtensions.WeekOfYear(DateTime, CalendarWeekRule, DayOfWeek)
+  nameWithType.vb: DateTimeExtensions.WeekOfYear(Date, CalendarWeekRule, DayOfWeek)
 - uid: BB84.Extensions.DateTimeExtensions.WeekOfYear*
   name: WeekOfYear
   href: api/BB84.Extensions.DateTimeExtensions.html#BB84_Extensions_DateTimeExtensions_WeekOfYear_
@@ -963,6 +1075,92 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.DecimalExtensions.IsPositive
   nameWithType: DecimalExtensions.IsPositive
+- uid: BB84.Extensions.DictionaryExtensions
+  name: DictionaryExtensions
+  href: api/BB84.Extensions.DictionaryExtensions.html
+  commentId: T:BB84.Extensions.DictionaryExtensions
+  fullName: BB84.Extensions.DictionaryExtensions
+  nameWithType: DictionaryExtensions
+- uid: BB84.Extensions.DictionaryExtensions.AddOrUpdate*
+  name: AddOrUpdate
+  href: api/BB84.Extensions.DictionaryExtensions.html#BB84_Extensions_DictionaryExtensions_AddOrUpdate_
+  commentId: Overload:BB84.Extensions.DictionaryExtensions.AddOrUpdate
+  isSpec: "True"
+  fullName: BB84.Extensions.DictionaryExtensions.AddOrUpdate
+  nameWithType: DictionaryExtensions.AddOrUpdate
+- uid: BB84.Extensions.DictionaryExtensions.AddOrUpdate``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1,System.Func{``0,``1,``1})
+  name: AddOrUpdate<TKey, TValue>(IDictionary<TKey, TValue>, TKey, TValue, Func<TKey, TValue, TValue>)
+  href: api/BB84.Extensions.DictionaryExtensions.html#BB84_Extensions_DictionaryExtensions_AddOrUpdate__2_System_Collections_Generic_IDictionary___0___1____0___1_System_Func___0___1___1__
+  commentId: M:BB84.Extensions.DictionaryExtensions.AddOrUpdate``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1,System.Func{``0,``1,``1})
+  name.vb: AddOrUpdate(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, TValue, Func(Of TKey, TValue, TValue))
+  fullName: BB84.Extensions.DictionaryExtensions.AddOrUpdate<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>, TKey, TValue, System.Func<TKey, TValue, TValue>)
+  fullName.vb: BB84.Extensions.DictionaryExtensions.AddOrUpdate(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue), TKey, TValue, System.Func(Of TKey, TValue, TValue))
+  nameWithType: DictionaryExtensions.AddOrUpdate<TKey, TValue>(IDictionary<TKey, TValue>, TKey, TValue, Func<TKey, TValue, TValue>)
+  nameWithType.vb: DictionaryExtensions.AddOrUpdate(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, TValue, Func(Of TKey, TValue, TValue))
+- uid: BB84.Extensions.DictionaryExtensions.GetOrAdd*
+  name: GetOrAdd
+  href: api/BB84.Extensions.DictionaryExtensions.html#BB84_Extensions_DictionaryExtensions_GetOrAdd_
+  commentId: Overload:BB84.Extensions.DictionaryExtensions.GetOrAdd
+  isSpec: "True"
+  fullName: BB84.Extensions.DictionaryExtensions.GetOrAdd
+  nameWithType: DictionaryExtensions.GetOrAdd
+- uid: BB84.Extensions.DictionaryExtensions.GetOrAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})
+  name: GetOrAdd<TKey, TValue>(IDictionary<TKey, TValue>, TKey, Func<TKey, TValue>)
+  href: api/BB84.Extensions.DictionaryExtensions.html#BB84_Extensions_DictionaryExtensions_GetOrAdd__2_System_Collections_Generic_IDictionary___0___1____0_System_Func___0___1__
+  commentId: M:BB84.Extensions.DictionaryExtensions.GetOrAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})
+  name.vb: GetOrAdd(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, Func(Of TKey, TValue))
+  fullName: BB84.Extensions.DictionaryExtensions.GetOrAdd<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>, TKey, System.Func<TKey, TValue>)
+  fullName.vb: BB84.Extensions.DictionaryExtensions.GetOrAdd(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue), TKey, System.Func(Of TKey, TValue))
+  nameWithType: DictionaryExtensions.GetOrAdd<TKey, TValue>(IDictionary<TKey, TValue>, TKey, Func<TKey, TValue>)
+  nameWithType.vb: DictionaryExtensions.GetOrAdd(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, Func(Of TKey, TValue))
+- uid: BB84.Extensions.DictionaryExtensions.GetOrDefault*
+  name: GetOrDefault
+  href: api/BB84.Extensions.DictionaryExtensions.html#BB84_Extensions_DictionaryExtensions_GetOrDefault_
+  commentId: Overload:BB84.Extensions.DictionaryExtensions.GetOrDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.DictionaryExtensions.GetOrDefault
+  nameWithType: DictionaryExtensions.GetOrDefault
+- uid: BB84.Extensions.DictionaryExtensions.GetOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)
+  name: GetOrDefault<TKey, TValue>(IDictionary<TKey, TValue>, TKey, TValue)
+  href: api/BB84.Extensions.DictionaryExtensions.html#BB84_Extensions_DictionaryExtensions_GetOrDefault__2_System_Collections_Generic_IDictionary___0___1____0___1_
+  commentId: M:BB84.Extensions.DictionaryExtensions.GetOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)
+  name.vb: GetOrDefault(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, TValue)
+  fullName: BB84.Extensions.DictionaryExtensions.GetOrDefault<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>, TKey, TValue)
+  fullName.vb: BB84.Extensions.DictionaryExtensions.GetOrDefault(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue), TKey, TValue)
+  nameWithType: DictionaryExtensions.GetOrDefault<TKey, TValue>(IDictionary<TKey, TValue>, TKey, TValue)
+  nameWithType.vb: DictionaryExtensions.GetOrDefault(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, TValue)
+- uid: BB84.Extensions.DictionaryExtensions.IsNotNullOrEmpty*
+  name: IsNotNullOrEmpty
+  href: api/BB84.Extensions.DictionaryExtensions.html#BB84_Extensions_DictionaryExtensions_IsNotNullOrEmpty_
+  commentId: Overload:BB84.Extensions.DictionaryExtensions.IsNotNullOrEmpty
+  isSpec: "True"
+  fullName: BB84.Extensions.DictionaryExtensions.IsNotNullOrEmpty
+  nameWithType: DictionaryExtensions.IsNotNullOrEmpty
+- uid: BB84.Extensions.DictionaryExtensions.IsNotNullOrEmpty``2(System.Collections.Generic.IDictionary{``0,``1})
+  name: IsNotNullOrEmpty<TKey, TValue>(IDictionary<TKey, TValue>?)
+  href: api/BB84.Extensions.DictionaryExtensions.html#BB84_Extensions_DictionaryExtensions_IsNotNullOrEmpty__2_System_Collections_Generic_IDictionary___0___1__
+  commentId: M:BB84.Extensions.DictionaryExtensions.IsNotNullOrEmpty``2(System.Collections.Generic.IDictionary{``0,``1})
+  name.vb: IsNotNullOrEmpty(Of TKey, TValue)(IDictionary(Of TKey, TValue))
+  fullName: BB84.Extensions.DictionaryExtensions.IsNotNullOrEmpty<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>?)
+  fullName.vb: BB84.Extensions.DictionaryExtensions.IsNotNullOrEmpty(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue))
+  nameWithType: DictionaryExtensions.IsNotNullOrEmpty<TKey, TValue>(IDictionary<TKey, TValue>?)
+  nameWithType.vb: DictionaryExtensions.IsNotNullOrEmpty(Of TKey, TValue)(IDictionary(Of TKey, TValue))
+- uid: BB84.Extensions.DictionaryExtensions.IsNullOrEmpty*
+  name: IsNullOrEmpty
+  href: api/BB84.Extensions.DictionaryExtensions.html#BB84_Extensions_DictionaryExtensions_IsNullOrEmpty_
+  commentId: Overload:BB84.Extensions.DictionaryExtensions.IsNullOrEmpty
+  isSpec: "True"
+  fullName: BB84.Extensions.DictionaryExtensions.IsNullOrEmpty
+  nameWithType: DictionaryExtensions.IsNullOrEmpty
+- uid: BB84.Extensions.DictionaryExtensions.IsNullOrEmpty``2(System.Collections.Generic.IDictionary{``0,``1})
+  name: IsNullOrEmpty<TKey, TValue>(IDictionary<TKey, TValue>?)
+  href: api/BB84.Extensions.DictionaryExtensions.html#BB84_Extensions_DictionaryExtensions_IsNullOrEmpty__2_System_Collections_Generic_IDictionary___0___1__
+  commentId: M:BB84.Extensions.DictionaryExtensions.IsNullOrEmpty``2(System.Collections.Generic.IDictionary{``0,``1})
+  name.vb: IsNullOrEmpty(Of TKey, TValue)(IDictionary(Of TKey, TValue))
+  fullName: BB84.Extensions.DictionaryExtensions.IsNullOrEmpty<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>?)
+  fullName.vb: BB84.Extensions.DictionaryExtensions.IsNullOrEmpty(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue))
+  nameWithType: DictionaryExtensions.IsNullOrEmpty<TKey, TValue>(IDictionary<TKey, TValue>?)
+  nameWithType.vb: DictionaryExtensions.IsNullOrEmpty(Of TKey, TValue)(IDictionary(Of TKey, TValue))
 - uid: BB84.Extensions.DoubleExtensions
   name: DoubleExtensions
   href: api/BB84.Extensions.DoubleExtensions.html
@@ -1157,6 +1355,22 @@ references:
   commentId: T:BB84.Extensions.EnumerableExtensions
   fullName: BB84.Extensions.EnumerableExtensions
   nameWithType: EnumerableExtensions
+- uid: BB84.Extensions.EnumerableExtensions.Chunk*
+  name: Chunk
+  href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_Chunk_
+  commentId: Overload:BB84.Extensions.EnumerableExtensions.Chunk
+  isSpec: "True"
+  fullName: BB84.Extensions.EnumerableExtensions.Chunk
+  nameWithType: EnumerableExtensions.Chunk
+- uid: BB84.Extensions.EnumerableExtensions.Chunk``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  name: Chunk<T>(IEnumerable<T>, int)
+  href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_Chunk__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  commentId: M:BB84.Extensions.EnumerableExtensions.Chunk``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  name.vb: Chunk(Of T)(IEnumerable(Of T), Integer)
+  fullName: BB84.Extensions.EnumerableExtensions.Chunk<T>(System.Collections.Generic.IEnumerable<T>, int)
+  fullName.vb: BB84.Extensions.EnumerableExtensions.Chunk(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer)
+  nameWithType: EnumerableExtensions.Chunk<T>(IEnumerable<T>, int)
+  nameWithType.vb: EnumerableExtensions.Chunk(Of T)(IEnumerable(Of T), Integer)
 - uid: BB84.Extensions.EnumerableExtensions.ForEach*
   name: ForEach
   href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_ForEach_
@@ -1278,6 +1492,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.EnumerableExtensions.TakeRandom
   nameWithType: EnumerableExtensions.TakeRandom
+- uid: BB84.Extensions.EnumerableExtensions.TakeRandomOrDefault*
+  name: TakeRandomOrDefault
+  href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_TakeRandomOrDefault_
+  commentId: Overload:BB84.Extensions.EnumerableExtensions.TakeRandomOrDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.EnumerableExtensions.TakeRandomOrDefault
+  nameWithType: EnumerableExtensions.TakeRandomOrDefault
+- uid: BB84.Extensions.EnumerableExtensions.TakeRandomOrDefault``1(System.Collections.Generic.IEnumerable{``0})
+  name: TakeRandomOrDefault<T>(IEnumerable<T>)
+  href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_TakeRandomOrDefault__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:BB84.Extensions.EnumerableExtensions.TakeRandomOrDefault``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: TakeRandomOrDefault(Of T)(IEnumerable(Of T))
+  fullName: BB84.Extensions.EnumerableExtensions.TakeRandomOrDefault<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: BB84.Extensions.EnumerableExtensions.TakeRandomOrDefault(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: EnumerableExtensions.TakeRandomOrDefault<T>(IEnumerable<T>)
+  nameWithType.vb: EnumerableExtensions.TakeRandomOrDefault(Of T)(IEnumerable(Of T))
 - uid: BB84.Extensions.EnumerableExtensions.TakeRandom``1(System.Collections.Generic.IEnumerable{``0})
   name: TakeRandom<T>(IEnumerable<T>)
   href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_TakeRandom__1_System_Collections_Generic_IEnumerable___0__
@@ -1287,6 +1517,22 @@ references:
   fullName.vb: BB84.Extensions.EnumerableExtensions.TakeRandom(Of T)(System.Collections.Generic.IEnumerable(Of T))
   nameWithType: EnumerableExtensions.TakeRandom<T>(IEnumerable<T>)
   nameWithType.vb: EnumerableExtensions.TakeRandom(Of T)(IEnumerable(Of T))
+- uid: BB84.Extensions.EnumerableExtensions.TryTakeRandom*
+  name: TryTakeRandom
+  href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_TryTakeRandom_
+  commentId: Overload:BB84.Extensions.EnumerableExtensions.TryTakeRandom
+  isSpec: "True"
+  fullName: BB84.Extensions.EnumerableExtensions.TryTakeRandom
+  nameWithType: EnumerableExtensions.TryTakeRandom
+- uid: BB84.Extensions.EnumerableExtensions.TryTakeRandom``1(System.Collections.Generic.IEnumerable{``0},``0@)
+  name: TryTakeRandom<T>(IEnumerable<T>, out T)
+  href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_TryTakeRandom__1_System_Collections_Generic_IEnumerable___0____0__
+  commentId: M:BB84.Extensions.EnumerableExtensions.TryTakeRandom``1(System.Collections.Generic.IEnumerable{``0},``0@)
+  name.vb: TryTakeRandom(Of T)(IEnumerable(Of T), T)
+  fullName: BB84.Extensions.EnumerableExtensions.TryTakeRandom<T>(System.Collections.Generic.IEnumerable<T>, out T)
+  fullName.vb: BB84.Extensions.EnumerableExtensions.TryTakeRandom(Of T)(System.Collections.Generic.IEnumerable(Of T), T)
+  nameWithType: EnumerableExtensions.TryTakeRandom<T>(IEnumerable<T>, out T)
+  nameWithType.vb: EnumerableExtensions.TryTakeRandom(Of T)(IEnumerable(Of T), T)
 - uid: BB84.Extensions.EnumeratorExtensions
   name: EnumeratorExtensions
   href: api/BB84.Extensions.EnumeratorExtensions.html
@@ -1544,6 +1790,15 @@ references:
   fullName.vb: BB84.Extensions.HttpClientExtensions.WithBaseAddress(System.Net.Http.HttpClient, String)
   nameWithType: HttpClientExtensions.WithBaseAddress(HttpClient, string)
   nameWithType.vb: HttpClientExtensions.WithBaseAddress(HttpClient, String)
+- uid: BB84.Extensions.HttpClientExtensions.WithBaseAddress(System.Net.Http.HttpClient,System.String,System.UriKind)
+  name: WithBaseAddress(HttpClient, string, UriKind)
+  href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithBaseAddress_System_Net_Http_HttpClient_System_String_System_UriKind_
+  commentId: M:BB84.Extensions.HttpClientExtensions.WithBaseAddress(System.Net.Http.HttpClient,System.String,System.UriKind)
+  name.vb: WithBaseAddress(HttpClient, String, UriKind)
+  fullName: BB84.Extensions.HttpClientExtensions.WithBaseAddress(System.Net.Http.HttpClient, string, System.UriKind)
+  fullName.vb: BB84.Extensions.HttpClientExtensions.WithBaseAddress(System.Net.Http.HttpClient, String, System.UriKind)
+  nameWithType: HttpClientExtensions.WithBaseAddress(HttpClient, string, UriKind)
+  nameWithType.vb: HttpClientExtensions.WithBaseAddress(HttpClient, String, UriKind)
 - uid: BB84.Extensions.HttpClientExtensions.WithBaseAddress(System.Net.Http.HttpClient,System.Uri)
   name: WithBaseAddress(HttpClient, Uri)
   href: api/BB84.Extensions.HttpClientExtensions.html#BB84_Extensions_HttpClientExtensions_WithBaseAddress_System_Net_Http_HttpClient_System_Uri_
@@ -1953,6 +2208,22 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.ListExtensions.TakeRandom
   nameWithType: ListExtensions.TakeRandom
+- uid: BB84.Extensions.ListExtensions.TakeRandomOrDefault*
+  name: TakeRandomOrDefault
+  href: api/BB84.Extensions.ListExtensions.html#BB84_Extensions_ListExtensions_TakeRandomOrDefault_
+  commentId: Overload:BB84.Extensions.ListExtensions.TakeRandomOrDefault
+  isSpec: "True"
+  fullName: BB84.Extensions.ListExtensions.TakeRandomOrDefault
+  nameWithType: ListExtensions.TakeRandomOrDefault
+- uid: BB84.Extensions.ListExtensions.TakeRandomOrDefault``1(System.Collections.Generic.IList{``0})
+  name: TakeRandomOrDefault<T>(IList<T>)
+  href: api/BB84.Extensions.ListExtensions.html#BB84_Extensions_ListExtensions_TakeRandomOrDefault__1_System_Collections_Generic_IList___0__
+  commentId: M:BB84.Extensions.ListExtensions.TakeRandomOrDefault``1(System.Collections.Generic.IList{``0})
+  name.vb: TakeRandomOrDefault(Of T)(IList(Of T))
+  fullName: BB84.Extensions.ListExtensions.TakeRandomOrDefault<T>(System.Collections.Generic.IList<T>)
+  fullName.vb: BB84.Extensions.ListExtensions.TakeRandomOrDefault(Of T)(System.Collections.Generic.IList(Of T))
+  nameWithType: ListExtensions.TakeRandomOrDefault<T>(IList<T>)
+  nameWithType.vb: ListExtensions.TakeRandomOrDefault(Of T)(IList(Of T))
 - uid: BB84.Extensions.ListExtensions.TakeRandom``1(System.Collections.Generic.IList{``0})
   name: TakeRandom<T>(IList<T>)
   href: api/BB84.Extensions.ListExtensions.html#BB84_Extensions_ListExtensions_TakeRandom__1_System_Collections_Generic_IList___0__
@@ -1962,6 +2233,22 @@ references:
   fullName.vb: BB84.Extensions.ListExtensions.TakeRandom(Of T)(System.Collections.Generic.IList(Of T))
   nameWithType: ListExtensions.TakeRandom<T>(IList<T>)
   nameWithType.vb: ListExtensions.TakeRandom(Of T)(IList(Of T))
+- uid: BB84.Extensions.ListExtensions.TryTakeRandom*
+  name: TryTakeRandom
+  href: api/BB84.Extensions.ListExtensions.html#BB84_Extensions_ListExtensions_TryTakeRandom_
+  commentId: Overload:BB84.Extensions.ListExtensions.TryTakeRandom
+  isSpec: "True"
+  fullName: BB84.Extensions.ListExtensions.TryTakeRandom
+  nameWithType: ListExtensions.TryTakeRandom
+- uid: BB84.Extensions.ListExtensions.TryTakeRandom``1(System.Collections.Generic.IList{``0},``0@)
+  name: TryTakeRandom<T>(IList<T>, out T)
+  href: api/BB84.Extensions.ListExtensions.html#BB84_Extensions_ListExtensions_TryTakeRandom__1_System_Collections_Generic_IList___0____0__
+  commentId: M:BB84.Extensions.ListExtensions.TryTakeRandom``1(System.Collections.Generic.IList{``0},``0@)
+  name.vb: TryTakeRandom(Of T)(IList(Of T), T)
+  fullName: BB84.Extensions.ListExtensions.TryTakeRandom<T>(System.Collections.Generic.IList<T>, out T)
+  fullName.vb: BB84.Extensions.ListExtensions.TryTakeRandom(Of T)(System.Collections.Generic.IList(Of T), T)
+  nameWithType: ListExtensions.TryTakeRandom<T>(IList<T>, out T)
+  nameWithType.vb: ListExtensions.TryTakeRandom(Of T)(IList(Of T), T)
 - uid: BB84.Extensions.LongExtensions
   name: LongExtensions
   href: api/BB84.Extensions.LongExtensions.html
@@ -2646,6 +2933,19 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.StreamExtensions.ToByteArray
   nameWithType: StreamExtensions.ToByteArray
+- uid: BB84.Extensions.StreamExtensions.ToByteArrayAsync(System.IO.Stream,System.Threading.CancellationToken)
+  name: ToByteArrayAsync(Stream, CancellationToken)
+  href: api/BB84.Extensions.StreamExtensions.html#BB84_Extensions_StreamExtensions_ToByteArrayAsync_System_IO_Stream_System_Threading_CancellationToken_
+  commentId: M:BB84.Extensions.StreamExtensions.ToByteArrayAsync(System.IO.Stream,System.Threading.CancellationToken)
+  fullName: BB84.Extensions.StreamExtensions.ToByteArrayAsync(System.IO.Stream, System.Threading.CancellationToken)
+  nameWithType: StreamExtensions.ToByteArrayAsync(Stream, CancellationToken)
+- uid: BB84.Extensions.StreamExtensions.ToByteArrayAsync*
+  name: ToByteArrayAsync
+  href: api/BB84.Extensions.StreamExtensions.html#BB84_Extensions_StreamExtensions_ToByteArrayAsync_
+  commentId: Overload:BB84.Extensions.StreamExtensions.ToByteArrayAsync
+  isSpec: "True"
+  fullName: BB84.Extensions.StreamExtensions.ToByteArrayAsync
+  nameWithType: StreamExtensions.ToByteArrayAsync
 - uid: BB84.Extensions.StringExtensions
   name: StringExtensions
   href: api/BB84.Extensions.StringExtensions.html
@@ -2860,6 +3160,102 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.StringExtensions.GetMd5Utf8
   nameWithType: StringExtensions.GetMd5Utf8
+- uid: BB84.Extensions.StringExtensions.GetSha256Ascii(System.String)
+  name: GetSha256Ascii(string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha256Ascii_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.GetSha256Ascii(System.String)
+  name.vb: GetSha256Ascii(String)
+  fullName: BB84.Extensions.StringExtensions.GetSha256Ascii(string)
+  fullName.vb: BB84.Extensions.StringExtensions.GetSha256Ascii(String)
+  nameWithType: StringExtensions.GetSha256Ascii(string)
+  nameWithType.vb: StringExtensions.GetSha256Ascii(String)
+- uid: BB84.Extensions.StringExtensions.GetSha256Ascii*
+  name: GetSha256Ascii
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha256Ascii_
+  commentId: Overload:BB84.Extensions.StringExtensions.GetSha256Ascii
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.GetSha256Ascii
+  nameWithType: StringExtensions.GetSha256Ascii
+- uid: BB84.Extensions.StringExtensions.GetSha256Unicode(System.String)
+  name: GetSha256Unicode(string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha256Unicode_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.GetSha256Unicode(System.String)
+  name.vb: GetSha256Unicode(String)
+  fullName: BB84.Extensions.StringExtensions.GetSha256Unicode(string)
+  fullName.vb: BB84.Extensions.StringExtensions.GetSha256Unicode(String)
+  nameWithType: StringExtensions.GetSha256Unicode(string)
+  nameWithType.vb: StringExtensions.GetSha256Unicode(String)
+- uid: BB84.Extensions.StringExtensions.GetSha256Unicode*
+  name: GetSha256Unicode
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha256Unicode_
+  commentId: Overload:BB84.Extensions.StringExtensions.GetSha256Unicode
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.GetSha256Unicode
+  nameWithType: StringExtensions.GetSha256Unicode
+- uid: BB84.Extensions.StringExtensions.GetSha256Utf8(System.String)
+  name: GetSha256Utf8(string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha256Utf8_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.GetSha256Utf8(System.String)
+  name.vb: GetSha256Utf8(String)
+  fullName: BB84.Extensions.StringExtensions.GetSha256Utf8(string)
+  fullName.vb: BB84.Extensions.StringExtensions.GetSha256Utf8(String)
+  nameWithType: StringExtensions.GetSha256Utf8(string)
+  nameWithType.vb: StringExtensions.GetSha256Utf8(String)
+- uid: BB84.Extensions.StringExtensions.GetSha256Utf8*
+  name: GetSha256Utf8
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha256Utf8_
+  commentId: Overload:BB84.Extensions.StringExtensions.GetSha256Utf8
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.GetSha256Utf8
+  nameWithType: StringExtensions.GetSha256Utf8
+- uid: BB84.Extensions.StringExtensions.GetSha512Ascii(System.String)
+  name: GetSha512Ascii(string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha512Ascii_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.GetSha512Ascii(System.String)
+  name.vb: GetSha512Ascii(String)
+  fullName: BB84.Extensions.StringExtensions.GetSha512Ascii(string)
+  fullName.vb: BB84.Extensions.StringExtensions.GetSha512Ascii(String)
+  nameWithType: StringExtensions.GetSha512Ascii(string)
+  nameWithType.vb: StringExtensions.GetSha512Ascii(String)
+- uid: BB84.Extensions.StringExtensions.GetSha512Ascii*
+  name: GetSha512Ascii
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha512Ascii_
+  commentId: Overload:BB84.Extensions.StringExtensions.GetSha512Ascii
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.GetSha512Ascii
+  nameWithType: StringExtensions.GetSha512Ascii
+- uid: BB84.Extensions.StringExtensions.GetSha512Unicode(System.String)
+  name: GetSha512Unicode(string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha512Unicode_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.GetSha512Unicode(System.String)
+  name.vb: GetSha512Unicode(String)
+  fullName: BB84.Extensions.StringExtensions.GetSha512Unicode(string)
+  fullName.vb: BB84.Extensions.StringExtensions.GetSha512Unicode(String)
+  nameWithType: StringExtensions.GetSha512Unicode(string)
+  nameWithType.vb: StringExtensions.GetSha512Unicode(String)
+- uid: BB84.Extensions.StringExtensions.GetSha512Unicode*
+  name: GetSha512Unicode
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha512Unicode_
+  commentId: Overload:BB84.Extensions.StringExtensions.GetSha512Unicode
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.GetSha512Unicode
+  nameWithType: StringExtensions.GetSha512Unicode
+- uid: BB84.Extensions.StringExtensions.GetSha512Utf8(System.String)
+  name: GetSha512Utf8(string)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha512Utf8_System_String_
+  commentId: M:BB84.Extensions.StringExtensions.GetSha512Utf8(System.String)
+  name.vb: GetSha512Utf8(String)
+  fullName: BB84.Extensions.StringExtensions.GetSha512Utf8(string)
+  fullName.vb: BB84.Extensions.StringExtensions.GetSha512Utf8(String)
+  nameWithType: StringExtensions.GetSha512Utf8(string)
+  nameWithType.vb: StringExtensions.GetSha512Utf8(String)
+- uid: BB84.Extensions.StringExtensions.GetSha512Utf8*
+  name: GetSha512Utf8
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha512Utf8_
+  commentId: Overload:BB84.Extensions.StringExtensions.GetSha512Utf8
+  isSpec: "True"
+  fullName: BB84.Extensions.StringExtensions.GetSha512Utf8
+  nameWithType: StringExtensions.GetSha512Utf8
 - uid: BB84.Extensions.StringExtensions.IsNotNull(System.String)
   name: IsNotNull(string?)
   href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNotNull_System_String_
@@ -3894,6 +4290,70 @@ references:
   commentId: T:BB84.WinForms.Extensions.NumericUpDownExtensions
   fullName: BB84.WinForms.Extensions.NumericUpDownExtensions
   nameWithType: NumericUpDownExtensions
+- uid: BB84.WinForms.Extensions.NumericUpDownExtensions.WithDecimalPlacesBinding(System.Windows.Forms.NumericUpDown,System.Object,System.String)
+  name: WithDecimalPlacesBinding(NumericUpDown, object, string)
+  href: api/BB84.WinForms.Extensions.NumericUpDownExtensions.html#BB84_WinForms_Extensions_NumericUpDownExtensions_WithDecimalPlacesBinding_System_Windows_Forms_NumericUpDown_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.NumericUpDownExtensions.WithDecimalPlacesBinding(System.Windows.Forms.NumericUpDown,System.Object,System.String)
+  name.vb: WithDecimalPlacesBinding(NumericUpDown, Object, String)
+  fullName: BB84.WinForms.Extensions.NumericUpDownExtensions.WithDecimalPlacesBinding(System.Windows.Forms.NumericUpDown, object, string)
+  fullName.vb: BB84.WinForms.Extensions.NumericUpDownExtensions.WithDecimalPlacesBinding(System.Windows.Forms.NumericUpDown, Object, String)
+  nameWithType: NumericUpDownExtensions.WithDecimalPlacesBinding(NumericUpDown, object, string)
+  nameWithType.vb: NumericUpDownExtensions.WithDecimalPlacesBinding(NumericUpDown, Object, String)
+- uid: BB84.WinForms.Extensions.NumericUpDownExtensions.WithDecimalPlacesBinding*
+  name: WithDecimalPlacesBinding
+  href: api/BB84.WinForms.Extensions.NumericUpDownExtensions.html#BB84_WinForms_Extensions_NumericUpDownExtensions_WithDecimalPlacesBinding_
+  commentId: Overload:BB84.WinForms.Extensions.NumericUpDownExtensions.WithDecimalPlacesBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.NumericUpDownExtensions.WithDecimalPlacesBinding
+  nameWithType: NumericUpDownExtensions.WithDecimalPlacesBinding
+- uid: BB84.WinForms.Extensions.NumericUpDownExtensions.WithIncrementBinding(System.Windows.Forms.NumericUpDown,System.Object,System.String)
+  name: WithIncrementBinding(NumericUpDown, object, string)
+  href: api/BB84.WinForms.Extensions.NumericUpDownExtensions.html#BB84_WinForms_Extensions_NumericUpDownExtensions_WithIncrementBinding_System_Windows_Forms_NumericUpDown_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.NumericUpDownExtensions.WithIncrementBinding(System.Windows.Forms.NumericUpDown,System.Object,System.String)
+  name.vb: WithIncrementBinding(NumericUpDown, Object, String)
+  fullName: BB84.WinForms.Extensions.NumericUpDownExtensions.WithIncrementBinding(System.Windows.Forms.NumericUpDown, object, string)
+  fullName.vb: BB84.WinForms.Extensions.NumericUpDownExtensions.WithIncrementBinding(System.Windows.Forms.NumericUpDown, Object, String)
+  nameWithType: NumericUpDownExtensions.WithIncrementBinding(NumericUpDown, object, string)
+  nameWithType.vb: NumericUpDownExtensions.WithIncrementBinding(NumericUpDown, Object, String)
+- uid: BB84.WinForms.Extensions.NumericUpDownExtensions.WithIncrementBinding*
+  name: WithIncrementBinding
+  href: api/BB84.WinForms.Extensions.NumericUpDownExtensions.html#BB84_WinForms_Extensions_NumericUpDownExtensions_WithIncrementBinding_
+  commentId: Overload:BB84.WinForms.Extensions.NumericUpDownExtensions.WithIncrementBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.NumericUpDownExtensions.WithIncrementBinding
+  nameWithType: NumericUpDownExtensions.WithIncrementBinding
+- uid: BB84.WinForms.Extensions.NumericUpDownExtensions.WithMaximumBinding(System.Windows.Forms.NumericUpDown,System.Object,System.String)
+  name: WithMaximumBinding(NumericUpDown, object, string)
+  href: api/BB84.WinForms.Extensions.NumericUpDownExtensions.html#BB84_WinForms_Extensions_NumericUpDownExtensions_WithMaximumBinding_System_Windows_Forms_NumericUpDown_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.NumericUpDownExtensions.WithMaximumBinding(System.Windows.Forms.NumericUpDown,System.Object,System.String)
+  name.vb: WithMaximumBinding(NumericUpDown, Object, String)
+  fullName: BB84.WinForms.Extensions.NumericUpDownExtensions.WithMaximumBinding(System.Windows.Forms.NumericUpDown, object, string)
+  fullName.vb: BB84.WinForms.Extensions.NumericUpDownExtensions.WithMaximumBinding(System.Windows.Forms.NumericUpDown, Object, String)
+  nameWithType: NumericUpDownExtensions.WithMaximumBinding(NumericUpDown, object, string)
+  nameWithType.vb: NumericUpDownExtensions.WithMaximumBinding(NumericUpDown, Object, String)
+- uid: BB84.WinForms.Extensions.NumericUpDownExtensions.WithMaximumBinding*
+  name: WithMaximumBinding
+  href: api/BB84.WinForms.Extensions.NumericUpDownExtensions.html#BB84_WinForms_Extensions_NumericUpDownExtensions_WithMaximumBinding_
+  commentId: Overload:BB84.WinForms.Extensions.NumericUpDownExtensions.WithMaximumBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.NumericUpDownExtensions.WithMaximumBinding
+  nameWithType: NumericUpDownExtensions.WithMaximumBinding
+- uid: BB84.WinForms.Extensions.NumericUpDownExtensions.WithMinimumBinding(System.Windows.Forms.NumericUpDown,System.Object,System.String)
+  name: WithMinimumBinding(NumericUpDown, object, string)
+  href: api/BB84.WinForms.Extensions.NumericUpDownExtensions.html#BB84_WinForms_Extensions_NumericUpDownExtensions_WithMinimumBinding_System_Windows_Forms_NumericUpDown_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.NumericUpDownExtensions.WithMinimumBinding(System.Windows.Forms.NumericUpDown,System.Object,System.String)
+  name.vb: WithMinimumBinding(NumericUpDown, Object, String)
+  fullName: BB84.WinForms.Extensions.NumericUpDownExtensions.WithMinimumBinding(System.Windows.Forms.NumericUpDown, object, string)
+  fullName.vb: BB84.WinForms.Extensions.NumericUpDownExtensions.WithMinimumBinding(System.Windows.Forms.NumericUpDown, Object, String)
+  nameWithType: NumericUpDownExtensions.WithMinimumBinding(NumericUpDown, object, string)
+  nameWithType.vb: NumericUpDownExtensions.WithMinimumBinding(NumericUpDown, Object, String)
+- uid: BB84.WinForms.Extensions.NumericUpDownExtensions.WithMinimumBinding*
+  name: WithMinimumBinding
+  href: api/BB84.WinForms.Extensions.NumericUpDownExtensions.html#BB84_WinForms_Extensions_NumericUpDownExtensions_WithMinimumBinding_
+  commentId: Overload:BB84.WinForms.Extensions.NumericUpDownExtensions.WithMinimumBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.NumericUpDownExtensions.WithMinimumBinding
+  nameWithType: NumericUpDownExtensions.WithMinimumBinding
 - uid: BB84.WinForms.Extensions.NumericUpDownExtensions.WithValueBinding(System.Windows.Forms.NumericUpDown,System.Object,System.String)
   name: WithValueBinding(NumericUpDown, object, string)
   href: api/BB84.WinForms.Extensions.NumericUpDownExtensions.html#BB84_WinForms_Extensions_NumericUpDownExtensions_WithValueBinding_System_Windows_Forms_NumericUpDown_System_Object_System_String_

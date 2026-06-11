@@ -102,6 +102,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Extensions.DictionaryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Extensions.DictionaryExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Extensions.DictionaryExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.DictionaryExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with <xref href=\"System.Collections.Generic.IDictionary%602\" data-throw-if-not-resolved=\"false\"></xref> objects,\nenabling safe value retrieval, conditional insertion, and null-state checks.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Extensions.DoubleExtensions.yml",
       "output": {
         ".html": {
@@ -602,7 +616,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.WinForms.Extensions.NumericUpDownExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.NumericUpDownExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.NumericUpDown\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.NumericUpDown.Value\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.NumericUpDownExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding properties of a <xref href=\"System.Windows.Forms.NumericUpDown\" data-throw-if-not-resolved=\"false\"></xref> control to a data source,\nenabling streamlined data binding for common properties such as <xref href=\"System.Windows.Forms.NumericUpDown.Value\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"System.Windows.Forms.NumericUpDown.Minimum\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Windows.Forms.NumericUpDown.Maximum\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"System.Windows.Forms.NumericUpDown.Increment\" data-throw-if-not-resolved=\"false\"></xref>, and <xref href=\"System.Windows.Forms.NumericUpDown.DecimalPlaces\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",

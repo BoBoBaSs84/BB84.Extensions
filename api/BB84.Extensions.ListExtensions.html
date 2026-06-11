@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/main/apiSpec/new?filename=BB84_Extensions_ListExtensions.md&amp;value=---%0Auid%3A%20BB84.Extensions.ListExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v4.4.0610.0/apiSpec/new?filename=BB84_Extensions_ListExtensions.md&amp;value=---%0Auid%3A%20BB84.Extensions.ListExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_ListExtensions" data-uid="BB84.Extensions.ListExtensions" class="text-break">
-Class ListExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L18"><i class="bi bi-code-slash"></i></a>
+Class ListExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.4.0610.0/src/BB84.Extensions/ListExtensions.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -158,7 +158,7 @@ These methods help simplify common null-checking patterns when working with list
 
   <h3 id="BB84_Extensions_ListExtensions_AddIfNotNull__1_System_Collections_Generic_IList___0____0_" data-uid="BB84.Extensions.ListExtensions.AddIfNotNull``1(System.Collections.Generic.IList{``0},``0)">
   AddIfNotNull&lt;T&gt;(IList&lt;T&gt;, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.4.0610.0/src/BB84.Extensions/ListExtensions.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds the item of <code class="typeparamref">T</code> to the <code class="paramref">list</code> when not null.</p>
@@ -206,7 +206,7 @@ These methods help simplify common null-checking patterns when working with list
 
   <h3 id="BB84_Extensions_ListExtensions_AddRangeIfNotNull__1_System_Collections_Generic_IList___0__System_Collections_Generic_IEnumerable___0__" data-uid="BB84.Extensions.ListExtensions.AddRangeIfNotNull``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0})">
   AddRangeIfNotNull&lt;T&gt;(IList&lt;T&gt;, IEnumerable&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.4.0610.0/src/BB84.Extensions/ListExtensions.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> to the <code class="paramref">list</code> when not null.</p>
@@ -254,7 +254,7 @@ These methods help simplify common null-checking patterns when working with list
 
   <h3 id="BB84_Extensions_ListExtensions_Randomize__1_System_Collections_Generic_IList___0__" data-uid="BB84.Extensions.ListExtensions.Randomize``1(System.Collections.Generic.IList{``0})">
   Randomize&lt;T&gt;(IList&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.4.0610.0/src/BB84.Extensions/ListExtensions.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a new list with the elements of the <code class="paramref">list</code> list in random order.</p>
@@ -299,11 +299,57 @@ The original list remains unchanged.</p>
 
 
 
+  <a id="BB84_Extensions_ListExtensions_TakeRandomOrDefault_" data-uid="BB84.Extensions.ListExtensions.TakeRandomOrDefault*"></a>
+
+  <h3 id="BB84_Extensions_ListExtensions_TakeRandomOrDefault__1_System_Collections_Generic_IList___0__" data-uid="BB84.Extensions.ListExtensions.TakeRandomOrDefault``1(System.Collections.Generic.IList{``0})">
+  TakeRandomOrDefault&lt;T&gt;(IList&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.4.0610.0/src/BB84.Extensions/ListExtensions.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a random element from the specified list, or the default value of
+<code class="typeparamref">T</code> if the list is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T? TakeRandomOrDefault&lt;T&gt;(this IList&lt;T&gt; list)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</dt>
+    <dd><p>The list from which to take a random element.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>A random element from <code class="paramref">list</code>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/default">default</a> if the list is empty.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of elements in the list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="BB84_Extensions_ListExtensions_TakeRandom_" data-uid="BB84.Extensions.ListExtensions.TakeRandom*"></a>
 
   <h3 id="BB84_Extensions_ListExtensions_TakeRandom__1_System_Collections_Generic_IList___0__" data-uid="BB84.Extensions.ListExtensions.TakeRandom``1(System.Collections.Generic.IList{``0})">
   TakeRandom&lt;T&gt;(IList&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.4.0610.0/src/BB84.Extensions/ListExtensions.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a random element from the specified list.</p>
@@ -344,11 +390,61 @@ The original list remains unchanged.</p>
 
 
 
+  <a id="BB84_Extensions_ListExtensions_TryTakeRandom_" data-uid="BB84.Extensions.ListExtensions.TryTakeRandom*"></a>
+
+  <h3 id="BB84_Extensions_ListExtensions_TryTakeRandom__1_System_Collections_Generic_IList___0____0__" data-uid="BB84.Extensions.ListExtensions.TryTakeRandom``1(System.Collections.Generic.IList{``0},``0@)">
+  TryTakeRandom&lt;T&gt;(IList&lt;T&gt;, out T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.4.0610.0/src/BB84.Extensions/ListExtensions.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to retrieve a random element from the specified list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryTakeRandom&lt;T&gt;(this IList&lt;T&gt; list, out T result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</dt>
+    <dd><p>The list from which to take a random element.</p>
+</dd>
+    <dt><code>result</code> <span class="xref">T</span></dt>
+    <dd><p>When this method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, contains a randomly selected element from
+<code class="paramref">list</code>; otherwise, the default value of <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">list</code> is not empty and a random element was
+selected; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of elements in the list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ListExtensions.cs/#L18" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.4.0610.0/src/BB84.Extensions/ListExtensions.cs/#L18" class="edit-link">Edit this page</a>
         </div>
 
 

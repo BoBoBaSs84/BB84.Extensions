@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/main/apiSpec/new?filename=BB84_Extensions_ArrayExtensions.md&amp;value=---%0Auid%3A%20BB84.Extensions.ArrayExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v4.4.0610.0/apiSpec/new?filename=BB84_Extensions_ArrayExtensions.md&amp;value=---%0Auid%3A%20BB84.Extensions.ArrayExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_ArrayExtensions" data-uid="BB84.Extensions.ArrayExtensions" class="text-break">
-Class ArrayExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ArrayExtensions.cs/#L17"><i class="bi bi-code-slash"></i></a>
+Class ArrayExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.4.0610.0/src/BB84.Extensions/ArrayExtensions.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -157,7 +157,7 @@ as selecting random elements.</p>
 
   <h3 id="BB84_Extensions_ArrayExtensions_Randomize__1___0___" data-uid="BB84.Extensions.ArrayExtensions.Randomize``1(``0[])">
   Randomize&lt;T&gt;(T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ArrayExtensions.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.4.0610.0/src/BB84.Extensions/ArrayExtensions.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Randomizes the order of elements in the specified array.</p>
@@ -198,11 +198,58 @@ as selecting random elements.</p>
 
 
 
+  <a id="BB84_Extensions_ArrayExtensions_TakeRandomOrDefault_" data-uid="BB84.Extensions.ArrayExtensions.TakeRandomOrDefault*"></a>
+
+  <h3 id="BB84_Extensions_ArrayExtensions_TakeRandomOrDefault__1___0___" data-uid="BB84.Extensions.ArrayExtensions.TakeRandomOrDefault``1(``0[])">
+  TakeRandomOrDefault&lt;T&gt;(T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.4.0610.0/src/BB84.Extensions/ArrayExtensions.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a random element from the specified <code class="paramref">array</code>, or the default value of
+<code class="typeparamref">T</code> if the array is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T? TakeRandomOrDefault&lt;T&gt;(this T[] array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd><p>The array from which to select a random element.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>A randomly selected element from <code class="paramref">array</code>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/default">default</a> if
+the array is empty.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of elements in the array.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="BB84_Extensions_ArrayExtensions_TakeRandom_" data-uid="BB84.Extensions.ArrayExtensions.TakeRandom*"></a>
 
   <h3 id="BB84_Extensions_ArrayExtensions_TakeRandom__1___0___" data-uid="BB84.Extensions.ArrayExtensions.TakeRandom``1(``0[])">
   TakeRandom&lt;T&gt;(T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ArrayExtensions.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.4.0610.0/src/BB84.Extensions/ArrayExtensions.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Selects a random element from the specified <code class="paramref">array</code>.</p>
@@ -246,11 +293,61 @@ as selecting random elements.</p>
 
 
 
+  <a id="BB84_Extensions_ArrayExtensions_TryTakeRandom_" data-uid="BB84.Extensions.ArrayExtensions.TryTakeRandom*"></a>
+
+  <h3 id="BB84_Extensions_ArrayExtensions_TryTakeRandom__1___0_____0__" data-uid="BB84.Extensions.ArrayExtensions.TryTakeRandom``1(``0[],``0@)">
+  TryTakeRandom&lt;T&gt;(T[], out T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.4.0610.0/src/BB84.Extensions/ArrayExtensions.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to retrieve a random element from the specified <code class="paramref">array</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryTakeRandom&lt;T&gt;(this T[] array, out T result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd><p>The array from which to select a random element.</p>
+</dd>
+    <dt><code>result</code> <span class="xref">T</span></dt>
+    <dd><p>When this method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, contains a randomly selected element from
+<code class="paramref">array</code>; otherwise, the default value of <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">array</code> is not empty and a random element was
+selected; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of elements in the array.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/main/src/BB84.Extensions/ArrayExtensions.cs/#L17" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.4.0610.0/src/BB84.Extensions/ArrayExtensions.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 
