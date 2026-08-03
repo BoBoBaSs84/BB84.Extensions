@@ -3,6 +3,7 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using System.Collections.Concurrent;
 using System.Xml;
 using System.Xml.Serialization;
 
@@ -21,6 +22,17 @@ namespace BB84.Extensions.Serialization;
 /// </remarks>
 public static class XmlExtension
 {
+	/// <summary>
+	/// Caches the <see cref="XmlSerializer"/> instances that are created from an <see cref="XmlRootAttribute"/>.
+	/// </summary>
+	/// <remarks>
+	/// The <see cref="XmlSerializer"/> only caches its dynamically generated serialization assembly for the
+	/// <see cref="XmlSerializer(Type)"/> and <see cref="XmlSerializer(Type, string)"/> constructors. Every other
+	/// constructor generates a new assembly per call, which is never unloaded and therefore leaks memory. Hence
+	/// serializers created from an <see cref="XmlRootAttribute"/> have to be cached by the caller.
+	/// </remarks>
+	private static readonly ConcurrentDictionary<XmlSerializerCacheKey, XmlSerializer> SerializerCache = new();
+
 	/// <summary>
 	/// Gets the default <see cref="XmlWriterSettings"/> for creating an <see cref="XmlWriter"/> instance.
 	/// </summary>
@@ -58,7 +70,7 @@ public static class XmlExtension
 		using StringReader stringReader = new(value);
 		using XmlReader xmlReader = XmlReader.Create(stringReader, settings);
 		XmlSerializer serializer = new(typeof(T));
-		
+
 		return (T)serializer.Deserialize(xmlReader)!;
 	}
 
@@ -67,7 +79,8 @@ public static class XmlExtension
 	/// </summary>
 	/// <remarks>
 	/// This method uses an <see cref="XmlSerializer"/> to perform the deserialization. Ensure that the
-	/// type <typeparamref name="T"/> is compatible with XML serialization.
+	/// type <typeparamref name="T"/> is compatible with XML serialization. The created serializer is cached,
+	/// because the <see cref="XmlSerializer"/> does not cache the assembly it generates for this constructor.
 	/// </remarks>
 	/// <typeparam name="T">The type of the object to deserialize. Must be a reference type.</typeparam>
 	/// <param name="value">The XML string to deserialize.</param>
@@ -82,7 +95,7 @@ public static class XmlExtension
 
 		using StringReader stringReader = new(value);
 		using XmlReader xmlReader = XmlReader.Create(stringReader, settings);
-		XmlSerializer serializer = new(typeof(T), rootAttribute);
+		XmlSerializer serializer = GetSerializer(typeof(T), rootAttribute);
 
 		return (T)serializer.Deserialize(xmlReader)!;
 	}
@@ -93,6 +106,8 @@ public static class XmlExtension
 	/// <remarks>
 	/// This method uses the <see cref="XmlSerializer"/> class to perform the serialization.
 	/// The caller can optionally provide custom namespaces and writer settings to control the output format.
+	/// The <see cref="XmlSerializer(Type)"/> constructor is used, which caches its dynamically generated
+	/// serialization assembly internally, so no additional caching is required here.
 	/// </remarks>
 	/// <typeparam name="T">The type of the object to serialize. Must be a reference type.</typeparam>
 	/// <param name="value">The object to serialize.</param>
@@ -115,5 +130,47 @@ public static class XmlExtension
 		serializer.Serialize(writer, value, namespaces);
 
 		return stream.ToString();
+	}
+
+	/// <summary>
+	/// Returns a cached <see cref="XmlSerializer"/> for the provided <paramref name="type"/> and
+	/// <paramref name="rootAttribute"/>, creating it on first use.
+	/// </summary>
+	/// <remarks>
+	/// The <see cref="XmlRootAttribute"/> is not used as part of the cache key itself, because it does not
+	/// implement value equality and is mutable. Its serialization relevant values are used instead and a
+	/// defensive copy is handed to the <see cref="XmlSerializer"/>.
+	/// </remarks>
+	/// <param name="type">The type the serializer is created for.</param>
+	/// <param name="rootAttribute">The <see cref="XmlRootAttribute"/> that specifies the root element
+	/// name and namespace.</param>
+	/// <returns>The cached <see cref="XmlSerializer"/> instance.</returns>
+	internal static XmlSerializer GetSerializer(Type type, XmlRootAttribute rootAttribute)
+		=> SerializerCache.GetOrAdd(
+			new(type, rootAttribute.ElementName, rootAttribute.Namespace, rootAttribute.DataType, rootAttribute.IsNullable),
+				static key => new XmlSerializer(key.Type, key.ToRootAttribute()));
+
+	/// <summary>
+	/// Represents the cache key for an <see cref="XmlSerializer"/> that is created from an
+	/// <see cref="XmlRootAttribute"/>.
+	/// </summary>
+	/// <param name="Type">The type the serializer is created for.</param>
+	/// <param name="ElementName">The name of the XML root element.</param>
+	/// <param name="Namespace">The namespace of the XML root element.</param>
+	/// <param name="DataType">The XSD data type of the XML root element.</param>
+	/// <param name="IsNullable">Whether the XML root element can be <see langword="null"/>.</param>
+	private readonly record struct XmlSerializerCacheKey(Type Type, string ElementName, string? Namespace, string DataType, bool IsNullable)
+	{
+		/// <summary>
+		/// Creates a new <see cref="XmlRootAttribute"/> from the values of this key.
+		/// </summary>
+		/// <returns>The created <see cref="XmlRootAttribute"/> instance.</returns>
+		internal readonly XmlRootAttribute ToRootAttribute() => new()
+		{
+			ElementName = ElementName,
+			Namespace = Namespace,
+			DataType = DataType,
+			IsNullable = IsNullable
+		};
 	}
 }
