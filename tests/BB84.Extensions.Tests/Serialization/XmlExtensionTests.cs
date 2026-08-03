@@ -44,6 +44,39 @@ public class XmlExtensionTests
 	}
 
 	[TestMethod]
+	public void FromXmlWithRootAttributeCachesSerializerTest()
+	{
+		XmlSerializer first = XmlExtension.GetSerializer(typeof(TestClass), new XmlRootAttribute("Fancy"));
+		XmlSerializer second = XmlExtension.GetSerializer(typeof(TestClass), new XmlRootAttribute("Fancy"));
+
+		Assert.AreSame(first, second);
+	}
+
+	[TestMethod]
+	public void FromXmlWithRootAttributeDoesNotCacheAcrossDifferentAttributesTest()
+	{
+		XmlSerializer fancy = XmlExtension.GetSerializer(typeof(TestClass), new XmlRootAttribute("Fancy"));
+		XmlSerializer other = XmlExtension.GetSerializer(typeof(TestClass), new XmlRootAttribute("Other"));
+		XmlSerializer fancyWithNamespace = XmlExtension.GetSerializer(typeof(TestClass), new XmlRootAttribute("Fancy") { Namespace = "urn:unit-test" });
+
+		Assert.AreNotSame(fancy, other);
+		Assert.AreNotSame(fancy, fancyWithNamespace);
+	}
+
+	[TestMethod]
+	public void FromXmlWithRootAttributeDoesNotLeakAssembliesTest()
+	{
+		int assembliesBefore = AppDomain.CurrentDomain.GetAssemblies().Length;
+
+		for (int i = 0; i < 25; i++)
+			_ = XmlTextString.FromXml<TestClass>(new XmlRootAttribute("Fancy"));
+
+		int assembliesAfter = AppDomain.CurrentDomain.GetAssemblies().Length;
+
+		Assert.IsLessThanOrEqualTo(2, assembliesAfter - assembliesBefore);
+	}
+
+	[TestMethod]
 	public void ToXmlTest()
 	{
 		TestClass testClass = new() { Id = Guid.NewGuid(), Name = "UnitTestName", Description = "UnitTestDescription" };
