@@ -24,7 +24,7 @@ public sealed partial class ListExtensionsTests
 		IList<TestClass> target = default!;
 		IEnumerable<TestClass> items = [new()];
 
-		Assert.ThrowsExactly<ArgumentNullException>(() => target.AddRangeIfNotNull(items));
+		_ = Assert.ThrowsExactly<ArgumentNullException>(() => target.AddRangeIfNotNull(items));
 	}
 
 	[TestMethod]

@@ -6,7 +6,7 @@
 namespace BB84.Extensions.Tests;
 
 [TestClass]
-public partial class ByteExtensionsTests
+public sealed partial class ByteExtensionsTests
 {
 	[TestMethod]
 	public void GetHexStringTest()

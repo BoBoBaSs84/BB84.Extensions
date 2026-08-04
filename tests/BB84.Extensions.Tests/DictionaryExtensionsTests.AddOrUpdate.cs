@@ -34,7 +34,7 @@ public sealed partial class DictionaryExtensionsTests
 	{
 		IDictionary<string, int> dict = default!;
 
-		Assert.ThrowsExactly<ArgumentNullException>(() => dict.AddOrUpdate("key", 1, (_, v) => v));
+		_ = Assert.ThrowsExactly<ArgumentNullException>(() => dict.AddOrUpdate("key", 1, (_, v) => v));
 	}
 
 	[TestMethod]
@@ -42,6 +42,6 @@ public sealed partial class DictionaryExtensionsTests
 	{
 		IDictionary<string, int> dict = new Dictionary<string, int>();
 
-		Assert.ThrowsExactly<ArgumentNullException>(() => dict.AddOrUpdate("key", 1, null!));
+		_ = Assert.ThrowsExactly<ArgumentNullException>(() => dict.AddOrUpdate("key", 1, null!));
 	}
 }

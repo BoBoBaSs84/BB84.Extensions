@@ -3,6 +3,8 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.Extensions.Common;
+
 namespace BB84.Extensions;
 
 /// <summary>
@@ -39,7 +41,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsDefault(this short value)
-		=> value.Equals(default);
+		=> NumericCore.IsDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable short is equal to its default value <see langword="null"/>.
@@ -50,7 +52,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsDefault([NotNullWhen(false)] this short? value)
-		=> value.Equals(default);
+		=> NumericCore.IsDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified short value is negative.
@@ -61,7 +63,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNegative(this short value)
-		=> value < 0;
+		=> NumericCore.IsNegative(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable short value is negative.
@@ -72,7 +74,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNegative([NotNullWhen(true)] this short? value)
-		=> value.HasValue && value.Value < 0;
+		=> NumericCore.IsNegative(value);
 
 	/// <summary>
 	/// Determines whether the specified short is not equal to its default value (0).
@@ -83,7 +85,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault(this short value)
-		=> !value.Equals(default);
+		=> NumericCore.IsNotDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified short is not equal to its default value <see langword="null"/>.
@@ -94,7 +96,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault([NotNullWhen(true)] this short? value)
-		=> !value.Equals(default);
+		=> NumericCore.IsNotDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable short has a null value.
@@ -105,7 +107,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this short? value)
-		=> !value.HasValue;
+		=> NumericCore.IsNull(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable short has a value.
@@ -116,7 +118,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotNull([NotNullWhen(true)] this short? value)
-		=> value.HasValue.Equals(true);
+		=> NumericCore.IsNotNull(value);
 
 	/// <summary>
 	/// Determines whether the specified short value is non-negative.
@@ -127,7 +129,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNonNegative(this short value)
-		=> value >= 0;
+		=> NumericCore.IsNonNegative(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable short value is non-negative.
@@ -138,7 +140,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNonNegative([NotNullWhen(true)] this short? value)
-		=> value.HasValue && value.Value >= 0;
+		=> NumericCore.IsNonNegative(value);
 
 	/// <summary>
 	/// Determines whether the specified short value is less than or equal to zero.
@@ -149,7 +151,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNonPositive(this short value)
-		=> value <= 0;
+		=> NumericCore.IsNonPositive(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable short value is non-positive.
@@ -160,7 +162,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNonPositive([NotNullWhen(true)] this short? value)
-		=> value.HasValue && value.Value <= 0;
+		=> NumericCore.IsNonPositive(value);
 
 	/// <summary>
 	/// Determines whether the specified short value is positive.
@@ -171,7 +173,7 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsPositive(this short value)
-		=> value > 0;
+		=> NumericCore.IsPositive(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable short value is positive.
@@ -182,5 +184,5 @@ public static class ShortExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsPositive([NotNullWhen(true)] this short? value)
-		=> value.HasValue && value.Value > 0;
+		=> NumericCore.IsPositive(value);
 }

@@ -29,7 +29,7 @@ public sealed partial class StreamExtensionsTests
 
 		MemoryStream stream = new([1, 2, 3]);
 
-		await Assert.ThrowsAsync<OperationCanceledException>(
+		_ = await Assert.ThrowsAsync<OperationCanceledException>(
 			() => stream.ToByteArrayAsync(cts.Token)).ConfigureAwait(false);
 	}
 }

@@ -9,6 +9,8 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 
+using BB84.Extensions.Common;
+
 namespace BB84.Extensions;
 
 /// <summary>
@@ -242,7 +244,7 @@ public static partial class ByteExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsDefault(this byte value)
-		=> value.Equals(default);
+		=> NumericCore.IsDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable byte is equal to its default value <see langword="null"/>.
@@ -253,7 +255,7 @@ public static partial class ByteExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsDefault([NotNullWhen(false)] this byte? value)
-		=> value.Equals(default);
+		=> NumericCore.IsDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified byte is not equal to its default value (0).
@@ -264,7 +266,7 @@ public static partial class ByteExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault(this byte value)
-		=> !value.Equals(default);
+		=> NumericCore.IsNotDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified byte is not equal to its default value <see langword="null"/>.
@@ -275,7 +277,7 @@ public static partial class ByteExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault([NotNullWhen(true)] this byte? value)
-		=> !value.Equals(default);
+		=> NumericCore.IsNotDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified byte is null.
@@ -286,7 +288,7 @@ public static partial class ByteExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this byte? value)
-		=> value is null;
+		=> NumericCore.IsNull(value);
 
 	/// <summary>
 	/// Determines whether the specified byte array is null.
@@ -308,7 +310,7 @@ public static partial class ByteExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotNull([NotNullWhen(true)] this byte? value)
-		=> value is not null;
+		=> NumericCore.IsNotNull(value);
 
 	/// <summary>
 	/// Determines whether the specified byte array is not null.

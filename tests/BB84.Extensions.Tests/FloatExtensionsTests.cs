@@ -6,5 +6,5 @@
 namespace BB84.Extensions.Tests;
 
 [TestClass]
-public partial class FloatExtensionsTests
+public sealed partial class FloatExtensionsTests
 { }

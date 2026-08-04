@@ -31,5 +31,11 @@ public sealed partial class DoubleExtensionsTests
 
 		nullableValue = 0;
 		Assert.IsFalse(nullableValue.IsNegative());
+
+		value = double.NaN;
+		Assert.IsFalse(value.IsNegative());
+
+		nullableValue = double.NaN;
+		Assert.IsFalse(nullableValue.IsNegative());
 	}
 }

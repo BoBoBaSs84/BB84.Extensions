@@ -9,18 +9,24 @@ public sealed partial class DoubleExtensionsTests
 {
 	[TestMethod]
 	[Description("Should determine whether a double is its default value (0).")]
-	public void IsDefaultLong()
+	public void IsDefaultTest()
 	{
 		double value = default;
 		Assert.IsTrue(value.IsDefault());
 
 		value = 15;
 		Assert.IsFalse(value.IsDefault());
+
+		value = -0.0d;
+		Assert.IsTrue(value.IsDefault());
+
+		value = double.NaN;
+		Assert.IsFalse(value.IsDefault());
 	}
 
 	[TestMethod]
 	[Description("Should determine whether a nullable double is its default value (null).")]
-	public void IsDefaultNullableLong()
+	public void IsDefaultNullableTest()
 	{
 		double? value = default;
 		Assert.IsTrue(value.IsDefault());
@@ -29,6 +35,9 @@ public sealed partial class DoubleExtensionsTests
 		Assert.IsTrue(value.IsDefault());
 
 		value = 15;
+		Assert.IsFalse(value.IsDefault());
+
+		value = 0;
 		Assert.IsFalse(value.IsDefault());
 	}
 }

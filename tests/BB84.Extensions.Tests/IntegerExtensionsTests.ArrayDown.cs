@@ -25,6 +25,6 @@ public sealed partial class IntegerExtensionsTests
 	{
 		int value = 0;
 		int minValue = 15;
-		Assert.ThrowsExactly<ArgumentOutOfRangeException>(() => _ = value.ArrayDown(minValue));
+		_ = Assert.ThrowsExactly<ArgumentOutOfRangeException>(() => _ = value.ArrayDown(minValue));
 	}
 }

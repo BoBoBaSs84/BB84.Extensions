@@ -3,15 +3,22 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.Extensions.Common;
+
 namespace BB84.Extensions;
 
 /// <summary>
-/// Provides extension methods for working with nullable <see cref="double"/> values.
+/// Provides extension methods for working with <see cref="double"/> and nullable <see cref="double"/> values.
 /// </summary>
 /// <remarks>
-/// This class includes utility methods to simplify common operations on nullable double
-/// values, such as checking for null or non-null states. These methods are designed to
-/// improve code readability and reduce boilerplate when working with nullable doubles.
+/// This class includes utility methods to simplify common operations on double values, such as
+/// checking for null, default or sign related states. These methods are designed to improve code
+/// readability and reduce boilerplate when working with doubles.
+/// <para>
+/// The sign related methods follow the IEEE comparison operators, which means that
+/// <see cref="double.NaN"/> is neither positive, negative, non-positive nor non-negative and
+/// therefore yields <see langword="false"/> in all four cases.
+/// </para>
 /// </remarks>
 public static class DoubleExtensions
 {
@@ -24,7 +31,7 @@ public static class DoubleExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsDefault(this double value)
-		=> value.Equals(default);
+		=> NumericCore.IsDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable double is equal to its default value <see langword="null"/>.
@@ -35,7 +42,11 @@ public static class DoubleExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsDefault([NotNullWhen(false)] this double? value)
-		=> value.Equals(default);
+		=> NumericCore.IsDefault(value);
+
+	// The sign predicates below deliberately use the comparison operators instead of NumericCore:
+	// IComparable<double> orders NaN below zero, so routing them through the core would turn
+	// IsNegative(NaN) and IsNonPositive(NaN) from false into true.
 
 	/// <summary>
 	/// Determines whether the specified double value is negative.
@@ -68,7 +79,7 @@ public static class DoubleExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault(this double value)
-		=> !value.Equals(default);
+		=> NumericCore.IsNotDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified double is not equal to its default value <see langword="null"/>.
@@ -79,7 +90,7 @@ public static class DoubleExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault([NotNullWhen(true)] this double? value)
-		=> !value.Equals(default);
+		=> NumericCore.IsNotDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable double has a null value.
@@ -90,7 +101,7 @@ public static class DoubleExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this double? value)
-		=> !value.HasValue;
+		=> NumericCore.IsNull(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable double has a value.
@@ -101,7 +112,7 @@ public static class DoubleExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotNull([NotNullWhen(true)] this double? value)
-		=> value.HasValue.Equals(true);
+		=> NumericCore.IsNotNull(value);
 
 	/// <summary>
 	/// Determines whether the specified double value is non-negative.

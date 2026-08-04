@@ -9,7 +9,7 @@ public sealed partial class IntegerExtensionsTests
 {
 	[TestMethod]
 	[Description("Should determine whether a int is not its default value (0).")]
-	public void IsNotDefaultLong()
+	public void IsNotDefaultTest()
 	{
 		int value = default;
 		Assert.IsFalse(value.IsNotDefault());
@@ -20,7 +20,7 @@ public sealed partial class IntegerExtensionsTests
 
 	[TestMethod]
 	[Description("Should determine whether a nullable int is not its default value (null).")]
-	public void IsNotDefaultNullableLong()
+	public void IsNotDefaultNullableTest()
 	{
 		int? value = default;
 		Assert.IsFalse(value.IsNotDefault());

@@ -9,7 +9,7 @@ public sealed partial class BooleanExtensionsTests
 {
 	[TestMethod]
 	[Description("Should determine whether a bool is its default value (false).")]
-	public void IsDefaultLong()
+	public void IsDefaultTest()
 	{
 		bool value = default;
 		Assert.IsTrue(value.IsDefault());
@@ -20,7 +20,7 @@ public sealed partial class BooleanExtensionsTests
 
 	[TestMethod]
 	[Description("Should determine whether a nullable bool is its default value (null).")]
-	public void IsDefaultNullableLong()
+	public void IsDefaultNullableTest()
 	{
 		bool? value = default;
 		Assert.IsTrue(value.IsDefault());
