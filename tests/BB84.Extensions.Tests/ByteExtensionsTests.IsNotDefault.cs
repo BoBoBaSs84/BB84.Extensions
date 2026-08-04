@@ -9,7 +9,7 @@ public sealed partial class ByteExtensionsTests
 {
 	[TestMethod]
 	[Description("Should determine whether a byte is not its default value (0).")]
-	public void IsNotDefaultLong()
+	public void IsNotDefaultTest()
 	{
 		byte value = default;
 		Assert.IsFalse(value.IsNotDefault());
@@ -20,7 +20,7 @@ public sealed partial class ByteExtensionsTests
 
 	[TestMethod]
 	[Description("Should determine whether a nullable byte is not its default value (null).")]
-	public void IsNotDefaultNullableLong()
+	public void IsNotDefaultNullableTest()
 	{
 		byte? value = default;
 		Assert.IsFalse(value.IsNotDefault());

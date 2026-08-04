@@ -9,18 +9,24 @@ public sealed partial class FloatExtensionsTests
 {
 	[TestMethod]
 	[Description("Should determine whether a float is not its default value (0).")]
-	public void IsNotDefaultLong()
+	public void IsNotDefaultTest()
 	{
 		float value = default;
 		Assert.IsFalse(value.IsNotDefault());
 
 		value = 15;
 		Assert.IsTrue(value.IsNotDefault());
+
+		value = -0.0f;
+		Assert.IsFalse(value.IsNotDefault());
+
+		value = float.NaN;
+		Assert.IsTrue(value.IsNotDefault());
 	}
 
 	[TestMethod]
 	[Description("Should determine whether a nullable float is not its default value (null).")]
-	public void IsNotDefaultNullableLong()
+	public void IsNotDefaultNullableTest()
 	{
 		float? value = default;
 		Assert.IsFalse(value.IsNotDefault());
@@ -29,6 +35,9 @@ public sealed partial class FloatExtensionsTests
 		Assert.IsFalse(value.IsNotDefault());
 
 		value = 15;
+		Assert.IsTrue(value.IsNotDefault());
+
+		value = 0;
 		Assert.IsTrue(value.IsNotDefault());
 	}
 }

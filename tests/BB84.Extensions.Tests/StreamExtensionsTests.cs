@@ -8,7 +8,7 @@ namespace BB84.Extensions.Tests;
 [TestClass]
 public sealed partial class StreamExtensionsTests
 {
-	private readonly static Random Random = new();
+	private static readonly Random Random = new();
 
 	[TestMethod]
 	[DynamicData(nameof(GetData))]

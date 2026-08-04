@@ -16,7 +16,7 @@ public sealed class HttpRequestMessageExtensionsTests
 		string token = "test_token";
 		HttpRequestMessage httpRequestMessage = new();
 
-		httpRequestMessage.WithBearerToken(token);
+		_ = httpRequestMessage.WithBearerToken(token);
 
 		Assert.IsNotNull(httpRequestMessage.Headers.Authorization);
 		Assert.AreEqual("Bearer", httpRequestMessage.Headers.Authorization.Scheme);
@@ -28,7 +28,7 @@ public sealed class HttpRequestMessageExtensionsTests
 	{
 		HttpRequestMessage httpRequestMessage = new();
 
-		Assert.Throws<ArgumentNullException>(() => httpRequestMessage.WithBearerToken(null!));
+		_ = Assert.Throws<ArgumentNullException>(() => httpRequestMessage.WithBearerToken(null!));
 	}
 
 	[TestMethod]
@@ -36,7 +36,7 @@ public sealed class HttpRequestMessageExtensionsTests
 	{
 		HttpRequestMessage httpRequestMessage = new();
 
-		Assert.Throws<ArgumentException>(() => httpRequestMessage.WithBearerToken(string.Empty));
+		_ = Assert.Throws<ArgumentException>(() => httpRequestMessage.WithBearerToken(string.Empty));
 	}
 
 	[TestMethod]
@@ -45,7 +45,7 @@ public sealed class HttpRequestMessageExtensionsTests
 		string mediaType = "application/json";
 		HttpRequestMessage httpRequestMessage = new();
 
-		httpRequestMessage.WithMediaType(mediaType);
+		_ = httpRequestMessage.WithMediaType(mediaType);
 
 		Assert.Contains(h => h.MediaType == mediaType, httpRequestMessage.Headers.Accept);
 	}
@@ -56,7 +56,7 @@ public sealed class HttpRequestMessageExtensionsTests
 		string mediaType = "application/json";
 		HttpRequestMessage httpRequestMessage = new();
 
-		httpRequestMessage.WithMediaType(mediaType).WithMediaType(mediaType);
+		_ = httpRequestMessage.WithMediaType(mediaType).WithMediaType(mediaType);
 
 		Assert.HasCount(1, httpRequestMessage.Headers.Accept);
 	}

@@ -9,7 +9,7 @@ public sealed partial class DecimalExtensionsTests
 {
 	[TestMethod]
 	[Description("Should determine whether a decimal is its default value (0).")]
-	public void IsDefaultLong()
+	public void IsDefaultTest()
 	{
 		decimal value = default;
 		Assert.IsTrue(value.IsDefault());
@@ -20,7 +20,7 @@ public sealed partial class DecimalExtensionsTests
 
 	[TestMethod]
 	[Description("Should determine whether a nullable decimal is its default value (null).")]
-	public void IsDefaultNullableLong()
+	public void IsDefaultNullableTest()
 	{
 		decimal? value = default;
 		Assert.IsTrue(value.IsDefault());

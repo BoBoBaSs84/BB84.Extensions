@@ -42,6 +42,6 @@ public sealed partial class DictionaryExtensionsTests
 	{
 		IDictionary<string, int> dict = default!;
 
-		Assert.ThrowsExactly<ArgumentNullException>(() => dict.GetOrDefault("key"));
+		_ = Assert.ThrowsExactly<ArgumentNullException>(() => dict.GetOrDefault("key"));
 	}
 }

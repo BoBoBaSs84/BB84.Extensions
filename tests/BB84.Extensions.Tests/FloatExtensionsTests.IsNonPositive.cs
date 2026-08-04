@@ -31,5 +31,11 @@ public sealed partial class FloatExtensionsTests
 
 		nullableValue = 0;
 		Assert.IsTrue(nullableValue.IsNonPositive());
+
+		value = float.NaN;
+		Assert.IsFalse(value.IsNonPositive());
+
+		nullableValue = float.NaN;
+		Assert.IsFalse(nullableValue.IsNonPositive());
 	}
 }

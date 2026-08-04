@@ -3,15 +3,22 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.Extensions.Common;
+
 namespace BB84.Extensions;
 
 /// <summary>
-/// Provides extension methods for working with nullable <see cref="float"/> values.
+/// Provides extension methods for working with <see cref="float"/> and nullable <see cref="float"/> values.
 /// </summary>
 /// <remarks>
-/// This class includes utility methods to simplify common operations on nullable float
-/// values, such as checking for null or non-null states. These methods are designed to
-/// improve code readability and reduce boilerplate when working with nullable floats.
+/// This class includes utility methods to simplify common operations on float values, such as
+/// checking for null, default or sign related states. These methods are designed to improve code
+/// readability and reduce boilerplate when working with floats.
+/// <para>
+/// The sign related methods follow the IEEE comparison operators, which means that
+/// <see cref="float.NaN"/> is neither positive, negative, non-positive nor non-negative and
+/// therefore yields <see langword="false"/> in all four cases.
+/// </para>
 /// </remarks>
 public static class FloatExtensions
 {
@@ -24,7 +31,7 @@ public static class FloatExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsDefault(this float value)
-		=> value.Equals(default);
+		=> NumericCore.IsDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable float is equal to its default value <see langword="null"/>.
@@ -35,7 +42,11 @@ public static class FloatExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsDefault([NotNullWhen(false)] this float? value)
-		=> value.Equals(default);
+		=> NumericCore.IsDefault(value);
+
+	// The sign predicates below deliberately use the comparison operators instead of NumericCore:
+	// IComparable<float> orders NaN below zero, so routing them through the core would turn
+	// IsNegative(NaN) and IsNonPositive(NaN) from false into true.
 
 	/// <summary>
 	/// Determines whether the specified float value is negative.
@@ -68,7 +79,7 @@ public static class FloatExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault(this float value)
-		=> !value.Equals(default);
+		=> NumericCore.IsNotDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified float is not equal to its default value <see langword="null"/>.
@@ -79,7 +90,7 @@ public static class FloatExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault([NotNullWhen(true)] this float? value)
-		=> !value.Equals(default);
+		=> NumericCore.IsNotDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable float has a null value.
@@ -90,7 +101,7 @@ public static class FloatExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this float? value)
-		=> !value.HasValue;
+		=> NumericCore.IsNull(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable float has a value.
@@ -101,7 +112,7 @@ public static class FloatExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotNull([NotNullWhen(true)] this float? value)
-		=> value.HasValue.Equals(true);
+		=> NumericCore.IsNotNull(value);
 
 	/// <summary>
 	/// Determines whether the specified float value is non-negative.

@@ -263,6 +263,40 @@ bool ok          = list.TryTakeRandom(out string? result);
 IList<string> shuffled = list.Randomize();
 ```
 
+### Numeric extensions
+
+`ShortExtensions`, `LongExtensions`, `DecimalExtensions`, `DoubleExtensions` and `FloatExtensions`
+provide the same predicate set as `IntegerExtensions`, for both the value and the nullable form.
+
+```csharp
+decimal value = -5m;
+
+value.IsDefault();      // false  (0 is default)
+value.IsNotDefault();   // true
+value.IsPositive();     // false
+value.IsNegative();     // true
+value.IsNonNegative();  // false
+value.IsNonPositive();  // true
+
+decimal? nullable = null;
+
+nullable.IsNull();      // true
+nullable.IsNotNull();   // false
+nullable.IsDefault();   // true  (the default of decimal? is null, not 0)
+```
+
+The `For` loop helper is available on `short`, `int`, `long` and `decimal`. It is intentionally not
+offered for `float` and `double`, because the loop counter stops incrementing past the exact integer
+limit and would never terminate for infinity.
+
+Sign predicates on `float` and `double` follow the IEEE comparison operators, so `NaN` is neither
+positive, negative, non-positive nor non-negative:
+
+```csharp
+double.NaN.IsNegative();     // false
+double.NaN.IsNonPositive();  // false
+```
+
 ### Object extensions
 
 `ObjectExtensions` adds null checks and culture-invariant type conversions to `object?`.

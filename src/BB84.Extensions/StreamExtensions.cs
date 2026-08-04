@@ -54,10 +54,10 @@ public static class StreamExtensions
 	public static async Task<byte[]> ToByteArrayAsync(this Stream inputStream, CancellationToken cancellationToken = default)
 	{
 		using MemoryStream memoryStream = new();
-		
+
 		await inputStream.CopyToAsync(memoryStream, 16 * 1024, cancellationToken)
 			.ConfigureAwait(false);
-		
+
 		return memoryStream.ToArray();
 	}
 }

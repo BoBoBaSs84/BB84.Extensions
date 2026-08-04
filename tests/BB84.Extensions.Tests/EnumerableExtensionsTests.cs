@@ -72,9 +72,9 @@ public sealed partial class EnumerableExtensionsTests
 	public void IsNullOrEmptyWithNonEmptyCollectionReturnsFalse()
 	{
 		IEnumerable<int>? collection = [1, 2, 3];
-		
+
 		bool result = collection.IsNullOrEmpty();
-		
+
 		Assert.IsFalse(result);
 	}
 
@@ -82,9 +82,9 @@ public sealed partial class EnumerableExtensionsTests
 	public void IsNotNullOrEmptyWithNullCollectionReturnsFalse()
 	{
 		IEnumerable<int>? collection = null;
-		
+
 		bool result = collection.IsNotNullOrEmpty();
-		
+
 		Assert.IsFalse(result);
 	}
 
@@ -92,9 +92,9 @@ public sealed partial class EnumerableExtensionsTests
 	public void IsNotNullOrEmptyWithEmptyCollectionReturnsFalse()
 	{
 		IEnumerable<int>? collection = [];
-		
+
 		bool result = collection.IsNotNullOrEmpty();
-		
+
 		Assert.IsFalse(result);
 	}
 
@@ -102,9 +102,9 @@ public sealed partial class EnumerableExtensionsTests
 	public void IsNotNullOrEmptyWithNonEmptyCollectionReturnsTrue()
 	{
 		IEnumerable<int>? collection = [1, 2, 3];
-		
+
 		bool result = collection.IsNotNullOrEmpty();
-		
+
 		Assert.IsTrue(result);
 	}
 

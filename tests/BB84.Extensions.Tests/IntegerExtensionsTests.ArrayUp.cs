@@ -25,6 +25,6 @@ public sealed partial class IntegerExtensionsTests
 	{
 		int value = 15;
 		int maxValue = 0;
-		Assert.ThrowsExactly<ArgumentOutOfRangeException>(() => _ = value.ArrayUp(maxValue));
+		_ = Assert.ThrowsExactly<ArgumentOutOfRangeException>(() => _ = value.ArrayUp(maxValue));
 	}
 }

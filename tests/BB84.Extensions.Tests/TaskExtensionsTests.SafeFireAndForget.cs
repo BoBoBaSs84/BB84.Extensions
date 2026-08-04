@@ -14,7 +14,7 @@ public sealed partial class TaskExtensionsTests
 		bool exceptionOccured = false;
 
 		AwaitableTask()
-			.SafeFireAndForget(() => tcs.TrySetResult(true), (e) => { exceptionOccured = true; tcs.TrySetResult(true); });
+			.SafeFireAndForget(() => tcs.TrySetResult(true), (e) => { exceptionOccured = true; _ = tcs.TrySetResult(true); });
 
 		var completed = await Task.WhenAny(tcs.Task, Task.Delay(1000)).ConfigureAwait(false);
 		Assert.AreEqual(tcs.Task, completed, "Timed out waiting for task completion");
@@ -29,7 +29,7 @@ public sealed partial class TaskExtensionsTests
 		bool exceptionOccured = false;
 
 		AwaitableTask(true)
-			.SafeFireAndForget(() => tcs.TrySetResult(true), (e) => { exceptionOccured = true; tcs.TrySetResult(true); });
+			.SafeFireAndForget(() => tcs.TrySetResult(true), (e) => { exceptionOccured = true; _ = tcs.TrySetResult(true); });
 
 		var completed = await Task.WhenAny(tcs.Task, Task.Delay(1000)).ConfigureAwait(false);
 		Assert.AreEqual(tcs.Task, completed, "Timed out waiting for task completion");

@@ -37,7 +37,7 @@ public sealed class HttpClientExtensionsTests
 	{
 		using HttpClient client = new();
 
-		Assert.Throws<ArgumentNullException>(() => client.WithBaseAddress(baseAddress!));
+		_ = Assert.Throws<ArgumentNullException>(() => client.WithBaseAddress(baseAddress!));
 	}
 
 	[TestMethod]
@@ -47,7 +47,7 @@ public sealed class HttpClientExtensionsTests
 	{
 		using HttpClient client = new();
 
-		Assert.Throws<ArgumentException>(() => client.WithBaseAddress(baseAddress));
+		_ = Assert.Throws<ArgumentException>(() => client.WithBaseAddress(baseAddress));
 	}
 
 	[TestMethod]
@@ -56,7 +56,7 @@ public sealed class HttpClientExtensionsTests
 	{
 		using HttpClient client = new();
 
-		Assert.Throws<ArgumentException>(() => client.WithBaseAddress(baseAddress));
+		_ = Assert.Throws<ArgumentException>(() => client.WithBaseAddress(baseAddress));
 	}
 
 	[TestMethod]
@@ -87,7 +87,7 @@ public sealed class HttpClientExtensionsTests
 	{
 		using HttpClient client = new();
 
-		Assert.Throws<ArgumentNullException>(() => client.WithBasicAuthentication(username!, password));
+		_ = Assert.Throws<ArgumentNullException>(() => client.WithBasicAuthentication(username!, password));
 	}
 
 	[TestMethod]
@@ -97,7 +97,7 @@ public sealed class HttpClientExtensionsTests
 	{
 		using HttpClient client = new();
 
-		Assert.Throws<ArgumentException>(() => client.WithBasicAuthentication(username, password));
+		_ = Assert.Throws<ArgumentException>(() => client.WithBasicAuthentication(username, password));
 	}
 
 	[TestMethod]
@@ -106,7 +106,7 @@ public sealed class HttpClientExtensionsTests
 	{
 		using HttpClient client = new();
 
-		Assert.Throws<ArgumentNullException>(() => client.WithBasicAuthentication(username, password!));
+		_ = Assert.Throws<ArgumentNullException>(() => client.WithBasicAuthentication(username, password!));
 	}
 
 	[TestMethod]
@@ -125,7 +125,7 @@ public sealed class HttpClientExtensionsTests
 	{
 		using HttpClient client = new();
 
-		Assert.Throws<ArgumentNullException>(() => client.WithBearerToken(token!));
+		_ = Assert.Throws<ArgumentNullException>(() => client.WithBearerToken(token!));
 	}
 
 	[TestMethod]
@@ -134,7 +134,7 @@ public sealed class HttpClientExtensionsTests
 	{
 		using HttpClient client = new();
 
-		Assert.Throws<ArgumentException>(() => client.WithBearerToken(token));
+		_ = Assert.Throws<ArgumentException>(() => client.WithBearerToken(token));
 	}
 
 	[TestMethod]

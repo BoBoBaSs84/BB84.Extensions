@@ -3,15 +3,17 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.Extensions.Common;
+
 namespace BB84.Extensions;
 
 /// <summary>
 /// Provides extension methods for working with nullable <see cref="long"/> values.
 /// </summary>
 /// <remarks>
-/// This static class contains utility methods for common operations involving longs, such as creating
-/// arrays of longs within a specified range, performing actions over a range of longs, and
-/// determining whether nullable longs are null or non-null.
+/// This static class contains utility methods for common operations involving longs, such as
+/// performing actions over a range of longs and determining whether longs are null, default,
+/// positive or negative.
 /// </remarks>
 public static class LongExtensions
 {
@@ -39,7 +41,7 @@ public static class LongExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsDefault(this long value)
-		=> value.Equals(default);
+		=> NumericCore.IsDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable long is equal to its default value <see langword="null"/>.
@@ -50,7 +52,7 @@ public static class LongExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsDefault([NotNullWhen(false)] this long? value)
-		=> value.Equals(default);
+		=> NumericCore.IsDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified long value is negative.
@@ -61,7 +63,7 @@ public static class LongExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNegative(this long value)
-		=> value < 0;
+		=> NumericCore.IsNegative(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable long value is negative.
@@ -72,7 +74,7 @@ public static class LongExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNegative([NotNullWhen(true)] this long? value)
-		=> value.HasValue && value.Value < 0;
+		=> NumericCore.IsNegative(value);
 
 	/// <summary>
 	/// Determines whether the specified long is not equal to its default value (0).
@@ -83,7 +85,7 @@ public static class LongExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault(this long value)
-		=> !value.Equals(default);
+		=> NumericCore.IsNotDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified long is not equal to its default value <see langword="null"/>.
@@ -94,7 +96,7 @@ public static class LongExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault([NotNullWhen(true)] this long? value)
-		=> !value.Equals(default);
+		=> NumericCore.IsNotDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable long has a null value.
@@ -105,7 +107,7 @@ public static class LongExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this long? value)
-		=> !value.HasValue;
+		=> NumericCore.IsNull(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable long has a non-null value.
@@ -116,7 +118,7 @@ public static class LongExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotNull([NotNullWhen(true)] this long? value)
-		=> value.HasValue.Equals(true);
+		=> NumericCore.IsNotNull(value);
 
 	/// <summary>
 	/// Determines whether the specified long value is non-negative.
@@ -127,7 +129,7 @@ public static class LongExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNonNegative(this long value)
-		=> value >= 0;
+		=> NumericCore.IsNonNegative(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable long value is non-negative.
@@ -138,7 +140,7 @@ public static class LongExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNonNegative([NotNullWhen(true)] this long? value)
-		=> value.HasValue && value.Value >= 0;
+		=> NumericCore.IsNonNegative(value);
 
 	/// <summary>
 	/// Determines whether the specified long value is less than or equal to zero.
@@ -149,7 +151,7 @@ public static class LongExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNonPositive(this long value)
-		=> value <= 0;
+		=> NumericCore.IsNonPositive(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable long value is non-positive.
@@ -160,7 +162,7 @@ public static class LongExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNonPositive([NotNullWhen(true)] this long? value)
-		=> value.HasValue && value.Value <= 0;
+		=> NumericCore.IsNonPositive(value);
 
 	/// <summary>
 	/// Determines whether the specified long value is positive.
@@ -171,7 +173,7 @@ public static class LongExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsPositive(this long value)
-		=> value > 0;
+		=> NumericCore.IsPositive(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable long value is positive.
@@ -182,5 +184,5 @@ public static class LongExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsPositive([NotNullWhen(true)] this long? value)
-		=> value.HasValue && value.Value > 0;
+		=> NumericCore.IsPositive(value);
 }

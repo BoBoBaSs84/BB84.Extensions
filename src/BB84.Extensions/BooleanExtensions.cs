@@ -3,6 +3,8 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.Extensions.Common;
+
 namespace BB84.Extensions;
 
 /// <summary>
@@ -25,7 +27,7 @@ public static class BooleanExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsDefault(this bool value)
-		=> value.Equals(default);
+		=> NumericCore.IsDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable bool is equal to its default value <see langword="null"/>.
@@ -36,7 +38,7 @@ public static class BooleanExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsDefault([NotNullWhen(false)] this bool? value)
-		=> value.Equals(default);
+		=> NumericCore.IsDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified bool is not equal to its default value (false).
@@ -47,7 +49,7 @@ public static class BooleanExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault(this bool value)
-		=> !value.Equals(default);
+		=> NumericCore.IsNotDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified bool is not equal to its default value <see langword="null"/>.
@@ -58,7 +60,7 @@ public static class BooleanExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotDefault([NotNullWhen(true)] this bool? value)
-		=> !value.Equals(default);
+		=> NumericCore.IsNotDefault(value);
 
 	/// <summary>
 	/// Determines whether the specified boolean value is false.
@@ -91,7 +93,7 @@ public static class BooleanExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNull([NotNullWhen(false)] this bool? value)
-		=> !value.HasValue;
+		=> NumericCore.IsNull(value);
 
 	/// <summary>
 	/// Determines whether the specified nullable boolean has a non-null value.
@@ -102,7 +104,7 @@ public static class BooleanExtensions
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool IsNotNull([NotNullWhen(true)] this bool? value)
-		=> value.HasValue.Equals(true);
+		=> NumericCore.IsNotNull(value);
 
 	/// <summary>
 	/// Determines whether the specified boolean value is true.
