@@ -16,6 +16,6 @@ public sealed class DataGridViewExtensionsTests
 
 		dataGridView.WithDataSourceBinding(dataSource);
 
-		Assert.AreEqual(dataSource, dataGridView.DataSource);
+		Assert.AreEquivalent(dataSource, dataGridView.DataSource);
 	}
 }

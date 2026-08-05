@@ -17,7 +17,7 @@ public sealed class DataGridExtensionsTests
 
 		dataGrid.WithDataSourceBinding(dataSource);
 
-		Assert.AreEqual(dataSource, dataGrid.DataSource);
+		Assert.AreEquivalent(dataSource, dataGrid.DataSource);
 	}
 }
 #endif

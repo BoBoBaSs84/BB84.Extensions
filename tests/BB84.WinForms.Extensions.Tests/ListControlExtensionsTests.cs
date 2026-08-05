@@ -16,7 +16,7 @@ public sealed class ListControlExtensionsTests
 
 		listControl.WithDataSourceBinding(dataSource);
 
-		Assert.AreEqual(dataSource, listControl.DataSource);
+		Assert.AreEquivalent(dataSource, listControl.DataSource);
 	}
 
 	[TestMethod]
@@ -93,6 +93,8 @@ public sealed class ListControlExtensionsTests
 	{
 		None = 0,
 		First = 1,
+#pragma warning disable CA1069 // Enums values should not be duplicated
 		AlsoFirst = 1
+#pragma warning restore CA1069 // Enums values should not be duplicated
 	}
 }
