@@ -1,4 +1,4 @@
-﻿// Copyright: 2023 Robert Peter Meyer
+// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
@@ -12,7 +12,7 @@ public sealed class NumericUpDownExtensionsTests
 	public void WithValueBindingTest()
 	{
 		var dataSource = new { Value = 1 };
-		NumericUpDown numericUpDown = new();
+		using NumericUpDown numericUpDown = new();
 
 		numericUpDown.WithValueBinding(dataSource, nameof(numericUpDown.Value));
 
@@ -26,7 +26,7 @@ public sealed class NumericUpDownExtensionsTests
 	public void WithMinimumBindingTest()
 	{
 		var dataSource = new { Minimum = 0m };
-		NumericUpDown numericUpDown = new();
+		using NumericUpDown numericUpDown = new();
 
 		numericUpDown.WithMinimumBinding(dataSource, nameof(numericUpDown.Minimum));
 
@@ -40,7 +40,7 @@ public sealed class NumericUpDownExtensionsTests
 	public void WithMaximumBindingTest()
 	{
 		var dataSource = new { Maximum = 100m };
-		NumericUpDown numericUpDown = new();
+		using NumericUpDown numericUpDown = new();
 
 		numericUpDown.WithMaximumBinding(dataSource, nameof(numericUpDown.Maximum));
 
@@ -54,7 +54,7 @@ public sealed class NumericUpDownExtensionsTests
 	public void WithIncrementBindingTest()
 	{
 		var dataSource = new { Increment = 1m };
-		NumericUpDown numericUpDown = new();
+		using NumericUpDown numericUpDown = new();
 
 		numericUpDown.WithIncrementBinding(dataSource, nameof(numericUpDown.Increment));
 
@@ -68,7 +68,7 @@ public sealed class NumericUpDownExtensionsTests
 	public void WithDecimalPlacesBindingTest()
 	{
 		var dataSource = new { DecimalPlaces = 2 };
-		NumericUpDown numericUpDown = new();
+		using NumericUpDown numericUpDown = new();
 
 		numericUpDown.WithDecimalPlacesBinding(dataSource, nameof(numericUpDown.DecimalPlaces));
 

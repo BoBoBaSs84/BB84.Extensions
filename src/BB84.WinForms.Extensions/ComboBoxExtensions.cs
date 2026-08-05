@@ -3,6 +3,8 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.WinForms.Extensions.Common;
+
 namespace BB84.WinForms.Extensions;
 
 /// <summary>
@@ -27,10 +29,7 @@ public static class ComboBoxExtensions
 	/// The <see cref="ComboBox"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static ComboBox WithSelectedItemBinding(this ComboBox comboBox, object dataSource, string dataMember)
-	{
-		comboBox.DataBindings.Add(nameof(comboBox.SelectedItem), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return comboBox;
-	}
+		=> BindingHelper.Bind(comboBox, nameof(comboBox.SelectedItem), dataSource, dataMember);
 
 	/// <summary>
 	/// Binds the <see cref="ComboBox.SelectedIndex"/> property of the specified <see cref="ComboBox"/>
@@ -47,8 +46,5 @@ public static class ComboBoxExtensions
 	/// The <see cref="ComboBox"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static ComboBox WithSelectedIndexBinding(this ComboBox comboBox, object dataSource, string dataMember)
-	{
-		comboBox.DataBindings.Add(nameof(comboBox.SelectedIndex), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return comboBox;
-	}
+		=> BindingHelper.Bind(comboBox, nameof(comboBox.SelectedIndex), dataSource, dataMember);
 }

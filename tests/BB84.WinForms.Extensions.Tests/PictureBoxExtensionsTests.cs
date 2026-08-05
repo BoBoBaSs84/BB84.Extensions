@@ -1,4 +1,4 @@
-﻿// Copyright: 2023 Robert Peter Meyer
+// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
@@ -11,8 +11,9 @@ public sealed class PictureBoxExtensionsTests
 	[TestMethod]
 	public void WithImageBindingShouldBindImage()
 	{
-		var dataSource = new { Image = new Bitmap(320, 240) };
-		PictureBox pictureBox = new();
+		using Bitmap bitmap = new(320, 240);
+		var dataSource = new { Image = bitmap };
+		using PictureBox pictureBox = new();
 
 		pictureBox.WithImageBinding(dataSource, nameof(pictureBox.Image));
 

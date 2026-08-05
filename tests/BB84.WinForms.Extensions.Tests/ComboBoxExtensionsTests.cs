@@ -1,4 +1,4 @@
-﻿// Copyright: 2023 Robert Peter Meyer
+// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
@@ -12,7 +12,7 @@ public sealed class ComboBoxExtensionsTests
 	public void WithSelectedItemBindingTest()
 	{
 		var dataSource = new { SelectedItem = "Item1" };
-		ComboBox comboBox = new();
+		using ComboBox comboBox = new();
 
 		comboBox.WithSelectedItemBinding(dataSource, nameof(comboBox.SelectedItem));
 
@@ -26,7 +26,7 @@ public sealed class ComboBoxExtensionsTests
 	public void WithSelectedIndexBindingTest()
 	{
 		var dataSource = new { SelectedIndex = 1 };
-		ComboBox comboBox = new();
+		using ComboBox comboBox = new();
 
 		comboBox.WithSelectedIndexBinding(dataSource, nameof(comboBox.SelectedIndex));
 

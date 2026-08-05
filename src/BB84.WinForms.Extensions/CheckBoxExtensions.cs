@@ -3,6 +3,8 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.WinForms.Extensions.Common;
+
 namespace BB84.WinForms.Extensions;
 
 /// <summary>
@@ -26,10 +28,7 @@ public static class CheckBoxExtensions
 	/// The <see cref="CheckBox"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static CheckBox WithCheckedBinding(this CheckBox checkBox, object dataSource, string dataMember)
-	{
-		checkBox.DataBindings.Add(nameof(checkBox.Checked), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return checkBox;
-	}
+		=> BindingHelper.Bind(checkBox, nameof(checkBox.Checked), dataSource, dataMember);
 
 #if NET5_0_OR_GREATER
 	/// <summary>
@@ -47,10 +46,7 @@ public static class CheckBoxExtensions
 	/// The <see cref="CheckBox"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static CheckBox WithCheckStateBinding(this CheckBox checkBox, object dataSource, string dataMember)
-	{
-		checkBox.DataBindings.Add(nameof(checkBox.CheckState), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return checkBox;
-	}
+		=> BindingHelper.Bind(checkBox, nameof(checkBox.CheckState), dataSource, dataMember);
 
 	/// <summary>
 	/// Binds the <see cref="CheckBox.CheckAlign"/> property of the specified <see cref="CheckBox"/>
@@ -67,9 +63,6 @@ public static class CheckBoxExtensions
 	/// The <see cref="CheckBox"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static CheckBox WithCheckAlignBinding(this CheckBox checkBox, object dataSource, string dataMember)
-	{
-		checkBox.DataBindings.Add(nameof(checkBox.CheckAlign), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return checkBox;
-	}
+		=> BindingHelper.Bind(checkBox, nameof(checkBox.CheckAlign), dataSource, dataMember);
 #endif
 }

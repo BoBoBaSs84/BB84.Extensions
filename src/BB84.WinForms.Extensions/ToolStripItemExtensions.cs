@@ -4,6 +4,8 @@
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
 #if NET8_0_OR_GREATER
+using BB84.WinForms.Extensions.Common;
+
 namespace BB84.WinForms.Extensions;
 
 /// <summary>
@@ -32,10 +34,7 @@ public static class ToolStripItemExtensions
 	/// The <see cref="ToolStripItem"/> with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static ToolStripItem WithEnabledBinding(this ToolStripItem item, object dataSource, string dataMember)
-	{
-		item.DataBindings.Add(nameof(item.Enabled), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return item;
-	}
+		=> BindingHelper.Bind(item, nameof(item.Enabled), dataSource, dataMember);
 
 	/// <summary>
 	/// Binds the <see cref="ToolStripItem.Text"/> property of the specified <see cref="ToolStripItem"/> to a
@@ -52,10 +51,7 @@ public static class ToolStripItemExtensions
 	/// The <see cref="ToolStripItem"/> with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static ToolStripItem WithTextBinding(this ToolStripItem item, object dataSource, string dataMember)
-	{
-		item.DataBindings.Add(nameof(item.Text), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return item;
-	}
+		=> BindingHelper.Bind(item, nameof(item.Text), dataSource, dataMember);
 
 	/// <summary>
 	/// Binds the <see cref="ToolStripItem.Visible"/> property of the specified <see cref="ToolStripItem"/> to a
@@ -72,9 +68,6 @@ public static class ToolStripItemExtensions
 	/// The <see cref="ToolStripItem"/> with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static ToolStripItem WithVisibleBinding(this ToolStripItem item, object dataSource, string dataMember)
-	{
-		item.DataBindings.Add(nameof(item.Visible), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return item;
-	}
+		=> BindingHelper.Bind(item, nameof(item.Visible), dataSource, dataMember);
 }
 #endif

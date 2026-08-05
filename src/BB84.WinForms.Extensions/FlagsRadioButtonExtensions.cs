@@ -6,6 +6,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
+using BB84.WinForms.Extensions.Common;
 using BB84.WinForms.Extensions.Controls;
 using BB84.WinForms.Extensions.Helpers;
 
@@ -59,7 +60,7 @@ public static class FlagsRadioButtonExtensions
 	}
 
 	/// <summary>
-	/// Sets the <see cref="FlagsRadioButton.FlowDirection"/> property of the specified <see cref="FlagsCheckBox"/> to the given <see cref="FlowDirection"/> value.
+	/// Sets the <see cref="FlagsRadioButton.FlowDirection"/> property of the specified <see cref="FlagsRadioButton"/> to the given <see cref="FlowDirection"/> value.
 	/// </summary>
 	/// <param name="radioButton">The <see cref="FlagsRadioButton"/> to modify.</param>
 	/// <param name="direction">The <see cref="FlowDirection"/> value to set.</param>
@@ -87,8 +88,5 @@ public static class FlagsRadioButtonExtensions
 	/// The <see cref="FlagsRadioButton"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static FlagsRadioButton WithSelectedValueBinding(this FlagsRadioButton radioButton, object dataSource, string dataMember)
-	{
-		radioButton.DataBindings.Add(nameof(radioButton.SelectedValue), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return radioButton;
-	}
+		=> BindingHelper.Bind(radioButton, nameof(radioButton.SelectedValue), dataSource, dataMember);
 }

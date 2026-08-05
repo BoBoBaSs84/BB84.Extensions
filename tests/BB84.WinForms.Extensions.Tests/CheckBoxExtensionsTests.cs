@@ -1,4 +1,4 @@
-﻿// Copyright: 2023 Robert Peter Meyer
+// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
@@ -12,7 +12,7 @@ public sealed class CheckBoxExtensionsTests
 	public void WithCheckedBindingShouldBindChecked()
 	{
 		var dataSource = new { Checked = false };
-		CheckBox checkBox = new();
+		using CheckBox checkBox = new();
 
 		checkBox.WithCheckedBinding(dataSource, nameof(checkBox.Checked));
 
@@ -27,10 +27,10 @@ public sealed class CheckBoxExtensionsTests
 	public void WithCheckStateBindingShouldBindCheckState()
 	{
 		var dataSource = new { CheckState = CheckState.Unchecked };
-		CheckBox checkBox = new();
+		using CheckBox checkBox = new();
 
 		checkBox.WithCheckStateBinding(dataSource, nameof(checkBox.CheckState));
-		Assert.AreEqual(1, checkBox.DataBindings.Count);
+		Assert.HasCount(1, checkBox.DataBindings);
 
 		Assert.AreEqual(nameof(checkBox.CheckState), checkBox.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, checkBox.DataBindings[0].DataSource);
@@ -41,11 +41,11 @@ public sealed class CheckBoxExtensionsTests
 	public void WithCheckAlignBindingShouldBindCheckAlign()
 	{
 		var dataSource = new { CheckAlign = ContentAlignment.MiddleLeft };
-		CheckBox checkBox = new();
+		using CheckBox checkBox = new();
 
 		checkBox.WithCheckAlignBinding(dataSource, nameof(checkBox.CheckAlign));
 
-		Assert.AreEqual(1, checkBox.DataBindings.Count);
+		Assert.HasCount(1, checkBox.DataBindings);
 		Assert.AreEqual(nameof(checkBox.CheckAlign), checkBox.DataBindings[0].PropertyName);
 		Assert.AreEqual(dataSource, checkBox.DataBindings[0].DataSource);
 		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, checkBox.DataBindings[0].DataSourceUpdateMode);

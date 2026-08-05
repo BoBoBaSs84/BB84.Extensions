@@ -6,6 +6,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
+using BB84.WinForms.Extensions.Common;
 using BB84.WinForms.Extensions.Controls;
 using BB84.WinForms.Extensions.Helpers;
 
@@ -88,8 +89,5 @@ public static class FlagsCheckBoxExtensions
 	/// The <see cref="FlagsCheckBox"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static FlagsCheckBox WithSelectedValueBinding(this FlagsCheckBox checkBox, object dataSource, string dataMember)
-	{
-		checkBox.DataBindings.Add(nameof(checkBox.SelectedValue), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return checkBox;
-	}
+		=> BindingHelper.Bind(checkBox, nameof(checkBox.SelectedValue), dataSource, dataMember);
 }

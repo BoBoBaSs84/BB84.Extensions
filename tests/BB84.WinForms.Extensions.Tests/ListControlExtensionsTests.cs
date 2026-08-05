@@ -3,8 +3,6 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
-using System.Reflection;
-
 namespace BB84.WinForms.Extensions.Tests;
 
 [TestClass]
@@ -68,36 +66,19 @@ public sealed class ListControlExtensionsTests
 		Assert.AreEqual("Key", listControl.ValueMember);
 	}
 
-	private static List<ListControl> GetListControls()
-	{
-		Assembly assembly = typeof(ListControl).Assembly;
-
-		IEnumerable<Type> types = assembly.GetTypes()
-			.Where(t => typeof(ListControl).IsAssignableFrom(t) && !t.IsAbstract);
-
-		List<ListControl> controls = [];
-
-		foreach (Type type in types)
-		{
-			try
-			{
-				if (Activator.CreateInstance(type) is ListControl control)
-					controls.Add(control);
-			}
-			catch (Exception ex)
-			{
-				// Handle exceptions for types that cannot be instantiated
-				Console.WriteLine($"Could not create instance of {type.Name}: {ex.Message}");
-			}
-		}
-
-		return controls;
-	}
-
 	private static IEnumerable<object[]> TestData()
+		=> TestControlFactory.TestData<ListControl>();
+
+	[TestMethod]
+	public void WithEnumeratorBindingShouldCollapseNamesThatAliasTheSameValue()
 	{
-		foreach (ListControl control in GetListControls())
-			yield return new object[] { control };
+		using ComboBox comboBox = new();
+
+		comboBox.WithEnumeratorBinding(AliasedEnum.First);
+
+		List<KeyValuePair<AliasedEnum, string>>? items = comboBox.DataSource as List<KeyValuePair<AliasedEnum, string>>;
+		Assert.IsNotNull(items);
+		Assert.HasCount(2, items);
 	}
 
 	private enum TestEnum
@@ -105,5 +86,13 @@ public sealed class ListControlExtensionsTests
 		First,
 		Second,
 		Third
+	}
+
+	[Flags]
+	private enum AliasedEnum
+	{
+		None = 0,
+		First = 1,
+		AlsoFirst = 1
 	}
 }
