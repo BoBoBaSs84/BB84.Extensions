@@ -1,4 +1,4 @@
-﻿// Copyright: 2023 Robert Peter Meyer
+// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
@@ -14,7 +14,7 @@ public sealed class FlagsCheckBoxExtensionsTests
 	[TestMethod]
 	public void WithDescriptionNameTest()
 	{
-		FlagsCheckBox checkBox = new();
+		using FlagsCheckBox checkBox = new();
 
 		checkBox.WithDescriptionName();
 
@@ -24,7 +24,7 @@ public sealed class FlagsCheckBoxExtensionsTests
 	[TestMethod]
 	public void WithDisplayNameTest()
 	{
-		FlagsCheckBox checkBox = new();
+		using FlagsCheckBox checkBox = new();
 
 		checkBox.WithDisplayName();
 
@@ -35,7 +35,7 @@ public sealed class FlagsCheckBoxExtensionsTests
 	public void WithDisplayNameResolverTest()
 	{
 		static string Resolver(Enum e) => $"Flag: {e}";
-		FlagsCheckBox checkBox = new();
+		using FlagsCheckBox checkBox = new();
 
 		checkBox.WithDisplayNameResolver(Resolver);
 
@@ -45,7 +45,7 @@ public sealed class FlagsCheckBoxExtensionsTests
 	[TestMethod]
 	public void WithDisplayNameResolverNullResolverThrowsArgumentNullException()
 	{
-		FlagsCheckBox checkBox = new();
+		using FlagsCheckBox checkBox = new();
 
 		Assert.Throws<ArgumentNullException>(() => checkBox.WithDisplayNameResolver(null!));
 	}
@@ -53,7 +53,7 @@ public sealed class FlagsCheckBoxExtensionsTests
 	[TestMethod]
 	public void WithFlowDirectionTest()
 	{
-		FlagsCheckBox checkBox = new();
+		using FlagsCheckBox checkBox = new();
 
 		checkBox.WithFlowDirection(FlowDirection.RightToLeft);
 
@@ -65,11 +65,13 @@ public sealed class FlagsCheckBoxExtensionsTests
 	{
 		var datasource = new { SelectedFlag = TestEnumerator.None };
 
-		FlagsCheckBox checkBox = new FlagsCheckBox() { SelectedValue = TestEnumerator.FirstFlag }
+		using FlagsCheckBox checkBox = new FlagsCheckBox() { SelectedValue = TestEnumerator.FirstFlag }
 			.WithSelectedValueBinding(datasource, nameof(datasource.SelectedFlag));
 
-		Assert.IsNotNull(checkBox);
-		Assert.AreEqual(TestEnumerator.FirstFlag, checkBox.SelectedValue);
+		Assert.HasCount(1, checkBox.DataBindings);
+		Assert.AreEqual(nameof(checkBox.SelectedValue), checkBox.DataBindings[0].PropertyName);
+		Assert.AreEqual(datasource, checkBox.DataBindings[0].DataSource);
+		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, checkBox.DataBindings[0].DataSourceUpdateMode);
 	}
 
 	[Flags]

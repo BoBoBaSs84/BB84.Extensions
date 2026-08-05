@@ -1,4 +1,4 @@
-﻿// Copyright: 2023 Robert Peter Meyer
+// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
@@ -12,7 +12,7 @@ public class ProgressBarExtensionsTests
 	public void WithValueBindingTest()
 	{
 		var dataSource = new { Value = 50 };
-		ProgressBar progressBar = new();
+		using ProgressBar progressBar = new();
 
 		progressBar.WithValueBinding(dataSource, nameof(progressBar.Value));
 

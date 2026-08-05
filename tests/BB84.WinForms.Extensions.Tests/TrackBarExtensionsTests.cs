@@ -1,4 +1,4 @@
-﻿// Copyright: 2023 Robert Peter Meyer
+// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
@@ -12,7 +12,7 @@ public sealed class TrackBarExtensionsTests
 	public void WithValueBindingTest()
 	{
 		var dataSource = new { Value = 50 };
-		TrackBar trackBar = new();
+		using TrackBar trackBar = new();
 
 		trackBar.WithValueBinding(dataSource, nameof(trackBar.Value));
 

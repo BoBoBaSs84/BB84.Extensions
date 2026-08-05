@@ -1,4 +1,4 @@
-﻿// Copyright: 2023 Robert Peter Meyer
+// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
@@ -12,7 +12,7 @@ public sealed class MonthCalendarExtensionsTests
 	public void WithSelectionRangeBindingShouldBindSelectionRange()
 	{
 		var dataSource = new { SelectionRange = new SelectionRange(DateTime.MinValue, DateTime.MaxValue) };
-		MonthCalendar monthCalendar = new();
+		using MonthCalendar monthCalendar = new();
 
 		monthCalendar.WithSelectionRangeBinding(dataSource, nameof(monthCalendar.SelectionRange));
 

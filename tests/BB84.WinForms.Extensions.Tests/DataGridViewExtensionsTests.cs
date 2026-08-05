@@ -1,4 +1,4 @@
-﻿// Copyright: 2023 Robert Peter Meyer
+// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
@@ -12,7 +12,7 @@ public sealed class DataGridViewExtensionsTests
 	public void WithDataSourceBindingShouldBindDataSource()
 	{
 		var dataSource = new List<string> { "Item1", "Item2", "Item3" };
-		DataGridView dataGridView = new();
+		using DataGridView dataGridView = new();
 
 		dataGridView.WithDataSourceBinding(dataSource);
 

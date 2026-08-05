@@ -3,6 +3,8 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.WinForms.Extensions.Common;
+
 namespace BB84.WinForms.Extensions;
 
 /// <summary>
@@ -28,10 +30,7 @@ public static class NumericUpDownExtensions
 	/// The <see cref="NumericUpDown"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static NumericUpDown WithValueBinding(this NumericUpDown numericUpDown, object dataSource, string dataMember)
-	{
-		numericUpDown.DataBindings.Add(nameof(numericUpDown.Value), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return numericUpDown;
-	}
+		=> BindingHelper.Bind(numericUpDown, nameof(numericUpDown.Value), dataSource, dataMember);
 
 	/// <summary>
 	/// Binds the <see cref="NumericUpDown.Minimum"/> property of the specified <see cref="NumericUpDown"/>
@@ -48,10 +47,7 @@ public static class NumericUpDownExtensions
 	/// The <see cref="NumericUpDown"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static NumericUpDown WithMinimumBinding(this NumericUpDown numericUpDown, object dataSource, string dataMember)
-	{
-		numericUpDown.DataBindings.Add(nameof(numericUpDown.Minimum), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return numericUpDown;
-	}
+		=> BindingHelper.Bind(numericUpDown, nameof(numericUpDown.Minimum), dataSource, dataMember);
 
 	/// <summary>
 	/// Binds the <see cref="NumericUpDown.Maximum"/> property of the specified <see cref="NumericUpDown"/>
@@ -68,10 +64,7 @@ public static class NumericUpDownExtensions
 	/// The <see cref="NumericUpDown"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static NumericUpDown WithMaximumBinding(this NumericUpDown numericUpDown, object dataSource, string dataMember)
-	{
-		numericUpDown.DataBindings.Add(nameof(numericUpDown.Maximum), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return numericUpDown;
-	}
+		=> BindingHelper.Bind(numericUpDown, nameof(numericUpDown.Maximum), dataSource, dataMember);
 
 	/// <summary>
 	/// Binds the <see cref="NumericUpDown.Increment"/> property of the specified <see cref="NumericUpDown"/>
@@ -88,10 +81,7 @@ public static class NumericUpDownExtensions
 	/// The <see cref="NumericUpDown"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static NumericUpDown WithIncrementBinding(this NumericUpDown numericUpDown, object dataSource, string dataMember)
-	{
-		numericUpDown.DataBindings.Add(nameof(numericUpDown.Increment), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return numericUpDown;
-	}
+		=> BindingHelper.Bind(numericUpDown, nameof(numericUpDown.Increment), dataSource, dataMember);
 
 	/// <summary>
 	/// Binds the <see cref="NumericUpDown.DecimalPlaces"/> property of the specified <see cref="NumericUpDown"/>
@@ -108,8 +98,5 @@ public static class NumericUpDownExtensions
 	/// The <see cref="NumericUpDown"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static NumericUpDown WithDecimalPlacesBinding(this NumericUpDown numericUpDown, object dataSource, string dataMember)
-	{
-		numericUpDown.DataBindings.Add(nameof(numericUpDown.DecimalPlaces), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return numericUpDown;
-	}
+		=> BindingHelper.Bind(numericUpDown, nameof(numericUpDown.DecimalPlaces), dataSource, dataMember);
 }

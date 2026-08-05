@@ -1,4 +1,4 @@
-﻿// Copyright: 2023 Robert Peter Meyer
+// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
@@ -13,7 +13,7 @@ public sealed class ListBoxExtensionsTests
 	public void WithSelectedItemBindingShouldBindSelectedItem()
 	{
 		var dataSource = new { SelectedItem = "Item1" };
-		ListBox listBox = new();
+		using ListBox listBox = new();
 
 		listBox.WithSelectedItemBinding(dataSource, nameof(listBox.SelectedItem));
 
@@ -27,7 +27,7 @@ public sealed class ListBoxExtensionsTests
 	public void WithSelectedIndexBindingShouldBindSelectedIndex()
 	{
 		var dataSource = new { SelectedIndex = 1 };
-		ListBox listBox = new();
+		using ListBox listBox = new();
 
 		listBox.WithSelectedIndexBinding(dataSource, nameof(listBox.SelectedIndex));
 

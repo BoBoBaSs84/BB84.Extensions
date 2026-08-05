@@ -3,6 +3,8 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.WinForms.Extensions.Common;
+
 namespace BB84.WinForms.Extensions;
 
 /// <summary>
@@ -31,13 +33,10 @@ public static class ControlExtensions
 	/// The <see cref="Control"/> class with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static Control WithEnabledBinding(this Control control, object dataSource, string dataMember)
-	{
-		control.DataBindings.Add(nameof(control.Enabled), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return control;
-	}
+		=> BindingHelper.Bind(control, nameof(control.Enabled), dataSource, dataMember);
 
 	/// <summary>
-	/// Binds the <see cref="Control.Tag"/> property of the specified <see cref="GroupBox"/> to a
+	/// Binds the <see cref="Control.Tag"/> property of the specified <see cref="Control"/> to a
 	/// property on the provided data source.
 	/// </summary>
 	/// <remarks>
@@ -51,10 +50,7 @@ public static class ControlExtensions
 	/// The <see cref="Control"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static Control WithTagBinding(this Control control, object dataSource, string dataMember)
-	{
-		control.DataBindings.Add(nameof(control.Tag), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return control;
-	}
+		=> BindingHelper.Bind(control, nameof(control.Tag), dataSource, dataMember);
 
 	/// <summary>
 	/// Binds the <see cref="Control.Text"/> property of the specified <see cref="Control"/> to a
@@ -71,13 +67,10 @@ public static class ControlExtensions
 	/// The <see cref="Control"/> class with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static Control WithTextBinding(this Control control, object dataSource, string dataMember)
-	{
-		control.DataBindings.Add(nameof(control.Text), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return control;
-	}
+		=> BindingHelper.Bind(control, nameof(control.Text), dataSource, dataMember);
 
 	/// <summary>
-	/// Binds the <see cref="Control.Visible"/> property of the specified <see cref="GroupBox"/> to a
+	/// Binds the <see cref="Control.Visible"/> property of the specified <see cref="Control"/> to a
 	/// property on the provided data source.
 	/// </summary>
 	/// <remarks>
@@ -91,8 +84,5 @@ public static class ControlExtensions
 	/// The <see cref="Control"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static Control WithVisibleBinding(this Control control, object dataSource, string dataMember)
-	{
-		control.DataBindings.Add(nameof(control.Visible), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return control;
-	}
+		=> BindingHelper.Bind(control, nameof(control.Visible), dataSource, dataMember);
 }

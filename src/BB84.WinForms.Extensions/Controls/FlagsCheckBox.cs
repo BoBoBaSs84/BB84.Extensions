@@ -25,6 +25,7 @@ public partial class FlagsCheckBox : UserControl
 	private Enum? _zeroValue;
 	private bool _zeroValueDefined;
 	private bool _isUpdatingSelection;
+	private bool _suppressSelectedValueChanged;
 	private FlowDirection _flowDirection = FlowDirection.LeftToRight;
 	private Func<Enum, string>? _displayNameResolver;
 
@@ -45,7 +46,7 @@ public partial class FlagsCheckBox : UserControl
 	[DefaultValue(FlowDirection.LeftToRight)]
 	public FlowDirection FlowDirection
 	{
-		get => flowLayoutPanel?.FlowDirection ?? _flowDirection;
+		get => _flowDirection;
 		set
 		{
 			if (_flowDirection == value)
@@ -104,7 +105,19 @@ public partial class FlagsCheckBox : UserControl
 			}
 
 			if (_enumType is null)
-				EnumType = value.GetType();
+			{
+				// Initializing the type raises the event for the zero value. Suppress it so a
+				// caller assigning the very first value observes one change, not two.
+				_suppressSelectedValueChanged = true;
+				try
+				{
+					EnumType = value.GetType();
+				}
+				finally
+				{
+					_suppressSelectedValueChanged = false;
+				}
+			}
 
 			if (value.GetType() != _enumType)
 				throw new ArgumentException($"Selected value must be of type {_enumType}.", nameof(value));
@@ -135,6 +148,14 @@ public partial class FlagsCheckBox : UserControl
 	/// <param name="e">The event data.</param>
 	protected virtual void OnSelectedValueChanged(EventArgs e)
 		=> SelectedValueChanged?.Invoke(this, e);
+
+	private void RaiseSelectedValueChanged()
+	{
+		if (_suppressSelectedValueChanged)
+			return;
+
+		OnSelectedValueChanged(EventArgs.Empty);
+	}
 
 	private void SetEnumType(Type? value)
 	{
@@ -175,7 +196,7 @@ public partial class FlagsCheckBox : UserControl
 			{
 				_selectedValue = null;
 				UpdateCheckBoxesFromValue();
-				OnSelectedValueChanged(EventArgs.Empty);
+				RaiseSelectedValueChanged();
 			}
 			return;
 		}
@@ -184,7 +205,7 @@ public partial class FlagsCheckBox : UserControl
 		{
 			_selectedValue = _zeroValue;
 			UpdateCheckBoxesFromValue();
-			OnSelectedValueChanged(EventArgs.Empty);
+			RaiseSelectedValueChanged();
 		}
 	}
 
@@ -196,8 +217,10 @@ public partial class FlagsCheckBox : UserControl
 		flowLayoutPanel.SuspendLayout();
 		try
 		{
-			foreach (Control control in flowLayoutPanel.Controls)
-				control.Dispose();
+			// Disposing a control detaches it from its parent, which mutates this very
+			// collection. Walk it backwards by index so the enumerator is never invalidated.
+			for (int index = flowLayoutPanel.Controls.Count - 1; index >= 0; index--)
+				flowLayoutPanel.Controls[index].Dispose();
 
 			flowLayoutPanel.Controls.Clear();
 
@@ -253,14 +276,8 @@ public partial class FlagsCheckBox : UserControl
 
 		if (newBits == 0)
 		{
-			if (_zeroValue is not null)
-			{
-				SelectedValue = _zeroValue;
-			}
-			else
-			{
-				UpdateCheckBoxesFromValue();
-			}
+			// _enumType is non null here, so SetEnumType has already guaranteed a zero value.
+			SelectedValue = _zeroValue;
 			return;
 		}
 

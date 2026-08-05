@@ -3,6 +3,8 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.WinForms.Extensions.Common;
+
 namespace BB84.WinForms.Extensions;
 
 /// <summary>
@@ -26,8 +28,5 @@ public static class ProgressBarExtensions
 	/// The <see cref="ProgressBar"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static ProgressBar WithValueBinding(this ProgressBar progressBar, object dataSource, string dataMember)
-	{
-		progressBar.DataBindings.Add(nameof(progressBar.Value), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return progressBar;
-	}
+		=> BindingHelper.Bind(progressBar, nameof(progressBar.Value), dataSource, dataMember);
 }

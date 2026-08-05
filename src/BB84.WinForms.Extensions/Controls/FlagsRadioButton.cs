@@ -25,6 +25,7 @@ public partial class FlagsRadioButton : UserControl
 	private Enum? _zeroValue;
 	private bool _zeroValueDefined;
 	private bool _isUpdatingSelection;
+	private bool _suppressSelectedValueChanged;
 	private FlowDirection _flowDirection = FlowDirection.LeftToRight;
 	private Func<Enum, string>? _displayNameResolver;
 
@@ -45,7 +46,7 @@ public partial class FlagsRadioButton : UserControl
 	[DefaultValue(FlowDirection.LeftToRight)]
 	public FlowDirection FlowDirection
 	{
-		get => flowLayoutPanel?.FlowDirection ?? _flowDirection;
+		get => _flowDirection;
 		set
 		{
 			if (_flowDirection == value)
@@ -75,7 +76,7 @@ public partial class FlagsRadioButton : UserControl
 	}
 
 	/// <summary>
-	/// Gets or sets the enum type that defines the flags to be displayed as check boxes.
+	/// Gets or sets the enum type that defines the flags to be displayed as radio buttons.
 	/// </summary>
 	[Browsable(false)]
 	[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
@@ -87,7 +88,7 @@ public partial class FlagsRadioButton : UserControl
 
 	/// <summary>
 	/// Gets or sets the currently selected value, which is a combination of the enum flags
-	/// represented by the check boxes.
+	/// represented by the radio buttons.
 	/// </summary>
 	[Browsable(false)]
 	[Bindable(true)]
@@ -104,7 +105,19 @@ public partial class FlagsRadioButton : UserControl
 			}
 
 			if (_enumType is null)
-				EnumType = value.GetType();
+			{
+				// Initializing the type raises the event for the zero value. Suppress it so a
+				// caller assigning the very first value observes one change, not two.
+				_suppressSelectedValueChanged = true;
+				try
+				{
+					EnumType = value.GetType();
+				}
+				finally
+				{
+					_suppressSelectedValueChanged = false;
+				}
+			}
 
 			if (value.GetType() != _enumType)
 				throw new ArgumentException($"Selected value must be of type {_enumType}.", nameof(value));
@@ -133,9 +146,17 @@ public partial class FlagsRadioButton : UserControl
 	/// <summary>
 	/// Is called when the selected value changes, either through user interaction or programmatically.
 	/// </summary>
-	/// <param name="e">The event data.</param>s
+	/// <param name="e">The event data.</param>
 	protected virtual void OnSelectedValueChanged(EventArgs e)
 		=> SelectedValueChanged?.Invoke(this, e);
+
+	private void RaiseSelectedValueChanged()
+	{
+		if (_suppressSelectedValueChanged)
+			return;
+
+		OnSelectedValueChanged(EventArgs.Empty);
+	}
 
 	private void SetEnumType(Type? value)
 	{
@@ -176,7 +197,7 @@ public partial class FlagsRadioButton : UserControl
 			{
 				_selectedValue = null;
 				UpdateRadioButtonsFromValue();
-				OnSelectedValueChanged(EventArgs.Empty);
+				RaiseSelectedValueChanged();
 			}
 			return;
 		}
@@ -185,7 +206,7 @@ public partial class FlagsRadioButton : UserControl
 		{
 			_selectedValue = _zeroValue;
 			UpdateRadioButtonsFromValue();
-			OnSelectedValueChanged(EventArgs.Empty);
+			RaiseSelectedValueChanged();
 		}
 	}
 
@@ -197,8 +218,10 @@ public partial class FlagsRadioButton : UserControl
 		flowLayoutPanel.SuspendLayout();
 		try
 		{
-			foreach (Control control in flowLayoutPanel.Controls)
-				control.Dispose();
+			// Disposing a control detaches it from its parent, which mutates this very
+			// collection. Walk it backwards by index so the enumerator is never invalidated.
+			for (int index = flowLayoutPanel.Controls.Count - 1; index >= 0; index--)
+				flowLayoutPanel.Controls[index].Dispose();
 
 			flowLayoutPanel.Controls.Clear();
 
@@ -255,14 +278,8 @@ public partial class FlagsRadioButton : UserControl
 
 		if (newBits == 0)
 		{
-			if (_zeroValue is not null)
-			{
-				SelectedValue = _zeroValue;
-			}
-			else
-			{
-				UpdateRadioButtonsFromValue();
-			}
+			// _enumType is non null here, so SetEnumType has already guaranteed a zero value.
+			SelectedValue = _zeroValue;
 			return;
 		}
 

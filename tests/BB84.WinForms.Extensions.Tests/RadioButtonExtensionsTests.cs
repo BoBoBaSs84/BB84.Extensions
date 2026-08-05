@@ -1,4 +1,4 @@
-﻿// Copyright: 2023 Robert Peter Meyer
+// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
@@ -12,7 +12,7 @@ public sealed class RadioButtonExtensionsTests
 	public void WithCheckedBindingTest()
 	{
 		var dataSource = new { Checked = false };
-		RadioButton radioButton = new();
+		using RadioButton radioButton = new();
 
 		radioButton.WithCheckedBinding(dataSource, nameof(radioButton.Checked));
 

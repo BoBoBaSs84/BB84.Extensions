@@ -5,6 +5,8 @@
 // LICENSE file in the root directory of this source tree.
 using System.Collections;
 
+using BB84.WinForms.Extensions.Common;
+
 namespace BB84.WinForms.Extensions;
 
 /// <summary>
@@ -50,10 +52,7 @@ public static class ListControlExtensions
 	/// The <see cref="ListControl"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static ListControl WithSelectedValueBinding(this ListControl listControl, object dataSource, string dataMember)
-	{
-		listControl.DataBindings.Add(nameof(listControl.SelectedValue), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return listControl;
-	}
+		=> BindingHelper.Bind(listControl, nameof(listControl.SelectedValue), dataSource, dataMember);
 
 	/// <summary>
 	/// Sets the <see cref="ListControl.DisplayMember"/> property of the specified <see cref="ListControl"/>.
@@ -89,16 +88,21 @@ public static class ListControlExtensions
 	/// </summary>
 	/// <typeparam name="T">The enumeration type to bind to the <see cref="ListControl.DataSource"/>.</typeparam>
 	/// <param name="listControl">The <see cref="ListControl"/> to bind.</param>
-	/// <param name="value">The enumeration value used to determine the type <typeparamref name="T"/>.</param>
+	/// <param name="value">Any value of the enumeration, used to infer the type <typeparamref name="T"/>.</param>
+	/// <remarks>
+	/// Names that alias the same underlying value appear once in the resulting data source.
+	/// </remarks>
 	/// <returns>
 	/// The <see cref="ListControl"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static ListControl WithEnumeratorBinding<T>(this ListControl listControl, T value)
-		where T : struct, IComparable, IFormattable, IConvertible
+		where T : struct, Enum
 	{
-		List<KeyValuePair<T, string>> datasource = [.. Enum.GetValues(value.GetType())
-			.OfType<T>()
-			.ToDictionary(key => key, value => $"{value}")];
+		// Distinct, because an enum may alias several names onto the same value, which a
+		// dictionary keyed by value cannot represent.
+		List<KeyValuePair<T, string>> datasource = [.. GetEnumValues<T>()
+			.Distinct()
+			.Select(item => new KeyValuePair<T, string>(item, $"{item}"))];
 
 		listControl.WithDisplayMember(nameof(KeyValuePair<T, string>.Value))
 			.WithValueMember(nameof(KeyValuePair<T, string>.Key))
@@ -106,4 +110,11 @@ public static class ListControlExtensions
 
 		return listControl;
 	}
+
+	private static T[] GetEnumValues<T>() where T : struct, Enum
+#if NET5_0_OR_GREATER
+		=> Enum.GetValues<T>();
+#else
+		=> (T[])Enum.GetValues(typeof(T));
+#endif
 }

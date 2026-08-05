@@ -1,4 +1,4 @@
-﻿// Copyright: 2023 Robert Peter Meyer
+// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
@@ -14,7 +14,7 @@ public sealed class FlagsRadioButtonExtensionsTests
 	[TestMethod]
 	public void WithDescriptionNameTest()
 	{
-		FlagsRadioButton radioButton = new();
+		using FlagsRadioButton radioButton = new();
 
 		radioButton.WithDescriptionName();
 
@@ -24,7 +24,7 @@ public sealed class FlagsRadioButtonExtensionsTests
 	[TestMethod]
 	public void WithDisplayNameTest()
 	{
-		FlagsRadioButton radioButton = new();
+		using FlagsRadioButton radioButton = new();
 
 		radioButton.WithDisplayName();
 
@@ -35,7 +35,7 @@ public sealed class FlagsRadioButtonExtensionsTests
 	public void WithDisplayNameResolverTest()
 	{
 		static string Resolver(Enum e) => $"Flag: {e}";
-		FlagsRadioButton radioButton = new();
+		using FlagsRadioButton radioButton = new();
 
 		radioButton.WithDisplayNameResolver(Resolver);
 
@@ -45,7 +45,7 @@ public sealed class FlagsRadioButtonExtensionsTests
 	[TestMethod]
 	public void WithDisplayNameResolverNullResolverThrowsArgumentNullException()
 	{
-		FlagsRadioButton radioButton = new();
+		using FlagsRadioButton radioButton = new();
 
 		Assert.Throws<ArgumentNullException>(() => radioButton.WithDisplayNameResolver(null!));
 	}
@@ -53,7 +53,7 @@ public sealed class FlagsRadioButtonExtensionsTests
 	[TestMethod]
 	public void WithFlowDirectionTest()
 	{
-		FlagsRadioButton radioButton = new();
+		using FlagsRadioButton radioButton = new();
 
 		radioButton.WithFlowDirection(FlowDirection.RightToLeft);
 
@@ -65,11 +65,13 @@ public sealed class FlagsRadioButtonExtensionsTests
 	{
 		var datasource = new { SelectedFlag = TestEnumerator.FirstFlag };
 
-		FlagsRadioButton radioButton = new FlagsRadioButton() { SelectedValue = TestEnumerator.FirstFlag }
+		using FlagsRadioButton radioButton = new FlagsRadioButton() { SelectedValue = TestEnumerator.FirstFlag }
 			.WithSelectedValueBinding(datasource, nameof(datasource.SelectedFlag));
 
-		Assert.IsNotNull(radioButton);
-		Assert.AreEqual(TestEnumerator.FirstFlag, radioButton.SelectedValue);
+		Assert.HasCount(1, radioButton.DataBindings);
+		Assert.AreEqual(nameof(radioButton.SelectedValue), radioButton.DataBindings[0].PropertyName);
+		Assert.AreEqual(datasource, radioButton.DataBindings[0].DataSource);
+		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, radioButton.DataBindings[0].DataSourceUpdateMode);
 	}
 
 	[Flags]

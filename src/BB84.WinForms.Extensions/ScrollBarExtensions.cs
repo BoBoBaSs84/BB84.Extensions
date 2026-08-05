@@ -3,6 +3,8 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.WinForms.Extensions.Common;
+
 namespace BB84.WinForms.Extensions;
 
 /// <summary>
@@ -23,11 +25,8 @@ public static class ScrollBarExtensions
 	/// <param name="dataSource">The data source containing the property to bind to.</param>
 	/// <param name="dataMember">The name of the property on the data source to bind to.</param>
 	/// <returns>
-	/// The <see cref="ProgressBar"/> control with the binding applied, allowing for method chaining.
+	/// The <see cref="ScrollBar"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
 	public static ScrollBar WithValueBinding(this ScrollBar scrollBar, object dataSource, string dataMember)
-	{
-		scrollBar.DataBindings.Add(nameof(scrollBar.Value), dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
-		return scrollBar;
-	}
+		=> BindingHelper.Bind(scrollBar, nameof(scrollBar.Value), dataSource, dataMember);
 }
