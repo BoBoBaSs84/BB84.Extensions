@@ -8,7 +8,6 @@ using System.ComponentModel.DataAnnotations;
 
 using BB84.WinForms.Extensions.Common;
 using BB84.WinForms.Extensions.Controls;
-using BB84.WinForms.Extensions.Helpers;
 
 namespace BB84.WinForms.Extensions;
 
@@ -18,7 +17,7 @@ namespace BB84.WinForms.Extensions;
 public static class FlagsRadioButtonExtensions
 {
 	/// <summary>
-	/// Sets the <see cref="FlagsRadioButton.DisplayNameResolver"/> of the specified <see cref="FlagsRadioButton"/>
+	/// Sets the <see cref="FlagsControlBase.DisplayNameResolver"/> of the specified <see cref="FlagsRadioButton"/>
 	/// to a resolver that retrieves display names from the <see cref="DescriptionAttribute"/> of enum values.
 	/// </summary>
 	/// <param name="radioButton">The <see cref="FlagsRadioButton"/> to configure.</param>
@@ -26,13 +25,10 @@ public static class FlagsRadioButtonExtensions
 	/// The same <see cref="FlagsRadioButton"/> instance, so that additional configuration can be chained fluently.
 	/// </returns>
 	public static FlagsRadioButton WithDescriptionName(this FlagsRadioButton radioButton)
-	{
-		radioButton.WithDisplayNameResolver(FlagsDisplayResolvers.FromDescriptionAttribute);
-		return radioButton;
-	}
+		=> FlagsControlHelper.WithDescriptionName(radioButton);
 
 	/// <summary>
-	/// Sets the <see cref="FlagsRadioButton.DisplayNameResolver"/> of the specified <see cref="FlagsRadioButton"/>
+	/// Sets the <see cref="FlagsControlBase.DisplayNameResolver"/> of the specified <see cref="FlagsRadioButton"/>
 	/// to a resolver that retrieves display names from the <see cref="DisplayAttribute"/> of enum values.
 	/// </summary>
 	/// <param name="radioButton">The <see cref="FlagsRadioButton"/> to configure.</param>
@@ -40,13 +36,10 @@ public static class FlagsRadioButtonExtensions
 	/// The same <see cref="FlagsRadioButton"/> instance, so that additional configuration can be chained fluently.
 	/// </returns>
 	public static FlagsRadioButton WithDisplayName(this FlagsRadioButton radioButton)
-	{
-		radioButton.WithDisplayNameResolver(FlagsDisplayResolvers.FromDisplayAttribute);
-		return radioButton;
-	}
+		=> FlagsControlHelper.WithDisplayName(radioButton);
 
 	/// <summary>
-	/// Sets the <see cref="FlagsRadioButton.DisplayNameResolver"/> used to provide user-friendly captions.
+	/// Sets the <see cref="FlagsControlBase.DisplayNameResolver"/> used to provide user-friendly captions.
 	/// </summary>
 	/// <param name="radioButton">The <see cref="FlagsRadioButton"/> to configure.</param>
 	/// <param name="resolver">The delegate that resolves a display name for each flag value.</param>
@@ -54,13 +47,10 @@ public static class FlagsRadioButtonExtensions
 	/// The same <see cref="FlagsRadioButton"/> instance, so that additional configuration can be chained fluently.
 	/// </returns>
 	public static FlagsRadioButton WithDisplayNameResolver(this FlagsRadioButton radioButton, Func<Enum, string> resolver)
-	{
-		radioButton.DisplayNameResolver = resolver ?? throw new ArgumentNullException(nameof(resolver));
-		return radioButton;
-	}
+		=> FlagsControlHelper.WithDisplayNameResolver(radioButton, resolver);
 
 	/// <summary>
-	/// Sets the <see cref="FlagsRadioButton.FlowDirection"/> property of the specified <see cref="FlagsRadioButton"/> to the given <see cref="FlowDirection"/> value.
+	/// Sets the <see cref="FlagsControlBase.FlowDirection"/> property of the specified <see cref="FlagsRadioButton"/> to the given <see cref="FlowDirection"/> value.
 	/// </summary>
 	/// <param name="radioButton">The <see cref="FlagsRadioButton"/> to modify.</param>
 	/// <param name="direction">The <see cref="FlowDirection"/> value to set.</param>
@@ -68,17 +58,14 @@ public static class FlagsRadioButtonExtensions
 	/// The same <see cref="FlagsRadioButton"/> instance, so that additional configuration can be chained fluently.
 	/// </returns>
 	public static FlagsRadioButton WithFlowDirection(this FlagsRadioButton radioButton, FlowDirection direction)
-	{
-		radioButton.FlowDirection = direction;
-		return radioButton;
-	}
+		=> FlagsControlHelper.WithFlowDirection(radioButton, direction);
 
 	/// <summary>
-	/// Binds the <see cref="FlagsRadioButton.SelectedValue"/> property of the specified <see cref="FlagsRadioButton"/>
+	/// Binds the <see cref="FlagsControlBase.SelectedValue"/> property of the specified <see cref="FlagsRadioButton"/>
 	/// to a property on the provided data source.
 	/// </summary>
 	/// <remarks>
-	/// The binding is configured to update the data source whenever the <see cref="FlagsRadioButton.SelectedValue"/> 
+	/// The binding is configured to update the data source whenever the <see cref="FlagsControlBase.SelectedValue"/> 
 	/// property changes, using <see cref="DataSourceUpdateMode.OnPropertyChanged"/>.
 	/// </remarks>
 	/// <param name="radioButton">The <see cref="FlagsRadioButton"/> to bind.</param>

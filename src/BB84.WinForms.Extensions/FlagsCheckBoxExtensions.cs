@@ -8,7 +8,6 @@ using System.ComponentModel.DataAnnotations;
 
 using BB84.WinForms.Extensions.Common;
 using BB84.WinForms.Extensions.Controls;
-using BB84.WinForms.Extensions.Helpers;
 
 namespace BB84.WinForms.Extensions;
 
@@ -18,7 +17,7 @@ namespace BB84.WinForms.Extensions;
 public static class FlagsCheckBoxExtensions
 {
 	/// <summary>
-	/// Sets the <see cref="FlagsCheckBox.DisplayNameResolver"/> of the specified <see cref="FlagsCheckBox"/>
+	/// Sets the <see cref="FlagsControlBase.DisplayNameResolver"/> of the specified <see cref="FlagsCheckBox"/>
 	/// to a resolver that retrieves display names from the <see cref="DescriptionAttribute"/> of enum values.
 	/// </summary>
 	/// <param name="checkBox">The <see cref="FlagsCheckBox"/> to configure.</param>
@@ -26,13 +25,10 @@ public static class FlagsCheckBoxExtensions
 	/// The same <see cref="FlagsCheckBox"/> instance, so that additional configuration can be chained fluently.
 	/// </returns>
 	public static FlagsCheckBox WithDescriptionName(this FlagsCheckBox checkBox)
-	{
-		checkBox.WithDisplayNameResolver(FlagsDisplayResolvers.FromDescriptionAttribute);
-		return checkBox;
-	}
+		=> FlagsControlHelper.WithDescriptionName(checkBox);
 
 	/// <summary>
-	/// Sets the <see cref="FlagsCheckBox.DisplayNameResolver"/> of the specified <see cref="FlagsCheckBox"/>
+	/// Sets the <see cref="FlagsControlBase.DisplayNameResolver"/> of the specified <see cref="FlagsCheckBox"/>
 	/// to a resolver that retrieves display names from the <see cref="DisplayAttribute"/> of enum values.
 	/// </summary>
 	/// <param name="checkBox">The <see cref="FlagsCheckBox"/> to configure.</param>
@@ -40,13 +36,10 @@ public static class FlagsCheckBoxExtensions
 	/// The same <see cref="FlagsCheckBox"/> instance, so that additional configuration can be chained fluently.
 	/// </returns>
 	public static FlagsCheckBox WithDisplayName(this FlagsCheckBox checkBox)
-	{
-		checkBox.WithDisplayNameResolver(FlagsDisplayResolvers.FromDisplayAttribute);
-		return checkBox;
-	}
+		=> FlagsControlHelper.WithDisplayName(checkBox);
 
 	/// <summary>
-	/// Sets the <see cref="FlagsCheckBox.DisplayNameResolver"/> used to provide user-friendly captions.
+	/// Sets the <see cref="FlagsControlBase.DisplayNameResolver"/> used to provide user-friendly captions.
 	/// </summary>
 	/// <param name="checkBox">The <see cref="FlagsCheckBox"/> to configure.</param>
 	/// <param name="resolver">The delegate that resolves a display name for each flag value.</param>
@@ -54,13 +47,10 @@ public static class FlagsCheckBoxExtensions
 	/// The same <see cref="FlagsCheckBox"/> instance, so that additional configuration can be chained fluently.
 	/// </returns>
 	public static FlagsCheckBox WithDisplayNameResolver(this FlagsCheckBox checkBox, Func<Enum, string> resolver)
-	{
-		checkBox.DisplayNameResolver = resolver ?? throw new ArgumentNullException(nameof(resolver));
-		return checkBox;
-	}
+		=> FlagsControlHelper.WithDisplayNameResolver(checkBox, resolver);
 
 	/// <summary>
-	/// Sets the <see cref="FlagsCheckBox.FlowDirection"/> property of the specified <see cref="FlagsCheckBox"/>
+	/// Sets the <see cref="FlagsControlBase.FlowDirection"/> property of the specified <see cref="FlagsCheckBox"/>
 	/// to the given <see cref="FlowDirection"/> value.
 	/// </summary>
 	/// <param name="checkBox">The <see cref="FlagsCheckBox"/> to modify.</param>
@@ -69,17 +59,14 @@ public static class FlagsCheckBoxExtensions
 	/// The same <see cref="FlagsCheckBox"/> instance, so that additional configuration can be chained fluently.
 	/// </returns>
 	public static FlagsCheckBox WithFlowDirection(this FlagsCheckBox checkBox, FlowDirection direction)
-	{
-		checkBox.FlowDirection = direction;
-		return checkBox;
-	}
+		=> FlagsControlHelper.WithFlowDirection(checkBox, direction);
 
 	/// <summary>
-	/// Binds the <see cref="FlagsCheckBox.SelectedValue"/> property of the specified <see cref="FlagsCheckBox"/>
+	/// Binds the <see cref="FlagsControlBase.SelectedValue"/> property of the specified <see cref="FlagsCheckBox"/>
 	/// to a property on the provided data source.
 	/// </summary>
 	/// <remarks>
-	/// The binding is configured to update the data source whenever the <see cref="FlagsCheckBox.SelectedValue"/> 
+	/// The binding is configured to update the data source whenever the <see cref="FlagsControlBase.SelectedValue"/> 
 	/// property changes, using <see cref="DataSourceUpdateMode.OnPropertyChanged"/>.
 	/// </remarks>
 	/// <param name="checkBox">The <see cref="FlagsCheckBox"/> to bind.</param>

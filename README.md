@@ -56,7 +56,7 @@ Windows Forms specific. Data-binding helpers for controls, following a fluent
 - **ComboBox / ListBox / ListControl** — `WithDataSourceBinding`, `WithSelectedItemBinding`, `WithEnumeratorBinding`
 - **DataGrid / DataGridView** — `WithDataSourceBinding`
 - **DateTimePicker** — `WithValueBinding`, `WithCheckedBinding`
-- **FlagsCheckBox / FlagsRadioButton** — custom controls for binding `[Flags]` enums; supports `WithDisplayName`, `WithDescriptionName`, `WithDisplayNameResolver`, `WithSelectedValueBinding`
+- **FlagsCheckBox / FlagsRadioButton** — custom controls for binding `[Flags]` enums, both derived from the extensible `FlagsControlBase`; supports `WithDisplayName`, `WithDescriptionName`, `WithDisplayNameResolver`, `WithSelectedValueBinding`
 - **MonthCalendar** — `WithSelectionRangeBinding`
 - **NumericUpDown** — `WithValueBinding`, `WithMinimumBinding`, `WithMaximumBinding`, `WithIncrementBinding`, `WithDecimalPlacesBinding`
 - **PictureBox** — `WithImageBinding`

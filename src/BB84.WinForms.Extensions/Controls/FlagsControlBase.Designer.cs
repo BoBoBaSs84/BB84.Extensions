@@ -5,7 +5,7 @@
 // LICENSE file in the root directory of this source tree.
 namespace BB84.WinForms.Extensions.Controls
 {
-    partial class FlagsCheckBox
+    partial class FlagsControlBase
     {
         /// <summary>
         /// Required designer variable.
@@ -36,9 +36,9 @@ namespace BB84.WinForms.Extensions.Controls
             components = new System.ComponentModel.Container();
             flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             SuspendLayout();
-            // 
+            //
             // flowLayoutPanel
-            // 
+            //
             flowLayoutPanel.AutoScroll = true;
             flowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             flowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
@@ -48,13 +48,13 @@ namespace BB84.WinForms.Extensions.Controls
             flowLayoutPanel.Size = new System.Drawing.Size(200, 150);
             flowLayoutPanel.TabIndex = 0;
             flowLayoutPanel.WrapContents = false;
-            // 
-            // FlagsCheckBoxControl
-            // 
+            //
+            // FlagsControlBase
+            //
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Controls.Add(flowLayoutPanel);
-            Name = "FlagsCheckBoxControl";
+            Name = GetType().Name;
             Size = new System.Drawing.Size(200, 150);
             ResumeLayout(false);
         }
