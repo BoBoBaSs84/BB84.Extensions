@@ -77,7 +77,8 @@ dateTimePicker1
 ### FlagsCheckBox control
 
 `FlagsCheckBox` is a composite user control that renders one `CheckBox` per non-zero flag value of a
-`[Flags]` enum and keeps a `SelectedValue` property in sync.
+`[Flags]` enum and keeps a `SelectedValue` property in sync. Checking a box adds its flag to the
+selection, unchecking removes it, and clearing the last one falls back to the zero-valued flag.
 
 ```csharp
 // Fluent configuration
@@ -95,8 +96,9 @@ flagsCheckBox1.WithDisplayNameResolver(e => e.ToString().ToUpper());
 
 ### FlagsRadioButton control
 
-`FlagsRadioButton` is the single-selection counterpart of `FlagsCheckBox` — one radio button per
-non-zero flag, bound to a single enum value.
+`FlagsRadioButton` renders one radio button per non-zero flag. `AutoCheck` is disabled, so a click
+toggles the flag it carries instead of clearing the other buttons — the selection accumulates the
+same way it does for `FlagsCheckBox`, only the visual style differs.
 
 ```csharp
 flagsRadioButton1
@@ -104,6 +106,16 @@ flagsRadioButton1
     .WithFlowDirection(FlowDirection.LeftToRight)
     .WithSelectedValueBinding(vm, nameof(vm.AccessLevel));
 ```
+
+### FlagsControlBase
+
+Both controls derive from `FlagsControlBase`, which owns the enum validation, the selection state,
+the bit arithmetic and the flow layout panel. Derive from it to add a control with a different
+button style; the five protected members to implement are `CreateButton`, `AttachToggleHandler`,
+`GetChecked`, `SetChecked` and `ComputeNewBits`.
+
+The enum bound to either control must define a zero-valued flag, which represents "nothing
+selected"; assigning a type without one throws an `ArgumentException`.
 
 ### ListBox extensions
 
