@@ -42,7 +42,7 @@ public static class BindableComponentExtensions
 	/// <exception cref="ArgumentNullException">
 	/// Thrown if <paramref name="component"/> or <paramref name="dataSource"/> is <see langword="null"/>.
 	/// </exception>
-	public static TComponent WithBinding<TComponent>(this TComponent component, string propertyName, object dataSource, string dataMember, bool formattingEnabled = true, DataSourceUpdateMode updateMode = DataSourceUpdateMode.OnPropertyChanged)
+	public static TComponent WithBinding<TComponent>(this TComponent component, string propertyName, object dataSource, string dataMember, bool formattingEnabled = BindingHelper.DefaultFormattingEnabled, DataSourceUpdateMode updateMode = BindingHelper.DefaultUpdateMode)
 		where TComponent : IBindableComponent
 		=> BindingHelper.Bind(component, propertyName, dataSource, dataMember, formattingEnabled, updateMode);
 }

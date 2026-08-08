@@ -17,6 +17,22 @@ namespace BB84.WinForms.Extensions.Common;
 internal static class BindingHelper
 {
 	/// <summary>
+	/// The formatting setting every property specific extension method binds with.
+	/// </summary>
+	/// <remarks>
+	/// This and <see cref="DefaultUpdateMode"/> are constants so that
+	/// <see cref="BindableComponentExtensions.WithBinding{TComponent}(TComponent, string, object, string, bool, DataSourceUpdateMode)"/>
+	/// can use them as its optional parameter defaults. Otherwise the policy would have to be written
+	/// out in both places and could drift.
+	/// </remarks>
+	internal const bool DefaultFormattingEnabled = true;
+
+	/// <summary>
+	/// The update mode every property specific extension method binds with.
+	/// </summary>
+	internal const DataSourceUpdateMode DefaultUpdateMode = DataSourceUpdateMode.OnPropertyChanged;
+
+	/// <summary>
 	/// Adds a binding for the given component property and returns the component for chaining.
 	/// </summary>
 	internal static TComponent Bind<TComponent>(TComponent component, string propertyName, object dataSource, string dataMember, bool formattingEnabled, DataSourceUpdateMode updateMode)
@@ -35,5 +51,5 @@ internal static class BindingHelper
 	/// </summary>
 	internal static TComponent Bind<TComponent>(TComponent component, string propertyName, object dataSource, string dataMember)
 		where TComponent : IBindableComponent
-		=> Bind(component, propertyName, dataSource, dataMember, true, DataSourceUpdateMode.OnPropertyChanged);
+		=> Bind(component, propertyName, dataSource, dataMember, DefaultFormattingEnabled, DefaultUpdateMode);
 }

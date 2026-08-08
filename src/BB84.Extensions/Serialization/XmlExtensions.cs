@@ -15,12 +15,12 @@ namespace BB84.Extensions.Serialization;
 /// Provides extension methods for serializing and deserializing objects to and from XML.
 /// </summary>
 /// <remarks>
-/// This <see cref="XmlExtension"/> class includes methods for converting objects to their XML string
+/// This <see cref="XmlExtensions"/> class includes methods for converting objects to their XML string
 /// representation and for creating object instances from XML strings. It supports customization of
 /// XML reader and writer settings, as well as XML namespaces, to accommodate various serialization
 /// and deserialization scenarios.
 /// </remarks>
-public static class XmlExtension
+public static class XmlExtensions
 {
 	/// <summary>
 	/// Caches the <see cref="XmlSerializer"/> instances that are created from an <see cref="XmlRootAttribute"/>.

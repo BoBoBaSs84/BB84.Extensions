@@ -17,15 +17,8 @@ namespace BB84.WinForms.Extensions.Controls;
 /// selection. Each check box carries its own flag, so the selection accumulates the flags of all
 /// checked boxes.
 /// </remarks>
-[DefaultBindingProperty(nameof(SelectedValue))]
 public class FlagsCheckBox : FlagsControlBase
 {
-	/// <summary>
-	/// Initializes a new instance of the <see cref="FlagsCheckBox"/> control.
-	/// </summary>
-	public FlagsCheckBox()
-	{ }
-
 	/// <inheritdoc/>
 	protected override ButtonBase CreateButton()
 		=> new CheckBox();
@@ -47,6 +40,6 @@ public class FlagsCheckBox : FlagsControlBase
 	/// The check box has already toggled itself when the event arrives, so the new bits follow
 	/// the checked state of the button instead of inverting the current selection.
 	/// </remarks>
-	protected override long ComputeNewBits(long currentBits, long flagBits, ButtonBase button)
-		=> GetChecked(button) ? currentBits | flagBits : currentBits & ~flagBits;
+	protected override long ComputeNewBits(long currentBits, long flagBits, bool isChecked)
+		=> isChecked ? currentBits | flagBits : currentBits & ~flagBits;
 }

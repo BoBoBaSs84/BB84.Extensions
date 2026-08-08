@@ -46,8 +46,8 @@ public class XmlExtensionTests
 	[TestMethod]
 	public void FromXmlWithRootAttributeCachesSerializerTest()
 	{
-		XmlSerializer first = XmlExtension.GetSerializer(typeof(TestClass), new XmlRootAttribute("Fancy"));
-		XmlSerializer second = XmlExtension.GetSerializer(typeof(TestClass), new XmlRootAttribute("Fancy"));
+		XmlSerializer first = XmlExtensions.GetSerializer(typeof(TestClass), new XmlRootAttribute("Fancy"));
+		XmlSerializer second = XmlExtensions.GetSerializer(typeof(TestClass), new XmlRootAttribute("Fancy"));
 
 		Assert.AreSame(first, second);
 	}
@@ -55,9 +55,9 @@ public class XmlExtensionTests
 	[TestMethod]
 	public void FromXmlWithRootAttributeDoesNotCacheAcrossDifferentAttributesTest()
 	{
-		XmlSerializer fancy = XmlExtension.GetSerializer(typeof(TestClass), new XmlRootAttribute("Fancy"));
-		XmlSerializer other = XmlExtension.GetSerializer(typeof(TestClass), new XmlRootAttribute("Other"));
-		XmlSerializer fancyWithNamespace = XmlExtension.GetSerializer(typeof(TestClass), new XmlRootAttribute("Fancy") { Namespace = "urn:unit-test" });
+		XmlSerializer fancy = XmlExtensions.GetSerializer(typeof(TestClass), new XmlRootAttribute("Fancy"));
+		XmlSerializer other = XmlExtensions.GetSerializer(typeof(TestClass), new XmlRootAttribute("Other"));
+		XmlSerializer fancyWithNamespace = XmlExtensions.GetSerializer(typeof(TestClass), new XmlRootAttribute("Fancy") { Namespace = "urn:unit-test" });
 
 		Assert.AreNotSame(fancy, other);
 		Assert.AreNotSame(fancy, fancyWithNamespace);

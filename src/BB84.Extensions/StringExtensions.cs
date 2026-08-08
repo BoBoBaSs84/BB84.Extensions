@@ -261,112 +261,41 @@ public static partial class StringExtensions
 	}
 
 	/// <summary>
-	/// Computes the MD5 hash of the specified string using UTF-8 encoding.
+	/// Computes the MD5 hash of the specified string.
 	/// </summary>
 	/// <remarks>
-	/// This method uses UTF-8 encoding to convert the input string into bytes before computing the MD5
-	/// hash. The resulting hash is returned as a hexadecimal string.
+	/// This method is not intended for cryptographic purposes. MD5 is considered insecure for
+	/// cryptographic use cases.
 	/// </remarks>
 	/// <param name="value">The input string to compute the MD5 hash for.</param>
-	/// <returns>A hexadecimal string representation of the MD5 hash of the input string.</returns>
-	public static string GetMd5Utf8(this string value)
-		=> GetMd5Bytes(value, Encoding.UTF8).GetHexString();
+	/// <param name="encoding">
+	/// The encoding used to turn the string into bytes. Defaults to <see cref="Encoding.UTF8"/>.
+	/// </param>
+	/// <returns>An uppercase hexadecimal representation of the MD5 hash of the input string.</returns>
+	public static string GetMD5(this string value, Encoding? encoding = null)
+		=> GetMd5Bytes(value, encoding ?? Encoding.UTF8).GetHexString();
 
 	/// <summary>
-	/// Computes the MD5 hash of the specified string using ASCII encoding.
+	/// Computes the SHA-256 hash of the specified string.
 	/// </summary>
-	/// <remarks>
-	/// This method uses ASCII encoding to convert the input string into bytes before computing the MD5
-	/// hash. The resulting hash is returned as a hexadecimal string.
-	/// </remarks>
-	/// <param name="value">The input string to compute the MD5 hash for.</param>
-	/// <returns>A hexadecimal string representation of the MD5 hash of the input string.</returns>
-	public static string GetMd5Ascii(this string value)
-		=> GetMd5Bytes(value, Encoding.ASCII).GetHexString();
-
-	/// <summary>
-	/// Computes the MD5 hash of the specified string using Unicode encoding.
-	/// </summary>
-	/// <remarks>
-	/// This method uses Unicode encoding to convert the input string into bytes before computing the MD5
-	/// hash. The resulting hash is returned as a hexadecimal string.
-	/// </remarks>
-	/// <param name="value">The input string to compute the MD5 hash for.</param>
-	/// <returns>A hexadecimal string representation of the MD5 hash of the input string.</returns>
-	public static string GetMd5Unicode(this string value)
-		=> GetMd5Bytes(value, Encoding.Unicode).GetHexString();
-
-	/// <summary>
-	/// Computes the SHA-256 hash of the specified string using UTF-8 encoding.
-	/// </summary>
-	/// <remarks>
-	/// This method uses UTF-8 encoding to convert the input string into bytes before computing the
-	/// SHA-256 hash. The resulting hash is returned as a hexadecimal string.
-	/// </remarks>
 	/// <param name="value">The input string to compute the SHA-256 hash for.</param>
-	/// <returns>A hexadecimal string representation of the SHA-256 hash of the input string.</returns>
-	public static string GetSha256Utf8(this string value)
-		=> GetSha256Bytes(value, Encoding.UTF8).GetHexString();
+	/// <param name="encoding">
+	/// The encoding used to turn the string into bytes. Defaults to <see cref="Encoding.UTF8"/>.
+	/// </param>
+	/// <returns>An uppercase hexadecimal representation of the SHA-256 hash of the input string.</returns>
+	public static string GetSHA256(this string value, Encoding? encoding = null)
+		=> GetSha256Bytes(value, encoding ?? Encoding.UTF8).GetHexString();
 
 	/// <summary>
-	/// Computes the SHA-256 hash of the specified string using ASCII encoding.
+	/// Computes the SHA-512 hash of the specified string.
 	/// </summary>
-	/// <remarks>
-	/// This method uses ASCII encoding to convert the input string into bytes before computing the
-	/// SHA-256 hash. The resulting hash is returned as a hexadecimal string.
-	/// </remarks>
-	/// <param name="value">The input string to compute the SHA-256 hash for.</param>
-	/// <returns>A hexadecimal string representation of the SHA-256 hash of the input string.</returns>
-	public static string GetSha256Ascii(this string value)
-		=> GetSha256Bytes(value, Encoding.ASCII).GetHexString();
-
-	/// <summary>
-	/// Computes the SHA-256 hash of the specified string using Unicode encoding.
-	/// </summary>
-	/// <remarks>
-	/// This method uses Unicode encoding to convert the input string into bytes before computing the
-	/// SHA-256 hash. The resulting hash is returned as a hexadecimal string.
-	/// </remarks>
-	/// <param name="value">The input string to compute the SHA-256 hash for.</param>
-	/// <returns>A hexadecimal string representation of the SHA-256 hash of the input string.</returns>
-	public static string GetSha256Unicode(this string value)
-		=> GetSha256Bytes(value, Encoding.Unicode).GetHexString();
-
-	/// <summary>
-	/// Computes the SHA-512 hash of the specified string using UTF-8 encoding.
-	/// </summary>
-	/// <remarks>
-	/// This method uses UTF-8 encoding to convert the input string into bytes before computing the
-	/// SHA-512 hash. The resulting hash is returned as a hexadecimal string.
-	/// </remarks>
 	/// <param name="value">The input string to compute the SHA-512 hash for.</param>
-	/// <returns>A hexadecimal string representation of the SHA-512 hash of the input string.</returns>
-	public static string GetSha512Utf8(this string value)
-		=> GetSha512Bytes(value, Encoding.UTF8).GetHexString();
-
-	/// <summary>
-	/// Computes the SHA-512 hash of the specified string using ASCII encoding.
-	/// </summary>
-	/// <remarks>
-	/// This method uses ASCII encoding to convert the input string into bytes before computing the
-	/// SHA-512 hash. The resulting hash is returned as a hexadecimal string.
-	/// </remarks>
-	/// <param name="value">The input string to compute the SHA-512 hash for.</param>
-	/// <returns>A hexadecimal string representation of the SHA-512 hash of the input string.</returns>
-	public static string GetSha512Ascii(this string value)
-		=> GetSha512Bytes(value, Encoding.ASCII).GetHexString();
-
-	/// <summary>
-	/// Computes the SHA-512 hash of the specified string using Unicode encoding.
-	/// </summary>
-	/// <remarks>
-	/// This method uses Unicode encoding to convert the input string into bytes before computing the
-	/// SHA-512 hash. The resulting hash is returned as a hexadecimal string.
-	/// </remarks>
-	/// <param name="value">The input string to compute the SHA-512 hash for.</param>
-	/// <returns>A hexadecimal string representation of the SHA-512 hash of the input string.</returns>
-	public static string GetSha512Unicode(this string value)
-		=> GetSha512Bytes(value, Encoding.Unicode).GetHexString();
+	/// <param name="encoding">
+	/// The encoding used to turn the string into bytes. Defaults to <see cref="Encoding.UTF8"/>.
+	/// </param>
+	/// <returns>An uppercase hexadecimal representation of the SHA-512 hash of the input string.</returns>
+	public static string GetSHA512(this string value, Encoding? encoding = null)
+		=> GetSha512Bytes(value, encoding ?? Encoding.UTF8).GetHexString();
 
 	/// <summary>
 	/// Determines whether the specified nullable string has a null value.
@@ -477,15 +406,6 @@ public static partial class StringExtensions
 		byte[] buffer = encoding.GetBytes(value);
 		return buffer.ToBase64();
 	}
-
-	/// <summary>
-	/// Converts an enumerable collection of strings into a single string, with each element separated
-	/// </summary>
-	/// <param name="values">The collection of strings to join.</param>
-	/// <param name="separator">The string to use as a separator between each element.</param>
-	/// <returns>The concatenated string with elements separated by the specified separator.</returns>
-	public static string Join(this IEnumerable<string> values, string separator)
-		=> string.Join(separator, values);
 
 	private static byte[] GetMd5Bytes(string stringValue, Encoding encoding)
 		=> encoding.GetBytes(stringValue).GetMD5();

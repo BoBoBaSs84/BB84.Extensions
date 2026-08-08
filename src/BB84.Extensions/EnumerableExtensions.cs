@@ -167,6 +167,20 @@ public static class EnumerableExtensions
 	public static bool TryTakeRandom<T>(this IEnumerable<T> values, [MaybeNullWhen(false)] out T result)
 		=> values.ToArray().TryTakeRandom(out result);
 
+	/// <summary>
+	/// Converts a sequence of strings into a single string, with each element separated by the
+	/// specified separator.
+	/// </summary>
+	/// <remarks>
+	/// This extends the sequence, not the string, which is why it lives here rather than in
+	/// <see cref="StringExtensions"/>.
+	/// </remarks>
+	/// <param name="values">The collection of strings to join.</param>
+	/// <param name="separator">The string to use as a separator between each element.</param>
+	/// <returns>The concatenated string with elements separated by the specified separator.</returns>
+	public static string Join(this IEnumerable<string> values, string separator)
+		=> string.Join(separator, values);
+
 #if !NET6_0_OR_GREATER
 	/// <summary>
 	/// Splits the elements of <paramref name="values"/> into chunks of at most
