@@ -16,15 +16,8 @@ namespace BB84.WinForms.Extensions.Controls;
 /// one or more flags. The control requires the enum to define a zero-valued flag to represent no
 /// selection. The radio buttons do not check themselves, so a click toggles the flag it carries.
 /// </remarks>
-[DefaultBindingProperty(nameof(SelectedValue))]
 public class FlagsRadioButton : FlagsControlBase
 {
-	/// <summary>
-	/// Initializes a new instance of the <see cref="FlagsRadioButton"/> control.
-	/// </summary>
-	public FlagsRadioButton()
-	{ }
-
 	/// <inheritdoc/>
 	protected override ButtonBase CreateButton()
 		=> new RadioButton { AutoCheck = false };
@@ -44,8 +37,9 @@ public class FlagsRadioButton : FlagsControlBase
 	/// <inheritdoc/>
 	/// <remarks>
 	/// <see cref="RadioButton.AutoCheck"/> is disabled, so the button still shows the previous
-	/// state when the click arrives and the current selection decides the direction of the toggle.
+	/// state when the click arrives. The current selection therefore decides the direction of the
+	/// toggle and <paramref name="isChecked"/> is not consulted.
 	/// </remarks>
-	protected override long ComputeNewBits(long currentBits, long flagBits, ButtonBase button)
+	protected override long ComputeNewBits(long currentBits, long flagBits, bool isChecked)
 		=> (currentBits & flagBits) == flagBits ? currentBits & ~flagBits : currentBits | flagBits;
 }

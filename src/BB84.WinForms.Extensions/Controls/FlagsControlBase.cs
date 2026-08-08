@@ -205,17 +205,23 @@ public abstract partial class FlagsControlBase : UserControl
 	protected abstract void SetChecked(ButtonBase button, bool value);
 
 	/// <summary>
-	/// Calculates the selected bits that result from a user interaction with the specified toggle button.
+	/// Calculates the selected bits that result from a user interaction with a toggle button.
 	/// </summary>
+	/// <remarks>
+	/// The checked state is passed in rather than the button itself, because the bit arithmetic has
+	/// no other use for the control. Which state it reports depends on the interaction model: a check
+	/// box has already toggled itself when the event arrives, a radio button with auto check disabled
+	/// has not.
+	/// </remarks>
 	/// <param name="currentBits">The bits of the currently selected value.</param>
 	/// <param name="flagBits">The bits of the flag the toggle button represents.</param>
-	/// <param name="button">The toggle button the user interacted with.</param>
+	/// <param name="isChecked">The checked state the toggle button reports.</param>
 	/// <returns>The bits of the value that becomes the new selection.</returns>
-	protected abstract long ComputeNewBits(long currentBits, long flagBits, ButtonBase button);
+	protected abstract long ComputeNewBits(long currentBits, long flagBits, bool isChecked);
 
 	/// <summary>
 	/// Is called when the user interacts with one of the toggle buttons and applies the selection
-	/// that <see cref="ComputeNewBits(long, long, ButtonBase)"/> returns.
+	/// that <see cref="ComputeNewBits(long, long, bool)"/> returns.
 	/// </summary>
 	/// <param name="sender">The toggle button that raised the event.</param>
 	/// <param name="e">The event data.</param>
@@ -236,7 +242,7 @@ public abstract partial class FlagsControlBase : UserControl
 			? Convert.ToInt64(_selectedValue, CultureInfo.InvariantCulture)
 			: 0;
 
-		long newBits = ComputeNewBits(currentBits, flagBits, button);
+		long newBits = ComputeNewBits(currentBits, flagBits, GetChecked(button));
 
 		if (newBits == 0)
 		{

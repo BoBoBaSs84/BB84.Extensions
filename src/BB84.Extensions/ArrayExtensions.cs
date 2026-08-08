@@ -10,7 +10,8 @@ namespace BB84.Extensions;
 /// </summary>
 /// <remarks>
 /// This class contains utility methods that extend the functionality of arrays, such
-/// as selecting random elements.
+/// as selecting random elements. An array already is an <see cref="IList{T}"/>, so these
+/// forward straight to <see cref="ListExtensions"/> rather than copying into a list first.
 /// </remarks>
 public static class ArrayExtensions
 {
@@ -23,7 +24,7 @@ public static class ArrayExtensions
 	/// A new array containing the elements of the original array in random order.
 	/// </returns>
 	public static T[] Randomize<T>(this T[] array)
-		=> [.. array.ToList().Randomize()];
+		=> [.. ListExtensions.Randomize(array)];
 
 	/// <summary>
 	/// Selects a random element from the specified <paramref name="array"/>.
@@ -37,7 +38,7 @@ public static class ArrayExtensions
 	/// A randomly selected element of <typeparamref name="T"/> from the <paramref name="array"/>.
 	/// </returns>
 	public static T TakeRandom<T>(this T[] array)
-		=> array.ToList().TakeRandom();
+		=> ListExtensions.TakeRandom(array);
 
 	/// <summary>
 	/// Returns a random element from the specified <paramref name="array"/>, or the default value of
@@ -50,7 +51,7 @@ public static class ArrayExtensions
 	/// the array is empty.
 	/// </returns>
 	public static T? TakeRandomOrDefault<T>(this T[] array)
-		=> array.ToList().TakeRandomOrDefault();
+		=> ListExtensions.TakeRandomOrDefault(array);
 
 	/// <summary>
 	/// Attempts to retrieve a random element from the specified <paramref name="array"/>.
@@ -66,5 +67,5 @@ public static class ArrayExtensions
 	/// selected; otherwise, <see langword="false"/>.
 	/// </returns>
 	public static bool TryTakeRandom<T>(this T[] array, [MaybeNullWhen(false)] out T result)
-		=> array.ToList().TryTakeRandom(out result);
+		=> ListExtensions.TryTakeRandom(array, out result);
 }

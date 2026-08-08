@@ -1,4 +1,4 @@
-// Copyright: 2023 Robert Peter Meyer
+﻿// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
@@ -8,7 +8,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
-namespace BB84.WinForms.Extensions.Helpers;
+namespace BB84.WinForms.Extensions.Helper;
 
 /// <summary>
 /// Provides helpers that resolve friendly names for enum values used by the flags controls.

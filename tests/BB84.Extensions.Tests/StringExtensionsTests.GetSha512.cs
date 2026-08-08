@@ -1,38 +1,40 @@
-// Copyright: 2023 Robert Peter Meyer
+﻿// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using System.Text;
+
 namespace BB84.Extensions.Tests;
 
 public partial class StringExtensionsTests
 {
 	[TestMethod]
-	public void GetSha512Utf8Test()
+	public void GetSHA512WithUtf8Test()
 	{
 		string value = "UnitTest";
 
-		string result = value.GetSha512Utf8();
+		string result = value.GetSHA512();
 
 		Assert.AreEqual("E67958D980D4534131BA29EE59DEF22DF37656D8D433F7AF5667E7E88BC38282325EE4BD278827BC5376466A5F753E0CB8ABF7768EF8B4B819F32A64AA585EBB", result);
 	}
 
 	[TestMethod]
-	public void GetSha512AsciiTest()
+	public void GetSHA512WithAsciiTest()
 	{
 		string value = "UnitTest";
 
-		string result = value.GetSha512Ascii();
+		string result = value.GetSHA512(Encoding.ASCII);
 
 		Assert.AreEqual("E67958D980D4534131BA29EE59DEF22DF37656D8D433F7AF5667E7E88BC38282325EE4BD278827BC5376466A5F753E0CB8ABF7768EF8B4B819F32A64AA585EBB", result);
 	}
 
 	[TestMethod]
-	public void GetSha512UnicodeTest()
+	public void GetSHA512WithUnicodeTest()
 	{
 		string value = "UnitTest";
 
-		string result = value.GetSha512Unicode();
+		string result = value.GetSHA512(Encoding.Unicode);
 
 		Assert.AreEqual("FB2F0779A02DE57B50ABFD2A6F3DBA321A30F371A987D3EB93B7A1D98CD0C9714F166C664028A5E32CC20B4CB82EB9D5CCACBE301C833D824DAF819E49006C9F", result);
 	}
