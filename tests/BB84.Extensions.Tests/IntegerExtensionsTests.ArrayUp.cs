@@ -27,4 +27,32 @@ public sealed partial class IntegerExtensionsTests
 		int maxValue = 0;
 		_ = Assert.ThrowsExactly<ArgumentOutOfRangeException>(() => _ = value.ArrayUp(maxValue));
 	}
+
+	[TestMethod]
+	[Description("Should start at the given value instead of padding the array with leading zeros.")]
+	public void ArrayUpShouldNotPadWithLeadingZeros()
+	{
+		int value = 5;
+		int maxValue = 10;
+
+		int[] array = value.ArrayUp(maxValue);
+
+		Assert.HasCount(6, array);
+		Assert.AreEqual(5, array[0]);
+		Assert.AreEqual(10, array[5]);
+	}
+
+	[TestMethod]
+	[Description("Should support a negative starting value.")]
+	public void ArrayUpShouldSupportNegativeValues()
+	{
+		int value = -2;
+		int maxValue = 2;
+
+		int[] array = value.ArrayUp(maxValue);
+
+		Assert.HasCount(5, array);
+		Assert.AreEqual(-2, array[0]);
+		Assert.AreEqual(2, array[4]);
+	}
 }

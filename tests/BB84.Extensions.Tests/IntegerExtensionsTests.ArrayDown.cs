@@ -27,4 +27,32 @@ public sealed partial class IntegerExtensionsTests
 		int minValue = 15;
 		_ = Assert.ThrowsExactly<ArgumentOutOfRangeException>(() => _ = value.ArrayDown(minValue));
 	}
+
+	[TestMethod]
+	[Description("Should start at the given minimum instead of padding the array with leading zeros.")]
+	public void ArrayDownShouldNotPadWithLeadingZeros()
+	{
+		int value = 10;
+		int minValue = 5;
+
+		int[] array = value.ArrayDown(minValue);
+
+		Assert.HasCount(6, array);
+		Assert.AreEqual(5, array[0]);
+		Assert.AreEqual(10, array[5]);
+	}
+
+	[TestMethod]
+	[Description("Should support a negative minimum value.")]
+	public void ArrayDownShouldSupportNegativeValues()
+	{
+		int value = 2;
+		int minValue = -2;
+
+		int[] array = value.ArrayDown(minValue);
+
+		Assert.HasCount(5, array);
+		Assert.AreEqual(-2, array[0]);
+		Assert.AreEqual(2, array[4]);
+	}
 }

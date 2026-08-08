@@ -16,4 +16,15 @@ public sealed partial class EnumeratorExtensionsTests
 
 		Assert.AreEqual(2, value);
 	}
+
+	[TestMethod]
+	[Description("Should convert an enumerator that is not backed by an integer.")]
+	public void GetIntShouldSupportNonIntegerBackedEnumerators()
+	{
+		ByteBackedTestType type = ByteBackedTestType.Two;
+
+		int value = type.GetInt();
+
+		Assert.AreEqual(2, value);
+	}
 }

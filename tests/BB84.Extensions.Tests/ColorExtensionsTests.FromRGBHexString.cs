@@ -13,4 +13,13 @@ public sealed partial class ColorExtensionsTests
 	[DynamicData(nameof(FromRGBHexStringTestData))]
 	public void FromRGBHexStringTest(Color expected, string value)
 		=> Assert.AreEqual(expected.ToArgb(), value.FromRGBHexString().ToArgb());
+
+	[TestMethod]
+	[DataRow("")]
+	[DataRow("#")]
+	[DataRow("112233")]
+	[DataRow("#11223")]
+	[Description("Should return an empty color instead of throwing for malformed input.")]
+	public void FromRGBHexStringShouldReturnEmptyForMalformedInput(string value)
+		=> Assert.AreEqual(Color.Empty, value.FromRGBHexString());
 }
