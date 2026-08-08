@@ -3,6 +3,7 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.Extensions.Common;
 using BB84.Extensions.Helper;
 
 namespace BB84.Extensions;
@@ -26,12 +27,7 @@ public static class ListExtensions
 	/// <exception cref="ArgumentNullException">If the target is null.</exception>
 	public static void AddIfNotNull<T>(this IList<T> list, T item)
 	{
-#if NET6_0_OR_GREATER
-		ArgumentNullException.ThrowIfNull(list);
-#else
-		if (list is null)
-			throw new ArgumentNullException(nameof(list));
-#endif
+		Guard.ThrowIfNull(list);
 		if (item is null)
 			return;
 
@@ -47,14 +43,11 @@ public static class ListExtensions
 	/// <exception cref="ArgumentNullException">If the target is null.</exception>
 	public static void AddRangeIfNotNull<T>(this IList<T> list, IEnumerable<T> items)
 	{
-#if NET6_0_OR_GREATER
-		ArgumentNullException.ThrowIfNull(list);
-#else
-		if (list is null)
-			throw new ArgumentNullException(nameof(list));
-#endif
+		Guard.ThrowIfNull(list);
 
-		if (items is null || !items.Any())
+		// ForEach over an empty sequence is already a no-op, so the emptiness check only served
+		// to enumerate the sequence a second time.
+		if (items is null)
 			return;
 
 		items.ForEach(list.AddIfNotNull);

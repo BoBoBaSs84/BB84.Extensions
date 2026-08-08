@@ -36,7 +36,11 @@ public static class XmlExtension
 	/// <summary>
 	/// Gets the default <see cref="XmlWriterSettings"/> for creating an <see cref="XmlWriter"/> instance.
 	/// </summary>
-	private static XmlWriterSettings WriterSettings => new()
+	/// <remarks>
+	/// A single shared instance is safe here because <see cref="XmlWriter.Create(TextWriter, XmlWriterSettings)"/>
+	/// takes its own read-only copy, so a writer can never mutate what the next caller receives.
+	/// </remarks>
+	private static readonly XmlWriterSettings WriterSettings = new()
 	{
 		NamespaceHandling = NamespaceHandling.OmitDuplicates,
 		OmitXmlDeclaration = true
@@ -45,7 +49,11 @@ public static class XmlExtension
 	/// <summary>
 	/// Gets the default <see cref="XmlReaderSettings"/> for creating an <see cref="XmlReader"/> instance.
 	/// </summary>
-	private static XmlReaderSettings ReaderSettings => new()
+	/// <remarks>
+	/// A single shared instance is safe here because <see cref="XmlReader.Create(TextReader, XmlReaderSettings)"/>
+	/// takes its own read-only copy, so a reader can never mutate what the next caller receives.
+	/// </remarks>
+	private static readonly XmlReaderSettings ReaderSettings = new()
 	{
 		IgnoreComments = true
 	};

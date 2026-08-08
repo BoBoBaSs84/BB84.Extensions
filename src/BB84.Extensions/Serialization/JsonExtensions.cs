@@ -3,7 +3,6 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
-using System.Globalization;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -22,7 +21,12 @@ public static class JsonExtensions
 	/// <summary>
 	/// The standard JSON serializer options.
 	/// </summary>
-	private static JsonSerializerOptions SerializerOptions => new()
+	/// <remarks>
+	/// This has to be a single shared instance. <see cref="JsonSerializer"/> caches the reflected
+	/// metadata per options instance, so handing out a new one per call would rebuild that metadata
+	/// on every single serialization.
+	/// </remarks>
+	internal static readonly JsonSerializerOptions SerializerOptions = new()
 	{
 		DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
 		PropertyNamingPolicy = JsonNamingPolicy.CamelCase
@@ -39,11 +43,7 @@ public static class JsonExtensions
 	/// </param>
 	/// <returns>An object of type <typeparamref name="T"/> deserialized from the JSON string.</returns>
 	public static T FromJson<T>(this string value, JsonSerializerOptions? options = null) where T : class
-	{
-		options ??= SerializerOptions;
-		T obj = JsonSerializer.Deserialize<T>(value, options)!;
-		return (T)Convert.ChangeType(obj, typeof(T), CultureInfo.InvariantCulture);
-	}
+		=> JsonSerializer.Deserialize<T>(value, options ?? SerializerOptions)!;
 
 	/// <summary>
 	/// Converts the specified object of type <typeparamref name="T"/> to its JSON string representation.
@@ -56,8 +56,5 @@ public static class JsonExtensions
 	/// </param>
 	/// <returns>A JSON string representation of the specified object.</returns>
 	public static string ToJson<T>(this T value, JsonSerializerOptions? options = null) where T : class
-	{
-		options ??= SerializerOptions;
-		return JsonSerializer.Serialize(value, options);
-	}
+		=> JsonSerializer.Serialize(value, options ?? SerializerOptions);
 }

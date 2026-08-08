@@ -131,6 +131,11 @@ public abstract partial class FlagsControlBase : UserControl
 				{
 					_suppressSelectedValueChanged = false;
 				}
+
+				// Initializing the type also seeds the selection with the zero value. That is an
+				// internal artifact, so it must not make the assignment below look like a no-op
+				// when the caller is assigning the zero value itself.
+				_selectedValue = null;
 			}
 
 			if (value.GetType() != _enumType)
@@ -376,7 +381,7 @@ public abstract partial class FlagsControlBase : UserControl
 			{
 				_selectedValue = null;
 				UpdateButtonsFromValue();
-				OnSelectedValueChanged(EventArgs.Empty);
+				RaiseSelectedValueChanged();
 			}
 			return;
 		}
@@ -386,7 +391,7 @@ public abstract partial class FlagsControlBase : UserControl
 
 		_selectedValue = _zeroValue;
 		UpdateButtonsFromValue();
-		OnSelectedValueChanged(EventArgs.Empty);
+		RaiseSelectedValueChanged();
 	}
 
 	private static bool IsFlagSet(Enum? currentValue, Enum flagValue)

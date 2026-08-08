@@ -5,6 +5,8 @@
 // LICENSE file in the root directory of this source tree.
 using System.Drawing;
 
+using BB84.Extensions.Common;
+
 namespace BB84.Extensions;
 
 /// <summary>
@@ -23,29 +25,35 @@ public static class ColorExtensions
 	/// Creates a <see cref="Color"/> instance from a byte array containing ARGB color components.
 	/// </summary>
 	/// <remarks>
-	/// The byte array must represent the color components in ARGB order, with each component occupying one
-	/// byte. If the system architecture is not little-endian, the byte array is reversed before processing.
+	/// The components are read in blue, green, red, alpha order, which is the layout
+	/// <see cref="ToArgbByteArray"/> produces and the little-endian in-memory layout of a 32 bit ARGB
+	/// value. If the system architecture is not little-endian, the order is reversed before processing.
+	/// The input array is never modified.
 	/// </remarks>
 	/// <param name="value">
-	/// A byte array containing exactly 4 elements, representing the alpha, red, green, and blue components
-	/// of the color in ARGB order.
+	/// A byte array containing exactly 4 elements, representing the blue, green, red, and alpha
+	/// components of the color, in that order.
 	/// </param>
 	/// <returns>A <see cref="Color"/> instance corresponding to the specified ARGB components.</returns>
+	/// <exception cref="ArgumentNullException">
+	/// Thrown if <paramref name="value"/> is <see langword="null"/>.
+	/// </exception>
 	/// <exception cref="ArgumentException">
 	/// Thrown if <paramref name="value"/> does not contain exactly 4 elements.
 	/// </exception>
 	public static Color FromArgbByteArray(this byte[] value)
 	{
+		Guard.ThrowIfNull(value);
+
 		if (value.Length != 4)
 			throw new ArgumentException("ARGB color must be 4 bytes long!", nameof(value));
 
-		if (!BitConverter.IsLittleEndian)
-			Array.Reverse(value);
+		byte[] ordered = Order(value);
 
-		int a = value[3];
-		int r = value[2];
-		int g = value[1];
-		int b = value[0];
+		int a = ordered[3];
+		int r = ordered[2];
+		int g = ordered[1];
+		int b = ordered[0];
 
 		return Color.FromArgb(a, r, g, b);
 	}
@@ -70,48 +78,50 @@ public static class ColorExtensions
 	/// </returns>
 	public static Color FromARGBHexString(this string value)
 	{
-		Color color = Color.Empty;
+		// The length has to be checked before the first character is read, otherwise an empty
+		// string throws instead of returning the documented empty color.
+		if (value is null || value.Length != 9 || value[0] != '#')
+			return Color.Empty;
 
-		if (value[0].Equals('#') && (value.Length == 9))
-		{
-			color = Color.FromArgb(
-				Convert.ToInt32(value.Substring(1, 2), 16),
-				Convert.ToInt32(value.Substring(3, 2), 16),
-				Convert.ToInt32(value.Substring(5, 2), 16),
-				Convert.ToInt32(value.Substring(7, 2), 16)
-				);
-		}
-
-		return color;
+		return Color.FromArgb(
+			Convert.ToInt32(value.Substring(1, 2), 16),
+			Convert.ToInt32(value.Substring(3, 2), 16),
+			Convert.ToInt32(value.Substring(5, 2), 16),
+			Convert.ToInt32(value.Substring(7, 2), 16)
+			);
 	}
 
 	/// <summary>
 	/// Creates a <see cref="Color"/> instance from a byte array containing RGB values.
 	/// </summary>
 	/// <remarks>
-	/// The byte array must represent the RGB components in the order: red, green, blue. If the
-	/// system architecture is not little-endian, the array is reversed internally to ensure correct
-	/// color representation.
+	/// The components are read in blue, green, red order, which is the layout
+	/// <see cref="ToRgbByteArray"/> produces. If the system architecture is not little-endian, the
+	/// order is reversed before processing. The input array is never modified.
 	/// </remarks>
 	/// <param name="value">
-	/// A byte array containing exactly three elements representing the red, green, and blue components
+	/// A byte array containing exactly three elements representing the blue, green, and red components
 	/// of the color, in that order.
 	/// </param>
 	/// <returns>A <see cref="Color"/> instance corresponding to the specified RGB values.</returns>
+	/// <exception cref="ArgumentNullException">
+	/// Thrown if <paramref name="value"/> is <see langword="null"/>.
+	/// </exception>
 	/// <exception cref="ArgumentException">
 	/// Thrown if <paramref name="value"/> does not contain exactly three elements.
 	/// </exception>
 	public static Color FromRgbByteArray(this byte[] value)
 	{
+		Guard.ThrowIfNull(value);
+
 		if (value.Length != 3)
 			throw new ArgumentException("RGB color must be 3 bytes long!", nameof(value));
 
-		if (!BitConverter.IsLittleEndian)
-			Array.Reverse(value);
+		byte[] ordered = Order(value);
 
-		int r = value[2];
-		int g = value[1];
-		int b = value[0];
+		int r = ordered[2];
+		int g = ordered[1];
+		int b = ordered[0];
 
 		return Color.FromArgb(r, g, b);
 	}
@@ -135,33 +145,29 @@ public static class ColorExtensions
 	/// </returns>
 	public static Color FromRGBHexString(this string value)
 	{
-		Color color = Color.Empty;
+		// The length has to be checked before the first character is read, otherwise an empty
+		// string throws instead of returning the documented empty color.
+		if (value is null || (value.Length != 7 && value.Length != 4) || value[0] != '#')
+			return Color.Empty;
 
-		if (value[0].Equals('#') && ((value.Length == 7) || (value.Length == 4)))
+		if (value.Length == 7)
 		{
-			if (value.Length == 7)
-			{
-				color = Color.FromArgb(
-					Convert.ToInt32(value.Substring(1, 2), 16),
-					Convert.ToInt32(value.Substring(3, 2), 16),
-					Convert.ToInt32(value.Substring(5, 2), 16)
-					);
-			}
-			else
-			{
-				string r = char.ToString(value[1]);
-				string g = char.ToString(value[2]);
-				string b = char.ToString(value[3]);
-
-				color = Color.FromArgb(
-					Convert.ToInt32(r + r, 16),
-					Convert.ToInt32(g + g, 16),
-					Convert.ToInt32(b + b, 16)
-					);
-			}
+			return Color.FromArgb(
+				Convert.ToInt32(value.Substring(1, 2), 16),
+				Convert.ToInt32(value.Substring(3, 2), 16),
+				Convert.ToInt32(value.Substring(5, 2), 16)
+				);
 		}
 
-		return color;
+		string r = char.ToString(value[1]);
+		string g = char.ToString(value[2]);
+		string b = char.ToString(value[3]);
+
+		return Color.FromArgb(
+			Convert.ToInt32(r + r, 16),
+			Convert.ToInt32(g + g, 16),
+			Convert.ToInt32(b + b, 16)
+			);
 	}
 
 	/// <summary>
@@ -225,4 +231,24 @@ public static class ColorExtensions
 	/// </returns>
 	public static string ToRGBHexString(this Color value)
 		=> $"#{value.R:X2}{value.G:X2}{value.B:X2}";
+
+	/// <summary>
+	/// Returns the component bytes in the order this platform expects.
+	/// </summary>
+	/// <remarks>
+	/// A copy is returned on big-endian platforms so the caller's array is left untouched. Reversing
+	/// in place made a conversion mutate its own input, which is not something a <c>From</c> method
+	/// should ever do.
+	/// </remarks>
+	/// <param name="value">The component bytes in little-endian order.</param>
+	/// <returns>The component bytes in platform order.</returns>
+	private static byte[] Order(byte[] value)
+	{
+		if (BitConverter.IsLittleEndian)
+			return value;
+
+		byte[] reversed = (byte[])value.Clone();
+		Array.Reverse(reversed);
+		return reversed;
+	}
 }

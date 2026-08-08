@@ -36,8 +36,14 @@ public static class ButtonBaseExtensions
 	/// <returns>
 	/// The <see cref="ButtonBase"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
+	/// <exception cref="ArgumentNullException">
+	/// Thrown if <paramref name="buttonBase"/> or <paramref name="command"/> is <see langword="null"/>.
+	/// </exception>
 	public static ButtonBase WithCommandBinding(this ButtonBase buttonBase, ICommand command)
 	{
+		Guard.ThrowIfNull(buttonBase);
+		Guard.ThrowIfNull(command);
+
 		DetachCommandSubscription(buttonBase);
 
 		void Click(object? sender, EventArgs args) => command.Execute(null);

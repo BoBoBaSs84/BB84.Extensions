@@ -142,14 +142,27 @@ public static class DateTimeExtensions
 	/// An <see cref="IEnumerable{DateTime}"/> containing all dates from <paramref name="startValue"/>
 	/// until <paramref name="endValue"/>, inclusive.
 	/// </returns>
-	/// <exception cref="ArgumentException">
+	/// <exception cref="ArgumentOutOfRangeException">
 	/// Thrown if <paramref name="endValue"/> is less than <paramref name="startValue"/>.
 	/// </exception>
 	public static IEnumerable<DateTime> Until(this DateTime startValue, DateTime endValue)
 	{
+		// The check lives outside the iterator so it runs when the method is called rather than
+		// when the sequence is first enumerated.
 		if (endValue < startValue)
 			throw new ArgumentOutOfRangeException(nameof(endValue), "End date must be greater than or equal to start date.");
 
+		return UntilIterator(startValue, endValue);
+	}
+
+	/// <summary>
+	/// Yields every date in the inclusive range between the two values.
+	/// </summary>
+	/// <param name="startValue">The date to start from.</param>
+	/// <param name="endValue">The date to end at.</param>
+	/// <returns>All dates from <paramref name="startValue"/> until <paramref name="endValue"/>.</returns>
+	private static IEnumerable<DateTime> UntilIterator(DateTime startValue, DateTime endValue)
+	{
 		for (DateTime date = startValue.Date; date <= endValue.Date; date = date.AddDays(1))
 			yield return date;
 	}

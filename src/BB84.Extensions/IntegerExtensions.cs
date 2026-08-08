@@ -21,9 +21,8 @@ public static class IntegerExtensions
 	/// Generates an array of integers starting from a specified minimum value up to the given value.
 	/// </summary>
 	/// <remarks>
-	/// This method creates an array where each element corresponds to an integer in the range from 
-	/// <paramref name="value"/> to <paramref name="minValue"/>. The array is zero-based, and the indices
-	/// of the array correspond to the values in the range.
+	/// The result contains one element per value in the range and starts at <paramref name="minValue"/>,
+	/// so its length is the size of the range rather than the size of the upper bound.
 	/// </remarks>
 	/// <param name="value">The maximum value in the resulting array. Must be greater than or equal to <paramref name="minValue"/>.</param>
 	/// <param name="minValue">The minimum value in the resulting array. Must be less than or equal to <paramref name="value"/>.</param>
@@ -38,19 +37,15 @@ public static class IntegerExtensions
 		if (value < minValue)
 			throw new ArgumentOutOfRangeException(nameof(minValue), "Minimum value must be smaller than the starting value.");
 
-		int[] array = new int[value + 1];
-		for (int i = minValue; i <= value; i++)
-			array[i] = i;
-		return array;
+		return Range(minValue, value);
 	}
 
 	/// <summary>
 	/// Generates an array of integers starting from the specified value up to the specified maximum value.
 	/// </summary>
 	/// <remarks>
-	/// This method creates an array where each element corresponds to an integer in the range from 
-	/// <paramref name="value"/> to <paramref name="maxValue"/>. The array is zero-based, and the indices
-	/// of the array correspond to the values in the range.
+	/// The result contains one element per value in the range and starts at <paramref name="value"/>,
+	/// so its length is the size of the range rather than the size of the upper bound.
 	/// </remarks>
 	/// <param name="value">The starting value of the array. Must be less than or equal to <paramref name="maxValue"/>.</param>
 	/// <param name="maxValue">The maximum value to include in the array. Must be greater than or equal to <paramref name="value"/>.</param>
@@ -65,9 +60,29 @@ public static class IntegerExtensions
 		if (value > maxValue)
 			throw new ArgumentOutOfRangeException(nameof(maxValue), "Maximum value must be greater than the starting value.");
 
-		int[] array = new int[maxValue + 1];
-		for (int i = value; i <= maxValue; i++)
-			array[i] = i;
+		return Range(value, maxValue);
+	}
+
+	/// <summary>
+	/// Builds the inclusive range between the two bounds.
+	/// </summary>
+	/// <remarks>
+	/// <see cref="ArrayUp(int, int)"/> and <see cref="ArrayDown(int, int)"/> only differ in which
+	/// parameter carries which bound, so both are expressed through this one implementation.
+	/// </remarks>
+	/// <param name="lower">The inclusive lower bound.</param>
+	/// <param name="upper">The inclusive upper bound.</param>
+	/// <returns>An array holding every value from <paramref name="lower"/> to <paramref name="upper"/>.</returns>
+	private static int[] Range(int lower, int upper)
+	{
+		// The bounds are inclusive, so the count is computed as a long to keep the full
+		// int range representable under CheckForOverflowUnderflow.
+		long count = (long)upper - lower + 1;
+		int[] array = new int[count];
+
+		for (int index = 0; index < array.Length; index++)
+			array[index] = lower + index;
+
 		return array;
 	}
 

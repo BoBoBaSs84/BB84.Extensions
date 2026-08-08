@@ -23,6 +23,11 @@ namespace BB84.Extensions;
 /// </remarks>
 public static partial class StringExtensions
 {
+	/// <summary>
+	/// The number of key bytes taken from the SHA-512 digest, which selects AES-192.
+	/// </summary>
+	private const int AesKeySize = 24;
+
 #if NET6_0_OR_GREATER
 	private static readonly Regex WhitespaceRegex = GeneratedWhitespaceRegex();
 	private static readonly Regex LinebreakRegex = GeneratedLinebreakRegex();
@@ -77,19 +82,25 @@ public static partial class StringExtensions
 	/// <summary>
 	/// Encrypts the specified text using AES encryption with a key derived from the provided key string.
 	/// </summary>
+	/// <remarks>
+	/// The key is derived by truncating the SHA-512 digest of <paramref name="key"/> to
+	/// <see cref="AesKeySize"/> bytes, which yields a 192 bit AES key. The derivation uses neither a
+	/// salt nor an iteration count, so it is only suitable for obfuscating values whose key material
+	/// is already high entropy.
+	/// </remarks>
 	/// <param name="value">The text to encrypt.</param>
 	/// <param name="key">The key used for encryption. It is hashed to derive a suitable AES key.</param>
 	/// <returns>The encrypted text, encoded as a Base64 string.</returns>
 	public static string Encrypt(this string value, string key)
 	{
 		byte[] buffer = Encoding.UTF8.GetBytes(value);
-		byte[] aesKey = new byte[24];
+		byte[] aesKey = new byte[AesKeySize];
 
 #if NET8_0_OR_GREATER
-		Buffer.BlockCopy(SHA512.HashData(Encoding.UTF8.GetBytes(key)), 0, aesKey, 0, 24);
+		Buffer.BlockCopy(SHA512.HashData(Encoding.UTF8.GetBytes(key)), 0, aesKey, 0, AesKeySize);
 #else
-		SHA512 hash = SHA512.Create();
-		Buffer.BlockCopy(hash.ComputeHash(Encoding.UTF8.GetBytes(key)), 0, aesKey, 0, 24);
+		using SHA512 hash = SHA512.Create();
+		Buffer.BlockCopy(hash.ComputeHash(Encoding.UTF8.GetBytes(key)), 0, aesKey, 0, AesKeySize);
 #endif
 
 		using Aes aes = Aes.Create();
@@ -114,26 +125,29 @@ public static partial class StringExtensions
 	/// <summary>
 	/// Decrypts the specified encrypted text using AES decryption with a key derived from the provided key string.
 	/// </summary>
+	/// <remarks>
+	/// The key is derived the same way as in <see cref="Encrypt(string, string)"/>, by truncating the
+	/// SHA-512 digest of <paramref name="key"/> to <see cref="AesKeySize"/> bytes.
+	/// </remarks>
 	/// <param name="encryptedValue">The encrypted text to decrypt, encoded as a Base64 string.</param>
 	/// <param name="key">The key used for decryption. It is hashed to derive a suitable AES key.</param>
 	/// <returns>The decrypted text.</returns>
 	public static string Decrypt(this string encryptedValue, string key)
 	{
 		byte[] combined = encryptedValue.FromBase64();
-		byte[] buffer = new byte[combined.Length];
-		byte[] aesKey = new byte[24];
+		byte[] aesKey = new byte[AesKeySize];
 
 #if NET8_0_OR_GREATER
-		Buffer.BlockCopy(SHA512.HashData(Encoding.UTF8.GetBytes(key)), 0, aesKey, 0, 24);
+		Buffer.BlockCopy(SHA512.HashData(Encoding.UTF8.GetBytes(key)), 0, aesKey, 0, AesKeySize);
 #else
-		SHA512 hash = SHA512.Create();
-		Buffer.BlockCopy(hash.ComputeHash(Encoding.UTF8.GetBytes(key)), 0, aesKey, 0, 24);
+		using SHA512 hash = SHA512.Create();
+		Buffer.BlockCopy(hash.ComputeHash(Encoding.UTF8.GetBytes(key)), 0, aesKey, 0, AesKeySize);
 #endif
 		using Aes aes = Aes.Create();
 		aes.Key = aesKey;
 
 		byte[] iv = new byte[aes.IV.Length];
-		byte[] ciphertext = new byte[buffer.Length - iv.Length];
+		byte[] ciphertext = new byte[combined.Length - iv.Length];
 
 		Array.ConstrainedCopy(combined, 0, iv, 0, iv.Length);
 		Array.ConstrainedCopy(combined, iv.Length, ciphertext, 0, ciphertext.Length);

@@ -1,8 +1,10 @@
-// Copyright: 2023 Robert Peter Meyer
+﻿// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.Extensions.Common;
+
 namespace BB84.Extensions;
 
 /// <summary>
@@ -29,12 +31,7 @@ public static class DictionaryExtensions
 	/// </exception>
 	public static TValue GetOrDefault<TKey, TValue>(this IDictionary<TKey, TValue> dict, TKey key, TValue defaultValue = default!)
 	{
-#if NET6_0_OR_GREATER
-		ArgumentNullException.ThrowIfNull(dict);
-#else
-		if (dict is null)
-			throw new ArgumentNullException(nameof(dict));
-#endif
+		Guard.ThrowIfNull(dict);
 		return dict.TryGetValue(key, out TValue? value) ? value : defaultValue;
 	}
 
@@ -58,15 +55,8 @@ public static class DictionaryExtensions
 	/// </exception>
 	public static TValue GetOrAdd<TKey, TValue>(this IDictionary<TKey, TValue> dict, TKey key, Func<TKey, TValue> valueFactory)
 	{
-#if NET6_0_OR_GREATER
-		ArgumentNullException.ThrowIfNull(dict);
-		ArgumentNullException.ThrowIfNull(valueFactory);
-#else
-		if (dict is null)
-			throw new ArgumentNullException(nameof(dict));
-		if (valueFactory is null)
-			throw new ArgumentNullException(nameof(valueFactory));
-#endif
+		Guard.ThrowIfNull(dict);
+		Guard.ThrowIfNull(valueFactory);
 		if (!dict.TryGetValue(key, out TValue? value))
 		{
 			value = valueFactory(key);
@@ -96,15 +86,8 @@ public static class DictionaryExtensions
 	/// </exception>
 	public static TValue AddOrUpdate<TKey, TValue>(this IDictionary<TKey, TValue> dict, TKey key, TValue addValue, Func<TKey, TValue, TValue> updateFactory)
 	{
-#if NET6_0_OR_GREATER
-		ArgumentNullException.ThrowIfNull(dict);
-		ArgumentNullException.ThrowIfNull(updateFactory);
-#else
-		if (dict is null)
-			throw new ArgumentNullException(nameof(dict));
-		if (updateFactory is null)
-			throw new ArgumentNullException(nameof(updateFactory));
-#endif
+		Guard.ThrowIfNull(dict);
+		Guard.ThrowIfNull(updateFactory);
 		TValue result = dict.TryGetValue(key, out TValue? existing)
 			? updateFactory(key, existing)
 			: addValue;
@@ -124,7 +107,7 @@ public static class DictionaryExtensions
 	/// <see langword="true"/> if <paramref name="dict"/> is <see langword="null"/> or empty;
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
-	public static bool IsNullOrEmpty<TKey, TValue>(this IDictionary<TKey, TValue>? dict)
+	public static bool IsNullOrEmpty<TKey, TValue>([NotNullWhen(false)] this IDictionary<TKey, TValue>? dict)
 		=> dict is null || dict.Count == 0;
 
 	/// <summary>
@@ -138,6 +121,6 @@ public static class DictionaryExtensions
 	/// <see langword="true"/> if <paramref name="dict"/> is not <see langword="null"/> and not empty;
 	/// otherwise, <see langword="false"/>.
 	/// </returns>
-	public static bool IsNotNullOrEmpty<TKey, TValue>(this IDictionary<TKey, TValue>? dict)
+	public static bool IsNotNullOrEmpty<TKey, TValue>([NotNullWhen(true)] this IDictionary<TKey, TValue>? dict)
 		=> !dict.IsNullOrEmpty();
 }

@@ -3,6 +3,7 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 using BB84.Extensions.Serialization;
@@ -36,6 +37,16 @@ public class JsonExtensionsTests
 		Assert.Contains($@"{nameof(testClass.Id)}"":""{testClass.Id}", jsonString);
 		Assert.Contains($@"{nameof(testClass.Name)}"":""{testClass.Name}", jsonString);
 		Assert.Contains($@"{nameof(testClass.Description)}"":""{testClass.Description}", jsonString);
+	}
+
+	[TestMethod]
+	[Description("Should reuse one options instance so the serializer metadata cache is not rebuilt per call.")]
+	public void DefaultSerializerOptionsShouldBeASingleInstance()
+	{
+		JsonSerializerOptions first = JsonExtensions.SerializerOptions;
+		JsonSerializerOptions second = JsonExtensions.SerializerOptions;
+
+		Assert.AreSame(first, second);
 	}
 
 	private sealed class TestClass

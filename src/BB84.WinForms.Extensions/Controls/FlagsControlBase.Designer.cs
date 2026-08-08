@@ -7,24 +7,6 @@ namespace BB84.WinForms.Extensions.Controls
 {
     partial class FlagsControlBase
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
         #region Component Designer generated code
 
         /// <summary>
@@ -33,7 +15,6 @@ namespace BB84.WinForms.Extensions.Controls
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             SuspendLayout();
             //
@@ -41,7 +22,7 @@ namespace BB84.WinForms.Extensions.Controls
             //
             flowLayoutPanel.AutoScroll = true;
             flowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            flowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            flowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.LeftToRight;
             flowLayoutPanel.Location = new System.Drawing.Point(0, 0);
             flowLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
             flowLayoutPanel.Name = "flowLayoutPanel";
@@ -54,7 +35,7 @@ namespace BB84.WinForms.Extensions.Controls
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Controls.Add(flowLayoutPanel);
-            Name = GetType().Name;
+            Name = "FlagsControlBase";
             Size = new System.Drawing.Size(200, 150);
             ResumeLayout(false);
         }
