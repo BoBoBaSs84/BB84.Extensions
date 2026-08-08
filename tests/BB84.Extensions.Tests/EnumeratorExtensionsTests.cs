@@ -14,4 +14,11 @@ public sealed partial class EnumeratorExtensionsTests
 		One,
 		Two
 	}
+
+	private enum ByteBackedTestType : byte
+	{
+		None,
+		One,
+		Two
+	}
 }

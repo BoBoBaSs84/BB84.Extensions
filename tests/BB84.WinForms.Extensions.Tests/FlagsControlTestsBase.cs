@@ -44,6 +44,22 @@ public abstract class FlagsControlTestsBase<TControl> where TControl : FlagsCont
 	}
 
 	[TestMethod]
+	public void AssigningTheZeroValueFirstShouldRaiseTheChangedEventOnce()
+	{
+		using TControl control = new();
+		int raised = 0;
+		control.SelectedValueChanged += (sender, args) => raised++;
+
+		// Assigning the very first value also initializes the enum type, which seeds the
+		// selection with the zero value. When the assigned value *is* the zero value the
+		// equality check must not swallow the change notification.
+		control.SelectedValue = FlagsTestEnumerator.None;
+
+		Assert.AreEqual(1, raised);
+		Assert.AreEqual(FlagsTestEnumerator.None, control.SelectedValue);
+	}
+
+	[TestMethod]
 	public void TheFlowDirectionGetterShouldReportWhatTheSetterAccepted()
 	{
 		using TControl control = new();

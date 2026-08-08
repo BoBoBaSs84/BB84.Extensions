@@ -13,4 +13,13 @@ public sealed partial class ColorExtensionsTests
 	[DynamicData(nameof(GetArgbHexData))]
 	public void FromARGBHexStringTest(Color expected, string value)
 		=> Assert.AreEqual(expected.ToArgb(), value.FromARGBHexString().ToArgb());
+
+	[TestMethod]
+	[DataRow("")]
+	[DataRow("#")]
+	[DataRow("FF112233")]
+	[DataRow("#FF1122")]
+	[Description("Should return an empty color instead of throwing for malformed input.")]
+	public void FromARGBHexStringShouldReturnEmptyForMalformedInput(string value)
+		=> Assert.AreEqual(Color.Empty, value.FromARGBHexString());
 }

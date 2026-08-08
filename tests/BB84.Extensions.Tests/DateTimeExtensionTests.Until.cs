@@ -11,4 +11,14 @@ public sealed partial class DateTimeExtensionTests
 	[DynamicData(nameof(GetUntilTestData))]
 	public void UntilTest(DateTime startValue, DateTime endValue, int expected)
 		=> Assert.HasCount(expected, startValue.Until(endValue));
+
+	[TestMethod]
+	[Description("Should validate the arguments when the method is called, not when the sequence is first enumerated.")]
+	public void UntilShouldValidateArgumentsEagerly()
+	{
+		DateTime startValue = new(2024, 9, 17);
+		DateTime endValue = new(2024, 9, 15);
+
+		_ = Assert.ThrowsExactly<ArgumentOutOfRangeException>(() => _ = startValue.Until(endValue));
+	}
 }
