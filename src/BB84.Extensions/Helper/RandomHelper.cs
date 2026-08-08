@@ -1,4 +1,4 @@
-﻿// Copyright: 2023 Robert Peter Meyer
+// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
@@ -6,19 +6,29 @@
 namespace BB84.Extensions.Helper;
 
 /// <summary>
-/// Provides a thread-safe, lazily initialized instance of a pseudo-random number generator.
+/// Provides the pseudo-random number generator used by the random helpers of this library.
 /// </summary>
 /// <remarks>
-/// This class ensures that the <see cref="Random"/> instance is initialized with a unique seed
-/// based on a hash of a GUID, providing better randomness across application runs.
-/// The <see cref="Random"/> property can be used to generate random numbers in a thread-safe manner.
+/// <see cref="Random"/> is not safe for concurrent use. Calling it from several threads corrupts
+/// its internal state, after which it can return zero indefinitely. The instance returned here is
+/// therefore never shared across threads: modern frameworks get <c>Random.Shared</c>,
+/// older ones get a separate instance per thread, seeded from a GUID hash combined with the thread
+/// identity so that two threads starting in the same tick do not produce the same sequence.
 /// </remarks>
 internal static class RandomHelper
 {
-	private static readonly Lazy<Random> LazyRandom = new(() => new(Guid.NewGuid().GetHashCode()));
+#if !NET6_0_OR_GREATER
+	[ThreadStatic]
+	private static Random? _threadRandom;
+#endif
 
 	/// <summary>
-	/// The pseudo-random number generator instance.
+	/// The pseudo-random number generator instance for the calling thread.
 	/// </summary>
-	internal static Random Random => LazyRandom.Value;
+	internal static Random Random
+#if NET6_0_OR_GREATER
+		=> System.Random.Shared;
+#else
+		=> _threadRandom ??= new(Guid.NewGuid().GetHashCode() ^ Environment.CurrentManagedThreadId);
+#endif
 }
