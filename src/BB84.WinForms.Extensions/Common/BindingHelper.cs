@@ -1,4 +1,4 @@
-// Copyright: 2023 Robert Peter Meyer
+﻿// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
@@ -22,16 +22,8 @@ internal static class BindingHelper
 	internal static TComponent Bind<TComponent>(TComponent component, string propertyName, object dataSource, string dataMember, bool formattingEnabled, DataSourceUpdateMode updateMode)
 		where TComponent : IBindableComponent
 	{
-#if NET6_0_OR_GREATER
-		ArgumentNullException.ThrowIfNull(component);
-		ArgumentNullException.ThrowIfNull(dataSource);
-#else
-		if (component is null)
-			throw new ArgumentNullException(nameof(component));
-
-		if (dataSource is null)
-			throw new ArgumentNullException(nameof(dataSource));
-#endif
+		Guard.ThrowIfNull(component);
+		Guard.ThrowIfNull(dataSource);
 
 		component.DataBindings.Add(propertyName, dataSource, dataMember, formattingEnabled, updateMode);
 		return component;

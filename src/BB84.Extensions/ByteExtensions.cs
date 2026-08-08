@@ -132,12 +132,7 @@ public static partial class ByteExtensions
 	/// as two uppercase hexadecimal characters.
 	/// </returns>
 	public static string GetHexString(this byte[] inputBuffer)
-	{
-		StringBuilder sb = new();
-		foreach (byte b in inputBuffer)
-			_ = sb.Append(b.ToString("X2", CultureInfo.InvariantCulture));
-		return sb.ToString();
-	}
+		=> HexConverter.ToHexString(inputBuffer);
 
 	/// <summary>
 	/// Computes the MD5 hash value for the specified byte array.
@@ -154,7 +149,8 @@ public static partial class ByteExtensions
 #if NET6_0_OR_GREATER
 		return MD5.HashData(value);
 #else
-		return MD5.Create().ComputeHash(value);
+		using MD5 algorithm = MD5.Create();
+		return algorithm.ComputeHash(value);
 #endif
 	}
 
@@ -162,7 +158,7 @@ public static partial class ByteExtensions
 	/// Computes the MD5 hash of the specified byte array and returns it as a hexadecimal string.
 	/// </summary>
 	/// <remarks>
-	/// The returned string is in lowercase and contains no separators.
+	/// The returned string is in uppercase and contains no separators.
 	/// </remarks>
 	/// <param name="value">The byte array to compute the MD5 hash for.</param>
 	/// <returns>
@@ -181,7 +177,8 @@ public static partial class ByteExtensions
 #if NET8_0_OR_GREATER
 		return SHA256.HashData(value);
 #else
-		return SHA256.Create().ComputeHash(value);
+		using SHA256 algorithm = SHA256.Create();
+		return algorithm.ComputeHash(value);
 #endif
 	}
 
@@ -205,7 +202,8 @@ public static partial class ByteExtensions
 #if NET8_0_OR_GREATER
 		return SHA512.HashData(value);
 #else
-		return SHA512.Create().ComputeHash(value);
+		using SHA512 algorithm = SHA512.Create();
+		return algorithm.ComputeHash(value);
 #endif
 	}
 

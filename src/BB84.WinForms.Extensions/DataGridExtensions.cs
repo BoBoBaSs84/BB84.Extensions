@@ -5,6 +5,8 @@
 // LICENSE file in the root directory of this source tree.
 using System.Collections;
 
+using BB84.WinForms.Extensions.Common;
+
 namespace BB84.WinForms.Extensions;
 
 #if NETFRAMEWORK
@@ -24,8 +26,14 @@ public static class DataGridExtensions
 	/// <returns>
 	/// The <see cref="DataGrid"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
+	/// <exception cref="ArgumentNullException">
+	/// Thrown if <paramref name="dataGrid"/> or <paramref name="dataSource"/> is <see langword="null"/>.
+	/// </exception>
 	public static DataGrid WithDataSourceBinding(this DataGrid dataGrid, object dataSource)
 	{
+		Guard.ThrowIfNull(dataGrid);
+		Guard.ThrowIfNull(dataSource);
+
 		dataGrid.DataSource = dataSource;
 		return dataGrid;
 	}

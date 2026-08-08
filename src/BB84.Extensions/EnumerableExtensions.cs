@@ -3,6 +3,8 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.Extensions.Common;
+
 namespace BB84.Extensions;
 
 /// <summary>
@@ -165,6 +167,7 @@ public static class EnumerableExtensions
 	public static bool TryTakeRandom<T>(this IEnumerable<T> values, [MaybeNullWhen(false)] out T result)
 		=> values.ToArray().TryTakeRandom(out result);
 
+#if !NET6_0_OR_GREATER
 	/// <summary>
 	/// Splits the elements of <paramref name="values"/> into chunks of at most
 	/// <paramref name="size"/> elements each. The last chunk will contain the remaining elements
@@ -183,25 +186,21 @@ public static class EnumerableExtensions
 	/// <exception cref="ArgumentOutOfRangeException">
 	/// Thrown when <paramref name="size"/> is less than or equal to zero.
 	/// </exception>
+	/// <remarks>
+	/// This is only compiled for the targets that lack <c>Enumerable.Chunk</c>. On the others the
+	/// signature would be identical to the one in <see cref="Enumerable"/>, and any caller with both
+	/// namespaces in scope would get an ambiguous call instead of a working one.
+	/// </remarks>
 	public static IEnumerable<T[]> Chunk<T>(this IEnumerable<T> values, int size)
 	{
-#if NET6_0_OR_GREATER
-		ArgumentNullException.ThrowIfNull(values);
-#else
-		if (values is null)
-			throw new ArgumentNullException(nameof(values));
-#endif
+		Guard.ThrowIfNull(values);
+
 		if (size <= 0)
 			throw new ArgumentOutOfRangeException(nameof(size), "Size must be greater than zero.");
 
-#if NET6_0_OR_GREATER
-		return Enumerable.Chunk(values, size);
-#else
 		return ChunkIterator(values, size);
-#endif
 	}
 
-#if !NET6_0_OR_GREATER
 	private static IEnumerable<T[]> ChunkIterator<T>(IEnumerable<T> values, int size)
 	{
 		T[] chunk = new T[size];

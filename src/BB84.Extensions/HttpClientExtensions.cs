@@ -45,12 +45,7 @@ public static class HttpClientExtensions
 	/// <exception cref="ArgumentException">If <paramref name="baseAddress"/> is empty, whitespace, or not a valid URI for the given <paramref name="uriKind"/>.</exception>
 	public static HttpClient WithBaseAddress(this HttpClient client, string baseAddress, UriKind uriKind)
 	{
-#if NET6_0_OR_GREATER
-		ArgumentNullException.ThrowIfNull(baseAddress);
-#else
-		if (baseAddress is null)
-			throw new ArgumentNullException(nameof(baseAddress));
-#endif
+		Guard.ThrowIfNull(baseAddress);
 		if (string.IsNullOrWhiteSpace(baseAddress))
 			throw new ArgumentException("The base address must not be empty or whitespace.", nameof(baseAddress));
 		if (!Uri.TryCreate(baseAddress, uriKind, out Uri? uri))
@@ -80,15 +75,8 @@ public static class HttpClientExtensions
 	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
 	public static HttpClient WithBasicAuthentication(this HttpClient client, string username, string password, Encoding? encoding = null)
 	{
-#if NET6_0_OR_GREATER
-		ArgumentNullException.ThrowIfNull(username);
-		ArgumentNullException.ThrowIfNull(password);
-#else
-		if (username is null)
-			throw new ArgumentNullException(nameof(username));
-		if (password is null)
-			throw new ArgumentNullException(nameof(password));
-#endif
+		Guard.ThrowIfNull(username);
+		Guard.ThrowIfNull(password);
 		if (string.IsNullOrWhiteSpace(username))
 			throw new ArgumentException("The username must not be empty or whitespace.", nameof(username));
 		encoding ??= Encoding.ASCII;
@@ -104,12 +92,7 @@ public static class HttpClientExtensions
 	/// <returns>The same <see cref="HttpClient"/> instance so that multiple calls can be chained.</returns>
 	public static HttpClient WithBearerToken(this HttpClient client, string token)
 	{
-#if NET6_0_OR_GREATER
-		ArgumentNullException.ThrowIfNull(token);
-#else
-		if (token is null)
-			throw new ArgumentNullException(nameof(token));
-#endif
+		Guard.ThrowIfNull(token);
 		if (string.IsNullOrEmpty(token))
 			throw new ArgumentException("The token must not be empty.", nameof(token));
 		client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(Constants.HttpHeaders.BearerScheme, token);

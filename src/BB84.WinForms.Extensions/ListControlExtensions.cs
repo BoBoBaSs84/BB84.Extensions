@@ -31,8 +31,14 @@ public static class ListControlExtensions
 	/// <returns>
 	/// The <see cref="ListControl"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
+	/// <exception cref="ArgumentNullException">
+	/// Thrown if <paramref name="listControl"/> or <paramref name="dataSource"/> is <see langword="null"/>.
+	/// </exception>
 	public static ListControl WithDataSourceBinding(this ListControl listControl, object dataSource)
 	{
+		Guard.ThrowIfNull(listControl);
+		Guard.ThrowIfNull(dataSource);
+
 		listControl.DataSource = dataSource;
 		return listControl;
 	}
@@ -62,8 +68,13 @@ public static class ListControlExtensions
 	/// <returns>
 	/// The <see cref="ListControl"/> control with the display member set, allowing for method chaining.
 	/// </returns>
+	/// <exception cref="ArgumentNullException">
+	/// Thrown if <paramref name="listControl"/> is <see langword="null"/>.
+	/// </exception>
 	public static ListControl WithDisplayMember(this ListControl listControl, string displayMember)
 	{
+		Guard.ThrowIfNull(listControl);
+
 		listControl.DisplayMember = displayMember;
 		return listControl;
 	}
@@ -76,8 +87,13 @@ public static class ListControlExtensions
 	/// <returns>
 	/// The <see cref="ListControl"/> control with the value member set, allowing for method chaining.
 	/// </returns>
+	/// <exception cref="ArgumentNullException">
+	/// Thrown if <paramref name="listControl"/> is <see langword="null"/>.
+	/// </exception>
 	public static ListControl WithValueMember(this ListControl listControl, string valueMember)
 	{
+		Guard.ThrowIfNull(listControl);
+
 		listControl.ValueMember = valueMember;
 		return listControl;
 	}

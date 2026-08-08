@@ -31,12 +31,7 @@ public static class HttpRequestMessageExtensions
 	/// <returns>The same <see cref="HttpRequestMessage"/> instance, allowing for method chaining.</returns>
 	public static HttpRequestMessage WithBearerToken(this HttpRequestMessage httpRequestMessage, string token)
 	{
-#if NET6_0_OR_GREATER
-		ArgumentNullException.ThrowIfNull(token);
-#else
-		if (token is null)
-			throw new ArgumentNullException(nameof(token));
-#endif
+		Guard.ThrowIfNull(token);
 		if (string.IsNullOrEmpty(token))
 			throw new ArgumentException("The token must not be empty.", nameof(token));
 		httpRequestMessage.Headers.Authorization = new AuthenticationHeaderValue(Constants.HttpHeaders.BearerScheme, token);

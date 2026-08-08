@@ -5,6 +5,8 @@
 // LICENSE file in the root directory of this source tree.
 using System.Collections;
 
+using BB84.WinForms.Extensions.Common;
+
 namespace BB84.WinForms.Extensions;
 
 /// <summary>
@@ -23,8 +25,14 @@ public static class DataGridViewExtensions
 	/// <returns>
 	/// The <see cref="DataGridView"/> control with the binding applied, allowing for method chaining.
 	/// </returns>
+	/// <exception cref="ArgumentNullException">
+	/// Thrown if <paramref name="dataGridView"/> or <paramref name="dataSource"/> is <see langword="null"/>.
+	/// </exception>
 	public static DataGridView WithDataSourceBinding(this DataGridView dataGridView, object dataSource)
 	{
+		Guard.ThrowIfNull(dataGridView);
+		Guard.ThrowIfNull(dataSource);
+
 		dataGridView.DataSource = dataSource;
 		return dataGridView;
 	}
