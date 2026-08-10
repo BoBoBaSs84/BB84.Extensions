@@ -1,4 +1,4 @@
-[![net20](https://img.shields.io/badge/netstandard2.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
+﻿[![net20](https://img.shields.io/badge/netstandard2.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
 [![net21](https://img.shields.io/badge/netstandard2.1-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
 [![net472](https://img.shields.io/badge/net472-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
 [![net481](https://img.shields.io/badge/net481-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
@@ -81,14 +81,15 @@ Color red = Color.Red;
 // To representations
 string rgbHex  = red.ToRGBHexString();    // "#FF0000"
 string argbHex = red.ToARGBHexString();   // "#FFFF0000"
-byte[] rgb     = red.ToRgbByteArray();    // [255, 0, 0]
-byte[] argb    = red.ToArgbByteArray();   // [255, 255, 0, 0]
+byte[] rgb     = red.ToRgbByteArray();    // [0, 0, 255]      blue, green, red
+byte[] argb    = red.ToArgbByteArray();   // [0, 0, 255, 255] blue, green, red, alpha
 
 // From representations
 Color fromRgb  = "#FF0000".FromRGBHexString();
 Color fromArgb = "#FFFF0000".FromARGBHexString();
-Color fromRgbBytes  = new byte[] { 255, 0, 0 }.FromRgbByteArray();
-Color fromArgbBytes = new byte[] { 255, 255, 0, 0 }.FromArgbByteArray();
+// The byte arrays are read back in the same order they are written.
+Color fromRgbBytes  = new byte[] { 0, 0, 255 }.FromRgbByteArray();
+Color fromArgbBytes = new byte[] { 0, 0, 255, 255 }.FromArgbByteArray();
 ```
 
 ### Comparable extensions
@@ -139,9 +140,9 @@ DateTime startFiscalYear = today.StartOfFiscalYear();
 DateTime endFiscalYear   = today.EndOfFiscalYear();
 int week                 = today.WeekOfYear();
 
-// Until — enumerate dates up to (exclusive) a target date
+// Until — enumerate dates up to and including a target date
 IEnumerable<DateTime> days = today.Until(new DateTime(2023, 9, 18));
-// → 2023-09-15, 2023-09-16, 2023-09-17
+// → 2023-09-15, 2023-09-16, 2023-09-17, 2023-09-18
 ```
 
 ### Dictionary extensions
@@ -182,11 +183,15 @@ strings.ForEach(x => x.Contains("a"), x => hits++);    // hits == 2
 // ForEach — with break condition
 strings.ForEach(x => x.Contains("a"), x => x == "ab", x => hits++);
 
-// Chunk — split into fixed-size arrays
+// Chunk — split into fixed-size arrays.
+// Only provided below .NET 6, which has Enumerable.Chunk with the same signature.
 IEnumerable<int> values = [1, 2, 3, 4, 5];
 foreach (int[] chunk in values.Chunk(2))
     Console.WriteLine(string.Join(", ", chunk));
 // Output: 1, 2 / 3, 4 / 5
+
+// Join
+string joined = new[] { "a", "b", "c" }.Join(", ");    // "a, b, c"
 
 // Random selection
 string picked = strings.TakeRandom();
@@ -234,6 +239,8 @@ int value = 5;
 // Counting arrays
 int[] upTo10   = value.ArrayUp(10);    // [5, 6, 7, 8, 9, 10]
 int[] downTo0  = value.ArrayDown(0);   // [0, 1, 2, 3, 4, 5]
+// Before 5.0 both padded the result with leading zeros and sized it by the
+// bound instead of the range, so ArrayUp(10) returned 11 elements.
 
 // Loop
 value.For(i => Console.Write(i));      // 0 1 2 3 4
@@ -317,7 +324,7 @@ value.ToStringInvariant();     // "42"
 
 ### Serialization extensions
 
-`JsonExtensions` and `XmlExtension` provide `ToJson`/`FromJson` and `ToXml`/`FromXml` helpers on any reference type and on `string`.
+`JsonExtensions` and `XmlExtensions` provide `ToJson`/`FromJson` and `ToXml`/`FromXml` helpers on any reference type and on `string`.
 
 ```csharp
 // JSON
@@ -380,13 +387,13 @@ string encrypted  = value.Encrypt("my-secret-key");
 string decrypted  = encrypted.Decrypt("my-secret-key");
 
 // Hashing (returns uppercase hex string)
-string md5Utf8      = value.GetMd5Utf8();
-string sha256Utf8   = value.GetSha256Utf8();
-string sha256Ascii  = value.GetSha256Ascii();
-string sha256Uni    = value.GetSha256Unicode();
-string sha512Utf8   = value.GetSha512Utf8();
-string sha512Ascii  = value.GetSha512Ascii();
-string sha512Uni    = value.GetSha512Unicode();
+string md5Utf8      = value.GetMD5();
+string sha256Utf8   = value.GetSHA256();
+string sha256Ascii  = value.GetSHA256(Encoding.ASCII);
+string sha256Uni    = value.GetSHA256(Encoding.Unicode);
+string sha512Utf8   = value.GetSHA512();
+string sha512Ascii  = value.GetSHA512(Encoding.ASCII);
+string sha512Uni    = value.GetSHA512(Encoding.Unicode);
 
 // Encoding
 byte[] bytes    = value.GetBytes();                   // UTF-8
@@ -410,8 +417,6 @@ string flat  = "line1\nline2".RemoveLinebreak();         // "line1line2"
 "abc".EqualsCaseSensitive("ABC");   // false
 "abc".EqualsIgnoreCase("ABC");      // true
 
-// Join
-string joined = new[] { "a", "b", "c" }.Join(", ");    // "a, b, c"
 ```
 
 ### Task extensions

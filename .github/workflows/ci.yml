@@ -24,8 +24,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
+      # The SDK version comes from global.json, so the net10.0 leg does not depend on whatever
+      # the runner image happens to ship this week.
       - name: Setup .NET
         uses: actions/setup-dotnet@v6
+        with:
+          global-json-file: global.json
 
       - name: Restore dependencies
         run: dotnet restore ${{ env.SOLUTION }}
@@ -34,11 +38,13 @@ jobs:
         run: dotnet build ${{ env.SOLUTION }} --configuration ${{ env.CONFIGURATION }} --no-restore
 
       - name: Run tests
-        run: dotnet test ${{ env.SOLUTION }} --configuration ${{ env.CONFIGURATION }} --no-build --verbosity normal --logger "trx"
+        run: dotnet test ${{ env.SOLUTION }} --configuration ${{ env.CONFIGURATION }} --no-build --verbosity normal --logger "trx" --collect:"XPlat Code Coverage"
 
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v7
         with:
           name: test-results
-          path: "**/TestResults/*.trx"
+          path: |
+            **/TestResults/*.trx
+            **/TestResults/**/coverage.cobertura.xml

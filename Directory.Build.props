@@ -1,8 +1,8 @@
 <Project>
 
 	<PropertyGroup Label="Versioning">
-		<VersionMajor>4</VersionMajor>
-		<VersionMinor>7</VersionMinor>
+		<VersionMajor>5</VersionMajor>
+		<VersionMinor>0</VersionMinor>
 		<VersionPatch>$([System.DateTime]::UtcNow.ToString("MMdd"))</VersionPatch>
 		<VersionRevision>$([System.DateTime]::UtcNow.TimeOfDay.TotalMinutes.ToString("0"))</VersionRevision>
 		<VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch).$(VersionRevision)</VersionPrefix>
@@ -20,6 +20,18 @@
 		<Deterministic>True</Deterministic>
 		<EnableNETAnalyzers>True</EnableNETAnalyzers>
 		<EnablePackageValidation>True</EnablePackageValidation>
+		<!--
+			Without a baseline this only checks that the target frameworks of one build agree with each
+			other, not that the public API still agrees with what was shipped. Set this to 5.0.0 once
+			that version is on nuget.org; it cannot be set before then, because the baseline has to be
+			a package that can actually be restored. The 5.0 breaks are listed in the release notes and
+			belong in a CompatibilitySuppressions.xml at that point, so later breaks stand out.
+		-->
+		<!-- <PackageValidationBaselineVersion>5.0.0</PackageValidationBaselineVersion> -->
+	</PropertyGroup>
+
+	<PropertyGroup Label="Technical">
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 		<GenerateAssemblyInfo>True</GenerateAssemblyInfo>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<ImplicitUsings>enable</ImplicitUsings>
@@ -27,10 +39,17 @@
 		<NeutralLanguage>en-US</NeutralLanguage>
 		<Nullable>enable</Nullable>
 		<SignAssembly>True</SignAssembly>
+		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
 	</PropertyGroup>
 
+	<!--
+		Release used to build without symbols. That cost line numbers in CI stack traces and made
+		coverage collection produce an empty report, because there was nothing to instrument.
+		Portable symbols are produced but not packed, so the shipped package is unchanged.
+	-->
 	<PropertyGroup Condition="'$(Configuration)'=='Release'">
-		<DebugType>none</DebugType>
+		<DebugType>portable</DebugType>
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder)</AllowedOutputExtensionsInPackageBuildOutputFolder>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))" Label="MetaData">

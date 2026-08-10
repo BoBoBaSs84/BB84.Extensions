@@ -1,7 +1,7 @@
-[![net472](https://img.shields.io/badge/net472-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
-[![net481](https://img.shields.io/badge/net481-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
-[![net80](https://img.shields.io/badge/net8.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
-[![net100](https://img.shields.io/badge/net10.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
+﻿[![net472](https://img.shields.io/badge/net472-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
+[![net481](https://img.shields.io/badge/net481-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
+[![net80](https://img.shields.io/badge/net8.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
+[![net100](https://img.shields.io/badge/net10.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Extensions)
 
 # BB84.WinForms.Extensions
 
@@ -113,6 +113,18 @@ Both controls derive from `FlagsControlBase`, which owns the enum validation, th
 the bit arithmetic and the flow layout panel. Derive from it to add a control with a different
 button style; the five protected members to implement are `CreateButton`, `AttachToggleHandler`,
 `GetChecked`, `SetChecked` and `ComputeNewBits`.
+
+`ComputeNewBits` receives the checked state as a `bool`, not the button, so an implementation never
+has to reach back into the control to do its bit arithmetic:
+
+```csharp
+protected override long ComputeNewBits(long currentBits, long flagBits, bool isChecked)
+    => isChecked ? currentBits | flagBits : currentBits & ~flagBits;
+```
+
+The fluent methods shown above come from `FlagsControlExtensions` and are generic over the control
+type, constrained to `FlagsControlBase`. A control derived from the base gets all of them without a
+line of extra code, and a chain keeps the concrete type it started with.
 
 The enum bound to either control must define a zero-valued flag, which represents "nothing
 selected"; assigning a type without one throws an `ArgumentException`.

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://learn.microsoft.com/dotnet/fundamentals/package-validation/diagnostic-ids -->
+<!--
+  Chunk is deliberately not compiled for net6.0 and later. Those frameworks have
+  System.Linq.Enumerable.Chunk with an identical signature, and shipping both means any caller with
+  System.Linq and BB84.Extensions in scope gets an ambiguous call instead of a working one. The
+  surface therefore differs per target framework on purpose.
+-->
+<Suppressions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Suppression>
+    <DiagnosticId>CP0002</DiagnosticId>
+    <Target>M:BB84.Extensions.EnumerableExtensions.Chunk``1(System.Collections.Generic.IEnumerable{``0},System.Int32)</Target>
+    <Left>lib/netstandard2.1/BB84.Extensions.dll</Left>
+    <Right>lib/net8.0/BB84.Extensions.dll</Right>
+  </Suppression>
+</Suppressions>
