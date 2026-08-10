@@ -6,5 +6,5 @@
 namespace BB84.Extensions.Tests;
 
 [TestClass]
-public partial class ComparableExtensionsTests
+public sealed partial class ComparableExtensionsTests
 { }

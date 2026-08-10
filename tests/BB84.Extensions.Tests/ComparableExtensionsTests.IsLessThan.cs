@@ -5,7 +5,7 @@
 // LICENSE file in the root directory of this source tree.
 namespace BB84.Extensions.Tests;
 
-public partial class ComparableExtensionsTests
+public sealed partial class ComparableExtensionsTests
 {
 	[DataRow(0, 0, false)]
 	[DataRow(1, 0, false)]

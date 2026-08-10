@@ -5,7 +5,7 @@
 // LICENSE file in the root directory of this source tree.
 namespace BB84.Extensions.Tests;
 
-public partial class BooleanExtensionsTests
+public sealed partial class BooleanExtensionsTests
 {
 	[TestMethod]
 	[DataRow(true, true)]

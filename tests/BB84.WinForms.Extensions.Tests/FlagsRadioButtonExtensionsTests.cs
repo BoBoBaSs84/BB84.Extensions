@@ -6,6 +6,8 @@
 using BB84.WinForms.Extensions.Controls;
 using BB84.WinForms.Extensions.Helper;
 
+using BB84.WinForms.Extensions.Tests.Common;
+
 namespace BB84.WinForms.Extensions.Tests;
 
 [TestClass]
@@ -68,10 +70,7 @@ public sealed class FlagsRadioButtonExtensionsTests
 		using FlagsRadioButton radioButton = new FlagsRadioButton() { SelectedValue = TestEnumerator.FirstFlag }
 			.WithSelectedValueBinding(datasource, nameof(datasource.SelectedFlag));
 
-		Assert.HasCount(1, radioButton.DataBindings);
-		Assert.AreEqual(nameof(radioButton.SelectedValue), radioButton.DataBindings[0].PropertyName);
-		Assert.AreEqual(datasource, radioButton.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, radioButton.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(radioButton, nameof(radioButton.SelectedValue), datasource);
 	}
 
 	[Flags]

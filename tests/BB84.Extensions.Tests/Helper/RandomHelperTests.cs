@@ -25,7 +25,7 @@ public sealed class RandomHelperTests
 		_ = Parallel.For(0, 100_000, _ =>
 		{
 			int value = RandomHelper.Random.Next(lowerBound, upperBound);
-			if (value < lowerBound || value >= upperBound)
+			if (value is < lowerBound or >= upperBound)
 				outOfRange.Add(value);
 		});
 

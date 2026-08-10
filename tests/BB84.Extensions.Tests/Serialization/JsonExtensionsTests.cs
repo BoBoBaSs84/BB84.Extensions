@@ -11,7 +11,7 @@ using BB84.Extensions.Serialization;
 namespace BB84.Extensions.Tests.Serialization;
 
 [TestClass]
-public class JsonExtensionsTests
+public sealed class JsonExtensionsTests
 {
 	private const string JsonTestString = @"{""Id"":""356e4b9a-09f9-4399-82c7-d78c02cefb48"",""Name"":""qkxTAlLXUs"",""Description"":""QGVaYoljjHDTHasFRlGhDfJSehDCUnLqLsqfFesN""}";
 

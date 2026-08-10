@@ -12,7 +12,7 @@ using BB84.Extensions.Serialization;
 namespace BB84.Extensions.Tests.Serialization;
 
 [TestClass]
-public class XmlExtensionTests
+public sealed class XmlExtensionsTests
 {
 	private const string XmlTextString = @"<Fancy Id=""348798ee-12f2-4a20-b030-756bb6a4134d""><Name>UnitTestName</Name><Description>UnitTestDescription</Description></Fancy>";
 

@@ -3,6 +3,8 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.WinForms.Extensions.Tests.Common;
+
 namespace BB84.WinForms.Extensions.Tests;
 
 [TestClass]
@@ -10,8 +12,9 @@ public sealed class ListControlExtensionsTests
 {
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithDataSourceBindingShouldBindDataSource(ListControl listControl)
+	public void WithDataSourceBindingShouldBindDataSource(Type type)
 	{
+		using ListControl listControl = TestControlFactory.Create<ListControl>(type);
 		var dataSource = new List<string> { "Item1", "Item2", "Item3" };
 
 		listControl.WithDataSourceBinding(dataSource);
@@ -21,22 +24,21 @@ public sealed class ListControlExtensionsTests
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithSelectedValueBindingShouldBindSelectedValue(ListControl listControl)
+	public void WithSelectedValueBindingShouldBindSelectedValue(Type type)
 	{
+		using ListControl listControl = TestControlFactory.Create<ListControl>(type);
 		var dataSource = new { SelectedValue = "Item1" };
 
 		listControl.WithSelectedValueBinding(dataSource, nameof(dataSource.SelectedValue));
 
-		Assert.HasCount(1, listControl.DataBindings);
-		Assert.AreEqual(nameof(listControl.SelectedValue), listControl.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, listControl.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, listControl.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(listControl, nameof(listControl.SelectedValue), dataSource);
 	}
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithDisplayMemberShouldSetDisplayMember(ListControl listControl)
+	public void WithDisplayMemberShouldSetDisplayMember(Type type)
 	{
+		using ListControl listControl = TestControlFactory.Create<ListControl>(type);
 		const string displayMember = "Name";
 		
 		listControl.WithDisplayMember(displayMember);
@@ -46,8 +48,9 @@ public sealed class ListControlExtensionsTests
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithValueMemberShouldSetValueMember(ListControl listControl)
+	public void WithValueMemberShouldSetValueMember(Type type)
 	{
+		using ListControl listControl = TestControlFactory.Create<ListControl>(type);
 		const string valueMember = "Id";
 		
 		listControl.WithValueMember(valueMember);
@@ -57,8 +60,9 @@ public sealed class ListControlExtensionsTests
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithEnumDataSourceShouldBindEnumDataSource(ListControl listControl)
+	public void WithEnumDataSourceShouldBindEnumDataSource(Type type)
 	{
+		using ListControl listControl = TestControlFactory.Create<ListControl>(type);
 		listControl.WithEnumeratorBinding(TestEnum.First);
 		
 		Assert.IsNotNull(listControl.DataSource);

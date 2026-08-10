@@ -1,8 +1,10 @@
-// Copyright: 2023 Robert Peter Meyer
+﻿// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.WinForms.Extensions.Tests.Common;
+
 namespace BB84.WinForms.Extensions.Tests;
 
 [TestClass]
@@ -16,10 +18,7 @@ public sealed class ComboBoxExtensionsTests
 
 		comboBox.WithSelectedItemBinding(dataSource, nameof(comboBox.SelectedItem));
 
-		Assert.HasCount(1, comboBox.DataBindings);
-		Assert.AreEqual(nameof(comboBox.SelectedItem), comboBox.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, comboBox.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, comboBox.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(comboBox, nameof(comboBox.SelectedItem), dataSource);
 	}
 
 	[TestMethod]
@@ -30,9 +29,6 @@ public sealed class ComboBoxExtensionsTests
 
 		comboBox.WithSelectedIndexBinding(dataSource, nameof(comboBox.SelectedIndex));
 
-		Assert.HasCount(1, comboBox.DataBindings);
-		Assert.AreEqual(nameof(comboBox.SelectedIndex), comboBox.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, comboBox.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, comboBox.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(comboBox, nameof(comboBox.SelectedIndex), dataSource);
 	}
 }
