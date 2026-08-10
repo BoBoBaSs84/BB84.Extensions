@@ -42,11 +42,6 @@
 		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
 	</PropertyGroup>
 
-	<!--
-		Release used to build without symbols. That cost line numbers in CI stack traces and made
-		coverage collection produce an empty report, because there was nothing to instrument.
-		Portable symbols are produced but not packed, so the shipped package is unchanged.
-	-->
 	<PropertyGroup Condition="'$(Configuration)'=='Release'">
 		<DebugType>portable</DebugType>
 		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder)</AllowedOutputExtensionsInPackageBuildOutputFolder>
