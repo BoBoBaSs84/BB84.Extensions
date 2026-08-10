@@ -1,4 +1,4 @@
-root = true
+﻿root = true
 
 # All files
 [*]
@@ -372,3 +372,27 @@ end_of_line = crlf
 dotnet_style_namespace_match_folder = true:suggestion
 insert_final_newline = true
 
+
+# Analyzer diagnostic severities
+# The style rules above are all suggestions, which EnforceCodeStyleInBuild ignores. These are the
+# rules the codebase already satisfies everywhere, promoted so a regression fails the build rather
+# than showing up as a squiggle nobody sees.
+[*.cs]
+
+# IDE0005 (unnecessary using) and IDE0051 (unused private member) are deliberately left alone.
+# Both are evaluated per target framework, so in a package that multi-targets six of them any using
+# or member that only one leg needs is reported as dead by the other five. There is no way to
+# express "needed somewhere" to them, and silencing the false positives per site would cost more
+# than the rules are worth here.
+
+# Unread private members.
+dotnet_diagnostic.IDE0052.severity = warning
+
+# Unnecessary suppressions.
+dotnet_diagnostic.IDE0079.severity = warning
+
+# Unused parameters.
+dotnet_diagnostic.IDE0060.severity = warning
+
+# Missing XML documentation for a publicly visible member.
+dotnet_diagnostic.CS1591.severity = warning

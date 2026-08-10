@@ -28,7 +28,7 @@ independent NuGet packages so you only take the dependency you need.
 
 The core library. Extension methods for common .NET types, including:
 
-- **Arrays / Enumerables / Lists** — `TakeRandom`, `Randomize`, `Chunk`, `ForEach`, `AddIfNotNull`
+- **Arrays / Enumerables / Lists** — `TakeRandom`, `Randomize`, `ForEach`, `AddIfNotNull`, `Join`, `Chunk` _(below net6.0)_
 - **Boolean** — `IsTrue`, `IsFalse`, `IsDefault`, `IsNull`
 - **Byte arrays** — compression, Base64, hex encoding, MD5 / SHA-256 / SHA-512 hashing
 - **Colors** — conversions between `System.Drawing.Color`, RGB/ARGB hex strings, and byte arrays
@@ -41,7 +41,7 @@ The core library. Extension methods for common .NET types, including:
 - **Serialization** — `ToJson` / `FromJson`, `ToXml` / `FromXml`
 - **Spans / Memory** — allocation-free `TakeRandom`, `GetHexString`, `ToByteArray`
 - **Streams** — `ToByteArray`, `ToByteArrayAsync`
-- **Strings** — compression, AES encryption, hashing, formatting, null checks, join
+- **Strings** — compression, AES encryption, hashing, formatting, null checks
 - **Tasks** — `AsSync`, `ToSafeSync`, `SafeFireAndForget`
 - **TimeOnly** — midnight-crossing `IsBetween`
 
@@ -56,7 +56,7 @@ Windows Forms specific. Data-binding helpers for controls, following a fluent
 - **ComboBox / ListBox / ListControl** — `WithDataSourceBinding`, `WithSelectedItemBinding`, `WithEnumeratorBinding`
 - **DataGrid / DataGridView** — `WithDataSourceBinding`
 - **DateTimePicker** — `WithValueBinding`, `WithCheckedBinding`
-- **FlagsCheckBox / FlagsRadioButton** — custom controls for binding `[Flags]` enums, both derived from the extensible `FlagsControlBase`; supports `WithDisplayName`, `WithDescriptionName`, `WithDisplayNameResolver`, `WithSelectedValueBinding`
+- **FlagsCheckBox / FlagsRadioButton** — custom controls for binding `[Flags]` enums, both derived from the extensible `FlagsControlBase`. `FlagsControlExtensions` supplies `WithDisplayName`, `WithDescriptionName`, `WithDisplayNameResolver`, `WithFlowDirection` and `WithSelectedValueBinding` for any control derived from that base
 - **MonthCalendar** — `WithSelectionRangeBinding`
 - **NumericUpDown** — `WithValueBinding`, `WithMinimumBinding`, `WithMaximumBinding`, `WithIncrementBinding`, `WithDecimalPlacesBinding`
 - **PictureBox** — `WithImageBinding`

@@ -3,8 +3,10 @@
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+#if !NET6_0_OR_GREATER
 using System.Globalization;
 using System.Text;
+#endif
 
 namespace BB84.Extensions.Common;
 
@@ -18,8 +20,6 @@ namespace BB84.Extensions.Common;
 /// </remarks>
 internal static class HexConverter
 {
-	private const string HexFormat = "X2";
-
 	/// <summary>
 	/// Converts the specified bytes to their uppercase hexadecimal string representation.
 	/// </summary>
@@ -34,7 +34,7 @@ internal static class HexConverter
 #else
 		StringBuilder builder = new(value.Length * 2);
 		foreach (byte b in value)
-			_ = builder.Append(b.ToString(HexFormat, CultureInfo.InvariantCulture));
+			_ = builder.Append(b.ToString("X2", CultureInfo.InvariantCulture));
 		return builder.ToString();
 #endif
 	}
@@ -54,7 +54,7 @@ internal static class HexConverter
 #else
 		StringBuilder builder = new(value.Length * 2);
 		foreach (byte b in value)
-			_ = builder.Append(b.ToString(HexFormat, CultureInfo.InvariantCulture));
+			_ = builder.Append(b.ToString("X2", CultureInfo.InvariantCulture));
 		return builder.ToString();
 #endif
 	}

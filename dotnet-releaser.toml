@@ -7,8 +7,10 @@ project = "BB84.Extensions.slnx"
 user = "BoBoBaSs84"
 repo = "BB84.Extensions"
 version_prefix = "v"
+# The job name promises "Build, Test & Publish", and the release path is the last chance to catch a
+# regression before it reaches nuget.org.
 [test]
-enable = false
+enable = true
 [nuget]
 publish = true
 source = "https://api.nuget.org/v3/index.json"

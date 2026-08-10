@@ -1,4 +1,4 @@
-name: Continuous Deployment
+﻿name: Continuous Deployment
 
 on:
   push:
@@ -26,6 +26,8 @@ jobs:
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v6
+        with:
+          global-json-file: global.json
 
       - name: Publish NuGet
         shell: bash
@@ -43,6 +45,8 @@ jobs:
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v6
+        with:
+          global-json-file: global.json
 
       - name: Setup DocFx
         run: dotnet tool update -g docfx
