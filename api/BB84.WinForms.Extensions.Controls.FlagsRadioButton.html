@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v4.6.0803.0/apiSpec/new?filename=BB84_WinForms_Extensions_Controls_FlagsRadioButton.md&amp;value=---%0Auid%3A%20BB84.WinForms.Extensions.Controls.FlagsRadioButton%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v5.0.0810.0/apiSpec/new?filename=BB84_WinForms_Extensions_Controls_FlagsRadioButton.md&amp;value=---%0Auid%3A%20BB84.WinForms.Extensions.Controls.FlagsRadioButton%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_WinForms_Extensions_Controls_FlagsRadioButton" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton" class="text-break">
-Class FlagsRadioButton  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.Designer.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class FlagsRadioButton  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -99,8 +99,7 @@ of an enum type marked with the <a class="xref" href="https://learn.microsoft.co
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DefaultBindingProperty(&quot;SelectedValue&quot;)]
-public class FlagsRadioButton : UserControl, IDropTarget, ISynchronizeInvoke, IWin32Window, IBindableComponent, IComponent, IDisposable, IContainerControl</code></pre>
+    <pre><code class="lang-csharp hljs">public class FlagsRadioButton : FlagsControlBase, IDropTarget, ISynchronizeInvoke, IWin32Window, IBindableComponent, IComponent, IDisposable, IContainerControl</code></pre>
   </div>
 
 
@@ -116,6 +115,7 @@ public class FlagsRadioButton : UserControl, IDropTarget, ISynchronizeInvoke, IW
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.scrollablecontrol">ScrollableControl</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.containercontrol">ContainerControl</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.usercontrol">UserControl</a></div>
+      <div><a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html">FlagsControlBase</a></div>
       <div><span class="xref">FlagsRadioButton</span></div>
     </dd>
   </dl>
@@ -137,6 +137,27 @@ public class FlagsRadioButton : UserControl, IDropTarget, ISynchronizeInvoke, IW
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_FlowDirection">FlagsControlBase.FlowDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_DisplayNameResolver">FlagsControlBase.DisplayNameResolver</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_EnumType">FlagsControlBase.EnumType</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_SelectedValue">FlagsControlBase.SelectedValue</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_SelectedValueChanged">FlagsControlBase.SelectedValueChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_OnSelectedValueChanged_System_EventArgs_">FlagsControlBase.OnSelectedValueChanged(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_OnButtonToggled_System_Object_System_EventArgs_">FlagsControlBase.OnButtonToggled(object, EventArgs)</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.usercontrol.validatechildren#system-windows-forms-usercontrol-validatechildren">UserControl.ValidateChildren()</a>
     </div>
@@ -187,6 +208,9 @@ public class FlagsRadioButton : UserControl, IDropTarget, ISynchronizeInvoke, IW
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.containercontrol.adjustformscrollbars">ContainerControl.AdjustFormScrollbars(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.containercontrol.dispose">ContainerControl.Dispose(bool)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.containercontrol.onautovalidatechanged">ContainerControl.OnAutoValidateChanged(EventArgs)</a>
@@ -1403,22 +1427,25 @@ public class FlagsRadioButton : UserControl, IDropTarget, ISynchronizeInvoke, IW
       <a class="xref" href="BB84.Extensions.Serialization.JsonExtensions.html#BB84_Extensions_Serialization_JsonExtensions_ToJson__1___0_System_Text_Json_JsonSerializerOptions_">JsonExtensions.ToJson&lt;T&gt;(T, JsonSerializerOptions?)</a>
   </div>
   <div>
-      <a class="xref" href="BB84.Extensions.Serialization.XmlExtension.html#BB84_Extensions_Serialization_XmlExtension_ToXml__1___0_System_Xml_Serialization_XmlSerializerNamespaces_System_Xml_XmlWriterSettings_">XmlExtension.ToXml&lt;T&gt;(T, XmlSerializerNamespaces?, XmlWriterSettings?)</a>
+      <a class="xref" href="BB84.Extensions.Serialization.XmlExtensions.html#BB84_Extensions_Serialization_XmlExtensions_ToXml__1___0_System_Xml_Serialization_XmlSerializerNamespaces_System_Xml_XmlWriterSettings_">XmlExtensions.ToXml&lt;T&gt;(T, XmlSerializerNamespaces?, XmlWriterSettings?)</a>
   </div>
   <div>
-      <a class="xref" href="BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html#BB84_WinForms_Extensions_FlagsRadioButtonExtensions_WithDescriptionName_BB84_WinForms_Extensions_Controls_FlagsRadioButton_">FlagsRadioButtonExtensions.WithDescriptionName(FlagsRadioButton)</a>
+      <a class="xref" href="BB84.WinForms.Extensions.BindableComponentExtensions.html#BB84_WinForms_Extensions_BindableComponentExtensions_WithBinding__1___0_System_String_System_Object_System_String_System_Boolean_System_Windows_Forms_DataSourceUpdateMode_">BindableComponentExtensions.WithBinding&lt;TComponent&gt;(TComponent, string, object, string, bool, DataSourceUpdateMode)</a>
   </div>
   <div>
-      <a class="xref" href="BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html#BB84_WinForms_Extensions_FlagsRadioButtonExtensions_WithDisplayName_BB84_WinForms_Extensions_Controls_FlagsRadioButton_">FlagsRadioButtonExtensions.WithDisplayName(FlagsRadioButton)</a>
+      <a class="xref" href="BB84.WinForms.Extensions.FlagsControlExtensions.html#BB84_WinForms_Extensions_FlagsControlExtensions_WithDescriptionName__1___0_">FlagsControlExtensions.WithDescriptionName&lt;TControl&gt;(TControl)</a>
   </div>
   <div>
-      <a class="xref" href="BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html#BB84_WinForms_Extensions_FlagsRadioButtonExtensions_WithDisplayNameResolver_BB84_WinForms_Extensions_Controls_FlagsRadioButton_System_Func_System_Enum_System_String__">FlagsRadioButtonExtensions.WithDisplayNameResolver(FlagsRadioButton, Func&lt;Enum, string&gt;)</a>
+      <a class="xref" href="BB84.WinForms.Extensions.FlagsControlExtensions.html#BB84_WinForms_Extensions_FlagsControlExtensions_WithDisplayNameResolver__1___0_System_Func_System_Enum_System_String__">FlagsControlExtensions.WithDisplayNameResolver&lt;TControl&gt;(TControl, Func&lt;Enum, string&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html#BB84_WinForms_Extensions_FlagsRadioButtonExtensions_WithFlowDirection_BB84_WinForms_Extensions_Controls_FlagsRadioButton_System_Windows_Forms_FlowDirection_">FlagsRadioButtonExtensions.WithFlowDirection(FlagsRadioButton, FlowDirection)</a>
+      <a class="xref" href="BB84.WinForms.Extensions.FlagsControlExtensions.html#BB84_WinForms_Extensions_FlagsControlExtensions_WithDisplayName__1___0_">FlagsControlExtensions.WithDisplayName&lt;TControl&gt;(TControl)</a>
   </div>
   <div>
-      <a class="xref" href="BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html#BB84_WinForms_Extensions_FlagsRadioButtonExtensions_WithSelectedValueBinding_BB84_WinForms_Extensions_Controls_FlagsRadioButton_System_Object_System_String_">FlagsRadioButtonExtensions.WithSelectedValueBinding(FlagsRadioButton, object, string)</a>
+      <a class="xref" href="BB84.WinForms.Extensions.FlagsControlExtensions.html#BB84_WinForms_Extensions_FlagsControlExtensions_WithFlowDirection__1___0_System_Windows_Forms_FlowDirection_">FlagsControlExtensions.WithFlowDirection&lt;TControl&gt;(TControl, FlowDirection)</a>
+  </div>
+  <div>
+      <a class="xref" href="BB84.WinForms.Extensions.FlagsControlExtensions.html#BB84_WinForms_Extensions_FlagsControlExtensions_WithSelectedValueBinding__1___0_System_Object_System_String_">FlagsControlExtensions.WithSelectedValueBinding&lt;TControl&gt;(TControl, object, string)</a>
   </div>
   <div>
       <a class="xref" href="BB84.Extensions.ObjectExtensions.html#BB84_Extensions_ObjectExtensions_IsNotNull_System_Object_">ObjectExtensions.IsNotNull(object?)</a>
@@ -1469,201 +1496,165 @@ public class FlagsRadioButton : UserControl, IDropTarget, ISynchronizeInvoke, IW
   <h2 id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>Use to bind to an enum type with the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.flagsattribute">FlagsAttribute</a>, allowing users to select
 one or more flags. The control requires the enum to define a zero-valued flag to represent no
-selection.</p>
+selection. The radio buttons do not check themselves, so a click toggles the flag it carries.</p>
 </div>
-
-
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-
-  <a id="BB84_WinForms_Extensions_Controls_FlagsRadioButton__ctor_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.#ctor*"></a>
-
-  <h3 id="BB84_WinForms_Extensions_Controls_FlagsRadioButton__ctor" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.#ctor">
-  FlagsRadioButton()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.cs/#L34"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsRadioButton.html">FlagsRadioButton</a> control.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FlagsRadioButton()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
-  <a id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_DisplayNameResolver_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.DisplayNameResolver*"></a>
-
-  <h3 id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_DisplayNameResolver" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.DisplayNameResolver">
-  DisplayNameResolver
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.cs/#L62"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the delegate used to produce display names for each flag value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Browsable(false)]
-public Func&lt;Enum, string&gt;? DisplayNameResolver { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.enum">Enum</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_EnumType_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.EnumType*"></a>
-
-  <h3 id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_EnumType" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.EnumType">
-  EnumType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.cs/#L80"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the enum type that defines the flags to be displayed as check boxes.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Browsable(false)]
-public Type? EnumType { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_FlowDirection_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.FlowDirection*"></a>
-
-  <h3 id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_FlowDirection" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.FlowDirection">
-  FlowDirection
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.cs/#L43"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the layout direction used by the internal flow layout panel.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FlowDirection FlowDirection { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.flowdirection">FlowDirection</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_SelectedValue_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.SelectedValue*"></a>
-
-  <h3 id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_SelectedValue" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.SelectedValue">
-  SelectedValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.cs/#L92"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the currently selected value, which is a combination of the enum flags
-represented by the check boxes.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Browsable(false)]
-[Bindable(true)]
-public Enum? SelectedValue { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.enum">Enum</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
 
 
   <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_Dispose_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.Dispose*"></a>
+  <a id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_AttachToggleHandler_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.AttachToggleHandler*"></a>
 
-  <h3 id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_Dispose_System_Boolean_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.Dispose(System.Boolean)">
-  Dispose(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.Designer.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_AttachToggleHandler_System_Windows_Forms_ButtonBase_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.AttachToggleHandler(System.Windows.Forms.ButtonBase)">
+  AttachToggleHandler(ButtonBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Clean up any resources being used.</p>
+  <div class="markdown level1 summary"><p>Subscribes the event that signals a user interaction with the specified toggle button.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void AttachToggleHandler(ButtonBase button)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>true if managed resources should be disposed; otherwise, false.</p>
+    <dt><code>button</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.buttonbase">ButtonBase</a></dt>
+    <dd><p>The toggle button to subscribe to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_AttachToggleHandler_System_Windows_Forms_ButtonBase__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Implementations are expected to attach <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_OnButtonToggled_System_Object_System_EventArgs_">OnButtonToggled(object?, EventArgs)</a> to the event that
+matches the interaction model of the button.</p>
+</div>
+
+
+
+
+  <a id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_ComputeNewBits_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.ComputeNewBits*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_ComputeNewBits_System_Int64_System_Int64_System_Boolean_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.ComputeNewBits(System.Int64,System.Int64,System.Boolean)">
+  ComputeNewBits(long, long, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the selected bits that result from a user interaction with a toggle button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override long ComputeNewBits(long currentBits, long flagBits, bool isChecked)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentBits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The bits of the currently selected value.</p>
+</dd>
+    <dt><code>flagBits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The bits of the flag the toggle button represents.</p>
+</dd>
+    <dt><code>isChecked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The checked state the toggle button reports.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The bits of the value that becomes the new selection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_ComputeNewBits_System_Int64_System_Int64_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The checked state is passed in rather than the button itself, because the bit arithmetic has
+no other use for the control. Which state it reports depends on the interaction model: a check
+box has already toggled itself when the event arrives, a radio button with auto check disabled
+has not.</p>
+</div>
+
+
+
+
+  <a id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_CreateButton_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.CreateButton*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_CreateButton" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.CreateButton">
+  CreateButton()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates the toggle button used to represent a single flag value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override ButtonBase CreateButton()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.buttonbase">ButtonBase</a></dt>
+    <dd><p>The newly created toggle button.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_CreateButton_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The caption, the tag and the margin are applied by the base afterwards, so an implementation
+only has to provide the concrete type and the settings that are specific to it.</p>
+</div>
+
+
+
+
+  <a id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_GetChecked_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.GetChecked*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_GetChecked_System_Windows_Forms_ButtonBase_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.GetChecked(System.Windows.Forms.ButtonBase)">
+  GetChecked(ButtonBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the specified toggle button is currently checked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool GetChecked(ButtonBase button)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>button</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.buttonbase">ButtonBase</a></dt>
+    <dd><p>The toggle button to inspect.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the button is checked; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -1677,26 +1668,28 @@ public Enum? SelectedValue { get; set; }</code></pre>
 
 
 
+  <a id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_SetChecked_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.SetChecked*"></a>
 
-  <a id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_OnSelectedValueChanged_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.OnSelectedValueChanged*"></a>
-
-  <h3 id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_OnSelectedValueChanged_System_EventArgs_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.OnSelectedValueChanged(System.EventArgs)">
-  OnSelectedValueChanged(EventArgs)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_SetChecked_System_Windows_Forms_ButtonBase_System_Boolean_" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.SetChecked(System.Windows.Forms.ButtonBase,System.Boolean)">
+  SetChecked(ButtonBase, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Is called when the selected value changes, either through user interaction or programmatically.</p>
+  <div class="markdown level1 summary"><p>Sets the checked state of the specified toggle button.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void OnSelectedValueChanged(EventArgs e)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void SetChecked(ButtonBase button, bool value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>e</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></dt>
-    <dd><p>The event data.</p>
+    <dt><code>button</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.buttonbase">ButtonBase</a></dt>
+    <dd><p>The toggle button to modify.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The checked state to apply.</p>
 </dd>
   </dl>
 
@@ -1704,41 +1697,6 @@ public Enum? SelectedValue { get; set; }</code></pre>
 
 
 
-
-
-
-
-
-
-
-  <h2 class="section" id="events">Events
-</h2>
-
-
-
-  <h3 id="BB84_WinForms_Extensions_Controls_FlagsRadioButton_SelectedValueChanged" data-uid="BB84.WinForms.Extensions.Controls.FlagsRadioButton.SelectedValueChanged">
-  SelectedValueChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.cs/#L131"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Occurs when the selected value changes.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event EventHandler? SelectedValueChanged</code></pre>
-  </div>
-
-
-
-
-
-
-  <h4 class="section">Event Type</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -1750,7 +1708,7 @@ public Enum? SelectedValue { get; set; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.Designer.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsRadioButton.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

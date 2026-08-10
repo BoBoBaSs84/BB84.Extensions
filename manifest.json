@@ -98,7 +98,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.DecimalExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.DecimalExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with nullable <xref href=\"System.Decimal\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.DecimalExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with <xref href=\"System.Decimal\" data-throw-if-not-resolved=\"false\"></xref> and nullable <xref href=\"System.Decimal\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -126,7 +126,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.DoubleExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.DoubleExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with nullable <xref href=\"System.Double\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.DoubleExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with <xref href=\"System.Double\" data-throw-if-not-resolved=\"false\"></xref> and nullable <xref href=\"System.Double\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -154,7 +154,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.EnumeratorExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.EnumeratorExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with enumeration types and value types.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.EnumeratorExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with enumeration types.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -168,7 +168,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.FloatExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.FloatExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with nullable <xref href=\"System.Single\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.FloatExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with <xref href=\"System.Single\" data-throw-if-not-resolved=\"false\"></xref> and nullable <xref href=\"System.Single\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -270,17 +270,17 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Extensions.Serialization.XmlExtension.yml",
+      "source_relative_path": "api/BB84.Extensions.Serialization.XmlExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BB84.Extensions.Serialization.XmlExtension.html"
+          "relative_path": "api/BB84.Extensions.Serialization.XmlExtensions.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BB84.Extensions.Serialization.XmlExtension",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.Serialization.XmlExtension.yml\" sourcestartlinenumber=\"1\">Provides extension methods for serializing and deserializing objects to and from XML.</p>\n"
+      "Title": "BB84.Extensions.Serialization.XmlExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.Serialization.XmlExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for serializing and deserializing objects to and from XML.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -350,7 +350,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Extensions.TaskExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.Extensions.TaskExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Threading.Tasks.Task%601\" data-throw-if-not-resolved=\"false\"></xref>\nobjects, enabling additional functionality such as converting tasks to synchronous or asynchronous\nvoid methods, handling exceptions, and retrieving results safely.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Extensions.TaskExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Threading.Tasks.Task%601\" data-throw-if-not-resolved=\"false\"></xref>\nobjects, enabling additional functionality such as running tasks synchronously, handling\nexceptions, and retrieving results safely.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -365,6 +365,20 @@
       "IsMRef": true,
       "Title": "BB84.Extensions",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.WinForms.Extensions.BindableComponentExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.WinForms.Extensions.BindableComponentExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.WinForms.Extensions.BindableComponentExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.BindableComponentExtensions.yml\" sourcestartlinenumber=\"1\">Provides a general purpose data binding extension method for any bindable component.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -410,6 +424,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider<TAbstract, TConcrete>",
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider-2.yml\" sourcestartlinenumber=\"1\">Substitutes a concrete type whenever the designer asks for an instance of an abstract control type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.WinForms.Extensions.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.WinForms.Extensions.Common.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.WinForms.Extensions.Common",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BB84.WinForms.Extensions.ControlExtensions.yml",
       "output": {
         ".html": {
@@ -435,6 +477,20 @@
       "IsMRef": true,
       "Title": "BB84.WinForms.Extensions.Controls.FlagsCheckBox",
       "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.yml\" sourcestartlinenumber=\"1\">Represents a user control that displays a set of check boxes for selecting multiple values\nof an enum type marked with the <xref href=\"System.FlagsAttribute\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.WinForms.Extensions.Controls.FlagsControlBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.WinForms.Extensions.Controls.FlagsControlBase",
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.Controls.FlagsControlBase.yml\" sourcestartlinenumber=\"1\">Represents the shared implementation behind the user controls that display one toggle button\nper non-zero flag of an enum type marked with the <xref href=\"System.FlagsAttribute\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -508,58 +564,44 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.yml",
+      "source_relative_path": "api/BB84.WinForms.Extensions.FlagsControlExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.html"
+          "relative_path": "api/BB84.WinForms.Extensions.FlagsControlExtensions.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BB84.WinForms.Extensions.FlagsCheckBoxExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding and working with the <xref href=\"BB84.WinForms.Extensions.Controls.FlagsCheckBox\" data-throw-if-not-resolved=\"false\"></xref> control.</p>\n"
+      "Title": "BB84.WinForms.Extensions.FlagsControlExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.FlagsControlExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding and working with the flags controls.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.yml",
+      "source_relative_path": "api/BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html"
+          "relative_path": "api/BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BB84.WinForms.Extensions.FlagsRadioButtonExtensions",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for binding and working with the <xref href=\"BB84.WinForms.Extensions.Controls.FlagsRadioButton\" data-throw-if-not-resolved=\"false\"></xref> control.</p>\n"
+      "Title": "BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers",
+      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.yml\" sourcestartlinenumber=\"1\">Provides helpers that resolve friendly names for enum values used by the flags controls.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.yml",
+      "source_relative_path": "api/BB84.WinForms.Extensions.Helper.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.html"
+          "relative_path": "api/BB84.WinForms.Extensions.Helper.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers",
-      "Summary": "<p sourcefile=\"api/BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.yml\" sourcestartlinenumber=\"1\">Provides helpers that resolve friendly names for enum values used by the flags controls.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BB84.WinForms.Extensions.Helpers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.WinForms.Extensions.Helpers.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BB84.WinForms.Extensions.Helpers",
+      "Title": "BB84.WinForms.Extensions.Helper",
       "Summary": null
     },
     {

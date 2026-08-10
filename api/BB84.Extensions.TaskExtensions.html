@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class TaskExtensions ">
       
-      <meta name="description" content="Provides extension methods for working with  and  objects, enabling additional functionality such as converting tasks to synchronous or asynchronous void methods, handling exceptions, and retrieving results safely.">
+      <meta name="description" content="Provides extension methods for working with  and  objects, enabling additional functionality such as running tasks synchronously, handling exceptions, and retrieving results safely.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v4.6.0803.0/apiSpec/new?filename=BB84_Extensions_TaskExtensions.md&amp;value=---%0Auid%3A%20BB84.Extensions.TaskExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v5.0.0810.0/apiSpec/new?filename=BB84_Extensions_TaskExtensions.md&amp;value=---%0Auid%3A%20BB84.Extensions.TaskExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_TaskExtensions" data-uid="BB84.Extensions.TaskExtensions" class="text-break">
-Class TaskExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/TaskExtensions.cs/#L22"><i class="bi bi-code-slash"></i></a>
+Class TaskExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/TaskExtensions.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -94,8 +94,8 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
   </div>
 
   <div class="markdown summary"><p>Provides extension methods for working with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task&lt;TResult&gt;</a>
-objects, enabling additional functionality such as converting tasks to synchronous or asynchronous
-void methods, handling exceptions, and retrieving results safely.</p>
+objects, enabling additional functionality such as running tasks synchronously, handling
+exceptions, and retrieving results safely.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -146,10 +146,11 @@ void methods, handling exceptions, and retrieving results safely.</p>
 
 
   <h2 id="BB84_Extensions_TaskExtensions_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>These methods are designed to simplify task handling in scenarios where synchronous or void-returning
-behavior is required. Use caution when blocking threads or converting tasks to void, as this can lead
-to potential deadlocks or performance issues in certain environments, such as UI applications.
-Prefer SafeFireAndForget over async void for observable, testable fire-and-forget semantics.</p>
+  <div class="markdown level0 remarks"><p>These methods are designed to simplify task handling in scenarios where synchronous behavior is
+required. Use caution when blocking threads, as this can lead to potential deadlocks or
+performance issues in certain environments, such as UI applications. Prefer
+<a class="xref" href="BB84.Extensions.TaskExtensions.html#BB84_Extensions_TaskExtensions_SafeFireAndForget_System_Threading_Tasks_Task_System_Action_System_Action_System_Exception__">SafeFireAndForget(Task, Action?, Action&lt;Exception&gt;?)</a> over <code>async void</code> for observable, testable
+fire-and-forget semantics.</p>
 </div>
 
 
@@ -161,7 +162,7 @@ Prefer SafeFireAndForget over async void for observable, testable fire-and-forge
 
   <h3 id="BB84_Extensions_TaskExtensions_AsSync__1_System_Threading_Tasks_Task___0__" data-uid="BB84.Extensions.TaskExtensions.AsSync``1(System.Threading.Tasks.Task{``0})">
   AsSync&lt;T&gt;(Task&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/TaskExtensions.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/TaskExtensions.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes the specified asynchronous task synchronously and returns its result.</p>
@@ -210,7 +211,7 @@ where blocking the thread may lead to deadlocks or performance issues, such as U
 
   <h3 id="BB84_Extensions_TaskExtensions_SafeFireAndForget_System_Threading_Tasks_Task_System_Action_System_Action_System_Exception__" data-uid="BB84.Extensions.TaskExtensions.SafeFireAndForget(System.Threading.Tasks.Task,System.Action,System.Action{System.Exception})">
   SafeFireAndForget(Task, Action?, Action&lt;Exception&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/TaskExtensions.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/TaskExtensions.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Safely fire-and-forget a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> without using <code>async void</code>.
@@ -243,6 +244,12 @@ The task's completion and faulting are observed by continuations so exceptions c
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if <code class="paramref">task</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
 
 
 
@@ -250,7 +257,7 @@ The task's completion and faulting are observed by continuations so exceptions c
 
   <h3 id="BB84_Extensions_TaskExtensions_ToSafeSync_System_Threading_Tasks_Task_System_Action_System_Action_System_Exception__System_Nullable_System_TimeSpan__" data-uid="BB84.Extensions.TaskExtensions.ToSafeSync(System.Threading.Tasks.Task,System.Action,System.Action{System.Exception},System.Nullable{System.TimeSpan})">
   ToSafeSync(Task, Action?, Action&lt;Exception&gt;?, TimeSpan?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/TaskExtensions.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/TaskExtensions.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes the provided <code class="paramref">task</code> synchronously and handles exceptions safely.</p>
@@ -285,6 +292,12 @@ The task's completion and faulting are observed by continuations so exceptions c
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if <code class="paramref">task</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
 
 
 
@@ -292,7 +305,7 @@ The task's completion and faulting are observed by continuations so exceptions c
 
   <h3 id="BB84_Extensions_TaskExtensions_ToSafeSync__1_System_Threading_Tasks_Task___0__System_Action_System_Action_System_Exception__System_Nullable_System_TimeSpan__" data-uid="BB84.Extensions.TaskExtensions.ToSafeSync``1(System.Threading.Tasks.Task{``0},System.Action,System.Action{System.Exception},System.Nullable{System.TimeSpan})">
   ToSafeSync&lt;T&gt;(Task&lt;T&gt;, Action?, Action&lt;Exception&gt;?, TimeSpan?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/TaskExtensions.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/TaskExtensions.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Runs the provided <code class="paramref">task</code> and returns the result of type <code class="typeparamref">T</code>.
@@ -301,7 +314,7 @@ The <code class="paramref">onException</code> can be used, if an <a class="xref"
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T ToSafeSync&lt;T&gt;(this Task&lt;T&gt; task, Action? onCompletion = null, Action&lt;Exception&gt;? onException = null, TimeSpan? timeout = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T? ToSafeSync&lt;T&gt;(this Task&lt;T&gt; task, Action? onCompletion = null, Action&lt;Exception&gt;? onException = null, TimeSpan? timeout = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -323,7 +336,7 @@ The <code class="paramref">onException</code> can be used, if an <a class="xref"
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd><p>The result <code class="typeparamref">T</code> or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a></p>
+    <dd><p>The result of the task, or the default of <code class="typeparamref">T</code> if it faulted or timed out.</p>
 </dd>
   </dl>
 
@@ -340,6 +353,12 @@ The <code class="paramref">onException</code> can be used, if an <a class="xref"
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if <code class="paramref">task</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
 
 
 
@@ -347,7 +366,7 @@ The <code class="paramref">onException</code> can be used, if an <a class="xref"
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/TaskExtensions.cs/#L22" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/TaskExtensions.cs/#L22" class="edit-link">Edit this page</a>
         </div>
 
 

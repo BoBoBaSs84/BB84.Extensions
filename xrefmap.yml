@@ -893,6 +893,22 @@ references:
   commentId: T:BB84.Extensions.DecimalExtensions
   fullName: BB84.Extensions.DecimalExtensions
   nameWithType: DecimalExtensions
+- uid: BB84.Extensions.DecimalExtensions.For(System.Decimal,System.Action{System.Decimal})
+  name: For(decimal, Action<decimal>)
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_For_System_Decimal_System_Action_System_Decimal__
+  commentId: M:BB84.Extensions.DecimalExtensions.For(System.Decimal,System.Action{System.Decimal})
+  name.vb: For(Decimal, Action(Of Decimal))
+  fullName: BB84.Extensions.DecimalExtensions.For(decimal, System.Action<decimal>)
+  fullName.vb: BB84.Extensions.DecimalExtensions.For(Decimal, System.Action(Of Decimal))
+  nameWithType: DecimalExtensions.For(decimal, Action<decimal>)
+  nameWithType.vb: DecimalExtensions.For(Decimal, Action(Of Decimal))
+- uid: BB84.Extensions.DecimalExtensions.For*
+  name: For
+  href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_For_
+  commentId: Overload:BB84.Extensions.DecimalExtensions.For
+  isSpec: "True"
+  fullName: BB84.Extensions.DecimalExtensions.For
+  nameWithType: DecimalExtensions.For
 - uid: BB84.Extensions.DecimalExtensions.IsDefault(System.Decimal)
   name: IsDefault(decimal)
   href: api/BB84.Extensions.DecimalExtensions.html#BB84_Extensions_DecimalExtensions_IsDefault_System_Decimal_
@@ -1469,6 +1485,22 @@ references:
   fullName.vb: BB84.Extensions.EnumerableExtensions.IsNullOrEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
   nameWithType: EnumerableExtensions.IsNullOrEmpty<T>(IEnumerable<T>?)
   nameWithType.vb: EnumerableExtensions.IsNullOrEmpty(Of T)(IEnumerable(Of T))
+- uid: BB84.Extensions.EnumerableExtensions.Join(System.Collections.Generic.IEnumerable{System.String},System.String)
+  name: Join(IEnumerable<string>, string)
+  href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_Join_System_Collections_Generic_IEnumerable_System_String__System_String_
+  commentId: M:BB84.Extensions.EnumerableExtensions.Join(System.Collections.Generic.IEnumerable{System.String},System.String)
+  name.vb: Join(IEnumerable(Of String), String)
+  fullName: BB84.Extensions.EnumerableExtensions.Join(System.Collections.Generic.IEnumerable<string>, string)
+  fullName.vb: BB84.Extensions.EnumerableExtensions.Join(System.Collections.Generic.IEnumerable(Of String), String)
+  nameWithType: EnumerableExtensions.Join(IEnumerable<string>, string)
+  nameWithType.vb: EnumerableExtensions.Join(IEnumerable(Of String), String)
+- uid: BB84.Extensions.EnumerableExtensions.Join*
+  name: Join
+  href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_Join_
+  commentId: Overload:BB84.Extensions.EnumerableExtensions.Join
+  isSpec: "True"
+  fullName: BB84.Extensions.EnumerableExtensions.Join
+  nameWithType: EnumerableExtensions.Join
 - uid: BB84.Extensions.EnumerableExtensions.Randomize*
   name: Randomize
   href: api/BB84.Extensions.EnumerableExtensions.html#BB84_Extensions_EnumerableExtensions_Randomize_
@@ -2663,53 +2695,53 @@ references:
   fullName.vb: BB84.Extensions.Serialization.JsonExtensions.ToJson(Of T)(T, System.Text.Json.JsonSerializerOptions)
   nameWithType: JsonExtensions.ToJson<T>(T, JsonSerializerOptions?)
   nameWithType.vb: JsonExtensions.ToJson(Of T)(T, JsonSerializerOptions)
-- uid: BB84.Extensions.Serialization.XmlExtension
-  name: XmlExtension
-  href: api/BB84.Extensions.Serialization.XmlExtension.html
-  commentId: T:BB84.Extensions.Serialization.XmlExtension
-  fullName: BB84.Extensions.Serialization.XmlExtension
-  nameWithType: XmlExtension
-- uid: BB84.Extensions.Serialization.XmlExtension.FromXml*
+- uid: BB84.Extensions.Serialization.XmlExtensions
+  name: XmlExtensions
+  href: api/BB84.Extensions.Serialization.XmlExtensions.html
+  commentId: T:BB84.Extensions.Serialization.XmlExtensions
+  fullName: BB84.Extensions.Serialization.XmlExtensions
+  nameWithType: XmlExtensions
+- uid: BB84.Extensions.Serialization.XmlExtensions.FromXml*
   name: FromXml
-  href: api/BB84.Extensions.Serialization.XmlExtension.html#BB84_Extensions_Serialization_XmlExtension_FromXml_
-  commentId: Overload:BB84.Extensions.Serialization.XmlExtension.FromXml
+  href: api/BB84.Extensions.Serialization.XmlExtensions.html#BB84_Extensions_Serialization_XmlExtensions_FromXml_
+  commentId: Overload:BB84.Extensions.Serialization.XmlExtensions.FromXml
   isSpec: "True"
-  fullName: BB84.Extensions.Serialization.XmlExtension.FromXml
-  nameWithType: XmlExtension.FromXml
-- uid: BB84.Extensions.Serialization.XmlExtension.FromXml``1(System.String,System.Xml.Serialization.XmlRootAttribute,System.Xml.XmlReaderSettings)
+  fullName: BB84.Extensions.Serialization.XmlExtensions.FromXml
+  nameWithType: XmlExtensions.FromXml
+- uid: BB84.Extensions.Serialization.XmlExtensions.FromXml``1(System.String,System.Xml.Serialization.XmlRootAttribute,System.Xml.XmlReaderSettings)
   name: FromXml<T>(string, XmlRootAttribute, XmlReaderSettings?)
-  href: api/BB84.Extensions.Serialization.XmlExtension.html#BB84_Extensions_Serialization_XmlExtension_FromXml__1_System_String_System_Xml_Serialization_XmlRootAttribute_System_Xml_XmlReaderSettings_
-  commentId: M:BB84.Extensions.Serialization.XmlExtension.FromXml``1(System.String,System.Xml.Serialization.XmlRootAttribute,System.Xml.XmlReaderSettings)
+  href: api/BB84.Extensions.Serialization.XmlExtensions.html#BB84_Extensions_Serialization_XmlExtensions_FromXml__1_System_String_System_Xml_Serialization_XmlRootAttribute_System_Xml_XmlReaderSettings_
+  commentId: M:BB84.Extensions.Serialization.XmlExtensions.FromXml``1(System.String,System.Xml.Serialization.XmlRootAttribute,System.Xml.XmlReaderSettings)
   name.vb: FromXml(Of T)(String, XmlRootAttribute, XmlReaderSettings)
-  fullName: BB84.Extensions.Serialization.XmlExtension.FromXml<T>(string, System.Xml.Serialization.XmlRootAttribute, System.Xml.XmlReaderSettings?)
-  fullName.vb: BB84.Extensions.Serialization.XmlExtension.FromXml(Of T)(String, System.Xml.Serialization.XmlRootAttribute, System.Xml.XmlReaderSettings)
-  nameWithType: XmlExtension.FromXml<T>(string, XmlRootAttribute, XmlReaderSettings?)
-  nameWithType.vb: XmlExtension.FromXml(Of T)(String, XmlRootAttribute, XmlReaderSettings)
-- uid: BB84.Extensions.Serialization.XmlExtension.FromXml``1(System.String,System.Xml.XmlReaderSettings)
+  fullName: BB84.Extensions.Serialization.XmlExtensions.FromXml<T>(string, System.Xml.Serialization.XmlRootAttribute, System.Xml.XmlReaderSettings?)
+  fullName.vb: BB84.Extensions.Serialization.XmlExtensions.FromXml(Of T)(String, System.Xml.Serialization.XmlRootAttribute, System.Xml.XmlReaderSettings)
+  nameWithType: XmlExtensions.FromXml<T>(string, XmlRootAttribute, XmlReaderSettings?)
+  nameWithType.vb: XmlExtensions.FromXml(Of T)(String, XmlRootAttribute, XmlReaderSettings)
+- uid: BB84.Extensions.Serialization.XmlExtensions.FromXml``1(System.String,System.Xml.XmlReaderSettings)
   name: FromXml<T>(string, XmlReaderSettings?)
-  href: api/BB84.Extensions.Serialization.XmlExtension.html#BB84_Extensions_Serialization_XmlExtension_FromXml__1_System_String_System_Xml_XmlReaderSettings_
-  commentId: M:BB84.Extensions.Serialization.XmlExtension.FromXml``1(System.String,System.Xml.XmlReaderSettings)
+  href: api/BB84.Extensions.Serialization.XmlExtensions.html#BB84_Extensions_Serialization_XmlExtensions_FromXml__1_System_String_System_Xml_XmlReaderSettings_
+  commentId: M:BB84.Extensions.Serialization.XmlExtensions.FromXml``1(System.String,System.Xml.XmlReaderSettings)
   name.vb: FromXml(Of T)(String, XmlReaderSettings)
-  fullName: BB84.Extensions.Serialization.XmlExtension.FromXml<T>(string, System.Xml.XmlReaderSettings?)
-  fullName.vb: BB84.Extensions.Serialization.XmlExtension.FromXml(Of T)(String, System.Xml.XmlReaderSettings)
-  nameWithType: XmlExtension.FromXml<T>(string, XmlReaderSettings?)
-  nameWithType.vb: XmlExtension.FromXml(Of T)(String, XmlReaderSettings)
-- uid: BB84.Extensions.Serialization.XmlExtension.ToXml*
+  fullName: BB84.Extensions.Serialization.XmlExtensions.FromXml<T>(string, System.Xml.XmlReaderSettings?)
+  fullName.vb: BB84.Extensions.Serialization.XmlExtensions.FromXml(Of T)(String, System.Xml.XmlReaderSettings)
+  nameWithType: XmlExtensions.FromXml<T>(string, XmlReaderSettings?)
+  nameWithType.vb: XmlExtensions.FromXml(Of T)(String, XmlReaderSettings)
+- uid: BB84.Extensions.Serialization.XmlExtensions.ToXml*
   name: ToXml
-  href: api/BB84.Extensions.Serialization.XmlExtension.html#BB84_Extensions_Serialization_XmlExtension_ToXml_
-  commentId: Overload:BB84.Extensions.Serialization.XmlExtension.ToXml
+  href: api/BB84.Extensions.Serialization.XmlExtensions.html#BB84_Extensions_Serialization_XmlExtensions_ToXml_
+  commentId: Overload:BB84.Extensions.Serialization.XmlExtensions.ToXml
   isSpec: "True"
-  fullName: BB84.Extensions.Serialization.XmlExtension.ToXml
-  nameWithType: XmlExtension.ToXml
-- uid: BB84.Extensions.Serialization.XmlExtension.ToXml``1(``0,System.Xml.Serialization.XmlSerializerNamespaces,System.Xml.XmlWriterSettings)
+  fullName: BB84.Extensions.Serialization.XmlExtensions.ToXml
+  nameWithType: XmlExtensions.ToXml
+- uid: BB84.Extensions.Serialization.XmlExtensions.ToXml``1(``0,System.Xml.Serialization.XmlSerializerNamespaces,System.Xml.XmlWriterSettings)
   name: ToXml<T>(T, XmlSerializerNamespaces?, XmlWriterSettings?)
-  href: api/BB84.Extensions.Serialization.XmlExtension.html#BB84_Extensions_Serialization_XmlExtension_ToXml__1___0_System_Xml_Serialization_XmlSerializerNamespaces_System_Xml_XmlWriterSettings_
-  commentId: M:BB84.Extensions.Serialization.XmlExtension.ToXml``1(``0,System.Xml.Serialization.XmlSerializerNamespaces,System.Xml.XmlWriterSettings)
+  href: api/BB84.Extensions.Serialization.XmlExtensions.html#BB84_Extensions_Serialization_XmlExtensions_ToXml__1___0_System_Xml_Serialization_XmlSerializerNamespaces_System_Xml_XmlWriterSettings_
+  commentId: M:BB84.Extensions.Serialization.XmlExtensions.ToXml``1(``0,System.Xml.Serialization.XmlSerializerNamespaces,System.Xml.XmlWriterSettings)
   name.vb: ToXml(Of T)(T, XmlSerializerNamespaces, XmlWriterSettings)
-  fullName: BB84.Extensions.Serialization.XmlExtension.ToXml<T>(T, System.Xml.Serialization.XmlSerializerNamespaces?, System.Xml.XmlWriterSettings?)
-  fullName.vb: BB84.Extensions.Serialization.XmlExtension.ToXml(Of T)(T, System.Xml.Serialization.XmlSerializerNamespaces, System.Xml.XmlWriterSettings)
-  nameWithType: XmlExtension.ToXml<T>(T, XmlSerializerNamespaces?, XmlWriterSettings?)
-  nameWithType.vb: XmlExtension.ToXml(Of T)(T, XmlSerializerNamespaces, XmlWriterSettings)
+  fullName: BB84.Extensions.Serialization.XmlExtensions.ToXml<T>(T, System.Xml.Serialization.XmlSerializerNamespaces?, System.Xml.XmlWriterSettings?)
+  fullName.vb: BB84.Extensions.Serialization.XmlExtensions.ToXml(Of T)(T, System.Xml.Serialization.XmlSerializerNamespaces, System.Xml.XmlWriterSettings)
+  nameWithType: XmlExtensions.ToXml<T>(T, XmlSerializerNamespaces?, XmlWriterSettings?)
+  nameWithType.vb: XmlExtensions.ToXml(Of T)(T, XmlSerializerNamespaces, XmlWriterSettings)
 - uid: BB84.Extensions.ShortExtensions
   name: ShortExtensions
   href: api/BB84.Extensions.ShortExtensions.html
@@ -3112,150 +3144,54 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.StringExtensions.GetBytes
   nameWithType: StringExtensions.GetBytes
-- uid: BB84.Extensions.StringExtensions.GetMd5Ascii(System.String)
-  name: GetMd5Ascii(string)
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetMd5Ascii_System_String_
-  commentId: M:BB84.Extensions.StringExtensions.GetMd5Ascii(System.String)
-  name.vb: GetMd5Ascii(String)
-  fullName: BB84.Extensions.StringExtensions.GetMd5Ascii(string)
-  fullName.vb: BB84.Extensions.StringExtensions.GetMd5Ascii(String)
-  nameWithType: StringExtensions.GetMd5Ascii(string)
-  nameWithType.vb: StringExtensions.GetMd5Ascii(String)
-- uid: BB84.Extensions.StringExtensions.GetMd5Ascii*
-  name: GetMd5Ascii
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetMd5Ascii_
-  commentId: Overload:BB84.Extensions.StringExtensions.GetMd5Ascii
+- uid: BB84.Extensions.StringExtensions.GetMD5(System.String,System.Text.Encoding)
+  name: GetMD5(string, Encoding?)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetMD5_System_String_System_Text_Encoding_
+  commentId: M:BB84.Extensions.StringExtensions.GetMD5(System.String,System.Text.Encoding)
+  name.vb: GetMD5(String, Encoding)
+  fullName: BB84.Extensions.StringExtensions.GetMD5(string, System.Text.Encoding?)
+  fullName.vb: BB84.Extensions.StringExtensions.GetMD5(String, System.Text.Encoding)
+  nameWithType: StringExtensions.GetMD5(string, Encoding?)
+  nameWithType.vb: StringExtensions.GetMD5(String, Encoding)
+- uid: BB84.Extensions.StringExtensions.GetMD5*
+  name: GetMD5
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetMD5_
+  commentId: Overload:BB84.Extensions.StringExtensions.GetMD5
   isSpec: "True"
-  fullName: BB84.Extensions.StringExtensions.GetMd5Ascii
-  nameWithType: StringExtensions.GetMd5Ascii
-- uid: BB84.Extensions.StringExtensions.GetMd5Unicode(System.String)
-  name: GetMd5Unicode(string)
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetMd5Unicode_System_String_
-  commentId: M:BB84.Extensions.StringExtensions.GetMd5Unicode(System.String)
-  name.vb: GetMd5Unicode(String)
-  fullName: BB84.Extensions.StringExtensions.GetMd5Unicode(string)
-  fullName.vb: BB84.Extensions.StringExtensions.GetMd5Unicode(String)
-  nameWithType: StringExtensions.GetMd5Unicode(string)
-  nameWithType.vb: StringExtensions.GetMd5Unicode(String)
-- uid: BB84.Extensions.StringExtensions.GetMd5Unicode*
-  name: GetMd5Unicode
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetMd5Unicode_
-  commentId: Overload:BB84.Extensions.StringExtensions.GetMd5Unicode
+  fullName: BB84.Extensions.StringExtensions.GetMD5
+  nameWithType: StringExtensions.GetMD5
+- uid: BB84.Extensions.StringExtensions.GetSHA256(System.String,System.Text.Encoding)
+  name: GetSHA256(string, Encoding?)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSHA256_System_String_System_Text_Encoding_
+  commentId: M:BB84.Extensions.StringExtensions.GetSHA256(System.String,System.Text.Encoding)
+  name.vb: GetSHA256(String, Encoding)
+  fullName: BB84.Extensions.StringExtensions.GetSHA256(string, System.Text.Encoding?)
+  fullName.vb: BB84.Extensions.StringExtensions.GetSHA256(String, System.Text.Encoding)
+  nameWithType: StringExtensions.GetSHA256(string, Encoding?)
+  nameWithType.vb: StringExtensions.GetSHA256(String, Encoding)
+- uid: BB84.Extensions.StringExtensions.GetSHA256*
+  name: GetSHA256
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSHA256_
+  commentId: Overload:BB84.Extensions.StringExtensions.GetSHA256
   isSpec: "True"
-  fullName: BB84.Extensions.StringExtensions.GetMd5Unicode
-  nameWithType: StringExtensions.GetMd5Unicode
-- uid: BB84.Extensions.StringExtensions.GetMd5Utf8(System.String)
-  name: GetMd5Utf8(string)
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetMd5Utf8_System_String_
-  commentId: M:BB84.Extensions.StringExtensions.GetMd5Utf8(System.String)
-  name.vb: GetMd5Utf8(String)
-  fullName: BB84.Extensions.StringExtensions.GetMd5Utf8(string)
-  fullName.vb: BB84.Extensions.StringExtensions.GetMd5Utf8(String)
-  nameWithType: StringExtensions.GetMd5Utf8(string)
-  nameWithType.vb: StringExtensions.GetMd5Utf8(String)
-- uid: BB84.Extensions.StringExtensions.GetMd5Utf8*
-  name: GetMd5Utf8
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetMd5Utf8_
-  commentId: Overload:BB84.Extensions.StringExtensions.GetMd5Utf8
+  fullName: BB84.Extensions.StringExtensions.GetSHA256
+  nameWithType: StringExtensions.GetSHA256
+- uid: BB84.Extensions.StringExtensions.GetSHA512(System.String,System.Text.Encoding)
+  name: GetSHA512(string, Encoding?)
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSHA512_System_String_System_Text_Encoding_
+  commentId: M:BB84.Extensions.StringExtensions.GetSHA512(System.String,System.Text.Encoding)
+  name.vb: GetSHA512(String, Encoding)
+  fullName: BB84.Extensions.StringExtensions.GetSHA512(string, System.Text.Encoding?)
+  fullName.vb: BB84.Extensions.StringExtensions.GetSHA512(String, System.Text.Encoding)
+  nameWithType: StringExtensions.GetSHA512(string, Encoding?)
+  nameWithType.vb: StringExtensions.GetSHA512(String, Encoding)
+- uid: BB84.Extensions.StringExtensions.GetSHA512*
+  name: GetSHA512
+  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSHA512_
+  commentId: Overload:BB84.Extensions.StringExtensions.GetSHA512
   isSpec: "True"
-  fullName: BB84.Extensions.StringExtensions.GetMd5Utf8
-  nameWithType: StringExtensions.GetMd5Utf8
-- uid: BB84.Extensions.StringExtensions.GetSha256Ascii(System.String)
-  name: GetSha256Ascii(string)
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha256Ascii_System_String_
-  commentId: M:BB84.Extensions.StringExtensions.GetSha256Ascii(System.String)
-  name.vb: GetSha256Ascii(String)
-  fullName: BB84.Extensions.StringExtensions.GetSha256Ascii(string)
-  fullName.vb: BB84.Extensions.StringExtensions.GetSha256Ascii(String)
-  nameWithType: StringExtensions.GetSha256Ascii(string)
-  nameWithType.vb: StringExtensions.GetSha256Ascii(String)
-- uid: BB84.Extensions.StringExtensions.GetSha256Ascii*
-  name: GetSha256Ascii
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha256Ascii_
-  commentId: Overload:BB84.Extensions.StringExtensions.GetSha256Ascii
-  isSpec: "True"
-  fullName: BB84.Extensions.StringExtensions.GetSha256Ascii
-  nameWithType: StringExtensions.GetSha256Ascii
-- uid: BB84.Extensions.StringExtensions.GetSha256Unicode(System.String)
-  name: GetSha256Unicode(string)
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha256Unicode_System_String_
-  commentId: M:BB84.Extensions.StringExtensions.GetSha256Unicode(System.String)
-  name.vb: GetSha256Unicode(String)
-  fullName: BB84.Extensions.StringExtensions.GetSha256Unicode(string)
-  fullName.vb: BB84.Extensions.StringExtensions.GetSha256Unicode(String)
-  nameWithType: StringExtensions.GetSha256Unicode(string)
-  nameWithType.vb: StringExtensions.GetSha256Unicode(String)
-- uid: BB84.Extensions.StringExtensions.GetSha256Unicode*
-  name: GetSha256Unicode
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha256Unicode_
-  commentId: Overload:BB84.Extensions.StringExtensions.GetSha256Unicode
-  isSpec: "True"
-  fullName: BB84.Extensions.StringExtensions.GetSha256Unicode
-  nameWithType: StringExtensions.GetSha256Unicode
-- uid: BB84.Extensions.StringExtensions.GetSha256Utf8(System.String)
-  name: GetSha256Utf8(string)
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha256Utf8_System_String_
-  commentId: M:BB84.Extensions.StringExtensions.GetSha256Utf8(System.String)
-  name.vb: GetSha256Utf8(String)
-  fullName: BB84.Extensions.StringExtensions.GetSha256Utf8(string)
-  fullName.vb: BB84.Extensions.StringExtensions.GetSha256Utf8(String)
-  nameWithType: StringExtensions.GetSha256Utf8(string)
-  nameWithType.vb: StringExtensions.GetSha256Utf8(String)
-- uid: BB84.Extensions.StringExtensions.GetSha256Utf8*
-  name: GetSha256Utf8
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha256Utf8_
-  commentId: Overload:BB84.Extensions.StringExtensions.GetSha256Utf8
-  isSpec: "True"
-  fullName: BB84.Extensions.StringExtensions.GetSha256Utf8
-  nameWithType: StringExtensions.GetSha256Utf8
-- uid: BB84.Extensions.StringExtensions.GetSha512Ascii(System.String)
-  name: GetSha512Ascii(string)
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha512Ascii_System_String_
-  commentId: M:BB84.Extensions.StringExtensions.GetSha512Ascii(System.String)
-  name.vb: GetSha512Ascii(String)
-  fullName: BB84.Extensions.StringExtensions.GetSha512Ascii(string)
-  fullName.vb: BB84.Extensions.StringExtensions.GetSha512Ascii(String)
-  nameWithType: StringExtensions.GetSha512Ascii(string)
-  nameWithType.vb: StringExtensions.GetSha512Ascii(String)
-- uid: BB84.Extensions.StringExtensions.GetSha512Ascii*
-  name: GetSha512Ascii
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha512Ascii_
-  commentId: Overload:BB84.Extensions.StringExtensions.GetSha512Ascii
-  isSpec: "True"
-  fullName: BB84.Extensions.StringExtensions.GetSha512Ascii
-  nameWithType: StringExtensions.GetSha512Ascii
-- uid: BB84.Extensions.StringExtensions.GetSha512Unicode(System.String)
-  name: GetSha512Unicode(string)
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha512Unicode_System_String_
-  commentId: M:BB84.Extensions.StringExtensions.GetSha512Unicode(System.String)
-  name.vb: GetSha512Unicode(String)
-  fullName: BB84.Extensions.StringExtensions.GetSha512Unicode(string)
-  fullName.vb: BB84.Extensions.StringExtensions.GetSha512Unicode(String)
-  nameWithType: StringExtensions.GetSha512Unicode(string)
-  nameWithType.vb: StringExtensions.GetSha512Unicode(String)
-- uid: BB84.Extensions.StringExtensions.GetSha512Unicode*
-  name: GetSha512Unicode
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha512Unicode_
-  commentId: Overload:BB84.Extensions.StringExtensions.GetSha512Unicode
-  isSpec: "True"
-  fullName: BB84.Extensions.StringExtensions.GetSha512Unicode
-  nameWithType: StringExtensions.GetSha512Unicode
-- uid: BB84.Extensions.StringExtensions.GetSha512Utf8(System.String)
-  name: GetSha512Utf8(string)
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha512Utf8_System_String_
-  commentId: M:BB84.Extensions.StringExtensions.GetSha512Utf8(System.String)
-  name.vb: GetSha512Utf8(String)
-  fullName: BB84.Extensions.StringExtensions.GetSha512Utf8(string)
-  fullName.vb: BB84.Extensions.StringExtensions.GetSha512Utf8(String)
-  nameWithType: StringExtensions.GetSha512Utf8(string)
-  nameWithType.vb: StringExtensions.GetSha512Utf8(String)
-- uid: BB84.Extensions.StringExtensions.GetSha512Utf8*
-  name: GetSha512Utf8
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_GetSha512Utf8_
-  commentId: Overload:BB84.Extensions.StringExtensions.GetSha512Utf8
-  isSpec: "True"
-  fullName: BB84.Extensions.StringExtensions.GetSha512Utf8
-  nameWithType: StringExtensions.GetSha512Utf8
+  fullName: BB84.Extensions.StringExtensions.GetSHA512
+  nameWithType: StringExtensions.GetSHA512
 - uid: BB84.Extensions.StringExtensions.IsNotNull(System.String)
   name: IsNotNull(string?)
   href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_IsNotNull_System_String_
@@ -3352,22 +3288,6 @@ references:
   isSpec: "True"
   fullName: BB84.Extensions.StringExtensions.IsNullOrWhiteSpace
   nameWithType: StringExtensions.IsNullOrWhiteSpace
-- uid: BB84.Extensions.StringExtensions.Join(System.Collections.Generic.IEnumerable{System.String},System.String)
-  name: Join(IEnumerable<string>, string)
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_Join_System_Collections_Generic_IEnumerable_System_String__System_String_
-  commentId: M:BB84.Extensions.StringExtensions.Join(System.Collections.Generic.IEnumerable{System.String},System.String)
-  name.vb: Join(IEnumerable(Of String), String)
-  fullName: BB84.Extensions.StringExtensions.Join(System.Collections.Generic.IEnumerable<string>, string)
-  fullName.vb: BB84.Extensions.StringExtensions.Join(System.Collections.Generic.IEnumerable(Of String), String)
-  nameWithType: StringExtensions.Join(IEnumerable<string>, string)
-  nameWithType.vb: StringExtensions.Join(IEnumerable(Of String), String)
-- uid: BB84.Extensions.StringExtensions.Join*
-  name: Join
-  href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_Join_
-  commentId: Overload:BB84.Extensions.StringExtensions.Join
-  isSpec: "True"
-  fullName: BB84.Extensions.StringExtensions.Join
-  nameWithType: StringExtensions.Join
 - uid: BB84.Extensions.StringExtensions.RemoveLinebreak(System.String)
   name: RemoveLinebreak(string)
   href: api/BB84.Extensions.StringExtensions.html#BB84_Extensions_StringExtensions_RemoveLinebreak_System_String_
@@ -3485,6 +3405,28 @@ references:
   commentId: N:BB84.WinForms.Extensions
   fullName: BB84.WinForms.Extensions
   nameWithType: BB84.WinForms.Extensions
+- uid: BB84.WinForms.Extensions.BindableComponentExtensions
+  name: BindableComponentExtensions
+  href: api/BB84.WinForms.Extensions.BindableComponentExtensions.html
+  commentId: T:BB84.WinForms.Extensions.BindableComponentExtensions
+  fullName: BB84.WinForms.Extensions.BindableComponentExtensions
+  nameWithType: BindableComponentExtensions
+- uid: BB84.WinForms.Extensions.BindableComponentExtensions.WithBinding*
+  name: WithBinding
+  href: api/BB84.WinForms.Extensions.BindableComponentExtensions.html#BB84_WinForms_Extensions_BindableComponentExtensions_WithBinding_
+  commentId: Overload:BB84.WinForms.Extensions.BindableComponentExtensions.WithBinding
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.BindableComponentExtensions.WithBinding
+  nameWithType: BindableComponentExtensions.WithBinding
+- uid: BB84.WinForms.Extensions.BindableComponentExtensions.WithBinding``1(``0,System.String,System.Object,System.String,System.Boolean,System.Windows.Forms.DataSourceUpdateMode)
+  name: WithBinding<TComponent>(TComponent, string, object, string, bool, DataSourceUpdateMode)
+  href: api/BB84.WinForms.Extensions.BindableComponentExtensions.html#BB84_WinForms_Extensions_BindableComponentExtensions_WithBinding__1___0_System_String_System_Object_System_String_System_Boolean_System_Windows_Forms_DataSourceUpdateMode_
+  commentId: M:BB84.WinForms.Extensions.BindableComponentExtensions.WithBinding``1(``0,System.String,System.Object,System.String,System.Boolean,System.Windows.Forms.DataSourceUpdateMode)
+  name.vb: WithBinding(Of TComponent)(TComponent, String, Object, String, Boolean, DataSourceUpdateMode)
+  fullName: BB84.WinForms.Extensions.BindableComponentExtensions.WithBinding<TComponent>(TComponent, string, object, string, bool, System.Windows.Forms.DataSourceUpdateMode)
+  fullName.vb: BB84.WinForms.Extensions.BindableComponentExtensions.WithBinding(Of TComponent)(TComponent, String, Object, String, Boolean, System.Windows.Forms.DataSourceUpdateMode)
+  nameWithType: BindableComponentExtensions.WithBinding<TComponent>(TComponent, string, object, string, bool, DataSourceUpdateMode)
+  nameWithType.vb: BindableComponentExtensions.WithBinding(Of TComponent)(TComponent, String, Object, String, Boolean, DataSourceUpdateMode)
 - uid: BB84.WinForms.Extensions.ButtonBaseExtensions
   name: ButtonBaseExtensions
   href: api/BB84.WinForms.Extensions.ButtonBaseExtensions.html
@@ -3564,6 +3506,76 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.ComboBoxExtensions.WithSelectedItemBinding
   nameWithType: ComboBoxExtensions.WithSelectedItemBinding
+- uid: BB84.WinForms.Extensions.Common
+  name: BB84.WinForms.Extensions.Common
+  href: api/BB84.WinForms.Extensions.Common.html
+  commentId: N:BB84.WinForms.Extensions.Common
+  fullName: BB84.WinForms.Extensions.Common
+  nameWithType: BB84.WinForms.Extensions.Common
+- uid: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider`2
+  name: AbstractControlDescriptionProvider<TAbstract, TConcrete>
+  href: api/BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider-2.html
+  commentId: T:BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider`2
+  name.vb: AbstractControlDescriptionProvider(Of TAbstract, TConcrete)
+  fullName: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider<TAbstract, TConcrete>
+  fullName.vb: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider(Of TAbstract, TConcrete)
+  nameWithType: AbstractControlDescriptionProvider<TAbstract, TConcrete>
+  nameWithType.vb: AbstractControlDescriptionProvider(Of TAbstract, TConcrete)
+- uid: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider`2.#ctor
+  name: AbstractControlDescriptionProvider()
+  href: api/BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider-2.html#BB84_WinForms_Extensions_Common_AbstractControlDescriptionProvider_2__ctor
+  commentId: M:BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider`2.#ctor
+  name.vb: New()
+  fullName: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider<TAbstract, TConcrete>.AbstractControlDescriptionProvider()
+  fullName.vb: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider(Of TAbstract, TConcrete).New()
+  nameWithType: AbstractControlDescriptionProvider<TAbstract, TConcrete>.AbstractControlDescriptionProvider()
+  nameWithType.vb: AbstractControlDescriptionProvider(Of TAbstract, TConcrete).New()
+- uid: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider`2.#ctor*
+  name: AbstractControlDescriptionProvider
+  href: api/BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider-2.html#BB84_WinForms_Extensions_Common_AbstractControlDescriptionProvider_2__ctor_
+  commentId: Overload:BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider<TAbstract, TConcrete>.AbstractControlDescriptionProvider
+  fullName.vb: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider(Of TAbstract, TConcrete).New
+  nameWithType: AbstractControlDescriptionProvider<TAbstract, TConcrete>.AbstractControlDescriptionProvider
+  nameWithType.vb: AbstractControlDescriptionProvider(Of TAbstract, TConcrete).New
+- uid: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider`2.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])
+  name: CreateInstance(IServiceProvider?, Type, Type[]?, object?[]?)
+  href: api/BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider-2.html#BB84_WinForms_Extensions_Common_AbstractControlDescriptionProvider_2_CreateInstance_System_IServiceProvider_System_Type_System_Type___System_Object___
+  commentId: M:BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider`2.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])
+  name.vb: CreateInstance(IServiceProvider, Type, Type(), Object())
+  fullName: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider<TAbstract, TConcrete>.CreateInstance(System.IServiceProvider?, System.Type, System.Type[]?, object?[]?)
+  fullName.vb: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider(Of TAbstract, TConcrete).CreateInstance(System.IServiceProvider, System.Type, System.Type(), Object())
+  nameWithType: AbstractControlDescriptionProvider<TAbstract, TConcrete>.CreateInstance(IServiceProvider?, Type, Type[]?, object?[]?)
+  nameWithType.vb: AbstractControlDescriptionProvider(Of TAbstract, TConcrete).CreateInstance(IServiceProvider, Type, Type(), Object())
+- uid: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider`2.CreateInstance*
+  name: CreateInstance
+  href: api/BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider-2.html#BB84_WinForms_Extensions_Common_AbstractControlDescriptionProvider_2_CreateInstance_
+  commentId: Overload:BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider`2.CreateInstance
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider<TAbstract, TConcrete>.CreateInstance
+  fullName.vb: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider(Of TAbstract, TConcrete).CreateInstance
+  nameWithType: AbstractControlDescriptionProvider<TAbstract, TConcrete>.CreateInstance
+  nameWithType.vb: AbstractControlDescriptionProvider(Of TAbstract, TConcrete).CreateInstance
+- uid: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider`2.GetReflectionType(System.Type,System.Object)
+  name: GetReflectionType(Type, object?)
+  href: api/BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider-2.html#BB84_WinForms_Extensions_Common_AbstractControlDescriptionProvider_2_GetReflectionType_System_Type_System_Object_
+  commentId: M:BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider`2.GetReflectionType(System.Type,System.Object)
+  name.vb: GetReflectionType(Type, Object)
+  fullName: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider<TAbstract, TConcrete>.GetReflectionType(System.Type, object?)
+  fullName.vb: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider(Of TAbstract, TConcrete).GetReflectionType(System.Type, Object)
+  nameWithType: AbstractControlDescriptionProvider<TAbstract, TConcrete>.GetReflectionType(Type, object?)
+  nameWithType.vb: AbstractControlDescriptionProvider(Of TAbstract, TConcrete).GetReflectionType(Type, Object)
+- uid: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider`2.GetReflectionType*
+  name: GetReflectionType
+  href: api/BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider-2.html#BB84_WinForms_Extensions_Common_AbstractControlDescriptionProvider_2_GetReflectionType_
+  commentId: Overload:BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider`2.GetReflectionType
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider<TAbstract, TConcrete>.GetReflectionType
+  fullName.vb: BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider(Of TAbstract, TConcrete).GetReflectionType
+  nameWithType: AbstractControlDescriptionProvider<TAbstract, TConcrete>.GetReflectionType
+  nameWithType.vb: AbstractControlDescriptionProvider(Of TAbstract, TConcrete).GetReflectionType
 - uid: BB84.WinForms.Extensions.ControlExtensions
   name: ControlExtensions
   href: api/BB84.WinForms.Extensions.ControlExtensions.html
@@ -3646,224 +3658,337 @@ references:
   commentId: T:BB84.WinForms.Extensions.Controls.FlagsCheckBox
   fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox
   nameWithType: FlagsCheckBox
-- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.#ctor
-  name: FlagsCheckBox()
-  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox__ctor
-  commentId: M:BB84.WinForms.Extensions.Controls.FlagsCheckBox.#ctor
+- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.AttachToggleHandler(System.Windows.Forms.ButtonBase)
+  name: AttachToggleHandler(ButtonBase)
+  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_AttachToggleHandler_System_Windows_Forms_ButtonBase_
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsCheckBox.AttachToggleHandler(System.Windows.Forms.ButtonBase)
+  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.AttachToggleHandler(System.Windows.Forms.ButtonBase)
+  nameWithType: FlagsCheckBox.AttachToggleHandler(ButtonBase)
+- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.AttachToggleHandler*
+  name: AttachToggleHandler
+  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_AttachToggleHandler_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsCheckBox.AttachToggleHandler
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.AttachToggleHandler
+  nameWithType: FlagsCheckBox.AttachToggleHandler
+- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.ComputeNewBits(System.Int64,System.Int64,System.Boolean)
+  name: ComputeNewBits(long, long, bool)
+  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_ComputeNewBits_System_Int64_System_Int64_System_Boolean_
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsCheckBox.ComputeNewBits(System.Int64,System.Int64,System.Boolean)
+  name.vb: ComputeNewBits(Long, Long, Boolean)
+  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.ComputeNewBits(long, long, bool)
+  fullName.vb: BB84.WinForms.Extensions.Controls.FlagsCheckBox.ComputeNewBits(Long, Long, Boolean)
+  nameWithType: FlagsCheckBox.ComputeNewBits(long, long, bool)
+  nameWithType.vb: FlagsCheckBox.ComputeNewBits(Long, Long, Boolean)
+- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.ComputeNewBits*
+  name: ComputeNewBits
+  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_ComputeNewBits_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsCheckBox.ComputeNewBits
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.ComputeNewBits
+  nameWithType: FlagsCheckBox.ComputeNewBits
+- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.CreateButton
+  name: CreateButton()
+  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_CreateButton
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsCheckBox.CreateButton
+  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.CreateButton()
+  nameWithType: FlagsCheckBox.CreateButton()
+- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.CreateButton*
+  name: CreateButton
+  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_CreateButton_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsCheckBox.CreateButton
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.CreateButton
+  nameWithType: FlagsCheckBox.CreateButton
+- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.GetChecked(System.Windows.Forms.ButtonBase)
+  name: GetChecked(ButtonBase)
+  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_GetChecked_System_Windows_Forms_ButtonBase_
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsCheckBox.GetChecked(System.Windows.Forms.ButtonBase)
+  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.GetChecked(System.Windows.Forms.ButtonBase)
+  nameWithType: FlagsCheckBox.GetChecked(ButtonBase)
+- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.GetChecked*
+  name: GetChecked
+  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_GetChecked_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsCheckBox.GetChecked
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.GetChecked
+  nameWithType: FlagsCheckBox.GetChecked
+- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.SetChecked(System.Windows.Forms.ButtonBase,System.Boolean)
+  name: SetChecked(ButtonBase, bool)
+  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_SetChecked_System_Windows_Forms_ButtonBase_System_Boolean_
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsCheckBox.SetChecked(System.Windows.Forms.ButtonBase,System.Boolean)
+  name.vb: SetChecked(ButtonBase, Boolean)
+  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.SetChecked(System.Windows.Forms.ButtonBase, bool)
+  fullName.vb: BB84.WinForms.Extensions.Controls.FlagsCheckBox.SetChecked(System.Windows.Forms.ButtonBase, Boolean)
+  nameWithType: FlagsCheckBox.SetChecked(ButtonBase, bool)
+  nameWithType.vb: FlagsCheckBox.SetChecked(ButtonBase, Boolean)
+- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.SetChecked*
+  name: SetChecked
+  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_SetChecked_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsCheckBox.SetChecked
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.SetChecked
+  nameWithType: FlagsCheckBox.SetChecked
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase
+  name: FlagsControlBase
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html
+  commentId: T:BB84.WinForms.Extensions.Controls.FlagsControlBase
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase
+  nameWithType: FlagsControlBase
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.#ctor
+  name: FlagsControlBase()
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase__ctor
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsControlBase.#ctor
   name.vb: New()
-  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.FlagsCheckBox()
-  fullName.vb: BB84.WinForms.Extensions.Controls.FlagsCheckBox.New()
-  nameWithType: FlagsCheckBox.FlagsCheckBox()
-  nameWithType.vb: FlagsCheckBox.New()
-- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.#ctor*
-  name: FlagsCheckBox
-  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox__ctor_
-  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsCheckBox.#ctor
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.FlagsControlBase()
+  fullName.vb: BB84.WinForms.Extensions.Controls.FlagsControlBase.New()
+  nameWithType: FlagsControlBase.FlagsControlBase()
+  nameWithType.vb: FlagsControlBase.New()
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.#ctor*
+  name: FlagsControlBase
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase__ctor_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsControlBase.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.FlagsCheckBox
-  fullName.vb: BB84.WinForms.Extensions.Controls.FlagsCheckBox.New
-  nameWithType: FlagsCheckBox.FlagsCheckBox
-  nameWithType.vb: FlagsCheckBox.New
-- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.DisplayNameResolver
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.FlagsControlBase
+  fullName.vb: BB84.WinForms.Extensions.Controls.FlagsControlBase.New
+  nameWithType: FlagsControlBase.FlagsControlBase
+  nameWithType.vb: FlagsControlBase.New
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.AttachToggleHandler(System.Windows.Forms.ButtonBase)
+  name: AttachToggleHandler(ButtonBase)
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_AttachToggleHandler_System_Windows_Forms_ButtonBase_
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsControlBase.AttachToggleHandler(System.Windows.Forms.ButtonBase)
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.AttachToggleHandler(System.Windows.Forms.ButtonBase)
+  nameWithType: FlagsControlBase.AttachToggleHandler(ButtonBase)
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.AttachToggleHandler*
+  name: AttachToggleHandler
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_AttachToggleHandler_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsControlBase.AttachToggleHandler
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.AttachToggleHandler
+  nameWithType: FlagsControlBase.AttachToggleHandler
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.ComputeNewBits(System.Int64,System.Int64,System.Boolean)
+  name: ComputeNewBits(long, long, bool)
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_ComputeNewBits_System_Int64_System_Int64_System_Boolean_
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsControlBase.ComputeNewBits(System.Int64,System.Int64,System.Boolean)
+  name.vb: ComputeNewBits(Long, Long, Boolean)
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.ComputeNewBits(long, long, bool)
+  fullName.vb: BB84.WinForms.Extensions.Controls.FlagsControlBase.ComputeNewBits(Long, Long, Boolean)
+  nameWithType: FlagsControlBase.ComputeNewBits(long, long, bool)
+  nameWithType.vb: FlagsControlBase.ComputeNewBits(Long, Long, Boolean)
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.ComputeNewBits*
+  name: ComputeNewBits
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_ComputeNewBits_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsControlBase.ComputeNewBits
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.ComputeNewBits
+  nameWithType: FlagsControlBase.ComputeNewBits
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.CreateButton
+  name: CreateButton()
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_CreateButton
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsControlBase.CreateButton
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.CreateButton()
+  nameWithType: FlagsControlBase.CreateButton()
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.CreateButton*
+  name: CreateButton
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_CreateButton_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsControlBase.CreateButton
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.CreateButton
+  nameWithType: FlagsControlBase.CreateButton
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.DisplayNameResolver
   name: DisplayNameResolver
-  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_DisplayNameResolver
-  commentId: P:BB84.WinForms.Extensions.Controls.FlagsCheckBox.DisplayNameResolver
-  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.DisplayNameResolver
-  nameWithType: FlagsCheckBox.DisplayNameResolver
-- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.DisplayNameResolver*
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_DisplayNameResolver
+  commentId: P:BB84.WinForms.Extensions.Controls.FlagsControlBase.DisplayNameResolver
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.DisplayNameResolver
+  nameWithType: FlagsControlBase.DisplayNameResolver
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.DisplayNameResolver*
   name: DisplayNameResolver
-  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_DisplayNameResolver_
-  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsCheckBox.DisplayNameResolver
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_DisplayNameResolver_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsControlBase.DisplayNameResolver
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.DisplayNameResolver
-  nameWithType: FlagsCheckBox.DisplayNameResolver
-- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.Dispose(System.Boolean)
-  name: Dispose(bool)
-  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_Dispose_System_Boolean_
-  commentId: M:BB84.WinForms.Extensions.Controls.FlagsCheckBox.Dispose(System.Boolean)
-  name.vb: Dispose(Boolean)
-  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.Dispose(bool)
-  fullName.vb: BB84.WinForms.Extensions.Controls.FlagsCheckBox.Dispose(Boolean)
-  nameWithType: FlagsCheckBox.Dispose(bool)
-  nameWithType.vb: FlagsCheckBox.Dispose(Boolean)
-- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.Dispose*
-  name: Dispose
-  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_Dispose_
-  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsCheckBox.Dispose
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.Dispose
-  nameWithType: FlagsCheckBox.Dispose
-- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.EnumType
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.DisplayNameResolver
+  nameWithType: FlagsControlBase.DisplayNameResolver
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.EnumType
   name: EnumType
-  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_EnumType
-  commentId: P:BB84.WinForms.Extensions.Controls.FlagsCheckBox.EnumType
-  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.EnumType
-  nameWithType: FlagsCheckBox.EnumType
-- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.EnumType*
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_EnumType
+  commentId: P:BB84.WinForms.Extensions.Controls.FlagsControlBase.EnumType
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.EnumType
+  nameWithType: FlagsControlBase.EnumType
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.EnumType*
   name: EnumType
-  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_EnumType_
-  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsCheckBox.EnumType
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_EnumType_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsControlBase.EnumType
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.EnumType
-  nameWithType: FlagsCheckBox.EnumType
-- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.FlowDirection
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.EnumType
+  nameWithType: FlagsControlBase.EnumType
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.FlowDirection
   name: FlowDirection
-  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_FlowDirection
-  commentId: P:BB84.WinForms.Extensions.Controls.FlagsCheckBox.FlowDirection
-  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.FlowDirection
-  nameWithType: FlagsCheckBox.FlowDirection
-- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.FlowDirection*
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_FlowDirection
+  commentId: P:BB84.WinForms.Extensions.Controls.FlagsControlBase.FlowDirection
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.FlowDirection
+  nameWithType: FlagsControlBase.FlowDirection
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.FlowDirection*
   name: FlowDirection
-  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_FlowDirection_
-  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsCheckBox.FlowDirection
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_FlowDirection_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsControlBase.FlowDirection
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.FlowDirection
-  nameWithType: FlagsCheckBox.FlowDirection
-- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.OnSelectedValueChanged(System.EventArgs)
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.FlowDirection
+  nameWithType: FlagsControlBase.FlowDirection
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.GetChecked(System.Windows.Forms.ButtonBase)
+  name: GetChecked(ButtonBase)
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_GetChecked_System_Windows_Forms_ButtonBase_
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsControlBase.GetChecked(System.Windows.Forms.ButtonBase)
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.GetChecked(System.Windows.Forms.ButtonBase)
+  nameWithType: FlagsControlBase.GetChecked(ButtonBase)
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.GetChecked*
+  name: GetChecked
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_GetChecked_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsControlBase.GetChecked
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.GetChecked
+  nameWithType: FlagsControlBase.GetChecked
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.OnButtonToggled(System.Object,System.EventArgs)
+  name: OnButtonToggled(object?, EventArgs)
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_OnButtonToggled_System_Object_System_EventArgs_
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsControlBase.OnButtonToggled(System.Object,System.EventArgs)
+  name.vb: OnButtonToggled(Object, EventArgs)
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.OnButtonToggled(object?, System.EventArgs)
+  fullName.vb: BB84.WinForms.Extensions.Controls.FlagsControlBase.OnButtonToggled(Object, System.EventArgs)
+  nameWithType: FlagsControlBase.OnButtonToggled(object?, EventArgs)
+  nameWithType.vb: FlagsControlBase.OnButtonToggled(Object, EventArgs)
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.OnButtonToggled*
+  name: OnButtonToggled
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_OnButtonToggled_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsControlBase.OnButtonToggled
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.OnButtonToggled
+  nameWithType: FlagsControlBase.OnButtonToggled
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.OnSelectedValueChanged(System.EventArgs)
   name: OnSelectedValueChanged(EventArgs)
-  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_OnSelectedValueChanged_System_EventArgs_
-  commentId: M:BB84.WinForms.Extensions.Controls.FlagsCheckBox.OnSelectedValueChanged(System.EventArgs)
-  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.OnSelectedValueChanged(System.EventArgs)
-  nameWithType: FlagsCheckBox.OnSelectedValueChanged(EventArgs)
-- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.OnSelectedValueChanged*
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_OnSelectedValueChanged_System_EventArgs_
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsControlBase.OnSelectedValueChanged(System.EventArgs)
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.OnSelectedValueChanged(System.EventArgs)
+  nameWithType: FlagsControlBase.OnSelectedValueChanged(EventArgs)
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.OnSelectedValueChanged*
   name: OnSelectedValueChanged
-  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_OnSelectedValueChanged_
-  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsCheckBox.OnSelectedValueChanged
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_OnSelectedValueChanged_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsControlBase.OnSelectedValueChanged
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.OnSelectedValueChanged
-  nameWithType: FlagsCheckBox.OnSelectedValueChanged
-- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.SelectedValue
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.OnSelectedValueChanged
+  nameWithType: FlagsControlBase.OnSelectedValueChanged
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.SelectedValue
   name: SelectedValue
-  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_SelectedValue
-  commentId: P:BB84.WinForms.Extensions.Controls.FlagsCheckBox.SelectedValue
-  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.SelectedValue
-  nameWithType: FlagsCheckBox.SelectedValue
-- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.SelectedValue*
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_SelectedValue
+  commentId: P:BB84.WinForms.Extensions.Controls.FlagsControlBase.SelectedValue
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.SelectedValue
+  nameWithType: FlagsControlBase.SelectedValue
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.SelectedValue*
   name: SelectedValue
-  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_SelectedValue_
-  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsCheckBox.SelectedValue
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_SelectedValue_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsControlBase.SelectedValue
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.SelectedValue
-  nameWithType: FlagsCheckBox.SelectedValue
-- uid: BB84.WinForms.Extensions.Controls.FlagsCheckBox.SelectedValueChanged
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.SelectedValue
+  nameWithType: FlagsControlBase.SelectedValue
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.SelectedValueChanged
   name: SelectedValueChanged
-  href: api/BB84.WinForms.Extensions.Controls.FlagsCheckBox.html#BB84_WinForms_Extensions_Controls_FlagsCheckBox_SelectedValueChanged
-  commentId: E:BB84.WinForms.Extensions.Controls.FlagsCheckBox.SelectedValueChanged
-  fullName: BB84.WinForms.Extensions.Controls.FlagsCheckBox.SelectedValueChanged
-  nameWithType: FlagsCheckBox.SelectedValueChanged
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_SelectedValueChanged
+  commentId: E:BB84.WinForms.Extensions.Controls.FlagsControlBase.SelectedValueChanged
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.SelectedValueChanged
+  nameWithType: FlagsControlBase.SelectedValueChanged
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.SetChecked(System.Windows.Forms.ButtonBase,System.Boolean)
+  name: SetChecked(ButtonBase, bool)
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_SetChecked_System_Windows_Forms_ButtonBase_System_Boolean_
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsControlBase.SetChecked(System.Windows.Forms.ButtonBase,System.Boolean)
+  name.vb: SetChecked(ButtonBase, Boolean)
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.SetChecked(System.Windows.Forms.ButtonBase, bool)
+  fullName.vb: BB84.WinForms.Extensions.Controls.FlagsControlBase.SetChecked(System.Windows.Forms.ButtonBase, Boolean)
+  nameWithType: FlagsControlBase.SetChecked(ButtonBase, bool)
+  nameWithType.vb: FlagsControlBase.SetChecked(ButtonBase, Boolean)
+- uid: BB84.WinForms.Extensions.Controls.FlagsControlBase.SetChecked*
+  name: SetChecked
+  href: api/BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_SetChecked_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsControlBase.SetChecked
+  isSpec: "True"
+  fullName: BB84.WinForms.Extensions.Controls.FlagsControlBase.SetChecked
+  nameWithType: FlagsControlBase.SetChecked
 - uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton
   name: FlagsRadioButton
   href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html
   commentId: T:BB84.WinForms.Extensions.Controls.FlagsRadioButton
   fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton
   nameWithType: FlagsRadioButton
-- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.#ctor
-  name: FlagsRadioButton()
-  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton__ctor
-  commentId: M:BB84.WinForms.Extensions.Controls.FlagsRadioButton.#ctor
-  name.vb: New()
-  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.FlagsRadioButton()
-  fullName.vb: BB84.WinForms.Extensions.Controls.FlagsRadioButton.New()
-  nameWithType: FlagsRadioButton.FlagsRadioButton()
-  nameWithType.vb: FlagsRadioButton.New()
-- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.#ctor*
-  name: FlagsRadioButton
-  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton__ctor_
-  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsRadioButton.#ctor
+- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.AttachToggleHandler(System.Windows.Forms.ButtonBase)
+  name: AttachToggleHandler(ButtonBase)
+  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_AttachToggleHandler_System_Windows_Forms_ButtonBase_
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsRadioButton.AttachToggleHandler(System.Windows.Forms.ButtonBase)
+  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.AttachToggleHandler(System.Windows.Forms.ButtonBase)
+  nameWithType: FlagsRadioButton.AttachToggleHandler(ButtonBase)
+- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.AttachToggleHandler*
+  name: AttachToggleHandler
+  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_AttachToggleHandler_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsRadioButton.AttachToggleHandler
   isSpec: "True"
-  name.vb: New
-  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.FlagsRadioButton
-  fullName.vb: BB84.WinForms.Extensions.Controls.FlagsRadioButton.New
-  nameWithType: FlagsRadioButton.FlagsRadioButton
-  nameWithType.vb: FlagsRadioButton.New
-- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.DisplayNameResolver
-  name: DisplayNameResolver
-  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_DisplayNameResolver
-  commentId: P:BB84.WinForms.Extensions.Controls.FlagsRadioButton.DisplayNameResolver
-  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.DisplayNameResolver
-  nameWithType: FlagsRadioButton.DisplayNameResolver
-- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.DisplayNameResolver*
-  name: DisplayNameResolver
-  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_DisplayNameResolver_
-  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsRadioButton.DisplayNameResolver
+  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.AttachToggleHandler
+  nameWithType: FlagsRadioButton.AttachToggleHandler
+- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.ComputeNewBits(System.Int64,System.Int64,System.Boolean)
+  name: ComputeNewBits(long, long, bool)
+  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_ComputeNewBits_System_Int64_System_Int64_System_Boolean_
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsRadioButton.ComputeNewBits(System.Int64,System.Int64,System.Boolean)
+  name.vb: ComputeNewBits(Long, Long, Boolean)
+  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.ComputeNewBits(long, long, bool)
+  fullName.vb: BB84.WinForms.Extensions.Controls.FlagsRadioButton.ComputeNewBits(Long, Long, Boolean)
+  nameWithType: FlagsRadioButton.ComputeNewBits(long, long, bool)
+  nameWithType.vb: FlagsRadioButton.ComputeNewBits(Long, Long, Boolean)
+- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.ComputeNewBits*
+  name: ComputeNewBits
+  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_ComputeNewBits_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsRadioButton.ComputeNewBits
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.DisplayNameResolver
-  nameWithType: FlagsRadioButton.DisplayNameResolver
-- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.Dispose(System.Boolean)
-  name: Dispose(bool)
-  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_Dispose_System_Boolean_
-  commentId: M:BB84.WinForms.Extensions.Controls.FlagsRadioButton.Dispose(System.Boolean)
-  name.vb: Dispose(Boolean)
-  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.Dispose(bool)
-  fullName.vb: BB84.WinForms.Extensions.Controls.FlagsRadioButton.Dispose(Boolean)
-  nameWithType: FlagsRadioButton.Dispose(bool)
-  nameWithType.vb: FlagsRadioButton.Dispose(Boolean)
-- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.Dispose*
-  name: Dispose
-  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_Dispose_
-  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsRadioButton.Dispose
+  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.ComputeNewBits
+  nameWithType: FlagsRadioButton.ComputeNewBits
+- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.CreateButton
+  name: CreateButton()
+  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_CreateButton
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsRadioButton.CreateButton
+  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.CreateButton()
+  nameWithType: FlagsRadioButton.CreateButton()
+- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.CreateButton*
+  name: CreateButton
+  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_CreateButton_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsRadioButton.CreateButton
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.Dispose
-  nameWithType: FlagsRadioButton.Dispose
-- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.EnumType
-  name: EnumType
-  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_EnumType
-  commentId: P:BB84.WinForms.Extensions.Controls.FlagsRadioButton.EnumType
-  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.EnumType
-  nameWithType: FlagsRadioButton.EnumType
-- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.EnumType*
-  name: EnumType
-  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_EnumType_
-  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsRadioButton.EnumType
+  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.CreateButton
+  nameWithType: FlagsRadioButton.CreateButton
+- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.GetChecked(System.Windows.Forms.ButtonBase)
+  name: GetChecked(ButtonBase)
+  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_GetChecked_System_Windows_Forms_ButtonBase_
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsRadioButton.GetChecked(System.Windows.Forms.ButtonBase)
+  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.GetChecked(System.Windows.Forms.ButtonBase)
+  nameWithType: FlagsRadioButton.GetChecked(ButtonBase)
+- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.GetChecked*
+  name: GetChecked
+  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_GetChecked_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsRadioButton.GetChecked
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.EnumType
-  nameWithType: FlagsRadioButton.EnumType
-- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.FlowDirection
-  name: FlowDirection
-  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_FlowDirection
-  commentId: P:BB84.WinForms.Extensions.Controls.FlagsRadioButton.FlowDirection
-  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.FlowDirection
-  nameWithType: FlagsRadioButton.FlowDirection
-- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.FlowDirection*
-  name: FlowDirection
-  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_FlowDirection_
-  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsRadioButton.FlowDirection
+  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.GetChecked
+  nameWithType: FlagsRadioButton.GetChecked
+- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.SetChecked(System.Windows.Forms.ButtonBase,System.Boolean)
+  name: SetChecked(ButtonBase, bool)
+  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_SetChecked_System_Windows_Forms_ButtonBase_System_Boolean_
+  commentId: M:BB84.WinForms.Extensions.Controls.FlagsRadioButton.SetChecked(System.Windows.Forms.ButtonBase,System.Boolean)
+  name.vb: SetChecked(ButtonBase, Boolean)
+  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.SetChecked(System.Windows.Forms.ButtonBase, bool)
+  fullName.vb: BB84.WinForms.Extensions.Controls.FlagsRadioButton.SetChecked(System.Windows.Forms.ButtonBase, Boolean)
+  nameWithType: FlagsRadioButton.SetChecked(ButtonBase, bool)
+  nameWithType.vb: FlagsRadioButton.SetChecked(ButtonBase, Boolean)
+- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.SetChecked*
+  name: SetChecked
+  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_SetChecked_
+  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsRadioButton.SetChecked
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.FlowDirection
-  nameWithType: FlagsRadioButton.FlowDirection
-- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.OnSelectedValueChanged(System.EventArgs)
-  name: OnSelectedValueChanged(EventArgs)
-  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_OnSelectedValueChanged_System_EventArgs_
-  commentId: M:BB84.WinForms.Extensions.Controls.FlagsRadioButton.OnSelectedValueChanged(System.EventArgs)
-  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.OnSelectedValueChanged(System.EventArgs)
-  nameWithType: FlagsRadioButton.OnSelectedValueChanged(EventArgs)
-- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.OnSelectedValueChanged*
-  name: OnSelectedValueChanged
-  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_OnSelectedValueChanged_
-  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsRadioButton.OnSelectedValueChanged
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.OnSelectedValueChanged
-  nameWithType: FlagsRadioButton.OnSelectedValueChanged
-- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.SelectedValue
-  name: SelectedValue
-  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_SelectedValue
-  commentId: P:BB84.WinForms.Extensions.Controls.FlagsRadioButton.SelectedValue
-  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.SelectedValue
-  nameWithType: FlagsRadioButton.SelectedValue
-- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.SelectedValue*
-  name: SelectedValue
-  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_SelectedValue_
-  commentId: Overload:BB84.WinForms.Extensions.Controls.FlagsRadioButton.SelectedValue
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.SelectedValue
-  nameWithType: FlagsRadioButton.SelectedValue
-- uid: BB84.WinForms.Extensions.Controls.FlagsRadioButton.SelectedValueChanged
-  name: SelectedValueChanged
-  href: api/BB84.WinForms.Extensions.Controls.FlagsRadioButton.html#BB84_WinForms_Extensions_Controls_FlagsRadioButton_SelectedValueChanged
-  commentId: E:BB84.WinForms.Extensions.Controls.FlagsRadioButton.SelectedValueChanged
-  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.SelectedValueChanged
-  nameWithType: FlagsRadioButton.SelectedValueChanged
+  fullName: BB84.WinForms.Extensions.Controls.FlagsRadioButton.SetChecked
+  nameWithType: FlagsRadioButton.SetChecked
 - uid: BB84.WinForms.Extensions.DataGridExtensions
   name: DataGridExtensions
   href: api/BB84.WinForms.Extensions.DataGridExtensions.html
@@ -3946,197 +4071,129 @@ references:
   isSpec: "True"
   fullName: BB84.WinForms.Extensions.DateTimePickerExtensions.WithValueBinding
   nameWithType: DateTimePickerExtensions.WithValueBinding
-- uid: BB84.WinForms.Extensions.FlagsCheckBoxExtensions
-  name: FlagsCheckBoxExtensions
-  href: api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.html
-  commentId: T:BB84.WinForms.Extensions.FlagsCheckBoxExtensions
-  fullName: BB84.WinForms.Extensions.FlagsCheckBoxExtensions
-  nameWithType: FlagsCheckBoxExtensions
-- uid: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDescriptionName(BB84.WinForms.Extensions.Controls.FlagsCheckBox)
-  name: WithDescriptionName(FlagsCheckBox)
-  href: api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.html#BB84_WinForms_Extensions_FlagsCheckBoxExtensions_WithDescriptionName_BB84_WinForms_Extensions_Controls_FlagsCheckBox_
-  commentId: M:BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDescriptionName(BB84.WinForms.Extensions.Controls.FlagsCheckBox)
-  fullName: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDescriptionName(BB84.WinForms.Extensions.Controls.FlagsCheckBox)
-  nameWithType: FlagsCheckBoxExtensions.WithDescriptionName(FlagsCheckBox)
-- uid: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDescriptionName*
+- uid: BB84.WinForms.Extensions.FlagsControlExtensions
+  name: FlagsControlExtensions
+  href: api/BB84.WinForms.Extensions.FlagsControlExtensions.html
+  commentId: T:BB84.WinForms.Extensions.FlagsControlExtensions
+  fullName: BB84.WinForms.Extensions.FlagsControlExtensions
+  nameWithType: FlagsControlExtensions
+- uid: BB84.WinForms.Extensions.FlagsControlExtensions.WithDescriptionName*
   name: WithDescriptionName
-  href: api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.html#BB84_WinForms_Extensions_FlagsCheckBoxExtensions_WithDescriptionName_
-  commentId: Overload:BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDescriptionName
+  href: api/BB84.WinForms.Extensions.FlagsControlExtensions.html#BB84_WinForms_Extensions_FlagsControlExtensions_WithDescriptionName_
+  commentId: Overload:BB84.WinForms.Extensions.FlagsControlExtensions.WithDescriptionName
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDescriptionName
-  nameWithType: FlagsCheckBoxExtensions.WithDescriptionName
-- uid: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDisplayName(BB84.WinForms.Extensions.Controls.FlagsCheckBox)
-  name: WithDisplayName(FlagsCheckBox)
-  href: api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.html#BB84_WinForms_Extensions_FlagsCheckBoxExtensions_WithDisplayName_BB84_WinForms_Extensions_Controls_FlagsCheckBox_
-  commentId: M:BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDisplayName(BB84.WinForms.Extensions.Controls.FlagsCheckBox)
-  fullName: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDisplayName(BB84.WinForms.Extensions.Controls.FlagsCheckBox)
-  nameWithType: FlagsCheckBoxExtensions.WithDisplayName(FlagsCheckBox)
-- uid: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDisplayName*
+  fullName: BB84.WinForms.Extensions.FlagsControlExtensions.WithDescriptionName
+  nameWithType: FlagsControlExtensions.WithDescriptionName
+- uid: BB84.WinForms.Extensions.FlagsControlExtensions.WithDescriptionName``1(``0)
+  name: WithDescriptionName<TControl>(TControl)
+  href: api/BB84.WinForms.Extensions.FlagsControlExtensions.html#BB84_WinForms_Extensions_FlagsControlExtensions_WithDescriptionName__1___0_
+  commentId: M:BB84.WinForms.Extensions.FlagsControlExtensions.WithDescriptionName``1(``0)
+  name.vb: WithDescriptionName(Of TControl)(TControl)
+  fullName: BB84.WinForms.Extensions.FlagsControlExtensions.WithDescriptionName<TControl>(TControl)
+  fullName.vb: BB84.WinForms.Extensions.FlagsControlExtensions.WithDescriptionName(Of TControl)(TControl)
+  nameWithType: FlagsControlExtensions.WithDescriptionName<TControl>(TControl)
+  nameWithType.vb: FlagsControlExtensions.WithDescriptionName(Of TControl)(TControl)
+- uid: BB84.WinForms.Extensions.FlagsControlExtensions.WithDisplayName*
   name: WithDisplayName
-  href: api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.html#BB84_WinForms_Extensions_FlagsCheckBoxExtensions_WithDisplayName_
-  commentId: Overload:BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDisplayName
+  href: api/BB84.WinForms.Extensions.FlagsControlExtensions.html#BB84_WinForms_Extensions_FlagsControlExtensions_WithDisplayName_
+  commentId: Overload:BB84.WinForms.Extensions.FlagsControlExtensions.WithDisplayName
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDisplayName
-  nameWithType: FlagsCheckBoxExtensions.WithDisplayName
-- uid: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDisplayNameResolver(BB84.WinForms.Extensions.Controls.FlagsCheckBox,System.Func{System.Enum,System.String})
-  name: WithDisplayNameResolver(FlagsCheckBox, Func<Enum, string>)
-  href: api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.html#BB84_WinForms_Extensions_FlagsCheckBoxExtensions_WithDisplayNameResolver_BB84_WinForms_Extensions_Controls_FlagsCheckBox_System_Func_System_Enum_System_String__
-  commentId: M:BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDisplayNameResolver(BB84.WinForms.Extensions.Controls.FlagsCheckBox,System.Func{System.Enum,System.String})
-  name.vb: WithDisplayNameResolver(FlagsCheckBox, Func(Of Enum, String))
-  fullName: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDisplayNameResolver(BB84.WinForms.Extensions.Controls.FlagsCheckBox, System.Func<System.Enum, string>)
-  fullName.vb: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDisplayNameResolver(BB84.WinForms.Extensions.Controls.FlagsCheckBox, System.Func(Of System.Enum, String))
-  nameWithType: FlagsCheckBoxExtensions.WithDisplayNameResolver(FlagsCheckBox, Func<Enum, string>)
-  nameWithType.vb: FlagsCheckBoxExtensions.WithDisplayNameResolver(FlagsCheckBox, Func(Of Enum, String))
-- uid: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDisplayNameResolver*
+  fullName: BB84.WinForms.Extensions.FlagsControlExtensions.WithDisplayName
+  nameWithType: FlagsControlExtensions.WithDisplayName
+- uid: BB84.WinForms.Extensions.FlagsControlExtensions.WithDisplayNameResolver*
   name: WithDisplayNameResolver
-  href: api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.html#BB84_WinForms_Extensions_FlagsCheckBoxExtensions_WithDisplayNameResolver_
-  commentId: Overload:BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDisplayNameResolver
+  href: api/BB84.WinForms.Extensions.FlagsControlExtensions.html#BB84_WinForms_Extensions_FlagsControlExtensions_WithDisplayNameResolver_
+  commentId: Overload:BB84.WinForms.Extensions.FlagsControlExtensions.WithDisplayNameResolver
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithDisplayNameResolver
-  nameWithType: FlagsCheckBoxExtensions.WithDisplayNameResolver
-- uid: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithFlowDirection(BB84.WinForms.Extensions.Controls.FlagsCheckBox,System.Windows.Forms.FlowDirection)
-  name: WithFlowDirection(FlagsCheckBox, FlowDirection)
-  href: api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.html#BB84_WinForms_Extensions_FlagsCheckBoxExtensions_WithFlowDirection_BB84_WinForms_Extensions_Controls_FlagsCheckBox_System_Windows_Forms_FlowDirection_
-  commentId: M:BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithFlowDirection(BB84.WinForms.Extensions.Controls.FlagsCheckBox,System.Windows.Forms.FlowDirection)
-  fullName: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithFlowDirection(BB84.WinForms.Extensions.Controls.FlagsCheckBox, System.Windows.Forms.FlowDirection)
-  nameWithType: FlagsCheckBoxExtensions.WithFlowDirection(FlagsCheckBox, FlowDirection)
-- uid: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithFlowDirection*
+  fullName: BB84.WinForms.Extensions.FlagsControlExtensions.WithDisplayNameResolver
+  nameWithType: FlagsControlExtensions.WithDisplayNameResolver
+- uid: BB84.WinForms.Extensions.FlagsControlExtensions.WithDisplayNameResolver``1(``0,System.Func{System.Enum,System.String})
+  name: WithDisplayNameResolver<TControl>(TControl, Func<Enum, string>)
+  href: api/BB84.WinForms.Extensions.FlagsControlExtensions.html#BB84_WinForms_Extensions_FlagsControlExtensions_WithDisplayNameResolver__1___0_System_Func_System_Enum_System_String__
+  commentId: M:BB84.WinForms.Extensions.FlagsControlExtensions.WithDisplayNameResolver``1(``0,System.Func{System.Enum,System.String})
+  name.vb: WithDisplayNameResolver(Of TControl)(TControl, Func(Of Enum, String))
+  fullName: BB84.WinForms.Extensions.FlagsControlExtensions.WithDisplayNameResolver<TControl>(TControl, System.Func<System.Enum, string>)
+  fullName.vb: BB84.WinForms.Extensions.FlagsControlExtensions.WithDisplayNameResolver(Of TControl)(TControl, System.Func(Of System.Enum, String))
+  nameWithType: FlagsControlExtensions.WithDisplayNameResolver<TControl>(TControl, Func<Enum, string>)
+  nameWithType.vb: FlagsControlExtensions.WithDisplayNameResolver(Of TControl)(TControl, Func(Of Enum, String))
+- uid: BB84.WinForms.Extensions.FlagsControlExtensions.WithDisplayName``1(``0)
+  name: WithDisplayName<TControl>(TControl)
+  href: api/BB84.WinForms.Extensions.FlagsControlExtensions.html#BB84_WinForms_Extensions_FlagsControlExtensions_WithDisplayName__1___0_
+  commentId: M:BB84.WinForms.Extensions.FlagsControlExtensions.WithDisplayName``1(``0)
+  name.vb: WithDisplayName(Of TControl)(TControl)
+  fullName: BB84.WinForms.Extensions.FlagsControlExtensions.WithDisplayName<TControl>(TControl)
+  fullName.vb: BB84.WinForms.Extensions.FlagsControlExtensions.WithDisplayName(Of TControl)(TControl)
+  nameWithType: FlagsControlExtensions.WithDisplayName<TControl>(TControl)
+  nameWithType.vb: FlagsControlExtensions.WithDisplayName(Of TControl)(TControl)
+- uid: BB84.WinForms.Extensions.FlagsControlExtensions.WithFlowDirection*
   name: WithFlowDirection
-  href: api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.html#BB84_WinForms_Extensions_FlagsCheckBoxExtensions_WithFlowDirection_
-  commentId: Overload:BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithFlowDirection
+  href: api/BB84.WinForms.Extensions.FlagsControlExtensions.html#BB84_WinForms_Extensions_FlagsControlExtensions_WithFlowDirection_
+  commentId: Overload:BB84.WinForms.Extensions.FlagsControlExtensions.WithFlowDirection
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithFlowDirection
-  nameWithType: FlagsCheckBoxExtensions.WithFlowDirection
-- uid: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithSelectedValueBinding(BB84.WinForms.Extensions.Controls.FlagsCheckBox,System.Object,System.String)
-  name: WithSelectedValueBinding(FlagsCheckBox, object, string)
-  href: api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.html#BB84_WinForms_Extensions_FlagsCheckBoxExtensions_WithSelectedValueBinding_BB84_WinForms_Extensions_Controls_FlagsCheckBox_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithSelectedValueBinding(BB84.WinForms.Extensions.Controls.FlagsCheckBox,System.Object,System.String)
-  name.vb: WithSelectedValueBinding(FlagsCheckBox, Object, String)
-  fullName: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithSelectedValueBinding(BB84.WinForms.Extensions.Controls.FlagsCheckBox, object, string)
-  fullName.vb: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithSelectedValueBinding(BB84.WinForms.Extensions.Controls.FlagsCheckBox, Object, String)
-  nameWithType: FlagsCheckBoxExtensions.WithSelectedValueBinding(FlagsCheckBox, object, string)
-  nameWithType.vb: FlagsCheckBoxExtensions.WithSelectedValueBinding(FlagsCheckBox, Object, String)
-- uid: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithSelectedValueBinding*
+  fullName: BB84.WinForms.Extensions.FlagsControlExtensions.WithFlowDirection
+  nameWithType: FlagsControlExtensions.WithFlowDirection
+- uid: BB84.WinForms.Extensions.FlagsControlExtensions.WithFlowDirection``1(``0,System.Windows.Forms.FlowDirection)
+  name: WithFlowDirection<TControl>(TControl, FlowDirection)
+  href: api/BB84.WinForms.Extensions.FlagsControlExtensions.html#BB84_WinForms_Extensions_FlagsControlExtensions_WithFlowDirection__1___0_System_Windows_Forms_FlowDirection_
+  commentId: M:BB84.WinForms.Extensions.FlagsControlExtensions.WithFlowDirection``1(``0,System.Windows.Forms.FlowDirection)
+  name.vb: WithFlowDirection(Of TControl)(TControl, FlowDirection)
+  fullName: BB84.WinForms.Extensions.FlagsControlExtensions.WithFlowDirection<TControl>(TControl, System.Windows.Forms.FlowDirection)
+  fullName.vb: BB84.WinForms.Extensions.FlagsControlExtensions.WithFlowDirection(Of TControl)(TControl, System.Windows.Forms.FlowDirection)
+  nameWithType: FlagsControlExtensions.WithFlowDirection<TControl>(TControl, FlowDirection)
+  nameWithType.vb: FlagsControlExtensions.WithFlowDirection(Of TControl)(TControl, FlowDirection)
+- uid: BB84.WinForms.Extensions.FlagsControlExtensions.WithSelectedValueBinding*
   name: WithSelectedValueBinding
-  href: api/BB84.WinForms.Extensions.FlagsCheckBoxExtensions.html#BB84_WinForms_Extensions_FlagsCheckBoxExtensions_WithSelectedValueBinding_
-  commentId: Overload:BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithSelectedValueBinding
+  href: api/BB84.WinForms.Extensions.FlagsControlExtensions.html#BB84_WinForms_Extensions_FlagsControlExtensions_WithSelectedValueBinding_
+  commentId: Overload:BB84.WinForms.Extensions.FlagsControlExtensions.WithSelectedValueBinding
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.FlagsCheckBoxExtensions.WithSelectedValueBinding
-  nameWithType: FlagsCheckBoxExtensions.WithSelectedValueBinding
-- uid: BB84.WinForms.Extensions.FlagsRadioButtonExtensions
-  name: FlagsRadioButtonExtensions
-  href: api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html
-  commentId: T:BB84.WinForms.Extensions.FlagsRadioButtonExtensions
-  fullName: BB84.WinForms.Extensions.FlagsRadioButtonExtensions
-  nameWithType: FlagsRadioButtonExtensions
-- uid: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDescriptionName(BB84.WinForms.Extensions.Controls.FlagsRadioButton)
-  name: WithDescriptionName(FlagsRadioButton)
-  href: api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html#BB84_WinForms_Extensions_FlagsRadioButtonExtensions_WithDescriptionName_BB84_WinForms_Extensions_Controls_FlagsRadioButton_
-  commentId: M:BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDescriptionName(BB84.WinForms.Extensions.Controls.FlagsRadioButton)
-  fullName: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDescriptionName(BB84.WinForms.Extensions.Controls.FlagsRadioButton)
-  nameWithType: FlagsRadioButtonExtensions.WithDescriptionName(FlagsRadioButton)
-- uid: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDescriptionName*
-  name: WithDescriptionName
-  href: api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html#BB84_WinForms_Extensions_FlagsRadioButtonExtensions_WithDescriptionName_
-  commentId: Overload:BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDescriptionName
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDescriptionName
-  nameWithType: FlagsRadioButtonExtensions.WithDescriptionName
-- uid: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDisplayName(BB84.WinForms.Extensions.Controls.FlagsRadioButton)
-  name: WithDisplayName(FlagsRadioButton)
-  href: api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html#BB84_WinForms_Extensions_FlagsRadioButtonExtensions_WithDisplayName_BB84_WinForms_Extensions_Controls_FlagsRadioButton_
-  commentId: M:BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDisplayName(BB84.WinForms.Extensions.Controls.FlagsRadioButton)
-  fullName: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDisplayName(BB84.WinForms.Extensions.Controls.FlagsRadioButton)
-  nameWithType: FlagsRadioButtonExtensions.WithDisplayName(FlagsRadioButton)
-- uid: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDisplayName*
-  name: WithDisplayName
-  href: api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html#BB84_WinForms_Extensions_FlagsRadioButtonExtensions_WithDisplayName_
-  commentId: Overload:BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDisplayName
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDisplayName
-  nameWithType: FlagsRadioButtonExtensions.WithDisplayName
-- uid: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDisplayNameResolver(BB84.WinForms.Extensions.Controls.FlagsRadioButton,System.Func{System.Enum,System.String})
-  name: WithDisplayNameResolver(FlagsRadioButton, Func<Enum, string>)
-  href: api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html#BB84_WinForms_Extensions_FlagsRadioButtonExtensions_WithDisplayNameResolver_BB84_WinForms_Extensions_Controls_FlagsRadioButton_System_Func_System_Enum_System_String__
-  commentId: M:BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDisplayNameResolver(BB84.WinForms.Extensions.Controls.FlagsRadioButton,System.Func{System.Enum,System.String})
-  name.vb: WithDisplayNameResolver(FlagsRadioButton, Func(Of Enum, String))
-  fullName: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDisplayNameResolver(BB84.WinForms.Extensions.Controls.FlagsRadioButton, System.Func<System.Enum, string>)
-  fullName.vb: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDisplayNameResolver(BB84.WinForms.Extensions.Controls.FlagsRadioButton, System.Func(Of System.Enum, String))
-  nameWithType: FlagsRadioButtonExtensions.WithDisplayNameResolver(FlagsRadioButton, Func<Enum, string>)
-  nameWithType.vb: FlagsRadioButtonExtensions.WithDisplayNameResolver(FlagsRadioButton, Func(Of Enum, String))
-- uid: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDisplayNameResolver*
-  name: WithDisplayNameResolver
-  href: api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html#BB84_WinForms_Extensions_FlagsRadioButtonExtensions_WithDisplayNameResolver_
-  commentId: Overload:BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDisplayNameResolver
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithDisplayNameResolver
-  nameWithType: FlagsRadioButtonExtensions.WithDisplayNameResolver
-- uid: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithFlowDirection(BB84.WinForms.Extensions.Controls.FlagsRadioButton,System.Windows.Forms.FlowDirection)
-  name: WithFlowDirection(FlagsRadioButton, FlowDirection)
-  href: api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html#BB84_WinForms_Extensions_FlagsRadioButtonExtensions_WithFlowDirection_BB84_WinForms_Extensions_Controls_FlagsRadioButton_System_Windows_Forms_FlowDirection_
-  commentId: M:BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithFlowDirection(BB84.WinForms.Extensions.Controls.FlagsRadioButton,System.Windows.Forms.FlowDirection)
-  fullName: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithFlowDirection(BB84.WinForms.Extensions.Controls.FlagsRadioButton, System.Windows.Forms.FlowDirection)
-  nameWithType: FlagsRadioButtonExtensions.WithFlowDirection(FlagsRadioButton, FlowDirection)
-- uid: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithFlowDirection*
-  name: WithFlowDirection
-  href: api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html#BB84_WinForms_Extensions_FlagsRadioButtonExtensions_WithFlowDirection_
-  commentId: Overload:BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithFlowDirection
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithFlowDirection
-  nameWithType: FlagsRadioButtonExtensions.WithFlowDirection
-- uid: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithSelectedValueBinding(BB84.WinForms.Extensions.Controls.FlagsRadioButton,System.Object,System.String)
-  name: WithSelectedValueBinding(FlagsRadioButton, object, string)
-  href: api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html#BB84_WinForms_Extensions_FlagsRadioButtonExtensions_WithSelectedValueBinding_BB84_WinForms_Extensions_Controls_FlagsRadioButton_System_Object_System_String_
-  commentId: M:BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithSelectedValueBinding(BB84.WinForms.Extensions.Controls.FlagsRadioButton,System.Object,System.String)
-  name.vb: WithSelectedValueBinding(FlagsRadioButton, Object, String)
-  fullName: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithSelectedValueBinding(BB84.WinForms.Extensions.Controls.FlagsRadioButton, object, string)
-  fullName.vb: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithSelectedValueBinding(BB84.WinForms.Extensions.Controls.FlagsRadioButton, Object, String)
-  nameWithType: FlagsRadioButtonExtensions.WithSelectedValueBinding(FlagsRadioButton, object, string)
-  nameWithType.vb: FlagsRadioButtonExtensions.WithSelectedValueBinding(FlagsRadioButton, Object, String)
-- uid: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithSelectedValueBinding*
-  name: WithSelectedValueBinding
-  href: api/BB84.WinForms.Extensions.FlagsRadioButtonExtensions.html#BB84_WinForms_Extensions_FlagsRadioButtonExtensions_WithSelectedValueBinding_
-  commentId: Overload:BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithSelectedValueBinding
-  isSpec: "True"
-  fullName: BB84.WinForms.Extensions.FlagsRadioButtonExtensions.WithSelectedValueBinding
-  nameWithType: FlagsRadioButtonExtensions.WithSelectedValueBinding
-- uid: BB84.WinForms.Extensions.Helpers
-  name: BB84.WinForms.Extensions.Helpers
-  href: api/BB84.WinForms.Extensions.Helpers.html
-  commentId: N:BB84.WinForms.Extensions.Helpers
-  fullName: BB84.WinForms.Extensions.Helpers
-  nameWithType: BB84.WinForms.Extensions.Helpers
-- uid: BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers
+  fullName: BB84.WinForms.Extensions.FlagsControlExtensions.WithSelectedValueBinding
+  nameWithType: FlagsControlExtensions.WithSelectedValueBinding
+- uid: BB84.WinForms.Extensions.FlagsControlExtensions.WithSelectedValueBinding``1(``0,System.Object,System.String)
+  name: WithSelectedValueBinding<TControl>(TControl, object, string)
+  href: api/BB84.WinForms.Extensions.FlagsControlExtensions.html#BB84_WinForms_Extensions_FlagsControlExtensions_WithSelectedValueBinding__1___0_System_Object_System_String_
+  commentId: M:BB84.WinForms.Extensions.FlagsControlExtensions.WithSelectedValueBinding``1(``0,System.Object,System.String)
+  name.vb: WithSelectedValueBinding(Of TControl)(TControl, Object, String)
+  fullName: BB84.WinForms.Extensions.FlagsControlExtensions.WithSelectedValueBinding<TControl>(TControl, object, string)
+  fullName.vb: BB84.WinForms.Extensions.FlagsControlExtensions.WithSelectedValueBinding(Of TControl)(TControl, Object, String)
+  nameWithType: FlagsControlExtensions.WithSelectedValueBinding<TControl>(TControl, object, string)
+  nameWithType.vb: FlagsControlExtensions.WithSelectedValueBinding(Of TControl)(TControl, Object, String)
+- uid: BB84.WinForms.Extensions.Helper
+  name: BB84.WinForms.Extensions.Helper
+  href: api/BB84.WinForms.Extensions.Helper.html
+  commentId: N:BB84.WinForms.Extensions.Helper
+  fullName: BB84.WinForms.Extensions.Helper
+  nameWithType: BB84.WinForms.Extensions.Helper
+- uid: BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers
   name: FlagsDisplayResolvers
-  href: api/BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.html
-  commentId: T:BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers
-  fullName: BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers
+  href: api/BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.html
+  commentId: T:BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers
+  fullName: BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers
   nameWithType: FlagsDisplayResolvers
-- uid: BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.FromDescriptionAttribute(System.Enum)
+- uid: BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.FromDescriptionAttribute(System.Enum)
   name: FromDescriptionAttribute(Enum)
-  href: api/BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.html#BB84_WinForms_Extensions_Helpers_FlagsDisplayResolvers_FromDescriptionAttribute_System_Enum_
-  commentId: M:BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.FromDescriptionAttribute(System.Enum)
-  fullName: BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.FromDescriptionAttribute(System.Enum)
+  href: api/BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.html#BB84_WinForms_Extensions_Helper_FlagsDisplayResolvers_FromDescriptionAttribute_System_Enum_
+  commentId: M:BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.FromDescriptionAttribute(System.Enum)
+  fullName: BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.FromDescriptionAttribute(System.Enum)
   nameWithType: FlagsDisplayResolvers.FromDescriptionAttribute(Enum)
-- uid: BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.FromDescriptionAttribute*
+- uid: BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.FromDescriptionAttribute*
   name: FromDescriptionAttribute
-  href: api/BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.html#BB84_WinForms_Extensions_Helpers_FlagsDisplayResolvers_FromDescriptionAttribute_
-  commentId: Overload:BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.FromDescriptionAttribute
+  href: api/BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.html#BB84_WinForms_Extensions_Helper_FlagsDisplayResolvers_FromDescriptionAttribute_
+  commentId: Overload:BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.FromDescriptionAttribute
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.FromDescriptionAttribute
+  fullName: BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.FromDescriptionAttribute
   nameWithType: FlagsDisplayResolvers.FromDescriptionAttribute
-- uid: BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.FromDisplayAttribute(System.Enum)
+- uid: BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.FromDisplayAttribute(System.Enum)
   name: FromDisplayAttribute(Enum)
-  href: api/BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.html#BB84_WinForms_Extensions_Helpers_FlagsDisplayResolvers_FromDisplayAttribute_System_Enum_
-  commentId: M:BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.FromDisplayAttribute(System.Enum)
-  fullName: BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.FromDisplayAttribute(System.Enum)
+  href: api/BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.html#BB84_WinForms_Extensions_Helper_FlagsDisplayResolvers_FromDisplayAttribute_System_Enum_
+  commentId: M:BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.FromDisplayAttribute(System.Enum)
+  fullName: BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.FromDisplayAttribute(System.Enum)
   nameWithType: FlagsDisplayResolvers.FromDisplayAttribute(Enum)
-- uid: BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.FromDisplayAttribute*
+- uid: BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.FromDisplayAttribute*
   name: FromDisplayAttribute
-  href: api/BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.html#BB84_WinForms_Extensions_Helpers_FlagsDisplayResolvers_FromDisplayAttribute_
-  commentId: Overload:BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.FromDisplayAttribute
+  href: api/BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.html#BB84_WinForms_Extensions_Helper_FlagsDisplayResolvers_FromDisplayAttribute_
+  commentId: Overload:BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.FromDisplayAttribute
   isSpec: "True"
-  fullName: BB84.WinForms.Extensions.Helpers.FlagsDisplayResolvers.FromDisplayAttribute
+  fullName: BB84.WinForms.Extensions.Helper.FlagsDisplayResolvers.FromDisplayAttribute
   nameWithType: FlagsDisplayResolvers.FromDisplayAttribute
 - uid: BB84.WinForms.Extensions.ListBoxExtensions
   name: ListBoxExtensions

@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class ProgressBarExtensions </title>
+      <title>Class BindableComponentExtensions </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class ProgressBarExtensions ">
+      <meta name="title" content="Class BindableComponentExtensions ">
       
-      <meta name="description" content="Provides extension methods for binding properties of a  control to a data source, enabling streamlined data binding for common properties such as .">
+      <meta name="description" content="Provides a general purpose data binding extension method for any bindable component.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v5.0.0810.0/apiSpec/new?filename=BB84_WinForms_Extensions_ProgressBarExtensions.md&amp;value=---%0Auid%3A%20BB84.WinForms.Extensions.ProgressBarExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v5.0.0810.0/apiSpec/new?filename=BB84_WinForms_Extensions_BindableComponentExtensions.md&amp;value=---%0Auid%3A%20BB84.WinForms.Extensions.BindableComponentExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -80,12 +80,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BB84.WinForms.Extensions.ProgressBarExtensions">
+        <article data-uid="BB84.WinForms.Extensions.BindableComponentExtensions">
 
 
 
-  <h1 id="BB84_WinForms_Extensions_ProgressBarExtensions" data-uid="BB84.WinForms.Extensions.ProgressBarExtensions" class="text-break">
-Class ProgressBarExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/ProgressBarExtensions.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BB84_WinForms_Extensions_BindableComponentExtensions" data-uid="BB84.WinForms.Extensions.BindableComponentExtensions" class="text-break">
+Class BindableComponentExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/BindableComponentExtensions.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,13 +93,12 @@ Class ProgressBarExtensions  <a class="header-action link-secondary" title="View
   <dl><dt>Assembly</dt><dd>BB84.WinForms.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Provides extension methods for binding properties of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.progressbar">ProgressBar</a> control to a data source,
-enabling streamlined data binding for common properties such as <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.progressbar.value">Value</a>.</p>
+  <div class="markdown summary"><p>Provides a general purpose data binding extension method for any bindable component.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ProgressBarExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public static class BindableComponentExtensions</code></pre>
   </div>
 
 
@@ -109,7 +108,7 @@ enabling streamlined data binding for common properties such as <a class="xref" 
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">ProgressBarExtensions</span></div>
+      <div><span class="xref">BindableComponentExtensions</span></div>
     </dd>
   </dl>
 
@@ -144,32 +143,40 @@ enabling streamlined data binding for common properties such as <a class="xref" 
 
 
 
+  <h2 id="BB84_WinForms_Extensions_BindableComponentExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The property specific extension methods, such as <a class="xref" href="BB84.WinForms.Extensions.ControlExtensions.html#BB84_WinForms_Extensions_ControlExtensions_WithTextBinding_System_Windows_Forms_Control_System_Object_System_String_">WithTextBinding(Control, object, string)</a>,
+always bind with formatting enabled and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>. This class
+is the escape hatch for the cases those defaults do not fit, and for control properties that have no
+dedicated method.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="BB84_WinForms_Extensions_ProgressBarExtensions_WithValueBinding_" data-uid="BB84.WinForms.Extensions.ProgressBarExtensions.WithValueBinding*"></a>
+  <a id="BB84_WinForms_Extensions_BindableComponentExtensions_WithBinding_" data-uid="BB84.WinForms.Extensions.BindableComponentExtensions.WithBinding*"></a>
 
-  <h3 id="BB84_WinForms_Extensions_ProgressBarExtensions_WithValueBinding_System_Windows_Forms_ProgressBar_System_Object_System_String_" data-uid="BB84.WinForms.Extensions.ProgressBarExtensions.WithValueBinding(System.Windows.Forms.ProgressBar,System.Object,System.String)">
-  WithValueBinding(ProgressBar, object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/ProgressBarExtensions.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_WinForms_Extensions_BindableComponentExtensions_WithBinding__1___0_System_String_System_Object_System_String_System_Boolean_System_Windows_Forms_DataSourceUpdateMode_" data-uid="BB84.WinForms.Extensions.BindableComponentExtensions.WithBinding``1(``0,System.String,System.Object,System.String,System.Boolean,System.Windows.Forms.DataSourceUpdateMode)">
+  WithBinding&lt;TComponent&gt;(TComponent, string, object, string, bool, DataSourceUpdateMode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/BindableComponentExtensions.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Binds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.progressbar.value">Value</a> property of the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.progressbar">ProgressBar</a>
-to a property on the provided data source.</p>
+  <div class="markdown level1 summary"><p>Binds the specified property of the component to a property on the provided data source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ProgressBar WithValueBinding(this ProgressBar progressBar, object dataSource, string dataMember)</code></pre>
+    <pre><code class="lang-csharp hljs">public static TComponent WithBinding&lt;TComponent&gt;(this TComponent component, string propertyName, object dataSource, string dataMember, bool formattingEnabled = true, DataSourceUpdateMode updateMode = DataSourceUpdateMode.OnPropertyChanged) where TComponent : IBindableComponent</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>progressBar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.progressbar">ProgressBar</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.progressbar">ProgressBar</a> to bind.</p>
+    <dt><code>component</code> <span class="xref">TComponent</span></dt>
+    <dd><p>The component to bind.</p>
+</dd>
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the property on the component to bind.</p>
 </dd>
     <dt><code>dataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
     <dd><p>The data source containing the property to bind to.</p>
@@ -177,12 +184,25 @@ to a property on the provided data source.</p>
     <dt><code>dataMember</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>The name of the property on the data source to bind to.</p>
 </dd>
+    <dt><code>formattingEnabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to format the displayed data; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+    <dt><code>updateMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode">DataSourceUpdateMode</a></dt>
+    <dd><p>Determines when the data source is updated with changes made to the bound property.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.progressbar">ProgressBar</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.progressbar">ProgressBar</a> control with the binding applied, allowing for method chaining.</p>
+    <dt><span class="xref">TComponent</span></dt>
+    <dd><p>The component with the binding applied, allowing for method chaining.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TComponent</code></dt>
+    <dd><p>The type of the component to bind.</p>
 </dd>
   </dl>
 
@@ -191,12 +211,17 @@ to a property on the provided data source.</p>
 
 
 
-
-  <h4 class="section" id="BB84_WinForms_Extensions_ProgressBarExtensions_WithValueBinding_System_Windows_Forms_ProgressBar_System_Object_System_String__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>The binding is configured to update the data source whenever the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.progressbar.value">Value</a>
-property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.datasourceupdatemode#system-windows-forms-datasourceupdatemode-onpropertychanged">OnPropertyChanged</a>.</p>
+  <h4 class="section" id="BB84_WinForms_Extensions_BindableComponentExtensions_WithBinding__1___0_System_String_System_Object_System_String_System_Boolean_System_Windows_Forms_DataSourceUpdateMode__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Pass <code class="paramref">propertyName</code> and <code class="paramref">dataMember</code> using <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/operators/nameof">nameof</a>
+to keep them verified by the compiler.</p>
 </div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if <code class="paramref">component</code> or <code class="paramref">dataSource</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
 
 
 
@@ -204,7 +229,7 @@ property changes, using <a class="xref" href="https://learn.microsoft.com/dotnet
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/ProgressBarExtensions.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/BindableComponentExtensions.cs/#L19" class="edit-link">Edit this page</a>
         </div>
 
 

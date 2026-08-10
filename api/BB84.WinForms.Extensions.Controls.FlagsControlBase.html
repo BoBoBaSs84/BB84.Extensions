@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class FlagsCheckBox </title>
+      <title>Class FlagsControlBase </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class FlagsCheckBox ">
+      <meta name="title" content="Class FlagsControlBase ">
       
-      <meta name="description" content="Represents a user control that displays a set of check boxes for selecting multiple values of an enum type marked with the .">
+      <meta name="description" content="Represents the shared implementation behind the user controls that display one toggle button per non-zero flag of an enum type marked with the .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v5.0.0810.0/apiSpec/new?filename=BB84_WinForms_Extensions_Controls_FlagsCheckBox.md&amp;value=---%0Auid%3A%20BB84.WinForms.Extensions.Controls.FlagsCheckBox%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v5.0.0810.0/apiSpec/new?filename=BB84_WinForms_Extensions_Controls_FlagsControlBase.md&amp;value=---%0Auid%3A%20BB84.WinForms.Extensions.Controls.FlagsControlBase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -80,12 +80,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BB84.WinForms.Extensions.Controls.FlagsCheckBox">
+        <article data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase">
 
 
 
-  <h1 id="BB84_WinForms_Extensions_Controls_FlagsCheckBox" data-uid="BB84.WinForms.Extensions.Controls.FlagsCheckBox" class="text-break">
-Class FlagsCheckBox  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsCheckBox.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BB84_WinForms_Extensions_Controls_FlagsControlBase" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase" class="text-break">
+Class FlagsControlBase  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsControlBase.Designer.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,13 +93,14 @@ Class FlagsCheckBox  <a class="header-action link-secondary" title="View source"
   <dl><dt>Assembly</dt><dd>BB84.WinForms.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents a user control that displays a set of check boxes for selecting multiple values
-of an enum type marked with the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.flagsattribute">FlagsAttribute</a>.</p>
+  <div class="markdown summary"><p>Represents the shared implementation behind the user controls that display one toggle button
+per non-zero flag of an enum type marked with the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.flagsattribute">FlagsAttribute</a>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FlagsCheckBox : FlagsControlBase, IDropTarget, ISynchronizeInvoke, IWin32Window, IBindableComponent, IComponent, IDisposable, IContainerControl</code></pre>
+    <pre><code class="lang-csharp hljs">[DefaultBindingProperty(&quot;SelectedValue&quot;)]
+public abstract class FlagsControlBase : UserControl, IDropTarget, ISynchronizeInvoke, IWin32Window, IBindableComponent, IComponent, IDisposable, IContainerControl</code></pre>
   </div>
 
 
@@ -115,8 +116,7 @@ of an enum type marked with the <a class="xref" href="https://learn.microsoft.co
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.scrollablecontrol">ScrollableControl</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.containercontrol">ContainerControl</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.usercontrol">UserControl</a></div>
-      <div><a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html">FlagsControlBase</a></div>
-      <div><span class="xref">FlagsCheckBox</span></div>
+      <div><span class="xref">FlagsControlBase</span></div>
     </dd>
   </dl>
 
@@ -133,31 +133,17 @@ of an enum type marked with the <a class="xref" href="https://learn.microsoft.co
     </dd>
   </dl>
 
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsCheckBox.html">FlagsCheckBox</a></div>
+      <div><a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsRadioButton.html">FlagsRadioButton</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_FlowDirection">FlagsControlBase.FlowDirection</a>
-    </div>
-    <div>
-      <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_DisplayNameResolver">FlagsControlBase.DisplayNameResolver</a>
-    </div>
-    <div>
-      <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_EnumType">FlagsControlBase.EnumType</a>
-    </div>
-    <div>
-      <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_SelectedValue">FlagsControlBase.SelectedValue</a>
-    </div>
-    <div>
-      <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_SelectedValueChanged">FlagsControlBase.SelectedValueChanged</a>
-    </div>
-    <div>
-      <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_OnSelectedValueChanged_System_EventArgs_">FlagsControlBase.OnSelectedValueChanged(EventArgs)</a>
-    </div>
-    <div>
-      <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_OnButtonToggled_System_Object_System_EventArgs_">FlagsControlBase.OnButtonToggled(object, EventArgs)</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.usercontrol.validatechildren#system-windows-forms-usercontrol-validatechildren">UserControl.ValidateChildren()</a>
     </div>
@@ -1493,23 +1479,203 @@ of an enum type marked with the <a class="xref" href="https://learn.microsoft.co
 
 
 
-  <h2 id="BB84_WinForms_Extensions_Controls_FlagsCheckBox_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>Use to bind to an enum type with the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.flagsattribute">FlagsAttribute</a>, allowing users to select
-one or more flags. The control requires the enum to define a zero-valued flag to represent no
-selection. Each check box carries its own flag, so the selection accumulates the flags of all
-checked boxes.</p>
+  <h2 id="BB84_WinForms_Extensions_Controls_FlagsControlBase_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The base owns the enum validation, the selection state, the bit arithmetic and the flow layout
+panel, so <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsCheckBox.html">FlagsCheckBox</a> and <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsRadioButton.html">FlagsRadioButton</a> only contribute the
+button type and the rule that turns a user interaction into a new set of bits. The class is
+deliberately not generic, because the Windows Forms designer cannot render a control whose base
+class is generic.</p>
+<p>
+The buttons are created on demand, which means no abstract member is invoked while the base
+constructor runs. Derived classes must therefore not depend on their own constructor state
+inside the overridden members, because a value assigned to <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_SelectedValue">SelectedValue</a> or
+<a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_EnumType">EnumType</a> is the only thing that triggers them.
+</p>
+<p>
+The designer renders an inherited control by instantiating its base class, which it cannot do
+for an abstract type. <a class="xref" href="BB84.WinForms.Extensions.Common.AbstractControlDescriptionProvider-2.html">AbstractControlDescriptionProvider&lt;TAbstract, TConcrete&gt;</a>
+therefore hands it a <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsCheckBox.html">FlagsCheckBox</a> instead, which affects the designer only.
+</p>
 </div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="BB84_WinForms_Extensions_Controls_FlagsControlBase__ctor_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.#ctor*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsControlBase__ctor" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.#ctor">
+  FlagsControlBase()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsControlBase.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html">FlagsControlBase</a> control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected FlagsControlBase()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="BB84_WinForms_Extensions_Controls_FlagsControlBase_DisplayNameResolver_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.DisplayNameResolver*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsControlBase_DisplayNameResolver" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.DisplayNameResolver">
+  DisplayNameResolver
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsControlBase.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the delegate used to produce display names for each flag value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Browsable(false)]
+public Func&lt;Enum, string&gt;? DisplayNameResolver { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.enum">Enum</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BB84_WinForms_Extensions_Controls_FlagsControlBase_EnumType_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.EnumType*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsControlBase_EnumType" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.EnumType">
+  EnumType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsControlBase.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the enum type that defines the flags to be displayed as toggle buttons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Browsable(false)]
+public Type? EnumType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BB84_WinForms_Extensions_Controls_FlagsControlBase_FlowDirection_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.FlowDirection*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsControlBase_FlowDirection" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.FlowDirection">
+  FlowDirection
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsControlBase.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the layout direction used by the internal flow layout panel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlowDirection FlowDirection { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.flowdirection">FlowDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BB84_WinForms_Extensions_Controls_FlagsControlBase_SelectedValue_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.SelectedValue*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsControlBase_SelectedValue" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.SelectedValue">
+  SelectedValue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsControlBase.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the currently selected value, which is a combination of the enum flags
+represented by the toggle buttons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Browsable(false)]
+[Bindable(true)]
+public Enum? SelectedValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.enum">Enum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
 
 
   <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="BB84_WinForms_Extensions_Controls_FlagsCheckBox_AttachToggleHandler_" data-uid="BB84.WinForms.Extensions.Controls.FlagsCheckBox.AttachToggleHandler*"></a>
+  <a id="BB84_WinForms_Extensions_Controls_FlagsControlBase_AttachToggleHandler_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.AttachToggleHandler*"></a>
 
-  <h3 id="BB84_WinForms_Extensions_Controls_FlagsCheckBox_AttachToggleHandler_System_Windows_Forms_ButtonBase_" data-uid="BB84.WinForms.Extensions.Controls.FlagsCheckBox.AttachToggleHandler(System.Windows.Forms.ButtonBase)">
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsControlBase_AttachToggleHandler_System_Windows_Forms_ButtonBase_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.AttachToggleHandler(System.Windows.Forms.ButtonBase)">
   AttachToggleHandler(ButtonBase)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsCheckBox.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsControlBase.cs/#L189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Subscribes the event that signals a user interaction with the specified toggle button.</p>
@@ -1517,7 +1683,7 @@ checked boxes.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void AttachToggleHandler(ButtonBase button)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract void AttachToggleHandler(ButtonBase button)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1534,7 +1700,7 @@ checked boxes.</p>
 
 
 
-  <h4 class="section" id="BB84_WinForms_Extensions_Controls_FlagsCheckBox_AttachToggleHandler_System_Windows_Forms_ButtonBase__remarks">Remarks</h4>
+  <h4 class="section" id="BB84_WinForms_Extensions_Controls_FlagsControlBase_AttachToggleHandler_System_Windows_Forms_ButtonBase__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>Implementations are expected to attach <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_OnButtonToggled_System_Object_System_EventArgs_">OnButtonToggled(object?, EventArgs)</a> to the event that
 matches the interaction model of the button.</p>
 </div>
@@ -1542,11 +1708,11 @@ matches the interaction model of the button.</p>
 
 
 
-  <a id="BB84_WinForms_Extensions_Controls_FlagsCheckBox_ComputeNewBits_" data-uid="BB84.WinForms.Extensions.Controls.FlagsCheckBox.ComputeNewBits*"></a>
+  <a id="BB84_WinForms_Extensions_Controls_FlagsControlBase_ComputeNewBits_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.ComputeNewBits*"></a>
 
-  <h3 id="BB84_WinForms_Extensions_Controls_FlagsCheckBox_ComputeNewBits_System_Int64_System_Int64_System_Boolean_" data-uid="BB84.WinForms.Extensions.Controls.FlagsCheckBox.ComputeNewBits(System.Int64,System.Int64,System.Boolean)">
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsControlBase_ComputeNewBits_System_Int64_System_Int64_System_Boolean_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.ComputeNewBits(System.Int64,System.Int64,System.Boolean)">
   ComputeNewBits(long, long, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsCheckBox.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsControlBase.cs/#L220"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Calculates the selected bits that result from a user interaction with a toggle button.</p>
@@ -1554,7 +1720,7 @@ matches the interaction model of the button.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override long ComputeNewBits(long currentBits, long flagBits, bool isChecked)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract long ComputeNewBits(long currentBits, long flagBits, bool isChecked)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1583,7 +1749,7 @@ matches the interaction model of the button.</p>
 
 
 
-  <h4 class="section" id="BB84_WinForms_Extensions_Controls_FlagsCheckBox_ComputeNewBits_System_Int64_System_Int64_System_Boolean__remarks">Remarks</h4>
+  <h4 class="section" id="BB84_WinForms_Extensions_Controls_FlagsControlBase_ComputeNewBits_System_Int64_System_Int64_System_Boolean__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>The checked state is passed in rather than the button itself, because the bit arithmetic has
 no other use for the control. Which state it reports depends on the interaction model: a check
 box has already toggled itself when the event arrives, a radio button with auto check disabled
@@ -1593,11 +1759,11 @@ has not.</p>
 
 
 
-  <a id="BB84_WinForms_Extensions_Controls_FlagsCheckBox_CreateButton_" data-uid="BB84.WinForms.Extensions.Controls.FlagsCheckBox.CreateButton*"></a>
+  <a id="BB84_WinForms_Extensions_Controls_FlagsControlBase_CreateButton_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.CreateButton*"></a>
 
-  <h3 id="BB84_WinForms_Extensions_Controls_FlagsCheckBox_CreateButton" data-uid="BB84.WinForms.Extensions.Controls.FlagsCheckBox.CreateButton">
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsControlBase_CreateButton" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.CreateButton">
   CreateButton()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsCheckBox.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsControlBase.cs/#L179"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates the toggle button used to represent a single flag value.</p>
@@ -1605,7 +1771,7 @@ has not.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override ButtonBase CreateButton()</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract ButtonBase CreateButton()</code></pre>
   </div>
 
 
@@ -1622,7 +1788,7 @@ has not.</p>
 
 
 
-  <h4 class="section" id="BB84_WinForms_Extensions_Controls_FlagsCheckBox_CreateButton_remarks">Remarks</h4>
+  <h4 class="section" id="BB84_WinForms_Extensions_Controls_FlagsControlBase_CreateButton_remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>The caption, the tag and the margin are applied by the base afterwards, so an implementation
 only has to provide the concrete type and the settings that are specific to it.</p>
 </div>
@@ -1630,11 +1796,11 @@ only has to provide the concrete type and the settings that are specific to it.<
 
 
 
-  <a id="BB84_WinForms_Extensions_Controls_FlagsCheckBox_GetChecked_" data-uid="BB84.WinForms.Extensions.Controls.FlagsCheckBox.GetChecked*"></a>
+  <a id="BB84_WinForms_Extensions_Controls_FlagsControlBase_GetChecked_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.GetChecked*"></a>
 
-  <h3 id="BB84_WinForms_Extensions_Controls_FlagsCheckBox_GetChecked_System_Windows_Forms_ButtonBase_" data-uid="BB84.WinForms.Extensions.Controls.FlagsCheckBox.GetChecked(System.Windows.Forms.ButtonBase)">
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsControlBase_GetChecked_System_Windows_Forms_ButtonBase_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.GetChecked(System.Windows.Forms.ButtonBase)">
   GetChecked(ButtonBase)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsCheckBox.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsControlBase.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a value indicating whether the specified toggle button is currently checked.</p>
@@ -1642,7 +1808,7 @@ only has to provide the concrete type and the settings that are specific to it.<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override bool GetChecked(ButtonBase button)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract bool GetChecked(ButtonBase button)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1669,11 +1835,81 @@ only has to provide the concrete type and the settings that are specific to it.<
 
 
 
-  <a id="BB84_WinForms_Extensions_Controls_FlagsCheckBox_SetChecked_" data-uid="BB84.WinForms.Extensions.Controls.FlagsCheckBox.SetChecked*"></a>
+  <a id="BB84_WinForms_Extensions_Controls_FlagsControlBase_OnButtonToggled_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.OnButtonToggled*"></a>
 
-  <h3 id="BB84_WinForms_Extensions_Controls_FlagsCheckBox_SetChecked_System_Windows_Forms_ButtonBase_System_Boolean_" data-uid="BB84.WinForms.Extensions.Controls.FlagsCheckBox.SetChecked(System.Windows.Forms.ButtonBase,System.Boolean)">
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsControlBase_OnButtonToggled_System_Object_System_EventArgs_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.OnButtonToggled(System.Object,System.EventArgs)">
+  OnButtonToggled(object?, EventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsControlBase.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Is called when the user interacts with one of the toggle buttons and applies the selection
+that <a class="xref" href="BB84.WinForms.Extensions.Controls.FlagsControlBase.html#BB84_WinForms_Extensions_Controls_FlagsControlBase_ComputeNewBits_System_Int64_System_Int64_System_Boolean_">ComputeNewBits(long, long, bool)</a> returns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnButtonToggled(object? sender, EventArgs e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The toggle button that raised the event.</p>
+</dd>
+    <dt><code>e</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></dt>
+    <dd><p>The event data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_WinForms_Extensions_Controls_FlagsControlBase_OnSelectedValueChanged_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.OnSelectedValueChanged*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsControlBase_OnSelectedValueChanged_System_EventArgs_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.OnSelectedValueChanged(System.EventArgs)">
+  OnSelectedValueChanged(EventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsControlBase.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Is called when the selected value changes, either through user interaction or programmatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSelectedValueChanged(EventArgs e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></dt>
+    <dd><p>The event data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_WinForms_Extensions_Controls_FlagsControlBase_SetChecked_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.SetChecked*"></a>
+
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsControlBase_SetChecked_System_Windows_Forms_ButtonBase_System_Boolean_" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.SetChecked(System.Windows.Forms.ButtonBase,System.Boolean)">
   SetChecked(ButtonBase, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsCheckBox.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsControlBase.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the checked state of the specified toggle button.</p>
@@ -1681,7 +1917,7 @@ only has to provide the concrete type and the settings that are specific to it.<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void SetChecked(ButtonBase button, bool value)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract void SetChecked(ButtonBase button, bool value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1705,11 +1941,46 @@ only has to provide the concrete type and the settings that are specific to it.<
 
 
 
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="BB84_WinForms_Extensions_Controls_FlagsControlBase_SelectedValueChanged" data-uid="BB84.WinForms.Extensions.Controls.FlagsControlBase.SelectedValueChanged">
+  SelectedValueChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsControlBase.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Occurs when the selected value changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler? SelectedValueChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsCheckBox.cs/#L18" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.WinForms.Extensions/Controls/FlagsControlBase.Designer.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
 

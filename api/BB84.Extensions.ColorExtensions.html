@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v4.6.0803.0/apiSpec/new?filename=BB84_Extensions_ColorExtensions.md&amp;value=---%0Auid%3A%20BB84.Extensions.ColorExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v5.0.0810.0/apiSpec/new?filename=BB84_Extensions_ColorExtensions.md&amp;value=---%0Auid%3A%20BB84.Extensions.ColorExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_ColorExtensions" data-uid="BB84.Extensions.ColorExtensions" class="text-break">
-Class ColorExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/ColorExtensions.cs/#L20"><i class="bi bi-code-slash"></i></a>
+Class ColorExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/ColorExtensions.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -160,7 +160,7 @@ and validate input to ensure correct usage.</p>
 
   <h3 id="BB84_Extensions_ColorExtensions_FromARGBHexString_System_String_" data-uid="BB84.Extensions.ColorExtensions.FromARGBHexString(System.String)">
   FromARGBHexString(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/ColorExtensions.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/ColorExtensions.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts a hexadecimal ARGB color string to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a> object.</p>
@@ -205,7 +205,7 @@ Returns <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.draw
 
   <h3 id="BB84_Extensions_ColorExtensions_FromArgbByteArray_System_Byte___" data-uid="BB84.Extensions.ColorExtensions.FromArgbByteArray(System.Byte[])">
   FromArgbByteArray(byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/ColorExtensions.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/ColorExtensions.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a> instance from a byte array containing ARGB color components.</p>
@@ -219,8 +219,8 @@ Returns <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.draw
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd><p>A byte array containing exactly 4 elements, representing the alpha, red, green, and blue components
-of the color in ARGB order.</p>
+    <dd><p>A byte array containing exactly 4 elements, representing the blue, green, red, and alpha
+components of the color, in that order.</p>
 </dd>
   </dl>
 
@@ -238,12 +238,17 @@ of the color in ARGB order.</p>
 
 
   <h4 class="section" id="BB84_Extensions_ColorExtensions_FromArgbByteArray_System_Byte____remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>The byte array must represent the color components in ARGB order, with each component occupying one
-byte. If the system architecture is not little-endian, the byte array is reversed before processing.</p>
+  <div class="markdown level1 remarks"><p>The components are read in blue, green, red, alpha order, which is the layout
+<a class="xref" href="BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_ToArgbByteArray_System_Drawing_Color_">ToArgbByteArray(Color)</a> produces and the little-endian in-memory layout of a 32 bit ARGB
+value. If the system architecture is not little-endian, the order is reversed before processing.
+The input array is never modified.</p>
 </div>
 
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
     <dd><p>Thrown if <code class="paramref">value</code> does not contain exactly 4 elements.</p>
 </dd>
@@ -255,7 +260,7 @@ byte. If the system architecture is not little-endian, the byte array is reverse
 
   <h3 id="BB84_Extensions_ColorExtensions_FromRGBHexString_System_String_" data-uid="BB84.Extensions.ColorExtensions.FromRGBHexString(System.String)">
   FromRGBHexString(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/ColorExtensions.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/ColorExtensions.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts a hexadecimal RGB color string to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a> object.</p>
@@ -300,7 +305,7 @@ Returns <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.draw
 
   <h3 id="BB84_Extensions_ColorExtensions_FromRgbByteArray_System_Byte___" data-uid="BB84.Extensions.ColorExtensions.FromRgbByteArray(System.Byte[])">
   FromRgbByteArray(byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/ColorExtensions.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/ColorExtensions.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a> instance from a byte array containing RGB values.</p>
@@ -314,7 +319,7 @@ Returns <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.draw
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd><p>A byte array containing exactly three elements representing the red, green, and blue components
+    <dd><p>A byte array containing exactly three elements representing the blue, green, and red components
 of the color, in that order.</p>
 </dd>
   </dl>
@@ -333,13 +338,16 @@ of the color, in that order.</p>
 
 
   <h4 class="section" id="BB84_Extensions_ColorExtensions_FromRgbByteArray_System_Byte____remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>The byte array must represent the RGB components in the order: red, green, blue. If the
-system architecture is not little-endian, the array is reversed internally to ensure correct
-color representation.</p>
+  <div class="markdown level1 remarks"><p>The components are read in blue, green, red order, which is the layout
+<a class="xref" href="BB84.Extensions.ColorExtensions.html#BB84_Extensions_ColorExtensions_ToRgbByteArray_System_Drawing_Color_">ToRgbByteArray(Color)</a> produces. If the system architecture is not little-endian, the
+order is reversed before processing. The input array is never modified.</p>
 </div>
 
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
     <dd><p>Thrown if <code class="paramref">value</code> does not contain exactly three elements.</p>
 </dd>
@@ -351,7 +359,7 @@ color representation.</p>
 
   <h3 id="BB84_Extensions_ColorExtensions_ToARGBHexString_System_Drawing_Color_" data-uid="BB84.Extensions.ColorExtensions.ToARGBHexString(System.Drawing.Color)">
   ToARGBHexString(Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/ColorExtensions.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/ColorExtensions.cs/#L201"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the specified color <code class="paramref">value</code> to its ARGB hexadecimal string representation.</p>
@@ -392,7 +400,7 @@ of the color, respectively, in two-digit hexadecimal notation.</p>
 
   <h3 id="BB84_Extensions_ColorExtensions_ToArgbByteArray_System_Drawing_Color_" data-uid="BB84.Extensions.ColorExtensions.ToArgbByteArray(System.Drawing.Color)">
   ToArgbByteArray(Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/ColorExtensions.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/ColorExtensions.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the specified color <code class="paramref">value</code> to a byte array in ARGB format.</p>
@@ -435,7 +443,7 @@ If the system is not little-endian, the byte order is reversed to ensure compati
 
   <h3 id="BB84_Extensions_ColorExtensions_ToRGBHexString_System_Drawing_Color_" data-uid="BB84.Extensions.ColorExtensions.ToRGBHexString(System.Drawing.Color)">
   ToRGBHexString(Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/ColorExtensions.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/ColorExtensions.cs/#L232"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the specified color <code class="paramref">value</code> to its RGB hexadecimal string representation.</p>
@@ -476,7 +484,7 @@ of the color, respectively, in two-digit hexadecimal notation.</p>
 
   <h3 id="BB84_Extensions_ColorExtensions_ToRgbByteArray_System_Drawing_Color_" data-uid="BB84.Extensions.ColorExtensions.ToRgbByteArray(System.Drawing.Color)">
   ToRgbByteArray(Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/ColorExtensions.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/ColorExtensions.cs/#L213"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the specified color <code class="paramref">value</code> to a byte array in RGB format.</p>
@@ -519,7 +527,7 @@ If the system is not little-endian, the byte order is reversed to ensure compati
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/ColorExtensions.cs/#L20" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/ColorExtensions.cs/#L22" class="edit-link">Edit this page</a>
         </div>
 
 

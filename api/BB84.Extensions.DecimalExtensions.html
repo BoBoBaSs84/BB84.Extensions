@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DecimalExtensions ">
       
-      <meta name="description" content="Provides extension methods for working with nullable  values.">
+      <meta name="description" content="Provides extension methods for working with  and nullable  values.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v4.6.0803.0/apiSpec/new?filename=BB84_Extensions_DecimalExtensions.md&amp;value=---%0Auid%3A%20BB84.Extensions.DecimalExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v5.0.0810.0/apiSpec/new?filename=BB84_Extensions_DecimalExtensions.md&amp;value=---%0Auid%3A%20BB84.Extensions.DecimalExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_DecimalExtensions" data-uid="BB84.Extensions.DecimalExtensions" class="text-break">
-Class DecimalExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L16"><i class="bi bi-code-slash"></i></a>
+Class DecimalExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Class DecimalExtensions  <a class="header-action link-secondary" title="View sou
   <dl><dt>Assembly</dt><dd>BB84.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Provides extension methods for working with nullable <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> values.</p>
+  <div class="markdown summary"><p>Provides extension methods for working with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> and nullable <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> values.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -144,9 +144,9 @@ Class DecimalExtensions  <a class="header-action link-secondary" title="View sou
 
 
   <h2 id="BB84_Extensions_DecimalExtensions_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>This class includes utility methods to simplify common operations on nullable decimal
-values, such as checking for null or non-null states. These methods are designed to
-improve code readability and reduce boilerplate when working with nullable decimals.</p>
+  <div class="markdown level0 remarks"><p>This class includes utility methods to simplify common operations on decimal values, such as
+checking for null, default or sign related states. These methods are designed to improve code
+readability and reduce boilerplate when working with decimals.</p>
 </div>
 
 
@@ -154,11 +154,51 @@ improve code readability and reduce boilerplate when working with nullable decim
 </h2>
 
 
+  <a id="BB84_Extensions_DecimalExtensions_For_" data-uid="BB84.Extensions.DecimalExtensions.For*"></a>
+
+  <h3 id="BB84_Extensions_DecimalExtensions_For_System_Decimal_System_Action_System_Decimal__" data-uid="BB84.Extensions.DecimalExtensions.For(System.Decimal,System.Action{System.Decimal})">
+  For(decimal, Action&lt;decimal&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes the specified action for each decimal from 0 to the specified value (exclusive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void For(this decimal value, Action&lt;decimal&gt; action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>The upper limit (exclusive) of the range.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
+    <dd><p>The action to execute for each decimal in the range.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="BB84_Extensions_DecimalExtensions_For_System_Decimal_System_Action_System_Decimal___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method iterates from 0 to <code class="paramref">value</code> - 1, invoking <code class="paramref">action</code>
+for each decimal.</p>
+</div>
+
+
+
+
   <a id="BB84_Extensions_DecimalExtensions_IsDefault_" data-uid="BB84.Extensions.DecimalExtensions.IsDefault*"></a>
 
   <h3 id="BB84_Extensions_DecimalExtensions_IsDefault_System_Decimal_" data-uid="BB84.Extensions.DecimalExtensions.IsDefault(System.Decimal)">
   IsDefault(decimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified decimal is equal to its default value (0).</p>
@@ -198,7 +238,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_DecimalExtensions_IsDefault_System_Nullable_System_Decimal__" data-uid="BB84.Extensions.DecimalExtensions.IsDefault(System.Nullable{System.Decimal})">
   IsDefault(decimal?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable decimal is equal to its default value <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
@@ -238,7 +278,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_DecimalExtensions_IsNegative_System_Decimal_" data-uid="BB84.Extensions.DecimalExtensions.IsNegative(System.Decimal)">
   IsNegative(decimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified decimal value is negative.</p>
@@ -278,7 +318,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_DecimalExtensions_IsNegative_System_Nullable_System_Decimal__" data-uid="BB84.Extensions.DecimalExtensions.IsNegative(System.Nullable{System.Decimal})">
   IsNegative(decimal?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable decimal value is negative.</p>
@@ -318,7 +358,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_DecimalExtensions_IsNonNegative_System_Decimal_" data-uid="BB84.Extensions.DecimalExtensions.IsNonNegative(System.Decimal)">
   IsNonNegative(decimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified decimal value is non-negative.</p>
@@ -358,7 +398,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_DecimalExtensions_IsNonNegative_System_Nullable_System_Decimal__" data-uid="BB84.Extensions.DecimalExtensions.IsNonNegative(System.Nullable{System.Decimal})">
   IsNonNegative(decimal?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable decimal value is non-negative.</p>
@@ -398,7 +438,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_DecimalExtensions_IsNonPositive_System_Decimal_" data-uid="BB84.Extensions.DecimalExtensions.IsNonPositive(System.Decimal)">
   IsNonPositive(decimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified decimal value is less than or equal to zero.</p>
@@ -438,7 +478,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_DecimalExtensions_IsNonPositive_System_Nullable_System_Decimal__" data-uid="BB84.Extensions.DecimalExtensions.IsNonPositive(System.Nullable{System.Decimal})">
   IsNonPositive(decimal?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable decimal value is non-positive.</p>
@@ -478,7 +518,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_DecimalExtensions_IsNotDefault_System_Decimal_" data-uid="BB84.Extensions.DecimalExtensions.IsNotDefault(System.Decimal)">
   IsNotDefault(decimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified decimal is not equal to its default value (0).</p>
@@ -518,7 +558,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_DecimalExtensions_IsNotDefault_System_Nullable_System_Decimal__" data-uid="BB84.Extensions.DecimalExtensions.IsNotDefault(System.Nullable{System.Decimal})">
   IsNotDefault(decimal?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified decimal is not equal to its default value <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
@@ -558,7 +598,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_DecimalExtensions_IsNotNull_System_Nullable_System_Decimal__" data-uid="BB84.Extensions.DecimalExtensions.IsNotNull(System.Nullable{System.Decimal})">
   IsNotNull(decimal?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable decimal has a value.</p>
@@ -598,7 +638,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_DecimalExtensions_IsNull_System_Nullable_System_Decimal__" data-uid="BB84.Extensions.DecimalExtensions.IsNull(System.Nullable{System.Decimal})">
   IsNull(decimal?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable decimal has a null value.</p>
@@ -638,7 +678,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_DecimalExtensions_IsPositive_System_Decimal_" data-uid="BB84.Extensions.DecimalExtensions.IsPositive(System.Decimal)">
   IsPositive(decimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified decimal value is positive.</p>
@@ -678,7 +718,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_DecimalExtensions_IsPositive_System_Nullable_System_Decimal__" data-uid="BB84.Extensions.DecimalExtensions.IsPositive(System.Nullable{System.Decimal})">
   IsPositive(decimal?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable decimal value is positive.</p>
@@ -718,7 +758,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/DecimalExtensions.cs/#L16" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/DecimalExtensions.cs/#L18" class="edit-link">Edit this page</a>
         </div>
 
 

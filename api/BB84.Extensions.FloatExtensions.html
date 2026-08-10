@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class FloatExtensions ">
       
-      <meta name="description" content="Provides extension methods for working with nullable  values.">
+      <meta name="description" content="Provides extension methods for working with  and nullable  values.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v4.6.0803.0/apiSpec/new?filename=BB84_Extensions_FloatExtensions.md&amp;value=---%0Auid%3A%20BB84.Extensions.FloatExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Extensions/new/v5.0.0810.0/apiSpec/new?filename=BB84_Extensions_FloatExtensions.md&amp;value=---%0Auid%3A%20BB84.Extensions.FloatExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Extensions_FloatExtensions" data-uid="BB84.Extensions.FloatExtensions" class="text-break">
-Class FloatExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L16"><i class="bi bi-code-slash"></i></a>
+Class FloatExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Class FloatExtensions  <a class="header-action link-secondary" title="View sourc
   <dl><dt>Assembly</dt><dd>BB84.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Provides extension methods for working with nullable <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> values.</p>
+  <div class="markdown summary"><p>Provides extension methods for working with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> and nullable <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> values.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -144,9 +144,14 @@ Class FloatExtensions  <a class="header-action link-secondary" title="View sourc
 
 
   <h2 id="BB84_Extensions_FloatExtensions_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>This class includes utility methods to simplify common operations on nullable float
-values, such as checking for null or non-null states. These methods are designed to
-improve code readability and reduce boilerplate when working with nullable floats.</p>
+  <div class="markdown level0 remarks"><p>This class includes utility methods to simplify common operations on float values, such as
+checking for null, default or sign related states. These methods are designed to improve code
+readability and reduce boilerplate when working with floats.</p>
+<p>
+The sign related methods follow the IEEE comparison operators, which means that
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single.nan">NaN</a> is neither positive, negative, non-positive nor non-negative and
+therefore yields <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> in all four cases.
+</p>
 </div>
 
 
@@ -158,7 +163,7 @@ improve code readability and reduce boilerplate when working with nullable float
 
   <h3 id="BB84_Extensions_FloatExtensions_IsDefault_System_Nullable_System_Single__" data-uid="BB84.Extensions.FloatExtensions.IsDefault(System.Nullable{System.Single})">
   IsDefault(float?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable float is equal to its default value <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
@@ -198,7 +203,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_FloatExtensions_IsDefault_System_Single_" data-uid="BB84.Extensions.FloatExtensions.IsDefault(System.Single)">
   IsDefault(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified float is equal to its default value (0).</p>
@@ -238,7 +243,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_FloatExtensions_IsNegative_System_Nullable_System_Single__" data-uid="BB84.Extensions.FloatExtensions.IsNegative(System.Nullable{System.Single})">
   IsNegative(float?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable float value is negative.</p>
@@ -278,7 +283,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_FloatExtensions_IsNegative_System_Single_" data-uid="BB84.Extensions.FloatExtensions.IsNegative(System.Single)">
   IsNegative(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified float value is negative.</p>
@@ -318,7 +323,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_FloatExtensions_IsNonNegative_System_Nullable_System_Single__" data-uid="BB84.Extensions.FloatExtensions.IsNonNegative(System.Nullable{System.Single})">
   IsNonNegative(float?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L136"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable float value is non-negative.</p>
@@ -358,7 +363,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_FloatExtensions_IsNonNegative_System_Single_" data-uid="BB84.Extensions.FloatExtensions.IsNonNegative(System.Single)">
   IsNonNegative(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified float value is non-negative.</p>
@@ -398,7 +403,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_FloatExtensions_IsNonPositive_System_Nullable_System_Single__" data-uid="BB84.Extensions.FloatExtensions.IsNonPositive(System.Nullable{System.Single})">
   IsNonPositive(float?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L158"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable float value is non-positive.</p>
@@ -438,7 +443,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_FloatExtensions_IsNonPositive_System_Single_" data-uid="BB84.Extensions.FloatExtensions.IsNonPositive(System.Single)">
   IsNonPositive(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L147"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified float value is less than or equal to zero.</p>
@@ -478,7 +483,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_FloatExtensions_IsNotDefault_System_Nullable_System_Single__" data-uid="BB84.Extensions.FloatExtensions.IsNotDefault(System.Nullable{System.Single})">
   IsNotDefault(float?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified float is not equal to its default value <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
@@ -518,7 +523,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_FloatExtensions_IsNotDefault_System_Single_" data-uid="BB84.Extensions.FloatExtensions.IsNotDefault(System.Single)">
   IsNotDefault(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified float is not equal to its default value (0).</p>
@@ -558,7 +563,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_FloatExtensions_IsNotNull_System_Nullable_System_Single__" data-uid="BB84.Extensions.FloatExtensions.IsNotNull(System.Nullable{System.Single})">
   IsNotNull(float?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable float has a value.</p>
@@ -598,7 +603,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_FloatExtensions_IsNull_System_Nullable_System_Single__" data-uid="BB84.Extensions.FloatExtensions.IsNull(System.Nullable{System.Single})">
   IsNull(float?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable float has a null value.</p>
@@ -638,7 +643,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_FloatExtensions_IsPositive_System_Nullable_System_Single__" data-uid="BB84.Extensions.FloatExtensions.IsPositive(System.Nullable{System.Single})">
   IsPositive(float?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L180"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified nullable float value is positive.</p>
@@ -678,7 +683,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 
   <h3 id="BB84_Extensions_FloatExtensions_IsPositive_System_Single_" data-uid="BB84.Extensions.FloatExtensions.IsPositive(System.Single)">
   IsPositive(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L169"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified float value is positive.</p>
@@ -718,7 +723,7 @@ otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v4.6.0803.0/src/BB84.Extensions/FloatExtensions.cs/#L16" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Extensions/blob/v5.0.0810.0/src/BB84.Extensions/FloatExtensions.cs/#L23" class="edit-link">Edit this page</a>
         </div>
 
 
