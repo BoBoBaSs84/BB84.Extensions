@@ -5,6 +5,8 @@
 // LICENSE file in the root directory of this source tree.
 using System.Windows.Input;
 
+using BB84.WinForms.Extensions.Tests.Common;
+
 namespace BB84.WinForms.Extensions.Tests;
 
 [TestClass]
@@ -59,30 +61,26 @@ public sealed class ButtonBaseExtensionsTests
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithCommandBindingShouldBindCommand(ButtonBase buttonBase)
+	public void WithCommandBindingShouldBindCommand(Type type)
 	{
+		using ButtonBase buttonBase = TestControlFactory.Create<ButtonBase>(type);
 		var dataSource = new { Command = new TestCommand(() => { }, () => true) };
 
 		buttonBase.WithCommandBinding(dataSource, nameof(dataSource.Command));
 
-		Assert.HasCount(1, buttonBase.DataBindings);
-		Assert.AreEqual(nameof(buttonBase.Command), buttonBase.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, buttonBase.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, buttonBase.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(buttonBase, nameof(buttonBase.Command), dataSource);
 	}
 
 	[TestMethod]
 	[DynamicData(nameof(TestData))]
-	public void WithCommandParameterBindingShouldBindCommandParameter(ButtonBase buttonBase)
+	public void WithCommandParameterBindingShouldBindCommandParameter(Type type)
 	{
+		using ButtonBase buttonBase = TestControlFactory.Create<ButtonBase>(type);
 		var dataSource = new { CommandParameter = new object() };
 
 		buttonBase.WithCommandParameterBinding(dataSource, nameof(dataSource.CommandParameter));
 
-		Assert.HasCount(1, buttonBase.DataBindings);
-		Assert.AreEqual(nameof(buttonBase.CommandParameter), buttonBase.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, buttonBase.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, buttonBase.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(buttonBase, nameof(buttonBase.CommandParameter), dataSource);
 	}
 #endif
 

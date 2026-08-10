@@ -1,8 +1,10 @@
-// Copyright: 2023 Robert Peter Meyer
+﻿// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.WinForms.Extensions.Tests.Common;
+
 namespace BB84.WinForms.Extensions.Tests;
 
 [TestClass]
@@ -16,10 +18,7 @@ public sealed class NumericUpDownExtensionsTests
 
 		numericUpDown.WithValueBinding(dataSource, nameof(numericUpDown.Value));
 
-		Assert.HasCount(1, numericUpDown.DataBindings);
-		Assert.AreEqual(nameof(numericUpDown.Value), numericUpDown.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, numericUpDown.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, numericUpDown.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(numericUpDown, nameof(numericUpDown.Value), dataSource);
 	}
 
 	[TestMethod]
@@ -30,10 +29,7 @@ public sealed class NumericUpDownExtensionsTests
 
 		numericUpDown.WithMinimumBinding(dataSource, nameof(numericUpDown.Minimum));
 
-		Assert.HasCount(1, numericUpDown.DataBindings);
-		Assert.AreEqual(nameof(numericUpDown.Minimum), numericUpDown.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, numericUpDown.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, numericUpDown.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(numericUpDown, nameof(numericUpDown.Minimum), dataSource);
 	}
 
 	[TestMethod]
@@ -44,10 +40,7 @@ public sealed class NumericUpDownExtensionsTests
 
 		numericUpDown.WithMaximumBinding(dataSource, nameof(numericUpDown.Maximum));
 
-		Assert.HasCount(1, numericUpDown.DataBindings);
-		Assert.AreEqual(nameof(numericUpDown.Maximum), numericUpDown.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, numericUpDown.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, numericUpDown.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(numericUpDown, nameof(numericUpDown.Maximum), dataSource);
 	}
 
 	[TestMethod]
@@ -58,10 +51,7 @@ public sealed class NumericUpDownExtensionsTests
 
 		numericUpDown.WithIncrementBinding(dataSource, nameof(numericUpDown.Increment));
 
-		Assert.HasCount(1, numericUpDown.DataBindings);
-		Assert.AreEqual(nameof(numericUpDown.Increment), numericUpDown.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, numericUpDown.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, numericUpDown.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(numericUpDown, nameof(numericUpDown.Increment), dataSource);
 	}
 
 	[TestMethod]
@@ -72,9 +62,6 @@ public sealed class NumericUpDownExtensionsTests
 
 		numericUpDown.WithDecimalPlacesBinding(dataSource, nameof(numericUpDown.DecimalPlaces));
 
-		Assert.HasCount(1, numericUpDown.DataBindings);
-		Assert.AreEqual(nameof(numericUpDown.DecimalPlaces), numericUpDown.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, numericUpDown.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, numericUpDown.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(numericUpDown, nameof(numericUpDown.DecimalPlaces), dataSource);
 	}
 }

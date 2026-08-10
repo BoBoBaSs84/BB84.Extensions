@@ -1,8 +1,10 @@
-// Copyright: 2023 Robert Peter Meyer
+﻿// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.WinForms.Extensions.Tests.Common;
+
 namespace BB84.WinForms.Extensions.Tests;
 
 [TestClass]
@@ -16,10 +18,7 @@ public sealed class CheckBoxExtensionsTests
 
 		checkBox.WithCheckedBinding(dataSource, nameof(checkBox.Checked));
 
-		Assert.HasCount(1, checkBox.DataBindings);
-		Assert.AreEqual(nameof(checkBox.Checked), checkBox.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, checkBox.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, checkBox.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(checkBox, nameof(checkBox.Checked), dataSource);
 	}
 #if NET5_0_OR_GREATER
 
@@ -30,11 +29,8 @@ public sealed class CheckBoxExtensionsTests
 		using CheckBox checkBox = new();
 
 		checkBox.WithCheckStateBinding(dataSource, nameof(checkBox.CheckState));
-		Assert.HasCount(1, checkBox.DataBindings);
 
-		Assert.AreEqual(nameof(checkBox.CheckState), checkBox.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, checkBox.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, checkBox.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(checkBox, nameof(checkBox.CheckState), dataSource);
 	}
 
 	[TestMethod]
@@ -45,10 +41,7 @@ public sealed class CheckBoxExtensionsTests
 
 		checkBox.WithCheckAlignBinding(dataSource, nameof(checkBox.CheckAlign));
 
-		Assert.HasCount(1, checkBox.DataBindings);
-		Assert.AreEqual(nameof(checkBox.CheckAlign), checkBox.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, checkBox.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, checkBox.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(checkBox, nameof(checkBox.CheckAlign), dataSource);
 	}
 #endif
 }

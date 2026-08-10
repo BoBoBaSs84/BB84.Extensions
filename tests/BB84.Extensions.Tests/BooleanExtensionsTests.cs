@@ -6,5 +6,5 @@
 namespace BB84.Extensions.Tests;
 
 [TestClass]
-public partial class BooleanExtensionsTests
+public sealed partial class BooleanExtensionsTests
 { }

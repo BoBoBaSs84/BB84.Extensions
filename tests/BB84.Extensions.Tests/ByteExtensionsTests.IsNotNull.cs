@@ -5,7 +5,7 @@
 // LICENSE file in the root directory of this source tree.
 namespace BB84.Extensions.Tests;
 
-public partial class ByteExtensionsTests
+public sealed partial class ByteExtensionsTests
 {
 	[TestMethod]
 	[DataRow(byte.MinValue, true)]

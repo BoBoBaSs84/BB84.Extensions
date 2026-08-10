@@ -1,11 +1,11 @@
-// Copyright: 2023 Robert Peter Meyer
+﻿// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
 namespace BB84.Extensions.Tests;
 
-public partial class ByteExtensionsTests
+public sealed partial class ByteExtensionsTests
 {
 	[TestMethod]
 	[DataRow("This is a long test string for testing stuff.", "AEBEC276E361BE89B5BB0597908754E1229B17C6E889D802A3B9D34DBE858F02F97DAD118BA4AB6BEC980AE935E5FB542518916102D641A1245D24622B3299D7")]

@@ -7,7 +7,7 @@ using System.Text;
 
 namespace BB84.Extensions.Tests;
 
-public partial class StringExtensionsTests
+public sealed partial class StringExtensionsTests
 {
 	[TestMethod]
 	public void GetSHA512WithUtf8Test()

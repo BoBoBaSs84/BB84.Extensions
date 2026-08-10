@@ -1,8 +1,10 @@
-// Copyright: 2023 Robert Peter Meyer
+﻿// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.WinForms.Extensions.Tests.Common;
+
 namespace BB84.WinForms.Extensions.Tests;
 
 [TestClass]
@@ -16,10 +18,7 @@ public sealed class DateTimePickerExtensionsTests
 
 		dateTimePicker.WithCheckedBinding(dataSource, nameof(dataSource.Checked));
 
-		Assert.HasCount(1, dateTimePicker.DataBindings);
-		Assert.AreEqual(nameof(dateTimePicker.Checked), dateTimePicker.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, dateTimePicker.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, dateTimePicker.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(dateTimePicker, nameof(dateTimePicker.Checked), dataSource);
 	}
 
 	[TestMethod]
@@ -30,9 +29,6 @@ public sealed class DateTimePickerExtensionsTests
 
 		dateTimePicker.WithValueBinding(dataSource, nameof(dataSource.Value));
 
-		Assert.HasCount(1, dateTimePicker.DataBindings);
-		Assert.AreEqual(nameof(dateTimePicker.Value), dateTimePicker.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, dateTimePicker.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, dateTimePicker.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(dateTimePicker, nameof(dateTimePicker.Value), dataSource);
 	}
 }

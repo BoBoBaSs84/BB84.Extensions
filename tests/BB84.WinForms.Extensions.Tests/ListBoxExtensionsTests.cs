@@ -1,8 +1,10 @@
-// Copyright: 2023 Robert Peter Meyer
+﻿// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.WinForms.Extensions.Tests.Common;
+
 namespace BB84.WinForms.Extensions.Tests;
 
 [TestClass]
@@ -17,10 +19,7 @@ public sealed class ListBoxExtensionsTests
 
 		listBox.WithSelectedItemBinding(dataSource, nameof(listBox.SelectedItem));
 
-		Assert.HasCount(1, listBox.DataBindings);
-		Assert.AreEqual(nameof(listBox.SelectedItem), listBox.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, listBox.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, listBox.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(listBox, nameof(listBox.SelectedItem), dataSource);
 	}
 
 	[TestMethod]
@@ -31,9 +30,6 @@ public sealed class ListBoxExtensionsTests
 
 		listBox.WithSelectedIndexBinding(dataSource, nameof(listBox.SelectedIndex));
 
-		Assert.HasCount(1, listBox.DataBindings);
-		Assert.AreEqual(nameof(listBox.SelectedIndex), listBox.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, listBox.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, listBox.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(listBox, nameof(listBox.SelectedIndex), dataSource);
 	}
 }

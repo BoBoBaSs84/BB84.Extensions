@@ -5,7 +5,7 @@
 // LICENSE file in the root directory of this source tree.
 namespace BB84.Extensions.Tests;
 
-public partial class ByteExtensionsTests
+public sealed partial class ByteExtensionsTests
 {
 	[TestMethod]
 	[DataRow("This is a long test string for testing stuff.", new byte[] { 110, 210, 233, 118, 188, 223, 107, 174, 201, 37, 20, 45, 24, 79, 27, 32 })]

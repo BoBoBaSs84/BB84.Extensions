@@ -1,8 +1,10 @@
-// Copyright: 2023 Robert Peter Meyer
+﻿// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
+using BB84.WinForms.Extensions.Tests.Common;
+
 namespace BB84.WinForms.Extensions.Tests;
 
 [TestClass]
@@ -16,9 +18,6 @@ public sealed class RadioButtonExtensionsTests
 
 		radioButton.WithCheckedBinding(dataSource, nameof(radioButton.Checked));
 
-		Assert.HasCount(1, radioButton.DataBindings);
-		Assert.AreEqual(nameof(radioButton.Checked), radioButton.DataBindings[0].PropertyName);
-		Assert.AreEqual(dataSource, radioButton.DataBindings[0].DataSource);
-		Assert.AreEqual(DataSourceUpdateMode.OnPropertyChanged, radioButton.DataBindings[0].DataSourceUpdateMode);
+		BindingAssert.IsSingleBinding(radioButton, nameof(radioButton.Checked), dataSource);
 	}
 }
