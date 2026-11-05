@@ -1,12 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="MSTest.Sdk">
 	<PropertyGroup>
 		<TargetFrameworks>net472;net481;net8.0-windows;net10.0-windows</TargetFrameworks>
 		<NoWarn>$(NoWarn);CA1416</NoWarn>
 		<UseWindowsForms>True</UseWindowsForms>
 	</PropertyGroup>
-	<ItemGroup>
-	  <PackageReference Include="MSTest" />
-	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\..\src\BB84.WinForms.Extensions\BB84.WinForms.Extensions.csproj" />
 	</ItemGroup>
